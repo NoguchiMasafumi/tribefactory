@@ -79,6 +79,10 @@ var app3 = new Vue({
             url:'https://tribefactory.netlify.app/',
             text:'Netlify homepage'
 
+          },
+          {
+            url:'https://github.com/',
+              text:'GitHub'
           }
         ]
       });
