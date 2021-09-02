@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/base1.css">
+        <title id="title1">{{site_name}} Top</title>
+    </head>
+
+
+
+    <body class="mar_a0">
+      <div class="w70p mar_r_at mar_l_at mar_t5">
+        <div id="head1" class="bor_b_w1 bor_c01 bor_b_s_sld fnt_s16 fnt_c03">
+          {{site_name}} <img src="img/TF20_min.png" class="h24 mar_l5 ver_mid mar_b4">
+        </div>
+        <div class="tex_rig fnt_s12 fnt_c03 mar_b50">
+          トライブファクトリー
+        </div>
+
+
+
+        <div class="flt_lef">
+
+          <div class="bor_a_w1 bor_c02 bor_a_s_sld pad_a15 mar_b30">
+            このサイトは自身の行動ログなどをまとめたものです。
+          </div>
+
+
+          <div class="pad_a15 mar_b30">
+            メモ・テストエリア
+
+
+
+
+              <div id="app" class="mar_t15">
+                参考　https://jp.vuejs.org/v2/guide/
+
+                {{ message }}
+              </div>
+      
+      
+      
+              <div id="app-2">
+                  <span v-bind:title="message">
+                      Hover your mouse over me for a few seconds
+                      to see my dynamically bound title!
+                  </span>
+              </div>
+      
+              <div id="app-3">
+                  <span v-if="seen">Now you see me</span>
+                </div>
+      
+          </div>
+
+
+          <div id="app-5" class="pad_a15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
+            アカウント利用サイト
+            <ul>
+              <li v-for="item in items" class="lhg_200p">
+                <a v-bind:href="item.url" target="_blank">{{ item.text }}</a>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+
+          <div id="app-4" class="pad_a15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
+            作成したもの一覧
+            <ul>
+              <li v-for="item in items" class="lhg_200p">
+                <a v-bind:href="item.url" target="_blank">{{ item.text }}</a>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="flt_lef">
+<img src="https://lh3.googleusercontent.com/fife/AAWUweULxqFtNoPZ3iQBf5vux4oORnxTqbZodAbuzUM6CAfOTkw3tn-IIIprAKfSbVINP6sTWeOv1nQEUOemj5qLT1pDTnayUkH5WgogXKkeVivWrWJJ9scZzqRQo6W2CpjUow84QxumwQipRrNwtTy4DHNo6mBlWrUqGi_FtPJjLJLjqjbQLzS0wfiFF70F31RuzYQyRlnWU4WiL5pyVebhD-UNBKVo8HryxBk_wXobbfVtbHjsV4tZbcciTyfHxtLuMFTJL9yGqk5XytTiWym38XQyJ4XFxJxVBMj2fAkN6VjxCw42CSrKUiNSZTBfMuGpgGLAJHOGLsofcA05zVw3R7atNedaasWpHg8UyokibZPvgaY5yv9--VRAV8pwOVMLQ5jXg3PNwtmQp4HiR6lWmuPIA6PDlp0yWYsBM26WrCK4TI-jvIYA0Ex666bi0ahCNx39fqQzMMSW7fD8O6e2MakRwXY0Nn1awoatdfk8XFnKZy1Fd_cpXzr7HhSumcuafd-joMCWIBbM4wLaSu48EBw-_Ixqh2ouO2KVQ6p24ImwjhMZMxDuqc0-vd542Z5sFd4qK5C5LnxFDzHUceAKOZ1nj6ANm9X7ng_L0DnQ1kTDIjG6kVnfUDjAaWSLs8S9UC5EqyZDmwB5JYj4awBdizgov2zMZJLVcMQamSqp7Yh8gwB-BYfT7rjFsNOaRF2HzrtAob33RRvOovI=w1666-h937-no?authuser=1" class="w500">
+        </div>
+
+        <div class="clearfix"></div>
+
+
+
+
+
+
+
+        </div>
+
+    </body>
+
+
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="js/vue_control.js"></script>
+    </footer>
+</html>
