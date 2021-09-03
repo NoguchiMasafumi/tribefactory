@@ -1136,7 +1136,7 @@ var app3 = new Vue({
           array[i] = array[r]
           array[r] = tmp
       }
-      array.splice(20,array.length)
+      array.splice(24,array.length)
       return array
     }
     }
