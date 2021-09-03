@@ -17,7 +17,7 @@
 
 
 
-        <div class="flt_lef">
+        <div class="flt_lef w48p mar_r15">
 
           <div class="bor_a_w1 bor_c02 bor_a_s_sld pad_a15 mar_b30">
             このサイトは自身の行動ログなどをまとめたものです。
@@ -82,7 +82,24 @@
 
         </div>
 
-        <div class="flt_lef">
+        <div class="flt_lef w48p">
+
+
+
+
+
+          <di id="app-7" class="pad_a15 mar_b30">
+            Google Photo Album Pickup<br/>
+
+            <div v-for="colors in shuffle_colors" class="flt_lef mar_r1 mar_b1 over_flow_no w150 h100">
+              <img :src="colors.url">
+            </div>
+
+          </div>
+
+
+
+
         </div>
 
         <div class="clearfix"></div>
