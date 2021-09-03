@@ -83,6 +83,10 @@ var app3 = new Vue({
           {
             url:'https://github.com/',
               text:'GitHub'
+          },
+          {
+              url:'https://photos.app.goo.gl/jVQj9GeHxjEvC6fV9',
+              text:'Google Photo Album'
           }
         ]
       });
