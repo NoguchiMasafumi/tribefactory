@@ -196,7 +196,6 @@ var app3 = new Vue({
         {url: "https://lh3.googleusercontent.com/6JOU2MNPXRhjMvVUSJ9UDXw2Jbb9HD3X01SropirogQVtwihteFTWHNK9S4-RsXdg24jBaQo3KfmBxh8xxE-AXyhDLacITZz_z8ipqAuG_07KeGKLQLKabAdUUORLjMnhWXwABMbyMA=w175-no?authuser=1"},
         {url: "https://lh3.googleusercontent.com/6jqhjfYePbj6JWJ3UHyDFwWRWCu_zeazZdDJ8WcVjPRW17ttKoM3x4fmN8hXOssknpc6XIJPwiWMcaKcPyrfWO8z4b_Aezwsa-sK8L-kcsf-49VAuaGQEWG4mP2xIWg-aZdMgfgbvzQ=w175-no?authuser=1"},
         {url: "https://lh3.googleusercontent.com/6N_B5VtA7tMIsgiuNDH6qNM7CbW_EWoGFSMLTPkGTKkgmTbODyL9cNlwsZG_S-N0ODDrLox4z-iC_6fP8dqgUxqfYJxc58jk4iEETGFC93rw882_nflK-V8mR2Mv3QErk70ZGctE6W8=w175-no?authuser=1"},
-        {url: "https://lh3.googleusercontent.com/6OElc1dffGvQZzTTqwaJxz3fUFki7Q4VzZZRmi6ynMH0hXwv8pBW4WpLThYwNmRNW51RLm1pu_tca6kzDfuOvyB-a9Bl_hEfCUfOGpbPp5z9r1ArGY2dpCnJQoNk5U6RGrXI3yjJeAU=w175-no?authuser=1"},
         {url: "https://lh3.googleusercontent.com/6Q71xmmMauQrQhk3fMbP2bf3Ly6qzy0kdJbRTAHaqWrhqzplB2Wdf0qifZ_KRLABJsz4WUJ0NAkBCSmjzVoPgo8zo2D3vnEFbbmDBhbv1azgcHohtgUjypkILF7VblBnAzYnaeA217k=w175-no?authuser=1"},
         {url: "https://lh3.googleusercontent.com/6raPIDXm_GyW1WJOEwve1jEBEV-jsfeC7l92g6Q1JMcYcCKlmaPE48e2YM6M5GUsfOS3OX2ZP1dcgPIhmAMNFtrvmT32fuZK9NTYup7Ro5rU8GKuu7RjFVevLtxPQeRAZ6as0FQNyOc=w175-no?authuser=1"},
         {url: "https://lh3.googleusercontent.com/6rpMtRj46J-NaUgsX2HCAQ5TRMqbEglNCZlg8EZcQeUsTz0DfJhmBpEF6B5GHtN76KzG7K6Hg8zvx-AicyihXxoPAYvlLwVsfkrVa8sjCgENnbAFtPHxhKWd3ugvO30j5UJH2ink2XI=w175-no?authuser=1"},
