@@ -1,7 +1,9 @@
 @media screen and (min-width:481px){
 .pag_w{width:90%;}
-.resp_lef{float:left;width:48%;}
-.resp_mar_r15{margin-right:15px;}
+.resp_lef{float:left;width:38%;}
+.resp_rig{float:left;width:58%;}
+
+	.resp_mar_r15{margin-right:15px;}
 	.photo_size{width:175px;height:117px;}
 }
 
