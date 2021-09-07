@@ -56,6 +56,10 @@ var app3 = new Vue({
           {
             url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/drum_masters/drum_masters.0.0301.htm',
             text: 'drum_masters'
+          },
+          {
+              url:'https://quiz-hikari-oh.netlify.app/',
+              text:'Quiz Hikari Oh'
           }
         ]
       });
