@@ -60,6 +60,10 @@ var app3 = new Vue({
           {
               url:'https://quiz-hikari-oh.netlify.app/',
               text:'Quiz Hikari Oh'
+          },
+          {
+            url:'https://precure-encyclopedia.netlify.app/',
+            text:'Precure Encyclopedia'
           }
         ]
       });
