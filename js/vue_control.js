@@ -80,6 +80,12 @@ var app3 = new Vue({
               text:'o hitori sama test',
               img_url:'https://tribefactory.netlify.app/img/o_hitori_sama.png',
               explain:'自分がどのくらい一人で行動できるかを診断できるページ'
+          },
+          {
+            url:'https://digital-rain-yuanchuan.netlify.app/',
+            text:'Digital Rain',
+            img_url:'https://tribefactory.netlify.app/img/digital_rain_yuanchuan.png',
+            explain:'https://codepen.io/yuanchuan/pen/YoqWeR をカスタムさせていただきました！'
           }
         ]
       });
