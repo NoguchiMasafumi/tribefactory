@@ -49,7 +49,7 @@ var app3 = new Vue({
             url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/play_audio_files/play_audio_files.htm',
             text: 'play_audio',
             img_url:'https://tribefactory.netlify.app/img/play_audio_files.png',
-            explain:'ローカルにある音楽ファイルを連続して再生できる'
+            explain:'ローカルにある音楽ファイルを連続して再生できるページ'
           },
           {
             url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/clock/analogue.htm',
@@ -79,7 +79,7 @@ var app3 = new Vue({
               url:'https://o-hitori-sama.netlify.app/',
               text:'o hitori sama test',
               img_url:'https://tribefactory.netlify.app/img/o_hitori_sama.png',
-              explain:'自分がどのくらい一人で行動できるかを診断できる'
+              explain:'自分がどのくらい一人で行動できるかを診断できるページ'
           }
         ]
       });
