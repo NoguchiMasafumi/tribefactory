@@ -64,6 +64,10 @@ var app3 = new Vue({
           {
             url:'https://precure-encyclopedia.netlify.app/',
             text:'Precure Encyclopedia'
+          },
+          {
+              url:'https://o-hitori-sama.netlify.app/',
+              text:'o hitori sama test'
           }
         ]
       });
