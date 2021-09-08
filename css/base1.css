@@ -5,6 +5,10 @@
 
 	.resp_mar_r15{margin-right:15px;}
 	.photo_size{width:175px;height:117px;}
+  .achievements_img{float:left}
+  .achievements_img img{width:175px;}
+  .achievements_explain{float:right;width:410px;text-decoration: none;color:#000000;}
+
 }
 
 @media screen and (max-width:480px){
@@ -158,7 +162,43 @@
 
 .w1p{width:1%;}.w2p{width:2%;}.w3p{width:3%;}.w4p{width:4%;}.w5p{width:5%;}.w6p{width:6%;}.w7p{width:7%;}.w8p{width:8%;}.w9p{width:9%;}.w10p{width:10%;}.w11p{width:11%;}.w12p{width:12%;}.w13p{width:13%;}.w14p{width:14%;}.w15p{width:15%;}.w16p{width:16%;}.w17p{width:17%;}.w18p{width:18%;}.w19p{width:19%;}.w20p{width:20%;}.w21p{width:21%;}.w22p{width:22%;}.w23p{width:23%;}.w24p{width:24%;}.w25p{width:25%;}.w26p{width:26%;}.w27p{width:27%;}.w28p{width:28%;}.w29p{width:29%;}.w30p{width:30%;}.w31p{width:31%;}.w32p{width:32%;}.w33p{width:33%;}.w34p{width:34%;}.w35p{width:35%;}.w36p{width:36%;}.w37p{width:37%;}.w38p{width:38%;}.w39p{width:39%;}.w40p{width:40%;}.w41p{width:41%;}.w42p{width:42%;}.w43p{width:43%;}.w44p{width:44%;}.w45p{width:45%;}.w46p{width:46%;}.w47p{width:47%;}.w48p{width:48%;}.w49p{width:49%;}.w50p{width:50%;}.w51p{width:51%;}.w52p{width:52%;}.w53p{width:53%;}.w54p{width:54%;}.w55p{width:55%;}.w56p{width:56%;}.w57p{width:57%;}.w58p{width:58%;}.w59p{width:59%;}.w60p{width:60%;}.w61p{width:61%;}.w62p{width:62%;}.w63p{width:63%;}.w64p{width:64%;}.w65p{width:65%;}.w66p{width:66%;}.w67p{width:67%;}.w68p{width:68%;}.w69p{width:69%;}.w70p{width:70%;}.w71p{width:71%;}.w72p{width:72%;}.w73p{width:73%;}.w74p{width:74%;}.w75p{width:75%;}.w76p{width:76%;}.w77p{width:77%;}.w78p{width:78%;}.w79p{width:79%;}.w80p{width:80%;}.w81p{width:81%;}.w82p{width:82%;}.w83p{width:83%;}.w84p{width:84%;}.w85p{width:85%;}.w86p{width:86%;}.w87p{width:87%;}.w88p{width:88%;}.w89p{width:89%;}.w90p{width:90%;}.w91p{width:91%;}.w92p{width:92%;}.w93p{width:93%;}.w94p{width:94%;}.w95p{width:95%;}.w96p{width:96%;}.w97p{width:97%;}.w98p{width:98%;}.w99p{width:99%;}.w100p{width:100%;}
 
-.h0{height:0px;}.h1{height:1px;}.h2{height:2px;}.h3{height:3px;}.h4{height:4px;}.h5{height:5px;}.h6{height:6px;}.h7{height:7px;}.h8{height:8px;}.h9{height:9px;}.h10{height:10px;}.h11{height:11px;}.h12{height:12px;}.h13{height:13px;}.h14{height:14px;}.h15{height:15px;}.h16{height:16px;}.h17{height:17px;}.h18{height:18px;}.h19{height:19px;}.h20{height:20px;}.h21{height:21px;}.h22{height:22px;}.h23{height:23px;}.h24{height:24px;}.h25{height:25px;}.h26{height:26px;}.h27{height:27px;}.h28{height:28px;}.h29{height:29px;}.h30{height:30px;}.h31{height:31px;}.h32{height:32px;}.h33{height:33px;}.h34{height:34px;}.h35{height:35px;}.h36{height:36px;}.h37{height:37px;}.h38{height:38px;}.h39{height:39px;}.h40{height:40px;}.h41{height:41px;}.h42{height:42px;}.h43{height:43px;}.h44{height:44px;}.h45{height:45px;}.h46{height:46px;}.h47{height:47px;}.h48{height:48px;}.h49{height:49px;}.h50{height:50px;}.h51{height:51px;}.h55{height:55px;}.h60{height:60px;}.h63{height:63px;}.h70{height:70px;}.h80{height:80px;}.h90{height:90px;}.h100{height:100px;}.h110{height:110px;}.h120{height:120px;}.h130{height:130px;}.h140{height:140px;}.h150{height:150px;}.h160{height:160px;}.h170{height:170px;}.h180{height:180px;}.h190{height:190px;}.h200{height:200px;}.h210{height:210px;}.h220{height:220px;}.h230{height:230px;}.h240{height:240px;}.h250{height:250px;}.h260{height:260px;}.h270{height:270px;}.h280{height:280px;}.h290{height:290px;}.h300{height:300px;}.h350{height:350px;}.h400{height:300px;}.h450{height:450px;}.h500{height:400px;}.h550{height:550px;}.h600{height:600px;}.h650{height:650px;}.h700{height:600px;}.h750{height:750px;}.h800{height:700px;}.h850{height:850px;}.h900{height:800px;}.h950{height:950px;}.h1000{height:1000px;}
+.h0{height:0px;}
+.h1{height:1px;}.h2{height:2px;}.h3{height:3px;}.h4{height:4px;}.h5{height:5px;}.h6{height:6px;}.h7{height:7px;}.h8{height:8px;}.h9{height:9px;}.h10{height:10px;}
+.h11{height:11px;}.h12{height:12px;}.h13{height:13px;}.h14{height:14px;}.h15{height:15px;}.h16{height:16px;}.h17{height:17px;}.h18{height:18px;}.h19{height:19px;}.h20{height:20px;}
+.h21{height:21px;}.h22{height:22px;}.h23{height:23px;}.h24{height:24px;}.h25{height:25px;}.h26{height:26px;}.h27{height:27px;}.h28{height:28px;}.h29{height:29px;}.h30{height:30px;}
+.h31{height:31px;}.h32{height:32px;}.h33{height:33px;}.h34{height:34px;}.h35{height:35px;}.h36{height:36px;}.h37{height:37px;}.h38{height:38px;}.h39{height:39px;}.h40{height:40px;}
+.h41{height:41px;}.h42{height:42px;}.h43{height:43px;}.h44{height:44px;}.h45{height:45px;}.h46{height:46px;}.h47{height:47px;}.h48{height:48px;}.h49{height:49px;}.h50{height:50px;}
+.h51{height:51px;}.h55{height:55px;}.h60{height:60px;}.h63{height:63px;}.h70{height:70px;}
+
+.h80{height:80px;}
+.h81{height:81px;}
+.h82{height:82px;}
+.h83{height:83px;}
+.h84{height:84px;}
+.h85{height:85px;}
+.h86{height:86px;}
+.h87{height:87px;}
+.h88{height:88px;}
+.h89{height:89px;}
+
+
+
+
+.h90{height:90px;}.h100{height:100px;}
+.h110{height:110px;}
+.h111{height:111px;}
+.h112{height:112px;}
+.h113{height:113px;}
+.h114{height:114px;}
+.h115{height:115px;}
+.h116{height:116px;}
+.h117{height:117px;}
+.h118{height:118px;}
+.h119{height:119px;}
+
+
+.h120{height:120px;}.h130{height:130px;}.h140{height:140px;}.h150{height:150px;}.h160{height:160px;}.h170{height:170px;}.h180{height:180px;}.h190{height:190px;}.h200{height:200px;}.h210{height:210px;}.h220{height:220px;}.h230{height:230px;}.h240{height:240px;}.h250{height:250px;}.h260{height:260px;}.h270{height:270px;}.h280{height:280px;}.h290{height:290px;}.h300{height:300px;}.h350{height:350px;}.h400{height:300px;}.h450{height:450px;}.h500{height:400px;}.h550{height:550px;}.h600{height:600px;}.h650{height:650px;}.h700{height:600px;}.h750{height:750px;}.h800{height:700px;}.h850{height:850px;}.h900{height:800px;}.h950{height:950px;}.h1000{height:1000px;}
+
 .h100p{height:100%;}
 
 .min_h0{min-height:0px}.min_h1{min-height:1px}.min_h2{min-height:2px}.min_h3{min-height:3px}.min_h4{min-height:4px}.min_h5{min-height:5px}.min_h6{min-height:6px}.min_h7{min-height:7px}.min_h8{min-height:8px}.min_h9{min-height:9px}.min_h10{min-height:10px}.min_h11{min-height:11px}.min_h12{min-height:12px}.min_h13{min-height:13px}.min_h14{min-height:14px}.min_h15{min-height:15px}.min_h16{min-height:16px}.min_h17{min-height:17px}.min_h18{min-height:18px}.min_h19{min-height:19px}.min_h20{min-height:20px}.min_h21{min-height:21px}.min_h22{min-height:22px}.min_h23{min-height:23px}.min_h24{min-height:24px}.min_h25{min-height:25px}.min_h26{min-height:26px}.min_h27{min-height:27px}.min_h28{min-height:28px}.min_h29{min-height:29px}.min_h30{min-height:30px}.min_h31{min-height:31px}.min_h32{min-height:32px}.min_h33{min-height:33px}.min_h34{min-height:34px}.min_h35{min-height:35px}.min_h36{min-height:36px}.min_h37{min-height:37px}.min_h38{min-height:38px}.min_h39{min-height:39px}.min_h40{min-height:40px}.min_h41{min-height:41px}.min_h42{min-height:42px}.min_h43{min-height:43px}.min_h44{min-height:44px}.min_h45{min-height:45px}.min_h46{min-height:46px}.min_h47{min-height:47px}.min_h48{min-height:48px}.min_h49{min-height:49px}.min_h50{min-height:50px}.min_h51{min-height:51px}.min_h52{min-height:52px}.min_h53{min-height:53px}.min_h54{min-height:54px}.min_h55{min-height:55px}.min_h56{min-height:56px}.min_h57{min-height:57px}.min_h58{min-height:58px}.min_h59{min-height:59px}.min_h60{min-height:60px}.min_h61{min-height:61px}.min_h62{min-height:62px}.min_h63{min-height:63px}.min_h64{min-height:64px}.min_h65{min-height:65px}.min_h66{min-height:66px}.min_h67{min-height:67px}.min_h68{min-height:68px}.min_h69{min-height:69px}.min_h70{min-height:70px}.min_h71{min-height:71px}.min_h72{min-height:72px}.min_h73{min-height:73px}.min_h74{min-height:74px}.min_h75{min-height:75px}.min_h76{min-height:76px}.min_h77{min-height:77px}.min_h78{min-height:78px}.min_h79{min-height:79px}.min_h80{min-height:80px}.min_h81{min-height:81px}.min_h82{min-height:82px}.min_h83{min-height:83px}.min_h84{min-height:84px}.min_h85{min-height:85px}.min_h86{min-height:86px}.min_h87{min-height:87px}.min_h88{min-height:88px}.min_h89{min-height:89px}.min_h90{min-height:90px}.min_h91{min-height:91px}.min_h92{min-height:92px}.min_h93{min-height:93px}.min_h94{min-height:94px}.min_h95{min-height:95px}.min_h96{min-height:96px}.min_h97{min-height:97px}.min_h98{min-height:98px}.min_h99{min-height:99px}.min_h100{min-height:100px}.min_h110{min-height:110px}.min_h120{min-height:120px}.min_h130{min-height:130px}.min_h140{min-height:140px}.min_h150{min-height:150px}.min_h160{min-height:160px}.min_h170{min-height:170px}.min_h180{min-height:180px}.min_h190{min-height:190px}.min_h200{min-height:200px}.min_h210{min-height:210px}.min_h220{min-height:220px}.min_h230{min-height:230px}.min_h240{min-height:240px}.min_h250{min-height:250px}.min_h260{min-height:260px}.min_h270{min-height:270px}.min_h280{min-height:280px}.min_h290{min-height:290px}.min_h300{min-height:300px}.min_h310{min-height:310px}.min_h320{min-height:320px}.min_h330{min-height:330px}.min_h340{min-height:340px}.min_h350{min-height:350px}.min_h360{min-height:360px}.min_h370{min-height:370px}.min_h380{min-height:380px}.min_h390{min-height:390px}.min_h400{min-height:400px}.min_h410{min-height:410px}.min_h420{min-height:420px}.min_h430{min-height:430px}.min_h440{min-height:440px}.min_h450{min-height:450px}.min_h460{min-height:460px}.min_h470{min-height:470px}.min_h480{min-height:480px}.min_h490{min-height:490px}.min_h500{min-height:500px}
@@ -320,6 +360,7 @@ td a:hover{text-decoration:underline;}
 /******** color ********/
 
 .bg_c00{background-color:#FFFFFF;}
+.bg_c015{background-color:#f9f9f9}
 .bg_c01{background-color:#E5E5E5;}
 .bg_c02{background-color:#959595;}
 .bg_c03{background-color:#4B4B4B;}

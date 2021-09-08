@@ -47,27 +47,39 @@ var app3 = new Vue({
         items:[
           {
             url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/play_audio_files/play_audio_files.htm',
-            text: 'play_audio'
+            text: 'play_audio',
+            img_url:'https://tribefactory.netlify.app/img/play_audio_files.png',
+            explain:'ローカルにある音楽ファイルを連続して再生できる'
           },
           {
             url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/clock/analogue.htm',
-            text: 'clock'
+            text: 'clock',
+            img_url:'https://tribefactory.netlify.app/img/analogue.png',
+            explain:'シンプルなアナログ時計'
           },
           {
             url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/drum_masters/drum_masters.0.0301.htm',
-            text: 'drum_masters'
+            text: 'drum_masters',
+            img_url:'https://tribefactory.netlify.app/img/drum_masters.png',
+            explain:'手持ちの楽曲で太鼓の達人風に遊べるように。自動で擬似作譜します。'
           },
           {
               url:'https://quiz-hikari-oh.netlify.app/',
-              text:'Quiz Hikari Oh'
+              text:'Quiz Hikari Oh',
+              img_url:'https://tribefactory.netlify.app/img/quiz_hikari_oh.png',
+              explain:'娘のために作成した低学年むけクイズページ'
           },
           {
             url:'https://precure-encyclopedia.netlify.app/',
-            text:'Precure Encyclopedia'
+            text:'Precure Encyclopedia',
+            img_url:'https://tribefactory.netlify.app/img/precure_encycropedia.png',
+            explain:'娘に作った歴代プリキュアのメンバー閲覧ページ'
           },
           {
               url:'https://o-hitori-sama.netlify.app/',
-              text:'o hitori sama test'
+              text:'o hitori sama test',
+              img_url:'https://tribefactory.netlify.app/img/o_hitori_sama.png',
+              explain:'自分がどのくらい一人で行動できるかを診断できる'
           }
         ]
       });
