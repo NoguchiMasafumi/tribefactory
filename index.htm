@@ -14,11 +14,6 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
-        <style>
-          .achive_item:hover{box-shadow: 0px 8px 8px -2px #999999;-moz-box-shadow: 0px 8px 8px -2px #999999;-webkit-box-shadow: 0px 8px 8px -2px #999999;}
-          .photo_size:hover{box-shadow: 0px 2px 8px -2px #999999;-moz-box-shadow: 0px 2px 8px -2px #999999;-webkit-box-shadow: 0px 2px 8px -2px #999999;}
-
-        </style>
 
     </head>
 
@@ -42,35 +37,9 @@
           </div>
 
 
-          <div class="pad_a15 mar_b30">
-            メモ・テストエリア
 
 
-
-
-              <div id="app" class="mar_t15">
-                参考　https://jp.vuejs.org/v2/guide/
-
-                {{ message }}
-              </div>
-      
-      
-      
-              <div id="app-2">
-                  <span v-bind:title="message">
-                      Hover your mouse over me for a few seconds
-                      to see my dynamically bound title!
-                  </span>
-              </div>
-      
-              <div id="app-3">
-                  <span v-if="seen">Now you see me</span>
-                </div>
-      
-          </div>
-
-
-          <div id="app-5" class="pad_a15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
+          <div id="app-5" class="pad_a15 mar_b30">
             アカウント利用サイト
             <ul>
               <li v-for="item in items" class="lhg_200p">
@@ -87,12 +56,64 @@
           <div id="app-4" class="pad_a15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
             作成したもの一覧
             <div v-for="item in items" class="lhg_200p over_flow_no bg_c00 shd2_9 mar_b15 achive_item">
-                <a v-bind:href="item.url" target="_blank">
+                <a v-bind:href="item.url" target="_blank" class="disp_block over_flow_no">
                   
                   
                     <div class="achievements_img"><img class="bor_a_w12 bor_c012 bor_a_s_sld2" :src="item.img_url"></div>
                   
-                    <div class="achievements_explain pad_a15 h87 tex_dec_no">{{ item.text }}<br />
+                    <div class="achievements_explain pad_a15 tex_dec_no lhg_150p">{{ item.text }}<br />
+                      <span class="fnt_s14 fnt_c04">{{ item.explain}}</span>
+                    </div>
+                
+                
+                
+                </a>
+              </div>
+          </div>
+
+
+
+
+
+          <div class="pad_a15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
+            メモ・テストエリア
+              <div id="app" class="mar_t15">
+                参考　https://jp.vuejs.org/v2/guide/
+
+                {{ message }}
+              </div>
+      
+              <div id="app-2">
+                  <span v-bind:title="message">
+                      Hover your mouse over me for a few seconds
+                      to see my dynamically bound title!
+                  </span>
+              </div>
+      
+              <div id="app-3">
+                  <span v-if="seen">Now you see me</span>
+                </div>
+          </div>
+
+
+
+
+        </div>
+
+        <div class="resp_rig">
+
+
+
+
+          <div id="app-blog" class="pad_a15 mar_b30">
+            ブログ風記録
+            <div v-for="item in items" class="lhg_200p over_flow_no bg_c00 shd2_9 mar_b15 achive_item">
+                <a v-bind:href="item.url" target="_blank" class="disp_block over_flow_no">
+                  
+                  
+                    <div class="achievements_img"><img class="bor_a_w12 bor_c012 bor_a_s_sld2" :src="item.img_url"></div>
+                  
+                    <div class="achievements_explain pad_a15 tex_dec_no lhg_150p">{{ item.text }}<br />
                       <span class="fnt_s14 fnt_c04">{{ item.explain}}</span>
                     </div>
                 
@@ -107,15 +128,7 @@
 
 
 
-        </div>
-
-        <div class="resp_rig">
-
-
-
-
-
-          <div id="app-7" class="pad_t15 pad_b15 pad_l15 mar_b30">
+          <div id="app-7" class="pad_t15 pad_b15 pad_l15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
             Google Photo Album Pickup<br/>
 
             <div v-for="colors in shuffle_colors" class="flt_lef mar_r1 mar_b1 over_flow_no photo_size">
@@ -130,7 +143,7 @@
 
         </div>
 
-        <div class="clearfix"></div>
+        <div class="clearfix mar_b72"></div>
 
 
 

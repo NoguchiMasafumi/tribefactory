@@ -93,6 +93,63 @@ var app3 = new Vue({
   })
 
   var value = new Vue({
+    el: '#app-blog',
+    data: function() {
+      return({
+        items:[
+          {
+            url: 'blog/19990314.htm',
+            text: '1999-03-14 モンサンミッシェル',
+            img_url:'https://lh3.googleusercontent.com/sqPQi-vBN5bejEYDJp8JaMn-ZQ_4_30N1xSNcGox0jndK4CX5JHU6mbmrcr7j1UCZQvZEdOB8weaHoQVBjsZF9q1XjDezIzRJPNEkBWtM3SSRtdV1n3ZOjSnebOR8MwRDR2o84vTjyRDzA3ZAbUK7BwA8YPK22m6YZJM_9qAavAGvXOAXEk8sQfgKGiRmXWbVgIWgKXIfE8pO-3dp6UEBb3MyIuVyn8gmvSzRDt51eqAmVEn1mx4xjfoV66QHoMl7TDejBfc4eeMaVMnO4k6W1EVzkAqMQ75pLhV3q2QxbnlaUDtuDSSkeEdZ7BIBNactsm6YYZfeswOqc3vCxNOwAdZSXX94ZStXY5ZjBzVKjdFQxji_Gl1kHTjTEDikcbTf7KKf7ca7haCLxVi8CPKzXSo2KEnPZrwpYXK1MGt9n96fc15TZYVmd6CwVYOWaCV45lmtkdPARe2y37XRx_gbErZUczIpkJ7lmL-Xmu_w2Ctpunif2wg2772RsLOfWFhjH4Lpt1OLSecgfYHp0idUHE_VNfgDMYt4gvCFMUbdhE1fa9TA2r6rqOXCcUY_Lj3WVShX_qQKmqQTqnuiQYrd9yWNtPnIhCfZPTJNc8awBsLzkqbzv1kgaE52Nhc9xeJPQcgPrhUuLFyxs_0J--ynpEkdtw4bRQ3sbXFXBARXcFDX79oCsJZcjw1qqyYBdPgnDizAAaiDePjEdA-GiQ39k2o0A=w350-no?authuser=0',
+            explain:'絵を描きにフランスへ行った時の記録'
+          },
+          {
+            url: 'blog/20040621.htm',
+            text: '2004-06-21 北海道ツーリング',
+            img_url:'https://lh3.googleusercontent.com/uIt4OgUqRvK8AJWli5eRIvi5PO4UEhqvywXjxJtBkv99mKcBWiYVgq_T6TGfGjS_k3koBMWMqej0Dgf5d2tM_zZBuR-6n9ijPbc5hIG24vZd07bS5ZtjeANDeyq-5aoqil_RJIGw6Wr6o8JaqYL9deQfb5KTZ68aQ9S3Oh2u_V5zgrQZofjNkgFoO8bsMH37LMxFvHvVYEGqzMwFXQrDcZ2fa8oniBArzj_bg7-xzA7nKiUM_2zCBN9ffAcNL2vJm1BCYfomVF1VbDZKfiOPGk9T9DUvkkS-gvWSCuRHel7sR40xOhwCfE9LXyEHm5KEDQfhQNs-s8ahQVbCiEvNq0VHfS1kKDBSxfQgNeffG2QNCbso0tCFwdwiWVain0oJMQ0yLeYztKtc5WyuZwDdQjzDd3Td6SUxEWy1Y3HvgqZAnoCQfcwLQdjatX7vz3MxTeR9th5I6YfCc94uGK-guWF9MdDvkzG1lz-f66sOHCkpWOvPi40_ZOG_IDceWmHtJfayMVGBVr_TxBfjehbc0-TPJk2Quh8oEVC-OA2JmXp4gqps3bYU6NCbZBwR4Aka8LGzsAU-Dj8ecQtmoVws5SxuNF0CNWgP2G-TBhl0TRru0_7cZ6ynmlCEDP2Cj2IBGUJOwAt_qABQyEWGPlRoydJywLPVnGxfbAE_Nad3d_V8V3llBXgRvTTKbvF98ldNu7gbHmn376DnR2AM0o-BrwwWaJUZknLi5V-UWa4mdLFmLqqnvjDnadWaitHjdq4bMT6WF9665OopZRon8gE=w350-no?authuser=0',
+            explain:'初めて北海道を訪れた時、夜に宿で書いておいた旅の記録です。妻との出会いも書いてあります。'
+          },
+          {
+            url: 'blog/20060609.htm',
+            text: '2006-06-09 アメリカツーリング 1回目',
+            img_url:'https://lh3.googleusercontent.com/ofQ-cKXuMik6kG87bzfAAy_9I5lHdEmOl_g5eSdp5qJaf6PBnTA68lZyJ7foSSEuHqXjErxy-EnCMKyRGt09Vrd4cXDq1_R4fqsFjJ3rpY8jjCD-q2C80SHRM9APVa-PWOIV7eLU8v2A06mwvb9ABE0fv4k21eldOOToUuV5swomQ-MKuXQ-pG_qVOanWYxWHQgRXRUtLoU1LGbXJrqYZT8zrMk2w-bOWOUl_pc0dAm5cy7vNiPV4syR7txklFIkKCkDMjcgaiZkirrM3jOFXJf85w0ilgnti24rSnABerE8uS_wh8s3Y3PYiZI8gNnBMu-KaAM3DqNupKK1HFQ8QCbv93kmgV9FSGSBPt65qpNVz8dvvBwyPhvxLD9RWBESkVbRy1vfhSl6ehGetoGl0IcegMJnxRHICJuiEUwHqUKCegJbghm1ik_m6XuXXMx3h5cQQ9jJxSYEbD1Tdso9PV5QUmXxP9tGYGk9O10afvrMNywzru2kmXtuQ0b44nY4gMSEHE-rc9iTABx7_Hr1p3JHO8PfhHhfLdR9yyRvQmy9F3NY2qVs7dXEZ5CXBNdbY8GeZiBwsppt_gi6ZIACVScSSv6vfOtvwf3mMPFT7srktSYiAxxi7ypfs08R2OCmFItZIgBLAu1vUnyx1bgpHWcRNx_ni3wwRmKb9Woc9EsiGrkzMAFKrerliuNzAbuiu185NPlbffzwr3IGSFKmCBBJ5Q=w350-no?authuser=0',
+            explain:'ハネムーンとして行ったアメリカツーリングの記録'
+          },
+          {
+            url:'blog/20080608.htm',
+            text:'2008-06-08 アメリカツーリング 2回目',
+            img_url:'https://lh3.googleusercontent.com/umUy-EjrOXo9Fhv_Ef3ZXJ3UmVmYQbvg6X3gb3M_oOoLzTIHptN3ju6JKiEsQL5guvDiv1IFN0W_oqkyp0WrKJMKL-D-ZmfmbXjpiX3FRzKowl2ekbJK-T-vBY_U6Q8ZudxvSZ-SnCnNvVI-_YQo6BGcNKcvEc9rY93xtN0COln1XqM1_aai3oUKAVoxrwizGwr8YP4CIS3nSvnfCSqkb0JTaqoWpaWQ-DlM7Kxp7zZoZkY3YSY083g-V8vylRbKbBfPMbxJonNGQkEA2P56w5Sh7XXlo5hJnHSKyqRqzXIsO5b41I8ixUw_0agWFBuVBDy57oE-uyem9ol1GKHsvXPkDLoWCUCwhXnrib9lHyiJVy5q--1aEXLdRsL-PRugaWdG6GV3CYSkKuXXdqwFOj_rvdM9TsBssw52lyscrp8RSwaLD6utK9h0OLfMdBIINj1Yy9kD0IEGbeqOSswN7NX9h2rC7g_1gy1HHEQcBKVA9DGrRLGf54bBnE3dllNDDQgYloy-thaZpX1UK4yBWiw31Ril5RcYgvmeVzgtCAAias-Ljlup1P9SSCck9X9soyOMoCgUGBpcW_qZD97TorEuDTI3GIM1Z6Ysua7N1xxqGsV0ZLNchXo6J3m116LSozX0eXZZkaLR2Rf_2Znnc-DyKQYUX0Q1advw2yWBRaUNPieGaCsUcEZfCJqPic7iPaKX7M1hr8Txo2A21bDTCn01fCS23VVUXFp7hpFFx-I8bPgsAbH9t-OvtL4E37rFsDKFp1a6v01AEXMDeEU=w350-no?authuser=0',
+            explain:'気持ちを残してきたアメリカ。そのためリトライツーリング'
+          },
+          {
+            url:'blog/20100916_0500.htm',
+            text:'2010-09-16 スイスツーリング',
+            img_url:'https://lh3.googleusercontent.com/gqOxgNGfEEIP24VXRILZoDnf3nOywbbbxcZ--ruv1tlLKIktXHL0DOfosB4SauLzDE6LosrjQ6BOCWKj3e_zP46cUjmjX1hWY1nVdfnLvIaJv6U5ZE0eIwR9VqAC0Qjxhahw4SY8RpPtD7j31iaEQvkYGTMjWAkdV3Oc6NcI7GbY66GNSUViTkUIxgLWJIeJX7nzV3ULAjFw5ZtVrOHQ_24SJ7IAfAwZGVFmTc-nhQJJLCsybhQfuvVU2B0xEAuIq7oNw0n5R48vJRgQCbEZbQIHR73c1CqebyMmCOu5eEmOBWt0CZjEmNM6IwULsXuos9A4R3ccDou07R7cN3UIeBHvPlES7Z9h8dhHszJ-aHwq41wm4WcyTIZtyVzhopDm3NKZH5JNrW2DhQaxQx_Uzt7Uj6883T3RCiivHFRRNqFy4vw5TSeEaoRwifj6P9z4KsXSVssZp_3zzx_c3iUmxEWkqCLmnPfsIXGlAarc__jpJ8tYrobcat_zOdbL9ECgig3FRKl37ZY9_GR_sYcIRpZ5JRSGdbI_x2g1mIXW0VuVPn-RckAA8jdhIhLddBGR1iCKWsnNnSvujEEl1UV6nNzQ6rSZayTKNbo_aXl0USb64BzuRDN-Cuf3RWKWNRE7D1uAzvcpx7CNyE2U3rp_u1gSpEJvOFb5YE-yfvHTYVzhCvCHqQOG9Z1NukrQcbNBF_186_F_1hijT34tTIVuuOXeJidVCY7BD_qBD0Y7T3M6KPqsytE3E0pOap3SsmNl1MatlE8tvqcJ5qnDCsU=w350-no?authuser=0',
+            explain:'スイスをバイクで走ってみた記録'
+          },
+          {
+            url:'blog/20161006.htm',
+            text:'2016-10-06 ニュージーランドツーリング',
+            img_url:'https://lh3.googleusercontent.com/WDNf68MrMo0Qr4WftMatueeSCcU5N4AK5PfqzGRSehdGbQ3p_1MzrKIJUZj8YlSnAj0J6mAC7GaTP6vqPkhhhT3WvE9eSfVIpx77Clqk75Yj4Bh1bdifxvqsLICV-Bk_5STTVxm0HQn-W-KMdFm3gboPt7t3AqKpw1l5zCMtZJ2EqNvY7kUxL95h5OMAAyfsEBBmARNhZS_Ryitov2qieMAXw0OjVB0Wj6rIDljIaCH8BwVwZjqxhir0un3TmJgpCFzemtAQNjMjpRHGKyqtcGgo8x-vN1cti9VtvowTmsmNEXImoR0PxKYlMb5r-syMpGh8gYageN4AgIPVlj0z1cduL4vOTRlGSxfsEVZJUY0FaM-YCR3NJJhVM1DzjcGQ9oXRjYjuHNgIXLaMVyYw4NlNMloLxywrryYPGB0wGkdgbiUcli7y5BekEN8qvAN-dF1OyjrAAiQ_-O2RmnOdUc0XBl9rGxyYk1qe26R5-lzIaDrHyZnZUCmfg-OiO5bEgvhVvXJxeRwnfirZ3yrhRQ_PGy1uCi2SDiA9Himu2wB8RTZ_r8S94G1W5Zdj8nwo7sPXEzhM87Z23w89A8rVBlQ_1LuNmHqT5mRBKjTesQZ2Kn9vmbtEfiBnI_4oR1riN4lcbm7cHmg8w-fwiE_58UqW5Hyu9-uEPCiVQ76_nleJ9SIR8lxe6D0iX2oz6OfT3eEzE49DiR0r66mlgbYh_EZuzmZ5a8fPX6TtTGIDAV0McRiSSG3tf-ZpRNR7css6e5ddjMaOT6FW_UnYoa8=w350-no?authuser=0',
+            explain:'子供を連れて宿を押さえない旅行をしてきました'
+
+          }
+        ]
+      });
+    }
+  })
+
+
+
+  
+
+
+
+
+
+
+
+  var value = new Vue({
     el: '#app-5',
     data: function() {
       return({
@@ -122,6 +179,26 @@ var app3 = new Vue({
       });
     }
   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   var value = new Vue({
