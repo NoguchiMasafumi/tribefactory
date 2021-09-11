@@ -86,6 +86,12 @@ var app3 = new Vue({
             text:'Digital Rain',
             img_url:'https://tribefactory.netlify.app/img/digital_rain_yuanchuan.png',
             explain:'https://codepen.io/yuanchuan/pen/YoqWeR をカスタムさせていただきました！'
+          },
+          {
+            url:'https://play-movie-with-subtitles.netlify.app/',
+              text:'Play Movie with Subtitles',
+              img_url:'https://tribefactory.netlify.app/img/play_movie_with_subtitles.png',
+              explain:'インストール等せずに手持ちの動画ファイルと字幕ファイルを合成して再生できるページ'
           }
         ]
       });
