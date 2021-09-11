@@ -92,6 +92,12 @@ var app3 = new Vue({
               text:'Play Movie with Subtitles',
               img_url:'https://tribefactory.netlify.app/img/play_movie_with_subtitles.png',
               explain:'インストール等せずに手持ちの動画ファイルと字幕ファイルを合成して再生できるページ'
+          },
+          {
+              url:'https://2d-code-generator.netlify.app/',
+              text:'2D Code Generator',
+              img_url:'https://tribefactory.netlify.app/img/2d_code_generator.png',
+              explain:'2Dコードを生成するページです'
           }
         ]
       });
