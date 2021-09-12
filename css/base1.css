@@ -18,7 +18,7 @@
 	.resp_mar_r15{margin-right:0px;}
 	.photo_size{width:175px;height:117px;}
 	#app-blog{
-		border-width:1px;
+		border-top-width:1px;
 		border-color:#E5E5E5;
 		border-top-style:solid;
 	}
