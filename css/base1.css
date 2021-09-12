@@ -1,23 +1,21 @@
 @media screen and (min-width:481px){
-.pag_w{width:90%;}
-.resp_lef{float:left;width:48%;}
-.resp_rig{float:left;width:48%;}
-.resp_cen{width:60%;}
+	.pag_w{width:90%;}
+	.resp_lef{float:left;width:48%;}
+	.resp_rig{float:left;width:48%;}
+	.resp_cen{width:60%;}
 
 	.resp_mar_r15{margin-right:15px;}
 	.photo_size{width:175px;height:117px;}
   
-  .achievements_img{float:left;width:28%;}
-  .achievements_img img{width:100%;}
-
-  .achievements_explain{float:right;width:65%;text-decoration: none;color:#000000;}
+	  .achievements_img{float:left;width:28%;}
+	  .achievements_explain{float:right;width:65%;text-decoration: none;color:#000000;}
 
 }
 
 @media screen and (max-width:480px){
-.pag_w{width:100%;}
-.resp_lef{float:none;width:100%;}
-.resp_mar_r15{margin-right:0px;}
+	.pag_w{width:100%;}
+	.resp_lef{float:none;width:100%;}
+	.resp_mar_r15{margin-right:0px;}
 	.photo_size{width:175px;height:117px;}
 }
 
@@ -598,6 +596,7 @@ margin-bottom:50px;}
 .achive_item:hover{box-shadow: 0px 8px 8px -2px #999999;-moz-box-shadow: 0px 8px 8px -2px #999999;-webkit-box-shadow: 0px 8px 8px -2px #999999;}
 .photo_size:hover{box-shadow: 0px 2px 8px -2px #999999;-moz-box-shadow: 0px 2px 8px -2px #999999;-webkit-box-shadow: 0px 2px 8px -2px #999999;}
 
+.achievements_img img{width:100%;}
 
 
 
