@@ -41,14 +41,7 @@
 
 
 
-          <div id="app-5" class="pad_a15 mar_b30">
-            アカウント利用サイト
-            <ul>
-              <li v-for="item in items" class="lhg_200p">
-                <a v-bind:href="item.url" target="_blank">{{ item.text }}</a>
-              </li>
-            </ul>
-          </div>
+
 
 
 
@@ -77,6 +70,27 @@
 
 
 
+
+
+
+
+
+        </div>
+
+        <div class="resp_rig">
+
+
+            
+          <div id="app-5" class="pad_a15 mar_b30">
+            アカウント利用サイト
+            <ul>
+              <li v-for="item in items" class="lhg_200p">
+                <a v-bind:href="item.url" target="_blank">{{ item.text }}</a>
+              </li>
+            </ul>
+          </div>
+
+            
           <div class="pad_a15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
             メモ・テストエリア
               <div id="app" class="mar_t15">
@@ -95,19 +109,10 @@
               <div id="app-3">
                   <span v-if="seen">Now you see me</span>
                 </div>
-          </div>
+          </div>            
+            
 
-
-
-
-        </div>
-
-        <div class="resp_rig">
-
-
-
-
-          <div id="app-blog" class="pad_a15 mar_b30">
+          <div id="app-blog" class="pad_a15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
             ブログ風記録
             <div v-for="item in items" class="lhg_200p over_flow_no bg_c00 shd2_9 mar_b15 achive_item">
                 <a v-bind:href="item.url" target="_blank" class="disp_block over_flow_no">
