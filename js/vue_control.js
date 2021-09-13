@@ -97,7 +97,7 @@ var app3 = new Vue({
               url:'https://2d-code-generator.netlify.app/',
               text:'2D Code Generator',
               img_url:'https://tribefactory.netlify.app/img/2d_code_generator.png',
-              explain:'2Dコードを生成するページです'
+              explain:'qrcode.js使用サンプル。2Dコードを生成するページです'
           }
         ]
       });
