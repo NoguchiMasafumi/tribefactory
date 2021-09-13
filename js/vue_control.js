@@ -1201,7 +1201,9 @@ var app3 = new Vue({
     }
   })
 
-
+document.getElementById("head1").addEventListener("click", function() {
+  window.location.href='https://tribefactory.netlify.app/';
+});
 
 
 
