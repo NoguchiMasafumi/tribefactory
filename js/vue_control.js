@@ -52,7 +52,7 @@ var app3 = new Vue({
             explain:'ローカルにある音楽ファイルを連続して再生できるページ'
           },
           {
-            url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/clock/analogue.htm',
+            url: 'https://simple-analogue-clock.netlify.app/',
             text: 'clock',
             img_url:'https://tribefactory.netlify.app/img/analogue.png',
             explain:'シンプルなアナログ時計'
