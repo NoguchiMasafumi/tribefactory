@@ -91,7 +91,7 @@ var app3 = new Vue({
             url:'https://play-movie-with-subtitles.netlify.app/',
               text:'Play Movie with Subtitles',
               img_url:'https://tribefactory.netlify.app/img/play_movie_with_subtitles.png',
-              explain:'インストール等せずに手持ちの動画ファイルと字幕ファイルを合成して再生できるページ。画面最下部Select Filesを押しsrtファイルと動画ファイルを選択してください。'
+              explain:'インストール等せずに手持ちの動画ファイルと字幕ファイルを合成して再生できるページ。<br />画面最下部Select Filesを押しsrtファイルと動画ファイルを選択してください。'
           },
           {
               url:'https://2d-code-generator.netlify.app/',
