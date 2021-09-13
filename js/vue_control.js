@@ -98,6 +98,12 @@ var app3 = new Vue({
               text:'2D Code Generator',
               img_url:'https://tribefactory.netlify.app/img/2d_code_generator.png',
               explain:'qrcode.js使用サンプル。2Dコードを生成するページです'
+          },
+          {
+              url:'https://digital-simple-stopwatch.netlify.app/',
+              text:'Stopwatch',
+              img_url:'https://tribefactory.netlify.app/img/digital-simple-stopwatch.png',
+              explain:'シンプルなストップウォッチページ'
           }
         ]
       });
