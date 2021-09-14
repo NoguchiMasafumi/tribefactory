@@ -46,7 +46,7 @@ var app3 = new Vue({
       return({
         items:[
           {
-            url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/play_audio_files/play_audio_files.htm',
+            url: 'https://play-audio-files.netlify.app/',
             text: 'play_audio',
             img_url:'https://tribefactory.netlify.app/img/play_audio_files.png',
             explain:'ローカルにある音楽ファイルを連続して再生できるページ'
@@ -58,7 +58,7 @@ var app3 = new Vue({
             explain:'シンプルなアナログ時計'
           },
           {
-            url: 'https://gtlgqvxdkbh2dm3axzu5fq-on.drv.tw/drum_masters/drum_masters.0.0301.htm',
+            url: 'https://drum-masters.netlify.app/',
             text: 'drum_masters',
             img_url:'https://tribefactory.netlify.app/img/drum_masters.png',
             explain:'手持ちの楽曲で太鼓の達人風に遊べるように。自動で擬似作譜します。'
@@ -100,7 +100,7 @@ var app3 = new Vue({
               explain:'qrcode.js使用サンプル。2Dコードを生成するページです'
           },
           {
-              url:'https://digital-simple-stopwatch.netlify.app/',
+              url:'https://simple-digital-stopwatch.netlify.app/',
               text:'Stopwatch',
               img_url:'https://tribefactory.netlify.app/img/digital-simple-stopwatch.png',
               explain:'シンプルなストップウォッチページ'
