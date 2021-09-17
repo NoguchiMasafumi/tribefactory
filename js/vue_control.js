@@ -1226,6 +1226,11 @@ document.getElementById("svg_google_photo").addEventListener("click", function()
   window.open('https://photos.app.goo.gl/jVQj9GeHxjEvC6fV9', '_blank');
 });
 
+document.getElementById("reload").addEventListener("click", function() {
+  window.location.reload();
+});
+
+
 
 
 

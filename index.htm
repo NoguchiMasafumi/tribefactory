@@ -122,7 +122,12 @@
 
 
           <div id="app-7" class="pad_t15 pad_b15 pad_l15 mar_b30 bor_t_w1 bor_c01 bor_t_s_sld">
-            Google Photo Album Pickup<br/>
+
+            <div class="over_flow_no">
+                <div class="flt_lef">Google Photo Album Pickup</div>
+                <div class="flt_rig tex_rig"><img src="img/reload.png" id="reload"></div>
+            </div>
+
 
             <div v-for="colors in shuffle_colors" class="flt_lef mar_r1 mar_b1 over_flow_no photo_size">
               <a :href="colors.url.replace('=w175','=w1200')" target="_blank"><img :src="colors.url"></a>
