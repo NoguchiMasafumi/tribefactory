@@ -1206,4 +1206,26 @@ document.getElementById("head1").addEventListener("click", function() {
 });
 
 
+document.getElementById("svg_youtube").addEventListener("click", function() {
+  window.open('https://www.youtube.com/c/tribefactory/videos', '_blank');
+});
+
+document.getElementById("svg_qiita").addEventListener("click", function() {
+  window.open('https://qiita.com/NoguchiMasafumi', '_blank');
+});
+
+document.getElementById("svg_netlify").addEventListener("click", function() {
+  window.open('https://tribefactory.netlify.app/', '_blank');
+});
+
+document.getElementById("svg_github").addEventListener("click", function() {
+  window.open('https://github.com/NoguchiMasafumi', '_blank');
+});
+
+document.getElementById("svg_google_photo").addEventListener("click", function() {
+  window.open('https://photos.app.goo.gl/jVQj9GeHxjEvC6fV9', '_blank');
+});
+
+
+
 
