@@ -1227,7 +1227,7 @@ document.getElementById("svg_google_photo").addEventListener("click", function()
 });
 
 document.getElementById("reload").addEventListener("click", function() {
-  window.location.reload();
+  window.location.href='https://tribefactory.netlify.app#app-7';
 });
 
 
