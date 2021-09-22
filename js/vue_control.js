@@ -104,6 +104,12 @@ var app3 = new Vue({
               text:'Stopwatch',
               img_url:'https://tribefactory.netlify.app/img/digital-simple-stopwatch.png',
               explain:'シンプルなストップウォッチページ'
+          },
+          {
+            url:'https://show-flame.netlify.app/',
+            text:'Flame',
+            img_url:'https://tribefactory.netlify.app/img/flame.png',
+            explain:'cssアニメーションで炎を表現している　\nhttps://codepen.io/osublake/pen/pqNXoq　が良すぎたのでコピー保存です。'
           }
         ]
       });
