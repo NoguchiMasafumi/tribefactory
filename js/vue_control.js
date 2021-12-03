@@ -67,7 +67,7 @@ var app3 = new Vue({
               url:'https://quiz-hikari-oh.netlify.app/',
               text:'Quiz Hikari Oh',
               img_url:'https://tribefactory.netlify.app/img/quiz_hikari_oh.png',
-              explain:'娘のために作成した低学年むけクイズページ'
+              explain:'娘のために作成した低学年向けクイズページ'
           },
           {
             url:'https://precure-encyclopedia.netlify.app/',
