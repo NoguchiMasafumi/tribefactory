@@ -110,6 +110,12 @@ var app3 = new Vue({
             text:'Flame',
             img_url:'https://tribefactory.netlify.app/img/flame.png',
             explain:'cssアニメーションで炎を表現している　\nhttps://codepen.io/osublake/pen/pqNXoq　が良すぎたのでコピー保存です。'
+          },
+          {
+            url:'https://routine-chime.netlify.app/',
+            text:'Flame',
+            img_url:'https://tribefactory.netlify.app/img/routine-chime.png',
+            explain:'家庭での学習などで定時の開始、終了の声掛けが地味に大変だったため作成しました。'
           }
         ]
       });
