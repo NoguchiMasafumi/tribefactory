@@ -113,7 +113,7 @@ var app3 = new Vue({
           },
           {
             url:'https://routine-chime.netlify.app/',
-            text:'Flame',
+            text:'Chime',
             img_url:'https://tribefactory.netlify.app/img/routine-chime.png',
             explain:'家庭での学習などで定時の開始、終了の声掛けが地味に大変だったため作成しました。'
           }
