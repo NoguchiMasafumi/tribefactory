@@ -1,30 +1,31 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://tribefactory.netlify.app/</loc>
-<priority>1.0</priority>
+<lastmod>2022-01-30</lastmod>
 </url>
 <url>
 <loc>https://tribefactory.netlify.app/blog/19990314.htm</loc>
-<priority>2.0</priority>
+<lastmod>2022-01-30</lastmod>
 </url>
 <url>
 <loc>https://tribefactory.netlify.app/blog/20040621.htm</loc>
-<priority>3.0</priority>
+<lastmod>2022-01-30</lastmod>
 </url>
 <url>
 <loc>https://tribefactory.netlify.app/blog/20060609.htm</loc>
-<priority>4.0</priority>
+<lastmod>2022-01-30</lastmod>
 </url>
 <url>
 <loc>https://tribefactory.netlify.app/blog/20080608.htm</loc>
-<priority>5.0</priority>
+<lastmod>2022-01-30</lastmod>
 </url>
 <url>
 <loc>https://tribefactory.netlify.app/blog/20100916_500.htm</loc>
-<priority>6.0</priority>
+<lastmod>2022-01-30</lastmod>
 </url>
 <url>
 <loc>https://tribefactory.netlify.app/blog/20161006.htm</loc>
-<priority>7.0</priority>
+<lastmod>2022-01-30</lastmod>
 </url>
 </urlset>
