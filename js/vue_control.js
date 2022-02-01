@@ -119,7 +119,7 @@ var app3 = new Vue({
           },
           {
             url:'https://typing-lesson.netlify.app/',
-            text:'Chime',
+            text:'Typing Lesson',
             img_url:'https://tribefactory.netlify.app/img/Type.png',
             explain:'馴染みのある文章から自動で問題生成されたらと楽しいだろうと作成したタイピング練習ページです。'
           }
