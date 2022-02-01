@@ -116,6 +116,12 @@ var app3 = new Vue({
             text:'Chime',
             img_url:'https://tribefactory.netlify.app/img/routine-chime.png',
             explain:'家庭での学習などで定時の開始、終了の声掛けが地味に大変だったため作成しました。'
+          },
+          {
+            url:'https://typing-lesson.netlify.app/',
+            text:'Chime',
+            img_url:'https://tribefactory.netlify.app/img/Type.png',
+            explain:'馴染みのある文章から自動で問題生成されたらと楽しいだろうと作成したタイピング練習ページです。'
           }
         ]
       });
