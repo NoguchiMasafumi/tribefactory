@@ -122,6 +122,12 @@ var app3 = new Vue({
             text:'Typing Lesson',
             img_url:'https://tribefactory.netlify.app/img/Type.png',
             explain:'馴染みのある文章から自動で問題生成されたらと楽しいだろうと作成したタイピング練習ページです。'
+          },
+          {
+            url:'https://three-snowboard.netlify.app/examples/misc_controls_pointerlock.html',
+            text:'Three Snowboard',
+            img_url:'https://tribefactory.netlify.app/img/three-snowboard.png',
+            explain:'作成中　ブラウザのみでスノーボード風映像。'
           }
         ]
       });
