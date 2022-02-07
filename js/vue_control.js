@@ -128,6 +128,12 @@ var app3 = new Vue({
             text:'Three Snowboard',
             img_url:'https://tribefactory.netlify.app/img/three-snowboard.png',
             explain:'作成中　ブラウザのみでスノーボード風映像。'
+          },
+          {
+            url:'https://fig-send.netlify.app/',
+            text:'figure send',
+            img_url:'https://tribefactory.netlify.app/img/fig-send.png',
+            explain:'作成中'
           }
         ]
       });
