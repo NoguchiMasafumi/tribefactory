@@ -58,10 +58,10 @@ var app3 = new Vue({
             explain:'シンプルなアナログ時計'
           },
           {
-            url: 'https://drum-masters.netlify.app/',
+            url: 'https://gtlgqvxdkbh2dm3axzu5fq.on.drv.tw/drum_masters/drum_masters.0.0301.htm',
             text: 'drum_masters',
             img_url:'https://tribefactory.netlify.app/img/drum_masters.png',
-            explain:'手持ちの楽曲で太鼓の達人風に遊べるように。自動で擬似作譜します。'
+            explain:'手持ちの楽曲で太鼓の達人風に遊べるように。自動で擬似作譜します。https://drum-masters.netlify.app/は動かない。要調査'
           },
           {
               url:'https://quiz-hikari-oh.netlify.app/',
@@ -79,7 +79,7 @@ var app3 = new Vue({
               url:'https://o-hitori-sama.netlify.app/',
               text:'o hitori sama test',
               img_url:'https://tribefactory.netlify.app/img/o_hitori_sama.png',
-              explain:'自分がどのくらい一人で行動できるかを診断できるページ'
+              explain:'自分がどのくらい一人で行動できるかを診断できるページ。sqlから移行中。'
           },
           {
             url:'https://digital-rain-yuanchuan.netlify.app/',
