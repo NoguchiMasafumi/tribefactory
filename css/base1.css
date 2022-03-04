@@ -613,5 +613,5 @@ margin-bottom:50px;}
 .vue_br{white-space:pre-wrap; word-wrap:break-word;}
 #head1{padding-left:8px;cursor:pointer;}
 
-
+[v-cloak]{display:none;}
 
