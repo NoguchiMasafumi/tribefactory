@@ -134,6 +134,12 @@ var app3 = new Vue({
             text:'figure send',
             img_url:'https://tribefactory.netlify.app/img/fig-send.png',
             explain:'作成中'
+          },
+          {
+            url:'https://forparents.netlify.app/',
+            text:'for parents',
+            img_url:'https://tribefactory.netlify.app/img/forparents.png',
+            explain:'漢字の問題をの出題する際大変だったので作成。Cookieではなく古の復活の呪文方式に変更したい'
           }
         ]
       });
