@@ -136,7 +136,7 @@ var app3 = new Vue({
             explain:'作成中'
           },
           {
-            url:'https://forparents.netlify.app/index6.htm?school=Elementary&year=3&season=&weak=',
+            url:'https://forparents.netlify.app/index6.htm?school=Elementary&year=3&semester=&weak=1',
             text:'for parents',
             img_url:'https://tribefactory.netlify.app/img/forparents.png',
             explain:'漢字問題を出題する際大変だったので作成。中学生まですべて入っている。現在設定は小3。Cookieではなく古の復活の呪文方式に変更したい。2022要項準拠'
