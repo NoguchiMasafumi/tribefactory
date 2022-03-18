@@ -11,7 +11,7 @@
 	  .achievements_explain{float:right;width:65%;text-decoration: none;color:#000000;}
 
 }
-
+/*** for smart phone ***/
 @media screen and (max-width:480px){
 	.pag_w{width:100%;}
 	.resp_lef{float:none;width:100%;}
