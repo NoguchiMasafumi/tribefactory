@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
-    data: {
+    data: {function() {
+      return({
         message: [
             {
                 cont1:'Hello Vue!'
@@ -9,6 +10,8 @@ var app = new Vue({
                 cont1: 'monetree'
             }
         ]
+      })
+    }
     }
 })
 
