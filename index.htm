@@ -83,8 +83,9 @@
             メモ・テストエリア
               <div id="app" class="mar_t15">
                 参考　https://jp.vuejs.org/v2/guide/
-
-                {{ message }}
+                    <div v-for="cont_out in message">
+                        {{ cont_out.cont1 }}
+                    </div>
               </div>
       
               <div id="app-2">
