@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
-    data:        message: [
+    data: {
+        message: [
             {
                 cont1:'to do'
             },
@@ -47,7 +48,7 @@ var app = new Vue({
                 cont1:'└─next.js'
             }
         ]
-    
+    }
     
 })
 
