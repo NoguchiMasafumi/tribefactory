@@ -17,7 +17,7 @@ var app = new Vue({
             {cont1:'new skill'},
             {cont1:'└─three.js'},
             {cont1:'└─react.js'},
-            {cont1:'└─next.js'},
+            {cont1:'└─next.js'}
         ]
       })
     }
