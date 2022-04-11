@@ -12,16 +12,16 @@ var app = new Vue({
                 cont1:'categories'
             },
             {
-                cont1:'└─prents'
+                cont1:'└─parents'
             },
             {
-                cont1:'　　└─auto manufacturers'
+                cont1:'│　└─auto manufacturers'
             },
             {
-                cont1:'　　└─zodiac sign stars'
+                cont1:'│　└─zodiac sign stars'
             },
             {
-                cont1:'　　└─oracle examine'
+                cont1:'│　└─oracle examine'
             },
             {
                 cont1:'└─monetree'
