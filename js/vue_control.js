@@ -3,12 +3,21 @@ var app = new Vue({
     data: {function() {
       return({
         message: [
-            {
-                cont1:'Hello Vue!'
-            },
-            {
-                cont1: 'monetree'
-            }
+            {cont1:'to do'},
+            {cont1:'└─tribe factory site map'},
+            {cont1:'categories'},
+            {cont1:'└─prents'},
+            {cont1:'　　└─auto manufacturers'},
+            {cont1:'　　└─zodiac sign stars'},
+            {cont1:'　　└─oracle examine'},
+            {cont1:'└─monetree'},
+            {cont1:'└─along journey'},
+            {cont1:'└─official services'},
+            {cont1:'└─e-style page'},
+            {cont1:'new skill'},
+            {cont1:'└─three.js'},
+            {cont1:'└─react.js'},
+            {cont1:'└─next.js'},
         ]
       })
     }
