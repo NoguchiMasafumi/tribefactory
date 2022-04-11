@@ -1,8 +1,14 @@
 var app = new Vue({
     el: '#app',
     data: {
-        [message: 'Hello Vue!'],
-        [message: 'monetree']
+        message: [
+            {
+                cont1:'Hello Vue!'
+            },
+            {
+                cont1: 'monetree'
+            }
+        ]
     }
 })
 
