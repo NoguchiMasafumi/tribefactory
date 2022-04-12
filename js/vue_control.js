@@ -21,6 +21,9 @@ var app = new Vue({
                 cont1:'│　└─zodiac sign stars'
             },
             {
+                cont1:'│　└─constellations stars'
+            },
+            {
                 cont1:'│　└─oracle examine'
             },
             {
