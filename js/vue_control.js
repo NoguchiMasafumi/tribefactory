@@ -36,6 +36,9 @@ var app = new Vue({
                 cont1:'└─official services'
             },
             {
+                cont1:'└─Star Spirituals'
+            },
+            {
                 cont1:'└─e-style page'
             },
             {
