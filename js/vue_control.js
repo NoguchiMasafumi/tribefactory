@@ -39,7 +39,7 @@ var app = new Vue({
                 cont1:'└─star spirituals'
             },
             {
-                cont1:'└─e-style page'
+                cont1:'└─emergency style page'
             },
             {
                 cont1:'new skill'
