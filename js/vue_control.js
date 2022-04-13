@@ -18,10 +18,10 @@ var app = new Vue({
                 cont1:'│　└─auto manufacturers'
             },
             {
-                cont1:'│　└─zodiac sign stars'
+                cont1:'│　└─zodiac sign stars 12'
             },
             {
-                cont1:'│　└─constellations stars'
+                cont1:'│　└─constellations stars 88'
             },
             {
                 cont1:'│　└─oracle examine'
