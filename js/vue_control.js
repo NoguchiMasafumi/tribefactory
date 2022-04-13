@@ -190,6 +190,12 @@ var app3 = new Vue({
             text:'for parents',
             img_url:'https://tribefactory.netlify.app/img/forparents.png',
             explain:'漢字問題を出題する際大変だったので作成。中学生まですべて入っている。現在設定は小3。Cookieではなく古の復活の呪文方式に変更したい。2022要項準拠'
+          },
+          {
+            url:'https://forparents.netlify.app/index.htm?focus=kanji&school=Elementary&year=4&semester=1&view_mode=0',
+            text:'for parents 4年',
+            img_url:'https://tribefactory.netlify.app/img/forparents.png',
+            explain:'現在設定は小4。2022要項準拠'
           }
         ]
       });
