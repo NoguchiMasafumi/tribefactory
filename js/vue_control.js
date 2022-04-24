@@ -44,6 +44,11 @@ var app = new Vue({
             {
                 cont1:'└─emergency style page'
             },
+
+{
+                cont1:'└─Hira 2letter generator'
+            },
+
             {
                 cont1:'new skill'
             },
