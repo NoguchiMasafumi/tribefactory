@@ -26,6 +26,9 @@ var app = new Vue({
             {
                 cont1:'│　└─oracle examine'
             },
+　　　　　　　　{
+                cont1:'│　└─country'
+            },
             {
                 cont1:'└─monetree'
             },
