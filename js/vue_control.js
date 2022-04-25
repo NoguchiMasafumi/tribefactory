@@ -44,19 +44,16 @@ var app = new Vue({
             {
                 cont1:'└─emergency style page'
             },
-            ,
             {
                 cont1:'└──https://codepen.io/t_afif/pen/bGooZmq'
             },
-            
-            
-            
-
-{
+            {
+                cont1:'└──https://codepen.io/N3los/pen/DpGLwP'
+            },
+            {
                 cont1:'└─Hira 2letter generator'
             },
-
-{
+            {
                 cont1:'└─slot machine'
             },
 
