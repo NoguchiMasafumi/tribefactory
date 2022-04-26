@@ -51,6 +51,9 @@ var app = new Vue({
                 cont1:'└──https://codepen.io/N3los/pen/DpGLwP'
             },
             {
+                cont1:'└──https://marie-web.design/blog/google-maps-api/'
+            },
+            {
                 cont1:'└─Hira 2letter generator'
             },
             {
