@@ -66,6 +66,9 @@ var app = new Vue({
                 cont1:'└──ball_simulate'
             },
             {
+                cont1:'└──barter shop'
+            },
+            {
                 cont1:'new skill'
             },
             {
