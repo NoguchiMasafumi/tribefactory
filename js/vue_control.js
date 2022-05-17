@@ -210,6 +210,18 @@ var app=new Vue({
             text:'for parents 4年',
             img_url:'https://tribefactory.netlify.app/img/forparents.png',
             explain:'現在設定は小4。2022要項準拠'
+          },
+          {
+            url:'https://forparents.netlify.app/index.htm?focus=national_flag&view_mode=4',
+            text:'for parents 国旗編',
+            img_url:'https://tribefactory.netlify.app/img/national_flag.png',
+            explain:'世界の国旗一覧'
+          },
+          {
+            url:'https://forparents.netlify.app/index.htm?focus=automobile_manufacturers&view_mode=4',
+            text:'for parents 世界の自動車メーカー',
+            img_url:'https://tribefactory.netlify.app/img/automobile_manufacturers.png',
+            explain:'貪るように車会社を記憶していく娘用。'
           }
         ]
       });
