@@ -182,16 +182,16 @@ var app=new Vue({
             explain:'家庭での学習などで定時の開始、終了の声掛けが地味に大変だったため作成しました。'
           },
           {
-            url:'https://celebration-js.netlify.app/',
-            text:'Celebration',
-            img_url:'https://tribefactory.netlify.app/img/celebration.png',
-            explain:'おめでとう！などの時のクラッカーのイメージjsのストックです本来はhttps://github.com/catdad/canvas-confettiです。'
-          },
-          {
             url:'https://typing-lesson.netlify.app/',
             text:'Typing Lesson',
             img_url:'https://tribefactory.netlify.app/img/Type.png',
             explain:'馴染みのある文章から自動で問題生成されたらと楽しいだろうと作成したタイピング練習ページです。'
+          },
+          {
+            url:'https://celebration-js.netlify.app/',
+            text:'Celebration',
+            img_url:'https://tribefactory.netlify.app/img/celebration.png',
+            explain:'おめでとう！などの時のクラッカーのイメージjsのストックです本来はhttps://github.com/catdad/canvas-confettiです。'
           },
           {
             url:'https://three-snowboard.netlify.app/examples/misc_controls_pointerlock.html',
