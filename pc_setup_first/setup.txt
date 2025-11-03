@@ -1,0 +1,53 @@
+設定済<br />
+　スタートにピン留め<br />
+　　Control Panel<br />
+　Key Board Speed コントロールパネルから<br />
+　中→小アイコン化<br />
+　電源オプション　カバーを閉じたとき<br />
+　登録されている拡張子を表示しない<br />
+<br />
+UNINSTALL済<br />
+└コントロールパネル<br />
+　　copilot<br />
+　　onedrive<br />
+　　teams<br />
+　　KingSoft<br />
+　　Family<br />
+　　Outlook<br />
+　　MS365<br />
+　　クイックアシスト<br />
+<br />
+<br />
+└設定_アプリ_INSTALLされているアプリ<br />
+　└システムコンポーネント<br />
+　　　<input type=checkbox >DEV HOME<br />
+　　　<input type=checkbox >クリックして実行<br />
+<br />
+<br />
+Windowsボタン<br />
+　切り取り領域とスケッチ　削除済<br />
+　NotePad新しいバージョン　削除済<br />
+<br />
+<br />
+要調査<br />
+└<input type=checkbox >設定_アプリ_INSTALLされているアプリ<br />
+　　<input type=checkbox >Microdoft Edge Webview2　とは<br />
+　　<input type=checkbox >PC Manager　とは<br />
+　　<input type=checkbox >キングソフトセキュリティは<br />
+　　└<input type=checkbox >お役立ち情報<br />
+　　<input type=checkbox >Defenderどうするか<br />
+　　<input type=checkbox >ThinkPad<br />
+　　└<input type=checkbox >謎クリック<br />
+　　└<input type=checkbox >スペースキーアイコン<br />
+　　<input type=checkbox >タスクバー検索カスタム方法<br />
+　　<input type=checkbox >Win + Shift + Sとはなにか<br />
+<br />
+外装<br />
+　シールはがし<br />
+<br />
+<br />
+要INSTALL<br />
+　<input type=checkbox >Google日本語入力<br />
+　<input type=checkbox >Chrome<br />
+　<input type=checkbox >Microsoft Defender<br />
+　<input type=checkbox >VS code<br />
