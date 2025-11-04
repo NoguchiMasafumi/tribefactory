@@ -20,7 +20,7 @@ body {
 header, footer {
     width: 100%;
     /* 🎨 ここを #e5e5e5 に変更 */
-    background-color: #e5e5e5;
+    background-color: #f9f9f9;
     color: #333; /* 背景色に合わせて文字色を見やすい色に変更 */
     padding: 15px 0;
     text-align: center;
@@ -82,4 +82,5 @@ footer {
         margin-right: 0;
         margin-bottom: 0;
     }
+
 }
