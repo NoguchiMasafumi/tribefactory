@@ -26,6 +26,45 @@ header, footer {
     text-align: center;
 }
 
+/* ヘッダー内部のコンテナ
+   - header は常に幅100% のまま
+   - .header-inner を最大幅1280pxに制限して中央揃えにする（小画面でも利用可）
+   - 内部要素（ロゴなど）は左寄せにしたいので flex と justify-content: flex-start を使う
+*/
+.header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* ロゴ等を左寄せにする */
+    padding: 0 20px; /* 小画面で多少の左右余白を入れる（任意） */
+    box-sizing: border-box;
+}
+
+/* ロゴ用のユーティリティ（必要に応じて調整） */
+.header-logo {
+    display: block;
+    height: 40px; /* ロゴ高さの一例 */
+    line-height: 1;
+}
+
+/* ヘッダーのテキストを中央に表示したい既存のルールがある場合は
+   .header-inner 内で別要素に分けて配置してください。
+   例: ロゴを左、ナビを右に置きたい場合は .header-nav を追加して
+   margin-left: auto; を与えると右寄せされます。 */
+.header-nav {
+    margin-left: auto;
+}
+
+/* 小画面では header のテキスト中央揃えの既定を維持したい場合は
+   以下のように media query で上書きできます（必要に応じて有効化） */
+/*
+@media screen and (max-width: 1279px) {
+    .header-inner {
+        justify-content: center;
+    }
+}
+*/
 
 .h24 {
     height: 24px;
