@@ -99,19 +99,26 @@ footer {
 
 /* 画面幅が1280px以上になったら2カラム表示 */
 @media screen and (min-width: 1280px) {
+    /* main-content は中央で幅1280px、左右カラムを持つ flex コンテナ */
     .main-content {
         display: flex;
         width: 1280px;
         margin: 0 auto;
         padding: 20px 0;
+        align-items: flex-start;
+        box-sizing: border-box;
     }
 
-    /* 左カラム: 固定幅 360px */
+    /* 左カラム: 初期は固定幅 360px（メニュー） */
     .content-left {
         flex: 0 0 360px;
         order: 1;
         margin-right: 20px; 
         margin-bottom: 0;
+        transition: flex-basis 0.28s ease, width 0.28s ease, padding 0.28s ease;
+        overflow: hidden; /* 折り畳み時に中身がはみ出さないように */
+        position: relative; /* ハンバーガーボタン配置用 */
+        box-sizing: border-box;
     }
 
     /* 右カラム: 固定幅 920px */
@@ -122,4 +129,90 @@ footer {
         margin-bottom: 0;
     }
 
+    /* ハンバーガーボタン（.content-left 内に挿入されます） */
+    .content-left .menu-toggle {
+        position: absolute;
+        top: 12px;
+        right: -36px; /* メニュー外側に出しておく（狭い状態でもクリックできる） */
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    /* ハンバーガーアイコンの線 */
+    .content-left .menu-toggle .icon {
+        display: inline-block;
+        width: 18px;
+        height: 12px;
+        position: relative;
+    }
+    .content-left .menu-toggle .icon::before,
+    .content-left .menu-toggle .icon::after,
+    .content-left .menu-toggle .icon span {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #333;
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+    .content-left .menu-toggle .icon::before { top: 0; }
+    .content-left .menu-toggle .icon span { top: 5px; }
+    .content-left .menu-toggle .icon::after { bottom: 0; }
+
+    /* メニューを「閉じた」状態（ボディに .menu-closed が付与される） */
+    body.menu-closed .main-content .content-left {
+        flex-basis: 60px; /* 折り畳み幅 */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* 折り畳み時はアイコンを回転（×）にするなど */
+    body.menu-closed .content-left .menu-toggle .icon::before {
+        transform: translateY(5px) rotate(45deg);
+    }
+    body.menu-closed .content-left .menu-toggle .icon::after {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+    body.menu-closed .content-left .menu-toggle .icon span {
+        opacity: 0;
+    }
+
+    /* 開いているときはアイコンを通常のハンバーガーに */
+    body:not(.menu-closed) .content-left .menu-toggle .icon::before,
+    body:not(.menu-closed) .content-left .menu-toggle .icon::after,
+    body:not(.menu-closed) .content-left .menu-toggle .icon span {
+        transform: none;
+        opacity: 1;
+    }
+
+    /* メニュー折り畳み時も main コンテンツの幅が変わらないようにする（中央配置を維持）
+       もし折り畳みで幅を広げたい場合は下のルールを調整してください */
+    body.menu-closed .main-content {
+        /* main-content の幅はそのまま 1280px を維持 */
+    }
+
+    /* 小さな修正: 折り畳み時に content-right の実表示領域が確保できるよう
+       .content-right は flex-shrink を許容する（必要に応じて調整） */
+    .content-right {
+        flex-shrink: 1;
+    }
+}
+
+/* モバイル向け: 小画面では従来の 1カラム表示を継続 */
+@media screen and (max-width: 1279px) {
+    /* 折り畳み挙動は無効にしてシンプルに一列表示 */
+    .content-left, .content-right {
+        flex: 1 1 auto;
+        width: auto;
+    }
 }
