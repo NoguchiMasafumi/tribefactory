@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CSS テスト</title>
   <link rel="stylesheet" href="css/tf_base.css">
+
+  <!-- ここから追加: .content-left を画面の最左に揃える -->
+  <style>
+    /* 親コンテナが中央寄せされている場合に、要素の左端をビューポート左端に揃えるトリック */
+    .content-left {
+      margin-left: calc(-50vw + 50%);
+      box-sizing: border-box;
+    }
+
+    /* 小さい画面では干渉しないように元に戻す（必要に応じて閾値は調整してください） */
+    @media (max-width: 600px) {
+      .content-left {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <!-- ここまで追加 -->
 </head>
 <body>
   <header>
