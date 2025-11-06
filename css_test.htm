@@ -1,29 +1,44 @@
-<script src="/js/menu-toggle.js"></script>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS テスト</title>
+  <link rel="stylesheet" href="css/tf_base.css">
+</head>
 <body>
-	<head>
-	        <link rel="stylesheet" href="css/tf_base.css">
-
-	</head>
-
-    <header>
-		<div class="header-inner">
-			<a href="/" class="header-logo"><img src="logo.png" alt="ロゴ"></a>
-			<nav class="header-nav">...ナビ...</nav>
-		</div>
-	</header>
-    <div class="main-content">
-        <main class="content-left">
-        </main>
-        <aside class="content-right">
-        
-		ああああああああああああああ<br />
-		ああああああああああああああ<br />
-		ああああああああああああああ<br />
-		ああああああああああああああ<br />
-		ああああああああああああああ<br />
-        </aside>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="header-logo"><img src="logo.png" alt="ロゴ"></a>
+      <nav class="header-nav">...ナビ...</nav>
     </div>
-    <footer></footer>
+  </header>
 
+  <div class="main-content">
+    <main class="content-left">
+      <!-- サンプルメニュー（必要に応じて編集） -->
+      <nav class="left-menu">
+        <ul>
+          <li><a href="#">メニュー1</a></li>
+          <li><a href="#">メニュー2</a></li>
+          <li><a href="#">メニュー3</a></li>
+        </ul>
+      </nav>
+      <!-- menu-toggle ボタンは JS が自動挿入します -->
+    </main>
+
+    <aside class="content-right">
+      ああああああああああああああ<br />
+      ああああああああああああああ<br />
+      ああああああああああああああ<br />
+      ああああああああああああああ<br />
+      ああああああああああああああ<br />
+    </aside>
+  </div>
+
+  <footer></footer>
+
+  <!-- スクリプトは DOM が存在してから動くよう、閉じタグ直前で読み込み -->
+  <script src="/js/menu-toggle.js"></script>
 </body>
-
+</html>
