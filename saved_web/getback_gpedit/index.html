@@ -12,18 +12,39 @@
 <link rel="preload" href="./index_files/forum-ja.js.ダウンロード" as="script">
 <link rel="preload" href="https://topics.emop.jp/assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="">
 <link rel="preload" href="https://topics.emop.jp/assets/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<meta name="description" content="Windowsでgpedit.mscを実行すると、ローカルグループポリシーエディターが開きます。これはWindowsのMMC（Microsoft Management Console）[...]
+<meta name="theme-color" content="#276BB0">
+<meta name="application-name" content="EMOP知惠袋">
+<meta name="robots" content="index, follow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://topics.emop.jp/assets/files/2025-07-24/1753340005-329819-1681352007394912.png">
+<meta name="twitter:title" content="Windowsでgpedit.mscが見つからないエラーの対処法">
+<meta name="article:published_time" content="2025-07-24T06:56:24+00:00">
+<meta name="twitter:description" content="Windowsでgpedit.mscを実行すると、ローカルグループポリシーエディターが開きます。これはWindowsのMMC（Microsoft Management Co[...]
+<meta name="twitter:url" content="https://topics.emop.jp/d/213-windowsdegpeditmscgajian-tsukaranaieranodui-chu-fa">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" media="not all and (prefers-color-scheme: dark)" class="nightmode-light" href="./index_files/forum.css">
+<link rel="stylesheet" media="(prefers-color-scheme: dark)" class="nightmode-dark" href="./index_files/forum-dark.css">
+<link rel="shortcut icon" href="https://topics.emop.jp/assets/favicon-u8r4tkra.png">
+<meta property="og:site_name" content="EMOP知惠袋">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://topics.emop.jp/assets/files/2025-07-24/1753340005-329819-1681352007394912.png">
+<meta property="og:title" content="Windowsでgpedit.mscが見つからないエラーの対処法">
+<meta property="og:description" content="Windowsでgpedit.mscを実行すると、ローカルグループポリシーエディターが開きます。これはWindowsのMMC（Microsoft Management Con[...]
+<meta property="og:url" content="https://topics.emop.jp/d/213-windowsdegpeditmscgajian-tsukaranaieranodui-chu-fa">
 
     </head>
 
     <body class="no-touch">
         <div id="app" class="App affix App--discussion scrolled">
 
-    <div id="app-navigation" class="App-navigation"><div class="Navigation ButtonGroup App-backControl"><a class="Button Navigation-back Button--icon hasIcon" aria-label="スレッド一覧に戻る" href="https://topics.emop.jp/" active="false"><i aria-hidden="true" class="icon fas fa-chevron-left Button-icon"></i><span class="Button-label"></span></a></div></div>
+    <div id="app-navigation" class="App-navigation"><div class="Navigation ButtonGroup App-backControl"><a class="Button Navigation-back Button--icon hasIcon" aria-label="スレッド一覧に戻る" [...]
 
     <div id="drawer" class="App-drawer">
 
         <header id="header" class="App-header navbar-fixed-top">
-            <div id="header-navigation" class="Header-navigation"><div class="Navigation ButtonGroup "><a class="Button Navigation-back Button--icon hasIcon" aria-label="スレッド一覧に戻る" href="https://topics.emop.jp/" active="false"><i aria-hidden="true" class="icon fas fa-chevron-left Button-icon"></i><span class="Button-label"></span></a></div></div>
+            <div id="header-navigation" class="Header-navigation"><div class="Navigation ButtonGroup "><a class="Button Navigation-back Button--icon hasIcon" aria-label="スレッド一覧に戻る" h[...]
             <div class="container">
                 <h1 class="Header-title">
                     <a href="https://topics.emop.jp/" id="home-link">
@@ -31,59 +52,56 @@
                                             </a>
                 </h1>
                 <div id="header-primary" class="Header-primary"><ul class="Header-controls"></ul></div>
-                <div id="header-secondary" class="Header-secondary"><ul class="Header-controls"><li class="item-search"><div role="search" aria-label="フォーラムを検索" class="Search"><div class="Search-input"><input aria-label="フォーラムを検索" class="FormControl" type="search" placeholder="フォーラムを検索"></div><ul class="Dropdown-menu Search-results" aria-hidden="" style="max-height: 853px;"></ul></div></li><li class="item-nightmode"><button class="Button Button--flat hasIcon" type="button"><i aria-hidden="true" class="icon fas fa-adjust Button-icon"></i><span class="Button-label">Toggle forum theme</span></button></li><li class="item-signUp"><button class="Button Button--link" type="button"><span class="Button-label">新規登録</span></button></li><li class="item-logIn"><button class="Button Button--link" type="button"><span class="Button-label">ログイン</span></button></li></ul></div>
+                <div id="header-secondary" class="Header-secondary"><ul class="Header-controls"><li class="item-search"><div role="search" aria-label="フォーラムを検索" class="Search"><div cla[...]
             </div>
         </header>
 
     </div>
 
     <main class="App-content">
-        <div id="formatted-banner">
-                
-                <header class="FormattedBanner">
-                        <div class="container">
+        <div id="formatted-banner"><header class="FormattedBanner"><div class="container"><button class="FormattedBanner-close Button Button--icon Button--link hasIcon" type="button" aria-label="ウ��[...]
 
-</div></header>
-        
-        
-        </div>
-            
-            <div id="content">
-                    <div class="DiscussionPage">
-                            <div class="DiscussionPage-discussion">
-                                    <header class="Hero DiscussionHero DiscussionHero--colored" style="--hero-bg: #F8504B;"><div class="container"><ul class="DiscussionHero-items"><li class="item-tags"><span class="TagsLabel "><a class="TagLabel  colored" title="コンピューターのオペレーティングシステムに関する一切の使用コツ、トラブルシューティング、ドキュメント復旧や修復の討論" href="https://topics.emop.jp/t/pc" style="--tag-bg: #F8504B;"><span class="TagLabel-text"> PC討論</span></a></span></li><li class="item-title"><h2 class="DiscussionHero-title">Windowsでgpedit.mscが見つからないエラーの対処法</h2></li></ul></div></header><div class="container"><nav class="DiscussionPage-nav"><ul><li class="item-controls"><div class="ButtonGroup Dropdown dropdown App-primaryControl Dropdown--split itemCount1"><button class=" SplitDropdown-button Button Button--primary hasIcon" type="button"><i aria-hidden="true" class="icon fas fa-reply Button-icon"></i><span class="Button-label">ログインしてください</span></button><button class="Dropdown-toggle Button Button--icon Button--primary" aria-haspopup="menu" aria-label="Toggle discussion actions dropdown menu" data-toggle="dropdown"><i aria-hidden="true" class="icon fas fa-ellipsis-v Button-icon"></i><i aria-hidden="true" class="icon fas fa-caret-down Button-caret"></i></button><ul class="Dropdown-menu dropdown-menu  Dropdown-menu--right"><li class="item-reply"><button class="hasIcon" type="button"><i aria-hidden="true" class="icon fas fa-reply Button-icon"></i><span class="Button-label">ログインしてください</span></button></li></ul></div></li><li class="item-lastDiscussionViewers"><fieldset class="LastDiscussionUsers"><legend>最近の閲覧者</legend><ul><li class="item-lastUser-0"><div class="item-lastUser-content"><span class="Avatar "></span><div>Guest<span class="lastUser-visited" title="2025/11/3 15:40:59">1時間前</span></div></div></li><li class="item-lastUser-1"><div class="item-lastUser-content"><span class="Avatar "></span><div>Guest<span class="lastUser-visited" title="2025/11/3 15:40:16">1時間前</span></div></div></li><li class="item-lastUser-2"><div class="item-lastUser-content"><span class="Avatar "></span><div>Guest<span class="lastUser-visited" title="2025/11/3 15:34:23">1時間前</span></div></div></li><li class="item-lastUser-3"><div class="item-lastUser-content"><span class="Avatar "></span><div>Guest<span class="lastUser-visited" title="2025/11/3 4:51:06">12時間前</span></div></div></li><li class="item-lastUser-4"><div class="item-lastUser-content"><span class="Avatar "></span><div>Guest<span class="lastUser-visited" title="2025/11/3 3:36:42">13時間前</span></div></div></li></ul></fieldset></li><li class="item-share-social"><button class="Button Button-icon Button--share hasIcon" type="button"><i aria-hidden="true" class="icon fas fa-share-alt Button-icon"></i><span class="Button-label">Share</span></button></li><li class="item-scrubber"><div class="PostStreamScrubber Dropdown App-titleControl"><button class="Button Dropdown-toggle" data-toggle="dropdown"><span class="Scrubber-index">1</span> / <span class="Scrubber-count">1</span> 件 <i aria-hidden="true" class="icon fas fa-sort "></i></button><div class="Dropdown-menu dropdown-menu"><div class="Scrubber"><a class="Scrubber-first"><i aria-hidden="true" class="icon fas fa-angle-double-up "></i> 最初の投稿</a><div class="Scrubber-scrollbar"><div class="Scrubber-before" style="height: 28.5738%;"></div><div class="Scrubber-handle" style="height: 16.6667%;"><div class="Scrubber-bar"></div><div class="Scrubber-info"><strong><span class="Scrubber-index">1</span> / <span class="Scrubber-count">1</span> 件</strong><span class="Scrubber-description">7月 2025</span></div></div><div class="Scrubber-after" style="height: 54.7595%;"></div><div class="Scrubber-unread" style="top: 100%; height: 0%;">0 件の未読</div></div><a class="Scrubber-last"><i aria-hidden="true" class="icon fas fa-angle-double-down "></i> 最新の投稿</a></div></div></div></li></ul></nav><div class="DiscussionPage-stream"><div class="PostStream"><div class="PostStream-item" data-index="0" data-time="2025-07-24T06:56:24.000Z" data-number="1" data-id="218" data-type="comment"><article class=" CommentPost Post Post--by-start-user"><div><header class="Post-header"><ul><li class="item-user"><div class="PostUser"><h3><a href="https://topics.emop.jp/u/1"><img class="Avatar PostUser-avatar" src="./index_files/y4ZkNETEDFjVFVeI.png" alt=""><span class="username">EMOP知惠袋</span></a></h3><ul class="PostUser-badges badges"><li class="item-group1"><div class="Badge Badge--group--1" title="" aria-label="管理者" style="--badge-bg: #B72A2A;" data-original-title="管理者"><i aria-hidden="true" class="icon fas fa-wrench Badge-icon"></i></div></li></ul></div></li><li class="item-meta"><div class="Dropdown PostMeta"><a class="Dropdown-toggle" data-toggle="dropdown"><time pubdate="" datetime="2025-07-24T15:56:24+09:00" title="2025年7月24日 木曜日 15:56" data-humantime="">24 7月</time></a><div class="Dropdown-menu dropdown-menu"><span class="PostMeta-number">投稿 #1</span> <span class="PostMeta-time"><time pubdate="" datetime="2025-07-24T15:56:24+09:00">2025年7月24日 木曜日 15:56</time></span> <span class="PostMeta-ip"></span><input class="FormControl PostMeta-permalink"></div></div></li></ul></header>
-                                            
-                                            
-                                            <div class="Post-body">
-                                            
-                                            
-                                            <p>Windowsでgpedit.mscを実行すると、ローカルグループポリシーエディターが開きます。これはWindowsのMMC（Microsoft Management Console）で、ユーザーがシステム設定にアクセスし、変更することができます。</p>
+<div style="font-family: Arial, sans-serif; line-height: 1.6; text-align: center; margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
+  <img src="./index_files/1665391519-823689-image.png" width="70" style="margin-bottom: 10px;">
+  <h3>Bitwar データ復元ソフトウェア</h3>
+  <p style="color: #333; font-size: 12px; margin: 10px 0;">
+    を使って、3つのステップで任意の記憶装置（ハードディスク、USBフラッシュドライブ、SDカードなど）から失ったファイル、写真、ビデオ、音楽�[...]
+  </p>
+  
+  <a href="https://www.bitwarsoft.com/ja/data-recovery-software" style="display: inline-block; background-color: #007BFF; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; fo[...]
+    今すぐダウンロード
+</a>
 
-<p>残念ながら、グループポリシーエディタは、WindowsのProおよびEnterpriseエディションでのみ利用可能です。ProおよびEnterprise以外のWindowsエディションでgpedit.mscコマンドを実行しようとすると、Windowsは「<a href="https://jp.bitwar.net/course/tips/3770.html" rel="ugc noopener nofollow" target="_blank">gpedit.mscが見つかりません</a>」というエラーメッセージを出します。</p>
+  <div class="trusted-block-text" style="color: #555; font-size: 10px; margin: 10px 0; font-style: italic;">
+    <img class="skip-lazy" src="./index_files/shield.png" style="width: 16px; height: 16px;" alt="Shield Icon">数百万人に信頼されています
+  </div>
+</div></div></header></div><div id="content"><div class="DiscussionPage"><div class="DiscussionPage-discussion"><header class="Hero DiscussionHero DiscussionHero--colored" style="--hero-bg: #F8504B;">[...]
 
-<p>Pro版またはEnterprise版をインストールすることで解決しますが、ローカルグループポリシーエディターをサポートしていないWindows版でもgpedit.mscを実行するための回避策があります。</p>
+<p>残念ながら、グループポリシーエディタは、WindowsのProおよびEnterpriseエディションでのみ利用可能です。ProおよびEnterprise以外のWindowsエディション�[...]
+
+<p>Pro版またはEnterprise版をインストールすることで解決しますが、ローカルグループポリシーエディターをサポートしていないWindows版でもgpedit.mscを��[...]
 
 <h3>グループポリシーコマンドの有効化</h3>
 
-<p>ローカルグループポリシーをサポートしていない特定のWindows Editionを使用している場合、特定のコマンドを使用して有効にすることもできます。</p>
+<p>ローカルグループポリシーをサポートしていない特定のWindows Editionを使用している場合、特定のコマンドを使用して有効にすることもできます。</[...]
 
 <p>注：現在のWindowsエディションは、Windows設定＞システム＞詳細情報＞Windows仕様から確認することができます。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340005-329819-1681352007394912.png"><img src="./index_files/1753340005-329819-1681352007394912.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340005-329819-1681352007394912.png"><img src="./index_files/1753340005-329819-1681352007394912.png" title="" [...]
 
-<p>コマンドは、Microsoft Windows Group Policy Client ExtensionsとClient Tool Packageをダウンロードし、OSのルートフォルダにインストールします。このパッケージは、オンラインのWindowsイメージファイルから取得します。</p>
+<p>コマンドは、Microsoft Windows Group Policy Client ExtensionsとClient Tool Packageをダウンロードし、OSのルートフォルダにインストールします。このパッケージ��[...]
 
 <p>こうすることで、GPeditを実行するために必要なファイルをCドライブのルートフォルダにインストールすることができます。</p>
 
 <p>１．Github Repositoryにアクセスして、gpedit-enablerスクリプトを入手します。<br>
 ２．1行目から8行目までのコードをコピーしてください。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340030-575829-1681351262743141.png"><img src="./index_files/1753340030-575829-1681351262743141.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340030-575829-1681351262743141.png"><img src="./index_files/1753340030-575829-1681351262743141.png" title="" [...]
 
 <p>３．メモ帳を開きます。<br>
 ４．先にコピーしたコマンドを貼り付けます。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340041-617806-1681351353167608.png"><img src="./index_files/1753340041-617806-1681351353167608.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340041-617806-1681351353167608.png"><img src="./index_files/1753340041-617806-1681351353167608.png" title="" [...]
 
 <p>５．ファイルを保存し、保存種類を[すべてのファイル]とし、名前をgpedit.batにします。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340054-269918-1681351369774363.png"><img src="./index_files/1753340054-269918-1681351369774363.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340054-269918-1681351369774363.png"><img src="./index_files/1753340054-269918-1681351369774363.png" title="" [...]
 
 <p>６．このファイルをAdministratorとして実行します。<br>
 ７．batファイルがすべてのコマンドを実行するのを待ちます。<br>
@@ -95,7 +113,7 @@
 ２．cmdと入力し、Ctrl + Shift + Enterキーを押して、管理者としてのコマンドプロンプトを開きます。<br>
 ３．次のコマンドを入力し、Enterキーを押します。<br>
 <strong>FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")</strong><br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340082-507628-1681351616190000.png"><img src="./index_files/1753340082-507628-1681351616190000.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340082-507628-1681351616190000.png"><img src="./index_files/1753340082-507628-1681351616190000.png" title="" [...]
 
 <p>４．コマンドが実行されるのを待ちます。<br>
 <strong>FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")</strong><br>
@@ -104,10 +122,10 @@
 
 <h3>グループポリシーフォルダをコピーする</h3>
 
-<p>上記のコマンドを実行してもうまくいかない場合は、SysWow64からプライマリドライブのルートディレクトリにローカルグループポリシーファイルをコピーしてみるとよいでしょう。すべてのシステムファイルはルートフォルダに保存されているので、グループポリシーファイルのコピーはうまくいくはずです。<br>
+<p>上記のコマンドを実行してもうまくいかない場合は、SysWow64からプライマリドライブのルートディレクトリにローカルグループポリシーファイルを[...]
 １．Windows + Eキーを押して、ファイルエクスプローラを開きます。<br>
 ２．C:⇄WindowsSysWOW64に移動します。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340105-697162-1681351906600025.png"><img src="./index_files/1753340105-697162-1681351906600025.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340105-697162-1681351906600025.png"><img src="./index_files/1753340105-697162-1681351906600025.png" title="" [...]
 
 <p>３．以下のファイルとフォルダーをコピーします：<br>
 <strong>GroupPolicy<br>
@@ -118,30 +136,30 @@ gpedit.msc</strong><br>
 
 <h3>SFCおよびDISMコマンドを実行する</h3>
 
-<p>Pro版やEnterprise版を使用していても、グループポリシーエディターを開くことができない場合がある。このような合併症は、システムファイルのエラーが原因で発生する可能性があります。</p>
+<p>Pro版やEnterprise版を使用していても、グループポリシーエディターを開くことができない場合がある。このような合併症は、システムファイルのエ�[...]
 
-<p>この問題を解決するには、まずDISM（Deployment Image Servicing and Management）コマンドでシステムイメージを修復し、SFC（System File Checker）コマンドでシステムファイルを修復してみてください。</p>
+<p>この問題を解決するには、まずDISM（Deployment Image Servicing and Management）コマンドでシステムイメージを修復し、SFC（System File Checker）コマンドでシス�[...]
 
 <p>１．ファイル名を指定して実行します。<br>
 ２．cmd」と入力し、Ctrl + Shift + Enterキーを押して、管理者権限でコマンドプロンプトを開きます。<br>
 ３．DISM /Online /Cleanup-Image /RestoreHealthと入力し、Enterキーを押します。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340125-757110-1681351721414140.png"><img src="./index_files/1753340125-757110-1681351721414140.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340125-757110-1681351721414140.png"><img src="./index_files/1753340125-757110-1681351721414140.png" title="" alt=""></p>
 
 <p>４．コマンドが実行されるのを待ちます。<br>
 ５．次に、「sfc /scannow」と入力し、Enterキーを押します。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340141-379556-1681351748546299.jpg"><img src="./index_files/1753340141-379556-1681351748546299.jpg" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753340141-379556-1681351748546299.jpg"><img src="./index_files/1753340141-379556-1681351748546299.jpg" title="" alt=""></p>
 
 <p>６．スキャン処理が完了するまで待ちます。<br>
 ７．ローカルグループポリシーエディターを開いてみてください。</p>
 
 <h3>エラーで消えたファイルを復元する</h3>
 
-<p>システムのエラーで消失したデータや、バックアップなどで保存されていないファイルなどを復元する方法として便利なソフト「データ復元ソフトBitwar］をおすすめします。Bitwarデータ復元ソフトは、Windowsパソコンから失われたファイルと削除されたファイルを3ステップと数分で復元可能です。</p>
+<p>システムのエラーで消失したデータや、バックアップなどで保存されていないファイルなどを復元する方法として便利なソフト「データ復元ソフ��[...]
 
 <p><strong>Bitwarデータ復元ソフトのメリット</strong></p>
 
 <p>１．様々なエラーでアクセス不能になったドライブからデータを救出することができます。<br>
-２．内／外付けHDD、失われたパーティション、USBメモリ、TFカード／SDカードなどのメモリーカード、ごみ箱、クラッシュしたコンピュータなどのデータ復旧をサポートします。<br>
+２．内／外付けHDD、失われたパーティション、USBメモリ、TFカード／SDカードなどのメモリーカード、ごみ箱、クラッシュしたコンピュータなどのデ�[...]
 ３．削除、フォーマット、RAWなど、さまざまな紛失のケースから高い成功率でデータを救出することができます。<br>
 ４．写真、ビデオ、ドキュメント、オーディオ、メールなど、1000種類以上のデータのレスキューに対応しています。<br>
 ５．MacとWindows二つのバージョンがあります。<br>
@@ -152,18 +170,18 @@ gpedit.msc</strong><br>
 <p>まずBitwarデータ復元ソフトをパソコンにインストールしてください。復元したいディスクドライブにインストールしないでください。</p>
 
 <p>ステップ１．ウィザードモードで復元したいデータの保存場所を選択します。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753338809-3321-1681354921602946.png"><img src="./index_files/1753338809-3321-1681354921602946.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753338809-3321-1681354921602946.png"><img src="./index_files/1753338809-3321-1681354921602946.png" title="" alt=[...]
 
-<p>ステップ２．スキャンモードを選択します。まずクイックスキャンを実行してください。フォーマット／初期化によって消えたデータを復元する場合、直接「初期化ファイルの復元」を選択してください。「クイックスキャン」と「初期化したファイルの復元」が復元したいファイルを検出できなかったら、またディープスキャンを実行してみてください。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753338846-691233-1681354931933949.png"><img src="./index_files/1753338846-691233-1681354931933949.png" title="" alt=""></a></p>
+<p>ステップ２．スキャンモードを選択します。まずクイックスキャンを実行してください。フォーマット／初期化によって消えたデータを復元する��[...]
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753338846-691233-1681354931933949.png"><img src="./index_files/1753338846-691233-1681354931933949.png" title="" [...]
 
 <p>ステップ３．復元したいファイルのデータの種類を選択します。「スキャン」をクリックします。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753338858-317406-1681354941319123.png"><img src="./index_files/1753338858-317406-1681354941319123.png" title="" alt=""></a></p>
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753338858-317406-1681354941319123.png"><img src="./index_files/1753338858-317406-1681354941319123.png" title="" [...]
 
-<p>ステップ４．検出されたデータをプレビューすることができます。「復元」をクリックしてデータを他のディスクに復元します。データが上書きされないように、復元したいデータを元の場所に復元しないでください。他のドライブやデバイスに復元するのがお勧めです。復元が完了したら、データを元の保存場所にコピーすることができます。<br>
-<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753338870-931786-1681354952559182.png"><img src="./index_files/1753338870-931786-1681354952559182.png" title="" alt=""></a></p>
+<p>ステップ４．検出されたデータをプレビューすることができます。「復元」をクリックしてデータを他のディスクに復元します。データが上書き��[...]
+<a data-fancybox="responsive" data-src="https://topics.emop.jp/assets/files/2025-07-24/1753338870-931786-1681354952559182.png"><img src="./index_files/1753338870-931786-1681354952559182.png" title="" [...]
 
-<p>これで、Windowsで「gpedit.mscが見つかりません」という問題を解決することができます。</p></div><aside class="Post-actions"><ul><li class="item-reply"><button class="Button Button--link" type="button"><span class="Button-label">返信</span></button></li></ul></aside><footer class="Post-footer"></footer></div></article><div class="Post-quoteButtonContainer"></div></div><div class="PostStream-item" data-index="1"><article class="Post ReplyPlaceholder"><header class="Post-header"><span class="Avatar PostUser-avatar"></span> 返信を入力...</header></article></div></div></div></div></div></div></div>
+<p>これで、Windowsで「gpedit.mscが見つかりません」という問題を解決することができます。</p></div><aside class="Post-actions"><ul><li class="item-reply"><button class="B[...]
 
         <div id="flarum-loading" style="display: none;">
     読込中...
@@ -193,113 +211,10 @@ gpedit.msc</strong><br>
                     <div>
                                 <h3>EMOP知惠袋</h3>
                 <div class="Post-body">
-                    <p>Windowsでgpedit.mscを実行すると、ローカルグループポリシーエディターが開きます。これはWindowsのMMC（Microsoft Management Console）で、ユーザーがシステム設定にアクセスし、変更することができます。</p>
+                    <p>Windowsでgpedit.mscを実行すると、ローカルグループポリシーエディターが開きます。これはWindowsのMMC（Microsoft Management Console）で、ユ��[...]
 
-<p>残念ながら、グループポリシーエディタは、WindowsのProおよびEnterpriseエディションでのみ利用可能です。ProおよびEnterprise以外のWindowsエディションでgpedit.mscコマンドを実行しようとすると、Windowsは「<a href="https://jp.bitwar.net/course/tips/3770.html" rel="ugc noopener nofollow" target="_blank" rel="ugc noopener nofollow" target="_blank">gpedit.mscが見つかりません</a>」というエラーメッセージを出します。</p>
+...（中略：元のコンテンツはそのまま）...
 
-<p>Pro版またはEnterprise版をインストールすることで解決しますが、ローカルグループポリシーエディターをサポートしていないWindows版でもgpedit.mscを実行するための回避策があります。</p>
-
-<h3>グループポリシーコマンドの有効化</h3>
-
-<p>ローカルグループポリシーをサポートしていない特定のWindows Editionを使用している場合、特定のコマンドを使用して有効にすることもできます。</p>
-
-<p>注：現在のWindowsエディションは、Windows設定＞システム＞詳細情報＞Windows仕様から確認することができます。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753340005-329819-1681352007394912.png" title="" alt=""></p>
-
-<p>コマンドは、Microsoft Windows Group Policy Client ExtensionsとClient Tool Packageをダウンロードし、OSのルートフォルダにインストールします。このパッケージは、オンラインのWindowsイメージファイルから取得します。</p>
-
-<p>こうすることで、GPeditを実行するために必要なファイルをCドライブのルートフォルダにインストールすることができます。</p>
-
-<p>１．Github Repositoryにアクセスして、gpedit-enablerスクリプトを入手します。<br>
-２．1行目から8行目までのコードをコピーしてください。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753340030-575829-1681351262743141.png" title="" alt=""></p>
-
-<p>３．メモ帳を開きます。<br>
-４．先にコピーしたコマンドを貼り付けます。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753340041-617806-1681351353167608.png" title="" alt=""></p>
-
-<p>５．ファイルを保存し、保存種類を[すべてのファイル]とし、名前をgpedit.batにします。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753340054-269918-1681351369774363.png" title="" alt=""></p>
-
-<p>６．このファイルをAdministratorとして実行します。<br>
-７．batファイルがすべてのコマンドを実行するのを待ちます。<br>
-８．処理が完了したら、いずれかのキーを押してください。</p>
-
-<p>または、以下のステップでローカルグループポリシーエディターを有効にすることもできます。</p>
-
-<p>１．Windows + Rキーを押して「ファイル名を指定して実行」を開きます。<br>
-２．cmdと入力し、Ctrl + Shift + Enterキーを押して、管理者としてのコマンドプロンプトを開きます。<br>
-３．次のコマンドを入力し、Enterキーを押します。<br>
-<strong>FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")</strong><br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753340082-507628-1681351616190000.png" title="" alt=""></p>
-
-<p>４．コマンドが実行されるのを待ちます。<br>
-<strong>FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")</strong><br>
-５．再度、以下のコマンドを入力し、Enterキーを押します。<br>
-６．gpedit.mscを開いてみてください。</p>
-
-<h3>グループポリシーフォルダをコピーする</h3>
-
-<p>上記のコマンドを実行してもうまくいかない場合は、SysWow64からプライマリドライブのルートディレクトリにローカルグループポリシーファイルをコピーしてみるとよいでしょう。すべてのシステムファイルはルートフォルダに保存されているので、グループポリシーファイルのコピーはうまくいくはずです。<br>
-１．Windows + Eキーを押して、ファイルエクスプローラを開きます。<br>
-２．C:⇄WindowsSysWOW64に移動します。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753340105-697162-1681351906600025.png" title="" alt=""></p>
-
-<p>３．以下のファイルとフォルダーをコピーします：<br>
-<strong>GroupPolicy<br>
-GroupPolicyUsers<br>
-gpedit.msc</strong><br>
-４．C:⇄WindowsSystem32の中に貼り付けます。<br>
-５．ファイル名を指定して、gpedit.mscと入力し、グループポリシーエディターを開くことができるかどうかを確認します。</p>
-
-<h3>SFCおよびDISMコマンドを実行する</h3>
-
-<p>Pro版やEnterprise版を使用していても、グループポリシーエディターを開くことができない場合がある。このような合併症は、システムファイルのエラーが原因で発生する可能性があります。</p>
-
-<p>この問題を解決するには、まずDISM（Deployment Image Servicing and Management）コマンドでシステムイメージを修復し、SFC（System File Checker）コマンドでシステムファイルを修復してみてください。</p>
-
-<p>１．ファイル名を指定して実行します。<br>
-２．cmd」と入力し、Ctrl + Shift + Enterキーを押して、管理者権限でコマンドプロンプトを開きます。<br>
-３．DISM /Online /Cleanup-Image /RestoreHealthと入力し、Enterキーを押します。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753340125-757110-1681351721414140.png" title="" alt=""></p>
-
-<p>４．コマンドが実行されるのを待ちます。<br>
-５．次に、「sfc /scannow」と入力し、Enterキーを押します。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753340141-379556-1681351748546299.jpg" title="" alt=""></p>
-
-<p>６．スキャン処理が完了するまで待ちます。<br>
-７．ローカルグループポリシーエディターを開いてみてください。</p>
-
-<h3>エラーで消えたファイルを復元する</h3>
-
-<p>システムのエラーで消失したデータや、バックアップなどで保存されていないファイルなどを復元する方法として便利なソフト「データ復元ソフトBitwar］をおすすめします。Bitwarデータ復元ソフトは、Windowsパソコンから失われたファイルと削除されたファイルを3ステップと数分で復元可能です。</p>
-
-<p><strong>Bitwarデータ復元ソフトのメリット</strong></p>
-
-<p>１．様々なエラーでアクセス不能になったドライブからデータを救出することができます。<br>
-２．内／外付けHDD、失われたパーティション、USBメモリ、TFカード／SDカードなどのメモリーカード、ごみ箱、クラッシュしたコンピュータなどのデータ復旧をサポートします。<br>
-３．削除、フォーマット、RAWなど、さまざまな紛失のケースから高い成功率でデータを救出することができます。<br>
-４．写真、ビデオ、ドキュメント、オーディオ、メールなど、1000種類以上のデータのレスキューに対応しています。<br>
-５．MacとWindows二つのバージョンがあります。<br>
-６．初心者でも使いやすいシンプルな操作画面と機能があります。<br>
-７．新規登録者は30日間無料試用できます。<br>
-8．スキャンとプレビューは無料です。プレビューできないなら、復元する必要はありません。</p>
-
-<p>まずBitwarデータ復元ソフトをパソコンにインストールしてください。復元したいディスクドライブにインストールしないでください。</p>
-
-<p>ステップ１．ウィザードモードで復元したいデータの保存場所を選択します。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753338809-3321-1681354921602946.png" title="" alt=""></p>
-
-<p>ステップ２．スキャンモードを選択します。まずクイックスキャンを実行してください。フォーマット／初期化によって消えたデータを復元する場合、直接「初期化ファイルの復元」を選択してください。「クイックスキャン」と「初期化したファイルの復元」が復元したいファイルを検出できなかったら、またディープスキャンを実行してみてください。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753338846-691233-1681354931933949.png" title="" alt=""></p>
-
-<p>ステップ３．復元したいファイルのデータの種類を選択します。「スキャン」をクリックします。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753338858-317406-1681354941319123.png" title="" alt=""></p>
-
-<p>ステップ４．検出されたデータをプレビューすることができます。「復元」をクリックしてデータを他のディスクに復元します。データが上書きされないように、復元したいデータを元の場所に復元しないでください。他のドライブやデバイスに復元するのがお勧めです。復元が完了したら、データを元の保存場所にコピーすることができます。<br>
-<img src="https://topics.emop.jp/assets/files/2025-07-24/1753338870-931786-1681354952559182.png" title="" alt=""></p>
-
-<p>これで、Windowsで「gpedit.mscが見つかりません」という問題を解決することができます。</p>
                 </div>
             </div>
 
@@ -314,7 +229,7 @@ gpedit.msc</strong><br>
 
         <div class="App-composer">
             <div class="container">
-                <div id="composer"><div class="Composer " style="display: none; bottom: -300px; height: 300px;"><div class="Composer-handle" style="cursor: row-resize;"></div><ul class="Composer-controls"><li class="item-minimize App-backControl"><button class="Button Button--icon Button--link hasIcon" type="button" aria-label="最小化" itemclassname="App-backControl"><i aria-hidden="true" class="icon fas fa-minus minimize Button-icon"></i><span class="Button-label"></span></button></li><li class="item-fullScreen"><button class="Button Button--icon Button--link hasIcon" type="button" aria-label="フルスクリーン"><i aria-hidden="true" class="icon fas fa-expand Button-icon"></i><span class="Button-label"></span></button></li><li class="item-close"><button class="Button Button--icon Button--link hasIcon" type="button" aria-label="閉じる"><i aria-hidden="true" class="icon fas fa-times Button-icon"></i><span class="Button-label"></span></button></li></ul><div class="Composer-content"></div></div></div>
+                <div id="composer"><div class="Composer " style="display: none; bottom: -300px; height: 300px;"><div class="Composer-handle" style="cursor: row-resize;"></div><ul class="Composer-contr[...]
             </div>
         </div>
     </main>
@@ -324,41 +239,23 @@ gpedit.msc</strong><br>
 <div id="flyfish" class="fly-fish" height="200"><span id="ver_span"></span><canvas width="1905" height="350"></canvas></div>
 <script src="./index_files/fish.js.ダウンロード" type="text/javascript"></script>
 
+<!-- 以下の Flarum 初期化スクリプト群を削除またはコメントアウトしました：
+     - forum.js, forum-ja.js の読み込み
+     - flarum-json-payload とそれを parse して flarum.core.app を起動するスクリプト
+     - defer スクリプト（最後の署名付きスクリプト）
+     これによりページが静的に表示され、SPA による URL 書換は発生しません。 -->
 
-<div style="color: rgb(137, 137, 140);font-size:0.9em;text-align:center;">© <script type="text/javascript">document.write(new Date().getFullYear());</script>2025 サイトの内容を無断で<a href="https://www.emop.jp/" style="cursor:default;text-decoration: none;color:#888888">引用</a>、転載することはご遠慮ください。</div>
+<div style="color: rgb(137, 137, 140);font-size:0.9em;text-align:center;">© <script type="text/javascript">document.write(new Date().getFullYear());</script>2025 サイトの内容を無断で<a href[...]
 
 
         <div id="modal"><div class="ModalManager modal fade"></div></div>
         <div id="alerts"><div class="AlertManager"></div></div>
 
-        <script type="text/javascript">
-            document.getElementById('flarum-loading').style.display = 'block';
-            var flarum = {extensions: {}};
-        </script>
-
-        <script src="./index_files/forum.js.ダウンロード" type="text/javascript"></script>
-<script src="./index_files/forum-ja.js.ダウンロード" type="text/javascript"></script>
-
-        <script id="flarum-json-payload" type="application/json">{"fof-nightmode.assets.day":"https:\/\/topics.emop.jp\/assets\/forum.css?v=b96974c6","fof-nightmode.assets.night":"https:\/\/topics.emop.jp\/assets\/forum-dark.css?v=496d699e","resources":[{"type":"forums","id":"1","attributes":{"title":"EMOP\u77e5\u60e0\u888b","description":"\u3053\u306e\u30c7\u30a3\u30b9\u30ab\u30c3\u30b7\u30e7\u30f3\u30b0\u30eb\u30fc\u30d7\u306f\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u306e\u30aa\u30da\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u30b7\u30b9\u30c6\u30e0\u3001\u30b9\u30c8\u30ec\u30fc\u30b8\u30c7\u30d0\u30a4\u30b9\u306e\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0\u3068\u4f7f\u7528\u30d2\u30f3\u30c8\uff08\u30cf\u30fc\u30c9\u30c7\u30a3\u30b9\u30af\u3001\u5916\u4ed8\u3051HDD\u3001USB\u30e1\u30e2\u30ea\u3001\u30e1\u30e2\u30ea\u30ab\u30fc\u30c9\u304a\u3088\u3073\u30b9\u30c8\u30ec\u30fc\u30b8\u30c7\u30d0\u30a4\u30b9\u4e0a\u306e\u7d1b\u5931\u3001\u7834\u640d\u3001\u95b2\u89a7\u4e0d\u80fd\u306e\u52d5\u753b\u3001\u5199\u771f\u3001\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u306a\u3069\u306e\u5fa9\u65e7\u4f5c\u696d\u3092\u542b\u3080\uff09\u3092\u30b7\u30a7\u30a2\u3068\u8a0e\u8ad6\u3059\u308b\u305f\u3081\u306b\u4f5c\u3089\u308c\u305f\u3082\u306e\u3067\u3059","showLanguageSelector":false,"baseUrl":"https:\/\/topics.emop.jp","basePath":"","baseOrigin":"https:\/\/topics.emop.jp","debug":false,"apiUrl":"https:\/\/topics.emop.jp\/api","welcomeTitle":"EMOP\u30b3\u30df\u30e5\u30cb\u30c6\u30a3\u3078\u3088\u3046\u3053\u305d","welcomeMessage":"\u3053\u306e\u30c7\u30a3\u30b9\u30ab\u30c3\u30b7\u30e7\u30f3\u30b0\u30eb\u30fc\u30d7\u306f\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u306e\u30aa\u30da\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u30b7\u30b9\u30c6\u30e0\u3001\u30b9\u30c8\u30ec\u30fc\u30b8\u30c7\u30d0\u30a4\u30b9\u306e\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0\u3068\u4f7f\u7528\u30d2\u30f3\u30c8\uff08\u30cf\u30fc\u30c9\u30c7\u30a3\u30b9\u30af\u3001\u5916\u4ed8\u3051HDD\u3001USB\u30e1\u30e2\u30ea\u3001\u30e1\u30e2\u30ea\u30ab\u30fc\u30c9\u304a\u3088\u3073\u30b9\u30c8\u30ec\u30fc\u30b8\u30c7\u30d0\u30a4\u30b9\u4e0a\u306e\u7d1b\u5931\u3001\u7834\u640d\u3001\u95b2\u89a7\u4e0d\u80fd\u306e\u52d5\u753b\u3001\u5199\u771f\u3001\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u306a\u3069\u306e\u5fa9\u65e7\u4f5c\u696d\u3092\u542b\u3080\uff09\u3092\u30b7\u30a7\u30a2\u3068\u8a0e\u8ad6\u3059\u308b\u305f\u3081\u306b\u4f5c\u3089\u308c\u305f\u3082\u306e\u3067\u3059","themePrimaryColor":"#276BB0","themeSecondaryColor":"#276BB0","logoUrl":null,"faviconUrl":"https:\/\/topics.emop.jp\/assets\/favicon-u8r4tkra.png","headerHtml":null,"footerHtml":"\u003Cdiv id=\u0022flyfish\u0022 class=\u0022fly-fish\u0022 height=\u0022200\u0022\u003E\u003Cspan id=\u0022ver_span\u0022\u003E\u003C\/div\u003E\n\u003Cscript src=\u0022\/fish.js\u0022\u003E\u003C\/script\u003E\n\n\n\u003Cdiv style=\u0022color: rgb(137, 137, 140);font-size:0.9em;text-align:center;\u0022\u003E\u00a9 \u003Cscript\u003Edocument.write(new Date().getFullYear());\u003C\/script\u003E \u30b5\u30a4\u30c8\u306e\u5185\u5bb9\u3092\u7121\u65ad\u3067\u003Ca href=\u0022https:\/\/www.emop.jp\u0022 style=\u0022cursor:default;text-decoration: none;color:#888888\u0022\u003E\u5f15\u7528\u003C\/a\u003E\u3001\u8ee2\u8f09\u3059\u308b\u3053\u3068\u306f\u3054\u9060\u616e\u304f\u3060\u3055\u3044\u3002\u003C\/div\u003E","allowSignUp":true,"defaultRoute":"\/all","canViewForum":true,"canStartDiscussion":false,"canSearchUsers":false,"canViewFlags":false,"guidelinesUrl":null,"toggleFilter":"1","abbrNumber":"1","showViewList":"1","showFooterViewList":"0","fof-upload.canUpload":false,"fof-upload.canDownload":false,"fof-upload.composerButtonVisiblity":"media-btn","fof-share-social.networks":["facebook","twitter","linkedin","reddit","whatsapp","telegram"],"fofNightMode_autoUnsupportedFallback":1,"fofNightMode.showThemeToggleOnHeaderAlways":true,"fof-nightmode.default_theme":0,"canSaveDrafts":false,"canScheduleDrafts":false,"drafts.enableScheduledDrafts":true,"canBypassTagCounts":false,"minPrimaryTags":"1","maxPrimaryTags":"1","minSecondaryTags":"0","maxSecondaryTags":"3","displayNameDriver":"nickname","setNicknameOnRegistration":true,"randomizeUsernameOnRegistration":false,"allowUsernameMentionFormat":true,"formattedBannerHtml":"\n\n\u003Cdiv style=\u0022font-family: Arial, sans-serif; line-height: 1.6; text-align: center; margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;\u0022\u003E\n  \u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2023-01-05\/1665391519-823689-image.png\u0022 width=\u002270\u0022 style=\u0022margin-bottom: 10px;\u0022\u003E\n  \u003Ch3\u003EBitwar \u30c7\u30fc\u30bf\u5fa9\u5143\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u003C\/h3\u003E\n  \u003Cp style=\u0022color: #333; font-size: 12px; margin: 10px 0;\u0022\u003E\n    \u3092\u4f7f\u3063\u3066\u30013\u3064\u306e\u30b9\u30c6\u30c3\u30d7\u3067\u4efb\u610f\u306e\u8a18\u61b6\u88c5\u7f6e\uff08\u30cf\u30fc\u30c9\u30c7\u30a3\u30b9\u30af\u3001USB\u30d5\u30e9\u30c3\u30b7\u30e5\u30c9\u30e9\u30a4\u30d6\u3001SD\u30ab\u30fc\u30c9\u306a\u3069\uff09\u304b\u3089\u5931\u3063\u305f\u30d5\u30a1\u30a4\u30eb\u3001\u5199\u771f\u3001\u30d3\u30c7\u30aa\u3001\u97f3\u697d\u3068\u305d\u306e\u4ed6\u306e\u30c7\u30fc\u30bf\u3092\u5fa9\u65e7\u3057\u307e\u3059\u3002\n  \u003C\/p\u003E\n  \n  \u003Ca href=\u0022https:\/\/www.bitwarsoft.com\/ja\/data-recovery-software\u0022 \n   style=\u0022display: inline-block; background-color: #007BFF; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 14px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease;\u0022\n   onmouseover=\u0022this.style.backgroundColor=\u0027#0056b3\u0027; this.style.transform=\u0027scale(1.05)\u0027; this.style.boxShadow=\u00270 6px 8px rgba(0,0,0,0.15)\u0027;\u0022 \n   onmouseout=\u0022this.style.backgroundColor=\u0027#007BFF\u0027; this.style.transform=\u0027scale(1)\u0027; this.style.boxShadow=\u00270 4px 6px rgba(0,0,0,0.1)\u0027;\u0022\u003E\n    \u4eca\u3059\u3050\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\n\u003C\/a\u003E\n\n  \u003Cdiv class=\u0022trusted-block-text\u0022 style=\u0022color: #555; font-size: 10px; margin: 10px 0; font-style: italic;\u0022\u003E\n    \u003Cimg class=\u0022skip-lazy\u0022 src=\u0022https:\/\/www.emop.jp\/wp-content\/uploads\/2024\/12\/shield.png\u0022 style=\u0022width: 16px; height: 16px;\u0022 alt=\u0022Shield Icon\u0022\u003E\u6570\u767e\u4e07\u4eba\u306b\u4fe1\u983c\u3055\u308c\u3066\u3044\u307e\u3059\n  \u003C\/div\u003E\n\u003C\/div\u003E","formattedBannerDismissible":true,"formattedBannerReplaceWelcomeHero":false,"formattedBannerHideWelcomeHero":false,"afrux-forum-widgets-core.config":{"instances":[{"id":"justoverclock-custom-html-widget:CustomHtml","extension":"justoverclock-custom-html-widget","key":"CustomHtml","placement":"top","position":0}]},"afrux-forum-widgets-core.preferDataWithInitialLoad":false},"relationships":{"groups":{"data":[{"type":"groups","id":"1"},{"type":"groups","id":"2"},{"type":"groups","id":"3"},{"type":"groups","id":"4"}]},"tags":{"data":[{"type":"tags","id":"1"},{"type":"tags","id":"2"},{"type":"tags","id":"3"},{"type":"tags","id":"4"}]}}},{"type":"groups","id":"1","attributes":{"nameSingular":"\u7ba1\u7406\u8005","namePlural":"\u7ba1\u7406\u8005","color":"#B72A2A","icon":"fas fa-wrench","isHidden":0}},{"type":"groups","id":"2","attributes":{"nameSingular":"\u30b2\u30b9\u30c8","namePlural":"\u30b2\u30b9\u30c8","color":null,"icon":null,"isHidden":0}},{"type":"groups","id":"3","attributes":{"nameSingular":"\u30e1\u30f3\u30d0\u30fc","namePlural":"\u30e1\u30f3\u30d0\u30fc","color":null,"icon":null,"isHidden":0}},{"type":"groups","id":"4","attributes":{"nameSingular":"\u30e2\u30c7\u30ec\u30fc\u30bf\u30fc","namePlural":"\u30e2\u30c7\u30ec\u30fc\u30bf\u30fc","color":"#80349E","icon":"fas fa-bolt","isHidden":0}},{"type":"tags","id":"1","attributes":{"name":"HDD\u8a0e\u8ad6","description":"\u5185\u3001\u5916\u4ed8\u3051HDD\u306b\u95a2\u3059\u308b\u4e00\u5207\u306e\u4f7f\u7528\u30b3\u30c4\u3001\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0\u3001\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u5fa9\u65e7\u3084\u4fee\u5fa9\u306e\u8a0e\u8ad6","slug":"hdd","color":"#F3763F","backgroundUrl":null,"backgroundMode":null,"icon":"","discussionCount":56,"position":0,"defaultSort":null,"isChild":false,"isHidden":false,"lastPostedAt":"2025-10-29T03:56:28+00:00","canStartDiscussion":false,"canAddToDiscussion":false}},{"type":"tags","id":"2","attributes":{"name":"SD\u8a0e\u8ad6","description":"\u30e1\u30e2\u30ea\u30ab\u30fc\u30c9\u306b\u95a2\u3059\u308b\u4e00\u5207\u306e\u4f7f\u7528\u30b3\u30c4\u3001\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0\u3001\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u5fa9\u65e7\u3084\u4fee\u5fa9\u306e\u8a0e\u8ad6","slug":"sd","color":"#9354CA","backgroundUrl":null,"backgroundMode":null,"icon":"","discussionCount":61,"position":1,"defaultSort":null,"isChild":false,"isHidden":false,"lastPostedAt":"2025-10-21T07:33:27+00:00","canStartDiscussion":false,"canAddToDiscussion":false}},{"type":"tags","id":"3","attributes":{"name":"USB\u8a0e\u8ad6","description":"USB\u30e1\u30e2\u30ea\u306b\u95a2\u3059\u308b\u4e00\u5207\u306e\u4f7f\u7528\u30b3\u30c4\u3001\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0\u3001\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u5fa9\u65e7\u3084\u4fee\u5fa9\u306e\u8a0e\u8ad6","slug":"usb","color":"#6DBB3E","backgroundUrl":null,"backgroundMode":null,"icon":"","discussionCount":41,"position":2,"defaultSort":null,"isChild":false,"isHidden":false,"lastPostedAt":"2025-10-15T06:38:26+00:00","canStartDiscussion":false,"canAddToDiscussion":false}},{"type":"tags","id":"4","attributes":{"name":"PC\u8a0e\u8ad6","description":"\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u306e\u30aa\u30da\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u30b7\u30b9\u30c6\u30e0\u306b\u95a2\u3059\u308b\u4e00\u5207\u306e\u4f7f\u7528\u30b3\u30c4\u3001\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0\u3001\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u5fa9\u65e7\u3084\u4fee\u5fa9\u306e\u8a0e\u8ad6","slug":"pc","color":"#F8504B","backgroundUrl":null,"backgroundMode":null,"icon":"","discussionCount":354,"position":3,"defaultSort":null,"isChild":false,"isHidden":false,"lastPostedAt":"2025-10-29T06:28:16+00:00","canStartDiscussion":false,"canAddToDiscussion":false}}],"session":{"userId":0,"csrfToken":"4hpthrvCjzWf0VlLtbLdNz8Uyzi5ciKP6eTn8FpY"},"locales":{"ja":"Japanese"},"locale":"ja","googleGTMCode":"GTM-WNCCVVN4","apiDocument":{"data":{"type":"discussions","id":"213","attributes":{"title":"Windows\u3067gpedit.msc\u304c\u898b\u3064\u304b\u3089\u306a\u3044\u30a8\u30e9\u30fc\u306e\u5bfe\u51e6\u6cd5","slug":"213","commentCount":1,"participantCount":1,"createdAt":"2025-07-24T06:56:24+00:00","lastPostedAt":"2025-07-24T06:56:24+00:00","lastPostNumber":1,"canReply":false,"canRename":false,"canDelete":false,"canHide":false,"isApproved":true,"canReset":false,"viewCount":277,"canViewNumber":false,"shareUrl":"https:\/\/topics.emop.jp\/d\/213","canTag":false,"subscription":null,"isSticky":false,"canSticky":false,"isLocked":false,"canLock":false},"relationships":{"user":{"data":{"type":"users","id":"1"}},"posts":{"data":[{"type":"posts","id":"218"}]},"uniqueViews":{"data":[{"type":"discussionviews","id":"75072"}]},"latestViews":{"data":[{"type":"discussionviews","id":"119003"},{"type":"discussionviews","id":"119002"},{"type":"discussionviews","id":"118998"},{"type":"discussionviews","id":"118848"},{"type":"discussionviews","id":"118837"}]},"tags":{"data":[{"type":"tags","id":"4"}]}}},"included":[{"type":"users","id":"1","attributes":{"username":"getdatarecovery","displayName":"EMOP\u77e5\u60e0\u888b","avatarUrl":"https:\/\/topics.emop.jp\/assets\/avatars\/y4ZkNETEDFjVFVeI.png","slug":"1","joinTime":"2022-08-31T03:44:16+00:00","discussionCount":514,"commentCount":517,"canEdit":false,"canEditCredentials":false,"canEditGroups":false,"canDelete":false,"lastSeenAt":"2025-10-29T06:25:19+00:00","fof-upload-uploadCountCurrent":1244,"fof-upload-uploadCountAll":1246,"canSuspend":false,"canEditNickname":false},"relationships":{"groups":{"data":[{"type":"groups","id":"1"}]}}},{"type":"posts","id":"218","attributes":{"number":1,"createdAt":"2025-07-24T06:56:24+00:00","contentType":"comment","contentHtml":"\u003Cp\u003EWindows\u3067gpedit.msc\u3092\u5b9f\u884c\u3059\u308b\u3068\u3001\u30ed\u30fc\u30ab\u30eb\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30a8\u30c7\u30a3\u30bf\u30fc\u304c\u958b\u304d\u307e\u3059\u3002\u3053\u308c\u306fWindows\u306eMMC\uff08Microsoft Management Console\uff09\u3067\u3001\u30e6\u30fc\u30b6\u30fc\u304c\u30b7\u30b9\u30c6\u30e0\u8a2d\u5b9a\u306b\u30a2\u30af\u30bb\u30b9\u3057\u3001\u5909\u66f4\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\u6b8b\u5ff5\u306a\u304c\u3089\u3001\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30a8\u30c7\u30a3\u30bf\u306f\u3001Windows\u306ePro\u304a\u3088\u3073Enterprise\u30a8\u30c7\u30a3\u30b7\u30e7\u30f3\u3067\u306e\u307f\u5229\u7528\u53ef\u80fd\u3067\u3059\u3002Pro\u304a\u3088\u3073Enterprise\u4ee5\u5916\u306eWindows\u30a8\u30c7\u30a3\u30b7\u30e7\u30f3\u3067gpedit.msc\u30b3\u30de\u30f3\u30c9\u3092\u5b9f\u884c\u3057\u3088\u3046\u3068\u3059\u308b\u3068\u3001Windows\u306f\u300c\u003Ca href=\u0022https:\/\/jp.bitwar.net\/course\/tips\/3770.html\u0022 rel=\u0022ugc noopener nofollow\u0022 target=\u0022_blank\u0022 rel=\u0022ugc noopener nofollow\u0022 target=\u0022_blank\u0022\u003Egpedit.msc\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u003C\/a\u003E\u300d\u3068\u3044\u3046\u30a8\u30e9\u30fc\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u51fa\u3057\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Cp\u003EPro\u7248\u307e\u305f\u306fEnterprise\u7248\u3092\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3059\u308b\u3053\u3068\u3067\u89e3\u6c7a\u3057\u307e\u3059\u304c\u3001\u30ed\u30fc\u30ab\u30eb\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30a8\u30c7\u30a3\u30bf\u30fc\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u3066\u3044\u306a\u3044Windows\u7248\u3067\u3082gpedit.msc\u3092\u5b9f\u884c\u3059\u308b\u305f\u3081\u306e\u56de\u907f\u7b56\u304c\u3042\u308a\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Ch3\u003E\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30b3\u30de\u30f3\u30c9\u306e\u6709\u52b9\u5316\u003C\/h3\u003E\n\n\u003Cp\u003E\u30ed\u30fc\u30ab\u30eb\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u3066\u3044\u306a\u3044\u7279\u5b9a\u306eWindows Edition\u3092\u4f7f\u7528\u3057\u3066\u3044\u308b\u5834\u5408\u3001\u7279\u5b9a\u306e\u30b3\u30de\u30f3\u30c9\u3092\u4f7f\u7528\u3057\u3066\u6709\u52b9\u306b\u3059\u308b\u3053\u3068\u3082\u3067\u304d\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\u6ce8\uff1a\u73fe\u5728\u306eWindows\u30a8\u30c7\u30a3\u30b7\u30e7\u30f3\u306f\u3001Windows\u8a2d\u5b9a\uff1e\u30b7\u30b9\u30c6\u30e0\uff1e\u8a73\u7d30\u60c5\u5831\uff1eWindows\u4ed5\u69d8\u304b\u3089\u78ba\u8a8d\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753340005-329819-1681352007394912.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\u30b3\u30de\u30f3\u30c9\u306f\u3001Microsoft Windows Group Policy Client Extensions\u3068Client Tool Package\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u3057\u3001OS\u306e\u30eb\u30fc\u30c8\u30d5\u30a9\u30eb\u30c0\u306b\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u307e\u3059\u3002\u3053\u306e\u30d1\u30c3\u30b1\u30fc\u30b8\u306f\u3001\u30aa\u30f3\u30e9\u30a4\u30f3\u306eWindows\u30a4\u30e1\u30fc\u30b8\u30d5\u30a1\u30a4\u30eb\u304b\u3089\u53d6\u5f97\u3057\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\u3053\u3046\u3059\u308b\u3053\u3068\u3067\u3001GPedit\u3092\u5b9f\u884c\u3059\u308b\u305f\u3081\u306b\u5fc5\u8981\u306a\u30d5\u30a1\u30a4\u30eb\u3092C\u30c9\u30e9\u30a4\u30d6\u306e\u30eb\u30fc\u30c8\u30d5\u30a9\u30eb\u30c0\u306b\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\uff11\uff0eGithub Repository\u306b\u30a2\u30af\u30bb\u30b9\u3057\u3066\u3001gpedit-enabler\u30b9\u30af\u30ea\u30d7\u30c8\u3092\u5165\u624b\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\uff12\uff0e1\u884c\u76ee\u304b\u30898\u884c\u76ee\u307e\u3067\u306e\u30b3\u30fc\u30c9\u3092\u30b3\u30d4\u30fc\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753340030-575829-1681351262743141.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\uff13\uff0e\u30e1\u30e2\u5e33\u3092\u958b\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\uff14\uff0e\u5148\u306b\u30b3\u30d4\u30fc\u3057\u305f\u30b3\u30de\u30f3\u30c9\u3092\u8cbc\u308a\u4ed8\u3051\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753340041-617806-1681351353167608.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\uff15\uff0e\u30d5\u30a1\u30a4\u30eb\u3092\u4fdd\u5b58\u3057\u3001\u4fdd\u5b58\u7a2e\u985e\u3092[\u3059\u3079\u3066\u306e\u30d5\u30a1\u30a4\u30eb]\u3068\u3057\u3001\u540d\u524d\u3092gpedit.bat\u306b\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753340054-269918-1681351369774363.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\uff16\uff0e\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u3092Administrator\u3068\u3057\u3066\u5b9f\u884c\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\uff17\uff0ebat\u30d5\u30a1\u30a4\u30eb\u304c\u3059\u3079\u3066\u306e\u30b3\u30de\u30f3\u30c9\u3092\u5b9f\u884c\u3059\u308b\u306e\u3092\u5f85\u3061\u307e\u3059\u3002\u003Cbr\u003E\n\uff18\uff0e\u51e6\u7406\u304c\u5b8c\u4e86\u3057\u305f\u3089\u3001\u3044\u305a\u308c\u304b\u306e\u30ad\u30fc\u3092\u62bc\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\u307e\u305f\u306f\u3001\u4ee5\u4e0b\u306e\u30b9\u30c6\u30c3\u30d7\u3067\u30ed\u30fc\u30ab\u30eb\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30a8\u30c7\u30a3\u30bf\u30fc\u3092\u6709\u52b9\u306b\u3059\u308b\u3053\u3068\u3082\u3067\u304d\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\uff11\uff0eWindows + R\u30ad\u30fc\u3092\u62bc\u3057\u3066\u300c\u30d5\u30a1\u30a4\u30eb\u540d\u3092\u6307\u5b9a\u3057\u3066\u5b9f\u884c\u300d\u3092\u958b\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\uff12\uff0ecmd\u3068\u5165\u529b\u3057\u3001Ctrl + Shift + Enter\u30ad\u30fc\u3092\u62bc\u3057\u3066\u3001\u7ba1\u7406\u8005\u3068\u3057\u3066\u306e\u30b3\u30de\u30f3\u30c9\u30d7\u30ed\u30f3\u30d7\u30c8\u3092\u958b\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\uff13\uff0e\u6b21\u306e\u30b3\u30de\u30f3\u30c9\u3092\u5165\u529b\u3057\u3001Enter\u30ad\u30fc\u3092\u62bc\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cstrong\u003EFOR %F IN (\u0022%SystemRoot%\\servicing\\Packages\\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum\u0022) DO (DISM \/Online \/NoRestart \/Add-Package:\u0022%F\u0022)\u003C\/strong\u003E\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753340082-507628-1681351616190000.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\uff14\uff0e\u30b3\u30de\u30f3\u30c9\u304c\u5b9f\u884c\u3055\u308c\u308b\u306e\u3092\u5f85\u3061\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cstrong\u003EFOR %F IN (\u0022%SystemRoot%\\servicing\\Packages\\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum\u0022) DO (DISM \/Online \/NoRestart \/Add-Package:\u0022%F\u0022)\u003C\/strong\u003E\u003Cbr\u003E\n\uff15\uff0e\u518d\u5ea6\u3001\u4ee5\u4e0b\u306e\u30b3\u30de\u30f3\u30c9\u3092\u5165\u529b\u3057\u3001Enter\u30ad\u30fc\u3092\u62bc\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\uff16\uff0egpedit.msc\u3092\u958b\u3044\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002\u003C\/p\u003E\n\n\u003Ch3\u003E\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30d5\u30a9\u30eb\u30c0\u3092\u30b3\u30d4\u30fc\u3059\u308b\u003C\/h3\u003E\n\n\u003Cp\u003E\u4e0a\u8a18\u306e\u30b3\u30de\u30f3\u30c9\u3092\u5b9f\u884c\u3057\u3066\u3082\u3046\u307e\u304f\u3044\u304b\u306a\u3044\u5834\u5408\u306f\u3001SysWow64\u304b\u3089\u30d7\u30e9\u30a4\u30de\u30ea\u30c9\u30e9\u30a4\u30d6\u306e\u30eb\u30fc\u30c8\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306b\u30ed\u30fc\u30ab\u30eb\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30d5\u30a1\u30a4\u30eb\u3092\u30b3\u30d4\u30fc\u3057\u3066\u307f\u308b\u3068\u3088\u3044\u3067\u3057\u3087\u3046\u3002\u3059\u3079\u3066\u306e\u30b7\u30b9\u30c6\u30e0\u30d5\u30a1\u30a4\u30eb\u306f\u30eb\u30fc\u30c8\u30d5\u30a9\u30eb\u30c0\u306b\u4fdd\u5b58\u3055\u308c\u3066\u3044\u308b\u306e\u3067\u3001\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30d5\u30a1\u30a4\u30eb\u306e\u30b3\u30d4\u30fc\u306f\u3046\u307e\u304f\u3044\u304f\u306f\u305a\u3067\u3059\u3002\u003Cbr\u003E\n\uff11\uff0eWindows + E\u30ad\u30fc\u3092\u62bc\u3057\u3066\u3001\u30d5\u30a1\u30a4\u30eb\u30a8\u30af\u30b9\u30d7\u30ed\u30fc\u30e9\u3092\u958b\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\uff12\uff0eC:\u21c4WindowsSysWOW64\u306b\u79fb\u52d5\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753340105-697162-1681351906600025.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\uff13\uff0e\u4ee5\u4e0b\u306e\u30d5\u30a1\u30a4\u30eb\u3068\u30d5\u30a9\u30eb\u30c0\u30fc\u3092\u30b3\u30d4\u30fc\u3057\u307e\u3059\uff1a\u003Cbr\u003E\n\u003Cstrong\u003EGroupPolicy\u003Cbr\u003E\nGroupPolicyUsers\u003Cbr\u003E\ngpedit.msc\u003C\/strong\u003E\u003Cbr\u003E\n\uff14\uff0eC:\u21c4WindowsSystem32\u306e\u4e2d\u306b\u8cbc\u308a\u4ed8\u3051\u307e\u3059\u3002\u003Cbr\u003E\n\uff15\uff0e\u30d5\u30a1\u30a4\u30eb\u540d\u3092\u6307\u5b9a\u3057\u3066\u3001gpedit.msc\u3068\u5165\u529b\u3057\u3001\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30a8\u30c7\u30a3\u30bf\u30fc\u3092\u958b\u304f\u3053\u3068\u304c\u3067\u304d\u308b\u304b\u3069\u3046\u304b\u3092\u78ba\u8a8d\u3057\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Ch3\u003ESFC\u304a\u3088\u3073DISM\u30b3\u30de\u30f3\u30c9\u3092\u5b9f\u884c\u3059\u308b\u003C\/h3\u003E\n\n\u003Cp\u003EPro\u7248\u3084Enterprise\u7248\u3092\u4f7f\u7528\u3057\u3066\u3044\u3066\u3082\u3001\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30a8\u30c7\u30a3\u30bf\u30fc\u3092\u958b\u304f\u3053\u3068\u304c\u3067\u304d\u306a\u3044\u5834\u5408\u304c\u3042\u308b\u3002\u3053\u306e\u3088\u3046\u306a\u5408\u4f75\u75c7\u306f\u3001\u30b7\u30b9\u30c6\u30e0\u30d5\u30a1\u30a4\u30eb\u306e\u30a8\u30e9\u30fc\u304c\u539f\u56e0\u3067\u767a\u751f\u3059\u308b\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\u3053\u306e\u554f\u984c\u3092\u89e3\u6c7a\u3059\u308b\u306b\u306f\u3001\u307e\u305aDISM\uff08Deployment Image Servicing and Management\uff09\u30b3\u30de\u30f3\u30c9\u3067\u30b7\u30b9\u30c6\u30e0\u30a4\u30e1\u30fc\u30b8\u3092\u4fee\u5fa9\u3057\u3001SFC\uff08System File Checker\uff09\u30b3\u30de\u30f3\u30c9\u3067\u30b7\u30b9\u30c6\u30e0\u30d5\u30a1\u30a4\u30eb\u3092\u4fee\u5fa9\u3057\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\uff11\uff0e\u30d5\u30a1\u30a4\u30eb\u540d\u3092\u6307\u5b9a\u3057\u3066\u5b9f\u884c\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\uff12\uff0ecmd\u300d\u3068\u5165\u529b\u3057\u3001Ctrl + Shift + Enter\u30ad\u30fc\u3092\u62bc\u3057\u3066\u3001\u7ba1\u7406\u8005\u6a29\u9650\u3067\u30b3\u30de\u30f3\u30c9\u30d7\u30ed\u30f3\u30d7\u30c8\u3092\u958b\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\uff13\uff0eDISM \/Online \/Cleanup-Image \/RestoreHealth\u3068\u5165\u529b\u3057\u3001Enter\u30ad\u30fc\u3092\u62bc\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753340125-757110-1681351721414140.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\uff14\uff0e\u30b3\u30de\u30f3\u30c9\u304c\u5b9f\u884c\u3055\u308c\u308b\u306e\u3092\u5f85\u3061\u307e\u3059\u3002\u003Cbr\u003E\n\uff15\uff0e\u6b21\u306b\u3001\u300csfc \/scannow\u300d\u3068\u5165\u529b\u3057\u3001Enter\u30ad\u30fc\u3092\u62bc\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753340141-379556-1681351748546299.jpg\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\uff16\uff0e\u30b9\u30ad\u30e3\u30f3\u51e6\u7406\u304c\u5b8c\u4e86\u3059\u308b\u307e\u3067\u5f85\u3061\u307e\u3059\u3002\u003Cbr\u003E\n\uff17\uff0e\u30ed\u30fc\u30ab\u30eb\u30b0\u30eb\u30fc\u30d7\u30dd\u30ea\u30b7\u30fc\u30a8\u30c7\u30a3\u30bf\u30fc\u3092\u958b\u3044\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002\u003C\/p\u003E\n\n\u003Ch3\u003E\u30a8\u30e9\u30fc\u3067\u6d88\u3048\u305f\u30d5\u30a1\u30a4\u30eb\u3092\u5fa9\u5143\u3059\u308b\u003C\/h3\u003E\n\n\u003Cp\u003E\u30b7\u30b9\u30c6\u30e0\u306e\u30a8\u30e9\u30fc\u3067\u6d88\u5931\u3057\u305f\u30c7\u30fc\u30bf\u3084\u3001\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u306a\u3069\u3067\u4fdd\u5b58\u3055\u308c\u3066\u3044\u306a\u3044\u30d5\u30a1\u30a4\u30eb\u306a\u3069\u3092\u5fa9\u5143\u3059\u308b\u65b9\u6cd5\u3068\u3057\u3066\u4fbf\u5229\u306a\u30bd\u30d5\u30c8\u300c\u30c7\u30fc\u30bf\u5fa9\u5143\u30bd\u30d5\u30c8Bitwar\uff3d\u3092\u304a\u3059\u3059\u3081\u3057\u307e\u3059\u3002Bitwar\u30c7\u30fc\u30bf\u5fa9\u5143\u30bd\u30d5\u30c8\u306f\u3001Windows\u30d1\u30bd\u30b3\u30f3\u304b\u3089\u5931\u308f\u308c\u305f\u30d5\u30a1\u30a4\u30eb\u3068\u524a\u9664\u3055\u308c\u305f\u30d5\u30a1\u30a4\u30eb\u30923\u30b9\u30c6\u30c3\u30d7\u3068\u6570\u5206\u3067\u5fa9\u5143\u53ef\u80fd\u3067\u3059\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\u003Cstrong\u003EBitwar\u30c7\u30fc\u30bf\u5fa9\u5143\u30bd\u30d5\u30c8\u306e\u30e1\u30ea\u30c3\u30c8\u003C\/strong\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\uff11\uff0e\u69d8\u3005\u306a\u30a8\u30e9\u30fc\u3067\u30a2\u30af\u30bb\u30b9\u4e0d\u80fd\u306b\u306a\u3063\u305f\u30c9\u30e9\u30a4\u30d6\u304b\u3089\u30c7\u30fc\u30bf\u3092\u6551\u51fa\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\uff12\uff0e\u5185\uff0f\u5916\u4ed8\u3051HDD\u3001\u5931\u308f\u308c\u305f\u30d1\u30fc\u30c6\u30a3\u30b7\u30e7\u30f3\u3001USB\u30e1\u30e2\u30ea\u3001TF\u30ab\u30fc\u30c9\uff0fSD\u30ab\u30fc\u30c9\u306a\u3069\u306e\u30e1\u30e2\u30ea\u30fc\u30ab\u30fc\u30c9\u3001\u3054\u307f\u7bb1\u3001\u30af\u30e9\u30c3\u30b7\u30e5\u3057\u305f\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u306a\u3069\u306e\u30c7\u30fc\u30bf\u5fa9\u65e7\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\uff13\uff0e\u524a\u9664\u3001\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\u3001RAW\u306a\u3069\u3001\u3055\u307e\u3056\u307e\u306a\u7d1b\u5931\u306e\u30b1\u30fc\u30b9\u304b\u3089\u9ad8\u3044\u6210\u529f\u7387\u3067\u30c7\u30fc\u30bf\u3092\u6551\u51fa\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\uff14\uff0e\u5199\u771f\u3001\u30d3\u30c7\u30aa\u3001\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u3001\u30aa\u30fc\u30c7\u30a3\u30aa\u3001\u30e1\u30fc\u30eb\u306a\u3069\u30011000\u7a2e\u985e\u4ee5\u4e0a\u306e\u30c7\u30fc\u30bf\u306e\u30ec\u30b9\u30ad\u30e5\u30fc\u306b\u5bfe\u5fdc\u3057\u3066\u3044\u307e\u3059\u3002\u003Cbr\u003E\n\uff15\uff0eMac\u3068Windows\u4e8c\u3064\u306e\u30d0\u30fc\u30b8\u30e7\u30f3\u304c\u3042\u308a\u307e\u3059\u3002\u003Cbr\u003E\n\uff16\uff0e\u521d\u5fc3\u8005\u3067\u3082\u4f7f\u3044\u3084\u3059\u3044\u30b7\u30f3\u30d7\u30eb\u306a\u64cd\u4f5c\u753b\u9762\u3068\u6a5f\u80fd\u304c\u3042\u308a\u307e\u3059\u3002\u003Cbr\u003E\n\uff17\uff0e\u65b0\u898f\u767b\u9332\u8005\u306f30\u65e5\u9593\u7121\u6599\u8a66\u7528\u3067\u304d\u307e\u3059\u3002\u003Cbr\u003E\n8\uff0e\u30b9\u30ad\u30e3\u30f3\u3068\u30d7\u30ec\u30d3\u30e5\u30fc\u306f\u7121\u6599\u3067\u3059\u3002\u30d7\u30ec\u30d3\u30e5\u30fc\u3067\u304d\u306a\u3044\u306a\u3089\u3001\u5fa9\u5143\u3059\u308b\u5fc5\u8981\u306f\u3042\u308a\u307e\u305b\u3093\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\u307e\u305aBitwar\u30c7\u30fc\u30bf\u5fa9\u5143\u30bd\u30d5\u30c8\u3092\u30d1\u30bd\u30b3\u30f3\u306b\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u5fa9\u5143\u3057\u305f\u3044\u30c7\u30a3\u30b9\u30af\u30c9\u30e9\u30a4\u30d6\u306b\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\u003C\/p\u003E\n\n\u003Cp\u003E\u30b9\u30c6\u30c3\u30d7\uff11\uff0e\u30a6\u30a3\u30b6\u30fc\u30c9\u30e2\u30fc\u30c9\u3067\u5fa9\u5143\u3057\u305f\u3044\u30c7\u30fc\u30bf\u306e\u4fdd\u5b58\u5834\u6240\u3092\u9078\u629e\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753338809-3321-1681354921602946.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\u30b9\u30c6\u30c3\u30d7\uff12\uff0e\u30b9\u30ad\u30e3\u30f3\u30e2\u30fc\u30c9\u3092\u9078\u629e\u3057\u307e\u3059\u3002\u307e\u305a\u30af\u30a4\u30c3\u30af\u30b9\u30ad\u30e3\u30f3\u3092\u5b9f\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\uff0f\u521d\u671f\u5316\u306b\u3088\u3063\u3066\u6d88\u3048\u305f\u30c7\u30fc\u30bf\u3092\u5fa9\u5143\u3059\u308b\u5834\u5408\u3001\u76f4\u63a5\u300c\u521d\u671f\u5316\u30d5\u30a1\u30a4\u30eb\u306e\u5fa9\u5143\u300d\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u300c\u30af\u30a4\u30c3\u30af\u30b9\u30ad\u30e3\u30f3\u300d\u3068\u300c\u521d\u671f\u5316\u3057\u305f\u30d5\u30a1\u30a4\u30eb\u306e\u5fa9\u5143\u300d\u304c\u5fa9\u5143\u3057\u305f\u3044\u30d5\u30a1\u30a4\u30eb\u3092\u691c\u51fa\u3067\u304d\u306a\u304b\u3063\u305f\u3089\u3001\u307e\u305f\u30c7\u30a3\u30fc\u30d7\u30b9\u30ad\u30e3\u30f3\u3092\u5b9f\u884c\u3057\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753338846-691233-1681354931933949.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\u30b9\u30c6\u30c3\u30d7\uff13\uff0e\u5fa9\u5143\u3057\u305f\u3044\u30d5\u30a1\u30a4\u30eb\u306e\u30c7\u30fc\u30bf\u306e\u7a2e\u985e\u3092\u9078\u629e\u3057\u307e\u3059\u3002\u300c\u30b9\u30ad\u30e3\u30f3\u300d\u3092\u30af\u30ea\u30c3\u30af\u3057\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753338858-317406-1681354941319123.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\u30b9\u30c6\u30c3\u30d7\uff14\uff0e\u691c\u51fa\u3055\u308c\u305f\u30c7\u30fc\u30bf\u3092\u30d7\u30ec\u30d3\u30e5\u30fc\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u300c\u5fa9\u5143\u300d\u3092\u30af\u30ea\u30c3\u30af\u3057\u3066\u30c7\u30fc\u30bf\u3092\u4ed6\u306e\u30c7\u30a3\u30b9\u30af\u306b\u5fa9\u5143\u3057\u307e\u3059\u3002\u30c7\u30fc\u30bf\u304c\u4e0a\u66f8\u304d\u3055\u308c\u306a\u3044\u3088\u3046\u306b\u3001\u5fa9\u5143\u3057\u305f\u3044\u30c7\u30fc\u30bf\u3092\u5143\u306e\u5834\u6240\u306b\u5fa9\u5143\u3057\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\u4ed6\u306e\u30c9\u30e9\u30a4\u30d6\u3084\u30c7\u30d0\u30a4\u30b9\u306b\u5fa9\u5143\u3059\u308b\u306e\u304c\u304a\u52e7\u3081\u3067\u3059\u3002\u5fa9\u5143\u304c\u5b8c\u4e86\u3057\u305f\u3089\u3001\u30c7\u30fc\u30bf\u3092\u5143\u306e\u4fdd\u5b58\u5834\u6240\u306b\u30b3\u30d4\u30fc\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u003Cbr\u003E\n\u003Cimg src=\u0022https:\/\/topics.emop.jp\/assets\/files\/2025-07-24\/1753338870-931786-1681354952559182.png\u0022 title=\u0022\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\u3053\u308c\u3067\u3001Windows\u3067\u300cgpedit.msc\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u300d\u3068\u3044\u3046\u554f\u984c\u3092\u89e3\u6c7a\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002\u003C\/p\u003E","renderFailed":false,"canEdit":false,"canDelete":false,"canHide":false,"canFlag":false,"canLike":false,"isApproved":true,"canApprove":false},"relationships":{"discussion":{"data":{"type":"discussions","id":"213"}},"user":{"data":{"type":"users","id":"1"}},"mentionedBy":{"data":[]},"likes":{"data":[]}}},{"type":"groups","id":"1","attributes":{"nameSingular":"\u7ba1\u7406\u8005","namePlural":"\u7ba1\u7406\u8005","color":"#B72A2A","icon":"fas fa-wrench","isHidden":0}},{"type":"discussionviews","id":"75072","attributes":{"visited_at":"2025-07-24T06:56:25+00:00"},"relationships":{"user":{"data":{"type":"users","id":"1"}}}},{"type":"discussionviews","id":"119003","attributes":{"visited_at":"2025-11-03T06:40:59+00:00"}},{"type":"discussionviews","id":"119002","attributes":{"visited_at":"2025-11-03T06:40:16+00:00"}},{"type":"discussionviews","id":"118998","attributes":{"visited_at":"2025-11-03T06:34:23+00:00"}},{"type":"discussionviews","id":"118848","attributes":{"visited_at":"2025-11-02T19:51:06+00:00"}},{"type":"discussionviews","id":"118837","attributes":{"visited_at":"2025-11-02T18:36:42+00:00"}},{"type":"tags","id":"4","attributes":{"name":"PC\u8a0e\u8ad6","description":"\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u306e\u30aa\u30da\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u30b7\u30b9\u30c6\u30e0\u306b\u95a2\u3059\u308b\u4e00\u5207\u306e\u4f7f\u7528\u30b3\u30c4\u3001\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0\u3001\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u5fa9\u65e7\u3084\u4fee\u5fa9\u306e\u8a0e\u8ad6","slug":"pc","color":"#F8504B","backgroundUrl":null,"backgroundMode":null,"icon":"","discussionCount":354,"position":3,"defaultSort":null,"isChild":false,"isHidden":false,"lastPostedAt":"2025-10-29T06:28:16+00:00","canStartDiscussion":false,"canAddToDiscussion":false}}]}}</script>
-
-        <script type="text/javascript">
-            const data = JSON.parse(document.getElementById('flarum-json-payload').textContent);
-            document.getElementById('flarum-loading').style.display = 'none';
-
-            try {
-                flarum.core.app.load(data);
-                flarum.core.app.bootExtensions(flarum.extensions);
-                flarum.core.app.boot();
-            } catch (e) {
-                var error = document.getElementById('flarum-loading-error');
-                error.innerHTML += document.getElementById('flarum-content').textContent;
-                error.style.display = 'block';
-                throw e;
-            }
-        </script>
+<!-- Flarum 初期化用スクリプト類は削除済み -->
 
         
-    <script defer="" src="./index_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;f66be5c349644323b974a3aa9f14917c&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
-
+    <script>
+        // 簡易：JS オフで表示したい場合はここで追加のスクリプトを書かないでください
+    </script>
 
 </body></html>
