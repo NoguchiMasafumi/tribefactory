@@ -68,10 +68,14 @@ Windowsボタン<br />
 　　└直し方　<a href=file:///C:/Users/user/Documents/html/saved_web/howtouse_openwithview/index.html>file:///C:/Users/user/Documents/html/saved_web/howtouse_openwithview/index.html</a><br/>
 　　<input type=checkbox >電源オプションと設定の電源オプション齟齬　ロックの時間　カバー<br />
 　<br />
-  <input type=checkbox >Window security<br />
+<input type=checkbox >Window security<br />
   　└<a href=https://windows-waza.com/win11-windows-security-is-blank-restricted-by-it-administrator/>https://windows-waza.com/win11-windows-security-is-blank-restricted-by-it-administrator/</a><br />
-  Dism.exe /Online /Cleanup-image /Restorehealth<br />  
-
+　　　Dism.exe /Online /Cleanup-image /Restorehealth<br />  
+　　└結果ダメ　Windows11クリーンインストール<br />
+<input type=checkbox checked=checked>WIndows11クリーンインストール<br />
+　　reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f<br />
+　　一旦enter<br />
+  　shutdown /r /t 0<br />
 
 <br />  
   <input type=checkbox >ファイル共有<br />
@@ -83,7 +87,8 @@ Windowsボタン<br />
   
   └0x80070035が出る<br>
 　　<input type=checkbox >NISAコードでの時価取得　<a href=https://docs.google.com/spreadsheets/d/1lshw64frmvGgL7w5XjfoNsLYw9t4y9NgIGm3qlG3Gfk/edit?gid=0#gid=0>https://docs.google.com/spreadsheets/d/1lshw64frmvGgL7w5XjfoNsLYw9t4y9NgIGm3qlG3Gfk/edit?gid=0#gid=0</a><br />
-  　HDDケーブル確認<br />
+<br />
+HDDケーブル確認<br />
 <br />
 <br />
   外装<br />
@@ -102,6 +107,7 @@ Windowsボタン<br />
 </div>
 
 </body>
+
 
 
 
