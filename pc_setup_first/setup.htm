@@ -104,10 +104,142 @@ HDDケーブル確認<br />
 サービス<br />
 　操作 -> 一覧のエクスポート<br />
 　<a href=service_list.htm>停止サービス</a><br />
+<br />
+  <br />
+<br />  
+------------- 入れているアプリ -------------<br />
+<br />
+ Chrome<br />
+ itunes<br />
+ ファイル連番化<br />
+ └Frexible Renamer.exe<br />
+ 余白除去画像分割<br />
+ └ImagePageSplitter.exe<br />
+ Audacity<br />
+ MP3Gain<br />
+ 7-Zip<br />
+<br />
+<br />
 
+
+
+
+------------- 要Back Up -----------------<br />
+
+Chrome<br />
+ パスワード_o<br />
+<br />
+ 履歴_o<br />
+ お気に入り<br />
+ 起動ページ<br />
+<br />
+<br />
+itunes<br />
+ プレイリスト<br />
+ 取り込み済み曲<br />
+<br />
+<br />
+<br />
+---------------------------<br />
+BootUSB作成<br />
+https://www.microsoft.com/ja-jp/software-download/windows11<br />
+SDカードｘ<br />
+US B8G->32G 980円<br />
+F12 startup x<br />
+Top<br />
+F10 <br />
+F2 で起動画面<br />
+<br />
+やっと起動<br />
+カーソル動かず<br />
+KB5070773　インストール　3.3G X<br />
+ウソ手動はダメアンインストール　KB5070773<br>
+KB5070762をダウンロード（cabファイル）
+/bat/not_work_keyboard_mouse_at_clean_install/apply_windows11_KB5070762_cab.bat　をcabと同階層で実行<br />  
+EXIT！！！？の　os optimize boot Disable (Security Secure BootはEnableに！)<br />
+RUFUS でブートusb作成 ブートセクターが必要<br />
+　└TPM 2.0やセキュアブートなどのシステム要件チェック をスキップするオプションを提供しており、非対応PCへのインストールを容易にします。<br />
+　└先言ってくれ<br />
+　└Localアカウント入れてもよかったっぽい！！！<br />
+<br />
+F2でBootモードでUSBの名前「KIOKSIA」が表示されたらそれを選択<br />
+<br />
+<br />
+インストール中　国選択が出てきたら　SHIFT+F10<br />
+oobe\BypassNRO.cmd<br />
+これがダメになった<br />
+<br />
+<br />
+REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f<br />
+<br />
+でenter<br />
+<br />
+shutdown -r -t 0 -f<br />
+<br />
+でenter で　再起動<br />
+<br />
+3時間後くらいにもう一度サインインまで来る
+<br />
+SHIFT+F10
+<br />
+超重要！！！！！LANケーブル抜いて<br />
+oobe\BypassNRO.cmd<br />
+enterで実行<br />
+<br />
+実行すると再起動かかる<br />
+<br />
+<br />
+キーボードは106/109！！！！！！！！！！<br />
+<br />
+userを作成<br />
+<br />
+LANケーブル接続<br />
+<br />
+初回はセキュリティチェックやアップデートが走るので　なにやるにも遅い<br />
+<br />
+Edgeのチェックに注意しつつEdge初回開き<br />
+<br />
+Chromeダウンロード<br />
+Chromesetup.exeは管理者として実行<br />
+あわてるな！一回やりゃ5分くらいまて<br />
+<br />
+  右クリック　新規作成に　テキストがない<br />
+HKEY_CLASSES_ROOT\.txt<br />
+ShellNew　nullfile　作成<br />
+<br />
+https://windows-waza.com/solved-windows-11-right-click-menu-new-is-missing-text-document/<br />
+<br />
+right click new text document missing windows 11 shellnew<br />
+どれも微妙だった<br />
+  <br />
+<br />
+設定->アプリ->アプリ詳細->実行エイリアス　Teams　をoff<br />
+<br />
+設定 -> システム -> ディスプレイ -> 明るさ -> コンテンツに基づいて明るさを<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
 
 </body>
+
 
 
 
