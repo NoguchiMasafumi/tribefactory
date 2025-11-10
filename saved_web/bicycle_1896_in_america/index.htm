@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原文・和訳 対訳表示</title>
+    <style>
+        /* 全体のスタイル調整 */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; 
+        }
+
+        /* ページ全体の最大幅と中央寄せ */
+        .page-wrapper {
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background-color: #ffffff; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0 10px 0;
+            margin: 0;
+            font-weight: 300; 
+            color: #333;
+        }
+
+        /* ★★★ 変更点：ここから ★★★ */
+
+        /* テーブル全体のスタイル */
+        .translation-table {
+            width: 100%; /* .page-wrapper の幅に合わせる */
+            border-collapse: collapse; /* ボーダーを重ねる */
+            margin: 0 auto; /* 中央寄せ（.page-wrapper内で） */
+        }
+
+        /* カラム幅の指定（テーブルレイアウト用） */
+        .translation-table colgroup col {
+            width: 500px; /* 固定幅 500px */
+        }
+        
+        /* 左右カラムの間のスペースを確保するため、テーブル自体にパディングを設定 */
+        .translation-table-container {
+            padding: 0 20px; /* テーブルの外側に左右の余白 */
+            /* 2つのカラムを中央に配置する役割も兼ねる */
+            display: flex;
+            justify-content: center;
+        }
+
+        /* テーブルのヘッダー（見出し） */
+        .translation-table th {
+            text-align: left;
+            padding: 15px 15px 10px 15px;
+            border-bottom: 2px solid #eee;
+            color: #555;
+            font-weight: 600;
+            background-color: #ffffff; /* スクロール時に追従した場合の背景 */
+            
+            /* オプション：見出しをスクロールに追従させる */
+            position: sticky;
+            top: 0;
+        }
+        
+        /* テーブルのセル（本文） */
+        .translation-table td {
+            padding: 15px;
+            vertical-align: top; /* 内容を上揃えにする */
+            border-bottom: 1px solid #ddd; /* 各ブロックの区切り線 */
+        }
+        
+        /* 左カラムのセル */
+        .translation-table td:first-child {
+             background-color: #f7f7f7; 
+        }
+
+        /* 右カラムのセル */
+        .translation-table td:last-child {
+            border-left: 2px solid #ddd;
+        }
+
+        /* セル内のpreタグの折り返し設定 */
+        .translation-table pre {
+            white-space: pre-wrap; /* 空白や改行を保持しつつ、自動で折り返す */
+            word-wrap: break-word; /* 長い単語でも強制的に折り返す */
+            margin: 0; /* preタグのデフォルトマージンをリセット */
+            font-family: inherit; 
+            font-size: inherit;
+        }
+
+        /* ★★★ 変更点：ここまで ★★★ */
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <h1>原文・和訳 対訳</h1>
+
+        <div class="translation-table-container">
+
+            <table class="translation-table">
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+                
+                <thead>
+                    <tr>
+                        <th><h2>和訳</h2></th>
+                        <th><h2>原文 (共有テキスト)</h2></th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>
+<pre>
+1896年 自転車
+***************************
+
+ハンティントン・ハウス・コーナー、MUTUS
+自転車は多くのことの元凶とされているが、この乗り物に関する最も注目すべき不満の一つは、ニューヨークの釣り人によってなされたものだ。
+</pre>
+                        </td>
+                        <td>
+<pre>
+1896 Bicycle
+***************************
+
+Huntington house corner, MUTUS
+The bicycle is blamed for many things, but one of the most remarkable complaints concerning the wheel was that made by a New York fisherman.
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+「何も釣れなかった」とその老人は断言した。「まともなアタリすら一度もなかった。夜明け前に起き、40マイルも自転車に乗ったり歩いたりし、交通費に3ドル、サンドイッチとラム酒に5ドルも使ったのに、魚には全く触れもしなかった。とにかく、釣りは昔とは変わってしまった」と彼は悲しそうに続けた。
+「昔はニューヨークのほとんどどこへ行っても、たくさんの獲物を持ち帰れたものだ。今じゃ、ろくなものを持ち帰れない。」
+「どうしてそうなったとお考えですか？」と私は同情的に尋ねた。「自転車だ」と彼は言った。
+「な、何ですって？いったい自転車と何の関係があるというんです？」
+「わからん。だが、みんなが自転車のせいだと言うんだ。自転車が釣りを、そして他の何もかもを、すっかり台無しにしてしまったと、みんなそう言っている。」
+</pre>
+                        </td>
+                        <td>
+<pre>
+"Never caught a thing," declared the old man. "Never even got a decent bite. Got up before daylight and rode and walked 40 miles, spent three dollars in fares and five dollars for sandwiches and rum, and never teched 'em. Fishin' ain't what it used to be, anyhow," he continued, mournfully.
+"We used to go 'round New York 'most anywhere and bring in a good mess. Now you can't bring anything but a jag."
+"How do you account for it?" I inquired, sym-pathetically. "The bicycle," said he.
+"Wha-at? What in the world has the bicycle to do with it?"
+"I don't know -everybody says it's the bicycle, you see. The bike has just everlastingly knocked the spots out of fishin', 'n everything else so they say."
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+**************************
+
+自転車は不当に非難されている。
+ブルックリン、1892年8月25日。
+『シチズン』編集長へ：
+拝啓 私は、道路上の事故が安易に自転車のせいにされることに抗議したい。暴走事故の記述の90パーセントで、「馬が通りすがりの自転車に驚かされた」という記述が常に目立っているが、実際には、馬が驚く原因は他のことにある場合が多い。
+月曜の夜にイースタン・パークウェイで起きた事故は、いつものように自転車のせいにされたが、私を含め、それを目撃した他の数名も、馬を暴走させたのは自転車ではなく、レースをしていた2台の馬車が通り過ぎたことだったと信じるに足る理由がある。
+このようなパークウェイでのレースは、他のドライバーや歩行者、自転車乗り（ホイールメン）の命をも危険にさらすものであり、公園や市の条例で認められていないにもかかわらず、決して取り締まられることがない。
+このように抗議するにあたり、私はこの件について話をした他の多くの人々を代表している。
+敬具、
+エドワード・C・ブレイナード、リー・アベニュー47番地。
+</pre>
+                        </td>
+                        <td>
+<pre>
+**************************
+
+Bicycles Unjustly Blamed.
+BROOKLYN, Aug. 25, 1892.
+To the Editor of The Citizen:
+of SIR-I wish to protest against the readiness with which accidents on the road are charged to bicycles.
+In 90 per cent. of the accounts of run aways, "the horse was frightened by a passing bicycle," is always prominent, whereas, the frightening the horses is often due to some other cause.
+The accident on the Eastern Park-way on Monday evening was, as usual, charged against the bicycle, but I have reason to believe, as do several others, who, together with myself witnessed it, that it was not a bicycle but the passing of two teams racing that started the horse off.
+This racing on the parkways, endangering the lives of other drivers, as well as pedestrians and wheelmen, is, although not sanctioned by any park or city ordinance, never interfered with.
+In thus protesting I represent numerous others whom I have spoken with on the subject.
+Yours respectfully,
+EDWARD C. BRAINERD, 47 Lee avenue.
+</pre>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+<pre>
+*****************************
+
+自転車のテストケース（訴訟）。
+この機械（自転車）はセントラル・パークへの
+乗り入れを許可されるべきか？
+自転車をセントラル・パークから排除するという公園委員会の最近の決定を覆すため、自転車製造業者と自転車クラブによって起こされたテストケース（訴訟）が、昨日午前、エドワード・L・パリス氏を仲裁人として続行された。
+自転車側はエドマンド・ウェットモア氏が、公園委員会側は法人弁護士補佐のJ・タウンゼント・ジュニア氏が代理人を務めた。
+タウンゼント氏によって最初に召喚された証人は、蒸気船会社モナーク・ラインの総支配人であるサミュエル・G・ハフ氏だった。
+彼は、自転車が馬に与える影響を目の当たりにし、この件について非常に強く（感情を込めて）話す用意があると述べた。
+約2年前、彼はシカゴで馬車を運転し、ウッド・ストリートを下ってワシントン・ストリートに出たところで曲がろうとしていた。
+彼は時速約4マイルで馬車を走らせていた。
+彼の馬たちはその温厚さで注目すべきものであり、機関車のそばを通り過ぎても怯えることがないほどだった。
+ウッド・ストリートと直角に交差するワシントン・ストリートに差し掛かったとき、グラスという名の男が乗った自転車が歩道から現れ、ウッド・ストリートから馬車が来ているかどうかを確認することなく、猛スピードで通りを横切った。
+自転車はハフ氏の馬の1頭に衝突し、馬車は一瞬跳ね上がり、そのまま暴走して馬車（バギー）を横転させ、ハフ氏を放り出した。
+彼は右腕と左手の人差し指を骨折した。
+「私は3ヶ月間、外科医の世話になり」とハフ氏は語った、「その間、ほとんど何もできませんでした。黒人の看護師が私につき、まるで赤ん坊のようにスプーンで食事を与えなければならなかったのです。私の馬車は粉々になり、馬の1頭は死んでしまいました。馬たちは以前にも自転車を見たことがありましたが、いつも怖がっていました。私自身の馬以外にも、自転車を見てほとんど狂乱状態になる馬を見たことがありますが、個人的に知っている重大な事故は
+先ほど述べたものだけです。私は、自転車はこれまで発明された中で最も命や財産にとって危険なものだと考えます。最も温厚な馬でさえも、あれを怖がるのです。」
+ウェットモア氏による反対尋問で、ハフ氏は弁護士にグラス氏を損害賠償で訴えるよう指示したが、弁護士からはその行動を取らないよう助言されたと述べた。
+弁護士は、その男には5セントの価値もなく、馬車代（horse-car fare）を節約するために自転車に乗っているのだ、とハフ氏に伝えた。
+彼の馬たちは、それまで一度も暴走したことがなく、自転車以外のものに驚いて（shied）逃げたこともなかったという。
+「すべての馬が自転車を見て驚くとは言いません」と証人は述べた。「中には、何に対しても驚くほどの気概（spunk）を持っていない馬もいますから。」
+公園局の監督官であるルイス・リッセ氏は、約2ヶ月前、116丁目と6番街で自転車と遭遇した際、彼の馬が驚いて縁石に後ずさりしたと証言した。
+自転車が通り過ぎると、彼の馬は再び進み始めた。
+彼は、その時以前に馬が自転車を見たことがあったかどうかはわからないと述べた。
+彼は、自転車が通り過ぎても驚かない馬も見てきた。
+騎馬警官隊のウィリアム・J・ヒューストン巡査は、87丁目付近の5番街で、ある紳士の馬が自転車に怯えた事例を語った。
+馬は87丁目に後ずさりした。紳士は馬を再び（大通りに）引き出したが、自転車を見た途端、また87丁目に突進した。
+紳士は再び馬を大通りに出し、今度は自転車を通り過ぎたが、馬は非常に怯えた様子で耳をピンと立て、自転車を凝視していた。
+この巡査は、馬が自転車に驚くのを頻繁に見てきたが、他に特定の事例は記憶に残っていないと述べた。
+騎馬警官隊のウィリアム・A・レベル巡査部長は、79丁目付近の5番街で馬が自転車に怯えた一件を記憶していた。
+彼は、自転車に乗る人々は紳士であり、馬が怯えているのを見ると大抵（自転車から）降りることを知っていると述べた。
+巡査部長は、彼の経験では、公道で運転される自転車は、遭遇しうる他の何よりも馬を怯えさせる傾向が強いと述べた。
+この証人の証言が終わると、ヒアリングは休会となった。
+</pre>
+                        </td>
+                        <td>
+<pre>
+*****************************
+
+A TEST BICYCLE CASE.
+SHALL THE MACHINE BE ALLOWED IN CEN-
+TRAL PARK?
+The test case brought by the bicycle manu-facturers and bicycle clubs, to defeat the Park Commissioners in their recent decision excluding the bicycle from the Central Park, was continued before the Referee, Mr. Edward L. Parris, yester day morning.
+Edmund Wetmore appeared for the bicyclists, and the Park Commissioners were rep-represented by Mr. J. Townsend, Jr., Assistant Corpo-ration Counsel.
+Samuel G. Hough, General Mana-ger of the Monarch Line of steam-ships, was the first witness called by Mr. Townsend.
+He sald that be had seen the effect produced upon horses by the bicycle, and that he was prepared to speak very feelingly upon the subject.
+About two years ago he was driving his team in Chicago, down Wood-street, to reach Washington-street, at which point he proposed to turn.
+He was driving at the rate of about four miles an hour.
+His horses were re-markable for their gentleness, and he had driven them past locomotives without their becoming frightened.
+As he reached Washington-street, which crosses Wood-street at right angles, a bicy-cle ridden by a man named Glass came from the sidewalk, and without looking to see whether any vehicles were coming down Wood-street, Ginsa dashed across the street.
+The bicycle struck one of Mr. Hough's horses, the team gave a start, and then ran away, overturning the buggy and throw-Ing Mr. Hough out.
+His right arm was broken, as was also the forefinger of his left hand.
+"I was in the hands of the surgeon for three months," said Mr. Hough, "and during most of that time I was utterly helpless. I had a colored nurse to attend to me, and she had to treat me like an infant, feed-ing me with a spoon. My buggy was smashed to pieces, and one of my horses died. The horses had seen bicycles before, but they were always afraid of them. I have seen other horses besides my own that were almost crazy at the sight of a bicycle, but I have no personal knowledge of any serious nocident 
+except the one described. I consider the bicycle to be the most dangerous thing to life and property ever invented. The gentlest of horses are afraid of it."
+On cross-examination by Mr. Wetmore, Mr. Hough said that he had instructed his attorneys to sue Mr. Glass for damages, but they had advised him against taking this action.
+teiling him that the man was not worth five centa, and that he rode the bicycle to save his horse-car fare.
+His horses, he said, had never run away before, and had never shied at anything except a bicycle.
+"I do not say," said the witness, "that all horses will shy upon seeing a bicycle. Some horses have not spunk enough to shy at anything."
+Lewis Risse, a Superintendent in the Department
+of Public Parks, testified that about two months ago his horse had shied upon meeting a bicycle at One Hundred and Sixteenth-street and Sixth-ave-nue, and backed up against the curb.
+The bicycle passed by, and then his horse went on.
+He could not say that the horse had ever seen a bleyele be-fore that time.
+He had seen bicycles pass horses which did not shy upon their approach.
+Officer William J. Huston, of the mounted squad, related an instance of a gentleman's horse being fright-ened on Fifth-avenue, near Eighty-seventh-street, by a bicycle.
+The horse backed into Eighty-sev enth-street. The gentieman pulled him out again, but the moment he saw the bicycle he made anoth-er bolt into Eighty-seventh-street.
+The gentleman again got him out on the avenue, and this time he passed the bicycle, but looked at it very closely, pricking up his ears as though very much frightened.
+The officer said that he had fre-quently seen horses shy at bicycles, but no other special instances were retained in his mind, Sergt.
+William A. Revell, of the mounted squad, recol-lected one case of a horse being frightened by a bicycle on Fifth-avenue, near Seventy-ninth-street.
+He thought that the riders of bicycles were gentle-men, and he know that they gonerally dismounted whenever they saw that-horses were frightened.
+The Sergeant said that his experience was that bi-cycles driven on the public roads have a greater tendency to frighten horses than any other thing llabie to be met.
+At the conclusion of the testi-mony of this witness the hearing was adjourned.
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+**************************************
+（前からの続き）...内の臓器のヘルニアを許してしまう。
+また、自転車の分別ある使用がもたらす痔の症状の緩和は、局所的なマッサージ効果だけでなく、肛門から腸に伸びる筋層の緊張が改善されることにもよる可能性がある。
+性的興奮。 - 女性の間での自転車の使用に関して、非常に深刻な反対意見が述べられてきました。もしそれが本当であれば、私たちはこの運動を提案する際には極めて慎重になることでしょう。
+それは、自慰行為の習慣を生み出す、あるいは助長すると言われてきました。
+ニューヨークでフィジカル・カルチャー（体育）を教えている非常に有能な女性の一人が、私の医者の友人に語ったところによると、性的な快楽においてかなりの経験を積んだと自負するある生徒が、「自転車のサドルから得られる以上の満足のいく発達（開発）は望めない」と語ったそうです。
+ヴァンス医師は、15歳の、過度に興奮し、青白く、やや痩せた少女のケースを観察しました。彼女のサドルは、前の突き出た部分（pommel）が約35度の角度で上向きになるように調整されており、彼女はライディング中に目立って前かがみになっていました。彼が彼女をよく観察する機会があった間の彼女の行動は、我々が検討しているこの（自慰）行為を強く示唆していました。
+私は文献を徹底的に調査させましたが、この主題に関連する症例を見つけることはできませんでした。
+特定の条件下では、自転車のサドルがこの恐ろしい習慣を生み出し、助長する可能性があることは、容易に想像がつきます。
+サドルはすべての自転車で望み通りに傾けることができ、サドルのスプリングも革の三角形を硬くしたり緩めたりするように調整できます。
+このようにして、前述の少女のような人が、前の突起（ピークまたはポメル）を高く持ち上げるか、または張られた革を緩めて深いハンモックのような凹みを作り、それが外陰部全体にぴったりとフィットして前方に届くようにすることで、クリトリスと陰唇に絶え間ない摩擦を引き起こすことが可能になります。
+この圧力は、前かがみになることによってさらに強まり、活発な運動によって生じる熱が、さらにその感覚を増大させる可能性があります。
+しかし、乗り手が背筋を伸ばして座り、サドルを適度に張り、ほぼ水平にしていれば、体重は臀部にかかり、脚は十分に開いているため、外陰部にはごくわずかな圧力しかかかりません。
+さらに、解剖学的な理由からも、正しい姿勢がエロティックな傾向を減少させると考えられます。
+男性への一般的な影響がそうで、これはおそらく彼らの勃起神経（nervi erigentes）が受ける圧迫による痺れのためです。
+女性の陰部神経は...（文章が途切れている）
+</pre>
+                        </td>
+                        <td>
+<pre>
+**************************************
+permit hernia of the organs within.
+It is possible, too, that the relief to the hemorrhoidal condition which a judicious use of the bicycle brings about is due, not only to the local massage, but to the improved tone of the muscular coat extending up the bowel from the anus.
+Sexual Excitement. - A very grave objection has been made to the use of the bicycle among women, which, if true, would induce us to be exceedingly cautious in ever suggesting this exercise.
+It has been said to beget or foster the habit of mas-turbation.
+One of the very able women who teach physical culture in New York told a medical friend of mine that a pupil, who claimed a rather varied experience in sexual pleasures, said that she could not ask a more satisfactory development than could be obtained from the saddle of her bicycle.
+Dr. Vance has observed a case of an overwrought, pallid, somewhat ema-ciated girl of 15, whose saddle was arranged so that the front pommel rode upward at an angle of about 35°, who stooped for-ward noticeably in riding, and whose actions, during the time when he had good opportunity to observe her, strongly suggested to him the indulgence we are considering.
+I have had a thorough search made in the literature, but can find no cases bearing on this subject.
+It is perfectly conceiv-able that under certain conditions the bicycle saddle could both engender and propagate this horrible habit.
+The saddle can be tilted in every bicycle as desired, and the springs of the saddle can be so adjusted as to stiffen or relax the leather triangle.
+In this way a girl such as the one mentioned could, by carrying the front peak or pommel high, or by relaxing the stretched leather in order to let it form a deep, hammock-like concavity which would fit itself snugly over the entire vulva and reach up in front, bring about constant friction over the clitoris and labia.
+This pressure would be much increased by stooping forward, and the warmth generated from vigorous exercise might further increase the feeling.
+But if the rider sits upright and has her saddle moderately taut and fairly level, the weight rests upon the buttocks and but trifling pressure is brought anywhere upon the vulva as the legs swing well apart.
+Moreover, there is ana-tomical reason to believe that right posture will diminish erotic tendency;
+the general effect on man is such, and this is prob-ably due to the numbness from the pounding his nervi erigentes get.
+The woman's pudic nerve is readily caught-in case, dur-
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+*************************************************
+
+自転車が不道徳を引き起こすと主張。
+ボストンの女性救済連盟がサイクリングと「男性的」な女性を非難。
+マサチューセッツ州ボストン、6月8日。- 女性救済連盟（The Woman's Rescue League）は本日、「自転車に乗る女性」と、来たるべき「男性的な女性」が、「我が国のすべての軽工業において富の80パーセントを生み出している、勤勉で自立した女性たちに対し、多くの害をもたらし、真の利益をもたらさない」と宣言する決議を採択した。「男性的な女性」と「自転車に乗る女性」は、真の女性に恥をもたらす、と連盟は述べている。連盟は、若い少女や女性による自転車乗りを非難し、次のように述べている：「救済連盟に助けを求めに来た少女たちの30パーセントは、かつて自転車乗りだった。」
+e
+e
+</pre>
+                        </td>
+                        <td>
+<pre>
+*************************************************
+
+SAYS BICYCLING CAUSES IMMORALITY.
+Boston Woman's Rescue League Denounces Cycling and the "Mannish" Woman.
+Boston, Mass., June 8.-The Woman's Res-cue League today adopted resolutions declar-"ing the bicycle woman and the coming "man-nish woman " productive of "much harm and no real good to the indus trial and self-supporting women, who create 80 per cent of the wealth in all the light manufacturing industries in this coun-try." The "mannish woman" and the "bicycle woman," the league says, bring disgrace on the true woman. The league condemns bicycle riding by young girls and women, saying: "Thirty per cent of the girls that have come to the Rescue League for aid were bicycle riders at one time."
+e
+e
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+********************************************
+
+自転車
+精神異常。
+医師たちが、精神異常の新たな形態を自転車（ホイール）に突き止める。
+最近、ある女性が自転車の過度なライディングにより精神に異常をきたしたという報告が公表され、医師と自転車乗りの間でかなりの議論が巻き起こっている。彼女は脊椎に影響を受け、彼女の主治医はそれが過度なサイクリング（wheeling）によるものだと述べた。
+このようなケースはこれだけではない。
+この主題に注意深く取り組んできた医師たちによって、何度も医学雑誌に手紙が寄せられており、自転車への過度のふけり（over-in-dulgence）は、脊椎への長時間の圧迫により、最も悪質な形態の精神異常の一つを引き起こす、ということで一般的に意見が一致しているようだ。
+自転車精神異常（wheel insanity）という病気は、まだそれほど広まっていないと医師たちは言うが、それはまだ時間が経っていないからである。
+</pre>
+                        </td>
+                        <td>
+<pre>
+********************************************
+
+BICYCLE 
+INSANITY.
+Physicians Trace a New Form of Mental Aberration to the Wheel.
+CONSIDERADLE discussion has been areused among physicians and wheel-men by the recent publication of a re-port that a woman had gone insane from excessive riding of the bicycle. Her spine became affected, and her physician said it was due to too much wheeling.
+This is not the only case of the kind.
+Letters have been written time and again to the medical press by doctors who have given the sub-ject careful attention, and it appears to be generally agreed that over-in-dulgence in bicycling will induce one of the most malignant forms of insan-ity, owing to the long continued pres-sure on the spine.
+The disease of wheel insanity has not gained much foothold yet, doctors say, because it has not had time.
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+***************************
+自転車の乗りすぎ。
+それは心臓肥大、急性気管支炎、そして一時的な精神異常を引き起こしがちである。
+自転車に乗りすぎることは、ある点において、ミンスパイを食べすぎることと非常によく似た効果をもたらす。
+それは、幻覚を見させるのだ。我々の挿絵は、最近マディソン・スクエア・ガーデンで開催された6日間自転車レースのライダーの一人が
+ニューヨークで、何を見たと思ったかを示している。それは、彼の背中にしがみついている、ニヤニヤ笑う猿のように見えた。
+彼はそれを振り払おうとしたが、それはしがみつき、その爪は彼の肉に食い込み、ホイールのタイヤまで達した。
+彼はゴムが引き裂かれる音を聞いたと思った。そして彼は倒れ、人々は彼を休ませるために運び去った。
+トレーナーたちは彼にオイルや塗り薬をすり込み、軽い食事を与え、そして彼は眠った。
+目覚めると、彼は...（文章が途切れている）
+</pre>
+                        </td>
+                        <td>
+<pre>
+***************************
+TOO MUCH BICYCLING.
+It Is Apt to Produce Enlargement of the Heart, Acute Brancalis and Temporary Inamnity。
+Riding a bicycle to excess has very much the same effect, in one particu-lar, that eating too much mince pie does.
+It makes you see things. Our illustration shows what one of the rid-ers in the recent sis day bleycin race at Madison Square garden.
+New York, thought he saw, It seemed to be a grinning ape perched on his back.
+He tried to throw it off, but it clung. its claws sunk into his flesh, and reached down to the tires of the wheel.
+He thought he heard the rab-ber ripping. Then he fell, and they took him away to rest.
+The trainers rubbed him down with oils and lini-ments, gave him light food, and then he slept.
+On awakening, he renewed the
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+********************************
+
+寿命を縮める。
+保険会社が自転車乗りの危険性に気づく。
+ニューヨーク・ワールド紙。
+ある男性が、国内最大手の保険会社の一つに生命保険を申し込んだところ、先週、彼がタンパク尿（albuminuria）を患っているという理由で申し込みが拒否され、愕然とした。
+彼の心の中では、他のほとんどの人々と同様、この病気はビールの過剰摂取と関連付けられていた。
+彼は生涯、完全な禁酒家だった。彼が過度にふけっていた唯一のことといえば、自転車に乗ることだった。
+彼は審査結果について問い合わせたところ、自転車の乗りすぎは、ビールの飲みすぎと同じくらい腎臓に悪いと告げられた。
+身体運動における不節制は、他のいかなる形態の不節制とも同じくらい、その人が「優良な（保険）リスク」であるかどうかを決定する上で重要である。
+この主題は、先週ニューヨークで開催された生命保険医療ディレクター協会の会議で詳細に議論された。
+英国生命保険協会の幹事であるロンドンのT・グローバー・ライオン博士も議論に参加した。
+ニューアークのJ・C・ヤング博士はタンパク尿に関する論文を発表し、その中で、長時間の身体運動はアルコール覚醒剤の使用と同じくらいの頻度でこの病気を引き起こすと述べた。
+彼は、自転車、フェンシング、ボクシング、フットボールなど、人々が生命保険会社にとって「不良リスク」となるほど容易に過度にふけってしまう可能性のある、他の形態のスポーツやレクリエーションについても言及した。
+タンパク尿は、生命保険の申し込みが拒否される人々の3分の2にとっての障害となっている。
+数年前であれば、保険会社がタンパク尿を患う人にいかなる状況下であれ保険証券を発行するなど、馬鹿げていると考えられていただろう。
+しかし今や、少なくとも大手3社が近いうちにそうする（＝タンパク尿患者にも保険を発行する）ことが事実上確実視されている。
+彼らの医療委員会はこの主題に多大な注意を払ってきており、通常の条件下では、タンパク尿が男性の生命保険加入能力を妨げるべきではないという結論に達した。
+サンデー・ワールド紙の記者が、ニューヨーク生命保険会社の医療ディレクターの一人に対し、自転車乗りは自分が過度に乗りすぎているかどうかをどう知るべきか、また、腎臓に危険を及ぼすことなく安全に行える身体運動の量はどれくらいかを尋ねた。
+「心臓が『止めろ』と言ったときに止めるべきだ」というのが答えだった。
+「もし疲れるまで乗っているなら、それは少し乗りすぎだ。もし心臓が胸に打ち付けるのを感じるほど速く走っているなら、それは自転車から降りる時だ。もし彼が夜の...（文章が途切れている）
+</pre>
+                        </td>
+                        <td>
+<pre>
+********************************
+
+IT SHORTENS LIFE.
+Insurance Companies Awake to the Dangers of Bicycle Riding.
+New York World.
+A man who applied for a life insurance policy to one of the biggest companies in the country was amazed last week when his application was rejected on the ground that he was suffering from albuminuria.
+In his mind, as with most other people, this disease was associated with over-in-dulgence in beer.
+He had been a total ab-stainer all his life. About the only thing he indulged in to excess was bicycle rid-ing.
+When he made inquiries about the result of his examination he was told that too much bicycle riding was as bad for the kidneys as too much beer.
+Intemperance in physical exercise counts as much as any other form of intemperance in determining whether a man is a "good risk."
+This subject was discussed at length at a meeting of the Association of Life In-surance Medical Directors held in New York last week.
+Dr. T. Glover Lyon, of London, secretary of the British Life In surance Association, took part in the dis-cussion.
+Dr. J.C. Young, of Newark, read a paper on albuminuria, in which he said that prolonged physical exercise brought on the disease as frequently as the use of alcoholic stimulants.
+He spoke of bicycling, fencing, boxing, football and other forms of sport or recreation in which people might easily indulge to an excess that would make them bad risks for a life insurance company.
+Aluminuria is the stumbling-block of two-thirds of the people whose applications for a life insurance policy are rejected.
+A few years ago it would have been considered ab-surd to say that life insurance companies would, under any circumstances, issue n policy to a person afflicted with it.
+But now it is practically assured that at least three of the big companies will do so with-in a short time.
+Their medical boards have been devoting a zreat deal of attention to the subject, and they have come to the con-clusion that ander ordinary conditions al-buminuria should not bar a man's ability to obtain life insurance.
+A reporter for the Sunday World asked one of the chief medical directors for the New York Life Insurance Company how a bicycle rider should know whether or not he was riding to excess, and what amount of physical exercise of any character a man might safely take without danger to his kidceys.
+"He should stop when his heart tells him to." was the reply.
+"If a person rides until he is tired he has ridden a little too far. If he rides so fast that he feels his heart beating against his chest it is time for him to get off his wheel. If he makes his even-
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+******************************
+
+自転車が非難されていること。
+農夫はトウモロコシの価格が低いと不平を言う。原因は、自転車。
+服屋は服の価格が低いと不平を言う。原因は、自転車。
+本屋は本の価格が低いと不平を言う。原因は、自転車。
+牧師は会衆が少ないと不平を言う。
+原因は、自転車。
+バーテンダーは客が来ないと不平を言う。
+原因は、自転車。
+親は娘が駆け落ちしたと不平を言う。原因は、自転車。
+一部の者は、頭の中の「ホイール（車輪、気の迷い）」
+について不平を言う。
+</pre>
+                        </td>
+                        <td>
+<pre>
+******************************
+
+What the Bicycles are Charged With.
+The farmer complains of low prices of corn. Cause, bicycles
+The clothes dealer of the low prices of clothes. Cause, bicycles.
+The bookseller of the low prices of books. Cause, bicycles.
+Ministers of small congregations.
+Canse, bicycles.
+The barkeeper of the lack of custom.
+Cause,layers, bicycles.
+The parent that his daughter has flown. Cause, bicycles.
+A few complain of wheels 
+in their head.
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+*****************************
+
+
+提督、数人の馬車屋、そして自転車。
+イーストボーンでの保守党の夕食会で、フィールド提督は、鉄道従業員たちの心が彼に対して毒されたために彼らの支持を失ったと語った。彼が確かな筋から聞いたところによると、彼が失った票がもう一つあった。それは馬車屋（cabmen）の票だった。
+この票を失うに至った、彼の満ち溢れた不正行為とは何だったのか？
+なんと、ある密使が彼らの間を回り、「彼は馬車代（cab hire）を節約するために自転車に乗るような男だ」と言って、彼らに提督への毒を吹き込んだのだ。
+（笑い）彼らはそれを信じたのだろう、と彼は言ったが、彼は彼らに、自分は可能な限りいつでも自転車に乗るつもりだと告げた。
+***************************
+</pre>
+                        </td>
+                        <td>
+<pre>
+*****************************
+
+
+THE ADMIRAL, SOME CABMEN, AND THE BICYCLE.
+Speaking at a Conservative dinner at Eastbourne, Admiral Field said he lost the support of the railway employés because the minds of the men were poisoned against him. There was another vote, he had it on good authority, that he lost: that was the cabmen's vote.
+What was his iniquity, filled up to the full, which led to this vote being lost?
+Why, some emissary went about among them and poisoned them against him by saying that he was a man who rode a bicycle to save cab hire.
+(Laughter.) He supposed they believed it, but he Sld tell them that he intended to ride a bicycle whenever he could.
+***************************
+</pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+<pre>
+そして今、自転車は結婚の減少についても非難されている。
+若い男たちが自転車に乗って出かけてしまい、若い女性たちを放っておくことが原因だと主張されている。
+自転車は牛や豚の価格が安いことのせいにされ、そして今や結婚の減少という重荷まで背負わされている。
+</pre>
+                        </td>
+                        <td>
+<pre>
+And now the bicycles are being blamed for the falling off in mar-riages.
+It is claimed the young men go off on their wheels and leave the young ladios to them-selves.
+The bicycle is blamed for the cheap price of cattle and hogs and now has to bear the burden of scarcity of marriages.
+</pre>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div> </div> </body>
+</html>
