@@ -155,6 +155,52 @@ h3::after {
             　└Shift+Win+Sとは別<br />
             　NotePad新しいバージョン　削除済<br />
             <br />
+
+<h3>アンインストールバッチの作成</h3>
+Teams<br />
+<br />
+@echo off<br />
+echo Microsoft To Doをアンインストールしています...<br />
+winget uninstall "Microsoft To Do" --accept-source-agreements --silent<br />
+if %errorlevel% equ 0 (<br />
+    echo アンインストールが完了しました。<br />
+) else (<br />
+    echo アンインストールに失敗したか、アプリが見つかりませんでした。<br />
+)<br />
+pause<br />
+<br />
+Get-AppxPackage -AllUsers -Name MicrosoftTeams | Remove-AppxPackage -AllUsers<br />
+https://ygkb.jp/22500<br />            
+Get-AppxPackage Clipchamp.Clipchamp | Remove-AppxPackage                       # Clipchamp<br />
+Get-AppxPackage Microsoft.549981C3F5F10 | Remove-AppxPackage                   # Cortana<br />
+Get-AppxPackage Disney.37853FC22B2CE | Remove-AppxPackage                      # Disney+<br />
+Get-AppxPackage MicrosoftTeams | Remove-AppxPackage                            # Microsoft Teams<br />
+Get-AppxPackage Microsoft.Todos | Remove-AppxPackage                           # Microsoft To Do<br />
+Get-AppxPackage Microsoft.MicrosoftOfficeHub | Remove-AppxPackage              # Office on the Webへようこそ<br />
+Get-AppxPackage Microsoft.MicrosoftSolitaireCollection | Remove-AppxPackage    # Solitaire<br />
+Get-AppxPackage SpotifyAB.SpotifyMusic | Remove-AppxPackage                    # Spotify<br />
+Get-AppxPackage Microsoft.GamingApp | Remove-AppxPackage                       # Xbox ストア画面<br />
+Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage               # Xbox Game Bar<br />
+Get-AppxPackage Microsoft.Xbox.TCUI | Remove-AppxPackage                       # Xbox その他<br />
+Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage                 # Xbox その他<br />
+Get-AppxPackage Microsoft.XboxIdentityProvider | Remove-AppxPackage            # Xbox その他<br />
+Get-AppxPackage Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage         # Xbox その他<br />
+Get-AppxPackage Microsoft.ZuneVideo | Remove-AppxPackage                       # 映画 & テレビ<br />
+Get-AppxPackage Microsoft.WindowsCamera | Remove-AppxPackage                   # カメラ<br />
+Get-AppxPackage Microsoft.WindowsAlarms | Remove-AppxPackage                   # クロック<br />
+Get-AppxPackage Microsoft.YourPhone | Remove-AppxPackage                       # スマホ同期<br />
+Get-AppxPackage Microsoft.BingWeather | Remove-AppxPackage                     # 天気<br />
+Get-AppxPackage Microsoft.Getstarted | Remove-AppxPackage                      # ヒント<br />
+Get-AppxPackage Microsoft.WindowsFeedbackHub | Remove-AppxPackage              # フィードバック Hub<br />
+Get-AppxPackage Microsoft.Windows.Photos | Remove-AppxPackage                  # フォト<br />
+Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage            # 付箋<br />
+Get-AppxPackage Microsoft.WindowsSoundRecorder | Remove-AppxPackage            # ボイス レコーダー<br />
+Get-AppxPackage Microsoft.WindowsMaps | Remove-AppxPackage                     # マップ<br />
+Get-AppxPackage microsoft.windowscommunicationsapps | Remove-AppxPackage       # メール、カレンダー<br />
+Get-AppxPackage Microsoft.ZuneMusic | Remove-AppxPackage    <br />
+            
+            
+            
             <br />
             
             <h3>要INSTALL</h3>
@@ -250,6 +296,8 @@ h3::after {
               <br />
             <br />
             
+
+            
             <h3>Windows11クリーンインストール</h3>
             BootUSB作成<br />
             <a href="https://www.microsoft.com/ja-jp/software-download/windows11">https://www.microsoft.com/ja-jp/software-download/windows11</a><br />
@@ -328,4 +376,5 @@ h3::after {
     </div>
 
 </body>
+
 </html>
