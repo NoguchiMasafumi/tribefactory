@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCセットアップ・トラブルシューティング メモ</title>
+    <style>
+        body {
+            font-size: 12px;
+            font-family: 'Segoe UI', Meiryo, 'Hiragino Kaku Gothic ProN', 'MS PGothic', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+       .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+       .column {
+            float: left;
+            width: 48%; /* 2-column layout */
+            min-width: 300px;
+            margin-right: 2%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        /* 最後のカラムの margin-right を削除 */
+       .column:last-child {
+            margin-right: 0;
+        }
+h3 {
+    position: relative; 
+    z-index: 0; 
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c5282;
+    padding-left: 22px; 
+    padding-bottom: 8px;
+    border: none; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 1px rgba(0, 120, 212, 0.5);
+    overflow: visible; 
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    z-index: -1; 
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #0078d4;
+    filter: blur(0.5px); 
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0078d4;
+    filter: blur(0.5px);
+}
+        input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            word-break: break-all; /* 長いURLを折り返す */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre, code {
+            font-family: "Consolas", "Courier New", monospace;
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            word-break: break-all;
+            white-space: pre-wrap; /* コマンドを折り返す */
+        }
+        /* Clearfix to contain the floats */
+       .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="column">
+            <h3>設定済</h3>
+            スタートにピン留め<br />
+            　　Control Panel<br />
+            　Key Board Speed コントロールパネルから<br />
+            　中→小アイコン化<br />
+            　電源オプション　カバーを閉じたとき<br />
+            　登録されている拡張子を表示しない<br />
+            　エクスプローラー<br />
+            　└コンパクトビュー<br />
+            　└フォルダに適用<br />
+            　設定->システム->回復->PCの起動をカスタマイズする->今すぐ再起動<br />
+            　└トラブルシューティング->詳細オプション->UEFIファームウェアの設定->再起動<br />
+            　　└config->keyboard->F1-F12 as Primary Function<br />
+            　タスクバー<br />
+            　└検索ボックス<br />
+            　└タスクビュー<br />
+            　└タスクバーの動作<br />
+            　　└バッジを表示するオフ<br />
+            　　└ボタンをまとめラベル　なしに<br />
+            　Blootoothとデバイス<br />
+            　└トラックパッド　速度調整<br />
+            <br />
+            設定->アプリ->アプリ詳細->実行エイリアス　Teams　をoff<br />
+            <br />
+            設定 -> システム -> ディスプレイ -> 明るさ -> コンテンツに基づいて明るさを<br />
+            <br />
+            Cドライブをクリックしメニューからクリーンアップシステムファイルを消すをクリックし以前のWindowsにチェックしOKで実行<br />
+
+            <br />
+            <h3>UNINSTALL済</h3>
+            └コントロールパネル<br />
+            　　copilot<br />
+            　　onedrive<br />
+            　　teams<br />
+            　　KingSoft<br />
+            　　Family<br />
+            　　Outlook<br />
+            　　MS365<br />
+            　　クイックアシスト<br />
+            <br />
+            <br />
+            └設定_アプリ_INSTALLされているアプリ<br />
+            　└システムコンポーネント<br />
+            　　　<input type="checkbox" checked="checked" />DEV HOME=開発者向けダッシュボード<br />
+            　　　<input type="checkbox" checked="checked" />クリックして実行=MS製品の部分インストール<br />
+            <br />
+            <br />
+            Windowsボタン<br />
+            　切り取り領域とスケッチ　削除済<br />
+            　└Shift+Win+Sとは別<br />
+            　NotePad新しいバージョン　削除済<br />
+            <br />
+            <br />
+            
+            <h3>要INSTALL</h3>
+            　<input type="checkbox" />Google日本語入力<br />
+            　<input type="checkbox" checked="checked" />Chrome<br />
+              　└RSS FEDD READER<br />
+            　<input type="checkbox" checked="checked" />ダメ　いらない　Microsoft Defender<br />
+            　<input type="checkbox" />VS code<br />
+            
+            <br />
+
+            <h3>入れているアプリ</h3>
+            Chrome<br />
+             itunes<br />
+             ファイル連番化<br />
+             └Frexible Renamer.exe<br />
+             余白除去画像分割<br />
+             └ImagePageSplitter.exe<br />
+             Audacity<br />
+             MP3Gain<br />
+             7-Zip<br />
+            <br />
+            <br />
+            
+            <h3>要Back Up</h3>
+            Chrome<br />
+             パスワード_o<br />
+            <br />
+             履歴_o<br />
+             お気に入り<br />
+             起動ページ<br />
+            <br />
+            <br />
+            itunes<br />
+             プレイリスト<br />
+             取り込み済み曲<br />
+            <br />
+            <br />
+        </div>
+
+        <div class="column">
+            <h3>要調査</h3>
+            └設定_アプリ_INSTALLされているアプリ<br />
+            　　<input type="checkbox" checked="checked" />Functionの切り替え方法=Fn+ESCだけどBIOSから変更した<br />
+            　　<input type="checkbox" checked="checked" />Microdoft Edge Webview2　とは=アプリにwebページ表示<br />
+            　　<input type="checkbox" checked="checked" />PC Manager　とは=パフォーマンス向上<br />
+            　　<input type="checkbox" checked="checked" />キングソフトセキュリティは=アウト<br />
+            　　└<input type="checkbox" checked="checked" />お役立ち情報=まとめてアウト<br />
+            　　<input type="checkbox" checked="checked" />Defenderどうするか=こっちにしよう<br />
+            　　ThinkPad<br />
+            　　└<input type="checkbox" checked="checked" />謎クリック=スクロール<br />
+            　　└<input type="checkbox" checked="checked" />スペースキーアイコン=ライトだって！<br />
+            　　<input type="checkbox" checked="checked" />タスクバー検索カスタム方法<br />
+            　　　<code>コンピューター\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</code><br />
+            　　　<code>TaskBarSi　値0を追加</code><br />
+            　　<input type="checkbox" checked="checked" />Win + Shift + Sとはなにか=スクリーンショット　領域とは別<br />
+            　　<input type="checkbox" checked="checked" />選択したプログラムはこのファイルの種類に関連付けすることができません<br />
+            　　└直し方　<a href="file:///C:/Users/user/Documents/html/saved_web/howtouse_openwithview/index.html">file:///C:/Users/user/Documents/html/saved_web/howtouse_openwithview/index.html</a><br/>
+            　　<input type="checkbox" />電源オプションと設定の電源オプション齟齬　ロックの時間　カバー<br />
+            　<br />
+            <input type="checkbox" />Window security<br />
+              　└<a href="https://windows-waza.com/win11-windows-security-is-blank-restricted-by-it-administrator/">https://windows-waza.com/win11-windows-security-is-blank-restricted-by-it-administrator/</a><br />
+            　　　<pre>Dism.exe /Online /Cleanup-image /Restorehealth</pre>
+                └結果ダメ　Windows11クリーンインストール<br />
+            
+            <input type="checkbox" checked="checked" />WIndows11クリーンインストール<br />
+            　　<pre>reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f</pre>
+            　　一旦enter<br />
+              　<pre>shutdown /r /t 0</pre><br />
+            <br />
+            
+              <input type="checkbox" />ファイル共有<br />
+            　　└gpedit設定　<a href="file:///C:/Users/user/Documents/html/saved_web/howto_set_folder_share/index.html">file:///C:/Users/user/Documents/html/saved_web/howto_set_folder_share/index.html</a><br />
+            　　└gpedit復活方法　<br />
+            <pre>FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")
+            FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")</pre><br />
+            
+              
+              └0x80070035が出る<br />
+            　　<input type="checkbox" />NISAコードでの時価取得　<a href="https://docs.google.com/spreadsheets/d/1lshw64frmvGgL7w5XjfoNsLYw9t4y9NgIGm3qlG3Gfk/edit?gid=0#gid=0">https://docs.google.com/spreadsheets/d/1lshw64frmvGgL7w5XjfoNsLYw9t4y9NgIGm3qlG3Gfk/edit?gid=0#gid=0</a><br />
+            <br />
+            HDDケーブル確認<br />
+            <br />
+            <br />
+              外装<br />
+            　シールはがし<br />
+            <br />
+            <br />
+            サービス<br />
+            　操作 -> 一覧のエクスポート<br />
+            　<a href="service_list.htm">停止サービス</a><br />
+            <br />
+              <br />
+            <br />
+            
+            <h3>Windows11クリーンインストール</h3>
+            BootUSB作成<br />
+            <a href="https://www.microsoft.com/ja-jp/software-download/windows11">https://www.microsoft.com/ja-jp/software-download/windows11</a><br />
+            SDカードｘ<br />
+            US B8G->32G 980円<br />
+            F12 startup x<br />
+            Top<br />
+            F10 <br />
+            F2 で起動画面<br />
+            <br />
+            やっと起動<br />
+            カーソル動かず<br />
+            KB5070773　インストール　3.3G X<br />
+            ウソ手動はダメアンインストール　KB5070773<br />
+            KB5070762をダウンロード（cabファイル）<br />
+            <code>/bat/not_work_keyboard_mouse_at_clean_install/apply_windows11_KB5070762_cab.bat</code>　をcabと同階層で実行<br />
+              
+            EXIT！！！？の　os optimize boot Disable (Security Secure BootはEnableに！)<br />
+            RUFUS でブートusb作成 ブートセクターが必要<br />
+            　└TPM 2.0やセキュアブートなどのシステム要件チェック をスキップするオプションを提供しており、非対応PCへのインストールを容易にします。<br />
+            　└先言ってくれ<br />
+            　└Localアカウント入れてもよかったっぽい！！！<br />
+            <br />
+            F2でBootモードでUSBの名前「KIOKSIA」が表示されたらそれを選択<br />
+            <br />
+            <br />
+            インストール中T国選択が出てきたら　SHIFT+F10<br />
+            <pre>oobe\BypassNRO.cmd</pre>
+            これがダメになった<br />
+            <br />
+            <br />
+            <pre>REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f</pre>
+            <br />
+            でenter<br />
+            <br />
+            <pre>shutdown -r -t 0 -f</pre>
+            <br />
+            でenter で　再起動<br />
+            <br />
+            3時間後くらいにもう一度サインインまで来る
+            <br />
+            SHIFT+F10
+            <br />
+            超重要！！！！！LANケーブル抜いて<br />
+            <pre>oobe\BypassNRO.cmd</pre>
+            enterで実行<br />
+            <br />
+            実行すると再起動かかる<br />
+            <br />
+            <br />
+            キーボードは106/109！！！！！！！！！！<br />
+            <br />
+            userを作成<br />
+            <br />
+            LANケーブル接続<br />
+            <br />
+            初回はセキュリティチェックやアップデートが走るので　なにやるにも遅い<br />
+            <br />
+            Edgeのチェックに注意しつつEdge初回開き<br />
+            <br />
+            Chromeダウンロード<br />
+            Chromesetup.exeは管理者として実行<br />
+            あわてるな！一回やりゃ5分くらいまて<br />
+            <br />
+              右クリック　新規作成に　テキストがない<br />
+            <code>HKEY_CLASSES_ROOT\.txt</code><br />
+            <code>ShellNew　nullfile　作成</code><br />
+            <br />
+            <a href="https://windows-waza.com/solved-windows-11-right-click-menu-new-is-missing-text-document/">https://windows-waza.com/solved-windows-11-right-click-menu-new-is-missing-text-document/</a><br />
+            <br />
+            <code>right click new text document missing windows 11 shellnew</code><br />
+            どれも微妙だった<br />
+              <br />
+            <br />
+        </div>
+    </div>
+
+</body>
+</html>
