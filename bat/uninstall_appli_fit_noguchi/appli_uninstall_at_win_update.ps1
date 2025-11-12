@@ -5,6 +5,7 @@ $AppxApps = @(
     "Microsoft.Copilot",
     "Microsoft.BingSearch",
     "Microsoft.BingNews",
+    "Microsoft.OneDrive",
     "Microsoft.PowerAutomateDesktop",
     "Microsoft.Paint",
     "Microsoft.YourPhone",
@@ -81,4 +82,5 @@ REG ADD "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynam
 
 
 Write-Host "`n--- All uninstall processes completed. ---"
+
 Read-Host "Press Enter to exit."
