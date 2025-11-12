@@ -11,7 +11,7 @@
         "Name":  "blog",
         "PSIsContainer":  true,
         "Length":  null,
-        "LastWriteTime":  "\/Date(1762779918997)\/"
+        "LastWriteTime":  "\/Date(1762929536648)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\bookmarklet",
@@ -60,7 +60,7 @@
         "Name":  "saved_web",
         "PSIsContainer":  true,
         "Length":  null,
-        "LastWriteTime":  "\/Date(1762929273415)\/"
+        "LastWriteTime":  "\/Date(1762930669542)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\tool",
@@ -168,6 +168,20 @@
         "LastWriteTime":  "\/Date(1762860358000)\/"
     },
     {
+        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\journey",
+        "Name":  "journey",
+        "PSIsContainer":  true,
+        "Length":  null,
+        "LastWriteTime":  "\/Date(1762930172987)\/"
+    },
+    {
+        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\money",
+        "Name":  "money",
+        "PSIsContainer":  true,
+        "Length":  null,
+        "LastWriteTime":  "\/Date(1762929533747)\/"
+    },
+    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\19990314.htm",
         "Name":  "19990314.htm",
         "PSIsContainer":  false,
@@ -243,6 +257,34 @@
         "PSIsContainer":  false,
         "Length":  3751,
         "LastWriteTime":  "\/Date(1762860358000)\/"
+    },
+    {
+        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\journey\\19990314.htm",
+        "Name":  "19990314.htm",
+        "PSIsContainer":  false,
+        "Length":  45221,
+        "LastWriteTime":  "\/Date(1762929848797)\/"
+    },
+    {
+        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\journey\\20040621.htm",
+        "Name":  "20040621.htm",
+        "PSIsContainer":  false,
+        "Length":  102907,
+        "LastWriteTime":  "\/Date(1762930156022)\/"
+    },
+    {
+        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\journey\\20060609.htm",
+        "Name":  "20060609.htm",
+        "PSIsContainer":  false,
+        "Length":  48680,
+        "LastWriteTime":  "\/Date(1762930173106)\/"
+    },
+    {
+        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\journey\\template_002.htm",
+        "Name":  "template_002.htm",
+        "PSIsContainer":  false,
+        "Length":  35382,
+        "LastWriteTime":  "\/Date(1762928334311)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\bookmarklet\\AddBlock",
@@ -605,8 +647,8 @@
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\js\\sitemap\\file_structure.json",
         "Name":  "file_structure.json",
         "PSIsContainer":  false,
-        "Length":  96821,
-        "LastWriteTime":  "\/Date(1762924043911)\/"
+        "Length":  79313,
+        "LastWriteTime":  "\/Date(1762929326775)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\js\\sitemap\\sitemap.js",
@@ -1565,7 +1607,7 @@
         "Name":  "index_files",
         "PSIsContainer":  true,
         "Length":  null,
-        "LastWriteTime":  "\/Date(1762779991835)\/"
+        "LastWriteTime":  "\/Date(1762930647963)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index.html",
@@ -1582,125 +1624,6 @@
         "LastWriteTime":  "\/Date(1762860358000)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\cb=gapi.loaded_0",
-        "Name":  "cb=gapi.loaded_0",
-        "PSIsContainer":  false,
-        "Length":  118202,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\css2",
-        "Name":  "css2",
-        "PSIsContainer":  false,
-        "Length":  116174,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\destination",
-        "Name":  "destination",
-        "PSIsContainer":  false,
-        "Length":  437207,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2",
-        "Name":  "faviconV2",
-        "PSIsContainer":  false,
-        "Length":  2293,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(1)",
-        "Name":  "faviconV2(1)",
-        "PSIsContainer":  false,
-        "Length":  426,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(10)",
-        "Name":  "faviconV2(10)",
-        "PSIsContainer":  false,
-        "Length":  5934,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(11)",
-        "Name":  "faviconV2(11)",
-        "PSIsContainer":  false,
-        "Length":  426,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(12)",
-        "Name":  "faviconV2(12)",
-        "PSIsContainer":  false,
-        "Length":  184,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(13)",
-        "Name":  "faviconV2(13)",
-        "PSIsContainer":  false,
-        "Length":  519,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(2)",
-        "Name":  "faviconV2(2)",
-        "PSIsContainer":  false,
-        "Length":  1710,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(3)",
-        "Name":  "faviconV2(3)",
-        "PSIsContainer":  false,
-        "Length":  637,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(4)",
-        "Name":  "faviconV2(4)",
-        "PSIsContainer":  false,
-        "Length":  233,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(5)",
-        "Name":  "faviconV2(5)",
-        "PSIsContainer":  false,
-        "Length":  15200,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(6)",
-        "Name":  "faviconV2(6)",
-        "PSIsContainer":  false,
-        "Length":  572,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(7)",
-        "Name":  "faviconV2(7)",
-        "PSIsContainer":  false,
-        "Length":  8369,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(8)",
-        "Name":  "faviconV2(8)",
-        "PSIsContainer":  false,
-        "Length":  206,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\faviconV2(9)",
-        "Name":  "faviconV2(9)",
-        "PSIsContainer":  false,
-        "Length":  634,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\google_logo_icon_2380fba942c84387f09cf.svg",
         "Name":  "google_logo_icon_2380fba942c84387f09cf.svg",
         "PSIsContainer":  false,
@@ -1708,52 +1631,10 @@
         "LastWriteTime":  "\/Date(1762860358000)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\js",
-        "Name":  "js",
-        "PSIsContainer":  false,
-        "Length":  376869,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\logo-scs-key4687939",
-        "Name":  "logo-scs-key4687939",
-        "PSIsContainer":  false,
-        "Length":  6254,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\m=hfcr",
-        "Name":  "m=hfcr",
-        "PSIsContainer":  false,
-        "Length":  9959,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\m=_b",
-        "Name":  "m=_b",
-        "PSIsContainer":  false,
-        "Length":  122509,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\RotateCookiesPage.html",
         "Name":  "RotateCookiesPage.html",
         "PSIsContainer":  false,
         "Length":  389,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\rs=AA2YrTst1B5KY57uLFRFvf1ggmX3Hzcwtw",
-        "Name":  "rs=AA2YrTst1B5KY57uLFRFvf1ggmX3Hzcwtw",
-        "PSIsContainer":  false,
-        "Length":  2923,
-        "LastWriteTime":  "\/Date(1762860358000)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\rs=AA2YrTtPxr2ma4CplbvX_Js3zz5VBiuOaw",
-        "Name":  "rs=AA2YrTtPxr2ma4CplbvX_Js3zz5VBiuOaw",
-        "PSIsContainer":  false,
-        "Length":  233464,
         "LastWriteTime":  "\/Date(1762860358000)\/"
     },
     {
