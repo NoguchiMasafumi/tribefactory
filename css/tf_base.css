@@ -44,8 +44,13 @@ header, footer {
 /* ロゴ用のユーティリティ（必要に応じて調整） */
 .header-logo {
     display: block;
-    height: 40px; /* ロゴ高さの一例 */
+    height: 24px; /* ロゴ高さを24pxに変更 */
     line-height: 1;
+}
+.header-logo img {
+    height: 24px;
+    width: auto;
+    display: block;
 }
 
 /* ヘッダーのテキストを中央に表示したい既存のルールがある場合は
@@ -91,6 +96,19 @@ footer {
     padding: 20px;
     border: 1px solid #ddd;
     background-color: #f9f9f9;
+}
+
+/* 追加: head にあった .content-left のスタイルをここへ移動 */
+.content-left {
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+/* 小さい画面では干渉しないよう元に戻す */
+@media (max-width: 600px) {
+  .content-left {
+    margin-left: 0;
+  }
 }
 
 /* ------------------------------------- */
