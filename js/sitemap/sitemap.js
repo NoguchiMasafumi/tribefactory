@@ -1,15 +1,16 @@
 /**
  * sitemap.js
  * Location: tribefactory-main/js/sitemap/
- * Purpose: Reads file_structure.json and generates a link list based on the 'Name' property, excluding specific file types.
+ * Purpose: Reads file_structure.json and generates a link list, excluding specific file types.
  */
 
 (function () {
     'use strict';
 
     // --- Configuration ---
-    const JSON_PATH = 'js/sitemap/file_structure.json'; 
     const OUTPUT_ELEMENT_ID = 'sitemap-links'; 
+    const JSON_FILE_NAME = 'file_structure.json'; // Used internally by getScriptBaseUrl
+    const JSON_PATH_RELATIVE_TO_SCRIPT = JSON_FILE_NAME; // The JSON file is right next to the JS file
     
     // 除外する拡張子のリスト（小文字で定義）
     const EXCLUDED_EXTENSIONS = [
@@ -32,7 +33,7 @@
      * @returns {string} The base URL path to the script's directory (e.g., 'js/sitemap/').
      */
     function getScriptBaseUrl() {
-        const scriptElement = document.querySelector('script[src*="sitemap.js"]');
+        const scriptElement = document.querySelector('script[src*="' + JSON_FILE_NAME.split('.')[0] + '.js"]');
         if (scriptElement) {
              const fullSrc = scriptElement.src;
              return fullSrc.substring(0, fullSrc.lastIndexOf('/') + 1);
@@ -58,11 +59,9 @@
 
         let linkCount = 0;
 
-        // 1. フィルタリング処理の追加
+        // フィルタリング処理: フォルダを除外し、除外拡張子も除外
         data.filter(item => 
-            // 1. フォルダではないこと
             !item.PSIsContainer && 
-            // 2. 除外拡張子ではないこと
             !isExcluded(item.Name)
         ).forEach(item => {
             const li = document.createElement('li');
@@ -85,8 +84,10 @@
      * Fetches the JSON file and initiates link generation.
      */
     function loadSitemapData() {
+        // スクリプトのベースURLとJSONファイル名を結合して完全なパスを作成
         const baseUrl = getScriptBaseUrl();
-        const jsonPath = baseUrl + JSON_FILE_NAME;
+        // JSON_PATH_RELATIVE_TO_SCRIPTを使用
+        const jsonPath = baseUrl + JSON_PATH_RELATIVE_TO_SCRIPT; 
         
         console.log('Sitemap: Attempting to load JSON from: ' + jsonPath);
 
