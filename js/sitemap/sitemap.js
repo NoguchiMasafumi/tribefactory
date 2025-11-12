@@ -1,32 +1,42 @@
 /**
  * sitemap.js
  * Location: tribefactory-main/js/sitemap/
- * Purpose: Reads file_structure.json and generates a link list based on the 'Name' property.
+ * Purpose: Reads file_structure.json and generates a link list based on the 'Name' property, excluding specific file types.
  */
 
 (function () {
     'use strict';
 
     // --- Configuration ---
-    // The JSON file is located in the same directory as this script: js/sitemap/file_structure.json
-    const JSON_FILE_NAME = 'file_structure.json';
-    const OUTPUT_ELEMENT_ID = 'sitemap-links'; // The ID of the HTML element where the links will be inserted
+    const JSON_PATH = 'js/sitemap/file_structure.json'; 
+    const OUTPUT_ELEMENT_ID = 'sitemap-links'; 
+    
+    // 除外する拡張子のリスト（小文字で定義）
+    const EXCLUDED_EXTENSIONS = [
+        '.jpg', '.png', '.svg', '.xml', '.webmanifest', '.ico', '.ダウンロード', '.js'
+    ];
+    
+    /**
+     * Helper function to check if a file name ends with any excluded extension.
+     * @param {string} fileName - The name of the file (e.g., 'style.css').
+     * @returns {boolean} True if the file should be excluded.
+     */
+    function isExcluded(fileName) {
+        // ファイル名を小文字に変換して比較
+        const lowerName = fileName.toLowerCase();
+        return EXCLUDED_EXTENSIONS.some(ext => lowerName.endsWith(ext));
+    }
 
     /**
      * Finds the base directory of the script to correctly construct the JSON path.
-     * Uses querySelector to find the script tag that loaded this file (sitemap.js).
      * @returns {string} The base URL path to the script's directory (e.g., 'js/sitemap/').
      */
     function getScriptBaseUrl() {
-        // Find the script tag by looking for its known filename
         const scriptElement = document.querySelector('script[src*="sitemap.js"]');
         if (scriptElement) {
              const fullSrc = scriptElement.src;
-             // Return the path excluding the script name itself
              return fullSrc.substring(0, fullSrc.lastIndexOf('/') + 1);
         }
-        // Fallback for extremely unusual loading scenarios
-        // This assumes the script is always loaded from 'js/sitemap/' relative to the site root
         return 'js/sitemap/'; 
     }
 
@@ -41,45 +51,48 @@
             return;
         }
 
-        // リンク生成前に "Loading sitemap..." のテキストを削除
         outputElement.innerHTML = ''; 
 
         const ul = document.createElement('ul');
         ul.setAttribute('class', 'sitemap-list');
 
-        // Filter and process files that are NOT containers (i.e., actual files)
-        data.filter(item => !item.PSIsContainer).forEach(item => {
+        let linkCount = 0;
+
+        // 1. フィルタリング処理の追加
+        data.filter(item => 
+            // 1. フォルダではないこと
+            !item.PSIsContainer && 
+            // 2. 除外拡張子ではないこと
+            !isExcluded(item.Name)
+        ).forEach(item => {
             const li = document.createElement('li');
             const a = document.createElement('a');
             
-            // Link target uses the RelativePath property (relative to the tribefactory-main root)
             a.href = item.RelativePath;
-            a.textContent = item.Name; // Display the file name
+            a.textContent = item.Name; 
             a.setAttribute('title', item.RelativePath); 
 
             li.appendChild(a);
             ul.appendChild(li);
+            linkCount++;
         });
 
         outputElement.appendChild(ul);
-        console.log('Sitemap: Successfully generated ' + data.filter(item => !item.PSIsContainer).length + ' links.');
+        console.log('Sitemap: Successfully generated ' + linkCount + ' links.');
     }
 
     /**
      * Fetches the JSON file and initiates link generation.
      */
     function loadSitemapData() {
-        // 1. JSONパスを動的に解決
         const baseUrl = getScriptBaseUrl();
         const jsonPath = baseUrl + JSON_FILE_NAME;
         
         console.log('Sitemap: Attempting to load JSON from: ' + jsonPath);
 
-        // 2. Fetch APIでJSONを読み込み
         fetch(jsonPath)
             .then(response => {
                 if (!response.ok) {
-                    // エラーメッセージをより詳細に表示
                     throw new Error('Network response was not ok. HTTP Status: ' + response.status + ' (URL: ' + jsonPath + ')');
                 }
                 return response.json();
@@ -89,7 +102,6 @@
             })
             .catch(error => {
                 console.error('Sitemap Fetch Error:', error);
-                // Display error message in the output element
                 const outputElement = document.getElementById(OUTPUT_ELEMENT_ID);
                 if (outputElement) {
                      outputElement.innerHTML = '<p style="color:red;">Error loading sitemap data. Check console for details. (Possible causes: File not found or CORS restriction)</p>';
