@@ -1,2 +1,8 @@
+
+PowerShell上実行
+
 Set-ExecutionPolicy RemoteSigned -Scope Process
 
+Set-location -Path "\\lenovo_main\user\html\github"
+
+.\get_site_map.ps1
