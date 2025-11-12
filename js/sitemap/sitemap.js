@@ -23,7 +23,7 @@
 
     // 除外する拡張子のリスト（小文字で定義）
     const EXCLUDED_EXTENSIONS = [
-        '.jpg', '.png', '.svg', '.xml', '.webmanifest', '.ico', '.ダウンロード', '.js'
+        '.jpg', '.png', '.svg', '.xml', '.css', '.webmanifest', '.ico', '.ダウンロード', '.js'
     ];
     
     /**
