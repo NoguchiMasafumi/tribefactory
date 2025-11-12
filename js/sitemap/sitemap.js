@@ -10,7 +10,7 @@
 
     // --- Configuration ---
     const OUTPUT_ELEMENT_ID = 'sitemap-links'; 
-    const JSON_FILE_NAME = 'file_structure.json';
+    const JSON_FILE_NAME = 'https://tribefactory.netlify.app/js/sitemap/file_structure.json';
     
     // 【重要】サイトのルート（tribefactory-main）のフルパス（絶対パス）
     // JavaScriptでこのパスを正確に取得するのは難しいため、PowerShellが設定した絶対パスの「ルート部分」を
