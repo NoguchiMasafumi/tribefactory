@@ -1,3 +1,6 @@
 const currentYear=new Date().getFullYear();
 const footerHtml=`sssss`;
-document.getElementById('footer-container')?.innerHTML=footerHtml;
+const footerElem = document.getElementById('footer-container');
+if (footerElem) {
+  footerElem.innerHTML = footerHtml;
+}
