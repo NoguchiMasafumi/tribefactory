@@ -4,6 +4,3 @@ const footerHtml = `
 <p>&copy; ${currentYear} All Rights Reserved.</p>
 `;
 document.getElementById('footer-container')?.innerHTML = footerHtml;
-
-
-
