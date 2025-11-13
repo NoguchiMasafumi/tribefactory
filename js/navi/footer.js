@@ -1,8 +1,9 @@
 const currentYear = new Date().getFullYear();
 const footerHtml = `
-これはいいってこと？  <-- ✅ 日本語の全角文字（文字列データ）
+これはいいってこと？
 <p>&copy; ${currentYear} All Rights Reserved.</p>
 `;
 document.getElementById('footer-container')?.innerHTML = footerHtml;
+
 
 
