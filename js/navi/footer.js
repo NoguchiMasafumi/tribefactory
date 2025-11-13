@@ -1,4 +1,3 @@
-const currentYear = new Date().getFullYear();
-const footerHtml = `これはいいってこと？`;
-document.getElementById('footer-container')?.innerHTML = footerHtml;
-
+const currentYear=new Date().getFullYear();
+const footerHtml=`sssss`;
+document.getElementById('footer-container')?.innerHTML=footerHtml;
