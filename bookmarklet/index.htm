@@ -91,7 +91,7 @@ javascript:(
   <!-- ******************************************* -->
 <h3>Google Photo 共有url取得</h3>
 GooglePhotoで写真を右クリックして新しいタブで開いて実行すると共有用urlが取得できる<br />
-<a href=javascript:(function(){const domain='lh3.googleusercontent.com';const imgs=document.querySelectorAll(`img[src*="${domain}"]`);if(imgs.length<2){return;}let url=imgs[1].src;const queryIndex=url.indexOf('?');if(queryIndex!==-1){url=url.substring(0,queryIndex);}const splitIndex=url.lastIndexOf('=');if(splitIndex===-1){return;}const baseUrl=url.substring(0,splitIndex);const finalUrl=baseUrl+'=w380';navigator.clipboard.writeText(finalUrl).then(()=>{alert('Copied');},(err)=>{alert('Failed: '+err);});})();>get_photo_url</a>
+<a href="javascript:(function(){const domain='lh3.googleusercontent.com';const imgs=document.querySelectorAll('img[src*=&quot;' + domain + '&quot;]');if(imgs.length<2){return;}let url=imgs[1].src;const queryIndex=url.indexOf('?');if(queryIndex!==-1){url=url.substring(0,queryIndex);}const splitIndex=url.lastIndexOf('=');if(splitIndex===-1){return;}const baseUrl=url.substring(0,splitIndex);const finalUrl=baseUrl+'=w380';navigator.clipboard.writeText(finalUrl).then(()=>{alert('Copied');},(err)=>{alert('Failed: '+err);});})();">get_photo_url</a>
 <pre>
     <code>
         javascript:(function(){
@@ -529,4 +529,5 @@ GooglePhotoで写真を右クリックして新しいタブで開いて実行す
 </body>
 
 </html>
+
 
