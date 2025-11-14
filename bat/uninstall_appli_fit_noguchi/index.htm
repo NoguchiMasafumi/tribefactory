@@ -1,3 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <title id='title1'>Tribe Factory</title>
+
+    <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <header>
+        <div class="header-inner-upper">
+            Tribe Factory<img src="https://tribefactory.netlify.app/img/TF20_min.png" class="h24" alt="Tribe Factory" style="margin-left:5px;">
+            <!-- navi -->
+            <script src="https://tribefactory.netlify.app/js/navi/navi_menu2.js"></script>
+        </div>
+        <hr />
+    <div class="header-inner-lower">
+        トライブファクトリー
+
+    </div>
+    </header>
+
+    <div class="main-content">
+        <main class="content-sidebar">
+            <!-- ad -->
+            <script src="https://tribefactory.netlify.app/js/ad/ad_sidebar1.js"></script>
+
+            <!-- navi -->
+            <script src="https://tribefactory.netlify.app/js/navi/navi_menu1.js"></script>
+
+            <div id="sitemap-links">
+                <p>Loading sitemap...</p>
+            </div>
+            <script src="https://tribefactory.netlify.app/js/sitemap/sitemap.js"></script>
+            <p>左カラムのコンテンツエリア</p>
+        </main>
+
+<aside class="content-main">
+<h3>不要アプリアンインストール・検索ハイライトオフ</h3>            
 Write-Host "--- Starting application uninstall process ---"
 
 $AppxApps = @(<br />
@@ -81,3 +127,11 @@ REG ADD "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynam
 <br />
 Write-Host "`n--- All uninstall processes completed. ---"<br />
 Read-Host "Press Enter to exit."<br />
+</aside>
+
+    
+    </div>
+    <footer id="footer-container"></footer>
+    <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
+  </body>
+</html>
