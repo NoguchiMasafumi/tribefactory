@@ -1,0 +1,83 @@
+Write-Host "--- Starting application uninstall process ---"
+
+$AppxApps = @(<br />
+    "MSTeams",<br />
+    "Microsoft.Copilot",<br />
+    "Microsoft.BingSearch",<br />
+    "Microsoft.BingNews",<br />
+    "Microsoft.OneDrive",<br />
+    "Microsoft.PowerAutomateDesktop",<br />
+    "Microsoft.Paint",<br />
+    "Microsoft.YourPhone",<br />
+    "MicrosoftWindows.CrossDevice",<br />
+    "Microsoft.Windows.DevHome",<br />
+    "Microsoft.GetHelp",<br />
+    "Microsoft.WebMediaExtensions",<br />
+    "Microsoft.HEIFImageExtension",<br />
+    "Microsoft.ScreenSketch",<br />
+    "SynapticsIncorporated.SynapticsUtilities",<br />
+    "Clipchamp.Clipchamp",<br />
+    "Microsoft.Windows.Notepad",<br />
+    "Microsoft.549981C3F5F10",<br />
+    "Disney.37853FC22B2CE",<br />
+    "Microsoft.Todos",<br />
+    "Microsoft.MicrosoftOfficeHub",<br />
+    "Microsoft.MicrosoftSolitaireCollection",<br />
+    "SpotifyAB.SpotifyMusic",<br />
+    "Microsoft.GamingApp",<br />
+    "Microsoft.XboxGamingOverlay",<br />
+    "Microsoft.Xbox.TCUI",<br />
+    "Microsoft.XboxGameOverlay",<br />
+    "Microsoft.XboxIdentityProvider",<br />
+    "Microsoft.XboxSpeechToTextOverlay",<br />
+    "Microsoft.ZuneVideo",<br />
+    "Microsoft.WindowsCamera",<br />
+    "Microsoft.BingWeather",<br />
+    "Microsoft.Getstarted",<br />
+    "Microsoft.WindowsFeedbackHub",<br />
+    "Microsoft.Windows.Photos",<br />
+    "Microsoft.MicrosoftStickyNotes",<br />
+    "Microsoft.WindowsMaps",<br />
+    "Microsoft.ZuneMusic"<br />
+)<br />
+<br />
+Write-Host "`n[1/2] Uninstalling Microsoft Store Apps (AppxPackage)..."<br />
+<br />
+foreach ($App in $AppxApps) {<br />
+    Write-Host "- Processing $($App)..."<br />
+    Get-AppxPackage -AllUsers -Name $App | Remove-AppxPackage -AllUsers -ErrorAction SilentlyContinue<br />
+    if ($?) {<br />
+        Write-Host "  COMPLETE: $($App)" -ForegroundColor Green<br />
+    } else {<br />
+        Write-Host "  FAILED: $($App) not found or could not be uninstalled." -ForegroundColor Yellow<br />
+    }<br />
+}<br />
+<br />
+<br />
+$WingetApps = @(<br />
+    # Microsoft To DoはAppxPackageとしてリストに移動しました<br />
+)<br />
+<br />
+Write-Host "`n[2/2] Uninstalling winget apps..."<br />
+<br />
+foreach ($App in $WingetApps) {<br />
+    Write-Host "- Processing $($App)..."<br />
+    winget uninstall $App -h --accept-source-agreements | Out-Null<br />
+    if ($LASTEXITCODE -eq 0) {<br />
+        Write-Host "  COMPLETE: $($App)" -ForegroundColor Green<br />
+    } else {<br />
+        Write-Host "  FAILED: $($App) not found or could not be uninstalled. Exit Code: $($LASTEXITCODE)" -ForegroundColor Yellow<br />
+    }<br />
+}<br />
+<br />
+<br />
+# --------------------------------------------------------------------------------------------------<br />
+Write-Host "`n[3/3] Applying Registry modifications and restarting Explorer..."<br />
+<br />
+# Set registry keys to disable dynamic search features<br />
+REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings" /v IsDynamicSearchBoxEnabled /t REG_DWORD /d 0 /f | Out-Null<br />
+REG ADD "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynamicContentInWSB /t REG_DWORD /d 0 /f | Out-Null<br />
+<br />
+<br />
+Write-Host "`n--- All uninstall processes completed. ---"<br />
+Read-Host "Press Enter to exit."<br />
