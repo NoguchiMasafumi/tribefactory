@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>現在地の天気（操作不可）</title>
+    <style>
+        /* 親コンテナ：ここを基準に重ねる */
+        #container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+        /* 地図：奥（z-index指定なし＝0） */
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 天気情報：手前（z-index指定） */
+        #weather-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10; /* 地図より手前に */
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            font-family: sans-serif;
+            pointer-events: none; /* 重ねた情報のクリックも無視させるならこれを入れる */
+        }
+
+        h2 { margin: 0 0 5px 0; font-size: 16px; }
+        .temp { font-size: 32px; font-weight: bold; color: #333; }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</head>
+<body>
+
+<div id="container">
+    <div id="map"></div>
+    
+    <div id="weather-overlay">
+        <h2>現在地の天気</h2>
+        <div id="weather-data">取得中...</div>
+    </div>
+</div>
+
+<script>
+async function init() {
+    // 1. 現在位置を取得
+    navigator.geolocation.getCurrentPosition(async (position) => {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+
+        // 2. マップを表示（操作を完全に無効化）
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: lat, lng: lng },
+            zoom: 15,
+            disableDefaultUI: true, // ボタン類を全部消す
+            gestureHandling: "none", // 【重要】ドラッグ・スクロール・指操作を一切禁止
+            keyboardShortcuts: false // キーボード操作も禁止
+        });
+
+        // 3. 天気APIを叩く（Open-Meteo）
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        // 4. HTMLレイヤーに情報を書き込む
+        const temp = data.current_weather.temperature;
+        const code = data.current_weather.weathercode;
+        
+        document.getElementById("weather-data").innerHTML = `
+            <div class="temp">${temp}°C</div>
+            <div>コード: ${code}</div>
+        `;
+
+        // おまけ：現在地にマーカーだけ落とす
+        new google.maps.Marker({
+            position: { lat: lat, lng: lng },
+            map: map
+        });
+
+    }, () => {
+        alert("位置情報の取得が許可されていません");
+    });
+}
+
+// 実行
+window.onload = init;
+</script>
+
+</body>
+</html>
