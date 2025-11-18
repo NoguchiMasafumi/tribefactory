@@ -1,154 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>自動判定天気表示</title>
+    <title>完全無料・登録不要の天気地図</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <style>
-        body { font-family: sans-serif; text-align: center; }
+        body { font-family: sans-serif; text-align: center; margin: 0; padding: 0; }
         
-        /* 親コンテナ */
         #container {
             position: relative;
             width: 100%;
-            height: 400px;
-            margin-top: 20px;
-            display: none; /* 最初は隠しておく */
+            height: 400px; /* 地図の高さ */
+            margin-top: 10px;
+            display: none;
         }
         
-        /* 地図（操作不可） */
-        #map { width: 100%; height: 100%; }
+        #map { width: 100%; height: 100%; z-index: 1;}
 
         /* 天気情報オーバーレイ */
         #weather-overlay {
             position: absolute;
-            top: 20px; left: 20px;
-            z-index: 10;
+            top: 10px; left: 10px;
+            z-index: 1000; /* Leafletはz-indexが高めなので大きくする */
             background: rgba(255, 255, 255, 0.9);
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            text-align: left;
             pointer-events: none;
         }
 
-        /* 入力フォーム（PC用） */
         #input-area { margin: 20px; }
         input { padding: 10px; font-size: 16px; width: 120px; }
         button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
-
+        
         .temp { font-size: 32px; font-weight: bold; color: #333; }
     </style>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 </head>
 <body>
 
     <div id="input-area" style="display:none;">
-        <p>PCで閲覧中ですね。郵便番号を入力してください。</p>
-        <input type="text" id="zipcode" placeholder="100-0005" maxlength="8">
+        <p>PC検知：郵便番号を入力 (例: 100-0005)</p>
+        <input type="text" id="zipcode" placeholder="100-0005">
         <button onclick="handleZipSearch()">天気を表示</button>
     </div>
 
-    <div id="status-msg">端末を判定中...</div>
+    <div id="status-msg" style="padding: 20px;">端末を判定中...</div>
 
     <div id="container">
         <div id="map"></div>
         <div id="weather-overlay">
             <h2>現地の天気</h2>
-            <div id="weather-data">...</div>
+            <div id="weather-data">Loading...</div>
         </div>
     </div>
 
 <script>
-// ■ 1. 起動時の処理
+// 地図オブジェクト
+let map;
+
 window.onload = function() {
     const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
     const statusDiv = document.getElementById("status-msg");
     const inputDiv = document.getElementById("input-area");
 
     if (isMobile) {
-        // スマホの場合：GPS取得へ
-        statusDiv.innerText = "スマホを検知しました。現在地を取得中...";
-        getGpsLocation();
+        statusDiv.innerText = "GPSで現在地を取得中...";
+        if (!navigator.geolocation) {
+            alert("GPS非対応です");
+            return;
+        }
+        navigator.geolocation.getCurrentPosition(
+            (pos) => {
+                statusDiv.style.display = "none";
+                renderMapAndWeather(pos.coords.latitude, pos.coords.longitude);
+            },
+            () => { alert("位置情報が取得できませんでした"); }
+        );
     } else {
-        // PCの場合：入力フォームを表示
         statusDiv.style.display = "none";
         inputDiv.style.display = "block";
     }
 };
 
-// ■ 2. スマホ用：GPSから位置を取得
-function getGpsLocation() {
-    if (!navigator.geolocation) {
-        alert("このブラウザは位置情報に対応していません");
-        return;
-    }
-    navigator.geolocation.getCurrentPosition(
-        (pos) => {
-            // 成功したら地図描画へ
-            document.getElementById("status-msg").style.display = "none";
-            renderMapAndWeather(pos.coords.latitude, pos.coords.longitude);
-        },
-        (err) => {
-            alert("位置情報の取得に失敗しました。設定を確認してください。");
-        }
-    );
-}
-
-// ■ 3. PC用：郵便番号から位置を取得（Geocoding）
-function handleZipSearch() {
-    const zip = document.getElementById("zipcode").value;
+// 郵便番号検索（無料のAPI: zipcloudを利用）
+async function handleZipSearch() {
+    const zip = document.getElementById("zipcode").value.replace("-", "");
     if (!zip) return;
 
-    const geocoder = new google.maps.Geocoder();
-    // 日本の郵便番号として検索
-    geocoder.geocode({ 'address': zip, 'componentRestrictions': {country: 'JP'} }, function(results, status) {
-        if (status === 'OK') {
-            const lat = results[0].geometry.location.lat();
-            const lng = results[0].geometry.location.lng();
-            
-            // 入力欄を消して地図を表示
+    try {
+        // 無料の郵便番号APIを叩く
+        const res = await fetch(`https://zhore-api.vercel.app/api/zip?code=${zip}`); 
+        // ※安定のためCORS対応プロキシを通すか、本来はサーバー側で行うのが理想ですが、
+        // ここでは簡易的にzipcloud公式ではなく、Googleのジオコーディングの代替として
+        // OpenStreetMapの検索機能(Nominatim)を使います。
+        
+        // ↓ OpenStreetMapの無料検索API
+        const searchUrl = `https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=jp&format=json`;
+        
+        const response = await fetch(searchUrl);
+        const data = await response.json();
+
+        if (data && data.length > 0) {
+            const lat = parseFloat(data[0].lat);
+            const lng = parseFloat(data[0].lon);
             document.getElementById("input-area").style.display = "none";
             renderMapAndWeather(lat, lng);
         } else {
-            alert('郵便番号が見つかりませんでした: ' + status);
+            alert("郵便番号が見つかりませんでした");
         }
-    });
-}
-
-// ■ 4. 共通処理：地図と天気を表示（ここは前と同じ）
-async function renderMapAndWeather(lat, lng) {
-    const container = document.getElementById("container");
-    container.style.display = "block"; // エリアを表示
-
-    // Google Map表示（操作不可設定）
-    const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: lat, lng: lng },
-        zoom: 14,
-        disableDefaultUI: true,
-        gestureHandling: "none",
-        keyboardShortcuts: false
-    });
-
-    // マーカー
-    new google.maps.Marker({ position: { lat: lat, lng: lng }, map: map });
-
-    // 天気API (Open-Meteo)
-    try {
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`;
-        const response = await fetch(url);
-        const data = await response.json();
-
-        const temp = data.current_weather.temperature;
-        const code = data.current_weather.weathercode;
-
-        document.getElementById("weather-data").innerHTML = `
-            <div class="temp">${temp}°C</div>
-            <div>WMOコード: ${code}</div>
-        `;
     } catch (e) {
-        document.getElementById("weather-data").innerText = "天気取得エラー";
+        alert("検索エラーが発生しました");
     }
 }
-</script>
 
+async function renderMapAndWeather(lat, lng) {
+    document.getElementById("container").style.display = "block";
+
+    // Leafletで地図表示（OpenStreetMap使用）
+    map = L.map('map', {
+        center: [lat, lng],
+        zoom: 14,
+        dragging: false,      // ドラッグ禁止
+        touchZoom: false,     // タッチズーム禁止
+        scrollWheelZoom: false, // スクロール禁止
+        doubleClickZoom: false,
+        boxZoom: false,
+        keyboard: false,
+        zoomControl: false    // ズームボタン非表示
+    });
+
+    // 地図タイル（絵）を読み込む
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // マーカー
+    L.marker([lat, lng]).addTo(map);
+
+    // 天気API (Open-Meteo)
+    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`;
+    const wRes = await fetch(weatherUrl);
+    const wData = await wRes.json();
+
+    const temp = wData.current_weather.temperature;
+    const code = wData.current_weather.weathercode;
+
+    document.getElementById("weather-data").innerHTML = `
+        <div class="temp">${temp}°C</div>
+        <div>Code: ${code}</div>
+    `;
+}
+</script>
 </body>
 </html>
