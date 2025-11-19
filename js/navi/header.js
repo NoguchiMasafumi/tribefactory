@@ -14,5 +14,6 @@ if (elm_header) {
   elm_header.innerHTML = header_contents;
 }else{
   comsole.log("no");
-;}
+}
+
 
