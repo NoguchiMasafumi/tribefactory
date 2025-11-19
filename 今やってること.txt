@@ -1,0 +1,11 @@
+2025/11/19　css_test2.htm　と bat内のuninstall_appli_fit_noguchi　の　index.htm を合わせてる
+　　sidebarもheader　footerと同じ感じでjs化したほうがいいかな
+                <script src="https://tribefactory.netlify.app/js/ad/ad_sidebar1.js"></script>
+                <script src="https://tribefactory.netlify.app/js/navi/navi_menu1.js"></script>
+                <div id="sitemap-links">
+                    <p>Loading sitemap...</p>
+                </div>
+                <script src="https://tribefactory.netlify.app/js/sitemap/sitemap.js"></script>
+　　こりゃ　ちょっと贅沢かなと
+
+
