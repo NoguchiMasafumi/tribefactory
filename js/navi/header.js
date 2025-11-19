@@ -12,4 +12,7 @@ console.log("hi");
 const elm_header = document.getElementById('header_container');
 if (elm_header) {
   elm_header.innerHTML = header_contents;
-}
+}else{
+  comsole.log("no");
+;}
+
