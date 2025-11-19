@@ -5,7 +5,7 @@ const header_contents=`
         </div>
         <hr />
         <div class="header-inner-lower">
-            トライブファクトリー
+            トライブファクトリー1
         </div>
 `;
 console.log("hi");
@@ -15,6 +15,7 @@ if (elm_header) {
 }else{
   console.log("no");
 }
+
 
 
 
