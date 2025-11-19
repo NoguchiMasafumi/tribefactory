@@ -109,7 +109,7 @@ footer {
     padding: 20px; 
 }
 
-.content-sidebar, .content-main {
+.content-sidebar, #sidebar_container, .content-main {
     margin-bottom: 20px; 
     padding: 20px;
     box-sizing: border-box;
@@ -141,7 +141,7 @@ footer {
         font-size:12px;
     }
 
-    .content-sidebar {
+    .content-sidebar, #sidebar_container {
         flex: 0 0 360px;
         order: 2;
         margin-right: 0;
