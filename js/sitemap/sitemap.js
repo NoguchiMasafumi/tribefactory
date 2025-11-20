@@ -31,8 +31,6 @@
         // 修正: json の前にドットがないミスを修正
         return EXCLUDED_EXTENSIONS.some(ext => lowerName.endsWith(ext));
     }
-    
-    // getScriptBaseUrl 関数は使用しないため削除します
 
     /**
      * Calculates the path relative to the SITE_ROOT_FOLDER_NAME and adds a leading slash (/).
@@ -56,13 +54,50 @@
         const startIndex = rootIndex + SITE_ROOT_FOLDER_NAME.length + 1;
         
         if (startIndex >= normalizedPath.length) {
-             return ''; 
+            return ''; 
         }
 
         const relative = normalizedPath.substring(startIndex);
         
         // 4. サイトルートからの絶対パスにするため、先頭にスラッシュを追加
         return '/' + relative;
+    }
+
+    /**
+     * 新規追加: ファイルのFullNameから、直上のフォルダ名を取得します。
+     * 例: "C:\...\tribefactory-main\js\pages\file.htm" -> "pages"
+     * ファイルがサイトルート直下の場合 (例: "C:\...\tribefactory-main\index.htm") -> "サイトルート直下" 
+     * @param {string} fullName - The full absolute path from the JSON.
+     * @returns {string} The name of the immediate parent folder.
+     */
+    function getFolderName(fullName) {
+        // パス区切り文字を正規化し、SITE_ROOT_FOLDER_NAME以降の相対パスを取得
+        const normalizedPath = fullName.replace(/\\/g, '/');
+        const rootIndex = normalizedPath.indexOf(SITE_ROOT_FOLDER_NAME);
+        
+        if (rootIndex === -1) {
+            return '不明なフォルダ'; // ルートが見つからない場合
+        }
+
+        const relativePath = normalizedPath.substring(rootIndex + SITE_ROOT_FOLDER_NAME.length + 1);
+
+        // 最後のファイル名部分を除去
+        const folderPath = relativePath.substring(0, relativePath.lastIndexOf('/'));
+
+        if (folderPath === '') {
+            // ルートフォルダ直下の場合
+            return 'サイトルート直下';
+        }
+
+        // フォルダパスの最後のスラッシュ以降（＝直上のフォルダ名）を抽出
+        const lastSlashIndex = folderPath.lastIndexOf('/');
+        
+        if (lastSlashIndex === -1) {
+            // ルート直下のフォルダの場合
+            return folderPath;
+        }
+
+        return folderPath.substring(lastSlashIndex + 1);
     }
 
     /**
@@ -97,9 +132,13 @@
             if (rootAbsolutePath === '') {
                 return;
             }
+            
+            // **新しい処理: フォルダ名を取得**
+            const folderName = getFolderName(item.FullName);
 
             a.href = rootAbsolutePath; // 例: "/js/page1.htm"
-            a.textContent = item.Name; 
+            // **修正箇所: リンクテキストにフォルダ名を含める**
+            a.textContent = `[${folderName}] ${item.Name}`; 
             a.setAttribute('title', item.FullName); 
 
             li.appendChild(a);
@@ -134,7 +173,7 @@
                 console.error('Sitemap Fetch Error:', error);
                 const outputElement = document.getElementById(OUTPUT_ELEMENT_ID);
                 if (outputElement) {
-                     outputElement.innerHTML = '<p style="color:red;">Error loading sitemap data. Check console for details. (Possible causes: File not found or CORS restriction)</p>';
+                    outputElement.innerHTML = '<p style="color:red;">Error loading sitemap data. Check console for details. (Possible causes: File not found or CORS restriction)</p>';
                 }
             });
     }
