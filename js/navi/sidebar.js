@@ -135,7 +135,7 @@ saved_web<br>
 
             a.href = rootAbsolutePath; 
             // **修正箇所2: リンクテキストにフォルダ名を含める**
-            a.textContent = `[${folderName}] ${item.Name}`; 
+            a.textContent = `${folderName}. ${item.Name}`; 
             a.setAttribute('title', item.FullName); 
 
             li.appendChild(a);
@@ -180,4 +180,5 @@ saved_web<br>
 
     // 処理を開始
     loadSitemapData();
+
 })();
