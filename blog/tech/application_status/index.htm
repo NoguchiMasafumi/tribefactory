@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title id='title1'>Tribe Factory</title>
+        <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="header_container"></header>
+        <div class="main-content">
+            <main class="content-sidebar" id="sidebar_container"></main>
+
+
+<aside class="content-main">
+            <h3>設定済</h3>
+            スタートにピン留め<br />
+            　　Control Panel<br />
+            　Key Board Speed コントロールパネルから<br />
+            　中→小アイコン化<br />
+            　電源オプション　カバーを閉じたとき<br />
+            　登録されている拡張子を表示しない<br />
+            　エクスプローラー<br />
+            　└コンパクトビュー<br />
+            　└フォルダに適用<br />
+            　設定->システム->回復->PCの起動をカスタマイズする->今すぐ再起動<br />
+            　└トラブルシューティング->詳細オプション->UEFIファームウェアの設定->再起動<br />
+            　　└config->keyboard->F1-F12 as Primary Function<br />
+            　タスクバー<br />
+            　└検索ボックス<br />
+            　└タスクビュー<br />
+            　└タスクバーの動作<br />
+            　　└バッジを表示するオフ<br />
+            　　└ボタンをまとめラベル　なしに<br />
+            　Blootoothとデバイス<br />
+            　└トラックパッド　速度調整<br />
+            <br />
+            設定->アプリ->アプリ詳細->実行エイリアス　Teams　をoff<br />
+            <br />
+            設定 -> システム -> ディスプレイ -> 明るさ -> コンテンツに基づいて明るさを<br />
+            <br />
+            Cドライブをクリックしメニューからクリーンアップシステムファイルを消すをクリックし以前のWindowsにチェックしOKで実行<br />
+
+            <br />
+            <h3>UNINSTALL済</h3>
+            └コントロールパネル<br />
+            　　copilot<br />
+            　　onedrive<br />
+            　　teams<br />
+            　　KingSoft<br />
+            　　Family<br />
+            　　Outlook<br />
+            　　MS365<br />
+            　　クイックアシスト<br />
+            <br />
+            <br />
+            └設定_アプリ_INSTALLされているアプリ<br />
+            　└システムコンポーネント<br />
+            　　　<input type="checkbox" checked="checked" />DEV HOME=開発者向けダッシュボード<br />
+            　　　<input type="checkbox" checked="checked" />クリックして実行=MS製品の部分インストール<br />
+            <br />
+            <br />
+            Windowsボタン<br />
+            　切り取り領域とスケッチ　削除済<br />
+            　└Shift+Win+Sとは別<br />
+            　NotePad新しいバージョン　削除済<br />
+            <br />
+
+<h3>アンインストールバッチの作成</h3>
+Teams<br />
+<br />
+@echo off<br />
+echo Microsoft To Doをアンインストールしています...<br />
+winget uninstall "Microsoft To Do" --accept-source-agreements --silent<br />
+if %errorlevel% equ 0 (<br />
+    echo アンインストールが完了しました。<br />
+) else (<br />
+    echo アンインストールに失敗したか、アプリが見つかりませんでした。<br />
+)<br />
+pause<br />
+<br />
+https://ygkb.jp/22500<br />            
+Get-AppxPackage -AllUsers -Name MicrosoftTeams | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Clipchamp.Clipchamp | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name notepad | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.549981C3F5F10 | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Disney.37853FC22B2CE | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name MicrosoftTeams | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.Todos | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.MicrosoftOfficeHub | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.MicrosoftSolitaireCollection | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.GamingApp | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.XboxGamingOverlay | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.Xbox.TCUI | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.XboxGameOverlay | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.XboxIdentityProvider | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.ZuneVideo | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.WindowsCamera | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.BingWeather | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.Getstarted | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.WindowsFeedbackHub | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.Windows.Photos | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.MicrosoftStickyNotes | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.WindowsMaps | Remove-AppxPackage -AllUsers<br />
+Get-AppxPackage -AllUsers -Name Microsoft.ZuneMusic | Remove-AppxPackage -AllUsers<br />
+----------------------------------<br />
+追加分<br />
+onedrive<br />
+family<br />
+whiteboard<br />
+outlook<br />
+            <br />
+            
+            <br />
+            
+            <h3>要INSTALL</h3>
+            　<input type="checkbox" />Google日本語入力<br />
+            　<input type="checkbox" checked="checked" />Chrome<br />
+              　└RSS FEDD READER<br />
+            　<input type="checkbox" checked="checked" />ダメ　いらない　Microsoft Defender<br />
+            　<input type="checkbox" />VS code<br />
+            
+            <br />
+
+            <h3>入れているアプリ</h3>
+            Chrome<br />
+             itunes<br />
+             ファイル連番化<br />
+             └Frexible Renamer.exe<br />
+             余白除去画像分割<br />
+             └ImagePageSplitter.exe<br />
+             Audacity<br />
+             MP3Gain<br />
+             7-Zip<br />
+            <br />
+            <br />
+            
+            <h3>要Back Up</h3>
+            Chrome<br />
+             パスワード_o<br />
+            <br />
+             履歴_o<br />
+             お気に入り<br />
+             起動ページ<br />
+            <br />
+            <br />
+            itunes<br />
+             プレイリスト<br />
+             取り込み済み曲<br />
+            <br />
+            <br />
+
+</aside>
+
+    
+        </div>
+        <footer id="footer-container"></footer>
+        <script src="https://tribefactory.netlify.app/js/navi/header.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/sidebar.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
+    </body>
+</html>
