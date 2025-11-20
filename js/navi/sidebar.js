@@ -62,12 +62,49 @@ saved_web<br>
         const startIndex = rootIndex + SITE_ROOT_FOLDER_NAME.length + 1;
         
         if (startIndex >= normalizedPath.length) {
-             return ''; 
+            return ''; 
         }
 
         const relative = normalizedPath.substring(startIndex);
         // サイトルートからの絶対パスにするため、先頭にスラッシュを追加
         return '/' + relative;
+    }
+
+    /**
+     * 新規追加: ファイルのFullNameから、直上のフォルダ名を取得します。
+     * 例: "C:\...\tribefactory-main\js\pages\file.htm" -> "pages"
+     * ファイルがサイトルート直下の場合 (例: "C:\...\tribefactory-main\index.htm") -> "サイトルート直下" 
+     * @param {string} fullName - The full absolute path from the JSON.
+     * @returns {string} The name of the immediate parent folder.
+     */
+    function getFolderName(fullName) {
+        // パス区切り文字を正規化し、SITE_ROOT_FOLDER_NAME以降の相対パスを取得
+        const normalizedPath = fullName.replace(/\\/g, '/');
+        const rootIndex = normalizedPath.indexOf(SITE_ROOT_FOLDER_NAME);
+        
+        if (rootIndex === -1) {
+            return '不明なフォルダ'; 
+        }
+
+        const relativePath = normalizedPath.substring(rootIndex + SITE_ROOT_FOLDER_NAME.length + 1);
+
+        // 最後のファイル名部分を除去
+        const folderPath = relativePath.substring(0, relativePath.lastIndexOf('/'));
+
+        if (folderPath === '') {
+            // ルートフォルダ直下の場合
+            return 'サイトルート直下';
+        }
+
+        // フォルダパスの最後のスラッシュ以降（＝直上のフォルダ名）を抽出
+        const lastSlashIndex = folderPath.lastIndexOf('/');
+        
+        if (lastSlashIndex === -1) {
+            // ルート直下のフォルダの場合
+            return folderPath;
+        }
+
+        return folderPath.substring(lastSlashIndex + 1);
     }
 
     /**
@@ -92,9 +129,13 @@ saved_web<br>
             if (rootAbsolutePath === '') {
                 return;
             }
+            
+            // **修正箇所1: フォルダ名を取得**
+            const folderName = getFolderName(item.FullName);
 
             a.href = rootAbsolutePath; 
-            a.textContent = item.Name; 
+            // **修正箇所2: リンクテキストにフォルダ名を含める**
+            a.textContent = `[${folderName}] ${item.Name}`; 
             a.setAttribute('title', item.FullName); 
 
             li.appendChild(a);
