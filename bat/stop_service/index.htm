@@ -21,15 +21,15 @@
 <pre>
 <code>
 $ServiceList = @(
-    "AxInstSV"
-    "BDESVC"
-    "DiagTrack"
-    "MapsBroker"
-    "lfsvc"
-    "vmickvpexchange"
-    "vmicguestinterface"
-    "vmicshutdown"
-    "vmicheartbeat"
+    "AxInstSV"           = "ActiveX インストーラー"
+    "BDESVC"             = "BitLocker ドライブ暗号化サービス"
+    "DiagTrack"          = "接続ユーザー エクスペリエンスとテレメトリ"
+    "MapsBroker"         = "ダウンロード マップ マネージャー"
+    "lfsvc"              = "地理位置情報サービス"
+    "vmickvpexchange"    = "Hyper-V データ交換サービス"
+    "vmicguestinterface" = "Hyper-V ゲスト サービス インターフェイス"
+    "vmicshutdown"       = "Hyper-V ゲスト シャットダウン サービス"
+    "vmicheartbeat"      = "Hyper-V ハートビート サービス"
 )
 
 foreach ($Service in $ServiceList) {
@@ -73,3 +73,4 @@ foreach ($Service in $ServiceList) {
         <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
     </body>
 </html>
+
