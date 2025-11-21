@@ -120,7 +120,7 @@ pre {
         padding: 4px 8px;
         font-size: 12px;
         cursor: pointer;
-        opacity: 0; /* 最初は隠しておく（ホバーで表示） */
+        opacity: 1; /* 最初は隠しておく（ホバーで表示） */
         transition: opacity 0.3s;
     }
 
@@ -197,6 +197,7 @@ footer {
     }
 
 }
+
 
 
 
