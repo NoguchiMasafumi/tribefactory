@@ -99,7 +99,11 @@ pre {
         padding: 35px 15px 15px 15px; /* 上にボタン分の余白(35px)を確保 */
         color: #abb2bf;
         font-family: monospace;
-        overflow-x: auto; /* 横スクロール */
+        overflow-x: auto; 
+    
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        
         font-size: 1rem;
     }
 
@@ -193,6 +197,7 @@ footer {
     }
 
 }
+
 
 
 
