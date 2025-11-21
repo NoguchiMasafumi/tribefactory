@@ -50,8 +50,11 @@
               <input type="checkbox" />ファイル共有<br />
             　　└gpedit設定　<a href="file:///C:/Users/user/Documents/html/saved_web/howto_set_folder_share/index.html">file:///C:/Users/user/Documents/html/saved_web/howto_set_folder_share/index.html</a><br />
             　　└gpedit復活方法　<br />
-            <pre><code>FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")
-            FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")</code></pre><br />
+<pre><code>
+FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")
+
+FOR %F IN ("%SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") DO (DISM /Online /NoRestart /Add-Package:"%F")
+</code></pre><br />
             
               
               └0x80070035が出る<br />
@@ -80,4 +83,5 @@
         <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
     </body>
 </html>
+
 
