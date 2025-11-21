@@ -86,7 +86,43 @@ h3::after {
     background-color: #0078d4;
     filter: blur(0.5px);
 }
+pre {
+        position: relative; /* ボタンの基準点 */
+        background-color: #282c34;
+        border-radius: 6px;
+        margin: 20px 0;
+        overflow: hidden; /* 角丸からはみ出さないように */
+    }
 
+    code {
+        display: block;
+        padding: 35px 15px 15px 15px; /* 上にボタン分の余白(35px)を確保 */
+        color: #abb2bf;
+        font-family: monospace;
+        overflow-x: auto; /* 横スクロール */
+    }
+
+    /* JSで追加されるボタンのスタイル */
+    .copy-btn-auto {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 10;
+        background-color: #4b5263;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 8px;
+        font-size: 12px;
+        cursor: pointer;
+        opacity: 0; /* 最初は隠しておく（ホバーで表示） */
+        transition: opacity 0.3s;
+    }
+
+    /* マウスが乗ったときだけボタンを表示 */
+    pre:hover .copy-btn-auto {
+        opacity: 1;
+    }
 
 
 
@@ -154,4 +190,5 @@ footer {
         margin-right: 0;
         margin-bottom: 0;
     }
+
 }
