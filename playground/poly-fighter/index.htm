@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Polygon Fighter v1.0</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000;
+            font-family: 'Impact', sans-serif;
+            user-select: none;
+        }
+        /* UIレイヤー */
+        #ui-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /* HPバーエリア */
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+        }
+        .hp-box {
+            width: 40%;
+        }
+        .hp-label {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 5px;
+            text-shadow: 0 0 5px #fff;
+        }
+        .hp-bar-bg {
+            width: 100%;
+            height: 20px;
+            background: #333;
+            border: 2px solid #555;
+            transform: skewX(-20deg); /* 格ゲーっぽい斜めデザイン */
+        }
+        .hp-bar-fill {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, #ffeb3b, #f44336);
+            transition: width 0.2s;
+        }
+        /* 画面中央のメッセージ */
+        #message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: yellow;
+            text-shadow: 4px 4px 0 #f00;
+            display: none;
+            z-index: 10;
+        }
+        .controls {
+            text-align: center;
+            color: gray;
+            margin-bottom: 10px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="ui-layer">
+        <div class="hud">
+            <div class="hp-box">
+                <div class="hp-label">PLAYER</div>
+                <div class="hp-bar-bg"><div id="p1-hp" class="hp-bar-fill"></div></div>
+            </div>
+            <div class="hp-box" style="text-align: right;">
+                <div class="hp-label">CPU</div>
+                <div class="hp-bar-bg"><div id="p2-hp" class="hp-bar-fill"></div></div>
+            </div>
+        </div>
+        <div class="controls">← → MOVE / SPACE ATTACK</div>
+    </div>
+
+    <div id="message">K.O.</div>
+    <canvas id="canvas"></canvas>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const p1HpBar = document.getElementById('p1-hp');
+    const p2HpBar = document.getElementById('p2-hp');
+    const msgEl = document.getElementById('message');
+
+    let w, h;
+    function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    // --- ゲーム設定 ---
+    const GROUND_Y = 150; // 画面中央からのオフセット
+    const HIT_DIST = 130; // 攻撃が当たる距離
+    const MAX_HP = 100;
+
+    // --- キー入力 ---
+    const keys = {};
+    window.addEventListener('keydown', e => keys[e.code] = true);
+    window.addEventListener('keyup', e => keys[e.code] = false);
+
+    // --- クラス定義: Fighter ---
+    class Fighter {
+        constructor(isPlayer, colorMain, colorSub, startX) {
+            this.isPlayer = isPlayer;
+            this.x = startX;
+            this.y = 0;
+            this.hp = MAX_HP;
+            this.dir = isPlayer ? 1 : -1; // 1:右向き, -1:左向き
+            this.colorMain = colorMain;
+            this.colorSub = colorSub;
+            
+            this.state = 'idle'; // idle, walk, punch, hit, dead
+            this.animTime = 0;
+            this.shake = 0; // ダメージ時の振動
+        }
+
+        update(target) {
+            if (this.state === 'dead') return;
+
+            // ダメージ振動の減衰
+            if (this.shake > 0) this.shake *= 0.8;
+            if (this.shake < 0.5) this.shake = 0;
+
+            // 向きの自動補正（常に相手の方を向く）
+            if (this.state !== 'hit' && this.state !== 'dead') {
+                this.dir = (this.x < target.x) ? 1 : -1;
+            }
+
+            // --- AI処理 (CPUの場合) ---
+            if (!this.isPlayer && this.state === 'idle') {
+                const dist = Math.abs(this.x - target.x);
+                
+                // 1. 距離が遠ければ近づく
+                if (dist > HIT_DIST - 20) {
+                    this.x += (this.x < target.x ? 1 : -1) * 2.5; // プレイヤーより少し遅い
+                    this.state = 'walk';
+                } 
+                // 2. 距離が近ければ攻撃 (ランダム)
+                else if (dist <= HIT_DIST && Math.random() < 0.03) {
+                    this.startPunch();
+                }
+                // 3. 棒立ち
+                else {
+                    this.state = 'idle';
+                }
+            }
+
+            // --- プレイヤー操作 ---
+            if (this.isPlayer && this.state !== 'punch' && this.state !== 'hit') {
+                let moving = false;
+                if (keys['ArrowRight']) { this.x += 4; moving = true; }
+                if (keys['ArrowLeft'])  { this.x -= 4; moving = true; }
+                
+                this.state = moving ? 'walk' : 'idle';
+
+                if (keys['Space']) {
+                    this.startPunch();
+                }
+            }
+
+            // --- パンチ処理 ---
+            if (this.state === 'punch') {
+                this.animTime++;
+                // パンチのヒット判定タイミング (フレーム10あたり)
+                if (this.animTime === 10) {
+                    const dist = Math.abs(this.x - target.x);
+                    // 距離チェック & 相手が死んでないか
+                    if (dist < HIT_DIST && target.state !== 'dead') {
+                        target.takeDamage(10);
+                        // ヒットストップ演出（簡易）
+                        this.shake = 5; 
+                    }
+                }
+                // アニメーション終了
+                if (this.animTime > 20) {
+                    this.state = 'idle';
+                }
+            }
+
+            // --- ヒット硬直処理 ---
+            if (this.state === 'hit') {
+                this.animTime++;
+                if (this.animTime > 15) {
+                    this.state = 'idle';
+                }
+            }
+
+            // 画面端制限
+            if (this.x < -w/2 + 50) this.x = -w/2 + 50;
+            if (this.x > w/2 - 50) this.x = w/2 - 50;
+        }
+
+        startPunch() {
+            this.state = 'punch';
+            this.animTime = 0;
+        }
+
+        takeDamage(amount) {
+            if (this.state === 'dead') return;
+            
+            this.hp -= amount;
+            this.shake = 20; // 激しく揺れる
+            this.state = 'hit';
+            this.animTime = 0;
+            
+            // ノックバック
+            this.x -= this.dir * 30; 
+
+            // HPバー更新
+            const pct = Math.max(0, (this.hp / MAX_HP) * 100);
+            if (this.isPlayer) p1HpBar.style.width = pct + '%';
+            else p2HpBar.style.width = pct + '%';
+
+            // 死亡判定
+            if (this.hp <= 0) {
+                this.hp = 0;
+                this.state = 'dead';
+                checkWinLose();
+            }
+        }
+    }
+
+    // --- 初期化 ---
+    const p1 = new Fighter(true, '#00f2ff', '#2196f3', -200);
+    const p2 = new Fighter(false, '#ff0055', '#ff5588', 200);
+
+    function checkWinLose() {
+        msgEl.style.display = 'block';
+        if (p1.hp <= 0) {
+            msgEl.innerText = "YOU LOSE";
+            msgEl.style.color = "#555";
+        } else {
+            msgEl.innerText = "YOU WIN!";
+            msgEl.style.color = "#ffeb3b";
+        }
+    }
+
+    // --- ポリゴン描画関数 ---
+    function drawPoly(color, width, length, type = 'triangle') {
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        if (type === 'triangle') {
+            ctx.lineTo(-width / 2, length);
+            ctx.lineTo(width / 2, length);
+        } else if (type === 'diamond') {
+            ctx.moveTo(0, -length/2);
+            ctx.lineTo(-width/2, length/2);
+            ctx.lineTo(0, length * 1.2);
+            ctx.lineTo(width/2, length/2);
+        }
+        ctx.closePath();
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+    }
+
+    // --- キャラクター描画 ---
+    function renderFighter(f) {
+        ctx.save();
+        
+        // 座標変換 (揺れ含む)
+        let shakeX = (Math.random() - 0.5) * f.shake;
+        let shakeY = (Math.random() - 0.5) * f.shake;
+        
+        // 死亡時は倒れる
+        let baseRot = 0;
+        let baseY = h/2 + GROUND_Y;
+        
+        if (f.state === 'dead') {
+            baseRot = f.dir * -1.5; // 90度倒れる
+            baseY += 50;
+        }
+
+        ctx.translate(w/2 + f.x + shakeX, baseY + shakeY);
+        ctx.scale(f.dir * 1.2, 1.2); // 向き反転とスケール
+        ctx.rotate(baseRot);
+
+        const t = Date.now() * 0.005;
+        
+        // アニメーション計算
+        let bodyRot = 0, armR = 0, armL = 0, legR = 0, legL = 0;
+
+        if (f.state === 'dead') {
+            // ぐったり
+            armR = 0.5; armL = 0.5;
+        } else if (f.state === 'hit') {
+            // のけぞり
+            bodyRot = -0.3;
+            armR = -1; armL = -0.5;
+        } else if (f.state === 'punch') {
+            // パンチ
+            let pRate = f.animTime / 20;
+            let extend = Math.sin(pRate * Math.PI);
+            bodyRot = extend * 0.3;
+            armR = -1.5 + (extend * -1.2); // 突き出す
+            armL = 0.5;
+        } else if (f.state === 'walk') {
+            // 歩き
+            bodyRot = 0.1;
+            legR = Math.sin(t * 10) * 0.5;
+            legL = Math.sin(t * 10 + Math.PI) * 0.5;
+            armR = Math.sin(t * 10) * 0.5;
+            armL = Math.sin(t * 10 + Math.PI) * 0.5;
+        } else {
+            // アイドリング
+            bodyRot = Math.sin(t) * 0.02;
+            armR = Math.sin(t)*0.1 - 0.2;
+            armL = -Math.sin(t)*0.1 + 0.2;
+        }
+
+        // === 描画 (16ポリゴン) ===
+        
+        // 1. 臀部
+        ctx.rotate(bodyRot);
+        drawPoly(f.colorMain, 50, 35);
+
+        // 2. 足
+        function dLeg(rot) {
+            ctx.save();
+            ctx.translate(0, 20); ctx.rotate(rot);
+            drawPoly(f.colorSub, 25, 60); // Thigh
+            ctx.translate(0, 60); ctx.rotate(0.1);
+            drawPoly(f.colorSub, 20, 60); // Shin
+            ctx.translate(0, 60);
+            ctx.save(); ctx.scale(1, 0.5); drawPoly(f.colorSub, 25, 30); ctx.restore(); // Foot
+            ctx.restore();
+        }
+        // 奥の足
+        ctx.save(); ctx.translate(-15,0); dLeg(legL); ctx.restore();
+
+        // 3. 胴体
+        ctx.save(); ctx.translate(0, -10); ctx.scale(1, -1);
+        drawPoly(f.colorMain, 60, 85); ctx.restore(); // Chest
+
+        // 4. 頭
+        ctx.save(); ctx.translate(0, -100); ctx.rotate(-bodyRot*0.5);
+        drawPoly('#fff', 35, 45, 'diamond'); ctx.restore();
+
+        // 5. 腕
+        function dArm(rot, isAttackArm) {
+            ctx.save(); ctx.translate(0, -85); ctx.rotate(rot);
+            drawPoly(f.colorSub, 18, 55); // Upper
+            ctx.translate(0, 55); 
+            // パンチ時は肘を伸ばす
+            let elbow = (f.state === 'punch' && isAttackArm) ? 0 : 0.5;
+            ctx.rotate(elbow);
+            drawPoly(f.colorSub, 15, 50); // Fore
+            ctx.translate(0, 50);
+            
+            // 拳のエフェクト
+            if (f.state === 'punch' && isAttackArm && f.animTime > 5 && f.animTime < 15) {
+                ctx.shadowBlur = 20; ctx.shadowColor = 'white';
+                ctx.fillStyle = '#fff';
+            } else {
+                ctx.fillStyle = f.colorSub;
+            }
+            drawPoly(ctx.fillStyle, 15, 15); // Hand
+            ctx.shadowBlur = 0;
+            ctx.restore();
+        }
+        
+        // 奥の腕
+        ctx.save(); ctx.translate(-25,0); dArm(armL, false); ctx.restore();
+        // 手前の足
+        ctx.save(); ctx.translate(15,0); dLeg(legR); ctx.restore();
+        // 手前の腕（攻撃腕）
+        ctx.save(); ctx.translate(25,0); dArm(armR, true); ctx.restore();
+
+        ctx.restore();
+    }
+
+    // --- メインループ ---
+    function loop() {
+        // 背景クリア & 描画
+        ctx.fillStyle = '#111';
+        ctx.fillRect(0, 0, w, h);
+
+        // 地面グリッド
+        ctx.strokeStyle = '#333';
+        ctx.beginPath();
+        ctx.moveTo(0, h/2 + GROUND_Y + 65);
+        ctx.lineTo(w, h/2 + GROUND_Y + 65);
+        ctx.stroke();
+
+        // 更新
+        p1.update(p2);
+        p2.update(p1);
+
+        // 描画 (Y座標順でソートしない簡易描画：常にP2が奥、P1が手前)
+        renderFighter(p2);
+        renderFighter(p1);
+
+        requestAnimationFrame(loop);
+    }
+
+    loop();
+
+</script>
+</body>
+</html>
