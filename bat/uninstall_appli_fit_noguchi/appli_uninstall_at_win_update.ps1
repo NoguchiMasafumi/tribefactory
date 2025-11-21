@@ -19,7 +19,7 @@ $AppxApps = @(
     "Microsoft.549981C3F5F10",                  # Cortana (コルタナ)
     "Disney.37853FC22B2CE",                     # Disney+
     "Microsoft.Todos",                          # Microsoft To Do
-    "Microsoft.MicrosoftOfficeHub",             # Microsoft 365 (Office) アプリ
+    #"Microsoft.MicrosoftOfficeHub",             # Microsoft 365 (Office) アプリ
     "Microsoft.MicrosoftSolitaireCollection",   # ソリティア コレクション
     "SpotifyAB.SpotifyMusic",                   # Spotify
     "Microsoft.GamingApp",                      # Xbox アプリ
@@ -82,4 +82,5 @@ REG ADD "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynam
 Write-Host "`n--- All uninstall processes completed. ---"
 
 Read-Host "Press Enter to exit."
+
 
