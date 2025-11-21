@@ -18,5 +18,21 @@ if (elm_header) {
 }
 
 
+const preTags = document.querySelectorAll('pre');
+preTags.forEach(pre => {
+        const button = document.createElement('button');
+        button.innerText = 'Copy';
+        button.className = 'copy-btn-auto'; // CSSクラスを付与
 
+        button.addEventListener('click', () => {
+                const code = pre.querySelector('code'); // preの中のcodeタグを取得
+                const text = code.innerText;
+
+                navigator.clipboard.writeText(text).then(() => {
+                        button.innerText = 'Copied!';
+                        setTimeout(() => { button.innerText = 'Copy'; }, 2000);
+                });
+        });
+        pre.appendChild(button);
+});
 
