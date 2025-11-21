@@ -100,7 +100,7 @@ pre {
         color: #abb2bf;
         font-family: monospace;
         overflow-x: auto; /* 横スクロール */
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     /* JSで追加されるボタンのスタイル */
@@ -193,5 +193,6 @@ footer {
     }
 
 }
+
 
 
