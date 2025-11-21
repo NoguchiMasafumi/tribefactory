@@ -1,44 +1,42 @@
 Write-Host "--- Starting application uninstall process ---"
-
 $AppxApps = @(
-    "MSTeams",
-    "Microsoft.Copilot",
-    "Microsoft.BingSearch",
-    "Microsoft.BingNews",
-    "Microsoft.OneDrive",
-    "Microsoft.PowerAutomateDesktop",
-    "Microsoft.Paint",
-    "Microsoft.YourPhone",
-    "MicrosoftWindows.CrossDevice",
-    "Microsoft.Windows.DevHome",
-    "Microsoft.GetHelp",
-    "Microsoft.WebMediaExtensions",
-    "Microsoft.HEIFImageExtension",
-    "Microsoft.ScreenSketch",
-    "SynapticsIncorporated.SynapticsUtilities",
-    "Clipchamp.Clipchamp",
-    "Microsoft.Windows.Notepad",
-    "Microsoft.549981C3F5F10",
-    "Disney.37853FC22B2CE",
-    "Microsoft.Todos",
-    "Microsoft.MicrosoftOfficeHub",
-    "Microsoft.MicrosoftSolitaireCollection",
-    "SpotifyAB.SpotifyMusic",
-    "Microsoft.GamingApp",
-    "Microsoft.XboxGamingOverlay",
-    "Microsoft.Xbox.TCUI",
-    "Microsoft.XboxGameOverlay",
-    "Microsoft.XboxIdentityProvider",
-    "Microsoft.XboxSpeechToTextOverlay",
-    "Microsoft.ZuneVideo",
-    "Microsoft.WindowsCamera",
-    "Microsoft.BingWeather",
-    "Microsoft.Getstarted",
-    "Microsoft.WindowsFeedbackHub",
-    "Microsoft.Windows.Photos",
-    "Microsoft.MicrosoftStickyNotes",
-    "Microsoft.WindowsMaps",
-    "Microsoft.ZuneMusic"
+    "MSTeams",                                  # Microsoft Teams (個人用)
+    "Microsoft.Copilot",                        # Copilot (AIアシスタント)
+    "Microsoft.BingSearch",                     # Bing 検索
+    "Microsoft.BingNews",                       # ニュース
+    "Microsoft.OneDrive",                       # OneDrive
+    "Microsoft.PowerAutomateDesktop",           # Power Automate Desktop
+    "Microsoft.Paint",                          # ペイント
+    "Microsoft.YourPhone",                      # スマホ連携 (Phone Link)
+    "MicrosoftWindows.CrossDevice",             # クロスデバイス体験ホスト
+    "Microsoft.Windows.DevHome",                # Dev Home (開発ホーム)
+    "Microsoft.GetHelp",                        # 問い合わせ (Get Help)
+    "Microsoft.WebMediaExtensions",             # Web メディア拡張機能
+    "Microsoft.HEIFImageExtension",             # HEIF 画像拡張機能
+    "Microsoft.ScreenSketch",                   # Snipping Tool (旧 切り取り & スケッチ)
+    "Clipchamp.Clipchamp",                      # Clipchamp (動画編集ソフト)
+    "Microsoft.Windows.Notepad",                # メモ帳
+    "Microsoft.549981C3F5F10",                  # Cortana (コルタナ)
+    "Disney.37853FC22B2CE",                     # Disney+
+    "Microsoft.Todos",                          # Microsoft To Do
+    "Microsoft.MicrosoftOfficeHub",             # Microsoft 365 (Office) アプリ
+    "Microsoft.MicrosoftSolitaireCollection",   # ソリティア コレクション
+    "SpotifyAB.SpotifyMusic",                   # Spotify
+    "Microsoft.GamingApp",                      # Xbox アプリ
+    "Microsoft.XboxGamingOverlay",              # Xbox Game Bar
+    "Microsoft.Xbox.TCUI",                      # Xbox TCUI (UIコンポーネント)
+    "Microsoft.XboxGameOverlay",                # Xbox Game Overlay
+    "Microsoft.XboxIdentityProvider",           # Xbox Identity Provider (認証用)
+    "Microsoft.XboxSpeechToTextOverlay",        # Xbox 音声テキスト変換オーバーレイ
+    "Microsoft.ZuneVideo",                      # 映画 & テレビ
+    "Microsoft.WindowsCamera",                  # カメラ
+    "Microsoft.BingWeather",                    # 天気
+    "Microsoft.Getstarted",                     # ヒント (Tips)
+    "Microsoft.WindowsFeedbackHub",             # フィードバック Hub
+    "Microsoft.Windows.Photos",                 # Microsoft フォト
+    "Microsoft.MicrosoftStickyNotes",           # 付箋 (Sticky Notes)
+    "Microsoft.WindowsMaps",                    # Windows マップ
+    "Microsoft.ZuneMusic"                       # メディア プレーヤー (旧 Groove ミュージック)
 )
 
 Write-Host "`n[1/2] Uninstalling Microsoft Store Apps (AppxPackage)..."
@@ -84,3 +82,4 @@ REG ADD "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynam
 Write-Host "`n--- All uninstall processes completed. ---"
 
 Read-Host "Press Enter to exit."
+
