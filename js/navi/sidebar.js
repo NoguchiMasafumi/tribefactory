@@ -6,16 +6,8 @@
 (function () {
     'use strict';
 
-    // --- 1. Static Content Definition ---
-    const STATIC_CONTENTS = `
-1<br />
-tool<br> 
-blog<br> 
-bookmarklet<br> 
-play_ground<br> 
-saved_web<br> 
-<br />
-`;
+    //************* 静的コンテンツ追加する場合 *********************
+    const STATIC_CONTENTS = ``;
 
     // --- 2. Configuration & Element Setup ---
     const OUTPUT_ELEMENT_ID = 'sidebar_container'; 
@@ -164,3 +156,4 @@ saved_web<br>
     loadSitemapData();
 
 })();
+
