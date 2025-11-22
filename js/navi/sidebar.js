@@ -55,7 +55,7 @@
         const relativePath = normalizedPath.substring(rootIndex + SITE_ROOT_FOLDER_NAME.length + 1);
         const folderPath = relativePath.substring(0, relativePath.lastIndexOf('/'));
 
-        if (folderPath === '') return 'Root'; // ルート直下の場合の表示名
+        if (folderPath === '') return 'tribefactory.netlify.app'; // ルート直下の場合の表示名
 
         const lastSlashIndex = folderPath.lastIndexOf('/');
         if (lastSlashIndex === -1) return folderPath;
@@ -172,4 +172,5 @@
     loadSitemapData();
 
 })();
+
 
