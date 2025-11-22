@@ -5,6 +5,7 @@ $AppxApps = @(
     "MicrosoftFamily",                          # ファミリー
     "Microsoft.Whiteboard",                     # ホワイトボード
     "Microsoft.OutlookForWindows",              # Outlook
+    "MicrosoftCorporationII.QuickAssist",       #クイックアシスト
     "Microsoft.BingFinance",                    # Bing ファイナンス
     "Microsoft.BingSearch",                     # Bing 検索
     "Microsoft.BingNews",                       # ニュース
@@ -86,6 +87,7 @@ REG ADD "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynam
 Write-Host "`n--- All uninstall processes completed. ---"
 
 Read-Host "Press Enter to exit."
+
 
 
 
