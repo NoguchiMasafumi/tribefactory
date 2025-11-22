@@ -20,6 +20,13 @@ if (elm_header) {
 
 const preTags = document.querySelectorAll('pre');
 preTags.forEach(pre => {
+
+        //****************** translation-tableだけは除外 ********************* */
+        if (pre.closest('.translation-table')) {
+            return;
+        }
+
+
         const button = document.createElement('button');
         button.innerText = 'Copy';
         button.className = 'copy-btn-auto'; // CSSクラスを付与
