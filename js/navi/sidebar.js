@@ -6,23 +6,15 @@
 (function () {
     'use strict';
 
-    // --- 1. Static Content Definition ---
-    const STATIC_CONTENTS = `
-1<br />
-tool<br> 
-blog<br> 
-bookmarklet<br> 
-play_ground<br> 
-saved_web<br> 
-<br />
-`;
+    //************** 静的コンテンツはここ *******************
+    const STATIC_CONTENTS = ``;
 
     // --- 2. Configuration ---
     const OUTPUT_ELEMENT_ID = 'sidebar_container'; 
     const JSON_URL = 'https://tribefactory.netlify.app/js/sitemap/file_structure.json';
     const SITE_ROOT_FOLDER_NAME = 'tribefactory-main'; 
     const EXCLUDED_EXTENSIONS = [
-        '.jpg', '.png', '.svg', '.xml', '.css', '.json', '.webmanifest', '.ico', '.ダウンロード', '.js','.ps1','.bat'
+        '.jpg', '.png', '.svg', '.xml', '.css', '.json', '.webmanifest', '.ico', '.ダウンロード', '.js','.ps1','.bat' ,'.url'
     ];
     
     const outputElement = document.getElementById(OUTPUT_ELEMENT_ID);
@@ -180,3 +172,4 @@ saved_web<br>
     loadSitemapData();
 
 })();
+
