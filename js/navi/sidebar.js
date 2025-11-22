@@ -93,7 +93,7 @@ saved_web<br>
 
         if (folderPath === '') {
             // ルートフォルダ直下の場合
-            return 'サイトルート直下';
+            return 'tribefactory.netlify.app';
         }
 
         // フォルダパスの最後のスラッシュ以降（＝直上のフォルダ名）を抽出
@@ -135,7 +135,7 @@ saved_web<br>
 
             a.href = rootAbsolutePath; 
             // **修正箇所2: リンクテキストにフォルダ名を含める**
-            a.textContent = `${folderName}. ${item.Name}`; 
+            a.textContent = `${folderName}/${item.Name}`; 
             a.setAttribute('title', item.FullName); 
 
             li.appendChild(a);
@@ -182,3 +182,4 @@ saved_web<br>
     loadSitemapData();
 
 })();
+
