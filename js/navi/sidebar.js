@@ -1,6 +1,6 @@
 /**
  * sidebar_sitemap.js
- * Purpose: Initializes sidebar with static content and appends dynamic sitemap links with grouped headers.
+ * Purpose: Initializes sidebar with static content and appends dynamic sitemap links with plain text headers.
  */
 
 (function () {
@@ -55,7 +55,7 @@ saved_web<br>
     }
 
     /**
-     * 元のコードにあった関数：直上のフォルダ名を取得（リンクテキスト表示用）
+     * ファイル直上のフォルダ名を取得（リンクテキスト用）
      */
     function getFolderName(fullName) {
         const normalizedPath = fullName.replace(/\\/g, '/');
@@ -66,7 +66,7 @@ saved_web<br>
         const relativePath = normalizedPath.substring(rootIndex + SITE_ROOT_FOLDER_NAME.length + 1);
         const folderPath = relativePath.substring(0, relativePath.lastIndexOf('/'));
 
-        if (folderPath === '') return 'tribefactory.netlify.app'; // ルートの場合
+        if (folderPath === '') return 'tribefactory.netlify.app'; 
 
         const lastSlashIndex = folderPath.lastIndexOf('/');
         if (lastSlashIndex === -1) return folderPath;
@@ -80,18 +80,18 @@ saved_web<br>
         const ul = document.createElement('ul');
         ul.setAttribute('class', 'sitemap-list');
         
-        // 見た目の調整（必要に応じてCSSファイルへ移動してください）
+        // スタイルの簡易設定（必要に応じてCSSで上書きしてください）
         ul.style.listStyle = 'none';
         ul.style.paddingLeft = '0';
 
-        // フォルダごとに固めるためパス順でソート
+        // フォルダごとにまとめるためパス順でソート
         const sortedData = data.sort((a, b) => {
             const pathA = a.FullName.replace(/\\/g, '/').toLowerCase();
             const pathB = b.FullName.replace(/\\/g, '/').toLowerCase();
             return pathA < pathB ? -1 : pathA > pathB ? 1 : 0;
         });
 
-        let lastHeaderFolder = null; // 見出し判定用の変数を初期化
+        let lastHeaderFolder = null; 
 
         sortedData.filter(item => 
             !item.PSIsContainer && 
@@ -100,52 +100,51 @@ saved_web<br>
             const rootAbsolutePath = getRelativePathFromFullName(item.FullName);
             if (rootAbsolutePath === '') return;
 
-            // --- 【変更点1】第一階層（ルート直後のフォルダ）が変わったら見出しを出す ---
+            // --- 第一階層判定 ---
             const pathParts = rootAbsolutePath.split('/');
             let currentHeaderFolder = 'Root'; 
 
-            // pathParts[1] が第一階層のフォルダ名 (例: /tool/calc.html -> "tool")
+            // 第一階層のフォルダ名を取得
             if (pathParts.length > 2) {
                 currentHeaderFolder = pathParts[1];
             }
 
-            // 前回のループと違う第一階層フォルダなら、見出し(li)を追加
+            // フォルダが変わった場合のみ見出しを追加
             if (currentHeaderFolder !== lastHeaderFolder) {
                 const headerLi = document.createElement('li');
+                
+                // 見出しのスタイル（文字のみ、少し強調）
                 headerLi.style.fontWeight = 'bold';
                 headerLi.style.marginTop = '15px';
                 headerLi.style.marginBottom = '5px';
                 headerLi.style.color = '#333';
                 headerLi.style.borderBottom = '1px solid #ddd';
                 
-                // 見出しテキスト
-                headerLi.textContent = `📂 ${currentHeaderFolder}`; 
+                // アイコン無し、文字のみセット
+                headerLi.textContent = currentHeaderFolder; 
+                
                 ul.appendChild(headerLi);
-
                 lastHeaderFolder = currentHeaderFolder;
             }
 
-            // --- 【変更点2】リンク自体は元のロジック（フォルダ名/ファイル名）を維持 ---
+            // --- リンク生成（元の形式：フォルダ名/ファイル名） ---
             const li = document.createElement('li');
             const a = document.createElement('a');
             
-            // 直上のフォルダ名を取得（リンクテキスト用）
             const parentFolderName = getFolderName(item.FullName);
 
             a.href = rootAbsolutePath; 
-            // ここを元の「フォルダ名/ファイル名」に戻しました
             a.textContent = `${parentFolderName}/${item.Name}`; 
             a.setAttribute('title', item.FullName); 
 
-            // インデントを入れて見出しと区別しやすくする
-            li.style.paddingLeft = '10px';
+            li.style.paddingLeft = '10px'; // 見出しより少しインデント
 
             li.appendChild(a);
             ul.appendChild(li);
         });
 
         outputElement.appendChild(ul); 
-        console.log('Sitemap: Generated grouped links with full names.');
+        console.log('Sitemap: Generated grouped links (text headers only).');
     }
 
     // --- 5. Main Process ---
