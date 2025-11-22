@@ -77,18 +77,11 @@
         "LastWriteTime":  "\/Date(1763782607576)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\css_test.htm",
-        "Name":  "css_test.htm",
-        "PSIsContainer":  false,
-        "Length":  2007,
-        "LastWriteTime":  "\/Date(1763769822919)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\css_test2.htm",
         "Name":  "css_test2.htm",
         "PSIsContainer":  false,
-        "Length":  1965,
-        "LastWriteTime":  "\/Date(1763769822932)\/"
+        "Length":  1531,
+        "LastWriteTime":  "\/Date(1763783516782)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\index.htm",
@@ -108,8 +101,8 @@
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\template3.htm",
         "Name":  "template3.htm",
         "PSIsContainer":  false,
-        "Length":  1360,
-        "LastWriteTime":  "\/Date(1763769822948)\/"
+        "Length":  1362,
+        "LastWriteTime":  "\/Date(1763787386682)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\今やってること.txt",
@@ -528,8 +521,8 @@
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\tech\\keyboard_light\\index.htm",
         "Name":  "index.htm",
         "PSIsContainer":  false,
-        "Length":  363,
-        "LastWriteTime":  "\/Date(1763769823381)\/"
+        "Length":  2028,
+        "LastWriteTime":  "\/Date(1763787343615)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\tech\\keyboard_light\\img\\keyboard_light.png",
@@ -927,8 +920,8 @@
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\js\\sitemap\\file_structure.json",
         "Name":  "file_structure.json",
         "PSIsContainer":  false,
-        "Length":  69643,
-        "LastWriteTime":  "\/Date(1763769823789)\/"
+        "Length":  70861,
+        "LastWriteTime":  "\/Date(1763783204662)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\js\\sitemap\\sitemap.js",
@@ -956,7 +949,7 @@
         "Name":  "bicycle_1896_in_america",
         "PSIsContainer":  true,
         "Length":  null,
-        "LastWriteTime":  "\/Date(1763771417856)\/"
+        "LastWriteTime":  "\/Date(1763788064568)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2",
@@ -1001,18 +994,11 @@
         "LastWriteTime":  "\/Date(1763771745627)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\bicycle_1896_in_america\\index2.htm",
-        "Name":  "index2.htm",
-        "PSIsContainer":  false,
-        "Length":  41916,
-        "LastWriteTime":  "\/Date(1763769824052)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files",
         "Name":  "index_files",
         "PSIsContainer":  true,
         "Length":  null,
-        "LastWriteTime":  "\/Date(1763772486352)\/"
+        "LastWriteTime":  "\/Date(1763788856235)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index.htm",
@@ -1022,60 +1008,11 @@
         "LastWriteTime":  "\/Date(1763772416359)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\bscframe.html",
-        "Name":  "bscframe.html",
-        "PSIsContainer":  false,
-        "Length":  291,
-        "LastWriteTime":  "\/Date(1763772416311)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\google_logo_icon_2380fba942c84387f09cf.svg",
         "Name":  "google_logo_icon_2380fba942c84387f09cf.svg",
         "PSIsContainer":  false,
         "Length":  1319,
         "LastWriteTime":  "\/Date(1763772416281)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\RotateCookiesPage.html",
-        "Name":  "RotateCookiesPage.html",
-        "PSIsContainer":  false,
-        "Length":  550,
-        "LastWriteTime":  "\/Date(1763772416311)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\saved_resource(1).html",
-        "Name":  "saved_resource(1).html",
-        "PSIsContainer":  false,
-        "Length":  389,
-        "LastWriteTime":  "\/Date(1763772416311)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\saved_resource(2).html",
-        "Name":  "saved_resource(2).html",
-        "PSIsContainer":  false,
-        "Length":  392,
-        "LastWriteTime":  "\/Date(1763772416311)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\saved_resource.html",
-        "Name":  "saved_resource.html",
-        "PSIsContainer":  false,
-        "Length":  1953,
-        "LastWriteTime":  "\/Date(1763772416311)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\sw_iframe(1).html",
-        "Name":  "sw_iframe(1).html",
-        "PSIsContainer":  false,
-        "Length":  3797,
-        "LastWriteTime":  "\/Date(1763772416309)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\sw_iframe.html",
-        "Name":  "sw_iframe.html",
-        "PSIsContainer":  false,
-        "Length":  3753,
-        "LastWriteTime":  "\/Date(1763772416366)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\Google Gemini_windows_security2\\index_files\\unnamed.jpg",
@@ -1383,7 +1320,7 @@
         "Name":  "index_files",
         "PSIsContainer":  true,
         "Length":  null,
-        "LastWriteTime":  "\/Date(1763769974267)\/"
+        "LastWriteTime":  "\/Date(1763789165826)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index.html",
@@ -1391,41 +1328,6 @@
         "PSIsContainer":  false,
         "Length":  1154514,
         "LastWriteTime":  "\/Date(1763769824112)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\anchor.html",
-        "Name":  "anchor.html",
-        "PSIsContainer":  false,
-        "Length":  80959,
-        "LastWriteTime":  "\/Date(1763769824147)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\bannerBackgroundImage_2nam07xvbxfe1.png",
-        "Name":  "bannerBackgroundImage_2nam07xvbxfe1.png",
-        "PSIsContainer":  false,
-        "Length":  19250,
-        "LastWriteTime":  "\/Date(1763769824155)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\bannerBackgroundImage_oc2jtumwvlrb1.png",
-        "Name":  "bannerBackgroundImage_oc2jtumwvlrb1.png",
-        "PSIsContainer":  false,
-        "Length":  19671,
-        "LastWriteTime":  "\/Date(1763769824164)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\button.html",
-        "Name":  "button.html",
-        "PSIsContainer":  false,
-        "Length":  189443,
-        "LastWriteTime":  "\/Date(1763769824174)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\client",
-        "Name":  "client",
-        "PSIsContainer":  false,
-        "Length":  243115,
-        "LastWriteTime":  "\/Date(1763769824188)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\comment-forest-client-css-DHGvxlkb.css",
@@ -1470,13 +1372,6 @@
         "LastWriteTime":  "\/Date(1763769824271)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\j2QzYRyprmi814Z3XR_eMijioEKHIezy9FKIiRZACLw.jpg",
-        "Name":  "j2QzYRyprmi814Z3XR_eMijioEKHIezy9FKIiRZACLw.jpg",
-        "PSIsContainer":  false,
-        "Length":  1521,
-        "LastWriteTime":  "\/Date(1763769824282)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\nsfw-bypassable-modal-client-css-BQOI-7PB.css",
         "Name":  "nsfw-bypassable-modal-client-css-BQOI-7PB.css",
         "PSIsContainer":  false,
@@ -1498,39 +1393,11 @@
         "LastWriteTime":  "\/Date(1763769824305)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\QHBsTWPFSd1RVRIjFmbIOvbVvIhmBMu0Bta-ixNGLc8.jpg",
-        "Name":  "QHBsTWPFSd1RVRIjFmbIOvbVvIhmBMu0Bta-ixNGLc8.jpg",
-        "PSIsContainer":  false,
-        "Length":  4392,
-        "LastWriteTime":  "\/Date(1763769824129)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\qr-code-persistent-button-upsell-client-css-Bgh5zqyM.css",
         "Name":  "qr-code-persistent-button-upsell-client-css-Bgh5zqyM.css",
         "PSIsContainer":  false,
         "Length":  53,
         "LastWriteTime":  "\/Date(1763769824313)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\QveX4_8RF68xv3u-clzoWHVbU8gnwZyrZhqYLNhkqjY.jpg",
-        "Name":  "QveX4_8RF68xv3u-clzoWHVbU8gnwZyrZhqYLNhkqjY.jpg",
-        "PSIsContainer":  false,
-        "Length":  4999,
-        "LastWriteTime":  "\/Date(1763769824137)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\saved_resource.html",
-        "Name":  "saved_resource.html",
-        "PSIsContainer":  false,
-        "Length":  149,
-        "LastWriteTime":  "\/Date(1763769824320)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\style",
-        "Name":  "style",
-        "PSIsContainer":  false,
-        "Length":  696,
-        "LastWriteTime":  "\/Date(1763769824336)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\howto_set_folder_share\\index_files\\styles__ltr.css",
@@ -1551,7 +1418,7 @@
         "Name":  "index_files",
         "PSIsContainer":  true,
         "Length":  null,
-        "LastWriteTime":  "\/Date(1763769976083)\/"
+        "LastWriteTime":  "\/Date(1763789299739)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index.html",
@@ -1561,32 +1428,11 @@
         "LastWriteTime":  "\/Date(1763769824793)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\bscframe.html",
-        "Name":  "bscframe.html",
-        "PSIsContainer":  false,
-        "Length":  189,
-        "LastWriteTime":  "\/Date(1763769824810)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\google_logo_icon_2380fba942c84387f09cf.svg",
         "Name":  "google_logo_icon_2380fba942c84387f09cf.svg",
         "PSIsContainer":  false,
         "Length":  1319,
         "LastWriteTime":  "\/Date(1763769824819)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\RotateCookiesPage.html",
-        "Name":  "RotateCookiesPage.html",
-        "PSIsContainer":  false,
-        "Length":  389,
-        "LastWriteTime":  "\/Date(1763769824805)\/"
-    },
-    {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\saved_resource.html",
-        "Name":  "saved_resource.html",
-        "PSIsContainer":  false,
-        "Length":  350,
-        "LastWriteTime":  "\/Date(1763769824825)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\saved_web\\white_back\\index_files\\unnamed.jpg",
