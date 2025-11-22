@@ -1,6 +1,6 @@
 /**
  * sidebar_sitemap.js
- * Purpose: Initializes sidebar with static content and appends dynamic sitemap links with folder headers.
+ * Purpose: Initializes sidebar with static content and appends dynamic sitemap links with grouped headers.
  */
 
 (function () {
@@ -25,16 +25,13 @@ saved_web<br>
         '.jpg', '.png', '.svg', '.xml', '.css', '.json', '.webmanifest', '.ico', '.ダウンロード', '.js','.ps1','.bat'
     ];
     
-    // 出力要素を取得
     const outputElement = document.getElementById(OUTPUT_ELEMENT_ID);
 
-    // 要素が存在しない場合は処理を中断
     if (!outputElement) {
         console.error('Sitemap Error: Output element with ID "' + OUTPUT_ELEMENT_ID + '" not found.');
         return;
     }
     
-    // 最初のステップ: 静的コンテンツを挿入
     outputElement.innerHTML = STATIC_CONTENTS; 
 
     // --- 3. Helper Functions ---
@@ -48,128 +45,120 @@ saved_web<br>
         const normalizedPath = fullName.replace(/\\/g, '/');
         const rootIndex = normalizedPath.indexOf(SITE_ROOT_FOLDER_NAME);
         
-        if (rootIndex === -1) {
-            return normalizedPath; 
-        }
+        if (rootIndex === -1) return normalizedPath; 
         
         const startIndex = rootIndex + SITE_ROOT_FOLDER_NAME.length + 1;
-        
-        if (startIndex >= normalizedPath.length) {
-            return ''; 
-        }
+        if (startIndex >= normalizedPath.length) return ''; 
 
         const relative = normalizedPath.substring(startIndex);
         return '/' + relative;
     }
 
+    /**
+     * 元のコードにあった関数：直上のフォルダ名を取得（リンクテキスト表示用）
+     */
+    function getFolderName(fullName) {
+        const normalizedPath = fullName.replace(/\\/g, '/');
+        const rootIndex = normalizedPath.indexOf(SITE_ROOT_FOLDER_NAME);
+        
+        if (rootIndex === -1) return '不明なフォルダ'; 
+
+        const relativePath = normalizedPath.substring(rootIndex + SITE_ROOT_FOLDER_NAME.length + 1);
+        const folderPath = relativePath.substring(0, relativePath.lastIndexOf('/'));
+
+        if (folderPath === '') return 'tribefactory.netlify.app'; // ルートの場合
+
+        const lastSlashIndex = folderPath.lastIndexOf('/');
+        if (lastSlashIndex === -1) return folderPath;
+
+        return folderPath.substring(lastSlashIndex + 1);
+    }
+
     // --- 4. Logic for Links Generation ---
 
-    /**
-     * Generates a link list grouped by top-level folders.
-     */
     function generateLinks(data) {
         const ul = document.createElement('ul');
         ul.setAttribute('class', 'sitemap-list');
-        // 見出しを見やすくするための簡易CSS（必要に応じてstyle.css等に移動してください）
+        
+        // 見た目の調整（必要に応じてCSSファイルへ移動してください）
         ul.style.listStyle = 'none';
         ul.style.paddingLeft = '0';
 
-        // [重要] フォルダごとにまとめるため、パス順でソートします
+        // フォルダごとに固めるためパス順でソート
         const sortedData = data.sort((a, b) => {
             const pathA = a.FullName.replace(/\\/g, '/').toLowerCase();
             const pathB = b.FullName.replace(/\\/g, '/').toLowerCase();
             return pathA < pathB ? -1 : pathA > pathB ? 1 : 0;
         });
 
-        let lastFolder = null; // 直前に処理した第一階層フォルダ名を記録
+        let lastHeaderFolder = null; // 見出し判定用の変数を初期化
 
         sortedData.filter(item => 
             !item.PSIsContainer && 
             !isExcluded(item.Name)
         ).forEach(item => {
             const rootAbsolutePath = getRelativePathFromFullName(item.FullName);
-            
             if (rootAbsolutePath === '') return;
 
-            // --- 階層グループ化ロジック ---
-            // パスを分解 (例: /blog/2023/page.html -> ["", "blog", "2023", "page.html"])
+            // --- 【変更点1】第一階層（ルート直後のフォルダ）が変わったら見出しを出す ---
             const pathParts = rootAbsolutePath.split('/');
-            
-            // 第一階層のフォルダ名を取得
-            // pathParts[1] が "blog" や "tool" に該当します
-            // ルート直下のファイルの場合はファイル名が入るため、フォルダ扱いしないように区別します
-            let currentFolder = 'Root'; // デフォルト（ルート直下）
-            
-            if (pathParts.length > 2) { 
-                // スラッシュで分割して3要素以上ある＝フォルダの中にあるファイル
-                // ["", "tool", "file.html"] (length 3)
-                currentFolder = pathParts[1]; 
+            let currentHeaderFolder = 'Root'; 
+
+            // pathParts[1] が第一階層のフォルダ名 (例: /tool/calc.html -> "tool")
+            if (pathParts.length > 2) {
+                currentHeaderFolder = pathParts[1];
             }
 
-            // フォルダが変わったタイミングで見出し(li)を挿入
-            if (currentFolder !== lastFolder) {
+            // 前回のループと違う第一階層フォルダなら、見出し(li)を追加
+            if (currentHeaderFolder !== lastHeaderFolder) {
                 const headerLi = document.createElement('li');
-                
-                // 見出しのデザイン調整
                 headerLi.style.fontWeight = 'bold';
-                headerLi.style.marginTop = '10px';
-                headerLi.style.color = '#666'; // グレー文字など
-                headerLi.style.borderBottom = '1px solid #ccc'; // 下線など
+                headerLi.style.marginTop = '15px';
+                headerLi.style.marginBottom = '5px';
+                headerLi.style.color = '#333';
+                headerLi.style.borderBottom = '1px solid #ddd';
                 
-                headerLi.textContent = `📂 ${currentFolder}`; // 見出しテキスト
+                // 見出しテキスト
+                headerLi.textContent = `📂 ${currentHeaderFolder}`; 
                 ul.appendChild(headerLi);
 
-                lastFolder = currentFolder; // 記録を更新
+                lastHeaderFolder = currentHeaderFolder;
             }
-            // ---------------------------
 
+            // --- 【変更点2】リンク自体は元のロジック（フォルダ名/ファイル名）を維持 ---
             const li = document.createElement('li');
             const a = document.createElement('a');
             
+            // 直上のフォルダ名を取得（リンクテキスト用）
+            const parentFolderName = getFolderName(item.FullName);
+
             a.href = rootAbsolutePath; 
-            // 見出しがあるので、リンクテキストはファイル名だけでも良いですが、
-            // もとの要望に合わせて「直上のフォルダ名/ファイル名」などの形式も維持可能です。
-            // ここではシンプルにファイル名、あるいは以前のロジックに近い表示にします。
-            
-            // 以前のロジック：直上のフォルダ名/ファイル名
-            // 今回は第一階層で見出しを出しているので、リンク自体は少しシンプルにしても良いかもしれません。
-            // とりあえずファイル名＋補足程度にします。
-            a.textContent = item.Name; 
-            
+            // ここを元の「フォルダ名/ファイル名」に戻しました
+            a.textContent = `${parentFolderName}/${item.Name}`; 
             a.setAttribute('title', item.FullName); 
 
-            // インデントをつける（見出しより右にずらす）
-            li.style.paddingLeft = '1em';
+            // インデントを入れて見出しと区別しやすくする
+            li.style.paddingLeft = '10px';
 
             li.appendChild(a);
             ul.appendChild(li);
         });
 
         outputElement.appendChild(ul); 
-        console.log('Sitemap: Generated grouped links.');
+        console.log('Sitemap: Generated grouped links with full names.');
     }
 
     // --- 5. Main Process ---
-    
     function loadSitemapData() {
-        const jsonPath = JSON_URL; 
-        
-        fetch(jsonPath)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok. ' + response.status);
-                }
-                return response.json();
-            })
-            .then(data => {
-                generateLinks(data);
-            })
+        fetch(JSON_URL)
+            .then(response => response.ok ? response.json() : Promise.reject(response.status))
+            .then(data => generateLinks(data))
             .catch(error => {
-                console.error('Sitemap Fetch Error:', error);
-                const errorP = document.createElement('p');
-                errorP.style.color = 'red';
-                errorP.textContent = 'Sitemap loading failed.';
-                outputElement.appendChild(errorP); 
+                console.error('Sitemap Error:', error);
+                const p = document.createElement('p');
+                p.style.color = 'red';
+                p.textContent = 'Error loading sitemap.';
+                outputElement.appendChild(p);
             });
     }
 
