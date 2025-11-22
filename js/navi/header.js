@@ -6,7 +6,7 @@ const header_contents=`
         </div>
         <hr />
         <div class="header-inner-lower">
-            トライブファクトリー1
+            トライブファクトリー
         </div>
 `;
 console.log("hi");
@@ -42,4 +42,5 @@ preTags.forEach(pre => {
         });
         pre.appendChild(button);
 });
+
 
