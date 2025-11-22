@@ -14,7 +14,7 @@
     const JSON_URL = 'https://tribefactory.netlify.app/js/sitemap/file_structure.json';
     const SITE_ROOT_FOLDER_NAME = 'tribefactory-main'; 
     const EXCLUDED_EXTENSIONS = [
-        '.jpg', '.png', '.svg', '.xml', '.css', '.json', '.webmanifest', '.ico', '.ダウンロード', '.js','.ps1','.bat'
+        '.jpg', '.png', '.svg', '.xml', '.css', '.json', '.webmanifest', '.ico', '.ダウンロード', '.js','.ps1','.bat' ,'.url'
     ];
     
     const outputElement = document.getElementById(OUTPUT_ELEMENT_ID);
@@ -156,4 +156,5 @@
     loadSitemapData();
 
 })();
+
 
