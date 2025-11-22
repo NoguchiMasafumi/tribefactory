@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+        <title id='title1'>Tribe Factory</title>
+        <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="header_container"></header>
 
-    <title id='title1'>Tribe Factory</title>
-
-    <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
-
-    <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       #image-container {
           text-align: center;
@@ -23,21 +24,6 @@
           display: none; /* 初期状態で非表示にする */
       }
     </style>
-</head>
-<body>
-    
-    <header>
-        <div class="header-inner-upper">
-            Tribe Factory<img src="https://tribefactory.netlify.app/img/TF20_min.png" class="h24" alt="Tribe Factory" style="margin-left:5px;">
-            <!-- navi -->
-            <script src="https://tribefactory.netlify.app/js/navi/navi_menu2.js"></script>
-        </div>
-        <hr />
-    <div class="header-inner-lower">
-        トライブファクトリー
-
-    </div>
-    </header>
 <div style="display: flex;">
 <input type="file" id="image-input" multiple style="display:inline">　<span id="file-info"></span> <!-- ファイル情報表示用の要素を追加 -->
 </div>
@@ -101,11 +87,9 @@
     </script>
 
 
-
-
-
-
-    <footer id="footer-container"></footer>
-    <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
-  </body>
+        <footer id="footer-container"></footer>
+        <script src="https://tribefactory.netlify.app/js/navi/header.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/sidebar.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
+    </body>
 </html>
