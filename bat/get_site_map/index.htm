@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title id='title1'>Tribe Factory</title>
+        <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="header_container"></header>
+        <div class="main-content">
+            <main class="content-sidebar" id="sidebar_container"></main>
+
+
+<aside class="content-main">
+<h3>同階層のフォルダ内のファイルをjson化する sitemap自動作成</h3>            
+
+実行はPowerShell管理者実行上<br />
+<br />
+まず実行を許可設定<br />
+Set-ExecutionPolicy RemoteSigned -Scope Process<br />
+<br />
+階層を合わせる<br />
+Set-location -Path "\\lenovo_main\user\html\github"<br />
+<br />
+実行<br />
+.\get_site_map.ps1<br />
+<br />
+<br />
+
+<pre><code>$TargetFolderName = "tribefactory-main"
+$OutputFileName = "file_structure.json"
+
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+
+$TargetFolderPath = Join-Path -Path $ScriptDir -ChildPath $TargetFolderName
+$OutputSubDir = "js\sitemap"
+$OutputDirectoryPath = Join-Path -Path $TargetFolderPath -ChildPath $OutputSubDir
+$OutputPath = Join-Path -Path $OutputDirectoryPath -ChildPath $OutputFileName
+
+Write-Host ""
+Write-Host "[Starting File Structure Analysis Script Execution]"
+Write-Host "Target Folder: ""$TargetFolderName"""
+Write-Host "Output Directory: ""$OutputSubDir"""
+Write-Host "Output File: ""$OutputFileName"""
+Write-Host ""
+
+if (-not (Test-Path -Path $TargetFolderPath -PathType Container)) {
+    Write-Error "ERROR: Target folder ""$TargetFolderName"" not found. Aborting."
+    exit 1
+}
+
+# Create the output directory if it does not exist
+if (-not (Test-Path -Path $OutputDirectoryPath -PathType Container)) {
+    Write-Host "Creating output directory: ""$OutputDirectoryPath"""
+    New-Item -Path $OutputDirectoryPath -ItemType Directory | Out-Null
+}
+
+Write-Host "Step 1: Starting file traversal and JSON conversion."
+
+try {
+    $FileStructure = Get-ChildItem -Path $TargetFolderPath -Recurse |
+        Select-Object FullName, Name, PSIsContainer, Length, LastWriteTime
+
+    $FileStructure | ConvertTo-Json -Depth 10 |
+        Out-File -FilePath $OutputPath -Encoding UTF8
+    
+    $ExitCode = 0
+}
+catch {
+    Write-Error "Step 2: An error occurred during PowerShell execution."
+    Write-Error $_.Exception.Message
+    $ExitCode = 1
+}
+
+Write-Host ""
+Write-Host "Step 3: PowerShell execution finished."
+Write-Host "Exit Code: $ExitCode"
+
+if ($ExitCode -eq 0) {
+    Write-Host "Success: Output written to ""$OutputPath"""
+} else {
+    Write-Host "Failure: Please check the error messages above."
+}
+
+Write-Host ""
+if ($Host.Name -eq "ConsoleHost" -and $PSBoundParameters.ContainsKey("NoExit") -eq $false) {
+    Write-Host "Press any key to close this window..."
+    $null = [System.Console]::ReadKey($true)
+}
+
+exit $ExitCode</code></pre>
+</aside>
+
+    
+        </div>
+        <footer id="footer-container"></footer>
+        <script src="https://tribefactory.netlify.app/js/navi/header.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/sidebar.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
+    </body>
+</html>
