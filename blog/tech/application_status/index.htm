@@ -70,50 +70,19 @@
             <br />
 
 <h3>アンインストールバッチの作成</h3>
-Teams<br />
+
+    
+<a href="https://tribefactory.netlify.app/bat/uninstall_appli_fit_noguchi/index.htm">アンインストールバッチ</a><br />    
 <br />
-@echo off<br />
-echo Microsoft To Doをアンインストールしています...<br />
-winget uninstall "Microsoft To Do" --accept-source-agreements --silent<br />
-if %errorlevel% equ 0 (<br />
-    echo アンインストールが完了しました。<br />
-) else (<br />
-    echo アンインストールに失敗したか、アプリが見つかりませんでした。<br />
-)<br />
-pause<br />
-<br />
-https://ygkb.jp/22500<br />            
-Get-AppxPackage -AllUsers -Name MicrosoftTeams | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Clipchamp.Clipchamp | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name notepad | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.549981C3F5F10 | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Disney.37853FC22B2CE | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name MicrosoftTeams | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.Todos | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.MicrosoftOfficeHub | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.MicrosoftSolitaireCollection | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.GamingApp | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.XboxGamingOverlay | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.Xbox.TCUI | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.XboxGameOverlay | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.XboxIdentityProvider | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.ZuneVideo | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.WindowsCamera | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.BingWeather | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.Getstarted | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.WindowsFeedbackHub | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.Windows.Photos | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.MicrosoftStickyNotes | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.WindowsMaps | Remove-AppxPackage -AllUsers<br />
-Get-AppxPackage -AllUsers -Name Microsoft.ZuneMusic | Remove-AppxPackage -AllUsers<br />
+    
 ----------------------------------<br />
-追加分<br />
-onedrive<br />
-family<br />
-whiteboard<br />
-outlook<br />
+追加したい<br />
+<input type="checkbox" checked="checked" />onedrive<br />
+family　MicrosoftFamily<br />
+whiteboard　Microsoft.Whiteboard<br />
+outlook　Microsoft.OutlookForWindows<br />
+Microsoft.BingFinance<br />
+    
             <br />
             
             <br />
@@ -165,3 +134,4 @@ outlook<br />
         <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
     </body>
 </html>
+
