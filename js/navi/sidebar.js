@@ -1,6 +1,6 @@
 /**
  * sidebar_sitemap.js
- * Purpose: Initializes sidebar with static content and appends dynamic sitemap links.
+ * Purpose: Initializes sidebar with static content and appends dynamic sitemap links with folder headers.
  */
 
 (function () {
@@ -34,28 +34,21 @@ saved_web<br>
         return;
     }
     
-    // 最初のステップ: 静的コンテンツを挿入（既存の内容を上書きし、マージの基点とする）
+    // 最初のステップ: 静的コンテンツを挿入
     outputElement.innerHTML = STATIC_CONTENTS; 
 
     // --- 3. Helper Functions ---
     
-    /**
-     * Helper function to check if a file name ends with any excluded extension.
-     */
     function isExcluded(fileName) {
         const lowerName = fileName.toLowerCase();
         return EXCLUDED_EXTENSIONS.some(ext => lowerName.endsWith(ext));
     }
     
-    /**
-     * Calculates the path relative to the SITE_ROOT_FOLDER_NAME.
-     */
     function getRelativePathFromFullName(fullName) {
         const normalizedPath = fullName.replace(/\\/g, '/');
         const rootIndex = normalizedPath.indexOf(SITE_ROOT_FOLDER_NAME);
         
         if (rootIndex === -1) {
-            console.warn('Sitemap Path Warning: Could not find site root folder "' + SITE_ROOT_FOLDER_NAME + '" in FullName.');
             return normalizedPath; 
         }
         
@@ -66,102 +59,105 @@ saved_web<br>
         }
 
         const relative = normalizedPath.substring(startIndex);
-        // サイトルートからの絶対パスにするため、先頭にスラッシュを追加
         return '/' + relative;
     }
 
-    /**
-     * 新規追加: ファイルのFullNameから、直上のフォルダ名を取得します。
-     * 例: "C:\...\tribefactory-main\js\pages\file.htm" -> "pages"
-     * ファイルがサイトルート直下の場合 (例: "C:\...\tribefactory-main\index.htm") -> "サイトルート直下" 
-     * @param {string} fullName - The full absolute path from the JSON.
-     * @returns {string} The name of the immediate parent folder.
-     */
-    function getFolderName(fullName) {
-        // パス区切り文字を正規化し、SITE_ROOT_FOLDER_NAME以降の相対パスを取得
-        const normalizedPath = fullName.replace(/\\/g, '/');
-        const rootIndex = normalizedPath.indexOf(SITE_ROOT_FOLDER_NAME);
-        
-        if (rootIndex === -1) {
-            return '不明なフォルダ'; 
-        }
-
-        const relativePath = normalizedPath.substring(rootIndex + SITE_ROOT_FOLDER_NAME.length + 1);
-
-        // 最後のファイル名部分を除去
-        const folderPath = relativePath.substring(0, relativePath.lastIndexOf('/'));
-
-        if (folderPath === '') {
-            // ルートフォルダ直下の場合
-            return 'tribefactory.netlify.app';
-        }
-
-        // フォルダパスの最後のスラッシュ以降（＝直上のフォルダ名）を抽出
-        const lastSlashIndex = folderPath.lastIndexOf('/');
-        
-        if (lastSlashIndex === -1) {
-            // ルート直下のフォルダの場合
-            return folderPath;
-        }
-
-        return folderPath.substring(lastSlashIndex + 1);
-    }
+    // --- 4. Logic for Links Generation ---
 
     /**
-     * Generates a link list from the file structure data and appends it to the output element.
+     * Generates a link list grouped by top-level folders.
      */
     function generateLinks(data) {
         const ul = document.createElement('ul');
         ul.setAttribute('class', 'sitemap-list');
+        // 見出しを見やすくするための簡易CSS（必要に応じてstyle.css等に移動してください）
+        ul.style.listStyle = 'none';
+        ul.style.paddingLeft = '0';
 
-        let linkCount = 0;
+        // [重要] フォルダごとにまとめるため、パス順でソートします
+        const sortedData = data.sort((a, b) => {
+            const pathA = a.FullName.replace(/\\/g, '/').toLowerCase();
+            const pathB = b.FullName.replace(/\\/g, '/').toLowerCase();
+            return pathA < pathB ? -1 : pathA > pathB ? 1 : 0;
+        });
 
-        // フォルダと除外拡張子を除外
-        data.filter(item => 
+        let lastFolder = null; // 直前に処理した第一階層フォルダ名を記録
+
+        sortedData.filter(item => 
             !item.PSIsContainer && 
             !isExcluded(item.Name)
         ).forEach(item => {
+            const rootAbsolutePath = getRelativePathFromFullName(item.FullName);
+            
+            if (rootAbsolutePath === '') return;
+
+            // --- 階層グループ化ロジック ---
+            // パスを分解 (例: /blog/2023/page.html -> ["", "blog", "2023", "page.html"])
+            const pathParts = rootAbsolutePath.split('/');
+            
+            // 第一階層のフォルダ名を取得
+            // pathParts[1] が "blog" や "tool" に該当します
+            // ルート直下のファイルの場合はファイル名が入るため、フォルダ扱いしないように区別します
+            let currentFolder = 'Root'; // デフォルト（ルート直下）
+            
+            if (pathParts.length > 2) { 
+                // スラッシュで分割して3要素以上ある＝フォルダの中にあるファイル
+                // ["", "tool", "file.html"] (length 3)
+                currentFolder = pathParts[1]; 
+            }
+
+            // フォルダが変わったタイミングで見出し(li)を挿入
+            if (currentFolder !== lastFolder) {
+                const headerLi = document.createElement('li');
+                
+                // 見出しのデザイン調整
+                headerLi.style.fontWeight = 'bold';
+                headerLi.style.marginTop = '10px';
+                headerLi.style.color = '#666'; // グレー文字など
+                headerLi.style.borderBottom = '1px solid #ccc'; // 下線など
+                
+                headerLi.textContent = `📂 ${currentFolder}`; // 見出しテキスト
+                ul.appendChild(headerLi);
+
+                lastFolder = currentFolder; // 記録を更新
+            }
+            // ---------------------------
+
             const li = document.createElement('li');
             const a = document.createElement('a');
             
-            const rootAbsolutePath = getRelativePathFromFullName(item.FullName);
-            
-            if (rootAbsolutePath === '') {
-                return;
-            }
-            
-            // **修正箇所1: フォルダ名を取得**
-            const folderName = getFolderName(item.FullName);
-
             a.href = rootAbsolutePath; 
-            // **修正箇所2: リンクテキストにフォルダ名を含める**
-            a.textContent = `${folderName}/${item.Name}`; 
+            // 見出しがあるので、リンクテキストはファイル名だけでも良いですが、
+            // もとの要望に合わせて「直上のフォルダ名/ファイル名」などの形式も維持可能です。
+            // ここではシンプルにファイル名、あるいは以前のロジックに近い表示にします。
+            
+            // 以前のロジック：直上のフォルダ名/ファイル名
+            // 今回は第一階層で見出しを出しているので、リンク自体は少しシンプルにしても良いかもしれません。
+            // とりあえずファイル名＋補足程度にします。
+            a.textContent = item.Name; 
+            
             a.setAttribute('title', item.FullName); 
+
+            // インデントをつける（見出しより右にずらす）
+            li.style.paddingLeft = '1em';
 
             li.appendChild(a);
             ul.appendChild(li);
-            linkCount++;
         });
 
-        // 最終ステップ: 既存のコンテンツ（STATIC_CONTENTS）の**後ろに**動的なリストを追記（マージ）
         outputElement.appendChild(ul); 
-        console.log('Sitemap: Successfully generated ' + linkCount + ' links and appended to ' + OUTPUT_ELEMENT_ID + '.');
+        console.log('Sitemap: Generated grouped links.');
     }
 
-    // --- 4. Main Process ---
+    // --- 5. Main Process ---
     
-    /**
-     * Fetches the JSON file and initiates link generation.
-     */
     function loadSitemapData() {
         const jsonPath = JSON_URL; 
         
-        console.log('Sitemap: Attempting to load JSON from: ' + jsonPath);
-
         fetch(jsonPath)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok. HTTP Status: ' + response.status + ' (URL: ' + jsonPath + ')');
+                    throw new Error('Network response was not ok. ' + response.status);
                 }
                 return response.json();
             })
@@ -170,17 +166,13 @@ saved_web<br>
             })
             .catch(error => {
                 console.error('Sitemap Fetch Error:', error);
-                // エラーメッセージも静的コンテンツの後ろに追記
                 const errorP = document.createElement('p');
                 errorP.style.color = 'red';
-                errorP.textContent = 'Error loading sitemap data. Check console for details. (Possible causes: File not found or CORS restriction)';
+                errorP.textContent = 'Sitemap loading failed.';
                 outputElement.appendChild(errorP); 
             });
     }
 
-    // 処理を開始
     loadSitemapData();
 
 })();
-
-
