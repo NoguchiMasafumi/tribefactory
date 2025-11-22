@@ -22,7 +22,7 @@ saved_web<br>
     const JSON_URL = 'https://tribefactory.netlify.app/js/sitemap/file_structure.json';
     const SITE_ROOT_FOLDER_NAME = 'tribefactory-main'; 
     const EXCLUDED_EXTENSIONS = [
-        '.jpg', '.png', '.svg', '.xml', '.css', '.json', '.webmanifest', '.ico', '.ダウンロード', '.js'
+        '.jpg', '.png', '.svg', '.xml', '.css', '.json', '.webmanifest', '.ico', '.ダウンロード', '.js','.ps1','.bat'
     ];
     
     // 出力要素を取得
@@ -182,4 +182,5 @@ saved_web<br>
     loadSitemapData();
 
 })();
+
 
