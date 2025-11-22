@@ -60,7 +60,7 @@
         "Name":  "saved_web",
         "PSIsContainer":  true,
         "Length":  null,
-        "LastWriteTime":  "\/Date(1763797669481)\/"
+        "LastWriteTime":  "\/Date(1763797822905)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\test_place",
@@ -567,13 +567,6 @@
         "LastWriteTime":  "\/Date(1763797647872)\/"
     },
     {
-        "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\tech\\l_and_1\\l_and_1.htm",
-        "Name":  "l_and_1.htm",
-        "PSIsContainer":  false,
-        "Length":  3096,
-        "LastWriteTime":  "\/Date(1763797647872)\/"
-    },
-    {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\blog\\tech\\service_list\\index.htm",
         "Name":  "index.htm",
         "PSIsContainer":  false,
@@ -948,8 +941,8 @@
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\js\\sitemap\\file_structure.json",
         "Name":  "file_structure.json",
         "PSIsContainer":  false,
-        "Length":  64293,
-        "LastWriteTime":  "\/Date(1763797680385)\/"
+        "Length":  64041,
+        "LastWriteTime":  "\/Date(1763797832615)\/"
     },
     {
         "FullName":  "\\\\lenovo_main\\user\\html\\github\\tribefactory-main\\playground\\poly-fighter",
