@@ -6,3 +6,5 @@ Set-ExecutionPolicy RemoteSigned -Scope Process
 Set-location -Path "\\lenovo_main\user\html\github"
 
 .\get_site_map.ps1
+
+\\lenovo_main\user\html\github\get_site_map.ps1 これで実行できた！
