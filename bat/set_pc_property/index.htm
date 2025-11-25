@@ -21,18 +21,18 @@
             <main class="content-sidebar" id="sidebar_container"></main>
 
 <aside class="content-main">
-<h3>PC‚Ìİ’è‚ğƒZƒbƒg‚·‚é</h3>            
+<h3>PCã®è¨­å®šã‚’ã‚»ãƒƒãƒˆã™ã‚‹</h3>            
 <pre><code>
 Write-Host "--- Now Setting PC Property ---"
 
-# ƒEƒCƒ“ƒhƒEƒXƒiƒbƒv–³Œø‰»
+# ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚¹ãƒŠãƒƒãƒ—ç„¡åŠ¹åŒ–
 Set-ItemProperty "HKCU:\Control Panel\Desktop" "WindowArrangementActive" 0
 
-# ŒŸõƒnƒCƒ‰ƒCƒg–³Œø‰»
+# æ¤œç´¢ãƒã‚¤ãƒ©ã‚¤ãƒˆç„¡åŠ¹åŒ–
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings" /v IsDynamicSearchBoxEnabled /t REG_DWORD /d 0 /f | Out-Null
 reg add "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynamicContentInWSB /t REG_DWORD /d 0 /f | Out-Null
 
-# ƒRƒ}ƒ“ƒhÀs‚Ì‚½‚ß‘¦”½‰f‚³‚¹‚é‚½‚ß@ƒGƒNƒXƒvƒ[ƒ‰[Ä‹N“®
+# ã‚³ãƒãƒ³ãƒ‰å®Ÿè¡Œã®ãŸã‚å³åæ˜ ã•ã›ã‚‹ãŸã‚ã€€ã‚¨ã‚¯ã‚¹ãƒ—ãƒ­ãƒ¼ãƒ©ãƒ¼å†èµ·å‹•
 Stop-Process -Name explorer
 
 Write-Host "--- PC Property completed. ---"
@@ -51,6 +51,7 @@ Read-Host "Press Enter to exit."
     <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
   </body>
 </html>
+
 
 
 
