@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+
+        <title id='title1'>Tribe Factory</title>
+
+        <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
+
+        <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    
+        <header id="header_container"></header>
+
+        <div class="main-content">
+            <main class="content-sidebar" id="sidebar_container"></main>
+
+<aside class="content-main">
+<h3>PCの設定をセットする</h3>            
+<pre><code>
+Write-Host "--- Now Setting PC Property ---"
+
+# ウインドウスナップ無効化
+Set-ItemProperty "HKCU:\Control Panel\Desktop" "WindowArrangementActive" 0
+
+# 検索ハイライト無効化
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings" /v IsDynamicSearchBoxEnabled /t REG_DWORD /d 0 /f | Out-Null
+reg add "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynamicContentInWSB /t REG_DWORD /d 0 /f | Out-Null
+
+# コマンド実行のため即反映させるため　エクスプローラー再起動
+Stop-Process -Name explorer
+
+Write-Host "--- PC Property completed. ---"
+
+Read-Host "Press Enter to exit."
+   
+</code></pre>
+    
+</aside>
+
+    
+    </div>
+    <footer id="footer-container"></footer>
+    <script src="https://tribefactory.netlify.app/js/navi/header.js"></script>
+    <script src="https://tribefactory.netlify.app/js/navi/sidebar.js"></script>
+    <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
+  </body>
+</html>
+
+
+
+
+
