@@ -17,52 +17,60 @@
 
 <aside class="content-main">
 <h3>広告ブロック</h3>
-<a href="javascript:(function(){const v=document.getElementsByTagName('video')[0];if(v){v.style.width='95%';v.volume='0.2';}const a=['id','class'];const n=['ad','Ad','ytp','google_ad','video-stream','player-ads','gn_delivery','CommentPanelBannerAd','AD','zuck','sponsor_side_body','yrl'];for(let i=0;i<a.length;i++){for(let j=0;j<n.length;j++){document.querySelectorAll('['+a[i]+'^='+n[j]+']').forEach(function(it){it.style.cssText='display:none!important'});};};const s=['imageaws.popin.cc','lmadps.jp','i-mobile.co.jp','jp1media.com','abc.com','im.c.yimg.jp','yads.c.yimg.jp','bance.jp'];const r='1';const rS=(p,r)=>{const b=document.body;const els=b.querySelectorAll('[src]');els.forEach(el=>{const an='src';let av=el.getAttribute(an);if(av){p.forEach(ptn=>{const regex=new RegExp(ptn.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'g');av=av.replace(regex,r+ptn);});el.setAttribute(an,av);}});};rS(s,r);void(['TBP','GDN','REALTIME','STREAMAD1','yjnSub']).forEach(id=>{const el=document.getElementById(id);if(el){el.style.cssText='display:none!important'}});})();" >add_blk</a><br />
+<a href="javascript:(function(){document.querySelectorAll('ytd-rich-item-renderer').forEach(e=>{if(e.querySelector('ytd-ad-slot-renderer'))e.style.display='none'});const v=document.getElementsByTagName('video')[0];if(v){v.style.width='95%';v.volume='0.2';}const a=['id','class'];const n=['ad','Ad','ytp','google_ad','video-stream','player-ads','gn_delivery','CommentPanelBannerAd','AD','zuck','sponsor_side_body','yrl'];for(let i=0;i<a.length;i++){for(let j=0;j<n.length;j++){document.querySelectorAll('['+a[i]+'^='+n[j]+']').forEach(function(it){it.style.cssText='display:none!important'});};};const s=['imageaws.popin.cc','lmadps.jp','i-mobile.co.jp','jp1media.com','abc.com','im.c.yimg.jp','yads.c.yimg.jp','bance.jp'];const r='1';const rS=(p,r)=>{const b=document.body;const els=b.querySelectorAll('[src]');els.forEach(el=>{const an='src';let av=el.getAttribute(an);if(av){p.forEach(ptn=>{const regex=new RegExp(ptn.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'g');av=av.replace(regex,r+ptn);});el.setAttribute(an,av);}});};rS(s,r);void(['TBP','GDN','REALTIME','STREAMAD1','yjnSub']).forEach(id=>{const el=document.getElementById(id);if(el){el.style.cssText='display:none!important'}});})();" >add_blk</a><br />
 Webページを表示した後　実行すると大概の広告を非表示にする。<br />
 
 <pre>
 <code>
-javascript:(
-    function(){
-        const v=document.getElementsByTagName('video')[0];
-        if(v){
-            v.style.width='95%';
-            v.volume='0.2';
+javascript:(function(){
+    document.querySelectorAll('ytd-rich-item-renderer').forEach(e => {
+        if (e.querySelector('ytd-ad-slot-renderer')) {
+            e.style.display = 'none';
         }
-        const a=['id','class'];
-        const n=['ad','Ad','ytp','google_ad','video-stream','player-ads','gn_delivery','CommentPanelBannerAd','AD','zuck','sponsor_side_body','yrl'];
-        for(let i=0;i<a.length;i++){
-            for(let j=0;j<n.length;j++){
-                document.querySelectorAll('['+a[i]+'^='+n[j]+']').forEach(function(it){
-                    it.style.cssText='display:none!important'
-                });
-            };
-        };
-        const s=['imageaws.popin.cc','lmadps.jp','i-mobile.co.jp','jp1media.com','abc.com','im.c.yimg.jp','yads.c.yimg.jp','bance.jp'];
-        const r='1';
-        const rS=(p,r)=>{
-            const b=document.body;
-            const els=b.querySelectorAll('[src]');
-            els.forEach(el=>{
-                const an='src';
-                let av=el.getAttribute(an);
-                if(av){
-                    p.forEach(ptn=>{
-                        const regex=new RegExp(ptn.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'g');
-                        av=av.replace(regex,r+ptn);
-                    });el.setAttribute(an,av);
-                }
+    });
+
+    const v = document.getElementsByTagName('video')[0];
+    if (v) {
+        v.style.width = '95%';
+        v.volume = '0.2';
+    }
+
+    const a = ['id', 'class'];
+    const n = ['ad', 'Ad', 'ytp', 'google_ad', 'video-stream', 'player-ads', 'gn_delivery', 'CommentPanelBannerAd', 'AD', 'zuck', 'sponsor_side_body', 'yrl'];
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < n.length; j++) {
+            document.querySelectorAll('[' + a[i] + '^=' + n[j] + ']').forEach(function(it) {
+                it.style.cssText = 'display:none!important';
             });
-        };
-        rS(s,r);
-        void(['TBP','GDN','REALTIME','STREAMAD1','yjnSub']).forEach(id=>{
-            const el=document.getElementById(id);
-            if(el){
-                el.style.cssText='display:none!important'
+        }
+    }
+
+    const s = ['imageaws.popin.cc', 'lmadps.jp', 'i-mobile.co.jp', 'jp1media.com', 'abc.com', 'im.c.yimg.jp', 'yads.c.yimg.jp', 'bance.jp'];
+    const r = '1';
+    const rS = (p, r) => {
+        const b = document.body;
+        const els = b.querySelectorAll('[src]');
+        els.forEach(el => {
+            const an = 'src';
+            let av = el.getAttribute(an);
+            if (av) {
+                p.forEach(ptn => {
+                    const regex = new RegExp(ptn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+                    av = av.replace(regex, r + ptn);
+                });
+                el.setAttribute(an, av);
             }
         });
-    }
-)();
+    };
+    rS(s, r);
+
+    void(['TBP', 'GDN', 'REALTIME', 'STREAMAD1', 'yjnSub']).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.style.cssText = 'display:none!important';
+        }
+    });
+})();
 </code>
 </pre>
 
@@ -103,3 +111,4 @@ GooglePhotoで写真を右クリックして新しいタブで開いて実行す
         <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
     </body>
 </html>
+
