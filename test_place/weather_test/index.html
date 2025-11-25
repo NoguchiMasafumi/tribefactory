@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAC to MP3 Converter</title>
+    <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.6;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 { margin-top: 0; }
+        .input-group { margin-bottom: 1.5rem; }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        #status { margin-top: 1rem; font-weight: bold; color: #555; }
+        #downloadLink {
+            display: block;
+            margin-top: 1rem;
+            color: #28a745;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>FLAC to MP3 変換</h1>
+    <p>FLACファイルを選択して「変換開始」を押してください。<br>（処理はすべてブラウザ内で行われます）</p>
+    
+    <div class="input-group">
+        <input type="file" id="fileInput" accept=".flac">
+    </div>
+
+    <button id="convertBtn" onclick="convertAudio()">変換開始</button>
+
+    <div id="status"></div>
+    <a id="downloadLink" href="#" style="display:none;">ダウンロード MP3</a>
+</div>
+
+<script>
+    async function convertAudio() {
+        const fileInput = document.getElementById('fileInput');
+        const status = document.getElementById('status');
+        const downloadLink = document.getElementById('downloadLink');
+        const convertBtn = document.getElementById('convertBtn');
+
+        if (fileInput.files.length === 0) {
+            alert('ファイルを選択してください。');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        
+        // UIのリセット
+        status.textContent = 'ファイルを読み込み中...';
+        downloadLink.style.display = 'none';
+        convertBtn.disabled = true;
+
+        try {
+            // 1. ファイルをArrayBufferとして読み込む
+            const arrayBuffer = await file.arrayBuffer();
+
+            // 2. Web Audio APIを使ってオーディオデータをデコード (FLAC -> AudioBuffer)
+            status.textContent = 'デコード中 (FLACを展開)...';
+            const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+
+            // 3. MP3へのエンコード準備
+            status.textContent = 'エンコード中 (MP3に変換)... これには時間がかかる場合があります。';
+            
+            // UI更新のために少し待機（重い処理でフリーズしたように見えるのを防ぐため）
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const mp3Blob = encodeToMp3(audioBuffer);
+
+            // 4. ダウンロードリンクの作成
+            const url = URL.createObjectURL(mp3Blob);
+            downloadLink.href = url;
+            downloadLink.download = file.name.replace(/\.[^/.]+$/, "") + ".mp3";
+            downloadLink.style.display = 'block';
+            downloadLink.textContent = 'MP3をダウンロード (' + (mp3Blob.size / 1024 / 1024).toFixed(2) + ' MB)';
+            status.textContent = '変換完了！';
+
+        } catch (e) {
+            console.error(e);
+            status.textContent = 'エラーが発生しました: ' + e.message;
+        } finally {
+            convertBtn.disabled = false;
+        }
+    }
+
+    function encodeToMp3(audioBuffer) {
+        const channels = audioBuffer.numberOfChannels;
+        const sampleRate = audioBuffer.sampleRate;
+        const kbps = 128; // MP3のビットレート
+
+        // lamejsの初期化
+        const mp3encoder = new lamejs.Mp3Encoder(channels, sampleRate, kbps);
+        const mp3Data = [];
+
+        // 左右のチャンネルデータを取得
+        // Web Audio APIはFloat32 (-1.0 ~ 1.0) だが、lamejsはInt16 (-32768 ~ 32767) を要求する
+        const left = audioBuffer.getChannelData(0);
+        const right = channels > 1 ? audioBuffer.getChannelData(1) : left; // モノラルの場合は左を使い回す
+
+        const sampleBlockSize = 1152; // MP3エンコードのブロックサイズ
+        
+        // データをInt16に変換してエンコーダーに渡す
+        for (let i = 0; i < left.length; i += sampleBlockSize) {
+            const leftChunk = left.subarray(i, i + sampleBlockSize);
+            const rightChunk = right.subarray(i, i + sampleBlockSize);
+            
+            // Float32 -> Int16 変換
+            const leftInt16 = float32ToInt16(leftChunk);
+            const rightInt16 = channels > 1 ? float32ToInt16(rightChunk) : undefined;
+
+            let mp3buf;
+            if (channels === 1) {
+                mp3buf = mp3encoder.encodeBuffer(leftInt16);
+            } else {
+                mp3buf = mp3encoder.encodeBuffer(leftInt16, rightInt16);
+            }
+
+            if (mp3buf.length > 0) {
+                mp3Data.push(mp3buf);
+            }
+        }
+
+        // エンコードの終了処理
+        const mp3buf = mp3encoder.flush();
+        if (mp3buf.length > 0) {
+            mp3Data.push(mp3buf);
+        }
+
+        // Blobを作成して返す
+        return new Blob(mp3Data, { type: 'audio/mp3' });
+    }
+
+    // Float32Array (-1.0 ~ 1.0) を Int16Array (-32768 ~ 32767) に変換するヘルパー関数
+    function float32ToInt16(float32Array) {
+        const int16Array = new Int16Array(float32Array.length);
+        for (let i = 0; i < float32Array.length; i++) {
+            // クランピング（範囲外の値を丸める）処理
+            let s = Math.max(-1, Math.min(1, float32Array[i]));
+            // 変換処理 (三項演算子で0未満と以上で処理を分けるのが一般的だが、単純な掛け算でも概ね動作する)
+            s = s < 0 ? s * 0x8000 : s * 0x7FFF;
+            int16Array[i] = s;
+        }
+        return int16Array;
+    }
+</script>
+
+</body>
+</html>
