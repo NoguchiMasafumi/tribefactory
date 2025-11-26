@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLAC to MP3 Converter with Volume Adjust</title>
+    <title>FLAC to MP3 Converter with RMS Normalize</title>
     <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js"></script>
     <style>
         body {
@@ -21,8 +21,6 @@
         }
         h1 { margin-top: 0; }
         .input-group { margin-bottom: 1.5rem; }
-        label { display: block; margin-bottom: 0.5rem; font-weight: bold; }
-        input[type="number"] { padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100px; }
         button {
             background-color: #007bff;
             color: white;
@@ -49,19 +47,11 @@
 <body>
 
 <div class="container">
-    <h1>FLAC to MP3 変換</h1>
-    <p>FLACファイルを選択して「変換開始」を押してください。<br>（処理はすべてブラウザ内で行われます）</p>
+    <h1>FLAC to MP3 変換 (平均音量統一)</h1>
+    <p>目標RMS音量: **0.89** に揃えます。<br>元の音量を測定し、変換時に自動でゲイン調整を行います。</p>
     
     <div class="input-group">
         <input type="file" id="fileInput" accept=".flac">
-    </div>
-    
-        <div class="input-group">
-        <label for="volumeInput">
-            **目標ゲイン値** (0.000 〜 1.000):<br>
-            <small>元の音量に対する割合 (例: 0.9175 = 97%を89%にするゲイン)</small>
-        </label>
-        <input type="number" id="volumeInput" min="0.000" max="1.000" step="0.001" value="0.9175">
     </div>
 
     <button id="convertBtn" onclick="convertAudio()">変換開始</button>
@@ -71,121 +61,171 @@
 </div>
 
 <script>
-    async function convertAudio() {
-        const fileInput = document.getElementById('fileInput');
-        const volumeInput = document.getElementById('volumeInput'); // ★追加
-        const status = document.getElementById('status');
-        const downloadLink = document.getElementById('downloadLink');
-        const convertBtn = document.getElementById('convertBtn');
+    // 目標の平均音量 (0.89 を RMS ターゲットとして使用)
+    const TARGET_RMS_VOLUME = 0.89; 
 
-        if (fileInput.files.length === 0) {
-            alert('ファイルを選択してください。');
-            return;
-        }
+    /**
+     * RMS (平均音量) を測定し、目標RMSに達するためのゲイン乗数を計算します。
+     * @param {AudioBuffer} audioBuffer デコードされた音声データ
+     * @returns {number} 全体に適用すべきゲイン乗数 (K)
+     */
+    function calculateRMSGain(audioBuffer) {
+        let sumOfSquares = 0;
+        let totalSamples = 0;
+        const channels = audioBuffer.numberOfChannels;
 
-        const file = fileInput.files[0];
-        const gain = parseFloat(volumeInput.value); // ★追加: ゲイン値を取得
-        
-        // UIのリセット
-        status.textContent = 'ファイルを読み込み中...';
-        downloadLink.style.display = 'none';
-        convertBtn.disabled = true;
+        // 全てのチャンネルのサンプルの二乗の和を求める
+        for (let channel = 0; channel < channels; channel++) {
+            const data = audioBuffer.getChannelData(channel);
+            totalSamples += data.length;
+            for (let i = 0; i < data.length; i++) {
+                sumOfSquares += data[i] * data[i];
+            }
+        }
+        
+        // RMS (Root Mean Square: 実効値) を計算
+        const actualRMS = Math.sqrt(sumOfSquares / totalSamples);
 
-        try {
-            const arrayBuffer = await file.arrayBuffer();
+        if (actualRMS === 0 || totalSamples === 0) {
+            console.log("警告: 音声データが見つからないか、無音です。");
+            return 1.0; 
+        }
 
-            // 2. Web Audio APIを使ってオーディオデータをデコード (FLAC -> AudioBuffer)
-            status.textContent = 'デコード中 (FLACを展開)...';
-            const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+        // 目標RMSが実際のRMSの何倍かを計算 = 必要なゲイン
+        const gainMultiplier = TARGET_RMS_VOLUME / actualRMS;
 
-            // 3. MP3へのエンコード準備
-            status.textContent = 'エンコード中 (MP3に変換)... これには時間がかかる場合があります。';
-            
-            await new Promise(resolve => setTimeout(resolve, 100));
+        // ★クリッピング保護: 計算されたゲインを適用した結果、ピークが 1.0 を超えないか確認
+        let maxPeak = 0;
+        for (let channel = 0; channel < channels; channel++) {
+             const data = audioBuffer.getChannelData(channel);
+             for (let i = 0; i < data.length; i++) {
+                 maxPeak = Math.max(maxPeak, Math.abs(data[i]));
+             }
+        }
+        const peakAfterGain = maxPeak * gainMultiplier;
+        
+        // もしピークが 1.0 を超える場合は、音割れ（クリッピング）を防ぐためにゲインを下げる
+        const finalGain = (peakAfterGain > 1.0) ? (1.0 / maxPeak) : gainMultiplier;
 
-            // ★変更: ゲイン値を渡す
-            const mp3Blob = encodeToMp3(audioBuffer, gain); 
+        console.log(`実測RMS: ${actualRMS.toFixed(4)}`);
+        console.log(`目標RMS: ${TARGET_RMS_VOLUME.toFixed(4)}`);
+        console.log(`初期計算ゲイン: ${gainMultiplier.toFixed(4)}`);
+        console.log(`最終適用ゲイン (クリッピング保護): ${finalGain.toFixed(4)}`);
 
-            // 4. ダウンロードリンクの作成 (変更なし)
-            const url = URL.createObjectURL(mp3Blob);
-            downloadLink.href = url;
-            downloadLink.download = file.name.replace(/\.[^/.]+$/, "") + ".mp3";
-            downloadLink.style.display = 'block';
-            downloadLink.textContent = 'MP3をダウンロード (' + (mp3Blob.size / 1024 / 1024).toFixed(2) + ' MB)';
-            status.textContent = '変換完了！';
+        return finalGain;
+    }
 
-        } catch (e) {
-            console.error(e);
-            status.textContent = 'エラーが発生しました: ' + e.message;
-        } finally {
-            convertBtn.disabled = false;
-        }
-    }
 
-    // ★変更: ゲイン値 (gain) を引数に追加
-    function encodeToMp3(audioBuffer, gain) { 
-        const channels = audioBuffer.numberOfChannels;
-        const sampleRate = audioBuffer.sampleRate;
-        const kbps = 128; // MP3のビットレート
+    async function convertAudio() {
+        const fileInput = document.getElementById('fileInput');
+        const status = document.getElementById('status');
+        const downloadLink = document.getElementById('downloadLink');
+        const convertBtn = document.getElementById('convertBtn');
 
-        // lamejsの初期化
-        const mp3encoder = new lamejs.Mp3Encoder(channels, sampleRate, kbps);
-        const mp3Data = [];
+        if (fileInput.files.length === 0) {
+            alert('ファイルを選択してください。');
+            return;
+        }
 
-        const left = audioBuffer.getChannelData(0);
-        const right = channels > 1 ? audioBuffer.getChannelData(1) : left;
+        const file = fileInput.files[0];
+        
+        status.textContent = 'ファイルを読み込み中...';
+        downloadLink.style.display = 'none';
+        convertBtn.disabled = true;
 
-        const sampleBlockSize = 1152;
-        
-        for (let i = 0; i < left.length; i += sampleBlockSize) {
-            const leftChunk = left.subarray(i, i + sampleBlockSize);
-            const rightChunk = right.subarray(i, i + sampleBlockSize);
-            
-            // Float32 -> Int16 変換 (ゲインを適用するために float32ToInt16 を変更)
-            const leftInt16 = float32ToInt16(leftChunk, gain); // ★変更
-            const rightInt16 = channels > 1 ? float32ToInt16(rightChunk, gain) : undefined; // ★変更
+        try {
+            const arrayBuffer = await file.arrayBuffer();
+            status.textContent = 'デコード中 (FLACを展開)...';
+            const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
 
-            let mp3buf;
-            if (channels === 1) {
-                mp3buf = mp3encoder.encodeBuffer(leftInt16);
-            } else {
-                mp3buf = mp3encoder.encodeBuffer(leftInt16, rightInt16);
-            }
+            // ★ 1. RMS測定とゲイン計算
+            status.textContent = '音量 (RMS) 測定中...';
+            const calculatedGain = calculateRMSGain(audioBuffer);
+            
+            status.textContent = `平均音量を ${TARGET_RMS_VOLUME.toFixed(4)} に統一中 (適用ゲイン: ${calculatedGain.toFixed(4)})。エンコード中...`;
+            
+            await new Promise(resolve => setTimeout(resolve, 100));
 
-            if (mp3buf.length > 0) {
-                mp3Data.push(mp3buf);
-            }
-        }
+            // ★ 2. 計算されたゲイン値をエンコーダーに渡す
+            const mp3Blob = encodeToMp3(audioBuffer, calculatedGain); 
 
-        // エンコードの終了処理
-        const mp3buf = mp3encoder.flush();
-        if (mp3buf.length > 0) {
-            mp3Data.push(mp3buf);
-        }
+            // 4. ダウンロードリンクの作成
+            const url = URL.createObjectURL(mp3Blob);
+            downloadLink.href = url;
+            downloadLink.download = file.name.replace(/\.[^/.]+$/, "") + ".mp3";
+            downloadLink.style.display = 'block';
+            downloadLink.textContent = 'MP3をダウンロード (' + (mp3Blob.size / 1024 / 1024).toFixed(2) + ' MB)';
+            status.textContent = '変換完了！';
 
-        return new Blob(mp3Data, { type: 'audio/mp3' });
-    }
+        } catch (e) {
+            console.error(e);
+            status.textContent = 'エラーが発生しました: ' + e.message;
+        } finally {
+            convertBtn.disabled = false;
+        }
+    }
 
-    // ★変更: ゲイン値 (gain) を引数に追加し、適用
-    function float32ToInt16(float32Array, gain) {
-        const int16Array = new Int16Array(float32Array.length);
-        for (let i = 0; i < float32Array.length; i++) {
-            // Float32Array (-1.0 ~ 1.0) の値を取得
-            let s = float32Array[i];
+    // ゲイン値 (gain) を引数に追加
+    function encodeToMp3(audioBuffer, gain) { 
+        const channels = audioBuffer.numberOfChannels;
+        const sampleRate = audioBuffer.sampleRate;
+        const kbps = 128; // MP3のビットレート
 
-            // ★ゲインを適用: 各サンプルに目標ゲインを乗算
+        const mp3encoder = new lamejs.Mp3Encoder(channels, sampleRate, kbps);
+        const mp3Data = [];
+
+        const left = audioBuffer.getChannelData(0);
+        const right = channels > 1 ? audioBuffer.getChannelData(1) : left;
+
+        const sampleBlockSize = 1152;
+        
+        for (let i = 0; i < left.length; i += sampleBlockSize) {
+            const leftChunk = left.subarray(i, i + sampleBlockSize);
+            const rightChunk = right.subarray(i, i + sampleBlockSize);
+            
+            // Float32 -> Int16 変換 (ゲインを適用)
+            const leftInt16 = float32ToInt16(leftChunk, gain); 
+            const rightInt16 = channels > 1 ? float32ToInt16(rightChunk, gain) : undefined;
+
+            let mp3buf;
+            if (channels === 1) {
+                mp3buf = mp3encoder.encodeBuffer(leftInt16);
+            } else {
+                mp3buf = mp3encoder.encodeBuffer(leftInt16, rightInt16);
+            }
+
+            if (mp3buf.length > 0) {
+                mp3Data.push(mp3buf);
+            }
+        }
+
+        const mp3buf = mp3encoder.flush();
+        if (mp3buf.length > 0) {
+            mp3Data.push(mp3buf);
+        }
+
+        return new Blob(mp3Data, { type: 'audio/mp3' });
+    }
+
+    // ゲイン値 (gain) を引数に追加し、適用
+    function float32ToInt16(float32Array, gain) {
+        const int16Array = new Int16Array(float32Array.length);
+        for (let i = 0; i < float32Array.length; i++) {
+            let s = float32Array[i];
+
+            // ★ ゲインを適用
             s *= gain; 
             
-            // クランピング（範囲外の値を丸める）処理
-            s = Math.max(-1, Math.min(1, s));
+            // クランピング（範囲外の値を丸める）処理
+            s = Math.max(-1, Math.min(1, s));
 
-            // 変換処理 (Float32 -> Int16)
-            s = s < 0 ? s * 0x8000 : s * 0x7FFF;
-            int16Array[i] = s;
-        }
-        return int16Array;
-    }
+            // 変換処理 (Float32 -> Int16)
+            s = s < 0 ? s * 0x8000 : s * 0x7FFF;
+            int16Array[i] = s;
+        }
+        return int16Array;
+    }
 </script>
 
 </body>
