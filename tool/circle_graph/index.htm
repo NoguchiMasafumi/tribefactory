@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.graph {
+    width: 804px;
+    height: 804px;
+}
+</style>
+</head>
+<body>
+<canvas id="js-graph" class="graph"></canvas>
+<div id="links-container" style="position: absolute; top: 30px; left: 800px;font-size:10px;"></div> <!-- リンクコンテナを追加 -->
+<script>
+const graph = document.getElementById('js-graph');
+const ctx = graph.getContext('2d');
+const gWidth = graph.clientWidth * 2;
+graph.width = gWidth;
+graph.height = gWidth;
+const gCenter = gWidth / 2;
+const gRadius = gCenter * 0.77;
+
+// URLパラメータを取得する関数
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
+// JSONファイルを読み込む関数
+function loadSchedule(charge, callback) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'json/' + charge + '.json', true); // jsonフォルダを指定
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            callback(JSON.parse(xhr.responseText));
+        } else {
+            console.error('JSONファイルの読み込みエラー');
+            callback(null); // エラー時はnullを返す
+        }
+    };
+    xhr.onerror = function() {
+        console.error('JSONファイルの読み込みエラー');
+        callback(null); // エラー時はnullを返す
+    };
+    xhr.send();
+}
+
+function calculateTimeByColor(schedule) {
+    const colorTimes = {};
+
+    schedule.forEach(item => {
+        let startMinutes = Math.floor(item[0]) * 60 + Math.round((item[0] % 1) * 60);
+        let endMinutes = Math.floor(item[1]) * 60 + Math.round((item[1] % 1) * 60);
+        let durationMinutes = endMinutes - startMinutes;
+        if (durationMinutes < 0) {
+            durationMinutes += 1440; // 日付をまたぐ場合
+        }
+
+        const color = item[2];
+        if (!colorTimes[color]) {
+            colorTimes[color] = 0;
+        }
+        colorTimes[color] += durationMinutes;
+    });
+
+    return colorTimes;
+}
+
+function drawColorSummary(ctx, colorTimes, x, y) {
+    let currentY = y;
+    for (const color in colorTimes) {
+        const durationHours = colorTimes[color] / 60;
+        ctx.fillStyle = color;
+        ctx.fillRect(x, currentY, 40, 30); // 色の四角を描画
+        ctx.fillStyle = '#000';
+        ctx.font = '20px sans-serif';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+        ctx.fillText(` = ${durationHours.toFixed(1)}H`, x + 40, currentY);
+        currentY += 40;
+    }
+}
+
+function formatDurationWithH(start, end) {
+    let duration = end - start;
+    if (duration < 0) {
+        duration += 24;
+    }
+    duration = Math.round(duration * 10) / 10;
+    return duration + "H";
+}
+
+function drawPi(ctx, w, c, r, schedule) {
+    const data = new Array(1440).fill('#ccc');
+
+    schedule.forEach(item => {
+        let startMinutes = Math.floor(item[0]) * 60 + Math.round((item[0] % 1) * 60); // Math.roundを追加
+        let endMinutes = Math.floor(item[1]) * 60 + Math.round((item[1] % 1) * 60); // Math.roundを追加
+        const color = item[2];
+
+        if (startMinutes > endMinutes) {
+            for (let i = startMinutes; i < 1440; i++) {
+                data[i] = color;
+            }
+            for (let i = 0; i < endMinutes; i++) {
+                data[i] = color;
+            }
+        } else {
+            for (let i = startMinutes; i < endMinutes; i++) {
+                data[i] = color;
+            }
+        }
+
+        const durationText = formatDurationWithH(item[0], item[1]);
+        item[3] = durationText + "<br>" + item[3];
+    });
+
+    ctx.save();
+    for (let i = 0; i < 24; i++) {
+        const angleRad = (Math.PI / 12) * (i - 6);
+        const x = (c * 0.84) * Math.cos(angleRad) + c;
+        const y = (c * 0.84) * Math.sin(angleRad) + c;
+        const txtX = (c * 0.9) * Math.cos(angleRad) + c;
+        const txtY = (c * 0.9) * Math.sin(angleRad) + c;
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(c, c);
+        ctx.closePath();
+        ctx.strokeStyle = ctx.fillStyle = '#000';
+        ctx.font = '18px din-condensed';
+        ctx.stroke();
+        ctx.fillText(String(i) + '時', txtX-20, txtY + 6);
+    }
+
+    ctx.save();
+    for (let i = 0; i < 1440; i++) {
+        ctx.beginPath();
+        ctx.arc(c, c, r, (Math.PI * 2 / 1440) * i - Math.PI / 2, (Math.PI * 2 / 1440) * (i + 1) - Math.PI / 2, false);
+        ctx.lineTo(c, c);
+        ctx.closePath();
+        ctx.strokeStyle = ctx.fillStyle = data[i];
+        ctx.fill();
+        ctx.stroke();
+    }
+
+    // ★★★ ここから変更 ★★★
+    ctx.strokeStyle = '#333333'; // 区切り線の色
+    ctx.lineWidth = 1; // 区切り線の太さ
+    schedule.forEach(item => {
+        let endMinutes = Math.floor(item[1]) * 60 + Math.round((item[1] % 1) * 60);
+        let endAngle = (Math.PI * 2 / 1440) * endMinutes - Math.PI / 2;
+
+        ctx.beginPath();
+        ctx.moveTo(c, c);
+        ctx.lineTo(c + r * Math.cos(endAngle), c + r * Math.sin(endAngle));
+        ctx.stroke();
+    });
+
+    schedule.forEach(item => {
+        let startMinutes = Math.floor(item[0]) * 60 + Math.round((item[0] % 1) * 60);
+        let endMinutes = Math.floor(item[1]) * 60 + Math.round((item[1] % 1) * 60);
+
+        let startAngle = (Math.PI * 2 / 1440) * startMinutes - Math.PI / 2;
+        let endAngle = (Math.PI * 2 / 1440) * endMinutes - Math.PI / 2;
+
+        let angleDiff = endAngle - startAngle;
+        if (angleDiff < 0) {
+            angleDiff += 2 * Math.PI;
+        }
+
+        let midAngle = startAngle + angleDiff / 2;
+
+        let textRadius = r * 0.8;
+        if (Math.cos(midAngle) < 0) {
+            textRadius *= 1;
+        }
+
+        const textX = c + textRadius * Math.cos(midAngle);
+        const textY = c + textRadius * Math.sin(midAngle);
+
+        ctx.fillStyle = '#000';
+        ctx.font = '24px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        const lines = item[3].split("<br>");
+        for (let i = 0; i < lines.length; i++) {
+            ctx.fillText(lines[i], textX, textY - 10 + i * 24);
+        }
+    });
+
+    // 色ごとの時間を計算
+    const colorTimes = calculateTimeByColor(schedule);
+
+    // 集計結果を描画
+    drawColorSummary(ctx, colorTimes, 1450, 1300); // 右下あたりに配置
+}
+
+// URLパラメータを取得
+const charge = getUrlParameter('charge');
+
+// パラメータに基づいてJSONファイルを読み込み、グラフを描画
+if (charge) {
+    loadSchedule(charge, function(scheduleData) {
+        if (scheduleData) {
+            drawPi(ctx, gWidth, gCenter, gRadius, scheduleData);
+        } else {
+          // エラー処理：デフォルトのスケジュールを表示するか、エラーメッセージを表示するなど
+          alert("指定されたスケジュールが見つかりませんでした。");
+        }
+    });
+} else {
+}
+
+// リンクを表示する関数
+function displayLinks() {
+    const ar_tgt = ["hikari_07", "hikari_08", "hikari_09", "hikari_10", "hikari_11", "hikari_12", "hikari_13", "hikari_14", "hikari_15", "hikari_18", "hikari_19", "masafumi_49"];
+    const linksContainer = document.getElementById('links-container');
+    ar_tgt.forEach(item => {
+        const link = document.createElement('a');
+        link.href = `https://circle-graph.netlify.app/index3.htm?charge=${item}`;
+        link.textContent = item;
+        linksContainer.appendChild(link);
+        linksContainer.appendChild(document.createElement('br'));
+    });
+}
+
+// ページロード時にリンクを表示
+window.onload = displayLinks;
+</script>
+</body>
+</html>
