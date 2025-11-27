@@ -157,7 +157,7 @@ function drawPi(ctx, w, c, r, schedule) {
         ctx.lineTo(c, c);
         ctx.closePath();
         ctx.strokeStyle = ctx.fillStyle = '#000';
-        ctx.font = '18px din-condensed';
+        ctx.font = '10px din-condensed';
         ctx.stroke();
         ctx.fillText(String(i) + '時', txtX-20, txtY + 6);
     }
@@ -210,7 +210,7 @@ function drawPi(ctx, w, c, r, schedule) {
         const textY = c + textRadius * Math.sin(midAngle);
 
         ctx.fillStyle = '#000';
-        ctx.font = '16px sans-serif';
+        ctx.font = '12px sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
 
@@ -267,4 +267,5 @@ window.onload = displayLinks;
         <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>    
     </body>
 </html>
+
 
