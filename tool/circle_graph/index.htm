@@ -4,6 +4,24 @@
         <meta charset="UTF-8">
         <title id='title1'>Tribe Factory</title>
         <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
+        
+        <style>
+            .graph-and-links {
+                /* canvas と links-container を横並びにする */
+                display: flex; 
+                /* 要素を上端に揃える */
+                align-items: flex-start; 
+                /* 要素間にスペースを空ける */
+                gap: 20px; 
+                /* h3の下に配置されるので、必要に応じて上部の余白を調整 */
+                margin-top: 10px; 
+            }
+
+            #links-container {
+                /* 元の absolute top: 30px に相当する調整を行う場合はこちらに記述 */
+                padding-top: 30px; 
+            }
+        </style>
         <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
@@ -14,12 +32,14 @@
         <div class="main-content">
             <main class="content-sidebar" id="sidebar_container"></main>
 
-
 <aside class="content-main">
-<h3>スケジュール円グラフ</h3>            
-<canvas id="js-graph" class="graph"></canvas>
-<div id="links-container" style="position: absolute; top: 30px; left: 800px;font-size:10px;"></div> <!-- リンクコンテナを追加 -->
-<script>
+    <h3>スケジュール円グラフ</h3>
+    
+    <div class="graph-and-links">
+        <canvas id="js-graph" class="graph"></canvas>
+        <div id="links-container" style="font-size:10px;"></div> 
+    </div>
+    <script>
 const graph = document.getElementById('js-graph');
 const ctx = graph.getContext('2d');
 const gWidth = graph.clientWidth * 2;
@@ -153,7 +173,7 @@ function drawPi(ctx, w, c, r, schedule) {
         ctx.stroke();
     }
 
-    // ★★★ ここから変更 ★★★
+    // ★★★ 区切り線の描画（元のコードから変更なし） ★★★
     ctx.strokeStyle = '#333333'; // 区切り線の色
     ctx.lineWidth = 1; // 区切り線の太さ
     schedule.forEach(item => {
@@ -166,6 +186,7 @@ function drawPi(ctx, w, c, r, schedule) {
         ctx.stroke();
     });
 
+    // テキストの描画（元のコードから変更なし）
     schedule.forEach(item => {
         let startMinutes = Math.floor(item[0]) * 60 + Math.round((item[0] % 1) * 60);
         let endMinutes = Math.floor(item[1]) * 60 + Math.round((item[1] % 1) * 60);
@@ -219,13 +240,13 @@ if (charge) {
           alert("指定されたスケジュールが見つかりませんでした。");
         }
     });
-} else {
-}
+} else {}
 
 // リンクを表示する関数
 function displayLinks() {
     const ar_tgt = ["hikari_07", "hikari_08", "hikari_09", "hikari_10", "hikari_11", "hikari_12", "hikari_13", "hikari_14", "hikari_15", "hikari_18", "hikari_19", "masafumi_49"];
     const linksContainer = document.getElementById('links-container');
+    linksContainer.innerHTML = ''; // 既存のリンクをクリア
     ar_tgt.forEach(item => {
         const link = document.createElement('a');
         link.href = `https://tribefactory.netlify.app/tool/circle_graph/index.htm?charge=${item}`;
@@ -239,14 +260,10 @@ function displayLinks() {
 window.onload = displayLinks;
 </script>
 </aside>
-
-    
-        </div>
-        <footer id="footer-container"></footer>
-        <script src="https://tribefactory.netlify.app/js/navi/header.js"></script>
-        <script src="https://tribefactory.netlify.app/js/navi/sidebar.js"></script>
-        <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
+            </div>        
+        <footer id="footer-container"></footer>        
+        <script src="https://tribefactory.netlify.app/js/navi/header.js"></script>        
+        <script src="https://tribefactory.netlify.app/js/navi/sidebar.js"></script>        
+        <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>    
     </body>
 </html>
-
-
