@@ -1,10 +1,16 @@
 
 PowerShell上実行
 
-Set-ExecutionPolicy RemoteSigned -Scope Process
-
 Set-location -Path "\\lenovo_main\user\html\github"
+
+Set-ExecutionPolicy RemoteSigned -Scope Process
 
 .\get_site_map.ps1
 
-\\lenovo_main\user\html\github\get_site_map.ps1 これで実行できた！
+\\lenovo_main\user\html\github\get_site_map.ps1
+
+これで実行できた！
+
+C上だったら
+
+C:\Users\user\Downloads\html\github\get_site_map.ps1
