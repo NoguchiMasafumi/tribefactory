@@ -37,7 +37,7 @@
     
     <div class="graph-and-links">
         <canvas id="js-graph" class="graph"></canvas>
-        <div id="links-container" style="font-size:10px;"></div> 
+        <div id="links-container" style="font-size:12px;"></div> 
     </div>
     <script>
 const graph = document.getElementById('js-graph');
@@ -103,7 +103,7 @@ function drawColorSummary(ctx, colorTimes, x, y) {
         ctx.fillStyle = color;
         ctx.fillRect(x, currentY, 40, 30); // 色の四角を描画
         ctx.fillStyle = '#000';
-        ctx.font = '20px sans-serif';
+        ctx.font = '14px sans-serif';
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
         ctx.fillText(` = ${durationHours.toFixed(1)}H`, x + 40, currentY);
@@ -210,7 +210,7 @@ function drawPi(ctx, w, c, r, schedule) {
         const textY = c + textRadius * Math.sin(midAngle);
 
         ctx.fillStyle = '#000';
-        ctx.font = '24px sans-serif';
+        ctx.font = '16px sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
 
@@ -267,3 +267,4 @@ window.onload = displayLinks;
         <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>    
     </body>
 </html>
+
