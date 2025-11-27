@@ -228,7 +228,7 @@ function displayLinks() {
     const linksContainer = document.getElementById('links-container');
     ar_tgt.forEach(item => {
         const link = document.createElement('a');
-        link.href = `https://circle-graph.netlify.app/index3.htm?charge=${item}`;
+        link.href = `https://tribefactory.netlify.app/tool/circle_graph/index.htm?charge=${item}`;
         link.textContent = item;
         linksContainer.appendChild(link);
         linksContainer.appendChild(document.createElement('br'));
@@ -248,4 +248,5 @@ window.onload = displayLinks;
         <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
     </body>
 </html>
+
 
