@@ -187,6 +187,7 @@ footer {
         order: 2;
         margin-right: 0;
         margin-bottom: 0;
+        word-break:break-all;
     }
 
     .content-main {
@@ -197,6 +198,7 @@ footer {
     }
 
 }
+
 
 
 
