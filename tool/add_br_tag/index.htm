@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title id='title1'>Tribe Factory</title>
+        <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="header_container"></header>
+        <div class="main-content">
+            <main class="content-sidebar" id="sidebar_container"></main>
+
+
+<aside class="content-main">
+<h3>行末にbrタグ追加</h3>            
+    <style>
+        /* スタイル設定 */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        div {
+            width: 48%;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box; /* paddingを含めて幅100%にする */
+            font-family: monospace; /* 等幅フォントで見やすく */
+            font-size: 14px;
+            padding: 10px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+    <div>
+        <h2>入力 (textarea1)</h2>
+        <p>↓ここにテキストを貼り付けてください</p>
+        <textarea id="textarea1" oninput="addBrTags()"></textarea>
+    </div>
+
+    <div>
+        <h2>変換結果 (textarea2)</h2>
+        <p>↓ここに変換結果が表示されます</p>
+        <textarea id="textarea2" readonly></textarea>
+    </div>
+
+    <script>
+        // 変換を実行する関数
+        function addBrTags() {
+            // 1. textarea1 の要素と、その値（入力テキスト）を取得
+            var inputArea = document.getElementById('textarea1');
+            var inputText = inputArea.value;
+            
+            // 2. テキストを改行文字 (\n) で各行に分割して配列にする
+            var lines = inputText.split('\n');
+            
+            // 3. 配列の各要素（各行）を処理
+            var outputLines = lines.map(function(line) {
+                // もし行が空文字（空行）でないなら、行の末尾に "<br>" を追加
+                // (空行はそのまま空行として扱う)
+                if (line === '') {
+                    return '';
+                } else {
+                    return line + '<br>';
+                }
+            });
+            
+            // 4. 処理後の配列を、再び改行文字 (\n) で連結して一つの文字列に戻す
+            var outputText = outputLines.join('\n');
+            
+            // 5. textarea2 の要素を取得し、その値として変換後の文字列を設定
+            var outputArea = document.getElementById('textarea2');
+            outputArea.value = outputText;
+        }
+    </script>
+
+</aside>
+
+    
+        </div>
+        <footer id="footer-container"></footer>
+        <script src="https://tribefactory.netlify.app/js/navi/header.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/sidebar.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
+    </body>
+</html>
