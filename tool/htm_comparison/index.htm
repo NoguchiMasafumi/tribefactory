@@ -18,19 +18,6 @@
 <aside class="content-main">
 <h3>html比較</h3>            
     <style>
-        /* ページ全体 */
-        html, body {
-            height: 100%;
-            margin: 0;
-            overflow: hidden; 
-            font-family: 'Meiryo', 'Hiragino Kaku Gothic ProN', 'MS PGothic', sans-serif;
-            background-color: #f4f4f4;
-        }
-        body {
-            padding: 15px;
-            box-sizing: border-box; 
-        }
-
         /* 全体を左右に分けるコンテナ */
         #overall-container {
             display: flex;
@@ -141,6 +128,224 @@
         label { font-size: 16px; margin-right: 10px; }
     </style>
 
+    <div id="overall-container">
+
+        <div class="main-pane" id="left-main-pane">
+            
+            <div class="loader-group">
+                <input type="file" id="fileLoaderLeft" accept=".htm, .html">
+                <label for="fileLoaderLeft" class="loader-label">1. 左側に表示するファイルを選択</label>
+                <p id="loader-status-left" class="loader-status">（例: err1023.htm を 1つ選択）</p>
+            </div>
+            
+            <div id="input-container">
+                <label for="fileNameInput">左側のファイル:</label>
+                <input type="text" id="fileNameInput" placeholder="左側のファイルを選択してください" readonly>
+            </div>
+
+            <div class="pane-content-wrapper" id="left-pane-wrapper">
+                <h3 id="left-title">左: (ファイル名)</h3>
+                <div class="content-display" id="displayLeft">
+                    <p>上の「1.」からファイルを選択してください。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-pane" id="right-main-pane">
+            
+            <div class="loader-group">
+                <input type="file" id="fileLoaderRight" multiple accept=".htm, .html">
+                <label for="fileLoaderRight" class="loader-label">2. 右側カルーセル用のファイルを選択</label>
+                <p id="loader-status-right" class="loader-status">（例: 01.htm, 02.htm ... を複数選択）</p>
+            </div>
+
+            <p id="instructions">
+                キーボードの <strong>← →</strong> キーで右のファイルを切り替えられます。
+            </p>
+
+            <div class="pane-content-wrapper" id="right-pane-wrapper">
+                <h3 id="right-title">右: (ファイル名)</h3>
+                <div class="content-display" id="displayRight">
+                    <p>上の「2.」からファイルを選択してください。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // ----------------------------------------------------
+        // 1. グローバル変数
+        // ----------------------------------------------------
+        
+        // ファイル内容 (キーは小文字、値はコンテンツ)
+        let fileContents = {};
+        
+        // カルーセル用ファイル名リスト (小文字)
+        let carouselFiles = [];
+        
+        // ★追加：カルーセル用の「小文字 -> 元のファイル名」マッピング
+        let carouselFileMap = {}; 
+        
+        let currentCarouselIndex = 0;
+    
+        // ----------------------------------------------------
+        // 2. DOM要素の取得
+        // ----------------------------------------------------
+        const fileLoaderLeft = document.getElementById('fileLoaderLeft');
+        const fileLoaderRight = document.getElementById('fileLoaderRight');
+        const statusLeft = document.getElementById('loader-status-left');
+        const statusRight = document.getElementById('loader-status-right');
+        const inputEl = document.getElementById('fileNameInput');
+        const displayLeft = document.getElementById('displayLeft');
+        const displayRight = document.getElementById('displayRight');
+        const leftTitle = document.getElementById('left-title');
+        const rightTitle = document.getElementById('right-title');
+    
+        // ----------------------------------------------------
+        // 3. イベントリスナーの設定
+        // ----------------------------------------------------
+        fileLoaderLeft.addEventListener('change', handleFileSelectLeft);
+        fileLoaderRight.addEventListener('change', handleFileSelectRight);
+        document.addEventListener('keydown', handleKeyDown);
+    
+        // ----------------------------------------------------
+        // 4. 実行関数 (★ファイル名表示を修正)
+        // ----------------------------------------------------
+    
+        /**
+         * 左側用 (単一) ファイルが選択された時
+         */
+        function handleFileSelectLeft(event) {
+            const file = event.target.files[0];
+            if (!file) {
+                statusLeft.textContent = "ファイルが選択されませんでした。";
+                return;
+            }
+    
+            const reader = new FileReader();
+            
+            // ★修正：元のファイル名と小文字ファイル名を両方取得
+            const originalFilename = file.name;
+            const lowerFilename = file.name.toLowerCase();
+            
+            reader.onload = function(e) {
+                const content = e.target.result;
+                
+                // データ保存は小文字キー
+                fileContents[lowerFilename] = content;
+                
+                // ★修正：表示は「元のファイル名」を使用
+                displayLeft.innerHTML = content;
+                leftTitle.textContent = `左: ${originalFilename}`;
+                inputEl.value = originalFilename; 
+                statusLeft.textContent = `読み込み完了: ${originalFilename}`;
+            };
+            
+            reader.onerror = function() {
+                statusLeft.textContent = `エラー: ${file.name} 失敗`;
+            };
+            
+            reader.readAsText(file);
+        }
+    
+        /**
+         * 右側用 (複数) ファイルが選択された時
+         */
+        function handleFileSelectRight(event) {
+            const files = event.target.files;
+            if (files.length === 0) {
+                statusRight.textContent = "ファイルが選択されませんでした。";
+                return;
+            }
+    
+            // 初期化
+            carouselFiles = [];
+            carouselFileMap = {}; // ★マッピングも初期化
+            currentCarouselIndex = 0;
+            statusRight.textContent = `読み込み中... (0 / ${files.length})`;
+    
+            let filesRead = 0;
+    
+            Array.from(files).forEach(file => {
+                const reader = new FileReader();
+                
+                // ★修正：元のファイル名と小文字ファイル名を両方取得
+                const originalFilename = file.name;
+                const lowerFilename = file.name.toLowerCase();
+    
+                reader.onload = function(e) {
+                    const content = e.target.result;
+                    
+                    // データ保存は小文字キー
+                    fileContents[lowerFilename] = content;
+                    
+                    // ★修正：リストは小文字、マッピングに元の名前を保存
+                    carouselFiles.push(lowerFilename);
+                    carouselFileMap[lowerFilename] = originalFilename;
+                    
+                    filesRead++;
+                    statusRight.textContent = `読み込み中... (${filesRead} / ${files.length})`;
+    
+                    if (filesRead === files.length) {
+                        carouselFiles.sort(); // ソートは小文字リストで行う
+                        statusRight.textContent = `${files.length} 個のファイルを読み込みました。`;
+                        updateRightPane();
+                    }
+                };
+                
+                reader.onerror = function() {
+                    statusRight.textContent = `エラー: ${file.name} 失敗`;
+                };
+                
+                reader.readAsText(file);
+            });
+        }
+    
+        /**
+         * キーボードのキー押下を処理する関数 (変更なし)
+         */
+        function handleKeyDown(event) {
+            if (carouselFiles.length === 0) return; 
+            if (event.key === 'ArrowRight') {
+                currentCarouselIndex++;
+                if (currentCarouselIndex >= carouselFiles.length) {
+                    currentCarouselIndex = 0;
+                }
+                updateRightPane();
+            } 
+            else if (event.key === 'ArrowLeft') {
+                currentCarouselIndex--;
+                if (currentCarouselIndex < 0) {
+                    currentCarouselIndex = carouselFiles.length - 1;
+                }
+                updateRightPane();
+            }
+        }
+    
+        /**
+         * 右ペインの表示を更新するヘルパー関数
+         */
+        function updateRightPane() {
+            if (carouselFiles.length === 0) {
+                displayRight.innerHTML = '<p>上の「2.」からファイルを選択してください。</p>';
+                rightTitle.textContent = '右: (ファイル名)';
+                return;
+            }
+    
+            // ★修正：小文字リストからキーを取得
+            const lowerFilename = carouselFiles[currentCarouselIndex];
+            // ★修正：マッピングから「元のファイル名」を取得
+            const originalFilename = carouselFileMap[lowerFilename];
+            
+            if (fileContents.hasOwnProperty(lowerFilename)) {
+                // データ取得は小文字キー
+                displayRight.innerHTML = fileContents[lowerFilename];
+                // ★修正：表示は「元のファイル名」を使用
+                rightTitle.textContent = `右: ${originalFilename} (${currentCarouselIndex + 1} / ${carouselFiles.length})`;
+            }
+        }
+
+    </script>
 
 </aside>
 
