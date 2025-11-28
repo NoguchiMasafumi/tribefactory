@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title id='title1'>Tribe Factory</title>
+        <link rel="stylesheet" href="https://tribefactory.netlify.app/css/tf_base2.css">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://tribefactory.netlify.app/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://tribefactory.netlify.app/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://tribefactory.netlify.app/favicon/favicon-16x16.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="header_container"></header>
+        <div class="main-content">
+            <main class="content-sidebar" id="sidebar_container"></main>
+
+
+<aside class="content-main">
+<h3>html比較</h3>            
+    <style>
+        /* ページ全体 */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; 
+            font-family: 'Meiryo', 'Hiragino Kaku Gothic ProN', 'MS PGothic', sans-serif;
+            background-color: #f4f4f4;
+        }
+        body {
+            padding: 15px;
+            box-sizing: border-box; 
+        }
+
+        /* 全体を左右に分けるコンテナ */
+        #overall-container {
+            display: flex;
+            gap: 15px;
+            height: 100%; 
+        }
+
+        /* 左右のメインパネル */
+        .main-pane {
+            width: 50%;
+            display: flex;
+            flex-direction: column; 
+            gap: 10px; /* コントロール間の隙間 */
+        }
+
+        /* コントロール群のスタイル */
+        .loader-group {
+            border: 2px dashed #007bff;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            flex-shrink: 0; 
+        }
+        
+        /* 左ファイル名エリア (高さ揃え対応) */
+        #input-container {
+            margin-bottom: 0; 
+            flex-shrink: 0;
+            box-sizing: border-box;
+            min-height: 45px; /* ★高さを確保 */
+            padding: 5px;
+            display: flex;
+            align-items: center; 
+        }
+        
+        /* 右案内文エリア (高さ揃え対応) */
+        #instructions {
+            font-size: 13px;
+            color: #555;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            min-height: 45px; /* ★高さを確保 */
+            padding: 5px 5px 5px 10px; 
+            margin: 0; 
+            display: flex;
+            align-items: center; 
+        }
+
+        /* コンテンツ表示ラッパー */
+        .pane-content-wrapper {
+            flex-grow: 1; 
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; 
+        }
+        
+        /* コンテンツタイトル */
+        .pane-content-wrapper h3 {
+            margin: 0;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+            min-height: 24px;
+            flex-shrink: 0;
+        }
+        
+        /* コンテンツ表示部分 (一覧性重視) */
+        .content-display {
+            padding: 10px 15px;
+            flex-grow: 1; 
+            overflow-y: auto; 
+            font-family: monospace;
+            font-size: 11px;
+            line-height: 1.2;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        /* ボタン等 */
+        #fileLoaderLeft, #fileLoaderRight { display: none; }
+        .loader-label {
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .loader-label:hover { background-color: #0056b3; }
+        .loader-status { font-size: 14px; color: #333; min-height: 30px; }
+        #fileNameInput {
+            width: 300px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #eee;
+        }
+        label { font-size: 16px; margin-right: 10px; }
+    </style>
+
+
+</aside>
+
+    
+        </div>
+        <footer id="footer-container"></footer>
+        <script src="https://tribefactory.netlify.app/js/navi/header.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/sidebar.js"></script>
+        <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
+    </body>
+</html>
