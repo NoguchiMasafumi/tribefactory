@@ -19,7 +19,7 @@
 <h3>行末にbrタグ追加</h3>            
     <style>
         /* スタイル設定 */
-        .content-main {
+        .ccol_beside {
             font-family: sans-serif;
             display: flex;
             justify-content: space-around;
@@ -40,18 +40,19 @@
             margin-top: 0;
         }
     </style>
-    <div class="col_box">
-        <h2>入力 (textarea1)</h2>
-        <p>↓ここにテキストを貼り付けてください</p>
-        <textarea id="textarea1" oninput="addBrTags()"></textarea>
+    <div class="col_beside">
+        <div class="col_box">
+            <h2>入力 (textarea1)</h2>
+            <p>↓ここにテキストを貼り付けてください</p>
+            <textarea id="textarea1" oninput="addBrTags()"></textarea>
+        </div>
+    
+        <div class="col_box">
+            <h2>変換結果 (textarea2)</h2>
+            <p>↓ここに変換結果が表示されます</p>
+            <textarea id="textarea2" readonly></textarea>
+        </div>
     </div>
-
-    <div class="col_box">
-        <h2>変換結果 (textarea2)</h2>
-        <p>↓ここに変換結果が表示されます</p>
-        <textarea id="textarea2" readonly></textarea>
-    </div>
-
     <script>
         // 変換を実行する関数
         function addBrTags() {
