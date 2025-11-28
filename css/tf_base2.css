@@ -187,9 +187,16 @@ footer {
         order: 2;
         margin-right: 0;
         margin-bottom: 0;
-        word-break:break-all;
+
+        word-break: break-all;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        line-break: anywhere;         /* 見慣れない。 */
+        white-space: pre-wrap;        /* 任意。詳細は後述 */
+        white-space: break-spaces;    /* 見慣れない。但し、これも任意 */
     }
 
+    
     .content-main {
         flex: 0 0 920px;
         order: 1;
@@ -198,6 +205,7 @@ footer {
     }
 
 }
+
 
 
 
