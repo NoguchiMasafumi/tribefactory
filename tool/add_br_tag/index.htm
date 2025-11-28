@@ -25,7 +25,7 @@
             justify-content: space-around;
             padding: 20px;
         }
-        div {
+        .col_box {
             width: 48%;
         }
         textarea {
@@ -40,13 +40,13 @@
             margin-top: 0;
         }
     </style>
-    <div>
+    <div class="col_box">
         <h2>入力 (textarea1)</h2>
         <p>↓ここにテキストを貼り付けてください</p>
         <textarea id="textarea1" oninput="addBrTags()"></textarea>
     </div>
 
-    <div>
+    <div class="col_box">
         <h2>変換結果 (textarea2)</h2>
         <p>↓ここに変換結果が表示されます</p>
         <textarea id="textarea2" readonly></textarea>
