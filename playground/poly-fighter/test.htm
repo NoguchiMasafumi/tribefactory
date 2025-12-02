@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat Polygon Human in 3D</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #000; }
+        canvas { display: block; }
+        .ui {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-family: sans-serif;
+            pointer-events: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            user-select: none;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <div class="ui">
+        <h3>Flat Polygon Human (3D Space)</h3>
+        <p>見た目は平面、空間は3D<br>
+        🖱️ Drag: Rotate Camera<br>
+        🔍 Wheel: Zoom<br>
+        👆 Double Click: Reset</p>
+    </div>
+
+<script>
+    // --- 1. 基本セットアップ ---
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x1a1a2e); 
+    // scene.fog = new THREE.Fog(0x1a1a2e, 20, 100);
+
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 5, 20); 
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // 平面なのでライトは不要（発光するように見せるためBasicMaterialを使用）ですが、
+    // 空間の奥行きを感じるためにグリッドは少し暗く描画
+    const gridHelper = new THREE.GridHelper(50, 50, 0x444444, 0x111111);
+    scene.add(gridHelper);
+
+    // --- 2. 平面ポリゴン作成関数 ---
+    
+    // マテリアル：影の影響を受けない「発光色」のような設定 (MeshBasicMaterial)
+    // side: THREE.DoubleSide → 裏側から見ても消えないようにする
+    const matBody = new THREE.MeshBasicMaterial({ color: 0x00f2ff, side: THREE.DoubleSide });
+    const matLimb = new THREE.MeshBasicMaterial({ color: 0x2196f3, side: THREE.DoubleSide });
+    const matHead = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide });
+    
+    // ワイヤーフレーム用（白枠）
+    const matLine = new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.4 });
+
+    function createFlatPoly(width, length, material, type = 'triangle') {
+        const shape = new THREE.Shape();
+        
+        // 2Dの描画ロジックをそのままThree.jsのShapeで再現
+        // 原点(0,0)が回転軸になります
+        shape.moveTo(0, 0); 
+        
+        if (type === 'triangle') {
+            shape.lineTo(-width / 2, length);
+            shape.lineTo(width / 2, length);
+        } else if (type === 'diamond') {
+            shape.moveTo(0, -length/2); // 少し下にずらす
+            shape.lineTo(-width/2, length/2);
+            shape.lineTo(0, length * 1.2);
+            shape.lineTo(width/2, length/2);
+            shape.lineTo(0, -length/2);
+        }
+        shape.lineTo(0, 0); // 閉じる
+
+        // 形状からジオメトリを作成
+        const geometry = new THREE.ShapeGeometry(shape);
+        const mesh = new THREE.Mesh(geometry, material);
+
+        // 枠線（ワイヤーフレーム）を追加
+        const edges = new THREE.EdgesGeometry(geometry);
+        const line = new THREE.LineSegments(edges, matLine);
+        mesh.add(line);
+
+        // グループ（関節）に入れて返す
+        const joint = new THREE.Group();
+        joint.add(mesh);
+
+        // Zファイティング（重なりチラつき）防止のため、ごくわずかにZをずらす
+        mesh.position.z = 0.01; 
+
+        return { joint, mesh };
+    }
+
+    // --- 3. 人形組み立て ---
+    // ※ Three.jsの単位系に合わせてサイズを調整しています（元の約1/10）
+
+    const hipsGroup = new THREE.Group();
+    hipsGroup.position.y = 11; // 高さ
+    scene.add(hipsGroup);
+
+    // 腰 (Hips)
+    const hips = createFlatPoly(1.5, 1.0, matBody, 'triangle');
+    // 元のCanvasはYが下向き正でしたが、3DはYが上向き正なので、
+    // createFlatPolyは「上」に向かって三角形を作る仕様にしています。
+    // 腰は逆三角形にしたいので回転
+    hips.joint.rotation.z = Math.PI; 
+    hipsGroup.add(hips.joint);
+
+    // 胴体 (Torso)
+    const torso = createFlatPoly(1.8, 2.8, matBody, 'triangle');
+    torso.joint.position.y = 0.2; // 腰とのつなぎ目
+    torso.joint.rotation.z = Math.PI; // これも逆三角形（上向きにするため反転の反転...ではなく上向きのまま使う）
+    // ...あ、元のコードは「下向き三角形」を描いてscale(1, -1)してましたね。
+    // ここではシンプルに「上向き三角形」として扱います。
+    torso.joint.rotation.z = 0; // 上向き
+    hipsGroup.add(torso.joint);
+
+    // 首
+    const neck = createFlatPoly(0.4, 0.5, matBody, 'triangle');
+    neck.joint.position.y = 2.8; // 胴体の上
+    torso.joint.add(neck.joint);
+
+    // 頭
+    const head = createFlatPoly(1.0, 1.2, matHead, 'diamond');
+    head.joint.position.y = 0.5;
+    neck.joint.add(head.joint);
+
+
+    // 足を作る関数
+    function createLeg(isRight) {
+        const side = isRight ? 1 : -1;
+        
+        // 太もも
+        const legTop = createFlatPoly(0.8, 2.2, matLimb, 'triangle');
+        legTop.joint.position.x = 0.5 * side;
+        legTop.joint.position.y = 0.2; // 腰の位置
+        // 下に垂らすために回転
+        legTop.joint.rotation.z = Math.PI; 
+        hipsGroup.add(legTop.joint);
+
+        // すね
+        const legBottom = createFlatPoly(0.6, 2.2, matLimb, 'triangle');
+        legBottom.joint.position.y = 2.2; // 太ももの先端（反転してるのでYプラス方向が先端）
+        legTop.joint.add(legBottom.joint);
+
+        // 足先 (横向き三角形)
+        const foot = createFlatPoly(0.8, 1.0, matLimb, 'triangle');
+        foot.joint.position.y = 2.2;
+        foot.joint.scale.set(1, 0.5, 1); // 潰す
+        foot.joint.rotation.z = -Math.PI / 2; // 横に向ける
+        legBottom.joint.add(foot.joint);
+
+        return { top: legTop.joint, bottom: legBottom.joint };
+    }
+
+    const rightLeg = createLeg(true);
+    const leftLeg = createLeg(false);
+
+
+    // 腕を作る関数
+    function createArm(isRight) {
+        const side = isRight ? 1 : -1;
+
+        // 上腕
+        const armTop = createFlatPoly(0.5, 2.0, matLimb, 'triangle');
+        armTop.joint.position.set(0.9 * side, 2.5, 0); // 肩の位置
+        torso.joint.add(armTop.joint);
+
+        // 前腕
+        const armBottom = createFlatPoly(0.4, 1.8, matLimb, 'triangle');
+        armBottom.joint.position.y = 2.0; 
+        armTop.joint.add(armBottom.joint);
+
+        // 手
+        const hand = createFlatPoly(0.3, 0.5, matLimb, 'triangle');
+        hand.joint.position.y = 1.8;
+        armBottom.joint.add(hand.joint);
+
+        // 初期角度（下ろす）
+        // armTopは初期状態で上(Y+)を向いて作られているので、
+        // PI(180度)回転させて下に向ける
+        const initialRot = Math.PI + (isRight ? -0.1 : 0.1);
+        armTop.joint.rotation.z = initialRot;
+
+        return { top: armTop.joint, bottom: armBottom.joint };
+    }
+
+    const rightArm = createArm(true);
+    const leftArm = createArm(false);
+
+
+    // --- 4. カメラ操作 ---
+    let isDragging = false;
+    let previousMousePosition = { x: 0, y: 0 };
+    let cameraAngleX = 0; 
+    let cameraAngleY = 0.2; 
+    let cameraRadius = 25; 
+
+    window.addEventListener('mousedown', () => isDragging = true);
+    window.addEventListener('mouseup', () => isDragging = false);
+    
+    window.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            const deltaMove = {
+                x: e.offsetX - previousMousePosition.x,
+                y: e.offsetY - previousMousePosition.y
+            };
+            cameraAngleX -= deltaMove.x * 0.01;
+            cameraAngleY -= deltaMove.y * 0.01;
+            cameraAngleY = Math.max(-1.5, Math.min(1.5, cameraAngleY));
+        }
+        previousMousePosition = { x: e.offsetX, y: e.offsetY };
+    });
+
+    window.addEventListener('wheel', (e) => {
+        cameraRadius += e.deltaY * 0.05;
+        cameraRadius = Math.max(5, Math.min(50, cameraRadius));
+    });
+
+    window.addEventListener('dblclick', () => {
+        cameraAngleX = 0; cameraAngleY = 0.2; cameraRadius = 25;
+    });
+
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    // --- 5. アニメーション ---
+    let time = 0;
+
+    function animate() {
+        requestAnimationFrame(animate);
+        time += 0.05;
+
+        // カメラ更新
+        camera.position.x = cameraRadius * Math.sin(cameraAngleX) * Math.cos(cameraAngleY);
+        camera.position.y = cameraRadius * Math.sin(cameraAngleY) + 11; 
+        camera.position.z = cameraRadius * Math.cos(cameraAngleX) * Math.cos(cameraAngleY);
+        camera.lookAt(0, 11, 0); 
+
+        // モーション (2D版のロジックを再現)
+        const breath = Math.sin(time) * 0.2;
+        hipsGroup.position.y = 11 + breath;
+        
+        // 体のひねりを少し入れる（3D空間ならでは）
+        hipsGroup.rotation.y = Math.sin(time * 0.3) * 0.1;
+
+        // 足
+        rightLeg.top.rotation.z = Math.PI + Math.sin(time) * 0.5;
+        rightLeg.bottom.rotation.z = Math.abs(Math.cos(time)) * 0.5; // 膝
+
+        leftLeg.top.rotation.z = Math.PI + Math.sin(time + Math.PI) * 0.5;
+        leftLeg.bottom.rotation.z = Math.abs(Math.cos(time + Math.PI)) * 0.5;
+
+        // 腕 (元のポリゴンHumanと同じく三角形をつなぐ)
+        const rightBase = Math.PI - 0.2;
+        rightArm.top.rotation.z = rightBase + Math.sin(time * 0.8) * 0.1;
+        rightArm.bottom.rotation.z = 0.1;
+
+        const leftBase = Math.PI + 0.2;
+        leftArm.top.rotation.z = leftBase + Math.sin(time * 0.8 + 1) * 0.1;
+        leftArm.bottom.rotation.z = -0.1;
+
+        // 頭
+        neck.joint.rotation.z = Math.sin(time * 1.2) * 0.05;
+
+        renderer.render(scene, camera);
+    }
+
+    animate();
+</script>
+</body>
+</html>
