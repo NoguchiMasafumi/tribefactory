@@ -38,23 +38,45 @@
         //*************************************//
         async function handleFileSelect(evt){
             var str_music_list=""
-            for(int_loop2=0; int_loop2 < evt.target.files.length; int_loop2++){
-                auo.src = URL.createObjectURL(this.files[int_loop2]);
-                await sleep(0.5)
-                int1 = document.getElementById("auo").duration
-                await sleep(0.1)
-                str_music_list= str_music_list + "<tr><td>" + this.files[int_loop2].name + "</td><td class='tex_rig'>" + int1 + "</td>"
+            const files = evt.target.files;
+
+            // --- 変更点1: durationの正確な取得とリスト作成 ---
+            // Promiseとイベントリスナーを使って、durationの読み込みを確実に待つ
+            for(let int_loop2=0; int_loop2 < files.length; int_loop2++){
+                const file = files[int_loop2];
+                auo.src = URL.createObjectURL(file);
+        
+                // loadedmetadataイベントが発火するまで待機するPromise
+                const duration_promise = new Promise(resolve => {
+                    auo.onloadedmetadata = () => {
+                        resolve(auo.duration);
+                    };
+                });
+        
+                const int1 = await duration_promise; // durationを取得できるまで待機
+        
+                str_music_list = str_music_list + "<tr><td>" + file.name + "</td><td class='tex_rig'>" + int1.toFixed(2) + "</td></tr>";
             }
             music_list.innerHTML=str_music_list
             //*//
-            for(int_loop1=0; int_loop1<evt.target.files.length;int_loop1++){
-                title.textContent=this.files[int_loop1].name
-                auo.src = URL.createObjectURL(this.files[int_loop1]);
-                await sleep(1)
-                int1 = document.getElementById("auo").duration
-                await sleep(1)
+            for(let int_loop1=0; int_loop1 < files.length; int_loop1++){
+                const file = files[int_loop1];
+                title.textContent = file.name;
+                auo.src = URL.createObjectURL(file);
+        
+                // durationを取得するため再度 loadedmetadata を待機 (再生前にメタデータが必要)
+                await new Promise(resolve => {
+                    auo.onloadedmetadata = resolve;
+                });
+        
+                // 再生が終了するのを待機するPromise
+                const ended_promise = new Promise(resolve => {
+                    auo.onended = resolve;
+                });
+        
                 auo.play();
-                await sleep(int1)
+        
+                await ended_promise; // 再生が終了するまで待機
             }
         }
     </script>
@@ -80,4 +102,5 @@
         <script src="https://tribefactory.netlify.app/js/navi/footer.js"></script>
     </body>
 </html>
+
 
