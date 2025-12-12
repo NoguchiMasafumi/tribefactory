@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sentence Structure 150</title>
+</head>
+<body>
+  <p id="englishText">It is quite natural that tastes differ.</p>
+  <p id="japaneseText">人の好みが違うのは全く当然だ。</p>
+  <button id="speakAllButton">英語3回、日本語1回を再生</button>
+
+  <script>
+    function speakText(text, lang, repeat = 1, callback = null) { // callback引数を追加
+      let count = 0; // 再生回数をカウント
+      function play() {
+        window.speechSynthesis.cancel();
+        let voices = window.speechSynthesis.getVoices();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+
+        // 英語の場合のみ速度を調整
+        if (lang === 'en-US') {
+          utterance.rate = 0.5; // 速度を半分に設定
+        }
+
+        let selectedVoice = voices.find(voice => voice.lang === lang);
+        utterance.voice = selectedVoice;
+        speechSynthesis.speak(utterance);
+
+        utterance.onend = function(event) {
+          count++;
+          if (count < repeat) {
+            play(); // 再帰的に再生
+          } else {
+            console.log(lang === 'en-US' ? '英語再生完了' : '日本語再生完了');
+            if (callback) {
+              callback(); // コールバック関数を実行
+            }
+          }
+        };
+
+        // 英語の場合はsetTimeoutで代替処理
+        if (lang === 'en-US') {
+          let timeoutId = setTimeout(() => {
+            if (count < repeat) {
+              count++;
+              if (count < repeat) {
+                play(); // 再帰的に再生
+              } else {
+                  console.log('英語再生完了 (代替処理)');
+                   if (callback) {
+                    callback(); // コールバック関数を実行
+                  }
+              }
+            } else {
+                console.log('英語再生完了 (代替処理)');
+                 if (callback) {
+                    callback(); // コールバック関数を実行
+                  }
+            }
+          }, text.length * 200); // 英語は長めに設定
+
+          utterance.onend = function(event) {
+              clearTimeout(timeoutId); // onendイベントが発火した場合、代替処理をキャンセル
+              count++;
+              if (count < repeat) {
+                  // play()はonendでやってるのでここには書かない。
+              } else {
+                  console.log('英語再生完了');
+                   if (callback) {
+                    callback(); // コールバック関数を実行
+                  }
+              }
+          };
+        }
+      }
+      play(); // 初回再生
+    }
+
+    document.getElementById("speakAllButton").addEventListener("click", () => {
+      speakText(document.getElementById("englishText").textContent, 'en-US', 3, () => {
+        speakText(document.getElementById("japaneseText").textContent, 'ja-JP');
+      });
+    });
+  </script>
+</body>
+</html>

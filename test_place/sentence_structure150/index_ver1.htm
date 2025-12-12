@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sentence Structure 150</title>
+</head>
+<body>
+  <button id="speakAllButton">全てのデータを再生</button>
+  <div id="currentSentence"></div>
+
+  <script>
+    const sentences = [
+{ num:1,english:"It is quite natural that tastes differ.",japanese:"人の好みが違うのは全く当然だ。"},
+{ num:2,english:"It seems that oil prices will come down soon.",japanese:"石油価格はどうやらすぐに下がりそうだ。"},
+{ num:3,english:"It is said that elephants have good memories.",japanese:"ゾウの記憶力は優れていると言われている。"},
+{ num:4,english:"It never occurred to me that I could be an artist.",japanese:"自分が芸術家になれるとは思いも寄らなかった。"},
+{ num:5,english:"It doesn't matter if you are late.",japanese:"遅くなっても構わないよ。"},
+{ num:6,english:"It goes without saying that exercise is good for your health.",japanese:"運動が健康にいいことは言うまでもない。"},
+{ num:7,english:"I found it hard to keep a diary in English.",japanese:"英語で日記をつけるのはむずかしいと思った。"},
+{ num:8,english:"I took it for granted that he would be better soon.",japanese:"彼の体調がすぐに良くなるのは当たり前だと思っていた。"},
+{ num:9,english:"It took her two years to write the novel.",japanese:"彼女がその小説を書くのに２年かかった。"},
+{ num:10,english:"It will cost me over $10,000 to get a new car.",japanese:"新車を買うのに１万ドル以上はかかるだろう。"},
+{ num:11,english:"It has been five years since she wrote her first novel.",japanese:"彼女が最初の小説を書いてから５年になる。"},
+{ num:12,english:"It will not be long before the snow melts.",japanese:"まもなく雪が溶けるだろう。"},
+{ num:13,english:"It is easy for birds to fly in the sky.",japanese:"鳥が空を飛ぶのは簡単です。"},
+{ num:14,english:"It is very kind of you to come.",japanese:"わざわざ来ていただいてどうもすみません。（あなたが来てくれるとは親切ですね）"},
+{ num:15,english:"The meeting is to be held in Tokyo.",japanese:"会議は東京で開催される予定だ。"},
+{ num:16,english:"I was about to go out when the phone rang.",japanese:"電話が鳴ったときちょうど外出しようとしていたところだった。"},
+{ num:17,english:"Diet and exercise have to do with good health.",japanese:"食事と運動は健康と関係がある。"},
+{ num:18,english:"My plane failed to arrive on time.",japanese:"私が乗った飛行機は定刻には到着しなかった。"},
+{ num:19,english:"He sat in the front in order to be able to hear my speech.",japanese:"彼は私の話がよく聞こえるように前の席に座っていた。"},
+{ num:20,english:"He was kind enough to drive me home.",japanese:"彼は親切にも私を家まで送ってくれた。"},
+{ num:21,english:"He walked too fast for me to follow.",japanese:"彼は歩くのが速すぎて私はついていけなかった。"},
+{ num:22,english:"I looked back, only to find no one there.",japanese:"私は後ろを振り返ったが、だれもそこにはいなかった。"},
+{ num:23,english:"She couldn't help laughing at his joke.",japanese:"彼のジョークを聞いて彼女は思わず吹き出してしまった。"},
+{ num:24,english:"You'll soon get used to living alone.",japanese:"すぐに一人住まいに慣れるさ。"},
+{ num:25,english:"There's no telling what will happen next.",japanese:"次に何が起こるかわからない。"},
+{ num:26,english:"There is no point in discussing the problem.",japanese:"この問題を議論してもまったく意味がない。"},
+{ num:27,english:"Okinawa is worth visiting once.",japanese:"沖縄は、一度は訪れる価値がある。"},
+{ num:28,english:"I am in the habit of reading books every day.",japanese:"私は毎日読書するのを習慣にしている。"},
+{ num:29,english:"He makes a point of walking 10,000 steps a day.",japanese:"彼は毎日、一万歩は歩くように心がけている。"},
+{ num:30,english:"Feeling tired, Bill went to bed earlier than usual.",japanese:"疲れたと感じたので、ビルはいつもより早く寝た。"},
+{ num:31,english:"Shocked at the sight, she couldn't move.",japanese:"その光景にショックを受けて、彼女は動くことができなかった。"},
+{ num:32,english:"The winter being over, the snow started to melt.",japanese:"冬が終わり、雪が溶け始めた。"},
+{ num:33,english:"All things considered, it's a good town.",japanese:"すべてを考慮に入れると、その町は素敵な町だ。"},
+{ num:34,english:"Judging by the expression on her face, she is very surprised.",japanese:"彼女の表情から判断すると、とても驚いている。"},
+{ num:35,english:"She looks young considering her age.",japanese:"彼女の年を考えると若く見える。"},
+{ num:36,english:"Henri Fabre spent 80 years studying insects.",japanese:"アンリ・ファーブルは８０年間昆虫の研究に取り組んだ。"},
+{ num:37,english:"She had great difficulty walking in her new shoes.",japanese:"彼女は新しい靴を履いて歩くのにずいぶん苦労した。"},
+{ num:38,english:"You just have to fill in your password.",japanese:"パスワードを入力しさえすればいいのです。"},
+{ num:39,english:"I have yet to read the last few chapters.",japanese:"まだ最後の数章を読んでいないのです。"},
+{ num:40,english:"John used to live near the ocean.",japanese:"ジョンは以前、海のそばに住んでいた。"},
+{ num:41,english:"When I was a child, I would often play outside.",japanese:"子どもの頃はよく外で遊んだものだった。"},
+{ num:42,english:"He must have left his mobile phone on the train this morning.",japanese:"彼は今朝電車に携帯電話を置き忘れたに違いない。"},
+{ num:43,english:"He may well be interested in Japanese history.",japanese:"彼はたぶん日本史に興味を持っているだろう。"},
+{ num:44,english:"The station is not far from here. We may as well walk.",japanese:"駅はここからあまり遠くないから、歩いて行ってもいいだろう。"},
+{ num:45,english:"You had better carry a pass.",japanese:"君は通行許可証を持って行った方がいい（そうしないと入れないよ）。"},
+{ num:46,english:"I saw a girl walking toward me.",japanese:"女の子が私のほうに歩いてくるのが見えた。"},
+{ num:47,english:"She heard her name called from behind.",japanese:"彼女は自分の名前が後ろから呼ばれるのが聞こえた。"},
+{ num:48,english:"My mother made me finish my homework before supper.",japanese:"母は私に夕食前に宿題を仕上げさせた。"},
+{ num:49,english:"My mother forced me to eat a lot of vegetables.",japanese:"母は無理やり私にたくさんの野菜を食べさせた。"},
+{ num:50,english:"I will have my secretary send you a copy.",japanese:"秘書にコピーをあなたのところへ送らせましょう。"},
+{ num:51,english:"She got her child to sleep by reading books.",japanese:"彼女は本を読んで子どもを寝かしつけた。"},
+{ num:52,english:"Jane had her bicycle stolen in the park.",japanese:"ジェーンは公園で自転車を盗まれた。"},
+{ num:53,english:"He helped me find the post office.",japanese:"彼は私が郵便局を見つけるのを手伝ってくれた。"},
+{ num:54,english:"There are many people standing in front of the store.",japanese:"店の前に多くの人が立っている。"},
+{ num:55,english:"Can you make yourself understood in English?",japanese:"英語で言いたいことが言えますか（←英語であなた自身を理解してもらえますか）"},
+{ num:56,english:"John kept me waiting for a long time.",japanese:"ジョンはずいぶん長い間、私を待たせた。"},
+{ num:57,english:"He was sitting on a bench with his eyes closed.",japanese:"目を閉じたままで彼はベンチに座っていた。"},
+{ num:58,english:"Heaven helps those who help themselves.",japanese:"天は自ら助くる者を助く。（ことわざ）"},
+{ num:59,english:"I gave her what little information I had.",japanese:"彼女には少しではあるが私が持っていた情報を全部教えた。"},
+{ num:60,english:"Reading is to the mind what food is to the body.",japanese:"読書が精神に対する関係は食べ物が体に対する関係に等しい。"},
+{ num:61,english:"John is not what he was ten years ago.",japanese:"ジョンは１０年前の彼とは違う。"},
+{ num:62,english:"Studying is what college life is all about.",japanese:"勉強こそ大学生活で最も大切なことだ。"},
+{ num:63,english:"Tell me what your trip to Seoul was like.",japanese:"ソウル旅行はいかがでしたか。"},
+{ num:64,english:"He is what we call a \"walking dictionary.\"",japanese:"彼はいわゆる「生き字引」だ。"},
+{ num:65,english:"This blog is interesting, and what is more, very instructive.",japanese:"このブログは面白いし、その上、非常にためになる。"},
+{ num:66,english:"I said nothing, which made him angrier.",japanese:"私は何も言わなかった。それが彼をいっそう怒らせた。"},
+{ num:67,english:"She is crazy about tennis, which love I do not share.",japanese:"彼女はテニスに熱中しているが、私にはそんな気はない。"},
+{ num:68,english:"Mike was late coming, as is often the case with him.",japanese:"マイクは遅刻してきた。彼にはよくあることですが。"},
+{ num:69,english:"A man who I thought was unkind helped me.",japanese:"冷たいと思っていた人が手伝ってくれた。"},
+{ num:70,english:"John is as handsome as Bill.",japanese:"ジョンはビルと同じくらいハンサムだ。"},
+{ num:71,english:"The USA is twenty-five times as large as Japan.",japanese:"アメリカ合衆国は日本の２５倍の大きさだ。"},
+{ num:72,english:"My brother's room is ten times the size of mine.",japanese:"兄の部屋は私の部屋の１０倍の大きさがある。"},
+{ num:73,english:"He is as hardworking as any student in his class.",japanese:"彼はクラスのだれにも劣らずよく勉強する。"},
+{ num:74,english:"Nothing is as important to children as their own birthday.",japanese:"子どもにとっては誕生日ほど大切なものはない。"},
+{ num:75,english:"Learning is not so much a duty as a right.",japanese:"勉強は義務というよりむしろ権利である。"},
+{ num:76,english:"The population of Tokyo is larger than that of Washington D.C.",japanese:"東京の人口はワシントンの人口より多い。"},
+{ num:77,english:"The harder he worked, the more successful he became.",japanese:"働ければ働くほど彼は成功した。"},
+{ num:78,english:"I like the story all the more because it is true.",japanese:"本当の話なので、いっそうその話が好きだ。"},
+{ num:79,english:"Bill can no more swim than a hammer can.",japanese:"ビルは金槌同様まったく泳げない。"},
+{ num:80,english:"Sleep is no less important for your health than food.",japanese:"睡眠は食べ物と同様、健康にとって大切だ。"},
+{ num:81,english:"The memory card is no bigger than a stamp.",japanese:"そのメモリーカードは切手ほどの大きさしかない。"},
+{ num:82,english:"If I were a bird, I would fly to you.",japanese:"もし鳥だったら、あなたのもとへ飛んでいくのだが。"},
+{ num:83,english:"If she had been a boy, she would have been named Ken.",japanese:"もし彼女が男の子だったら、ケンという名前になっていたであろう。"},
+{ num:84,english:"If it should rain, the concert will move indoors.",japanese:"もし万一雨が降れば、コンサートは室内に移動することになるだろう。"},
+{ num:85,english:"If I were to live again, I would like to be a scientist.",japanese:"もう一度人生をやり直すとすれば、科学者になりたいものだ。"},
+{ num:86,english:"If it were not for the snow, the plane could take off.",japanese:"もしも雪でなければ、飛行機は離陸できるのだが。"},
+{ num:87,english:"Without language, there would be no thought.",japanese:"言語がなければ、思想は存在しないであろう。"},
+{ num:88,english:"I wish I could sing like her.",japanese:"彼女のように歌が歌えたらいいのに。"},
+{ num:89,english:"I would rather go to the gym than go to the movies.",japanese:"映画に行くよりスポーツジムに行きたい。"},
+{ num:90,english:"That boy talks as if he were a grown-up.",japanese:"その子は大人のような口をきく。"},
+{ num:91,english:"It's about time I was leaving.",japanese:"そろそろおいとまする時間です。"},
+{ num:92,english:"A man of sense would not say such a thing.",japanese:"分別のある人間ならそんなことは口にしないだろう。"},
+{ num:93,english:"Very few students could solve this problem.",japanese:"この問題が解ける学生はほとんどいなかった。"},
+{ num:94,english:"His paper contains few, if any, errors in spelling.",japanese:"彼の論文には綴りのミスがあるにしても、ごくわずかだ。"},
+{ num:95,english:"Mars is not a star but a planet.",japanese:"火星は恒星ではなく、惑星です。"},
+{ num:96,english:"This radio is not only cute, but also functional.",japanese:"このラジオはかわいらしいだけでなく、機能も充実している。"},
+{ num:97,english:"Dog food is not necessarily good for dogs.",japanese:"ドッグフードが必ずしも犬に良いとは限らない。"},
+{ num:98,english:"I don't like him only because he is handsome.",japanese:"ハンサムという理由だけで彼が好きなわけではない。"},
+{ num:99,english:"We cannot be too careful in crossing the street.",japanese:"道路を渡るときはいくら注意してもしすぎることはない。"},
+{ num:100,english:"She never bakes a cake without burning it.",japanese:"彼女がケーキを焼けば必ず焦がしてしまう。"},
+{ num:101,english:"His story is far from true.",japanese:"彼の話は真実からはほど遠い。"},
+{ num:102,english:"Who knows what will happen next?",japanese:"次に何が起きるか誰にわかるでしょうか（だれにもわかりはしない）。"},
+{ num:103,english:"He would be the last person to speak badly of others.",japanese:"彼は他の人のことについて悪口を言うような人ではない。"},
+{ num:104,english:"My sister knows better than to cheat in the exam.",japanese:"妹は試験でカンニングをするほど馬鹿ではない。"},
+{ num:105,english:"Every member worked hard so that his team would win.",japanese:"チームが勝てるようにメンバー全員ががんばった。"},
+{ num:106,english:"Bill was so excited that he couldn't be still.",japanese:"ビルは興奮のあまりじっとしていられなかった。"},
+{ num:107,english:"It was such an exciting game that I forgot to take pictures.",japanese:"それはとても興奮する試合だったので、写真を撮るのを忘れてしまった。"},
+{ num:108,english:"Take an umbrella in case it rains.",japanese:"雨が降る場合に備えて傘を持っていきなさい。"},
+{ num:109,english:"He wrote it down lest he forget it.",japanese:"忘れないように彼はそれを書き留めた。"},
+{ num:110,english:"On arriving at the station, I called a friend of mine.",japanese:"駅に到着するとすぐ、友達に電話した。"},
+{ num:111,english:"As soon as he got home, he turned on the TV.",japanese:"彼は帰宅するとすぐにテレビをつけた。"},
+{ num:112,english:"He had hardly reached the station when it began to snow.",japanese:"彼が駅に着いたとたんに雪が降り出した。"},
+{ num:113,english:"No sooner had I sat down on the sofa than the phone rang.",japanese:"私がソファーに腰を下ろしたとたんに電話が鳴った。"},
+{ num:114,english:"We had not waited long before our bus came.",japanese:"そんなに待たないうちにバスが来た。"},
+{ num:115,english:"It was last week that Mike bought a bike at the store.",japanese:"マイクがお店で自転車を買ったのは先週だった。"},
+{ num:116,english:"What we need is world peace, not food.",japanese:"必要なのは世界の平和であって、食べ物ではない。"},
+{ num:117,english:"All you have to do is click this button.",japanese:"このボタンをクリックしさえすればよい。"},
+{ num:118,english:"You can be whatever you want to be.",japanese:"あなたがなりたいと思うなら何にでもなることができる。"},
+{ num:119,english:"Little did I dream of seeing you again here.",japanese:"再びここであなたにお会いしようとは夢にも思わなかった。"},
+{ num:120,english:"So hard did the wind blow that I couldn't walk.",japanese:"風が激しく吹いたので、私は歩くことができなかった。"},
+{ num:121,english:"It was not until I was thirty that I started to ski.",japanese:"３０歳になって初めてスキーを始めた。"},
+{ num:122,english:"\"I like coffee.\" --- \"So do I.\"",japanese:"「コーヒーが好きです」「私も（好きです）」"},
+{ num:123,english:"\"I don't like coffee.\" --- \"Neither do I.\"",japanese:"「コーヒーは好きじゃない」「私も（好きじゃないよ）」"},
+{ num:124,english:"It is true that he is very old, but he is healthy.",japanese:"彼は確かにとても高齢だが、健康です。"},
+{ num:125,english:"Even if it rains tomorrow, I will go to the movies.",japanese:"たとえ明日雨が降っても私は映画を見に行きます。"},
+{ num:126,english:"Whether you like it or not, he is our leader.",japanese:"気に入ろうが入るまいが、彼は私たちの指導者なのですよ。"},
+{ num:127,english:"To solve the problem is difficult, if not impossible.",japanese:"その問題を解くのは不可能ではないとしても難しい"},
+{ num:128,english:"I'm going to school today no matter what happens.",japanese:"何が起ころうとも今日は学校に行くぞ。"},
+{ num:129,english:"Whoever you are, wherever you come from, you are welcome.",japanese:"君がだれであれ、どこの出身であれ、君を歓迎する。"},
+{ num:130,english:"Angry as he was, he tried to smile.",japanese:"彼は怒っていたが、笑おうとした。"},
+{ num:131,english:"Tom has remained poor, while his brother has made a fortune.",japanese:"トムは貧乏なままだったが、トムの兄は一財産つくった。"},
+{ num:132,english:"I have two hobbies. One is cycling and the other is fishing.",japanese:"私には二つ趣味があって、一つはサイクリング、もう一つは釣りです。"},
+{ num:133,english:"Some people said yes and others said no.",japanese:"賛成した人もいれば反対した人もいた。"},
+{ num:134,english:"Suppose that you can't come, who will do the work?",japanese:"君が来られない場合、だれがその仕事をしますか。"},
+{ num:135,english:"You can stay here as long as you keep quiet.",japanese:"あなたが静かにしている限りここにいてもよい。"},
+{ num:136,english:"As far as we knew, she was the best doctor.",japanese:"私たちの知っている限りでは、彼女は最高の医者だった。"},
+{ num:137,english:"As far as I am concerned, I won't change my mind.",japanese:"私に関する限り、決心を変えるつもりはない。"},
+{ num:138,english:"Shopping is difficult in this area unless you have a car.",japanese:"この地域では車がない限り買い物は難しいよ。"},
+{ num:139,english:"The fact is that I like comedies.",japanese:"実は、私は喜劇が好きなのです。"},
+{ num:140,english:"Chances are they'll be out when we call.",japanese:"おそらく電話をしても彼らは外出中だろう。"},
+{ num:141,english:"Let's take a walk together. After all, it's a lovely day.",japanese:"一緒に散歩でもしようよ。だって、天気がいいんだから。"},
+{ num:142,english:"Now that summer is over, we have a busy schedule.",japanese:"もう夏が終わったので、忙しい。"},
+{ num:143,english:"That mistake cost him his job.",japanese:"その失敗のせいで彼は仕事を失った。"},
+{ num:144,english:"A moment's thought will tell you that you are wrong.",japanese:"ちょっと考えれば自分の間違いに気づくはずだ。"},
+{ num:145,english:"This street will take you to the school.",japanese:"この道を行けば学校に着きますよ。"},
+{ num:146,english:"The heavy rain prevented me from going home.",japanese:"大雨のせいで私は家に帰れなかった。"},
+{ num:147,english:"My volunteer work keeps me very busy.",japanese:"ボランティアの仕事があるので私はとても忙しい。"},
+{ num:148,english:"This medicine will make you feel better.",japanese:"この薬を飲めば気分がよくなるでしょう。"},
+{ num:149,english:"He thinks they should act soon and that it's the best solution.",japanese:"彼は彼らがすぐに行動すべきであり、それが最善の解決策だと考えている。"},
+{ num:150,english:"Cold chicken is delicious when eaten with salad.",japanese:"コールドチキンはサラダと一緒に食べるとおいしい。"},
+      // 他のデータもここに追加
+    ];
+
+    const currentSentenceElement = document.getElementById("currentSentence");
+
+    function speakText(text, lang, repeat = 1, callback = null) {
+      let count = 0;
+      function play() {
+        window.speechSynthesis.cancel();
+        let voices = window.speechSynthesis.getVoices();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+
+        if (lang === 'en-US') {
+          utterance.rate = 0.5;
+        }
+
+        let selectedVoice = voices.find(voice => voice.lang === lang);
+        utterance.voice = selectedVoice;
+        speechSynthesis.speak(utterance);
+
+        utterance.onend = function(event) {
+          count++;
+          if (count < repeat) {
+            play();
+          } else {
+            console.log(lang === 'en-US' ? '英語再生完了' : '日本語再生完了');
+            if (callback) {
+              callback();
+            }
+          }
+        };
+
+        if (lang === 'en-US') {
+          let timeoutId = setTimeout(() => {
+            if (count < repeat) {
+              count++;
+              if (count < repeat) {
+                play();
+              } else {
+                console.log('英語再生完了 (代替処理)');
+                if (callback) {
+                  callback();
+                }
+              }
+            } else {
+              console.log('英語再生完了 (代替処理)');
+              if (callback) {
+                callback();
+              }
+            }
+          }, text.length * 200);
+
+          utterance.onend = function(event) {
+            clearTimeout(timeoutId);
+            count++;
+            if (count < repeat) {
+            } else {
+              console.log('英語再生完了');
+              if (callback) {
+                callback();
+              }
+            }
+          };
+        }
+      }
+      play();
+      currentSentenceElement.textContent = text; // 文面を表示
+    }
+
+    document.getElementById("speakAllButton").addEventListener("click", () => {
+      let index = 0;
+      function playNext() {
+        if (index < sentences.length) {
+          speakText(sentences[index].english, 'en-US', 3, () => {
+            speakText(sentences[index].japanese, 'ja-JP', 1, () => {
+              index++;
+              playNext();
+            });
+          });
+        } else {
+          currentSentenceElement.textContent = ""; // 全て再生終了後にクリア
+        }
+      }
+      playNext();
+    });
+  </script>
+</body>
+</html>

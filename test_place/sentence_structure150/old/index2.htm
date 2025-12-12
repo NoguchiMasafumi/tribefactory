@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sentence Structure 150</title>
+</head>
+<body>
+  <p id="englishText">It is quite natural that tastes differ.</p>
+  <p id="japaneseText">人の好みが違うのは全く当然だ。</p>
+  <button id="speakEnglishButton">英語で再生</button>
+  <button id="speakJapaneseButton">日本語で再生</button>
+
+  <script>
+    function speakText(text, lang) {
+      const voices = window.speechSynthesis.getVoices();
+      const selectedVoice = voices.find(voice => voice.lang === lang);
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.voice = selectedVoice;
+
+      let repeatCount = 0;
+      const maxRepeatCount = 3;
+
+      utterance.onend = () => {
+        repeatCount++;
+        if (repeatCount < maxRepeatCount) {
+          window.speechSynthesis.speak(utterance);
+        }
+      };
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    document.getElementById("speakEnglishButton").addEventListener("click", () => {
+      const text = document.getElementById("englishText").textContent;
+      speakText(text, 'en-US');
+    });
+
+    document.getElementById("speakJapaneseButton").addEventListener("click", () => {
+      const text = document.getElementById("japaneseText").textContent;
+      speakText(text, 'ja-JP');
+    });
+  </script>
+</body>
+</html>

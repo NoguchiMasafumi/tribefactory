@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sentence Structure 150</title>
+</head>
+<body>
+  <p id="englishText">It is quite natural that tastes differ.</p>
+  <p id="japaneseText">人の好みが違うのは全く当然だ。</p>
+  <button id="speakEnglishButton">英語で再生</button>
+  <button id="speakJapaneseButton">日本語で再生</button>
+
+  <script>
+    function speakText(text, lang) {
+      window.speechSynthesis.cancel();
+      let voices = window.speechSynthesis.getVoices();
+
+      if (voices.length > 0) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+
+        // 英語の場合のみ速度を調整
+        if (lang === 'en-US') {
+          utterance.rate = 0.5; // 速度を半分に設定
+        }
+
+        let selectedVoice = voices.find(voice => voice.lang === lang);
+        if (selectedVoice) {
+          utterance.voice = selectedVoice;
+          speechSynthesis.speak(utterance);
+        } else {
+          alert(lang + 'の音声が見つかりませんでした。');
+        }
+      } else {
+        alert('音声データの読み込みが完了していません。');
+      }
+    }
+
+    document.getElementById("speakEnglishButton").addEventListener("click", () => {
+      speakText(document.getElementById("englishText").textContent, 'en-US');
+    });
+
+    document.getElementById("speakJapaneseButton").addEventListener("click", () => {
+      speakText(document.getElementById("japaneseText").textContent, 'ja-JP');
+    });
+
+    window.speechSynthesis.onvoiceschanged = () => {
+      console.log("音声データがロードされました。");
+    };
+  </script>
+</body>
+</html>
