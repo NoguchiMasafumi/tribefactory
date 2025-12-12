@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cube</title>
+<style>
+body { margin: 0; overflow: hidden; background-color: #eee; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.cube-container { position: relative; transform-style: preserve-3d; transform: rotateX(-30deg) rotateY(45deg); }
+.face-container { position: absolute; width: 160px; height: 160px; transform-style: preserve-3d; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
+.square { width: 48px; height: 48px; border: 1px solid black; box-sizing: border-box; margin: 1px; }
+/* JavaScriptで色を動的に設定するため、ここでは各面の色は定義しません */
+
+/* 各面の配置と色 */
+.front { transform: translateZ(80px); }
+.back { transform: translateZ(-80px) rotateY(180deg); }
+.top { transform: translateY(-80px) rotateX(90deg); }
+.bottom { transform: translateY(80px) rotateX(-90deg); }
+.left { transform: translateX(-80px) rotateY(-90deg); }
+.right { transform: translateX(80px) rotateY(90deg); }
+</style>
+</head>
+<body>
+<div class="cube-container">
+  <div class="face-container front">
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+  </div>
+  <div class="face-container back">
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+  </div>
+  <div class="face-container top">
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+  </div>
+  <div class="face-container bottom">
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+  </div>
+  <div class="face-container left">
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+  </div>
+  <div class="face-container right">
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div>
+  </div>
+</div>
+
+<script>
+  const colorData = {
+    top:    [0, 0, 0, 1, 1, 1, 1, 1, 1], // 0: グレー, 1: 黄
+    right:  [1, 1, 0, 1, 1, 0, 1, 1, 0], // 1: 青, 0: グレー
+    front:  [1, 0, 1, 0, 1, 0, 1, 0, 1], // 1: 赤, 0: グレー
+    bottom: [0, 1, 0, 1, 0, 1, 0, 1, 0], // 0: グレー, 1: 白
+    left:   [0, 0, 1, 0, 0, 1, 0, 0, 1], // 0: グレー, 1: 緑
+    back:   [1, 1, 1, 0, 0, 0, 1, 1, 1]  // 1: オレンジ, 0: グレー
+  };
+
+  const faceContainers = {
+    top: document.querySelector('.face-container.top'),
+    right: document.querySelector('.face-container.right'),
+    front: document.querySelector('.face-container.front'),
+    bottom: document.querySelector('.face-container.bottom'),
+    left: document.querySelector('.face-container.left'),
+    back: document.querySelector('.face-container.back')
+  };
+
+  const faceColors = {
+    top: 'yellow',
+    right: 'blue',
+    front: 'red',
+    bottom: 'white',
+    left: 'green',
+    back: 'orange'
+  };
+
+  function setColor(faceName, colorArray) {
+    const face = faceContainers[faceName];
+    const squares = face.querySelectorAll('.square');
+    if (squares.length === colorArray.length) {
+      for (let i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = colorArray[i] === 0 ? 'gray' : faceColors[faceName];
+      }
+    } else {
+      console.error(`Color array length mismatch for ${faceName}`);
+    }
+  }
+
+  // 各面の色を設定
+  for (const face in colorData) {
+    setColor(face, colorData[face]);
+  }
+</script>
+
+</body>
+</html>

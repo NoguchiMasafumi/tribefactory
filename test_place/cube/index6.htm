@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/cube.css">
+  <title>cube</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td class="cube3"></td>
+      <td>T1</td>
+      <td>RUR'</td>
+    </tr>
+    <tr>
+      <td class="cube3"></td>
+      <td>T2</td>
+      <td>(U')R'U'R</td>
+    </tr>
+    <tr>
+      <td class="cube3"></td>
+      <td>i1</td>
+      <td>(U')U'R'UR</td>
+    </tr>
+    <tr>
+      <td class="cube3"></td>
+      <td>i2</td>
+      <td>URU'R'</td>
+    </tr>
+  </table>
+
+  <script>
+    const faceColors = {
+      y: '#fff7ab', //黄
+      o: '#ffdead', //オレンジ
+      b: '#afeeff', //青
+      r: '#ffb7b7', //赤
+      w: '#ffffff', //白
+      g: '#9ff19f', //緑
+      '0': '#efefef' //グレー
+    };
+
+    const cubeData = [
+      {
+        colors: {
+          back:    ['0', 'r', '0', '0', '0', '0', '0', '0', '0'],
+          right:   ['g', '0', '0', '0', 'r', 'r', '0', 'r', 'r'],
+          front:   ['0', '0', 'w', 'w', 'w', '0', 'w', 'w', '0'],
+          bottom:  ['0', '0', '0', '0', '0', '0', '0', '0', '0'],
+          left:    ['0', '0', '0', '0', '0', '0', '0', '0', '0'],
+          top:     ['0', 'w', '0', '0', '0', '0', '0', '0', 'r']
+        },
+        T1: 'T1',
+        RUR_prime: "RUR'"
+      },
+      {
+        colors: {
+          back:    ['0', '0', '0', '0', '0', '0', '0', '0', '0'],
+          right:   ['r', '0', '0', '0', 'r', 'r', '0', 'r', 'r'],
+          front:   ['0', '0', 'g', 'w', 'w', '0', 'w', 'w', '0'],
+          bottom:  ['0', '0', '0', '0', '0', '0', '0', '0', '0'],
+          left:    ['0', 'w', '0', '0', '0', '0', '0', '0', '0'],
+          top:     ['0', '0', '0', 'r', '0', '0', '0', '0', 'w']
+        },
+        T1: 'T2',
+        RUR_prime: "(U')R'U'R"
+      },
+      {
+        colors: {
+          front:   ['0', '0', 'w', 'w', 'w', '0', 'w', 'w', '0'],
+          top:     ['0', '0', '0', '0', '0', '0', '0', 'r', 'r'],
+          right:   ['g', '0', '0', '0', 'r', 'r', '0', 'r', 'r'],
+          back:    ['0', '0', '0', '0', '0', '0', '0', '0', '0'],
+          left:    ['0', '0', '0', '0', '0', '0', '0', '0', '0'],
+          bottom:  ['0', '0', '0', '0', '0', '0', '0', '0', '0']
+        },
+        T1: 'i1',
+        RUR_prime: "(U')U'R'UR"
+      },
+      {
+        colors: {
+          front:   ['0', '0', 'g', 'w', 'w', '0', 'w', 'w', '0'],
+          top:     ['0', '0', '0', '0', '0', 'w', '0', '0', 'w'],
+          right:   ['r', 'r', '0', '0', 'r', 'r', '0', 'r', 'r'],
+          back:    ['0', '0', '0', '0', '0', '0', '0', '0', '0'],
+          left:    ['0', '0', '0', '0', '0', '0', '0', '0', '0'],
+          bottom:  ['0', '0', '0', '0', '0', '0', '0', '0', '0']
+        },
+        T1: 'i2',
+        RUR_prime: "URU'R'"
+      }
+    ];
+
+    function createCube() {
+      const cubeContainer = document.createElement('div');
+      cubeContainer.classList.add('cube-container');
+
+      const faces = ['front', 'back', 'top', 'bottom', 'left', 'right'];
+      for (const face of faces) {
+        const faceContainer = document.createElement('div');
+        faceContainer.classList.add('face-container', face);
+
+        for (let i = 0; i < 9; i++) {
+          const square = document.createElement('div');
+          square.classList.add('square');
+          faceContainer.appendChild(square);
+        }
+        cubeContainer.appendChild(faceContainer);
+      }
+      return cubeContainer;
+    }
+
+    function setColor(cube, faceName, colorArray) {
+      const face = cube.querySelector(`.face-container.${faceName}`);
+      const squares = face.querySelectorAll('.square');
+      if (squares.length === colorArray.length) {
+        for (let i = 0; i < squares.length; i++) {
+          squares[i].style.backgroundColor = faceColors[colorArray[i]];
+        }
+      } else {
+        console.error(`Color array length mismatch for ${faceName}`);
+      }
+    }
+
+    const table = document.querySelector('table');
+    const rows = table.rows;
+
+    for (let i = 0; i < rows.length; i++) {
+      const firstTdInRow = rows[i].cells[0];
+      const secondTdInRow = rows[i].cells[1];
+      const thirdTdInRow = rows[i].cells[2];
+
+      if (firstTdInRow) {
+        const newCube = createCube();
+        const rowData = cubeData[i];
+        for (const face in rowData.colors) {
+          setColor(newCube, face, rowData.colors[face]);
+        }
+        firstTdInRow.appendChild(newCube);
+      }
+
+      if (secondTdInRow) {
+        secondTdInRow.textContent = cubeData[i].T1;
+      }
+
+      if (thirdTdInRow) {
+        thirdTdInRow.textContent = cubeData[i].RUR_prime;
+      }
+    }
+  </script>
+</body>
+</html>

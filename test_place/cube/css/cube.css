@@ -1,0 +1,139 @@
+body {
+    margin: 60px; /* さらに大きめの余白 */
+    overflow: auto;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 95%;
+  }
+  
+  td {
+    padding: 50px; /* さらに大きめのパディング */
+    text-align: center;
+  }
+  
+  .cube3 {
+    height: 260px; /* さらに大きな高さ */
+    width: 260px; /* さらに大きな幅 */
+    position: relative;
+  }
+  
+  .cube-container {
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(45deg);
+    margin: -68px 0px 0px 32px; /* サイズに合わせて調整 */
+  }
+  
+  .face-container {
+    position: absolute;
+    width: 195px; /* さらに大きな幅 */
+    height: 195px; /* さらに大きな高さ */
+    transform-style: preserve-3d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square {
+    width: 52px; /* さらに大きな正方形 */
+    height: 52px; /* さらに大きな正方形 */
+    border: 1px solid #b5b5b5;
+    box-sizing: border-box;
+    margin: 6.5px; /* さらに大きめのマージン */
+  }
+  
+  .left {
+    transform: translateZ(-97.5px) rotateY(180deg); /* サイズに合わせて調整 */
+  }
+  
+  .back {
+    transform: translateX(97.5px) rotateY(90deg); /* サイズに合わせて調整 */
+  }
+  
+  .top {
+    transform: translateY(-97.5px) rotateX(90deg) rotateZ(90deg); /* サイズに合わせて調整 */
+  }
+  
+  .right {
+    transform: translateZ(97.5px); /* サイズに合わせて調整 */
+  }
+  
+  .bottom {
+    transform: translateY(97.5px) rotateX(-90deg) rotateZ(-90deg); /* サイズに合わせて調整 */
+  }
+  
+  .front {
+    transform: translateX(-97.5px) rotateY(-90deg); /* サイズに合わせて調整 */
+  }
+  
+  /* スマートフォン向けのスタイル */
+  @media screen and (max-width: 600px) {
+    body {
+      margin: 30px;
+      align-items: center;
+    }
+  
+    table {
+      width: 95%;
+    }
+  
+    td {
+      padding: 30px;
+    }
+  
+    .cube3 {
+      height: 220px; /* 少し小さく */
+      width: 220px; /* 少し小さく */
+      position: relative;
+    }
+  
+    .cube-container {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: rotateX(-30deg) rotateY(45deg);
+      margin: -58px 0px 0px 27px; /* サイズに合わせて調整 */
+    }
+  
+    .face-container {
+      width: 165px; /* 少し小さく */
+      height: 165px; /* 少し小さく */
+    }
+  
+    .square {
+      width: 44px; /* 少し小さく */
+      height: 44px; /* 少し小さく */
+      margin: 5.5px; /* 少し小さく */
+    }
+  
+    .left {
+      transform: translateZ(-82.5px) rotateY(180deg); /* サイズに合わせて調整 */
+    }
+  
+    .back {
+      transform: translateX(82.5px) rotateY(90deg); /* サイズに合わせて調整 */
+    }
+  
+    .top {
+      transform: translateY(-82.5px) rotateX(90deg) rotateZ(90deg); /* サイズに合わせて調整 */
+    }
+  
+    .right {
+      transform: translateZ(82.5px); /* サイズに合わせて調整 */
+    }
+  
+    .bottom {
+      transform: translateY(82.5px) rotateX(-90deg) rotateZ(-90deg); /* サイズに合わせて調整 */
+    }
+  
+    .front {
+      transform: translateX(-82.5px) rotateY(-90deg); /* サイズに合わせて調整 */
+    }
+  }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cube</title>
+<style>
+body { margin: 0; overflow: hidden; background-color: #eee; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.cube-container { position: relative; transform-style: preserve-3d; transform: rotateX(-30deg) rotateY(45deg); }
+.face-container { position: absolute; width: 160px; height: 160px; transform-style: preserve-3d; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
+.square { width: 48px; height: 48px; border: 1px solid rgb(77, 77, 77); box-sizing: border-box; margin: 1px; }
+
+/* 各面の配置と色 */
+.front { transform: translateZ(80px); }
+.back { transform: translateZ(-80px) rotateY(180deg); }
+.top { transform: translateY(-80px) rotateX(90deg); }
+.bottom { transform: translateY(80px) rotateX(-90deg); }
+.left { transform: translateX(-80px) rotateY(-90deg); }
+.right { transform: translateX(80px) rotateY(90deg); }
+</style>
+</head>
+<body>
+<div class="cube-container"></div>
+
+<script>
+  const colorData = {
+    top:    [0, 0, 0, 1, 1, 1, 1, 1, 1],
+    right:  [1, 1, 0, 1, 1, 0, 1, 1, 0],
+    front:  [1, 0, 1, 0, 1, 0, 1, 0, 1],
+    bottom: [0, 1, 0, 1, 0, 1, 0, 1, 0],
+    left:   [0, 0, 1, 0, 0, 1, 0, 0, 1],
+    back:   [1, 1, 1, 0, 0, 0, 1, 1, 1]
+  };
+
+  const faceColors = {
+    top: 'yellow',
+    right: 'blue',
+    front: 'red',
+    bottom: 'white',
+    left: 'green',
+    back: 'orange'
+  };
+
+  const cubeContainer = document.querySelector('.cube-container');
+
+  for (const face in colorData) {
+    const faceContainer = document.createElement('div');
+    faceContainer.classList.add('face-container', face);
+
+    for (let i = 0; i < 9; i++) {
+      const square = document.createElement('div');
+      square.classList.add('square');
+      faceContainer.appendChild(square);
+    }
+
+    cubeContainer.appendChild(faceContainer);
+  }
+
+  function setColor(faceName, colorArray) {
+    const face = document.querySelector(`.face-container.${faceName}`);
+    const squares = face.querySelectorAll('.square');
+    if (squares.length === colorArray.length) {
+      for (let i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = colorArray[i] === 0 ? 'gray' : faceColors[faceName];
+      }
+    } else {
+      console.error(`Color array length mismatch for ${faceName}`);
+    }
+  }
+
+  for (const face in colorData) {
+    setColor(face, colorData[face]);
+  }
+</script>
+
+</body>
+</html>

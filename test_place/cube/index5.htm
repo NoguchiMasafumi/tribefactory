@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/cube.css">
+    <title>cube</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td class="cube3"></td>
+            <td>T1</td>
+            <td>RUR'</td>
+        </tr>
+        <tr>
+            <td class="cube3"></td>
+            <td>別の文字</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="cube3"></td>
+            <td>さらに文字</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+        const faceColors = {
+            back: '#fff7ab',
+            left: '#ffdead',
+            top: '#afeeff',
+            right: '#ffb7b7',
+            front: '#ffffff',
+            bottom: '#9ff19f'
+        };
+
+        const colorDataArray = [
+            {
+                back:    [0, 0, 0, 1, 1, 1, 1, 1, 1],
+                right:   [1, 1, 0, 1, 1, 0, 1, 1, 0],
+                front:   [0, 0, 1, 1, 1, 0, 1, 1, 0],
+                bottom:  [0, 1, 0, 1, 0, 1, 0, 1, 0],
+                left:    [0, 0, 1, 0, 0, 1, 0, 0, 1],
+                top:     [1, 1, 1, 0, 0, 0, 1, 1, 1]
+            },
+            {
+                back:    [1, 1, 1, 0, 0, 0, 0, 0, 0],
+                right:   [0, 0, 1, 0, 0, 1, 0, 0, 1],
+                front:   [1, 1, 1, 0, 0, 0, 0, 0, 0],
+                bottom:  [1, 0, 1, 0, 1, 0, 1, 0, 1],
+                left:    [1, 1, 0, 1, 1, 0, 1, 1, 0],
+                top:     [0, 0, 0, 1, 1, 1, 0, 0, 0]
+            },
+            {
+                back:    [0, 1, 0, 1, 0, 1, 0, 1, 0],
+                right:   [0, 0, 0, 1, 1, 1, 0, 0, 0],
+                front:   [0, 1, 0, 1, 0, 1, 0, 1, 0],
+                bottom:  [1, 0, 0, 0, 1, 1, 1, 0, 0],
+                left:    [1, 1, 1, 0, 0, 0, 1, 1, 1],
+                top:     [0, 0, 1, 0, 0, 1, 0, 0, 1]
+            }
+        ];
+
+        function createCube() {
+            const cubeContainer = document.createElement('div');
+            cubeContainer.classList.add('cube-container');
+
+            for (const face in colorDataArray[0]) { // 最初の colorData を基準にループ
+                const faceContainer = document.createElement('div');
+                faceContainer.classList.add('face-container', face);
+
+                for (let i = 0; i < 9; i++) {
+                    const square = document.createElement('div');
+                    square.classList.add('square');
+                    faceContainer.appendChild(square);
+                }
+
+                cubeContainer.appendChild(faceContainer);
+            }
+
+            return cubeContainer;
+        }
+
+        function setColor(cube, faceName, colorArray) {
+            const face = cube.querySelector(`.face-container.${faceName}`);
+            const squares = face.querySelectorAll('.square');
+            if (squares.length === colorArray.length) {
+                for (let i = 0; i < squares.length; i++) {
+                    squares[i].style.backgroundColor = colorArray[i] === 0 ? '#efefef' : faceColors[faceName];
+                }
+            } else {
+                console.error(`Color array length mismatch for ${faceName}`);
+            }
+        }
+
+        const table = document.querySelector('table');
+        const rows = table.rows;
+
+        for (let i = 0; i < rows.length; i++) {
+            const firstTdInRow = rows[i].cells[0];
+            if (firstTdInRow) {
+                const newCube = createCube();
+                const rowColorData = colorDataArray[i];
+                for (const face in rowColorData) {
+                    setColor(newCube, face, rowColorData[face]);
+                }
+                firstTdInRow.appendChild(newCube);
+            }
+        }
+    </script>
+</body>
+</html>
