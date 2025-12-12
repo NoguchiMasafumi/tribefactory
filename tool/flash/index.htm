@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ベタフラッシュ（静止画）- 調整機能付き</title>
+<style>
+ #flash-container {
+  width: 500px;
+  height: 300px;
+  background-color: black; /* 初期背景色 */
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px; /* 操作パネルとの間にスペース */
+ }
+
+ .flash-line {
+  position: absolute;
+  background-color: white; /* 線の色 */
+  transform-origin: center center;
+ }
+
+ #center-text { /* IDセレクタに変更 */
+  position: absolute;
+  width:400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000; /* 文字の色 */
+  /* 透過を無くすために以下のスタイルを削除・修正 */
+  font-size: 16px; /* JavaScriptで初期値を設定 */
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+ }
+
+ .controls {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 500px;
+ }
+ .controls label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+ }
+ .controls input[type="text"] {
+  width: 98%;
+  padding: 5px;
+  font-size: 14px;
+ }
+ .controls input[type="range"] {
+  width: 98%;
+ }
+</style>
+</head>
+<body>
+
+<div id="flash-container">
+  <div id="center-text">1回に1個しか修正できない？<br />そんな事ある？ないだろ・・・</div>
+</div>
+
+<div class="controls">
+ <h3>設定パネル</h3>
+ 
+ <label for="text-input">テキストの編集:</label>
+ <input type="text" id="text-input" value="1回に1個しか修正できない？そんな事ある？ないだろ・・・">
+
+ <label for="size-slider">文字の大きさ ( ${20}px ):</label>
+ <input type="range" id="size-slider" min="10" max="60" value="20">
+</div>
+
+<script>
+ const container = document.getElementById('flash-container');
+ const centerText = document.getElementById('center-text'); // IDで要素を取得
+ const textInput = document.getElementById('text-input');
+ const sizeSlider = document.getElementById('size-slider');
+ const sizeLabel = document.querySelector('label[for="size-slider"]');
+
+ const numLines = 1200;
+ const lengthMultiplier = 1.5;
+ 
+ // 初期値の設定
+ const initialText = "1回に1個しか修正できない？\nそんな事ある？ないだろ・・・";
+ const initialSize = 20;
+
+ // center-textの初期内容とサイズをDOMに反映
+ centerText.innerHTML = initialText.replace(/\n/g, '<br />'); // 改行を反映
+ centerText.style.fontSize = `${initialSize}px`;
+ textInput.value = initialText.replace(/<br \/>/g, '\n'); // text inputには\nで設定
+ sizeSlider.value = initialSize;
+ sizeLabel.textContent = `文字の大きさ ( ${initialSize}px ):`;
+
+
+ // --- ベタフラッシュ描画関数 ---
+ function createStaticFlash() {
+  // 描画前に既存の線要素を全て削除
+  const existingLines = container.querySelectorAll('.flash-line');
+  existingLines.forEach(line => line.remove());
+  
+  const centerX = container.offsetWidth / 2;
+  const centerY = container.offsetHeight / 2;
+
+  for (let i = 0; i < numLines; i++) {
+   const line = document.createElement('div');
+   line.classList.add('flash-line');
+
+   const angle = (360 / numLines) * i;
+   const length = Math.random() * Math.max(container.offsetWidth, container.offsetHeight) * lengthMultiplier;
+   const thickness = Math.random() * 1 + 1;
+
+   line.style.width = `${length}px`;
+   line.style.height = `${thickness}px`;
+   line.style.left = `${centerX - length / 2}px`;
+   line.style.top = `${centerY - thickness / 2}px`;
+   line.style.transform = `rotate(${angle}deg)`;
+   line.style.opacity = 0.9;
+
+   container.appendChild(line);
+  }
+ }
+
+ // --- イベントリスナー ---
+ 
+ // 1. テキストボックスの内容を即時反映
+ textInput.addEventListener('input', (event) => {
+  // 入力されたテキストを改行文字 (\n) で分割し、<br />に置き換えてHTMLとして挿入
+  centerText.innerHTML = event.target.value.replace(/\n/g, '<br />');
+ });
+
+ // 2. スライダーで文字の大きさを即時反映
+ sizeSlider.addEventListener('input', (event) => {
+  const newSize = event.target.value;
+  centerText.style.fontSize = `${newSize}px`;
+  sizeLabel.textContent = `文字の大きさ ( ${newSize}px ):`;
+ });
+
+ // 静止画を生成
+ createStaticFlash();
+</script>
+
+</body>
+</html>
