@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marse Code Generator</title>
+</head>
+<body>
+  <div id="inputArea">
+    <input type="text" id="inputChar" placeholder="INPUT" style="height:30px;">
+    <button id="playButton">GO</button>
+  </div>
+
+  <script>
+    const morseCodes = [
+      ["A", "FAA"], ["B", "HEA"], ["C", "HHA"], ["D", "HDA"],
+      ["E", "DAA"], ["F", "EHA"], ["G", "IDA"], ["H", "EEA"],
+      ["I", "EAA"], ["J", "FIA"], ["K", "HGA"], ["L", "FEA"],
+      ["M", "IAA"], ["N", "HAA"], ["O", "IGA"], ["P", "FHA"],
+      ["Q", "IFA"], ["R", "FDA"], ["S", "EDA"], ["T", "GAA"],
+      ["U", "EGA"], ["V", "EFA"], ["W", "FGA"], ["X", "HFA"],
+      ["Y", "HIA"], ["Z", "IEA"], ["1", "FIG"], ["2", "EIG"],
+      ["3", "EFG"], ["4", "EEG"], ["5", "EED"], ["6", "HED"],
+      ["7", "IED"], ["8", "IHD"], ["9", "IID"], ["0", "IIG"]
+    ];
+
+    const codeMap = {
+      "A": "00", "B": "01", "C": "02", "D": "10",
+      "E": "11", "F": "12", "G": "20", "H": "21", "I": "22"
+    };
+
+    function encode(input) {
+      const morseEntry = morseCodes.find(entry => entry[0] === input.toUpperCase());
+      if (morseEntry) {
+        const morseCode = morseEntry[1];
+        let result = "";
+        for (let char of morseCode) {
+          result += codeMap[char];
+        }
+        return result;
+      } else {
+        return "";
+      }
+    }
+
+    let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    let gainNode = audioCtx.createGain();
+    gainNode.connect(audioCtx.destination);
+
+    const dotDuration = 100;
+    const dashDuration = 300;
+    const gapDuration = 20;
+    const wordGapDuration = 100;
+
+    async function playBeep(code, startTime) {
+      return new Promise(resolve => {
+        let currentTime = startTime;
+
+        for (let char of code) {
+          if (char === '1') {
+            let oscillator = audioCtx.createOscillator();
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(440, currentTime);
+            oscillator.connect(gainNode);
+
+            oscillator.start(currentTime);
+            gainNode.gain.setValueAtTime(1, currentTime);
+            gainNode.gain.setValueAtTime(0, currentTime + dotDuration / 1000);
+            oscillator.stop(currentTime + dotDuration / 1000);
+            currentTime += dotDuration / 1000 + gapDuration / 1000;
+          } else if (char === '2') {
+            let oscillator = audioCtx.createOscillator();
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(440, currentTime);
+            oscillator.connect(gainNode);
+
+            oscillator.start(currentTime);
+            gainNode.gain.setValueAtTime(1, currentTime);
+            gainNode.gain.setValueAtTime(0, currentTime + dashDuration / 1000);
+            oscillator.stop(currentTime + dashDuration / 1000);
+            currentTime += dashDuration / 1000 + gapDuration / 1000;
+          } else {
+            currentTime += gapDuration / 1000;
+          }
+        }
+        resolve(currentTime);
+      });
+    }
+
+    document.getElementById("playButton").addEventListener("click", async function() {
+      const inputString = document.getElementById("inputChar").value.toUpperCase();
+      let startTime = audioCtx.currentTime;
+
+      for (let i = 0; i < inputString.length; i++) {
+        const char = inputString[i];
+        const encodedCode = encode(char);
+        if (encodedCode) {
+          startTime = await playBeep(encodedCode, startTime);
+          if (i < inputString.length - 1) {
+            startTime += wordGapDuration / 1000;
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

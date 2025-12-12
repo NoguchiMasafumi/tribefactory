@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beep音発生アプリ</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    #inputArea {
+      text-align: center;
+    }
+    #inputChar {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #playButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="inputArea">
+    <input type="text" id="inputChar" placeholder="文字を入力">
+    <button id="playButton">Beep音を鳴らす</button>
+  </div>
+
+  <script>
+    const morseCodes = [
+      ["A", ".-"], ["B", "-..."], ["C", "-.-."], ["D", "-.."],
+      ["E", "."], ["F", "..-."], ["G", "--."], ["H", "...."],
+      ["I", ".."], ["J", ".---"], ["K", "-.-"], ["L", ".-.."],
+      ["M", "--"], ["N", "-."], ["O", "---"], ["P", ".--."],
+      ["Q", "--.-"], ["R", ".-."], ["S", "..."], ["T", "-"],
+      ["U", "..-"], ["V", "...-"], ["W", ".--"], ["X", "-..-"],
+      ["Y", "-.--"], ["Z", "--.."], ["1", ".----"], ["2", "..---"],
+      ["3", "...--"], ["4", "....-"], ["5", "....."], ["6", "-...."],
+      ["7", "--..."], ["8", "---.."], ["9", "----."], ["0", "-----"]
+    ];
+
+    function encode(input) {
+      const morseEntry = morseCodes.find(entry => entry[0] === input.toUpperCase());
+      if (!morseEntry) {
+        return "入力された文字に対応するコードが見つかりませんでした。";
+      }
+      return morseEntry[1];
+    }
+
+    function playBeep(code) {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const oscillator = audioCtx.createOscillator();
+      const gainNode = audioCtx.createGain();
+
+      oscillator.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+
+      oscillator.type = 'sine';
+      oscillator.frequency.value = 880;
+
+      const dotDuration = 100;
+      const dashDuration = dotDuration * 3;
+      const gapDuration = dotDuration;
+
+      let currentTime = audioCtx.currentTime;
+
+      for (let char of code) {
+        if (char === '.') {
+          oscillator.start(currentTime);
+          gainNode.gain.setValueAtTime(1, currentTime);
+          gainNode.gain.setValueAtTime(0, currentTime + dotDuration / 1000);
+          oscillator.stop(currentTime + dotDuration / 1000);
+          currentTime += dotDuration / 1000 + gapDuration / 1000;
+        } else if (char === '-') {
+          oscillator.start(currentTime);
+          gainNode.gain.setValueAtTime(1, currentTime);
+          gainNode.gain.setValueAtTime(0, currentTime + dashDuration / 1000);
+          oscillator.stop(currentTime + dashDuration / 1000);
+          currentTime += dashDuration / 1000 + gapDuration / 1000;
+        } else if (char === ' ') {
+          currentTime += gapDuration / 1000 * 3;
+        }
+      }
+    }
+
+    document.getElementById("playButton").addEventListener("click", function() {
+      const inputChar = document.getElementById("inputChar").value;
+      const encodedCode = encode(inputChar);
+      if (encodedCode === "入力された文字に対応するコードが見つかりませんでした。"){
+        alert(encodedCode);
+      }else{
+        playBeep(encodedCode);
+      }
+    });
+  </script>
+</body>
+</html>
