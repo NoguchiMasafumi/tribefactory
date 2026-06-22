@@ -44,7 +44,15 @@
             "九州・沖縄": []
         };
 
-        function getAreaFromCoords(lng, lat) {
+        function getAreaFromCompanyAndCoords(company, lng, lat) {
+            const comp = company || "";
+            if (comp.includes("北海道") || comp.includes("東日本") && lat >= 37.0 || comp.includes("仙台") || comp.includes("青い森") || comp.includes("三陸") || comp.includes("秋田") || comp.includes("岩手") || comp.includes("山形") || comp.includes("福島")) return "北海道・東北";
+            if (comp.includes("東京") || comp.includes("京王") || comp.includes("小田急") || comp.includes("東急") || comp.includes("京急") || comp.includes("西武") || comp.includes("東武") || comp.includes("京成") || comp.includes("相模") || comp.includes("横浜") || comp.includes("都営") || comp.includes("千葉") || comp.includes("埼玉") || comp.includes("神奈川") || comp.includes("つくば")) return "関東";
+            if (comp.includes("東海") || comp.includes("名古屋") || comp.includes("名鉄") || comp.includes("北陸") && lng >= 136.0 || comp.includes("新潟") || comp.includes("長野") || comp.includes("静岡") || comp.includes("富山") || comp.includes("石川") || comp.includes("福井") || comp.includes("山梨") || comp.includes("岐阜") || comp.includes("愛知")) return "中部";
+            if (comp.includes("西日本") && lng < 136.5 && lng >= 134.3 || comp.includes("阪急") || comp.includes("阪神") || comp.includes("近畿") || comp.includes("近鉄") || comp.includes("南海") || comp.includes("京阪") || comp.includes("大阪") || comp.includes("京都") || comp.includes("神戸") || comp.includes("奈良") || comp.includes("和歌山") || comp.includes("滋賀")) return "近畿";
+            if (comp.includes("四国") || comp.includes("広島") || comp.includes("岡山") || comp.includes("鳥取") || comp.includes("島根") || comp.includes("山口") || comp.includes("徳島") || comp.includes("香川") || comp.includes("愛媛") || comp.includes("高知") || comp.includes("一畑") || comp.includes("スカイレール")) return "中国・四国";
+            if (comp.includes("九州") || comp.includes("福岡") || comp.includes("佐賀") || comp.includes("長崎") || comp.includes("熊本") || comp.includes("大分") || comp.includes("宮崎") || comp.includes("鹿児島") || comp.includes("沖縄") || comp.includes("西日本鉄道")) return "九州・沖縄";
+            
             if (lat >= 36.8) return "北海道・東北";
             if (lat >= 34.5 && lat < 36.8 && lng >= 138.3) return "関東";
             if (lat >= 34.2 && lat < 36.8 && lng >= 136.2 && lng < 138.3) return "中部";
@@ -84,7 +92,8 @@
                         if (!isExist) {
                             lineGroups[groupKey].push({
                                 name: stationName,
-                                coords: f.geometry.coordinates
+                                coords: f.geometry.coordinates,
+                                company: companyName
                             });
                         }
                     });
@@ -102,14 +111,14 @@
                     const avgLng = sumLng / stations.length;
                     const avgLat = sumLat / stations.length;
                     
-                    const area = getAreaFromCoords(avgLng, avgLat);
+                    const area = getAreaFromCompanyAndCoords(stations[0].company, avgLng, avgLat);
                     if (areaMapping[area]) {
                         areaMapping[area].push(key);
                     }
                 });
 
                 Object.keys(areaMapping).forEach(area => {
-                    areaMapping[area].sort();
+                    areaMapping[area] = [...new Set(areaMapping[area])].sort();
                 });
 
                 loadingStatus.textContent = "データの読み込みが完了しました。エリアを選択してください。";
