@@ -5,106 +5,78 @@
     <title>井の頭線路線図</title>
 </head>
 <body style="margin:0;padding:20px;background:#ffffff;">
-    <div id="loadingStatus" style="margin-bottom:10px; font-weight:bold; color:#555;">データの構造を解析し、駅の座標を特定中...</div>
+    <div id="loadingStatus" style="margin-bottom:10px; font-weight:bold; color:#555;">データを読み込み中...</div>
     <canvas id="inokashiraCanvas" width="950" height="350"></canvas>
     <script>
         const canvas = document.getElementById('inokashiraCanvas');
         const ctx = canvas.getContext('2d');
         const loadingStatus = document.getElementById('loadingStatus');
 
-        // 正しい相対パス
-        const jsonUrl = '/test_place/train/n02-22_railroadsection.json';
-
-        // 描画したい井の頭線の駅名リスト（順序通り）
-        const ORDERED_STATION_NAMES = [
-            "渋谷", "神泉", "駒場東大前", "池ノ上", "下北沢", 
-            "新代田", "東松原", "明大前", "永福町", "西永福", 
-            "浜田山", "高井戸", "富士見ヶ丘", "久我山", "三鷹台", 
-            "井の頭公園", "吉祥寺"
-        ];
+        // 駅データ（Station）側のURLを指定
+        const jsonUrl = '/test_place/train/n02-22_station.json';
 
         async function drawInokashiraLine() {
             try {
-                loadingStatus.textContent = "13.6MBのデータをダウンロード中...";
                 const response = await fetch(jsonUrl);
                 if (!response.ok) {
                     throw new Error(`HTTPエラー! ステータス: ${response.status}`);
                 }
-                
-                loadingStatus.textContent = "JSONの構造をパース中...";
                 const data = await response.json();
                 
-                loadingStatus.textContent = "井の頭線の全データを抽出中...";
+                loadingStatus.textContent = "データを解析中...";
 
-                const rawStationData = []; // [{name, coord: [lat, lng]}, ...]
+                const order = [
+                    "渋谷", "神泉", "駒場東大前", "池ノ上", "下北沢", 
+                    "新代田", "東松原", "明大前", "永福町", "西永福", 
+                    "浜田山", "高井戸", "富士見ヶ丘", "久我山", "三鷹台", 
+                    "井の頭公園", "吉祥寺"
+                ];
 
+                const stationMap = {};
+                
                 if (data && data.features) {
                     data.features.forEach(f => {
                         if (!f.properties || !f.geometry) return;
 
-                        // 国土交通省データの仕様: N02_005に駅名、N02_003に路線名（"１号線"など）、N02_004に会社名が入る
                         const stationName = f.properties.N02_005 || "";
                         const lineName = f.properties.N02_003 || "";
                         const companyName = f.properties.N02_004 || "";
 
-                        // 井の頭線のデータのみを抽出する厳密なフィルタ
+                        // Stationデータの仕様に合わせたフィルタリング
                         if (companyName.includes("京王") && (lineName.includes("井の頭") || lineName.includes("１号線"))) {
-                            // 駅名リストにある駅のみ対象
-                            const matchedName = ORDERED_STATION_NAMES.find(name => name === stationName);
-                            if (matchedName) {
-                                // 重要な修正: 13MBのデータ内にはLineStringの座標配列しか入っていないため、その1つ目を取り出す
-                                if (f.geometry.coordinates && f.geometry.coordinates.length > 0) {
-                                    rawStationData.push({
-                                        name: matchedName,
-                                        coord: f.geometry.coordinates[0] // 最初の座標ペアを採用
-                                    });
-                                }
+                            const matchedName = order.find(name => stationName === name);
+                            if (matchedName && f.geometry.coordinates) {
+                                // StationデータはPoint型のため、そのまま座標を取得
+                                stationMap[matchedName] = f.geometry.coordinates;
                             }
                         }
                     });
                 }
 
-                // 2つ目以降の同じ駅名のデータを排除（重複防止）
-                const stationMap = {};
-                rawStationData.forEach(st => {
-                    if (!stationMap[st.name]) {
-                        stationMap[st.name] = st.coord;
-                    }
-                });
-
-                loadingStatus.textContent = "全17駅の座標を特定しました。描画準備中...";
-
-                // 井の頭線は渋谷〜吉祥寺の東西の路線なので、座標（緯度経度）からCanvasのXYへのマッピングロジックを最適化
-                // 13.6MBのデータの座標範囲を基に、手動でマッピング（データ量が多いため、自動算出だとずれる可能性がある）
-                // [lng, lat]
-                const MIN_LNG = 139.56; // 吉祥寺付近
-                const MAX_LNG = 139.71; // 渋谷付近
-                const MIN_LAT = 35.65;
-                const MAX_LAT = 35.71;
-
                 const stations = [];
-                ORDERED_STATION_NAMES.forEach((name, index) => {
+                order.forEach((name, index) => {
                     if (stationMap[name]) {
-                        const coord = stationMap[name];
-                        // 座標(lng, lat)をCanvasのX, Yに変換するロジック
-                        const x = canvas.width - ((coord[0] - MIN_LNG) / (MAX_LNG - MIN_LNG) * (canvas.width - 100)) - 50;
-                        const y = canvas.height - ((coord[1] - MIN_LAT) / (MAX_LAT - MIN_LAT) * (canvas.height - 100)) - 50;
-                        
+                        let x = 60 + (index * 50);
+                        let y = 150;
+                        if (index > 8) {
+                            x = 60 + ((index - 9) * 100);
+                            y = 250;
+                        }
                         stations.push({ name: name, x: x, y: y });
                     }
                 });
 
                 if (stations.length === 0) {
-                    loadingStatus.textContent = "エラー：データ内に該当する駅名（渋谷〜吉祥寺）の座標を1つも特定できませんでした。";
+                    loadingStatus.textContent = "エラー：データ内に該当する駅名（渋谷〜吉祥寺）の座標を1つも特定できませんでした。URLのファイルがStationデータであるか確認してください。";
                     return;
                 }
 
-                loadingStatus.style.display = 'none'; // ステータス表示を消す
-                ctx.clearRect(0, 0, canvas.width, canvas.height); // Canvasをクリア
+                loadingStatus.style.display = 'none';
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-                // 1. 路線（線）の描画ロジック
-                ctx.lineWidth = 12; // 線を太く
-                ctx.strokeStyle = '#3bb2e5'; // 井の頭線のライトブルー
+                // 線の描画
+                ctx.lineWidth = 8;
+                ctx.strokeStyle = '#3bb2e5';
                 ctx.lineCap = 'round';
                 ctx.lineJoin = 'round';
 
@@ -115,27 +87,24 @@
                 }
                 ctx.stroke();
 
-                // 2. 駅（丸印と駅名）の描画ロジック
+                // 駅の描画
                 stations.forEach((st, index) => {
-                    // 駅の丸
                     ctx.beginPath();
-                    ctx.arc(st.x, st.y, 8, 0, Math.PI * 2);
-                    ctx.fillStyle = '#ffffff'; // 丸の中は白
+                    ctx.arc(st.x, st.y, 6, 0, Math.PI * 2);
+                    ctx.fillStyle = '#ffffff';
                     ctx.fill();
-                    ctx.lineWidth = 4;
-                    ctx.strokeStyle = '#3bb2e5'; // 枠線はライトブルー
+                    ctx.lineWidth = 3;
+                    ctx.strokeStyle = '#3bb2e5';
                     ctx.stroke();
 
-                    // 駅名のテキスト
                     ctx.fillStyle = '#000000';
-                    ctx.font = 'bold 13px sans-serif'; // フォントを少し大きく
+                    ctx.font = 'bold 11px sans-serif';
                     ctx.textAlign = 'center';
-
-                    // テキストの位置調整ロジック：奇数番目と偶数番目で上下に振り分ける
+                    
                     if (index % 2 === 0) {
-                        ctx.fillText(st.name, st.x, st.y - 22); // 上に配置
+                        ctx.fillText(st.name, st.x, st.y - 15);
                     } else {
-                        ctx.fillText(st.name, st.x, st.y + 30); // 下に配置
+                        ctx.fillText(st.name, st.x, st.y + 25);
                     }
                 });
 
@@ -145,7 +114,6 @@
             }
         }
 
-        // ページ読み込み時に自動で描画ロジックを実行
         drawInokashiraLine();
     </script>
 </body>
