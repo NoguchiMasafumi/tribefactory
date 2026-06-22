@@ -7,12 +7,17 @@
 <body style="margin:0;padding:20px;background:#ffffff;">
     <canvas id="inokashiraCanvas" width="900" height="300"></canvas>
     <script>
+        alert("1: スクリプトを開始しました");
         const canvas = document.getElementById('inokashiraCanvas');
         const ctx = canvas.getContext('2d');
 
         fetch('./N02-22_Station.geojson')
-            .then(response => response.json())
+            .then(response => {
+                alert("2: fetchレスポンスを受信しました。ステータス: " + response.status);
+                return response.json();
+            })
             .then(data => {
+                alert("3: JSONデータのパースに成功しました。要素数: " + (data.features ? data.features.length : "無し"));
                 const order = [
                     "渋谷", "神泉", "駒場東大前", "池ノ上", "下北沢", 
                     "新代田", "東松原", "明大前", "永福町", "西永福", 
@@ -21,15 +26,18 @@
                 ];
 
                 const stationMap = {};
+                let matchCount = 0;
                 data.features.forEach(f => {
-                    if (f.properties.N02_003 === "井の頭線") {
+                    if (f.properties && (f.properties.N02_003 === "井の頭線" || f.properties.N02_003 === "京王井の頭線")) {
                         const name = f.properties.N02_005;
-                        const coords = f.geometry.coordinates[0];
+                        const coords = f.geometry.coordinates;
                         if (order.includes(name)) {
                             stationMap[name] = coords;
+                            matchCount++;
                         }
                     }
                 });
+                alert("4: 井の頭線の該当駅を抽出しました。抽出数: " + matchCount);
 
                 const stations = [];
                 order.forEach((name, index) => {
@@ -44,6 +52,13 @@
                     }
                 });
 
+                if (stations.length === 0) {
+                    alert("エラー: 描画対象の駅データが0件です");
+                    return;
+                }
+
+                alert("5: Canvas描画処理を開始します。描画駅数: " + stations.length);
+
                 ctx.lineWidth = 8;
                 ctx.strokeStyle = '#3bb2e5';
                 ctx.lineCap = 'round';
@@ -51,12 +66,7 @@
 
                 ctx.beginPath();
                 ctx.moveTo(stations[0].x, stations[0].y);
-                for (let i = 1; i <= 8; i++) {
-                    ctx.lineTo(stations[i].x, stations[i].y);
-                }
-                ctx.lineTo(stations[8].x + 50, stations[8].y);
-                ctx.lineTo(stations[9].x - 50, stations[9].y);
-                for (let i = 9; i < stations.length; i++) {
+                for (let i = 1; i < stations.length; i++) {
                     ctx.lineTo(stations[i].x, stations[i].y);
                 }
                 ctx.stroke();
@@ -75,6 +85,10 @@
                     ctx.textAlign = 'center';
                     ctx.fillText(st.name, st.x, st.y - 15);
                 });
+                alert("6: 全ての描画処理が完了しました");
+            })
+            .catch(err => {
+                alert("エラー発生: " + err.message);
             });
     </script>
 </body>
