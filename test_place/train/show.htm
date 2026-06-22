@@ -2,149 +2,163 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>路線図切り替え</title>
+    <title>全路線自動描画システム</title>
 </head>
 <body style="margin:0;padding:20px;background:#ffffff;">
     <div style="margin-bottom:15px;">
-        <button onclick="switchLine('inokashira')" style="padding:8px 15px; margin-right:10px; font-weight:bold; cursor:pointer;">井の頭線</button>
-        <button onclick="switchLine('odakyu')" style="padding:8px 15px; font-weight:bold; cursor:pointer;">小田急小田原線</button>
+        <label for="lineSelect" style="font-weight:bold; margin-right:10px;">路線選択:</label>
+        <select id="lineSelect" onchange="onLineSelected()" style="padding:5px; font-size:14px; max-width:400px;"></select>
     </div>
-    <div id="loadingStatus" style="margin-bottom:10px; font-weight:bold; color:#555;">路線を選択してください</div>
-    <canvas id="inokashiraCanvas" width="950" height="400" style="border:1px solid #eee;"></canvas>
+    <div id="loadingStatus" style="margin-bottom:10px; font-weight:bold; color:#555;">データを読み込み中...</div>
+    <canvas id="inokashiraCanvas" width="1400" height="800" style="border:1px solid #eee;"></canvas>
     <script>
         const canvas = document.getElementById('inokashiraCanvas');
         const ctx = canvas.getContext('2d');
         const loadingStatus = document.getElementById('loadingStatus');
+        const lineSelect = document.getElementById('lineSelect');
 
         const jsonUrl = '/test_place/train/n02-22_station.json';
+        
+        let globalGeoData = null;
+        let lineGroups = {};
 
-        const lineConfigs = {
-            inokashira: {
-                company: "京王",
-                matchNames: ["井の頭", "１号線"],
-                color: '#3bb2e5',
-                order: [
-                    "渋谷", "神泉", "駒場東大前", "池ノ上", "下北沢", 
-                    "新代田", "東松原", "明大前", "永福町", "西永福", 
-                    "浜田山", "高井戸", "富士見ヶ丘", "久我山", "三鷹台", 
-                    "井の頭公園", "吉祥寺"
-                ],
-                splitIndex: 8
-            },
-            odakyu: {
-                company: "小田急",
-                matchNames: ["小田原線"],
-                color: '#0053a0',
-                order: [
-                    "新宿", "南新宿", "参宮橋", "代々木八幡", "代々木上原",
-                    "東北沢", "下北沢", "世田谷代田", "梅ヶ丘", "豪徳寺",
-                    "経堂", "千歳船橋", "祖師ヶ谷大蔵", "成城学園前", "喜多見",
-                    "狛江", "和泉多摩川", "登戸", "向ヶ丘遊園", "生田"
-                ],
-                splitIndex: 9
-            }
-        };
-
-        async function drawLine(lineKey) {
+        async function initSystem() {
             try {
-                const config = lineConfigs[lineKey];
-                loadingStatus.style.display = 'block';
-                loadingStatus.textContent = "データを読み込み中...";
-                
+                loadingStatus.textContent = "13.6MBのデータを読み込み中...";
                 const response = await fetch(jsonUrl);
                 if (!response.ok) {
                     throw new Error(`HTTPエラー! ステータス: ${response.status}`);
                 }
-                const data = await response.json();
+                globalGeoData = await response.json();
                 
-                loadingStatus.textContent = "データを解析中...";
-
-                const stationMap = {};
+                loadingStatus.textContent = "全路線・全駅を解析中...";
                 
-                if (data && data.features) {
-                    data.features.forEach(f => {
-                        if (!f.properties || !f.geometry) return;
+                if (globalGeoData && globalGeoData.features) {
+                    globalGeoData.features.forEach(f => {
+                        if (!f.properties || !f.geometry || !f.geometry.coordinates) return;
 
+                        const companyName = f.properties.N02_004 || "不明な事業者";
+                        const lineName = f.properties.N02_003 || "不明な路線";
                         const stationName = f.properties.N02_005 || "";
-                        const lineName = f.properties.N02_003 || "";
-                        const companyName = f.properties.N02_004 || "";
+                        
+                        if (!stationName) return;
 
-                        const isCompanyMatched = companyName.includes(config.company);
-                        const isLineMatched = config.matchNames.some(name => lineName.includes(name));
-
-                        if (isCompanyMatched && isLineMatched) {
-                            const matchedName = config.order.find(name => stationName === name);
-                            if (matchedName && f.geometry.coordinates) {
-                                stationMap[matchedName] = f.geometry.coordinates;
-                            }
+                        const groupKey = `${companyName} - ${lineName}`;
+                        
+                        if (!lineGroups[groupKey]) {
+                            lineGroups[groupKey] = [];
+                        }
+                        
+                        const isExist = lineGroups[groupKey].some(st => st.name === stationName);
+                        if (!isExist) {
+                            lineGroups[groupKey].push({
+                                name: stationName,
+                                coords: f.geometry.coordinates
+                            });
                         }
                     });
                 }
 
-                const stations = [];
-                config.order.forEach((name, index) => {
-                    if (stationMap[name]) {
-                        let x = 60 + (index * 50);
-                        let y = 150;
-                        if (index > config.splitIndex) {
-                            x = 60 + ((index - (config.splitIndex + 1)) * 80);
-                            y = 280;
-                        }
-                        stations.push({ name: name, x: x, y: y });
-                    }
+                const sortedKeys = Object.keys(lineGroups).sort();
+                
+                lineSelect.innerHTML = '<option value="">-- 路線を選択してください --</option>';
+                sortedKeys.forEach(key => {
+                    const option = document.createElement('option');
+                    option.value = key;
+                    option.textContent = key;
+                    lineSelect.appendChild(option);
                 });
 
-                if (stations.length === 0) {
-                    loadingStatus.textContent = "エラー：該当する路線のデータを特定できませんでした。";
-                    return;
-                }
-
-                loadingStatus.style.display = 'none';
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-                ctx.lineWidth = 8;
-                ctx.strokeStyle = config.color;
-                ctx.lineCap = 'round';
-                ctx.lineJoin = 'round';
-
-                ctx.beginPath();
-                ctx.moveTo(stations[0].x, stations[0].y);
-                for (let i = 1; i < stations.length; i++) {
-                    ctx.lineTo(stations[i].x, stations[i].y);
-                }
-                ctx.stroke();
-
-                stations.forEach((st, index) => {
-                    ctx.beginPath();
-                    ctx.arc(st.x, st.y, 6, 0, Math.PI * 2);
-                    ctx.fillStyle = '#ffffff';
-                    ctx.fill();
-                    ctx.lineWidth = 3;
-                    ctx.strokeStyle = config.color;
-                    ctx.stroke();
-
-                    ctx.fillStyle = '#000000';
-                    ctx.font = 'bold 11px sans-serif';
-                    ctx.textAlign = 'center';
-                    
-                    if (index % 2 === 0) {
-                        ctx.fillText(st.name, st.x, st.y - 15);
-                    } else {
-                        ctx.fillText(st.name, st.x, st.y + 25);
-                    }
-                });
+                loadingStatus.textContent = "データの読み込みが完了しました。路線を選択してください。";
 
             } catch (err) {
-                loadingStatus.textContent = "エラーが発生しました: " + err.message;
+                loadingStatus.textContent = "初期化エラー: " + err.message;
                 console.error(err);
             }
         }
 
-        function switchLine(lineKey) {
-            drawLine(lineKey);
+        function drawSelectedLine(groupKey) {
+            if (!groupKey || !lineGroups[groupKey]) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                return;
+            }
+
+            loadingStatus.style.display = 'block';
+            loadingStatus.textContent = "路線図を自動生成中...";
+
+            const rawStations = lineGroups[groupKey];
+            
+            const stations = [...rawStations];
+            
+            let centerLng = 0, centerLat = 0;
+            stations.forEach(st => {
+                centerLng += st.coords[0];
+                centerLat += st.coords[1];
+            });
+            centerLng /= stations.length;
+            centerLat /= stations.length;
+
+            stations.sort((a, b) => {
+                const angleA = Math.atan2(a.coords[1] - centerLat, a.coords[0] - centerLng);
+                const angleB = Math.atan2(b.coords[1] - centerLat, b.coords[0] - centerLng);
+                return angleA - angleB;
+            });
+
+            const perRow = 10;
+            const mappedStations = [];
+
+            stations.forEach((st, index) => {
+                const row = Math.floor(index / perRow);
+                const col = index % perRow;
+                
+                const x = 80 + (col * 120);
+                const y = 100 + (row * 150);
+                
+                mappedStations.push({ name: st.name, x: x, y: y });
+            });
+
+            loadingStatus.style.display = 'none';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.lineWidth = 8;
+            ctx.strokeStyle = '#3bb2e5';
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+
+            ctx.beginPath();
+            ctx.moveTo(mappedStations[0].x, mappedStations[0].y);
+            for (let i = 1; i < mappedStations.length; i++) {
+                ctx.lineTo(mappedStations[i].x, mappedStations[i].y);
+            }
+            ctx.stroke();
+
+            mappedStations.forEach((st, index) => {
+                ctx.beginPath();
+                ctx.arc(st.x, st.y, 6, 0, Math.PI * 2);
+                ctx.fillStyle = '#ffffff';
+                ctx.fill();
+                ctx.lineWidth = 3;
+                ctx.strokeStyle = '#3bb2e5';
+                ctx.stroke();
+
+                ctx.fillStyle = '#000000';
+                ctx.font = 'bold 11px sans-serif';
+                ctx.textAlign = 'center';
+                
+                if (index % 2 === 0) {
+                    ctx.fillText(st.name, st.x, st.y - 15);
+                } else {
+                    ctx.fillText(st.name, st.x, st.y + 25);
+                }
+            });
         }
 
-        drawLine('inokashira');
+        function onLineSelected() {
+            const selectedKey = lineSelect.value;
+            drawSelectedLine(selectedKey);
+        }
+
+        initSystem();
     </script>
 </body>
 </html>
