@@ -2,12 +2,25 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>全路線自動描画システム</title>
+    <title>エリア連動型・全路線自動描画システム</title>
 </head>
 <body style="margin:0;padding:20px;background:#ffffff;">
-    <div style="margin-bottom:15px;">
-        <label for="lineSelect" style="font-weight:bold; margin-right:10px;">路線選択:</label>
-        <select id="lineSelect" onchange="onLineSelected()" style="padding:5px; font-size:14px; max-width:400px;"></select>
+    <div style="margin-bottom:15px; font-family:sans-serif;">
+        <label for="areaSelect" style="font-weight:bold; margin-right:5px;">① エリア選択:</label>
+        <select id="areaSelect" onchange="onAreaSelected()" style="padding:5px; font-size:14px; margin-right:15px;">
+            <option value="">-- エリアを選択 --</option>
+            <option value="北海道・東北">北海道・東北</option>
+            <option value="関東">関東</option>
+            <option value="中部">中部</option>
+            <option value="近畿">近畿</option>
+            <option value="中国・四国">中国・四国</option>
+            <option value="九州・沖縄">九州・沖縄</option>
+        </select>
+
+        <label for="lineSelect" style="font-weight:bold; margin-right:5px;">② 路線選択:</label>
+        <select id="lineSelect" onchange="onLineSelected()" style="padding:5px; font-size:14px; max-width:400px;" disabled>
+            <option value="">-- 先にエリアを選択してください --</option>
+        </select>
     </div>
     <div id="loadingStatus" style="margin-bottom:10px; font-weight:bold; color:#555;">データを読み込み中...</div>
     <canvas id="inokashiraCanvas" width="1400" height="800" style="border:1px solid #eee;"></canvas>
@@ -15,12 +28,30 @@
         const canvas = document.getElementById('inokashiraCanvas');
         const ctx = canvas.getContext('2d');
         const loadingStatus = document.getElementById('loadingStatus');
+        const areaSelect = document.getElementById('areaSelect');
         const lineSelect = document.getElementById('lineSelect');
 
         const jsonUrl = '/test_place/train/n02-22_station.json';
         
         let globalGeoData = null;
         let lineGroups = {};
+        let areaMapping = {
+            "北海道・東北": [],
+            "関東": [],
+            "中部": [],
+            "近畿": [],
+            "中国・四国": [],
+            "九州・沖縄": []
+        };
+
+        function getAreaFromCoords(lng, lat) {
+            if (lat >= 37.0 && lng >= 138.0) return "北海道・東北";
+            if (lat >= 34.9 && lat <= 37.0 && lng >= 138.3 && lng <= 141.0) return "関東";
+            if (lat >= 34.5 && lat <= 38.0 && lng >= 135.0 && lng <= 138.3) return "中部";
+            if (lat >= 33.9 && lat <= 35.8 && lng >= 134.0 && lng <= 136.5) return "近畿";
+            if (lat >= 32.0 && lat <= 36.5 && lng >= 132.0 && lng <= 135.0) return "中国・四国";
+            return "九州・沖縄";
+        }
 
         async function initSystem() {
             try {
@@ -31,7 +62,7 @@
                 }
                 globalGeoData = await response.json();
                 
-                loadingStatus.textContent = "全路線・全駅を解析中...";
+                loadingStatus.textContent = "全路線・全駅を解析してエリア分類中...";
                 
                 if (globalGeoData && globalGeoData.features) {
                     globalGeoData.features.forEach(f => {
@@ -59,22 +90,57 @@
                     });
                 }
 
-                const sortedKeys = Object.keys(lineGroups).sort();
-                
-                lineSelect.innerHTML = '<option value="">-- 路線を選択してください --</option>';
-                sortedKeys.forEach(key => {
-                    const option = document.createElement('option');
-                    option.value = key;
-                    option.textContent = key;
-                    lineSelect.appendChild(option);
+                Object.keys(lineGroups).forEach(key => {
+                    const stations = lineGroups[key];
+                    if (stations.length === 0) return;
+                    
+                    let sumLng = 0, sumLat = 0;
+                    stations.forEach(st => {
+                        sumLng += st.coords[0];
+                        sumLat += st.coords[1];
+                    });
+                    const avgLng = sumLng / stations.length;
+                    const avgLat = sumLat / stations.length;
+                    
+                    const area = getAreaFromCoords(avgLng, avgLat);
+                    if (areaMapping[area]) {
+                        areaMapping[area].push(key);
+                    }
                 });
 
-                loadingStatus.textContent = "データの読み込みが完了しました。路線を選択してください。";
+                Object.keys(areaMapping).forEach(area => {
+                    areaMapping[area].sort();
+                });
+
+                loadingStatus.textContent = "データの読み込みが完了しました。エリアを選択してください。";
 
             } catch (err) {
                 loadingStatus.textContent = "初期化エラー: " + err.message;
                 console.error(err);
             }
+        }
+
+        function onAreaSelected() {
+            const selectedArea = areaSelect.value;
+            lineSelect.innerHTML = '';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            if (!selectedArea) {
+                lineSelect.innerHTML = '<option value="">-- 先にエリアを選択してください --</option>';
+                lineSelect.disabled = true;
+                return;
+            }
+
+            lineSelect.disabled = false;
+            lineSelect.innerHTML = '<option value="">-- 路線を選択してください --</option>';
+            
+            const lines = areaMapping[selectedArea];
+            lines.forEach(key => {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = key;
+                lineSelect.appendChild(option);
+            });
         }
 
         function drawSelectedLine(groupKey) {
@@ -87,7 +153,6 @@
             loadingStatus.textContent = "路線図を自動生成中...";
 
             const rawStations = lineGroups[groupKey];
-            
             const stations = [...rawStations];
             
             let centerLng = 0, centerLat = 0;
