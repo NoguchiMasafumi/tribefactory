@@ -79,6 +79,7 @@
                         const companyName = f.properties.N02_004 || "不明な事業者";
                         const lineName = f.properties.N02_003 || "不明な路線";
                         const stationName = f.properties.N02_005 || "";
+                        const stationOrder = parseInt(f.properties.N02_005c, 10) || 0;
                         
                         if (!stationName) return;
 
@@ -93,7 +94,8 @@
                             lineGroups[groupKey].push({
                                 name: stationName,
                                 coords: f.geometry.coordinates,
-                                company: companyName
+                                company: companyName,
+                                sortOrder: stationOrder
                             });
                         }
                     });
@@ -164,19 +166,7 @@
             const rawStations = lineGroups[groupKey];
             const stations = [...rawStations];
             
-            let centerLng = 0, centerLat = 0;
-            stations.forEach(st => {
-                centerLng += st.coords[0];
-                centerLat += st.coords[1];
-            });
-            centerLng /= stations.length;
-            centerLat /= stations.length;
-
-            stations.sort((a, b) => {
-                const angleA = Math.atan2(a.coords[1] - centerLat, a.coords[0] - centerLng);
-                const angleB = Math.atan2(b.coords[1] - centerLat, b.coords[0] - centerLng);
-                return angleA - angleB;
-            });
+            stations.sort((a, b) => a.sortOrder - b.sortOrder);
 
             const perRow = 10;
             const mappedStations = [];
