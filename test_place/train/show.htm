@@ -45,11 +45,11 @@
         };
 
         function getAreaFromCoords(lng, lat) {
-            if (lat >= 37.0 && lng >= 138.0) return "北海道・東北";
-            if (lat >= 34.9 && lat <= 37.0 && lng >= 138.3 && lng <= 141.0) return "関東";
-            if (lat >= 34.5 && lat <= 38.0 && lng >= 135.0 && lng <= 138.3) return "中部";
-            if (lat >= 33.9 && lat <= 35.8 && lng >= 134.0 && lng <= 136.5) return "近畿";
-            if (lat >= 32.0 && lat <= 36.5 && lng >= 132.0 && lng <= 135.0) return "中国・四国";
+            if (lat >= 36.8) return "北海道・東北";
+            if (lat >= 34.5 && lat < 36.8 && lng >= 138.3) return "関東";
+            if (lat >= 34.2 && lat < 36.8 && lng >= 136.2 && lng < 138.3) return "中部";
+            if (lat >= 33.4 && lat < 36.0 && lng >= 134.3 && lng < 136.2) return "近畿";
+            if (lat >= 32.0 && lat < 36.5 && lng >= 130.8 && lng < 134.3) return "中国・四国";
             return "九州・沖縄";
         }
 
