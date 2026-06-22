@@ -7,13 +7,13 @@
 <body style="margin:0;padding:20px;background:#ffffff;">
     <canvas id="inokashiraCanvas" width="900" height="300"></canvas>
     <script>
-        alert("1: スクリプトを開始しました");
+        alert("1: スクリプトを開始しました\n現在のHTMLのURL: " + window.location.href);
         const canvas = document.getElementById('inokashiraCanvas');
         const ctx = canvas.getContext('2d');
 
         fetch('./N02-22_Station.json')
             .then(response => {
-                alert("2: fetchレスポンスを受信しました。ステータス: " + response.status);
+                alert("2: fetchレスポンスを受信しました。ステータス: " + response.status + "\nリクエストURL: " + response.url);
                 if (!response.ok) {
                     throw new Error("HTTPエラー ステータス: " + response.status);
                 }
