@@ -5,22 +5,27 @@
     <title>井の頭線路線図</title>
 </head>
 <body style="margin:0;padding:20px;background:#ffffff;">
-    <canvas id="inokashiraCanvas" width="900" height="300"></canvas>
+    <div id="loadingStatus" style="margin-bottom:10px; font-weight:bold; color:#555;">データを読み込み中...</div>
+    <canvas id="inokashiraCanvas" width="950" height="350"></canvas>
     <script>
-        alert("1: スクリプトを開始しました\n現在のHTMLのURL: " + window.location.href);
         const canvas = document.getElementById('inokashiraCanvas');
         const ctx = canvas.getContext('2d');
+        const loadingStatus = document.getElementById('loadingStatus');
 
-        fetch('./N02-22_Station.json')
-            .then(response => {
-                alert("2: fetchレスポンスを受信しました。ステータス: " + response.status + "\nリクエストURL: " + response.url);
+        // Netlify上に配置されたJSONデータのURL
+        const jsonUrl = '/test_place/train/n02-22_railroadsection.json';
+
+        async function drawInokashiraLine() {
+            try {
+                // 13.6MBの大容量データを取得
+                const response = await fetch(jsonUrl);
                 if (!response.ok) {
-                    throw new Error("HTTPエラー ステータス: " + response.status);
+                    throw new Error(`HTTPエラー! ステータス: ${response.status}`);
                 }
-                return response.json();
-            })
-            .then(data => {
-                alert("3: JSONデータのパースに成功しました。要素数: " + (data.features ? data.features.length : "無し"));
+                const data = await response.json();
+                
+                loadingStatus.textContent = "データを解析中...";
+
                 const order = [
                     "渋谷", "神泉", "駒場東大前", "池ノ上", "下北沢", 
                     "新代田", "東松原", "明大前", "永福町", "西永福", 
@@ -29,26 +34,29 @@
                 ];
 
                 const stationMap = {};
-                let matchCount = 0;
-                data.features.forEach(f => {
-                    if (f.properties && (f.properties.N02_003 === "井の頭線" || f.properties.N02_003 === "京王井の頭線")) {
-                        const name = f.properties.N02_005;
-                        const coords = f.geometry.coordinates;
-                        if (order.includes(name)) {
-                            stationMap[name] = coords;
-                            matchCount++;
+                
+                // features配列から井の頭線のデータを抽出
+                if (data && data.features) {
+                    data.features.forEach(f => {
+                        if (f.properties && (f.properties.N02_003 === "井の頭線" || f.properties.N02_003 === "京王井の頭線")) {
+                            const name = f.properties.N02_005;
+                            const coords = f.geometry.coordinates;
+                            if (order.includes(name)) {
+                                stationMap[name] = coords;
+                            }
                         }
-                    }
-                });
-                alert("4: 井の頭線の該当駅を抽出しました。抽出数: " + matchCount);
+                    });
+                }
 
                 const stations = [];
+                // 画面幅に合わせて綺麗に収まるように座標（X, Y）をマッピング
                 order.forEach((name, index) => {
                     if (stationMap[name]) {
-                        let x = 50 + (index * 50);
+                        let x = 60 + (index * 50);
                         let y = 150;
+                        // 横一列が長くなりすぎないよう、途中で折り返すか位置を調整するロジック
                         if (index > 8) {
-                            x = 50 + ((index - 9) * 100);
+                            x = 60 + ((index - 9) * 100);
                             y = 250;
                         }
                         stations.push({ name: name, x: x, y: y });
@@ -56,14 +64,17 @@
                 });
 
                 if (stations.length === 0) {
-                    alert("エラー: 描画対象の駅データが0件です");
+                    loadingStatus.textContent = "データ内に井の頭線の駅が見つかりませんでした。";
                     return;
                 }
 
-                alert("5: Canvas描画処理を開始します。描画駅数: " + stations.length);
+                // 読み込み表示を消去して描画開始
+                loadingStatus.style.display = 'none';
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+                // 1. 路線（線）の描画ロジック
                 ctx.lineWidth = 8;
-                ctx.strokeStyle = '#3bb2e5';
+                ctx.strokeStyle = '#3bb2e5'; // 井の頭線のライトブルー
                 ctx.lineCap = 'round';
                 ctx.lineJoin = 'round';
 
@@ -74,6 +85,7 @@
                 }
                 ctx.stroke();
 
+                // 2. 駅（丸印と駅名）の描画ロジック
                 stations.forEach((st) => {
                     ctx.beginPath();
                     ctx.arc(st.x, st.y, 6, 0, Math.PI * 2);
@@ -83,16 +95,21 @@
                     ctx.strokeStyle = '#3bb2e5';
                     ctx.stroke();
 
+                    // 駅名のテキスト描画
                     ctx.fillStyle = '#000000';
-                    ctx.font = 'bold 12px sans-serif';
+                    ctx.font = 'bold 11px sans-serif';
                     ctx.textAlign = 'center';
                     ctx.fillText(st.name, st.x, st.y - 15);
                 });
-                alert("6: 全ての描画処理が完了しました");
-            })
-            .catch(err => {
-                alert("エラー発生: " + err.message);
-            });
+
+            } catch (err) {
+                loadingStatus.textContent = "エラーが発生しました: " + err.message;
+                console.error(err);
+            }
+        }
+
+        // 画面読み込み時に自動実行
+        drawInokashiraLine();
     </script>
 </body>
 </html>
