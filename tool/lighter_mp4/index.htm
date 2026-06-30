@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ローカルMP4軽量化ツール (エラー回避版)</title>
+  <title>ローカルMP4軽量化ツール（完全ブラウザ標準版）</title>
   <style>
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -40,7 +40,7 @@
       display: block;
       width: 100%;
       padding: 12px;
-      background-color: #2ecc71;
+      background-color: #3498db;
       color: white;
       border: none;
       border-radius: 6px;
@@ -50,7 +50,7 @@
       transition: background 0.2s;
     }
     button:hover {
-      background-color: #27ae60;
+      background-color: #2980b9;
     }
     button:disabled {
       background-color: #bdc3c7;
@@ -63,7 +63,6 @@
       background-color: #ecf0f1;
       font-size: 14px;
       white-space: pre-line;
-      word-break: break-all;
     }
     .result-video {
       margin-top: 20px;
@@ -76,56 +75,26 @@
 <body>
 
 <div class="container">
-  <h1>MP4軽量化（エラー回避版）</h1>
+  <h1>MP4軽量化（外部接続なし版）</h1>
   
   <div class="input-group">
     <label for="video-input">動画ファイルを選択 (MP4):</label>
     <input type="file" id="video-input" accept="video/mp4">
   </div>
 
-  <button id="compress-btn" disabled>FFmpegを読み込み中...</button>
+  <button id="compress-btn">軽量化を開始</button>
 
-  <div id="status">システム準備中...</div>
+  <div id="status">準備完了。動画を選択してボタンを押してください。</div>
 
   <video id="output-video" class="result-video" controls></video>
 </div>
 
-<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/ffmpeg.umd.js"></script>
-<script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/index.umd.js"></script>
-
 <script>
-  // グローバルオブジェクトからFFmpegのクラスと関数を抽出
-  const { FFmpeg } = window.FFmpegWasm;
-  const { fetchFile } = window.FFmpegUtil;
-  
-  // FFmpegインスタンスの作成
-  const ffmpeg = new FFmpeg();
-
   const inputElement = document.getElementById('video-input');
   const button = document.getElementById('compress-btn');
   const statusDiv = document.getElementById('status');
   const outputVideo = document.getElementById('output-video');
 
-  // 初期化処理
-  async function init() {
-    try {
-      statusDiv.textContent = 'ライブラリをロードしています...\n（初回は数十MBダウンロードするため、10〜20秒かかる場合があります）';
-      
-      // 拡張機能なしでも動く「シングルスレッド版(ffmpeg-core.js)」を明示的に指定してロード
-      await ffmpeg.load({
-        coreURL: 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/esm/ffmpeg-core.js'
-      });
-      
-      statusDiv.textContent = '準備完了！動画を選択して「軽量化を開始」を押してください。';
-      button.textContent = '軽量化を開始';
-      button.disabled = false;
-    } catch (error) {
-      statusDiv.textContent = 'エラー: FFmpegの読み込みに失敗しました。ネット接続を確認するか、コンソールログを確認してください。';
-      console.error(error);
-    }
-  }
-
-  // 軽量化処理
   button.addEventListener('click', async () => {
     const file = inputElement.files[0];
     if (!file) {
@@ -135,56 +104,66 @@
 
     button.disabled = true;
     button.textContent = '処理中...';
-    statusDiv.textContent = '動画を処理システムに読み込んでいます...';
+    statusDiv.textContent = '動画を読み込み中...';
 
-    try {
-      // 1. ファイルをffmpegの仮想フォルダに書き込み (新API: writeFile)
-      await ffmpeg.writeFile('input.mp4', await fetchFile(file));
+    // 1. ビデオ要素を作成して動画を読み込む
+    const video = document.createElement('video');
+    video.src = URL.createObjectURL(file);
+    video.muted = true;
+    video.playsInline = true;
 
-      statusDiv.textContent = '圧縮計算を実行中...\n（シングルスレッド動作のため、少し時間がかかります。ブラウザを開いたままお待ちください）';
+    await new Promise((resolve) => {
+      video.onloadeddata = resolve;
+    });
 
-      // ログの監視設定
-      ffmpeg.on('log', ({ message }) => {
-        if (message.includes('time=')) {
-          statusDiv.textContent = `圧縮実行中...\n${message}`;
-        }
-      });
+    // 2. キャンバスの設定（ここで解像度を下げて軽量化する：例 1280x720）
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = 1280;
+    canvas.height = 720;
 
-      // 2. 圧縮コマンドの実行 (新API: exec)
-      // 解像度を 1280x720 に下げ、CRF(画質係数)を28に設定して容量を削る
-      await ffmpeg.exec([
-        '-i', 'input.mp4',
-        '-vcodec', 'libx264',
-        '-crf', '28',
-        '-s', '1280x720',
-        '-pix_fmt', 'yuv420p',
-        'output.mp4'
-      ]);
+    // 3. 画面の録画機能（MediaRecorder）を準備
+    const stream = canvas.captureStream(30); // 30fps
+    
+    // ブラウザが対応しているエンコード形式を選択
+    let options = { mimeType: 'video/webm; codecs=vp9' };
+    if (MediaRecorder.isTypeSupported('video/mp4;codecs=avc1.42E01E')) {
+      options = { mimeType: 'video/mp4;codecs=avc1.42E01E' };
+    }
 
-      statusDiv.textContent = '圧縮完了！ 出力ファイルを生成しています...';
+    const mediaRecorder = new MediaRecorder(stream, options);
+    const chunks = [];
 
-      // 3. 成果物の読み込み (新API: readFile)
-      const data = await ffmpeg.readFile('output.mp4');
+    mediaRecorder.ondataavailable = (e) => {
+      if (e.data.size > 0) chunks.push(e.data);
+    };
 
-      // 4. Blob URLに変換してビデオタグにセット
-      const videoBlob = new Blob([data.buffer], { type: 'video/mp4' });
-      const videoUrl = URL.createObjectURL(videoBlob);
-      
+    mediaRecorder.onstop = () => {
+      const blob = new Blob(chunks, { type: options.mimeType });
+      const videoUrl = URL.createObjectURL(blob);
       outputVideo.src = videoUrl;
       outputVideo.style.display = 'block';
-
-      statusDiv.textContent = 'すべての処理が完了しました！\n下のプレイヤーで再生確認、または右クリック（スマホは長押し）で「名前を付けて動画を保存」できます。';
-    } catch (e) {
-      statusDiv.textContent = 'エラーが発生しました。動画データが破損しているか、ブラウザのメモリ上限を超えた可能性があります。';
-      console.error(e);
-    } finally {
+      statusDiv.textContent = `軽量化が完了しました！\n（形式: ${options.mimeType}）\nプレイヤーの下部メニュー、または右クリックから保存できます。`;
       button.disabled = false;
       button.textContent = '軽量化を開始';
-    }
-  });
+    };
 
-  // ページ読み込み時に初期化を実行
-  init();
+    // 4. 再生しながらキャンバスに描画（高速で処理）
+    statusDiv.textContent = '動画を再エンコード中...（実時間かかります）';
+    mediaRecorder.start();
+    video.play();
+
+    function drawFrame() {
+      if (video.ended || video.paused) {
+        mediaRecorder.stop();
+        return;
+      }
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      requestAnimationFrame(drawFrame);
+    }
+    
+    drawFrame();
+  });
 </script>
 
 </body>
