@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ローカルMP4軽量化ツール</title>
+  <title>ローカルMP4軽量化ツール (エラー回避版)</title>
   <style>
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -40,7 +40,7 @@
       display: block;
       width: 100%;
       padding: 12px;
-      background-color: #3498db;
+      background-color: #2ecc71;
       color: white;
       border: none;
       border-radius: 6px;
@@ -50,7 +50,7 @@
       transition: background 0.2s;
     }
     button:hover {
-      background-color: #2980b9;
+      background-color: #27ae60;
     }
     button:disabled {
       background-color: #bdc3c7;
@@ -63,6 +63,7 @@
       background-color: #ecf0f1;
       font-size: 14px;
       white-space: pre-line;
+      word-break: break-all;
     }
     .result-video {
       margin-top: 20px;
@@ -75,7 +76,7 @@
 <body>
 
 <div class="container">
-  <h1>MP4軽量化（ブラウザ完結版）</h1>
+  <h1>MP4軽量化（エラー回避版）</h1>
   
   <div class="input-group">
     <label for="video-input">動画ファイルを選択 (MP4):</label>
@@ -89,11 +90,16 @@
   <video id="output-video" class="result-video" controls></video>
 </div>
 
-<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
+<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/ffmpeg.umd.js"></script>
+<script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/index.umd.js"></script>
+
 <script>
+  // グローバルオブジェクトからFFmpegのクラスと関数を抽出
+  const { FFmpeg } = window.FFmpegWasm;
+  const { fetchFile } = window.FFmpegUtil;
+  
   // FFmpegインスタンスの作成
-  const { createFFmpeg, fetchFile } = FFmpeg;
-  const ffmpeg = createFFmpeg({ log: true });
+  const ffmpeg = new FFmpeg();
 
   const inputElement = document.getElementById('video-input');
   const button = document.getElementById('compress-btn');
@@ -103,13 +109,18 @@
   // 初期化処理
   async function init() {
     try {
-      statusDiv.textContent = 'ライブラリをロードしています...（数十MBあるため数秒かかります）';
-      await ffmpeg.load();
+      statusDiv.textContent = 'ライブラリをロードしています...\n（初回は数十MBダウンロードするため、10〜20秒かかる場合があります）';
+      
+      // 拡張機能なしでも動く「シングルスレッド版(ffmpeg-core.js)」を明示的に指定してロード
+      await ffmpeg.load({
+        coreURL: 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/esm/ffmpeg-core.js'
+      });
+      
       statusDiv.textContent = '準備完了！動画を選択して「軽量化を開始」を押してください。';
       button.textContent = '軽量化を開始';
       button.disabled = false;
     } catch (error) {
-      statusDiv.textContent = 'エラー: FFmpegの読み込みに失敗しました。\nローカルサーバー（Live Server等）経由で開いているか確認してください。';
+      statusDiv.textContent = 'エラー: FFmpegの読み込みに失敗しました。ネット接続を確認するか、コンソールログを確認してください。';
       console.error(error);
     }
   }
@@ -127,33 +138,33 @@
     statusDiv.textContent = '動画を処理システムに読み込んでいます...';
 
     try {
-      // 1. ファイルをffmpegの仮想フォルダに書き込み
-      ffmpeg.FS('writeFile', 'input.mp4', await fetchFile(file));
+      // 1. ファイルをffmpegの仮想フォルダに書き込み (新API: writeFile)
+      await ffmpeg.writeFile('input.mp4', await fetchFile(file));
 
-      statusDiv.textContent = '圧縮計算を実行中...\n（動画の長さによっては数分かかります。ブラウザを閉じないでください）';
+      statusDiv.textContent = '圧縮計算を実行中...\n（シングルスレッド動作のため、少し時間がかかります。ブラウザを開いたままお待ちください）';
 
-      // 進捗ログを画面に表示
-      ffmpeg.setLogger(({ type, message }) => {
+      // ログの監視設定
+      ffmpeg.on('log', ({ message }) => {
         if (message.includes('time=')) {
           statusDiv.textContent = `圧縮実行中...\n${message}`;
         }
       });
 
-      // 2. 圧縮コマンドの実行
+      // 2. 圧縮コマンドの実行 (新API: exec)
       // 解像度を 1280x720 に下げ、CRF(画質係数)を28に設定して容量を削る
-      await ffmpeg.run(
+      await ffmpeg.exec([
         '-i', 'input.mp4',
         '-vcodec', 'libx264',
         '-crf', '28',
         '-s', '1280x720',
-        '-pix_fmt', 'yuv420p', // 再生互換性を高める設定
+        '-pix_fmt', 'yuv420p',
         'output.mp4'
-      );
+      ]);
 
       statusDiv.textContent = '圧縮完了！ 出力ファイルを生成しています...';
 
-      // 3. 成果物の読み込み
-      const data = ffmpeg.FS('readFile', 'output.mp4');
+      // 3. 成果物の読み込み (新API: readFile)
+      const data = await ffmpeg.readFile('output.mp4');
 
       // 4. Blob URLに変換してビデオタグにセット
       const videoBlob = new Blob([data.buffer], { type: 'video/mp4' });
@@ -162,9 +173,9 @@
       outputVideo.src = videoUrl;
       outputVideo.style.display = 'block';
 
-      statusDiv.textContent = 'すべての処理が完了しました！下のプレイヤーで確認・保存（右クリックなど）できます。';
+      statusDiv.textContent = 'すべての処理が完了しました！\n下のプレイヤーで再生確認、または右クリック（スマホは長押し）で「名前を付けて動画を保存」できます。';
     } catch (e) {
-      statusDiv.textContent = 'エラーが発生しました。動画が大きすぎるか、ブラウザのメモリ上限に達した可能性があります。';
+      statusDiv.textContent = 'エラーが発生しました。動画データが破損しているか、ブラウザのメモリ上限を超えた可能性があります。';
       console.error(e);
     } finally {
       button.disabled = false;
