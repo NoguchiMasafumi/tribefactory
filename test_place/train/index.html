@@ -8,7 +8,7 @@
         #map { height: 100vh; width: 100%; }
         body { margin: 0; padding: 0; }
         .leaflet-tile { filter: opacity(0.4) grayscale(0.8); }
-        .huge-marker { background: #ffffff; border: 3px solid #000000; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.3); }
+        .huge-marker { background: #ffffff !important; border: 5px solid #000000 !important; border-radius: 50%; box-shadow: 0 0 15px rgba(0,0,0,0.5); z-index: 1000 !important; }
     </style>
 </head>
 <body>
@@ -43,8 +43,8 @@
 
             const bigIcon = L.divIcon({
                 className: 'huge-marker',
-                iconSize: [30, 30],
-                iconAnchor: [15, 15]
+                iconSize: [40, 40],
+                iconAnchor: [20, 20]
             });
 
             L.marker([centerLat, centerLng], { icon: bigIcon })
