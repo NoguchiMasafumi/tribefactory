@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>西永福駅の表示</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         #map { height: 100vh; width: 100%; }
         body { margin: 0; padding: 0; }
@@ -10,8 +11,15 @@
 </head>
 <body>
     <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         async function initMap() {
+            const map = L.map('map').setView([35.67963, 139.6391], 16);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+
             const response = await fetch('N02-22_Station.geojson');
             const geojsonData = await response.json();
             
@@ -21,20 +29,15 @@
             const coords = target.geometry.coordinates;
             const centerLng = (coords[0][0] + coords[1][0]) / 2;
             const centerLat = (coords[0][1] + coords[1][1]) / 2;
-            const stationPos = { lat: centerLat, lng: centerLng };
 
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 16,
-                center: stationPos,
-            });
-
-            new google.maps.Marker({
-                position: stationPos,
-                map: map,
-                title: target.properties.N02_005 + "駅 (" + target.properties.N02_003 + ")"
-            });
+            L.marker([centerLat, centerLng])
+                .addTo(map)
+                .bindPopup(target.properties.N02_005 + "駅 (" + target.properties.N02_003 + ")")
+                .openPopup();
+                
+            map.setView([centerLat, centerLng], 16);
         }
+        initMap();
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>
