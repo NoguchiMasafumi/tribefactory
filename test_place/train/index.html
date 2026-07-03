@@ -7,6 +7,7 @@
     <style>
         #map { height: 100vh; width: 100%; }
         body { margin: 0; padding: 0; }
+        .leaflet-tile { filter: opacity(0.5) grayscale(0.5); }
     </style>
 </head>
 <body>
@@ -29,6 +30,15 @@
             const coords = target.geometry.coordinates;
             const centerLng = (coords[0][0] + coords[1][0]) / 2;
             const centerLat = (coords[0][1] + coords[1][1]) / 2;
+            
+            const latlngs = coords.map(coord => [coord[1], coord[0]]);
+
+            L.polyline(latlngs, {
+                color: '#ff0000',
+                weight: 12,
+                opacity: 0.8,
+                lineCap: 'round'
+            }).addTo(map);
 
             L.marker([centerLat, centerLng])
                 .addTo(map)
