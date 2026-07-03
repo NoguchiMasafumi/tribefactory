@@ -7,7 +7,8 @@
     <style>
         #map { height: 100vh; width: 100%; }
         body { margin: 0; padding: 0; }
-        .leaflet-tile { filter: opacity(0.5) grayscale(0.5); }
+        .leaflet-tile { filter: opacity(0.4) grayscale(0.8); }
+        .huge-marker { background: #ff0000; border: 3px solid #ffffff; border-radius: 50%; box-shadow: 0 0 15px rgba(255,0,0,0.6); }
     </style>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         async function initMap() {
-            const map = L.map('map').setView([35.67963, 139.6391], 16);
+            const map = L.map('map').setView([35.67963, 139.6391], 17);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; OpenStreetMap contributors'
@@ -35,17 +36,23 @@
 
             L.polyline(latlngs, {
                 color: '#ff0000',
-                weight: 12,
-                opacity: 0.8,
+                weight: 16,
+                opacity: 0.9,
                 lineCap: 'round'
             }).addTo(map);
 
-            L.marker([centerLat, centerLng])
+            const bigIcon = L.divIcon({
+                className: 'huge-marker',
+                iconSize: [24, 24],
+                iconAnchor: [12, 12]
+            });
+
+            L.marker([centerLat, centerLng], { icon: bigIcon })
                 .addTo(map)
-                .bindPopup(target.properties.N02_005 + "駅 (" + target.properties.N02_003 + ")")
+                .bindPopup("<b>" + target.properties.N02_005 + "駅</b><br>" + target.properties.N02_003)
                 .openPopup();
                 
-            map.setView([centerLat, centerLng], 16);
+            map.setView([centerLat, centerLng], 17);
         }
         initMap();
     </script>
