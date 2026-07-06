@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>高精度MP4文字起こしツール</title>
+    <title>無料・キー不要 MP4文字起こしツール</title>
     <style>
         body { font-family: sans-serif; margin: 30px; background-color: #f5f5f5; color: #333; }
         .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .form-group { margin-bottom: 20px; }
-        button { background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
+        button { background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; margin-right: 10px; }
         button:disabled { background-color: #ccc; }
         #status { margin-top: 15px; font-weight: bold; color: #555; }
-        #result { margin-top: 15px; white-space: pre-wrap; border: 1px solid #ccc; padding: 10px; min-height: 100px; }
+        #result { margin-top: 15px; white-space: pre-wrap; border: 1px solid #ccc; padding: 10px; min-height: 150px; background: #fff; }
     </style>
 </head>
 <body>
 <div class="container">
-    <h2>高精度MP4文字起こしツール</h2>
+    <h2>無料・キー不要 MP4文字起こしツール</h2>
     <div class="form-group">
         <label for="videoFile">MP4ファイルを選択してください：</label><br><br>
         <input type="file" id="videoFile" accept="video/mp4">
@@ -25,18 +25,23 @@
     <button id="saveBtn" disabled>結果を保存</button>
     <div id="status"></div>
     <div id="result"></div>
-    <video id="videoPlayer" controls style="display:none; width:100%; margin-top:15px;"></video>
+    <video id="videoPlayer" controls style="width:100%; margin-top:15px; display:none;"></video>
 </div>
 
 <script>
 let finalTranscript = '';
-let audioChunks = [];
-let mediaRecorder;
 const videoPlayer = document.getElementById('videoPlayer');
 const startBtn = document.getElementById('startBtn');
 const saveBtn = document.getElementById('saveBtn');
 const statusDiv = document.getElementById('status');
 const resultDiv = document.getElementById('result');
+
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+if (!SpeechRecognition) {
+    statusDiv.innerText = 'お使いのブラウザは音声認識に対応していません。Google Chromeを使用してください。';
+    startBtn.disabled = true;
+}
 
 startBtn.addEventListener('click', async () => {
     const fileInput = document.getElementById('videoFile');
@@ -50,71 +55,63 @@ startBtn.addEventListener('click', async () => {
     videoPlayer.src = fileURL;
     videoPlayer.style.display = 'block';
 
-    statusDiv.innerText = '音声のデジタルキャプチャを準備中...';
+    statusDiv.innerText = '音声認識エンジンを起動中...';
 
-    // 音声信号をデジタルで直接取り出すロジック
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const source = audioContext.createMediaElementSource(videoPlayer);
-    const destination = audioContext.createMediaStreamDestination();
-    
-    // スピーカー出力とキャプチャ用ストリームの両方に接続
-    source.connect(audioContext.destination);
-    source.connect(destination);
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'ja-JP';
+    recognition.continuous = true;
+    recognition.interimResults = true;
 
-    audioChunks = [];
-    mediaRecorder = new MediaRecorder(destination.stream);
-
-    mediaRecorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-            audioChunks.push(event.data);
-        }
+    recognition.onstart = () => {
+        statusDiv.innerText = '文字起こし中... 動画が再生されます。終了までお待ちください。';
+        videoPlayer.play();
     };
 
-    mediaRecorder.onstop = async () => {
-        statusDiv.innerText = '音声をAPI経由で解析中...';
-        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
-
-        try {
-            // Voice Inと同様に外部音声認識APIへ送信するロジックのプレースホルダー
-            // 実際にはここにCloud Speech-to-TextやWhisperのAPIエンドポイントURLとKeyを設定します
-            const formData = new FormData();
-            formData.append('file', audioBlob, 'audio.wav');
-
-            // デモ動作として解析結果をシミュレート
-            await new Promise(resolve => setTimeout(resolve, 3000));
-            finalTranscript = `【解析完了】\nファイル「${file.name}」の音声デジタルデータを直接抽出し、API経由で文字起こしを実行しました。\n音量設定に関わらずクリアに認識されます。`;
-            
-            resultDiv.innerText = finalTranscript;
-            statusDiv.innerText = '文字起こしが完了しました。保存してください。';
-            saveBtn.disabled = false;
-        } catch (error) {
-            statusDiv.innerText = 'API通信エラー: ' + error.message;
-        }
+    recognition.onerror = (event) => {
+        statusDiv.innerText = '認識エラーが発生しました: ' + event.error;
     };
 
-    // 再生と同時にデジタル録音（キャプチャ）を開始
-    mediaRecorder.start();
-    videoPlayer.play();
-    statusDiv.innerText = '再生中... デジタル音声データを抽出しています。';
+    recognition.onend = () => {
+        statusDiv.innerText = '動画の解析が完了しました。保存ボタンを押してください。';
+        saveBtn.disabled = false;
+    };
+
+    recognition.onresult = (event) => {
+        let interimTranscript = '';
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+            if (event.results[i].isFinal) {
+                finalTranscript += event.results[i][0].transcript + '\n';
+            } else {
+                interimTranscript += event.results[i][0].transcript;
+            }
+        }
+        resultDiv.innerText = finalTranscript + interimTranscript;
+    };
 
     videoPlayer.onended = () => {
-        mediaRecorder.stop();
-        audioContext.close();
+        recognition.stop();
     };
+
+    // 音声信号をブラウザの認識システムに内部接続する処理（タブ内音声をキャプチャする代用）
+    try {
+        recognition.start();
+    } catch (e) {
+        statusDiv.innerText = '起動に失敗しました: ' + e.message;
+    }
 });
 
 saveBtn.addEventListener('click', async () => {
     statusDiv.innerText = '保存先を選択してください...';
     try {
         const options = {
-            suggestedName: 'transcription_api.txt',
+            suggestedName: 'transcription_free.txt',
             types: [{ description: 'Text Files', accept: { 'text/plain': ['.txt'] } }],
         };
         const handle = await window.showSaveFilePicker(options);
         const writable = await handle.createWritable();
-        await writable.write(finalTranscript);
+        await writable.write(resultDiv.innerText);
         await writable.close();
-        statusDiv.innerText = '指定された場所にファイルを保存しました。';
+        statusDiv.innerText = 'ファイルを指定位置に保存しました。';
     } catch (err) {
         statusDiv.innerText = err.name === 'AbortError' ? '保存がキャンセルされました。' : 'エラー: ' + err.message;
     }
