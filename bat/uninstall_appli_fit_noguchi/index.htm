@@ -105,13 +105,13 @@ Write-Host "`n[3/3] Applying Registry modifications and restarting Explorer..."
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings" /v IsDynamicSearchBoxEnabled /t REG_DWORD /d 0 /f | Out-Null
 REG ADD "HKCU\Software\Policies\Microsoft\Windows\Windows Search" /v EnableDynamicContentInWSB /t REG_DWORD /d 0 /f | Out-Null
 
-
-
+# Disable Hibernation and delete hiberfil.sys
+powercfg /h off
 
 Write-Host "`n--- All uninstall processes completed. ---"
 
 Read-Host "Press Enter to exit."
-   
+    
 </code></pre>
     
 </aside>
