@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Googleスプレッドシート URL生成ツール</title>
+<style>
+body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
+label { display: block; margin-top: 5px; font-weight: bold; }
+input[type="text"] { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+.result { margin-top: 20px; }
+.url-item { margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9; word-break: break-all; }
+.url-title { font-weight: bold; margin-bottom: 5px; }
+a { color: #1a73e8; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+
+.row-group { display: table; width: 100%; max-width: 600px; margin-bottom: 0; }
+.col-7 { display: table-cell; width: 70%; padding-right: 15px; vertical-align: top; }
+.col-3 { display: table-cell; width: 30%; padding-right: 15px; vertical-align: top; }
+.col-3:last-child, .col-7:last-child { padding-right: 0; }
+.col-33 { display: table-cell; width: 33.33%; padding-right: 15px; vertical-align: top; }
+.col-33:last-child { padding-right: 0; }
+
+.sql-card { margin-bottom: 15px; padding: 10px; border: 1px dashed #007bff; background-color: #f0f7ff; max-width: 600px; box-sizing: border-box; }
+</style>
+</head>
+<body>
+
+<div class="row-group" style="margin-bottom: 15px;">
+  <div class="col-7">
+    <label for="spreadId">スプレッドシートID:</label>
+    <input type="text" id="spreadId" value="dUmmy_SpreadId-1234_dUmmy_SpreadId-1234_dUmm" oninput="generateUrls()">
+  </div>
+  <div class="col-3">
+    <label for="sheetId">シートID(gid):</label>
+    <input type="text" id="sheetId" value="123456789" oninput="generateUrls()">
+  </div>
+</div>
+
+<div class="result" id="resultArea">
+  <div class="url-item">
+    <div class="url-title">通常（権限ありなし共通） edit 型</div>
+    <a id="url0"></a>
+  </div>
+  <div class="url-item">
+    <div class="url-title">html版全シート htmlview 型</div>
+    <a id="url1"></a>
+  </div>
+  <div class="url-item">
+    <div class="url-title">シート単体html htmlembed 型</div>
+    <a id="url2"></a>
+  </div>
+  <div class="url-item">
+    <div class="url-title">シート単体html 範囲指定 htmlembed 型</div>
+    <a id="url3"></a>
+  </div>
+  <div class="url-item">
+    <div class="url-title">シート単体html 列行表示あり htmlembed 型</div>
+    <a id="url4"></a>
+  </div>
+  <div class="url-item">
+    <div class="url-title">シート単体html全幅 out:html 型</div>
+    <a id="url5"></a>
+  </div>
+
+  <div class="sql-card">
+    <div class="url-title" style="margin-bottom: 5px;">SQL設定パラメータ</div>
+    <div class="row-group">
+      <div class="col-33">
+        <label for="sqlSelect">SQL 取得列 (例: B,C,D):</label>
+        <input type="text" id="sqlSelect" value="B,C,D" oninput="generateUrls()">
+      </div>
+      <div class="col-33">
+        <label for="sqlWhereCol">SQL 条件列 (例: B):</label>
+        <input type="text" id="sqlWhereCol" value="B" oninput="generateUrls()">
+      </div>
+      <div class="col-33">
+        <label for="sqlWhereVal">SQL 条件値 (例: hoge):</label>
+        <input type="text" id="sqlWhereVal" value="hoge" oninput="generateUrls()">
+      </div>
+    </div>
+  </div>
+
+  <div class="url-item">
+    <div class="url-title">シート単体html全幅 SQLあり out:html 型</div>
+    <a id="url6"></a>
+  </div>
+</div>
+
+<script>
+function openRawUrl(url) {
+  window.open(url, '_blank');
+}
+
+function generateUrls() {
+  const spreadId = document.getElementById('spreadId').value.trim();
+  const sheetId = document.getElementById('sheetId').value.trim();
+  const sqlSelectEl = document.getElementById('sqlSelect');
+  const sqlWhereColEl = document.getElementById('sqlWhereCol');
+  const sqlWhereValEl = document.getElementById('sqlWhereVal');
+
+  const sqlSelect = sqlSelectEl ? sqlSelectEl.value.trim() : 'B,C,D';
+  const sqlWhereCol = sqlWhereColEl ? sqlWhereColEl.value.trim() : 'B';
+  const sqlWhereVal = sqlWhereValEl ? sqlWhereValEl.value.trim() : 'hoge';
+
+  let tqParam = '';
+  if (sqlSelect) {
+    tqParam = `SELECT ${sqlSelect}`;
+    if (sqlWhereCol && sqlWhereVal) {
+      tqParam += ` WHERE ${sqlWhereCol}='${sqlWhereVal}'`;
+    }
+  }
+
+  const urls = [
+    `https://docs.google.com/spreadsheets/d/${spreadId}/edit#gid=${sheetId}`,
+    `https://docs.google.com/spreadsheets/d/${spreadId}/htmlview#gid=${sheetId}`,
+    `https://docs.google.com/spreadsheets/u/0/d/${spreadId}/htmlembed/sheet?headers=false&gid=${sheetId}`,
+    `https://docs.google.com/spreadsheets/u/0/d/${spreadId}/htmlembed/sheet?headers=false&range=A1:F50&gid=${sheetId}`,
+    `https://docs.google.com/spreadsheets/u/0/d/${spreadId}/htmlembed/sheet?headers=true&gid=${sheetId}`,
+    `https://docs.google.com/spreadsheets/u/0/d/${spreadId}/gviz/tq?tqx=out:html&gid=${sheetId}`,
+    `https://docs.google.com/spreadsheets/u/0/d/${spreadId}/gviz/tq?tqx=out:html&gid=${sheetId}${tqParam ? `&tq=${tqParam}` : ''}`
+  ];
+
+  urls.forEach((url, index) => {
+    const el = document.getElementById(`url${index}`);
+    if (el) {
+      if (!spreadId || !sheetId) {
+        el.textContent = '';
+        el.onclick = null;
+      } else {
+        el.textContent = url;
+        el.onclick = () => openRawUrl(url);
+      }
+    }
+  });
+}
+
+generateUrls();
+</script>
+
+</body>
+</html>
