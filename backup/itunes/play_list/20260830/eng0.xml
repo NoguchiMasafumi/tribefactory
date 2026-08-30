@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2026-08-30T10:39:17Z</date>
+	<key>Application Version</key><string>12.13.9.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>EEAD44C58E7818E5</string>
+	<key>Tracks</key>
+	<dict>
+		<key>2127</key>
+		<dict>
+			<key>Track ID</key><integer>2127</integer>
+			<key>Name</key><string>01_05_Walk This Way</string>
+			<key>Artist</key><string>Aerosmith</string>
+			<key>Album Artist</key><string>Aerosmith</string>
+			<key>Composer</key><string>J Perry/Tyler</string>
+			<key>Album</key><string>O, Yeah! Ultimate Aerosmith Hits [Disc 1]</string>
+			<key>Genre</key><string>ロック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4398479</integer>
+			<key>Total Time</key><integer>219794</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>1975</integer>
+			<key>Date Modified</key><date>2023-08-19T04:32:45Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string> 00000000 00000210 00000870 000000000093DC80 00000000 0043031A 00000000 00000000 00000000 00000000 00000000 00000000</string>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3864961652</integer>
+			<key>Play Date UTC</key><date>2026-06-21T23:27:32Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T10:16:35Z</date>
+			<key>Persistent ID</key><string>0DE1A4612A428E09</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Aerosmith/1-05%20Walk%20This%20Way.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2185</key>
+		<dict>
+			<key>Track ID</key><integer>2185</integer>
+			<key>Name</key><string>Stand By Me</string>
+			<key>Artist</key><string>Ben E. King</string>
+			<key>Album Artist</key><string>Ben E King</string>
+			<key>Album</key><string>Ben E King</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4265214</integer>
+			<key>Total Time</key><integer>177658</integer>
+			<key>Date Modified</key><date>2021-02-28T13:51:10Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>19</integer>
+			<key>Play Date</key><integer>3869824551</integer>
+			<key>Play Date UTC</key><date>2026-08-17T06:15:51Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T10:22:51Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>3544AF66E7D3CA6D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Ben%20E%20King/Stand%20By%20Me.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2235</key>
+		<dict>
+			<key>Track ID</key><integer>2235</integer>
+			<key>Name</key><string>Cant take my eyes off you</string>
+			<key>Artist</key><string>boys town gang</string>
+			<key>Album Artist</key><string>VARIETE</string>
+			<key>Album</key><string>les 100 plus grands tubes pour faire la fete</string>
+			<key>Genre</key><string>Divers</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3641798</integer>
+			<key>Total Time</key><integer>227317</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Date Modified</key><date>2023-08-26T07:46:56Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>13</integer>
+			<key>Play Date</key><integer>3864962109</integer>
+			<key>Play Date UTC</key><date>2026-06-21T23:35:09Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-02-05T10:05:14Z</date>
+			<key>Persistent ID</key><string>F50F42FB42AA6FF9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Boys%20Town%20Gang/Cant_take_my_eyes_off_you.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2239</key>
+		<dict>
+			<key>Track ID</key><integer>2239</integer>
+			<key>Name</key><string>My Heart Will Go On</string>
+			<key>Artist</key><string>Céline Dion</string>
+			<key>Album Artist</key><string>Celine Dion</string>
+			<key>Album</key><string>Let's Talk About Love</string>
+			<key>Genre</key><string>Pop;Soundtrack</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6641317</integer>
+			<key>Total Time</key><integer>275722</integer>
+			<key>Date Modified</key><date>2023-09-13T08:25:19Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3867394188</integer>
+			<key>Play Date UTC</key><date>2026-07-20T03:09:48Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>C625EF2A64320575</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Celine%20Dion/1995_01_My%20Heart%20Will%20Go%20On.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2269</key>
+		<dict>
+			<key>Track ID</key><integer>2269</integer>
+			<key>Name</key><string>To Love You More</string>
+			<key>Artist</key><string>Celine Dion</string>
+			<key>Album Artist</key><string>Celine Dion</string>
+			<key>Album</key><string>All the Way: A Decade of Song [SACD]</string>
+			<key>Genre</key><string>ロック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4512456</integer>
+			<key>Total Time</key><integer>282383</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2021-06-03T13:44:48Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3864696354</integer>
+			<key>Play Date UTC</key><date>2026-06-18T21:45:54Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2026-06-16T10:19:24Z</date>
+			<key>Persistent ID</key><string>2BABA720AC9EBAA4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Celine%20Dion/1999_01_07%20To%20Love%20You%20More.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2427</key>
+		<dict>
+			<key>Track ID</key><integer>2427</integer>
+			<key>Name</key><string>cant give you anything</string>
+			<key>Artist</key><string>Gatsby</string>
+			<key>Album Artist</key><string>Gatsby</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5191037</integer>
+			<key>Total Time</key><integer>215856</integer>
+			<key>Date Modified</key><date>2021-07-22T08:49:23Z</date>
+			<key>Date Added</key><date>2023-08-27T05:27:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>15</integer>
+			<key>Play Date</key><integer>3867392687</integer>
+			<key>Play Date UTC</key><date>2026-07-20T02:44:47Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-06-04T10:34:20Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E92AFFC63454AB8C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Gatsby/cant%20give%20you%20anything.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2603</key>
+		<dict>
+			<key>Track ID</key><integer>2603</integer>
+			<key>Name</key><string>Open Your Heart</string>
+			<key>Artist</key><string>Madonna</string>
+			<key>Album Artist</key><string>Madonna</string>
+			<key>Composer</key><string>Gardner Cole, Madonna, Peter Rafelson</string>
+			<key>Album</key><string>The Immaculate Collection</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4626797</integer>
+			<key>Total Time</key><integer>231209</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2021-06-03T13:15:33Z</date>
+			<key>Date Added</key><date>2023-08-27T05:29:23Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string> 00000000 00000210 00000B1C 00000000009B8854 00000000 00467EF0 00000000 00000000 00000000 00000000 00000000 00000000</string>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3849445012</integer>
+			<key>Play Date UTC</key><date>2025-12-24T09:16:52Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-07-21T22:51:06Z</date>
+			<key>Sort Album</key><string>Immaculate Collection</string>
+			<key>Persistent ID</key><string>FAE4B4BAF340B0A4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Madonna/10%20Open%20Your%20Heart.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2625</key>
+		<dict>
+			<key>Track ID</key><integer>2625</integer>
+			<key>Name</key><string>What's Going On</string>
+			<key>Artist</key><string>Marvin Gaye</string>
+			<key>Album Artist</key><string>Marvin Gaye</string>
+			<key>Composer</key><string>Al Cleveland/Marvin Gaye/Renaldo Benson</string>
+			<key>Album</key><string>What's Going On</string>
+			<key>Genre</key><string>Soul and R&#38;B</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3652921</integer>
+			<key>Total Time</key><integer>227996</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>1971</integer>
+			<key>Date Modified</key><date>2023-08-26T07:54:41Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3861517091</integer>
+			<key>Play Date UTC</key><date>2026-05-13T02:38:11Z</date>
+			<key>Persistent ID</key><string>A807DCFEFD6FC843</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Marvin%20Gaye/What%E2%80%99s%20Going%20On.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2743</key>
+		<dict>
+			<key>Track ID</key><integer>2743</integer>
+			<key>Name</key><string>DON'T LOOK BACK IN ANGER</string>
+			<key>Artist</key><string>OASIS</string>
+			<key>Album Artist</key><string>MAX BEST</string>
+			<key>Composer</key><string>ホンダCR-V (CM曲)</string>
+			<key>Album</key><string>MAX BEST</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4638390</integer>
+			<key>Total Time</key><integer>289619</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Date Modified</key><date>2023-09-13T08:31:37Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3864963974</integer>
+			<key>Play Date UTC</key><date>2026-06-22T00:06:14Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-02-28T13:29:51Z</date>
+			<key>Persistent ID</key><string>8D08E5B6EB082DF7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/OASIS/10%20DON'T%20LOOK%20BACK%20IN%20ANGER.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2745</key>
+		<dict>
+			<key>Track ID</key><integer>2745</integer>
+			<key>Name</key><string>Whatever</string>
+			<key>Artist</key><string>OASIS</string>
+			<key>Album Artist</key><string>OASIS</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9090281</integer>
+			<key>Total Time</key><integer>378312</integer>
+			<key>Date Modified</key><date>2021-04-11T05:59:45Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>13</integer>
+			<key>Play Date</key><integer>3864367566</integer>
+			<key>Play Date UTC</key><date>2026-06-15T02:26:06Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2024-02-28T13:23:58Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7D663F8F4C18C029</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/OASIS/Whatever.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2753</key>
+		<dict>
+			<key>Track ID</key><integer>2753</integer>
+			<key>Name</key><string>Ill be missing you short</string>
+			<key>Artist</key><string>Puff Daddy</string>
+			<key>Album Artist</key><string>Puff Daddy</string>
+			<key>Album</key><string>No Way Out</string>
+			<key>Genre</key><string>Rap &#38; Hip-Hop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4599333</integer>
+			<key>Total Time</key><integer>209763</integer>
+			<key>Track Number</key><integer>16</integer>
+			<key>Year</key><integer>1997</integer>
+			<key>Date Modified</key><date>2021-04-20T00:04:37Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>175</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>15</integer>
+			<key>Play Date</key><integer>3867385835</integer>
+			<key>Play Date UTC</key><date>2026-07-20T00:50:35Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-06-04T12:34:32Z</date>
+			<key>Persistent ID</key><string>9AB0672368990BFE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Puff%20Daddy/Ill%20be%20missing%20you%20short.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2755</key>
+		<dict>
+			<key>Track ID</key><integer>2755</integer>
+			<key>Name</key><string>I Was Born To Love You</string>
+			<key>Artist</key><string>Queen</string>
+			<key>Album Artist</key><string>Queen</string>
+			<key>Album</key><string>Queen</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7092092</integer>
+			<key>Total Time</key><integer>295444</integer>
+			<key>Date Modified</key><date>2021-02-19T13:47:42Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3867385235</integer>
+			<key>Play Date UTC</key><date>2026-07-20T00:40:35Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2026-06-16T10:19:08Z</date>
+			<key>Persistent ID</key><string>AC1FA8432563D122</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Queen/I%20Was%20Born%20To%20Love%20You.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2829</key>
+		<dict>
+			<key>Track ID</key><integer>2829</integer>
+			<key>Name</key><string>Real Love</string>
+			<key>Artist</key><string>SPEECH</string>
+			<key>Album Artist</key><string>SPEECH</string>
+			<key>Album</key><string>Love Life Music</string>
+			<key>Genre</key><string>Contemporary Hip Hop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>10532366</integer>
+			<key>Total Time</key><integer>329351</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2005</integer>
+			<key>Date Modified</key><date>2023-08-26T07:10:59Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3864370204</integer>
+			<key>Play Date UTC</key><date>2026-06-15T03:10:04Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2026-06-16T10:18:00Z</date>
+			<key>Persistent ID</key><string>3107DE40C8649D9E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/SPEECH/03%20Real%20Love.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2879</key>
+		<dict>
+			<key>Track ID</key><integer>2879</integer>
+			<key>Name</key><string>Santeria</string>
+			<key>Artist</key><string>SUBLIME</string>
+			<key>Album Artist</key><string>SUBLIME</string>
+			<key>Composer</key><string>Brad Nowell/Bud Gaugh/Eric Wilson</string>
+			<key>Album</key><string>Greatest Hits</string>
+			<key>Genre</key><string>オルタナティプ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2928690</integer>
+			<key>Total Time</key><integer>183170</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>1999</integer>
+			<key>Date Modified</key><date>2023-08-26T07:11:44Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3869227688</integer>
+			<key>Play Date UTC</key><date>2026-08-10T08:28:08Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2026-05-04T10:25:25Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>C69C2136931FC78A</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Sublime/Santeria.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2903</key>
+		<dict>
+			<key>Track ID</key><integer>2903</integer>
+			<key>Name</key><string>I Want You Back</string>
+			<key>Artist</key><string>The Jackson 5</string>
+			<key>Album Artist</key><string>The Jackson 5</string>
+			<key>Album</key><string>Motown 50</string>
+			<key>Genre</key><string>Soul; Pop; Funk</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4335912</integer>
+			<key>Total Time</key><integer>179376</integer>
+			<key>Date Modified</key><date>2021-04-12T08:32:43Z</date>
+			<key>Date Added</key><date>2023-08-27T05:33:59Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3864956116</integer>
+			<key>Play Date UTC</key><date>2026-06-21T21:55:16Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:12:10Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album Artist</key><string>Jackson 5</string>
+			<key>Sort Artist</key><string>Jackson 5</string>
+			<key>Persistent ID</key><string>DB69AB976C34DE35</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/The%20Jackson%205/I%20Want%20You%20Back.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2905</key>
+		<dict>
+			<key>Track ID</key><integer>2905</integer>
+			<key>Name</key><string>She's A Rainbow</string>
+			<key>Artist</key><string>The Rolling Stones</string>
+			<key>Album Artist</key><string>The Rolling Stones</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6050735</integer>
+			<key>Total Time</key><integer>251496</integer>
+			<key>Date Modified</key><date>2021-04-09T14:10:27Z</date>
+			<key>Date Added</key><date>2023-08-27T05:33:59Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>20</integer>
+			<key>Play Date</key><integer>3869491654</integer>
+			<key>Play Date UTC</key><date>2026-08-13T09:47:34Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album Artist</key><string>Rolling Stones</string>
+			<key>Sort Artist</key><string>Rolling Stones</string>
+			<key>Persistent ID</key><string>365BDE53B6DB0F7B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/The%20Rolling%20Stones/Shes%20A%20Rainbow.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2959</key>
+		<dict>
+			<key>Track ID</key><integer>2959</integer>
+			<key>Name</key><string>Hey Mickey</string>
+			<key>Artist</key><string>Toni Basil</string>
+			<key>Album Artist</key><string>Toni Basil</string>
+			<key>Album</key><string>Hang All DJ's, Volume 1</string>
+			<key>Genre</key><string>Pop;Dance;Oldies;New Wave</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5828814</integer>
+			<key>Total Time</key><integer>241371</integer>
+			<key>Date Modified</key><date>2022-07-18T02:19:15Z</date>
+			<key>Date Added</key><date>2023-08-27T05:33:59Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3864959101</integer>
+			<key>Play Date UTC</key><date>2026-06-21T22:45:01Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>0DC9725A69569D9C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Toni%20Basil/Hey%20Mickey.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3101</key>
+		<dict>
+			<key>Track ID</key><integer>3101</integer>
+			<key>Name</key><string>HAVE YOU EVER SEEN THE RAIN</string>
+			<key>Artist</key><string>THE JEEVAS</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6522696</integer>
+			<key>Total Time</key><integer>203911</integer>
+			<key>Track Number</key><integer>17</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:36Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3864956320</integer>
+			<key>Play Date UTC</key><date>2026-06-21T21:58:40Z</date>
+			<key>Sort Artist</key><string>JEEVAS</string>
+			<key>Persistent ID</key><string>E709FDE2B5CB53E7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_17%20HAVE%20YOU%20EVER%20SEEN%20THE%20RAIN.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3151</key>
+		<dict>
+			<key>Track ID</key><integer>3151</integer>
+			<key>Name</key><string>YOU AND I BOTH</string>
+			<key>Artist</key><string>JASON MRAZ</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7066281</integer>
+			<key>Total Time</key><integer>220682</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:48Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3847280422</integer>
+			<key>Play Date UTC</key><date>2025-11-29T08:00:22Z</date>
+			<key>Persistent ID</key><string>003AE044EC1FAD58</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_03%20YOU%20AND%20I%20BOTH.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3163</key>
+		<dict>
+			<key>Track ID</key><integer>3163</integer>
+			<key>Name</key><string>MODFOOTBALL</string>
+			<key>Artist</key><string>JACK JOHNSON</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6961071</integer>
+			<key>Total Time</key><integer>217626</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:11Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>23</integer>
+			<key>Play Date</key><integer>3870268595</integer>
+			<key>Play Date UTC</key><date>2026-08-22T09:36:35Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>E9A470B53BCA2312</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_09%20MODFOOTBALL.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3173</key>
+		<dict>
+			<key>Track ID</key><integer>3173</integer>
+			<key>Name</key><string>SUNDAY MORNING</string>
+			<key>Artist</key><string>MAROON 5</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7745136</integer>
+			<key>Total Time</key><integer>242155</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:47Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3864962619</integer>
+			<key>Play Date UTC</key><date>2026-06-21T23:43:39Z</date>
+			<key>Persistent ID</key><string>600A2B443E421805</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_14%20SUNDAY%20MORNING.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4031</key>
+		<dict>
+			<key>Track ID</key><integer>4031</integer>
+			<key>Name</key><string>Uptown Funk ft. Bruno Mars２</string>
+			<key>Artist</key><string>Bruno Mars</string>
+			<key>Album</key><string>Uptown Funk</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6492736</integer>
+			<key>Total Time</key><integer>270471</integer>
+			<key>Date Modified</key><date>2022-12-06T11:16:09Z</date>
+			<key>Date Added</key><date>2023-09-24T09:41:29Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>21</integer>
+			<key>Play Date</key><integer>3868532909</integer>
+			<key>Play Date UTC</key><date>2026-08-02T07:28:29Z</date>
+			<key>Skip Count</key><integer>6</integer>
+			<key>Skip Date</key><date>2026-08-18T08:41:30Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>94BB646E4DB9FE0F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Bruno%20Mars/Uptown%20Funk%20ft.%20Bruno%20Mars.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4245</key>
+		<dict>
+			<key>Track ID</key><integer>4245</integer>
+			<key>Name</key><string>Amazing Grace</string>
+			<key>Artist</key><string>Hayley Westenra</string>
+			<key>Album Artist</key><string>Hayley Westenra</string>
+			<key>Album</key><string>Pure</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5307978</integer>
+			<key>Total Time</key><integer>220316</integer>
+			<key>Date Modified</key><date>2023-08-26T07:51:14Z</date>
+			<key>Date Added</key><date>2023-09-25T12:10:39Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>49</integer>
+			<key>Play Date</key><integer>3864963684</integer>
+			<key>Play Date UTC</key><date>2026-06-22T00:01:24Z</date>
+			<key>Skip Count</key><integer>7</integer>
+			<key>Skip Date</key><date>2024-09-24T21:29:48Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>9A81BAD5FC6BF3FB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Hayley%20Westenra/AMAZING%20GRACE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4379</key>
+		<dict>
+			<key>Track ID</key><integer>4379</integer>
+			<key>Name</key><string>One</string>
+			<key>Artist</key><string>A Chorus Line</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7293191</integer>
+			<key>Total Time</key><integer>303264</integer>
+			<key>Date Modified</key><date>2021-07-02T23:11:00Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3868886757</integer>
+			<key>Play Date UTC</key><date>2026-08-06T09:45:57Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T10:28:14Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Artist</key><string>Chorus Line</string>
+			<key>Persistent ID</key><string>A32C4D4FB84277E4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/A%20Chorus%20Line%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/One.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4381</key>
+		<dict>
+			<key>Track ID</key><integer>4381</integer>
+			<key>Name</key><string>Dancing Queen</string>
+			<key>Artist</key><string>ABBA</string>
+			<key>Album Artist</key><string>ABBA</string>
+			<key>Album</key><string>Gold: Greatest Hits</string>
+			<key>Genre</key><string>Pop;Disco;Dance</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5597922</integer>
+			<key>Total Time</key><integer>232724</integer>
+			<key>Date Modified</key><date>2021-04-11T06:54:22Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3864293181</integer>
+			<key>Play Date UTC</key><date>2026-06-14T05:46:21Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:33:36Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>F377B398350275BE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/ABBA/Dancing%20Queen.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4383</key>
+		<dict>
+			<key>Track ID</key><integer>4383</integer>
+			<key>Name</key><string>Take on Me</string>
+			<key>Artist</key><string>a-ha</string>
+			<key>Album Artist</key><string>a-ha</string>
+			<key>Album</key><string>Hunting High and Low</string>
+			<key>Genre</key><string>Pop;New Wave;Synthpop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5466558</integer>
+			<key>Total Time</key><integer>227213</integer>
+			<key>Date Modified</key><date>2023-08-26T07:45:07Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>17</integer>
+			<key>Play Date</key><integer>3868526460</integer>
+			<key>Play Date UTC</key><date>2026-08-02T05:41:00Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T10:17:27Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>575A97DFFC3596A6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/a-ha/Take%20on%20Me.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4433</key>
+		<dict>
+			<key>Track ID</key><integer>4433</integer>
+			<key>Name</key><string>Saturday Night</string>
+			<key>Artist</key><string>Bay City Rollers</string>
+			<key>Album Artist</key><string>Bay City Rollers</string>
+			<key>Album</key><string>Rollin'</string>
+			<key>Genre</key><string>Pop;Rock;Oldies</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4226986</integer>
+			<key>Total Time</key><integer>175177</integer>
+			<key>Date Modified</key><date>2021-04-09T14:18:28Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3864288906</integer>
+			<key>Play Date UTC</key><date>2026-06-14T04:35:06Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2025-06-11T09:03:52Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>093197F4711F7C85</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Bay%20City%20Rollers/Saturday%20Night.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4437</key>
+		<dict>
+			<key>Track ID</key><integer>4437</integer>
+			<key>Name</key><string>The Rose</string>
+			<key>Artist</key><string>Bette Midler</string>
+			<key>Album Artist</key><string>Bette Midler</string>
+			<key>Genre</key><string>Alternative; Ballad; Rock; Duet</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5152031</integer>
+			<key>Total Time</key><integer>212712</integer>
+			<key>Date Modified</key><date>2021-04-11T06:10:07Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3867383575</integer>
+			<key>Play Date UTC</key><date>2026-07-20T00:12:55Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T10:23:04Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Name</key><string>Rose</string>
+			<key>Persistent ID</key><string>9D0005AE6506E2DA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Bette%20Midler/The%20Rose.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4465</key>
+		<dict>
+			<key>Track ID</key><integer>4465</integer>
+			<key>Name</key><string>2000_01_14_Honesty</string>
+			<key>Artist</key><string>Billy Joel</string>
+			<key>Album Artist</key><string>Billy Joel</string>
+			<key>Album</key><string>The Ultimate Collection Disc 1</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4596862</integer>
+			<key>Total Time</key><integer>229720</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Date Modified</key><date>2023-08-19T07:39:23Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3861515705</integer>
+			<key>Play Date UTC</key><date>2026-05-13T02:15:05Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2026-02-24T08:02:58Z</date>
+			<key>Sort Album</key><string>Ultimate Collection Disc 1</string>
+			<key>Persistent ID</key><string>9D06DA49E12C4420</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Billy%20Joel/2000_01_14%20Honesty.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4541</key>
+		<dict>
+			<key>Track ID</key><integer>4541</integer>
+			<key>Name</key><string>Yesterday Once More</string>
+			<key>Artist</key><string>CARPENTERS</string>
+			<key>Album Artist</key><string>CARPENTERS</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5656427</integer>
+			<key>Total Time</key><integer>235624</integer>
+			<key>Date Modified</key><date>2023-08-26T07:48:17Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3867387190</integer>
+			<key>Play Date UTC</key><date>2026-07-20T01:13:10Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2026-06-04T08:22:24Z</date>
+			<key>Persistent ID</key><string>127E5A8451D79FD4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/CARPENTERS/Yesterday%20Once%20More.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4579</key>
+		<dict>
+			<key>Track ID</key><integer>4579</integer>
+			<key>Name</key><string>Johnny B Goode</string>
+			<key>Artist</key><string>CHUCK BERRY</string>
+			<key>Album Artist</key><string>CHUCK BERRY</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2587050</integer>
+			<key>Total Time</key><integer>161410</integer>
+			<key>Date Modified</key><date>2021-04-11T07:03:19Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>13</integer>
+			<key>Play Date</key><integer>3867215448</integer>
+			<key>Play Date UTC</key><date>2026-07-18T01:30:48Z</date>
+			<key>Persistent ID</key><string>BCD579553221E047</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/CHUCK%20BERRY/Johnny%20B%20Goode.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4585</key>
+		<dict>
+			<key>Track ID</key><integer>4585</integer>
+			<key>Name</key><string>Have You Ever Seen the Rain</string>
+			<key>Artist</key><string>Creedence Clearwater Revival</string>
+			<key>Album Artist</key><string>Creedence Clearwater Revival</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3871511</integer>
+			<key>Total Time</key><integer>161253</integer>
+			<key>Date Modified</key><date>2021-04-11T06:52:34Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3850654591</integer>
+			<key>Play Date UTC</key><date>2026-01-07T09:16:31Z</date>
+			<key>Persistent ID</key><string>C567FB1B0868E519</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Creedence%20Clearwater%20Revival/Have%20You%20Ever%20Seen%20the%20Rain.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4591</key>
+		<dict>
+			<key>Track ID</key><integer>4591</integer>
+			<key>Name</key><string>LES CHAMPS-ELYSEES</string>
+			<key>Artist</key><string>Daniele Vidal  </string>
+			<key>Album Artist</key><string>Daniele Vidal</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3835130</integer>
+			<key>Total Time</key><integer>159738</integer>
+			<key>Date Modified</key><date>2021-04-09T14:35:56Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3864696818</integer>
+			<key>Play Date UTC</key><date>2026-06-18T21:53:38Z</date>
+			<key>Persistent ID</key><string>FA3CF6EC54A5B77B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Daniele%20Vidal/LES%20CHAMPS-ELYSEES.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4601</key>
+		<dict>
+			<key>Track ID</key><integer>4601</integer>
+			<key>Name</key><string>Que Sera,Sera</string>
+			<key>Artist</key><string>Doris Day</string>
+			<key>Album Artist</key><string>Doris Day</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3000090</integer>
+			<key>Total Time</key><integer>124943</integer>
+			<key>Date Modified</key><date>2021-04-11T05:36:35Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3867388477</integer>
+			<key>Play Date UTC</key><date>2026-07-20T01:34:37Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T10:31:15Z</date>
+			<key>Persistent ID</key><string>D910FA394515A3CA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Doris%20Day/Que%20sera%20sera.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4705</key>
+		<dict>
+			<key>Track ID</key><integer>4705</integer>
+			<key>Name</key><string>September</string>
+			<key>Artist</key><string>Earth Wind &#38; Fire</string>
+			<key>Album Artist</key><string>Earth Wind &#38; Fire</string>
+			<key>Genre</key><string>Disco;Funk;Soul;Dance</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5173647</integer>
+			<key>Total Time</key><integer>215510</integer>
+			<key>Date Modified</key><date>2023-08-26T07:49:54Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3867393128</integer>
+			<key>Play Date UTC</key><date>2026-07-20T02:52:08Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2026-04-03T08:51:38Z</date>
+			<key>Persistent ID</key><string>01B8E6F1ED94A8B0</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Earth%20Wind%20&#38;%20Fire/September.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4805</key>
+		<dict>
+			<key>Track ID</key><integer>4805</integer>
+			<key>Name</key><string>Centerfold</string>
+			<key>Artist</key><string>J.Geils Band</string>
+			<key>Album Artist</key><string>J.Geils Band</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5210019</integer>
+			<key>Total Time</key><integer>217025</integer>
+			<key>Date Modified</key><date>2021-04-09T14:14:56Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>17</integer>
+			<key>Play Date</key><integer>3869825540</integer>
+			<key>Play Date UTC</key><date>2026-08-17T06:32:20Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>A6ECBE595E78CC8F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/J.Geils%20Band/Centerfold.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4809</key>
+		<dict>
+			<key>Track ID</key><integer>4809</integer>
+			<key>Name</key><string>Great_Balls_of_Fire</string>
+			<key>Artist</key><string>Jerry Lee Lewis</string>
+			<key>Album Artist</key><string>Jerry Lee Lewis</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2775490</integer>
+			<key>Total Time</key><integer>115200</integer>
+			<key>Date Modified</key><date>2022-06-05T09:46:55Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3870269823</integer>
+			<key>Play Date UTC</key><date>2026-08-22T09:57:03Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2026-06-17T08:50:49Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>175B3A99FD4AAAF6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Jerry%20Lee%20Lewis/Great_Balls_of_Fire.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4813</key>
+		<dict>
+			<key>Track ID</key><integer>4813</integer>
+			<key>Name</key><string>I Can See Clearly Now</string>
+			<key>Artist</key><string>Jimmy Cliff</string>
+			<key>Album Artist</key><string>Jimmy Cliff</string>
+			<key>Composer</key><string>Johnny Nash</string>
+			<key>Album</key><string>The Collection</string>
+			<key>Genre</key><string>レゲエ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5418535</integer>
+			<key>Total Time</key><integer>197172</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>1995</integer>
+			<key>Date Modified</key><date>2023-08-26T07:51:24Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>219</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3864293857</integer>
+			<key>Play Date UTC</key><date>2026-06-14T05:57:37Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-07-21T23:03:20Z</date>
+			<key>Sort Album</key><string>Collection</string>
+			<key>Persistent ID</key><string>9F0A0BEA2D784968</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Jimmy%20Cliff/01%20I%20Can%20See%20Clearly%20Now.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4815</key>
+		<dict>
+			<key>Track ID</key><integer>4815</integer>
+			<key>Name</key><string>Imagine</string>
+			<key>Artist</key><string>Flux Fiddlers/John Lennon/Plastic Ono Band</string>
+			<key>Album Artist</key><string>John Lennon</string>
+			<key>Composer</key><string>John Lennon</string>
+			<key>Album</key><string>Imagine</string>
+			<key>Genre</key><string>ロック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3684790</integer>
+			<key>Total Time</key><integer>184111</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>1971</integer>
+			<key>Date Modified</key><date>2021-06-03T13:41:14Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string> 00000000 00000210 000009F0 00000000007BD800 00000000 00381F59 00000000 00000000 00000000 00000000 00000000 00000000</string>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3858687929</integer>
+			<key>Play Date UTC</key><date>2026-04-10T08:45:29Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-05-28T08:46:40Z</date>
+			<key>Persistent ID</key><string>1622999FABC6C0CC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/John%20Lennon/01%20Imagine.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4841</key>
+		<dict>
+			<key>Track ID</key><integer>4841</integer>
+			<key>Name</key><string>open arms</string>
+			<key>Artist</key><string>Journey</string>
+			<key>Album Artist</key><string>Journey</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4821607</integer>
+			<key>Total Time</key><integer>200542</integer>
+			<key>Date Modified</key><date>2022-02-15T08:06:39Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3860417237</integer>
+			<key>Play Date UTC</key><date>2026-04-30T09:07:17Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2026-03-26T08:45:25Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>B6AB11C8DC27FDB9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Journey/open%20arms.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4947</key>
+		<dict>
+			<key>Track ID</key><integer>4947</integer>
+			<key>Name</key><string>The Loco-Motion</string>
+			<key>Artist</key><string>Kylie Minogue</string>
+			<key>Album</key><string>Kylie</string>
+			<key>Genre</key><string>Pop;Dance</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4862063</integer>
+			<key>Total Time</key><integer>202527</integer>
+			<key>Date Modified</key><date>2023-08-26T07:52:27Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3863527197</integer>
+			<key>Play Date UTC</key><date>2026-06-05T08:59:57Z</date>
+			<key>Sort Name</key><string>Loco-Motion</string>
+			<key>Persistent ID</key><string>F3BB21FB71252FA2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Kylie%20Minogue/The%20Loco-motion.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4949</key>
+		<dict>
+			<key>Track ID</key><integer>4949</integer>
+			<key>Name</key><string>Turn It Into Love</string>
+			<key>Artist</key><string>Kylie Minogue</string>
+			<key>Album</key><string>Kylie</string>
+			<key>Genre</key><string>Pop;Dance</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5280736</integer>
+			<key>Total Time</key><integer>219480</integer>
+			<key>Date Modified</key><date>2021-12-09T00:35:24Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3861713250</integer>
+			<key>Play Date UTC</key><date>2026-05-15T09:07:30Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-07-21T23:06:05Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>0CB4CCC0B8458C46</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Kylie%20Minogue/Turn%20It%20Into%20Love%20(%20%E6%84%9B%E3%81%8C%E6%AD%A2%E3%81%BE%E3%82%89%E3%81%AA%E3%81%84).mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5083</key>
+		<dict>
+			<key>Track ID</key><integer>5083</integer>
+			<key>Name</key><string>Stay</string>
+			<key>Artist</key><string>Lisa Loeb</string>
+			<key>Album Artist</key><string>Lisa Loeb</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4497205</integer>
+			<key>Total Time</key><integer>187324</integer>
+			<key>Date Modified</key><date>2021-04-13T14:05:44Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>21</integer>
+			<key>Play Date</key><integer>3870247282</integer>
+			<key>Play Date UTC</key><date>2026-08-22T03:41:22Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2026-05-04T06:39:34Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>750C5CEC5A95EBC7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Lisa%20Loeb/Stay.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5167</key>
+		<dict>
+			<key>Track ID</key><integer>5167</integer>
+			<key>Name</key><string>Lovin You</string>
+			<key>Artist</key><string>Minnie Riperton</string>
+			<key>Album Artist</key><string>Minnie Riperton</string>
+			<key>Album</key><string>Lovin You</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5758898</integer>
+			<key>Total Time</key><integer>239040</integer>
+			<key>Date Modified</key><date>2021-04-09T14:27:18Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3864963464</integer>
+			<key>Play Date UTC</key><date>2026-06-21T23:57:44Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-06-16T10:19:32Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>00D1431E4FF37AB3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Minnie%20Riperton/Lovin%20You.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5385</key>
+		<dict>
+			<key>Track ID</key><integer>5385</integer>
+			<key>Name</key><string>9 to 5 Morning Train</string>
+			<key>Artist</key><string>Sheena Easton</string>
+			<key>Album Artist</key><string>Sheena Easton</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4792038</integer>
+			<key>Total Time</key><integer>199344</integer>
+			<key>Date Modified</key><date>2021-04-11T07:20:29Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>22</integer>
+			<key>Play Date</key><integer>3869821509</integer>
+			<key>Play Date UTC</key><date>2026-08-17T05:25:09Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A484542D95BCD886</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Sheena%20Easton/9%20to%205%20Morning%20Train.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5389</key>
+		<dict>
+			<key>Track ID</key><integer>5389</integer>
+			<key>Name</key><string>Stars</string>
+			<key>Artist</key><string>Simply Red</string>
+			<key>Album Artist</key><string>Simply Red</string>
+			<key>Album</key><string>Stars</string>
+			<key>Genre</key><string>Pop;Soul;Rock</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5917708</integer>
+			<key>Total Time</key><integer>246021</integer>
+			<key>Date Modified</key><date>2021-04-09T07:48:02Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3870697601</integer>
+			<key>Play Date UTC</key><date>2026-08-27T08:46:41Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:28:01Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>C43F9F9D68CA9AA3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Simply%20Red/Stars.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5543</key>
+		<dict>
+			<key>Track ID</key><integer>5543</integer>
+			<key>Name</key><string>IRRESISTIBLEMENT</string>
+			<key>Artist</key><string>SYLVIE VARTAN</string>
+			<key>Album Artist</key><string>SYLVIE VARTAN</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2635958</integer>
+			<key>Total Time</key><integer>164466</integer>
+			<key>Date Modified</key><date>2021-04-11T06:59:49Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3869231085</integer>
+			<key>Play Date UTC</key><date>2026-08-10T09:24:45Z</date>
+			<key>Skip Count</key><integer>6</integer>
+			<key>Skip Date</key><date>2026-08-17T10:17:06Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>933550F43038D459</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/SYLVIE%20VARTAN/IRRESISTIBLEMENT.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5581</key>
+		<dict>
+			<key>Track ID</key><integer>5581</integer>
+			<key>Name</key><string>Only You</string>
+			<key>Artist</key><string>The Platters</string>
+			<key>Album</key><string>High Profile</string>
+			<key>Genre</key><string>Oldies;Soul</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3806610</integer>
+			<key>Total Time</key><integer>157884</integer>
+			<key>Date Modified</key><date>2021-07-22T08:48:02Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>12</integer>
+			<key>Play Date</key><integer>3867387874</integer>
+			<key>Play Date UTC</key><date>2026-07-20T01:24:34Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:23:44Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Artist</key><string>Platters</string>
+			<key>Persistent ID</key><string>F3C05080C156BB6D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/The%20Platters/Only%20You.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5583</key>
+		<dict>
+			<key>Track ID</key><integer>5583</integer>
+			<key>Name</key><string>Sugar Baby Love</string>
+			<key>Artist</key><string>The Rubettes</string>
+			<key>Album Artist</key><string>The Rubettes</string>
+			<key>Album</key><string>The Best of the Rubettes</string>
+			<key>Genre</key><string>Pop; Oldies; Disco</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5066374</integer>
+			<key>Total Time</key><integer>210048</integer>
+			<key>Date Modified</key><date>2021-04-11T07:04:45Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3867215917</integer>
+			<key>Play Date UTC</key><date>2026-07-18T01:38:37Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Best of the Rubettes</string>
+			<key>Sort Album Artist</key><string>Rubettes</string>
+			<key>Sort Artist</key><string>Rubettes</string>
+			<key>Persistent ID</key><string>3FE851FCABECC3C5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/The%20Rubettes/Sugar%20Baby%20Love.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6009</key>
+		<dict>
+			<key>Track ID</key><integer>6009</integer>
+			<key>Name</key><string>Dumb Ways to Die</string>
+			<key>Artist</key><string>Dumb Ways to Die</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7309802</integer>
+			<key>Total Time</key><integer>182047</integer>
+			<key>Year</key><integer>2012</integer>
+			<key>Date Modified</key><date>2025-06-04T12:45:14Z</date>
+			<key>Date Added</key><date>2025-06-04T12:47:23Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3869059356</integer>
+			<key>Play Date UTC</key><date>2026-08-08T09:42:36Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>ECAA54337BED79F4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/melbourne/Dumb%20Ways%20to%20Die.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6011</key>
+		<dict>
+			<key>Track ID</key><integer>6011</integer>
+			<key>Name</key><string>アラジン A Whole New World - Regina Belle &#38; Peabo Bryson</string>
+			<key>Artist</key><string>ackey</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9882298</integer>
+			<key>Total Time</key><integer>246648</integer>
+			<key>Year</key><integer>2012</integer>
+			<key>Date Modified</key><date>2025-06-04T13:02:27Z</date>
+			<key>Date Added</key><date>2025-06-04T13:02:50Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3864289153</integer>
+			<key>Play Date UTC</key><date>2026-06-14T04:39:13Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>304F6FE1B239ED28</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Regina%20Belle%20Peabo%20Bryson/A%20Whole%20New%20World.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6013</key>
+		<dict>
+			<key>Track ID</key><integer>6013</integer>
+			<key>Name</key><string>FROZEN | Let It Go Sing-along | Official Disney UK</string>
+			<key>Artist</key><string>Disney UK</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9772804</integer>
+			<key>Total Time</key><integer>242729</integer>
+			<key>Year</key><integer>2014</integer>
+			<key>Date Modified</key><date>2025-06-04T13:05:41Z</date>
+			<key>Date Added</key><date>2025-06-04T13:06:08Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3854798304</integer>
+			<key>Play Date UTC</key><date>2026-02-24T08:18:24Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>64E749259E407905</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Idina%20Menzel/Let%20It%20Go.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6029</key>
+		<dict>
+			<key>Track ID</key><integer>6029</integer>
+			<key>Name</key><string>Ob-La-Di, Ob-La-Da</string>
+			<key>Artist</key><string>The Beatles</string>
+			<key>Album</key><string>1967-1970 [Disc 2]</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3830728</integer>
+			<key>Total Time</key><integer>191425</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>1968</integer>
+			<key>Date Modified</key><date>2025-06-06T12:50:03Z</date>
+			<key>Date Added</key><date>2025-06-06T12:49:27Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>20</integer>
+			<key>Play Date</key><integer>3869805455</integer>
+			<key>Play Date UTC</key><date>2026-08-17T00:57:35Z</date>
+			<key>Loved</key><true/>
+			<key>Normalization</key><integer>3017</integer>
+			<key>Sort Artist</key><string>Beatles</string>
+			<key>Persistent ID</key><string>B47017378F1E5EED</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/The%20Beatles/1967-1970%20%5BDisc%202%5D/2-03%20Ob-La-Di,%20Ob-La-Da.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6031</key>
+		<dict>
+			<key>Track ID</key><integer>6031</integer>
+			<key>Name</key><string>Let It Be</string>
+			<key>Artist</key><string>The Beatles</string>
+			<key>Album</key><string>1967-1970 [Disc 2]</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4651487</integer>
+			<key>Total Time</key><integer>232463</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>1970</integer>
+			<key>Date Modified</key><date>2025-06-06T12:51:40Z</date>
+			<key>Date Added</key><date>2025-06-06T12:51:06Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3869747528</integer>
+			<key>Play Date UTC</key><date>2026-08-16T08:52:08Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-11-15T11:04:42Z</date>
+			<key>Loved</key><true/>
+			<key>Normalization</key><integer>1887</integer>
+			<key>Sort Artist</key><string>Beatles</string>
+			<key>Persistent ID</key><string>22120493D5E4ED7F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/The%20Beatles/1967-1970%20%5BDisc%202%5D/2-12%20Let%20It%20Be.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6033</key>
+		<dict>
+			<key>Track ID</key><integer>6033</integer>
+			<key>Name</key><string>Youve Got a Friend in Me</string>
+			<key>Artist</key><string>DisneyMusicVEVO</string>
+			<key>Album Artist</key><string>Randy Newman</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5134675</integer>
+			<key>Total Time</key><integer>128261</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2025-06-10T09:03:30Z</date>
+			<key>Date Added</key><date>2025-06-10T09:05:24Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3835352501</integer>
+			<key>Play Date UTC</key><date>2025-07-14T06:41:41Z</date>
+			<key>Persistent ID</key><string>B692E597F7F5AC5C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Downloads/Youve%20Got%20a%20Friend%20in%20Me.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6041</key>
+		<dict>
+			<key>Track ID</key><integer>6041</integer>
+			<key>Name</key><string>Country Roads</string>
+			<key>Artist</key><string>john denver</string>
+			<key>Album Artist</key><string>john denver</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7710720</integer>
+			<key>Total Time</key><integer>190145</integer>
+			<key>Year</key><integer>2020</integer>
+			<key>Date Modified</key><date>2025-07-10T04:51:44Z</date>
+			<key>Date Added</key><date>2025-07-10T04:52:34Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3869816837</integer>
+			<key>Play Date UTC</key><date>2026-08-17T04:07:17Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>9BA86BAE91466680</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/john%20denver/Country_Roads.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>eng0</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>14354</integer>
+			<key>Playlist Persistent ID</key><string>935CAD65ECB3DF22</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>2829</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2879</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4381</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2127</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4383</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4433</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2185</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4437</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4465</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4031</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4541</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2269</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2239</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4379</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4579</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4585</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4591</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4601</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4705</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2427</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4245</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4805</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3163</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2903</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3151</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3101</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4809</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4813</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4815</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4841</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4947</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4949</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5083</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2603</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2625</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2743</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5167</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2745</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5581</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2753</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2755</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2905</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5583</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5385</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5389</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5543</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2959</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2235</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6009</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6011</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6013</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6029</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6031</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6033</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6041</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3173</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

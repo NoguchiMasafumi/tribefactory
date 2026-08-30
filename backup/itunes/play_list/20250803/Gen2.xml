@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2025-08-02T00:41:02Z</date>
+	<key>Application Version</key><string>12.13.7.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>EEAD44C58E7818E5</string>
+	<key>Tracks</key>
+	<dict>
+		<key>1752</key>
+		<dict>
+			<key>Track ID</key><integer>1752</integer>
+			<key>Name</key><string>Starlight Destiny</string>
+			<key>Artist</key><string>SOULd OUT</string>
+			<key>Album Artist</key><string>SOULd OUT</string>
+			<key>Composer</key><string>Diggy-MO' / Shinnosuke</string>
+			<key>Album</key><string>SOUL'd OUT Single Collection</string>
+			<key>Genre</key><string>Rap/Hip-Hop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5237202</integer>
+			<key>Total Time</key><integer>327784</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2022-07-18T01:57:38Z</date>
+			<key>Date Added</key><date>2023-08-22T13:38:22Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3813933372</integer>
+			<key>Play Date UTC</key><date>2024-11-08T08:56:12Z</date>
+			<key>Persistent ID</key><string>E29BCE633CD6560F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/SOULd%20OUT/2006_01_14%20Starlight%20Destiny.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1756</key>
+		<dict>
+			<key>Track ID</key><integer>1756</integer>
+			<key>Name</key><string>GROWN_KIDZ</string>
+			<key>Artist</key><string>SOULd OUT</string>
+			<key>Album Artist</key><string>SOULd OUT</string>
+			<key>Composer</key><string>Diggy-Mo</string>
+			<key>Album</key><string>SOULd OUT</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5651512</integer>
+			<key>Total Time</key><integer>352548</integer>
+			<key>Date Modified</key><date>2023-09-13T08:20:04Z</date>
+			<key>Date Added</key><date>2023-08-22T13:38:22Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3813932360</integer>
+			<key>Play Date UTC</key><date>2024-11-08T08:39:20Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-01T21:46:20Z</date>
+			<key>Sort Album</key><string>Diggy-MO'</string>
+			<key>Sort Album Artist</key><string>Diggy-Mo</string>
+			<key>Sort Composer</key><string>Diggy-Mo</string>
+			<key>Persistent ID</key><string>2CF31547FE24F27D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/SOULd%20OUT/GROWN_KIDZ.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1982</key>
+		<dict>
+			<key>Track ID</key><integer>1982</integer>
+			<key>Name</key><string>Time After time</string>
+			<key>Artist</key><string>CYNDI LAUPER</string>
+			<key>Album Artist</key><string>Cyndi_Lauper</string>
+			<key>Composer</key><string>Will Jennings, Jack Nitzsche, Buffy Sainte-Marie</string>
+			<key>Album</key><string>Cyndi_Lauper</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3842337</integer>
+			<key>Total Time</key><integer>240404</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Date Modified</key><date>2023-08-27T06:08:50Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3815103342</integer>
+			<key>Play Date UTC</key><date>2024-11-21T21:55:42Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2025-06-04T10:29:41Z</date>
+			<key>Persistent ID</key><string>CD0904CBB661F0F8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/CYNDI%20LAUPER/Time%20After%20Time.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1986</key>
+		<dict>
+			<key>Track ID</key><integer>1986</integer>
+			<key>Name</key><string>I wonder...</string>
+			<key>Artist</key><string>DA PUMP</string>
+			<key>Album Artist</key><string>DA PUMP</string>
+			<key>Album</key><string>Da Best of Da Pump</string>
+			<key>Genre</key><string>Jpop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11321611</integer>
+			<key>Total Time</key><integer>279144</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2021-09-13T13:56:11Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://jenie.co</string>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3813720255</integer>
+			<key>Play Date UTC</key><date>2024-11-05T21:44:15Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-11-07T22:05:13Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>9D52504C7DC78F82</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/DA%20PUMP/10%20-%20I%20wonder....mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2128</key>
+		<dict>
+			<key>Track ID</key><integer>2128</integer>
+			<key>Name</key><string>cant give you anything</string>
+			<key>Artist</key><string>Gatsby</string>
+			<key>Album Artist</key><string>Gatsby</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5191037</integer>
+			<key>Total Time</key><integer>215856</integer>
+			<key>Date Modified</key><date>2021-07-22T08:49:23Z</date>
+			<key>Date Added</key><date>2023-08-27T05:27:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>13</integer>
+			<key>Play Date</key><integer>3835354285</integer>
+			<key>Play Date UTC</key><date>2025-07-14T07:11:25Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-06-04T10:34:20Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E92AFFC63454AB8C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Gatsby/cant%20give%20you%20anything.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2282</key>
+		<dict>
+			<key>Track ID</key><integer>2282</integer>
+			<key>Name</key><string>TO ZION</string>
+			<key>Artist</key><string>LAURYN HILL</string>
+			<key>Album Artist</key><string>MAX BEST</string>
+			<key>Composer</key><string>SONY　RED　HOT（CM曲）</string>
+			<key>Album</key><string>MAX BEST</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4382769</integer>
+			<key>Total Time</key><integer>274259</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Date Modified</key><date>2023-09-13T08:31:33Z</date>
+			<key>Date Added</key><date>2023-08-27T05:29:23Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3808797146</integer>
+			<key>Play Date UTC</key><date>2024-09-09T22:12:26Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2024-11-07T22:05:18Z</date>
+			<key>Persistent ID</key><string>38F9C0DE9C5F3125</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/LAURYN%20HILL/06%20TO%20ZION.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2312</key>
+		<dict>
+			<key>Track ID</key><integer>2312</integer>
+			<key>Name</key><string>Like A Prayer</string>
+			<key>Artist</key><string>Madonna</string>
+			<key>Album Artist</key><string>Madonna</string>
+			<key>Composer</key><string>Madonna and Patrick Leonard</string>
+			<key>Album</key><string>The Immaculate Collection</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7032662</integer>
+			<key>Total Time</key><integer>351503</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Year</key><integer>1989</integer>
+			<key>Date Modified</key><date>2021-06-03T13:15:44Z</date>
+			<key>Date Added</key><date>2023-08-27T05:29:23Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string> 00000000 00000210 000008E8 0000000000EC7D08 00000000 006B34E6 00000000 00000000 00000000 00000000 00000000 00000000</string>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3832037112</integer>
+			<key>Play Date UTC</key><date>2025-06-05T21:45:12Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:17:42Z</date>
+			<key>Sort Album</key><string>Immaculate Collection</string>
+			<key>Persistent ID</key><string>354DFB81B4CE3509</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Madonna/12%20Like%20A%20Prayer.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2454</key>
+		<dict>
+			<key>Track ID</key><integer>2454</integer>
+			<key>Name</key><string>トルコ行進曲　モーツァルト</string>
+			<key>Artist</key><string>Rittor Music</string>
+			<key>Album Artist</key><string>Mozart</string>
+			<key>Album</key><string>Mozart Turkish March</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4436212</integer>
+			<key>Total Time</key><integer>184464</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Date Modified</key><date>2023-08-26T07:54:58Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>23</integer>
+			<key>Play Date</key><integer>3810696565</integer>
+			<key>Play Date UTC</key><date>2024-10-01T21:49:25Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-02-19T06:47:15Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E51FD2847FA08B1E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Mozart/%E3%83%88%E3%83%AB%E3%82%B3%E8%A1%8C%E9%80%B2%E6%9B%B2%E3%80%80%E3%83%A2%E3%83%BC%E3%83%84%E3%82%A1%E3%83%AB%E3%83%88%20Rittor.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2464</key>
+		<dict>
+			<key>Track ID</key><integer>2464</integer>
+			<key>Name</key><string>Whatever</string>
+			<key>Artist</key><string>OASIS</string>
+			<key>Album Artist</key><string>OASIS</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9090281</integer>
+			<key>Total Time</key><integer>378312</integer>
+			<key>Date Modified</key><date>2021-04-11T05:59:45Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>12</integer>
+			<key>Play Date</key><integer>3834584319</integer>
+			<key>Play Date UTC</key><date>2025-07-05T09:18:39Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2024-02-28T13:23:58Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7D663F8F4C18C029</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/OASIS/Whatever.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2476</key>
+		<dict>
+			<key>Track ID</key><integer>2476</integer>
+			<key>Name</key><string>I Was Born To Love You</string>
+			<key>Artist</key><string>Queen</string>
+			<key>Album Artist</key><string>Queen</string>
+			<key>Album</key><string>Queen</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7092092</integer>
+			<key>Total Time</key><integer>295444</integer>
+			<key>Date Modified</key><date>2021-02-19T13:47:42Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>12</integer>
+			<key>Play Date</key><integer>3835352373</integer>
+			<key>Play Date UTC</key><date>2025-07-14T06:39:33Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-11-05T22:09:24Z</date>
+			<key>Persistent ID</key><string>AC1FA8432563D122</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Queen/I%20Was%20Born%20To%20Love%20You.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2972</key>
+		<dict>
+			<key>Track ID</key><integer>2972</integer>
+			<key>Name</key><string>きいやま商店「ダックァーセ！feat.GIPPER」PV</string>
+			<key>Artist</key><string>きいやま商店</string>
+			<key>Album Artist</key><string>きいやま商店</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5522712</integer>
+			<key>Total Time</key><integer>244950</integer>
+			<key>Date Modified</key><date>2023-08-26T06:58:37Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>180</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3815449664</integer>
+			<key>Play Date UTC</key><date>2024-11-25T22:07:44Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-01T02:48:16Z</date>
+			<key>Persistent ID</key><string>736350ED590E5447</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E3%81%8D%E3%81%84%E3%82%84%E3%81%BE%E5%95%86%E5%BA%97/%E3%81%8D%E3%81%84%E3%82%84%E3%81%BE%E5%95%86%E5%BA%97%E3%83%80%E3%83%83%E3%82%AF%E3%82%A1%E3%83%BC%E3%82%BBfeat.GIPPERPV.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3026</key>
+		<dict>
+			<key>Track ID</key><integer>3026</integer>
+			<key>Name</key><string>1998_01_C調言葉に御用心</string>
+			<key>Artist</key><string>サザンオールスターズ</string>
+			<key>Album Artist</key><string>サザンオールスターズ</string>
+			<key>Album</key><string>海のYeah!! [Disc1 SEA SIDE]</string>
+			<key>Genre</key><string>JPop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>10987759</integer>
+			<key>Total Time</key><integer>274573</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>15</integer>
+			<key>Year</key><integer>1998</integer>
+			<key>Date Modified</key><date>2023-09-13T08:13:37Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>Track 3</string>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3810091131</integer>
+			<key>Play Date UTC</key><date>2024-09-24T21:38:51Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-07T22:05:02Z</date>
+			<key>Persistent ID</key><string>2D8AB20AD6553179</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E3%82%B5%E3%82%B6%E3%83%B3%E3%82%AA%E3%83%BC%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA/1998_01_03%20C%E8%AA%BF%E8%A8%80%E8%91%89%E3%81%AB%E5%BE%A1%E7%94%A8%E5%BF%83.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3046</key>
+		<dict>
+			<key>Track ID</key><integer>3046</integer>
+			<key>Name</key><string>1998_01_みんなのうた</string>
+			<key>Artist</key><string>サザンオールスターズ</string>
+			<key>Album Artist</key><string>サザンオールスターズ</string>
+			<key>Album</key><string>海のYeah!! [Disc1 SEA SIDE]</string>
+			<key>Genre</key><string>JPop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>10307529</integer>
+			<key>Total Time</key><integer>257567</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>15</integer>
+			<key>Year</key><integer>1998</integer>
+			<key>Date Modified</key><date>2023-09-13T08:14:08Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>Track 13</string>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3812079819</integer>
+			<key>Play Date UTC</key><date>2024-10-17T22:03:39Z</date>
+			<key>Persistent ID</key><string>A6E35F2011F26228</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E3%82%B5%E3%82%B6%E3%83%B3%E3%82%AA%E3%83%BC%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA/1998_01_13%20%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AE%E3%81%86%E3%81%9F.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3126</key>
+		<dict>
+			<key>Track ID</key><integer>3126</integer>
+			<key>Name</key><string>ヒプノシスマイク -Division Battle Anthem- +</string>
+			<key>Artist</key><string>ヒプノシスマイク</string>
+			<key>Album Artist</key><string>ヒプノシスマイク</string>
+			<key>Album</key><string>CROSS A LINE</string>
+			<key>Genre</key><string>Game/Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>17054361</integer>
+			<key>Total Time</key><integer>422008</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-08-20T07:07:38Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>12</integer>
+			<key>Play Date</key><integer>3811993264</integer>
+			<key>Play Date UTC</key><date>2024-10-16T22:01:04Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-01-30T22:05:42Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>DB88E88CFF88148B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E3%83%92%E3%83%97%E3%83%8E%E3%82%B7%E3%82%B9%E3%83%9E%E3%82%A4%E3%82%AF/2022_01_09%20%E3%83%92%E3%83%97%E3%83%8E%E3%82%B7%E3%82%B9%E3%83%9E%E3%82%A4%E3%82%AF%20-Division%20Battle%20Anthe.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3130</key>
+		<dict>
+			<key>Track ID</key><integer>3130</integer>
+			<key>Name</key><string>Hoodstar +</string>
+			<key>Artist</key><string>ヒプノシスマイク</string>
+			<key>Album Artist</key><string>ヒプノシスマイク</string>
+			<key>Album</key><string>CROSS A LINE</string>
+			<key>Genre</key><string>Game/Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>20360369</integer>
+			<key>Total Time</key><integer>504659</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-08-20T07:07:21Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3813932008</integer>
+			<key>Play Date UTC</key><date>2024-11-08T08:33:28Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-22T21:44:37Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>1C4109C18E86AC8B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E3%83%92%E3%83%97%E3%83%8E%E3%82%B7%E3%82%B9%E3%83%9E%E3%82%A4%E3%82%AF/2022_01_11%20Hoodstar%20+.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3136</key>
+		<dict>
+			<key>Track ID</key><integer>3136</integer>
+			<key>Name</key><string>Division_Rap_Battle＋</string>
+			<key>Artist</key><string>ヒプノシスマイク</string>
+			<key>Album Artist</key><string>ヒプノシスマイク</string>
+			<key>Album</key><string>ヒプノシスマイク</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7517315</integer>
+			<key>Total Time</key><integer>469551</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2021-04-23T14:42:38Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3813894289</integer>
+			<key>Play Date UTC</key><date>2024-11-07T22:04:49Z</date>
+			<key>Persistent ID</key><string>E894C0249F30A751</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E3%83%92%E3%83%97%E3%83%8E%E3%82%B7%E3%82%B9%E3%83%9E%E3%82%A4%E3%82%AF/Division_Rap_Battle%EF%BC%8B.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3264</key>
+		<dict>
+			<key>Track ID</key><integer>3264</integer>
+			<key>Name</key><string>1999_01_First Love</string>
+			<key>Artist</key><string>宇多田ヒカル</string>
+			<key>Album Artist</key><string>宇多田ヒカル</string>
+			<key>Composer</key><string>Hikaru Utada</string>
+			<key>Album</key><string>First Love</string>
+			<key>Genre</key><string>ボーカル</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4120893</integer>
+			<key>Total Time</key><integer>257854</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2023-09-13T08:03:42Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3813931244</integer>
+			<key>Play Date UTC</key><date>2024-11-08T08:20:44Z</date>
+			<key>Persistent ID</key><string>8CA484E85E2191F5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E5%AE%87%E5%A4%9A%E7%94%B0%E3%83%92%E3%82%AB%E3%83%AB/1999_01_04%20First%20Love.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3364</key>
+		<dict>
+			<key>Track ID</key><integer>3364</integer>
+			<key>Name</key><string>ロマンスをもう一度</string>
+			<key>Artist</key><string>葛谷葉子</string>
+			<key>Album Artist</key><string>VARIOUS ARTISTS</string>
+			<key>Composer</key><string>葛谷葉子</string>
+			<key>Album</key><string>葛谷葉子</string>
+			<key>Genre</key><string>その他</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2236140</integer>
+			<key>Total Time</key><integer>299284</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Year</key><integer>2010</integer>
+			<key>Date Modified</key><date>2023-08-26T08:13:49Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>64</integer>
+			<key>Sample Rate</key><integer>22050</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3813721501</integer>
+			<key>Play Date UTC</key><date>2024-11-05T22:05:01Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-11-07T22:04:56Z</date>
+			<key>Persistent ID</key><string>0E6509F06831FF5F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E8%91%9B%E8%B0%B7%E8%91%89%E5%AD%90/%E8%91%9B%E8%B0%B7%E8%91%89%E5%AD%90%E3%80%80%E3%83%AD%E3%83%9E%E3%83%B3%E3%82%B9%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E3%80%80%E3%80%94%E5%B0%8F%E7%94%B0%E6%80%A5%E3%83%AD%E3%83%9E%E3%83%B3%E3%82%B9%E3%82%AB%E3%83%BC%EF%BC%A3%EF%BC%AD%E3%80%95.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3366</key>
+		<dict>
+			<key>Track ID</key><integer>3366</integer>
+			<key>Name</key><string>私とワルツを</string>
+			<key>Artist</key><string>鬼束ちひろ</string>
+			<key>Album Artist</key><string>鬼束ちひろ</string>
+			<key>Album</key><string>the ultimate collection</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7846937</integer>
+			<key>Total Time</key><integer>326373</integer>
+			<key>Date Modified</key><date>2023-09-13T08:09:11Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3811388628</integer>
+			<key>Play Date UTC</key><date>2024-10-09T22:03:48Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-16T21:53:54Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>ultimate collection</string>
+			<key>Persistent ID</key><string>7010C25764E56ECA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E9%AC%BC%E6%9D%9F%E3%81%A1%E3%81%B2%E3%82%8D/%E7%A7%81%E3%81%A8%E3%83%AF%E3%83%AB%E3%83%84%E3%82%92.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3446</key>
+		<dict>
+			<key>Track ID</key><integer>3446</integer>
+			<key>Name</key><string>02_02_002_VIEW OF SILENCE</string>
+			<key>Artist</key><string>久石譲</string>
+			<key>Album Artist</key><string>久石譲</string>
+			<key>Composer</key><string>久石 譲</string>
+			<key>Album</key><string>Essential</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9254128</integer>
+			<key>Total Time</key><integer>330475</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Track Number</key><integer>402</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2023-08-26T08:16:32Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>224</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>Lavf58.29.100</string>
+			<key>Play Count</key><integer>108</integer>
+			<key>Play Date</key><integer>3836575785</integer>
+			<key>Play Date UTC</key><date>2025-07-28T10:29:45Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:48:03Z</date>
+			<key>Persistent ID</key><string>139E124BF269AE07</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E4%B9%85%E7%9F%B3%E8%AD%B2/02_02_002_VIEW%20OF%20SILENCE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3500</key>
+		<dict>
+			<key>Track ID</key><integer>3500</integer>
+			<key>Name</key><string>2012_01_14_明日晴れるかな</string>
+			<key>Artist</key><string>桑田佳祐</string>
+			<key>Album Artist</key><string>桑田佳祐</string>
+			<key>Composer</key><string>桑田佳祐</string>
+			<key>Album</key><string>I LOVE YOU now and forever01</string>
+			<key>Genre</key><string>イージー リスニング</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5014107</integer>
+			<key>Total Time</key><integer>313808</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Date Modified</key><date>2023-08-20T08:13:35Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3813893820</integer>
+			<key>Play Date UTC</key><date>2024-11-07T21:57:00Z</date>
+			<key>Persistent ID</key><string>2B9329746D5F625B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E6%A1%91%E7%94%B0%E4%BD%B3%E7%A5%90/2012_01_14%20%E6%98%8E%E6%97%A5%E6%99%B4%E3%82%8C%E3%82%8B%E3%81%8B%E3%81%AA.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3778</key>
+		<dict>
+			<key>Track ID</key><integer>3778</integer>
+			<key>Name</key><string>Give It To The Universe</string>
+			<key>Artist</key><string>MAN WITH A MISSION</string>
+			<key>Album Artist</key><string>MAN WITH A MISSION</string>
+			<key>Album</key><string>MAN WITH A MISSION</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6720895</integer>
+			<key>Total Time</key><integer>279849</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-08-26T08:26:53Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3811992826</integer>
+			<key>Play Date UTC</key><date>2024-10-16T21:53:46Z</date>
+			<key>Persistent ID</key><string>02FA6B919378804D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E5%B8%83%E8%A2%8B%E5%AF%85%E6%B3%B0/Give%20It%20To%20The%20Universe.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3862</key>
+		<dict>
+			<key>Track ID</key><integer>3862</integer>
+			<key>Name</key><string>島唄</string>
+			<key>Artist</key><string>THE BOOM</string>
+			<key>Album</key><string>島唄</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8022474</integer>
+			<key>Total Time</key><integer>334210</integer>
+			<key>Date Modified</key><date>2021-04-08T01:40:37Z</date>
+			<key>Date Added</key><date>2023-09-24T10:32:44Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3811388302</integer>
+			<key>Play Date UTC</key><date>2024-10-09T21:58:22Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-11-07T22:04:59Z</date>
+			<key>Sort Artist</key><string>BOOM</string>
+			<key>Persistent ID</key><string>57080B566BBC0566</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/THE%20BOOM/%E5%B3%B6%E5%94%84.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3866</key>
+		<dict>
+			<key>Track ID</key><integer>3866</integer>
+			<key>Name</key><string>ともに</string>
+			<key>Artist</key><string>WANIMA</string>
+			<key>Album</key><string>WANIMA</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4579148</integer>
+			<key>Total Time</key><integer>206367</integer>
+			<key>Date Modified</key><date>2023-05-24T22:30:12Z</date>
+			<key>Date Added</key><date>2023-09-24T10:34:32Z</date>
+			<key>Bit Rate</key><integer>177</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3813635123</integer>
+			<key>Play Date UTC</key><date>2024-11-04T22:05:23Z</date>
+			<key>Persistent ID</key><string>503C4D69C1F3E553</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/WANIMA/%E3%81%A8%E3%82%82%E3%81%AB.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4168</key>
+		<dict>
+			<key>Track ID</key><integer>4168</integer>
+			<key>Name</key><string>Hero</string>
+			<key>Artist</key><string>Mariah Carey</string>
+			<key>Composer</key><string>Mariah Carey, Walter Afanasieff</string>
+			<key>Album</key><string>1995 Grammy Nominees</string>
+			<key>Genre</key><string>Contemporary Pop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8303751</integer>
+			<key>Total Time</key><integer>259631</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Year</key><integer>1995</integer>
+			<key>Date Modified</key><date>2021-06-27T14:33:08Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3813931503</integer>
+			<key>Play Date UTC</key><date>2024-11-08T08:25:03Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-09T21:52:25Z</date>
+			<key>Persistent ID</key><string>6B44BA0FA0281E24</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/1995%20Grammy%20Nominees/10%20Hero.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4190</key>
+		<dict>
+			<key>Track ID</key><integer>4190</integer>
+			<key>Name</key><string>ワタリドリ</string>
+			<key>Artist</key><string>Alexandros</string>
+			<key>Album</key><string>ALXD</string>
+			<key>Genre</key><string>ロック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5324090</integer>
+			<key>Total Time</key><integer>252760</integer>
+			<key>Date Modified</key><date>2023-05-24T22:29:40Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>168</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3811761558</integer>
+			<key>Play Date UTC</key><date>2024-10-14T05:39:18Z</date>
+			<key>Persistent ID</key><string>CFFF6EF679C55702</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Alexandros/%E3%83%AF%E3%82%BF%E3%83%AA%E3%83%89%E3%83%AA.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4338</key>
+		<dict>
+			<key>Track ID</key><integer>4338</integer>
+			<key>Name</key><string>Livin On A Prayer</string>
+			<key>Artist</key><string>Bon Jovi</string>
+			<key>Album Artist</key><string>Bon Jovi</string>
+			<key>Genre</key><string>Rock;Classic Rock;Hard Rock</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5980522</integer>
+			<key>Total Time</key><integer>249129</integer>
+			<key>Date Modified</key><date>2023-08-26T07:46:54Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3813933837</integer>
+			<key>Play Date UTC</key><date>2024-11-08T09:03:57Z</date>
+			<key>Persistent ID</key><string>E6CC4AD1A8B8FD5C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Bon%20Jovi/Livin%20On%20A%20Prayer.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4686</key>
+		<dict>
+			<key>Track ID</key><integer>4686</integer>
+			<key>Name</key><string>Rainbow Devils Land</string>
+			<key>Artist</key><string>Judy &#38; Mary</string>
+			<key>Album Artist</key><string>Judy &#38; Mary</string>
+			<key>Album</key><string>Warp</string>
+			<key>Genre</key><string>World</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3723492</integer>
+			<key>Total Time</key><integer>232437</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2021-02-13T12:52:45Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3815448862</integer>
+			<key>Play Date UTC</key><date>2024-11-25T21:54:22Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-30T21:48:41Z</date>
+			<key>Persistent ID</key><string>D166682DEC2DE376</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Judy%20&#38;%20Mary/01%20Rainbow%20Devils%20Land.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4688</key>
+		<dict>
+			<key>Track ID</key><integer>4688</integer>
+			<key>Name</key><string>Warp</string>
+			<key>Artist</key><string>Judy &#38; Mary</string>
+			<key>Album Artist</key><string>Judy &#38; Mary</string>
+			<key>Album</key><string>Warp</string>
+			<key>Genre</key><string>World</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>808662</integer>
+			<key>Total Time</key><integer>50364</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2021-02-13T12:52:45Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3811752332</integer>
+			<key>Play Date UTC</key><date>2024-10-14T03:05:32Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-17T21:48:31Z</date>
+			<key>Persistent ID</key><string>F31B57A2BC6B466D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Judy%20&#38;%20Mary/02%20Warp.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4694</key>
+		<dict>
+			<key>Track ID</key><integer>4694</integer>
+			<key>Name</key><string>Peace</string>
+			<key>Artist</key><string>Judy &#38; Mary</string>
+			<key>Album Artist</key><string>Judy &#38; Mary</string>
+			<key>Album</key><string>Warp</string>
+			<key>Genre</key><string>World</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5656287</integer>
+			<key>Total Time</key><integer>354037</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2021-02-13T12:52:53Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3813720961</integer>
+			<key>Play Date UTC</key><date>2024-11-05T21:56:01Z</date>
+			<key>Persistent ID</key><string>775AEE83CD27354E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Judy%20&#38;%20Mary/05%20Peace.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4702</key>
+		<dict>
+			<key>Track ID</key><integer>4702</integer>
+			<key>Name</key><string>Lucky Pool</string>
+			<key>Artist</key><string>Judy &#38; Mary</string>
+			<key>Album Artist</key><string>Judy &#38; Mary</string>
+			<key>Album</key><string>Warp</string>
+			<key>Genre</key><string>World</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5365221</integer>
+			<key>Total Time</key><integer>335046</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2021-02-13T12:53:03Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3811753022</integer>
+			<key>Play Date UTC</key><date>2024-10-14T03:17:02Z</date>
+			<key>Persistent ID</key><string>3F1F51AF4C2BD09F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Judy%20&#38;%20Mary/09%20Lucky%20Pool.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4708</key>
+		<dict>
+			<key>Track ID</key><integer>4708</integer>
+			<key>Name</key><string>Hitotsudake</string>
+			<key>Artist</key><string>Judy &#38; Mary</string>
+			<key>Album Artist</key><string>Judy &#38; Mary</string>
+			<key>Album</key><string>Warp</string>
+			<key>Genre</key><string>World</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5886888</integer>
+			<key>Total Time</key><integer>368483</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2021-02-13T12:53:11Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3811757360</integer>
+			<key>Play Date UTC</key><date>2024-10-14T04:29:20Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-18T08:43:29Z</date>
+			<key>Persistent ID</key><string>A36F7186E14DE792</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Judy%20&#38;%20Mary/12%20Hitotsudake.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4782</key>
+		<dict>
+			<key>Track ID</key><integer>4782</integer>
+			<key>Name</key><string>Stay Away</string>
+			<key>Artist</key><string>L'Arc-en-Ciel</string>
+			<key>Album Artist</key><string>L'Arc-en-Ciel</string>
+			<key>Composer</key><string>Hyde/Tetsu</string>
+			<key>Album</key><string>Clicked Singles Best 13</string>
+			<key>Genre</key><string>World</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3821070</integer>
+			<key>Total Time</key><integer>238524</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2021-04-23T14:17:54Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3814603517</integer>
+			<key>Play Date UTC</key><date>2024-11-16T03:05:17Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-11-04T22:01:49Z</date>
+			<key>Persistent ID</key><string>4417634ABC45997C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/L'Arc-en-Ciel/2001_01_12%20Stay%20Away.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4958</key>
+		<dict>
+			<key>Track ID</key><integer>4958</integer>
+			<key>Name</key><string>Emotions</string>
+			<key>Artist</key><string>MAN WITH A MISSION</string>
+			<key>Album Artist</key><string>MAN WITH A MISSION</string>
+			<key>Album</key><string>MAN WITH A MISSION</string>
+			<key>Genre</key><string>ロック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7171418</integer>
+			<key>Total Time</key><integer>298422</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-05-24T22:29:14Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3811751748</integer>
+			<key>Play Date UTC</key><date>2024-10-14T02:55:48Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7F519899196ADAA7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/MAN%20WITH%20A%20MISSION/Emotions.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4962</key>
+		<dict>
+			<key>Track ID</key><integer>4962</integer>
+			<key>Name</key><string>あの鐘を鳴らすのはあなた</string>
+			<key>Artist</key><string>MAN WITH A MISSION</string>
+			<key>Album Artist</key><string>MAN WITH A MISSION</string>
+			<key>Album</key><string>MAN WITH A MISSION</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11745989</integer>
+			<key>Total Time</key><integer>293537</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-05-24T22:29:15Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3812510341</integer>
+			<key>Play Date UTC</key><date>2024-10-22T21:39:01Z</date>
+			<key>Persistent ID</key><string>A886288C7D0FCA25</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/MAN%20WITH%20A%20MISSION/%E3%81%82%E3%81%AE%E9%90%98%E3%82%92%E9%B3%B4%E3%82%89%E3%81%99%E3%81%AE%E3%81%AF%E3%81%82%E3%81%AA%E3%81%9F(MAN-WITH-A-MISSION).mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4968</key>
+		<dict>
+			<key>Track ID</key><integer>4968</integer>
+			<key>Name</key><string>DON'T LOOK BACK IN ANGER</string>
+			<key>Artist</key><string>OASIS</string>
+			<key>Album Artist</key><string>さまざまなアーティスト</string>
+			<key>Composer</key><string>ホンダCR-V (CM曲)</string>
+			<key>Album</key><string>MAX BEST</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4638390</integer>
+			<key>Total Time</key><integer>289619</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Date Modified</key><date>2021-05-05T07:16:24Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3812078588</integer>
+			<key>Play Date UTC</key><date>2024-10-17T21:43:08Z</date>
+			<key>Persistent ID</key><string>45324CBFCAC37EBF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/MAX%20BEST/10%20DON'T%20LOOK%20BACK%20IN%20ANGER.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5180</key>
+		<dict>
+			<key>Track ID</key><integer>5180</integer>
+			<key>Name</key><string>カミナリ</string>
+			<key>Artist</key><string>RIZE</string>
+			<key>Album Artist</key><string>RIZE</string>
+			<key>Album</key><string>ＲＯＯＫＥＹ</string>
+			<key>Genre</key><string>Domestic(J-Pops)</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4315870</integer>
+			<key>Total Time</key><integer>215666</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2023-08-26T07:55:50Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>0</string>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3814095365</integer>
+			<key>Play Date UTC</key><date>2024-11-10T05:56:05Z</date>
+			<key>Persistent ID</key><string>8FE33875E1FD5AE3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/RIZE/11%20%E3%82%AB%E3%83%9F%E3%83%8A%E3%83%AA.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5184</key>
+		<dict>
+			<key>Track ID</key><integer>5184</integer>
+			<key>Name</key><string>ＥＰＩＳＯＤＥ　１</string>
+			<key>Artist</key><string>スケボーキング</string>
+			<key>Album Artist</key><string>SBK（スケボーキング）</string>
+			<key>Album</key><string>ｍａｇｉｃ　ｍｏｍｅｎｔ…</string>
+			<key>Genre</key><string>Domestic(J-Pops)</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4798518</integer>
+			<key>Total Time</key><integer>300303</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2023-08-26T07:55:56Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3811752282</integer>
+			<key>Play Date UTC</key><date>2024-10-14T03:04:42Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-17T21:59:21Z</date>
+			<key>Persistent ID</key><string>89C74E2A990F1766</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/SBK%EF%BC%88%E3%82%B9%E3%82%B1%E3%83%9C%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%EF%BC%89/02%20%EF%BC%A5%EF%BC%B0%EF%BC%A9%EF%BC%B3%EF%BC%AF%EF%BC%A4%EF%BC%A5%E3%80%80%EF%BC%91.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5502</key>
+		<dict>
+			<key>Track ID</key><integer>5502</integer>
+			<key>Name</key><string>長い夢（ソニー・エリクソン　Ｗ３１Ｓ　ＴＶＣＭソング）</string>
+			<key>Artist</key><string>YUKI</string>
+			<key>Album Artist</key><string>YUKI</string>
+			<key>Album</key><string>ＷＡＶＥ</string>
+			<key>Genre</key><string>Domestic(J-Pops)</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5067900</integer>
+			<key>Total Time</key><integer>317178</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-26T08:05:23Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3811750105</integer>
+			<key>Play Date UTC</key><date>2024-10-14T02:28:25Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:33:00Z</date>
+			<key>Persistent ID</key><string>9A8A12AD0E5D5805</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/YUKI/01%20%E9%95%B7%E3%81%84%E5%A4%A2%EF%BC%88%E3%82%BD%E3%83%8B%E3%83%BC%E3%83%BB%E3%82%A8%E3%83%AA%E3%82%AF%E3%82%BD%E3%83%B3%E3%80%80%EF%BC%B7%EF%BC%93%EF%BC%91%EF%BC%B3%E3%80%80%EF%BC%B4%EF%BC%B6%EF%BC%A3%EF%BC%AD%E3%82%BD%E3%83%B3%E3%82%B0%EF%BC%89.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5542</key>
+		<dict>
+			<key>Track ID</key><integer>5542</integer>
+			<key>Name</key><string>My Way</string>
+			<key>Artist</key><string>Def Tech</string>
+			<key>Album Artist</key><string>Def Tech</string>
+			<key>Album</key><string>Def Tech</string>
+			<key>Genre</key><string>World</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4872744</integer>
+			<key>Total Time</key><integer>304953</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2005</integer>
+			<key>Date Modified</key><date>2021-04-23T13:58:39Z</date>
+			<key>Date Added</key><date>2024-07-04T09:31:53Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3813932665</integer>
+			<key>Play Date UTC</key><date>2024-11-08T08:44:25Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-07-30T22:36:22Z</date>
+			<key>Persistent ID</key><string>8A01118BE05D80AA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Def%20Tech/2001_01_04%20My%20Way.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5558</key>
+		<dict>
+			<key>Track ID</key><integer>5558</integer>
+			<key>Name</key><string>ディスコキッド</string>
+			<key>Artist</key><string>東海林修</string>
+			<key>Album Artist</key><string>東海林修</string>
+			<key>Album</key><string>東海林修</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3446395</integer>
+			<key>Total Time</key><integer>215118</integer>
+			<key>Date Modified</key><date>2024-07-27T19:41:49Z</date>
+			<key>Date Added</key><date>2024-07-27T19:42:34Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3811746963</integer>
+			<key>Play Date UTC</key><date>2024-10-14T01:36:03Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T10:26:46Z</date>
+			<key>Persistent ID</key><string>2EF253DBF2A484E8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E6%9D%B1%E6%B5%B7%E6%9E%97%E4%BF%AE/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%83%89.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5578</key>
+		<dict>
+			<key>Track ID</key><integer>5578</integer>
+			<key>Name</key><string>ビリミリオン</string>
+			<key>Artist</key><string>優里</string>
+			<key>Album Artist</key><string>優里</string>
+			<key>Album</key><string>優里</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3655361</integer>
+			<key>Total Time</key><integer>228179</integer>
+			<key>Date Modified</key><date>2024-08-25T12:23:40Z</date>
+			<key>Date Added</key><date>2024-08-25T12:26:00Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>50</integer>
+			<key>Play Date</key><integer>3836188831</integer>
+			<key>Play Date UTC</key><date>2025-07-23T23:00:31Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2025-01-11T08:31:17Z</date>
+			<key>Persistent ID</key><string>AF29BA9F9B96D931</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E5%84%AA%E9%87%8C/%E3%83%93%E3%83%AA%E3%83%9F%E3%83%AA%E3%82%AA%E3%83%B3.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5676</key>
+		<dict>
+			<key>Track ID</key><integer>5676</integer>
+			<key>Name</key><string>Melody</string>
+			<key>Artist</key><string>サザンオールスターズ</string>
+			<key>Album Artist</key><string>サザンオールスターズ</string>
+			<key>Album</key><string>サザンオールスターズ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4918474</integer>
+			<key>Total Time</key><integer>307121</integer>
+			<key>Date Modified</key><date>2024-09-25T12:53:00Z</date>
+			<key>Date Added</key><date>2024-09-25T12:55:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3813635429</integer>
+			<key>Play Date UTC</key><date>2024-11-04T22:10:29Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-11-07T22:05:22Z</date>
+			<key>Persistent ID</key><string>DC52CE30421B9F7D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E3%82%B5%E3%82%B6%E3%83%B3%E3%82%AA%E3%83%BC%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA/1985_01_01%20Melody.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Gen2</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>12792</integer>
+			<key>Playlist Persistent ID</key><string>12C52B5D27AB02DD</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>5558</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5578</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4190</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4338</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4686</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4688</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4694</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4702</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4708</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4782</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4958</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4962</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4168</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4968</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5180</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5502</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5184</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3866</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3862</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3778</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3126</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3130</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3136</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3364</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3366</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3446</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3500</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2972</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3026</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3046</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2476</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2454</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2282</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2312</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2128</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1982</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1986</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1756</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1752</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5676</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2464</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3264</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5542</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

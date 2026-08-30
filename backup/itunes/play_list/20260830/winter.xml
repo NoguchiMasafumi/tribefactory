@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2026-08-30T10:40:04Z</date>
+	<key>Application Version</key><string>12.13.9.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>EEAD44C58E7818E5</string>
+	<key>Tracks</key>
+	<dict>
+		<key>2233</key>
+		<dict>
+			<key>Track ID</key><integer>2233</integer>
+			<key>Name</key><string>The Christmas Song</string>
+			<key>Artist</key><string>Sabrina Claudio</string>
+			<key>Album Artist</key><string>Blues Female 1</string>
+			<key>Album</key><string>Blues Female 1</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3933296</integer>
+			<key>Total Time</key><integer>162455</integer>
+			<key>Track Number</key><integer>36</integer>
+			<key>Date Modified</key><date>2023-02-08T02:23:54Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3851499137</integer>
+			<key>Play Date UTC</key><date>2026-01-17T03:52:17Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-01-25T22:41:58Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Name</key><string>Christmas Song</string>
+			<key>Persistent ID</key><string>78CA1467EA8C4C7E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/Blues/36_Sabrina%20Claudio%20-%20The%20Christmas%20Song%20(Official%20Audio).mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3699</key>
+		<dict>
+			<key>Track ID</key><integer>3699</integer>
+			<key>Name</key><string>2012_01_10_白い恋人達</string>
+			<key>Artist</key><string>桑田佳祐</string>
+			<key>Album Artist</key><string>桑田佳祐</string>
+			<key>Composer</key><string>桑田佳祐</string>
+			<key>Album</key><string>I LOVE YOU now and forever01</string>
+			<key>Genre</key><string>イージー リスニング</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4472424</integer>
+			<key>Total Time</key><integer>279875</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Date Modified</key><date>2023-08-20T08:13:07Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3861195993</integer>
+			<key>Play Date UTC</key><date>2026-05-09T09:26:33Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-11-14T09:13:36Z</date>
+			<key>Persistent ID</key><string>55C75F01059E8CE6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%A1%91%E7%94%B0%E4%BD%B3%E7%A5%90/2012_01_10%20%E7%99%BD%E3%81%84%E6%81%8B%E4%BA%BA%E9%81%94.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4229</key>
+		<dict>
+			<key>Track ID</key><integer>4229</integer>
+			<key>Name</key><string>姫の帰還・魔王城のクリスマス</string>
+			<key>Artist</key><string>Yukari Hashimoto</string>
+			<key>Album</key><string>TVアニメ『魔王城でおやすみ』オリジナルサウンドトラック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6376985</integer>
+			<key>Total Time</key><integer>154357</integer>
+			<key>Track Number</key><integer>48</integer>
+			<key>Year</key><integer>2020</integer>
+			<key>Date Modified</key><date>2023-09-25T11:22:48Z</date>
+			<key>Date Added</key><date>2023-09-25T11:58:14Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.otakuost.net/</string>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3850984256</integer>
+			<key>Play Date UTC</key><date>2026-01-11T04:50:56Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2026-02-24T09:28:47Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>9F46BF2021DD836A</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/TV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8E%E9%AD%94%E7%8E%8B%E5%9F%8E%E3%81%A7%E3%81%8A%E3%82%84%E3%81%99%E3%81%BF%E3%80%8F%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/48%20%E5%A7%AB%E3%81%AE%E5%B8%B0%E9%82%84%E3%83%BB%E9%AD%94%E7%8E%8B%E5%9F%8E%E3%81%AE%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4843</key>
+		<dict>
+			<key>Track ID</key><integer>4843</integer>
+			<key>Name</key><string>Choo Choo TRAIN</string>
+			<key>Artist</key><string>Zoo</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11289832</integer>
+			<key>Total Time</key><integer>274729</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2023-08-26T07:17:59Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3849530366</integer>
+			<key>Play Date UTC</key><date>2025-12-25T08:59:26Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>BBF2D059AE0D6365</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/1_01.%20Choo%20Choo%20TRAIN.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4871</key>
+		<dict>
+			<key>Track ID</key><integer>4871</integer>
+			<key>Name</key><string>Memories</string>
+			<key>Artist</key><string>MAN WITH A MISSION</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11490354</integer>
+			<key>Total Time</key><integer>279745</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:31Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3849529381</integer>
+			<key>Play Date UTC</key><date>2025-12-25T08:43:01Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>C2C24D8FDBC6ABF9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_05.%20Memories.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4911</key>
+		<dict>
+			<key>Track ID</key><integer>4911</integer>
+			<key>Name</key><string>クリスマス・イブRap</string>
+			<key>Artist</key><string>KICK THE CAN CREW</string>
+			<key>Album Artist</key><string>KICK THE CAN CREW</string>
+			<key>Composer</key><string>TATSURO YAMASHITA</string>
+			<key>Album</key><string>アルバム情報なし (2009/10/13 1:14:55)</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5745789</integer>
+			<key>Total Time</key><integer>359836</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-08-26T07:51:32Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3850911399</integer>
+			<key>Play Date UTC</key><date>2026-01-10T08:36:39Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:14:36Z</date>
+			<key>Persistent ID</key><string>9704CB6AD35C0F61</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/KICK%20THE%20CAN%20CREW/01%20%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%BB%E3%82%A4%E3%83%96Ra%EF%BD%90.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5515</key>
+		<dict>
+			<key>Track ID</key><integer>5515</integer>
+			<key>Name</key><string>Ｗｈｉｔｅ　Ｌｏｖｅ</string>
+			<key>Artist</key><string>SPEED</string>
+			<key>Album Artist</key><string>SPEED</string>
+			<key>Album</key><string>ＭＯＭＥＮＴ～ＴＨＥ　ＢＥＳＴ　ＡＬＢＵＭ</string>
+			<key>Genre</key><string>DOMESTIC(J-POPS)</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6747669</integer>
+			<key>Total Time</key><integer>337136</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>1998</integer>
+			<key>Date Modified</key><date>2021-02-20T00:41:51Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3860729047</integer>
+			<key>Play Date UTC</key><date>2026-05-03T23:44:07Z</date>
+			<key>Persistent ID</key><string>10DD5BF9DCEFD80B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/SPEED/White%20Love.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6163</key>
+		<dict>
+			<key>Track ID</key><integer>6163</integer>
+			<key>Name</key><string>Winter Fall</string>
+			<key>Artist</key><string>L'Arc-en-Ciel</string>
+			<key>Album Artist</key><string>L'Arc-en-Ciel</string>
+			<key>Composer</key><string>Hyde/Ken</string>
+			<key>Album</key><string>Clicked Singles Best 13</string>
+			<key>Genre</key><string>World</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4690932</integer>
+			<key>Total Time</key><integer>293564</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2021-04-23T14:17:11Z</date>
+			<key>Date Added</key><date>2025-11-12T12:29:42Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3849183703</integer>
+			<key>Play Date UTC</key><date>2025-12-21T08:41:43Z</date>
+			<key>Persistent ID</key><string>F0F69A5A01090E61</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/L'Arc-en-Ciel/2001_01_05%20Winter%20Fall.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6165</key>
+		<dict>
+			<key>Track ID</key><integer>6165</integer>
+			<key>Name</key><string>Winter Wonderland</string>
+			<key>Artist</key><string>Michael Buble</string>
+			<key>Album Artist</key><string>Michael Buble</string>
+			<key>Album</key><string>Michael Buble</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3628259</integer>
+			<key>Total Time</key><integer>150987</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2021-04-12T12:59:04Z</date>
+			<key>Date Added</key><date>2025-11-12T12:31:04Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3849178899</integer>
+			<key>Play Date UTC</key><date>2025-12-21T07:21:39Z</date>
+			<key>Persistent ID</key><string>BC6B161591EF29E2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/Michael%20Buble/Winter%20Wonderland.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6167</key>
+		<dict>
+			<key>Track ID</key><integer>6167</integer>
+			<key>Name</key><string>Let It Go</string>
+			<key>Artist</key><string>松たか子</string>
+			<key>Album Artist</key><string>松たか子</string>
+			<key>Album</key><string>アナと雪の女王</string>
+			<key>Genre</key><string>その他</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3609486</integer>
+			<key>Total Time</key><integer>225280</integer>
+			<key>Date Modified</key><date>2021-04-12T13:54:15Z</date>
+			<key>Date Added</key><date>2025-11-12T12:32:44Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3860667726</integer>
+			<key>Play Date UTC</key><date>2026-05-03T06:42:06Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-11-25T23:04:31Z</date>
+			<key>Persistent ID</key><string>936A695F8A7113B5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%9D%BE%E3%81%9F%E3%81%8B%E5%AD%90/Let%20It%20Go.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6169</key>
+		<dict>
+			<key>Track ID</key><integer>6169</integer>
+			<key>Name</key><string>YA-YA-YA</string>
+			<key>Artist</key><string>Zoo</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>12826863</integer>
+			<key>Total Time</key><integer>313155</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2023-08-26T07:17:49Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3849184016</integer>
+			<key>Play Date UTC</key><date>2025-12-21T08:46:56Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>FFB497383E70E5E9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/1_02.%20YA-YA-YA.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6171</key>
+		<dict>
+			<key>Track ID</key><integer>6171</integer>
+			<key>Name</key><string>Ding Dong Express</string>
+			<key>Artist</key><string>Zoo</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11569869</integer>
+			<key>Total Time</key><integer>281730</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2023-08-26T07:17:43Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3849176376</integer>
+			<key>Play Date UTC</key><date>2025-12-21T06:39:36Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>0965B2D1FA94A15C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/1_03.%20Ding%20Dong%20Express.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6173</key>
+		<dict>
+			<key>Track ID</key><integer>6173</integer>
+			<key>Name</key><string>Angelic Dream</string>
+			<key>Artist</key><string>Zoo</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11960653</integer>
+			<key>Total Time</key><integer>291500</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2023-08-26T07:17:38Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3849176982</integer>
+			<key>Play Date UTC</key><date>2025-12-21T06:49:42Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>5A797F5F598D5AC9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/1_04.%20Angelic%20Dream.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6175</key>
+		<dict>
+			<key>Track ID</key><integer>6175</integer>
+			<key>Name</key><string>DEPARTURES</string>
+			<key>Artist</key><string>globe</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>12983606</integer>
+			<key>Total Time</key><integer>317074</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:30:47Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3848224091</integer>
+			<key>Play Date UTC</key><date>2025-12-10T06:08:11Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E7864E38BAD59FFF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/1_05.%20DEPARTURES.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6177</key>
+		<dict>
+			<key>Track ID</key><integer>6177</integer>
+			<key>Name</key><string>Can't Stop Fallin' in Love</string>
+			<key>Artist</key><string>globe</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>14302299</integer>
+			<key>Total Time</key><integer>350040</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:30:52Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3849531266</integer>
+			<key>Play Date UTC</key><date>2025-12-25T09:14:26Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>CADA52DBDE84A801</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/1_06.%20Can't%20Stop%20Fallin'%20in%20Love.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6179</key>
+		<dict>
+			<key>Track ID</key><integer>6179</integer>
+			<key>Name</key><string>Winter, again</string>
+			<key>Artist</key><string>GLAY</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>12869716</integer>
+			<key>Total Time</key><integer>314226</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:30:59Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3849529102</integer>
+			<key>Play Date UTC</key><date>2025-12-25T08:38:22Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>04B3B59E94811200</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/1_08.%20Winter,%20again.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6181</key>
+		<dict>
+			<key>Track ID</key><integer>6181</integer>
+			<key>Name</key><string>Snowdome</string>
+			<key>Artist</key><string>木村カエラ</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11485103</integer>
+			<key>Total Time</key><integer>279614</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:15Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3849177261</integer>
+			<key>Play Date UTC</key><date>2025-12-21T06:54:21Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>3DDB24E62D8EA312</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_01.%20Snowdome.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6183</key>
+		<dict>
+			<key>Track ID</key><integer>6183</integer>
+			<key>Name</key><string>雪の音</string>
+			<key>Artist</key><string>GReeeeN</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>12590599</integer>
+			<key>Total Time</key><integer>307252</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:19Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3849528788</integer>
+			<key>Play Date UTC</key><date>2025-12-25T08:33:08Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>08208282E701471E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_02.%20%E9%9B%AA%E3%81%AE%E9%9F%B3.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6185</key>
+		<dict>
+			<key>Track ID</key><integer>6185</integer>
+			<key>Name</key><string>スノーマジックファンタジー</string>
+			<key>Artist</key><string>SEKAI NO OWARI</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>12823645</integer>
+			<key>Total Time</key><integer>313077</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:23Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3849531831</integer>
+			<key>Play Date UTC</key><date>2025-12-25T09:23:51Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>10400BC4BDCD7B6C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_03.%20%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6187</key>
+		<dict>
+			<key>Track ID</key><integer>6187</integer>
+			<key>Name</key><string>ヒロイン</string>
+			<key>Artist</key><string>back number</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11168503</integer>
+			<key>Total Time</key><integer>271699</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:27Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3849530916</integer>
+			<key>Play Date UTC</key><date>2025-12-25T09:08:36Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2BBD92965D424328</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_04.%20%E3%83%92%E3%83%AD%E3%82%A4%E3%83%B3.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6189</key>
+		<dict>
+			<key>Track ID</key><integer>6189</integer>
+			<key>Name</key><string>SNOW SOUND</string>
+			<key>Artist</key><string>[Alexandros]</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11822623</integer>
+			<key>Total Time</key><integer>288052</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:35Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3846769169</integer>
+			<key>Play Date UTC</key><date>2025-11-23T09:59:29Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-11-14T09:13:29Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>1DC1AA85F6FBCC98</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_06.%20SNOW%20SOUND.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6191</key>
+		<dict>
+			<key>Track ID</key><integer>6191</integer>
+			<key>Name</key><string>ホワイトマーチ</string>
+			<key>Artist</key><string>sumika</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>10285560</integer>
+			<key>Total Time</key><integer>249626</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:39Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3849177511</integer>
+			<key>Play Date UTC</key><date>2025-12-21T06:58:31Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>5251CB73C1204E7C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_07.%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%9E%E3%83%BC%E3%83%81.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6193</key>
+		<dict>
+			<key>Track ID</key><integer>6193</integer>
+			<key>Name</key><string>白銀</string>
+			<key>Artist</key><string>Eve</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>10148663</integer>
+			<key>Total Time</key><integer>246204</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:42Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3849316770</integer>
+			<key>Play Date UTC</key><date>2025-12-22T21:39:30Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>AD4FB2FE015A0022</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_08.%20%E7%99%BD%E9%8A%80.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6195</key>
+		<dict>
+			<key>Track ID</key><integer>6195</integer>
+			<key>Name</key><string>メレンゲ</string>
+			<key>Artist</key><string>マカロニえんぴつ</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Various Artists</string>
+			<key>Album</key><string>JR SKISKI 30TH ANNIVERSARY COLLECTION スタンダードエディション</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9850881</integer>
+			<key>Total Time</key><integer>238759</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2022-12-06T09:31:45Z</date>
+			<key>Date Added</key><date>2025-11-12T12:34:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>JPOPMIX.COM</string>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3848210558</integer>
+			<key>Play Date UTC</key><date>2025-12-10T02:22:38Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>510E7F8485D363B8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/JR_SKI_SKI%E3%80%80%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/2_09.%20%E3%83%A1%E3%83%AC%E3%83%B3%E3%82%B2.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6197</key>
+		<dict>
+			<key>Track ID</key><integer>6197</integer>
+			<key>Name</key><string>2012_02_08_BLIZZARD</string>
+			<key>Artist</key><string>松任谷由実</string>
+			<key>Album Artist</key><string>松任谷由実</string>
+			<key>Album</key><string>日本の恋と、 ユーミンと。02</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6630593</integer>
+			<key>Total Time</key><integer>276088</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Date Modified</key><date>2023-08-20T08:51:48Z</date>
+			<key>Date Added</key><date>2025-11-12T12:36:14Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3846224849</integer>
+			<key>Play Date UTC</key><date>2025-11-17T02:47:29Z</date>
+			<key>Persistent ID</key><string>91C343C07109D85A</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F/2012_02_08_BLIZZARD.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6199</key>
+		<dict>
+			<key>Track ID</key><integer>6199</integer>
+			<key>Name</key><string>2008_04_07_Itsuka no MERRY CHRISTMAS</string>
+			<key>Artist</key><string>B'z</string>
+			<key>Album</key><string>B'z The Best ULTRA Pleasure</string>
+			<key>Genre</key><string>J-Rock</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11131539</integer>
+			<key>Total Time</key><integer>337293</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2023-08-29T03:22:55Z</date>
+			<key>Date Added</key><date>2025-11-12T12:37:05Z</date>
+			<key>Bit Rate</key><integer>263</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://jenie.co</string>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3849183255</integer>
+			<key>Play Date UTC</key><date>2025-12-21T08:34:15Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-11-12T23:02:48Z</date>
+			<key>Persistent ID</key><string>07F9B5F3A7A35F91</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/B'z/2008_04_07%20-%20Itsuka%20no%20MERRY%20CHRISTMAS.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6201</key>
+		<dict>
+			<key>Track ID</key><integer>6201</integer>
+			<key>Name</key><string>All I Want for Christmas Is You</string>
+			<key>Artist</key><string>Mariah Carey</string>
+			<key>Album Artist</key><string>Mariah Carey</string>
+			<key>Album</key><string>Merry Christmas</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5660032</integer>
+			<key>Total Time</key><integer>235102</integer>
+			<key>Date Modified</key><date>2023-08-26T07:54:40Z</date>
+			<key>Date Added</key><date>2025-11-12T12:37:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3847001051</integer>
+			<key>Play Date UTC</key><date>2025-11-26T02:24:11Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>BDBDBC88BC971473</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/Mariah%20Carey/All%20I%20Want%20For%20Christmas%20Is%20You.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6203</key>
+		<dict>
+			<key>Track ID</key><integer>6203</integer>
+			<key>Name</key><string>Last Christmas</string>
+			<key>Artist</key><string>Wham!</string>
+			<key>Album Artist</key><string>Wham!</string>
+			<key>Album</key><string>The Best of Wham!: If You Were There...</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6681872</integer>
+			<key>Total Time</key><integer>277916</integer>
+			<key>Date Modified</key><date>2023-08-26T07:15:57Z</date>
+			<key>Date Added</key><date>2025-11-12T12:37:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3849530644</integer>
+			<key>Play Date UTC</key><date>2025-12-25T09:04:04Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-12-10T04:55:02Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Best of Wham!: If You Were There...</string>
+			<key>Persistent ID</key><string>FCB7373B54F1CDA5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/Wham/Last%20Christmas.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6205</key>
+		<dict>
+			<key>Track ID</key><integer>6205</integer>
+			<key>Name</key><string>01. Merry Christmas Mr. Lawrence</string>
+			<key>Artist</key><string>坂本龍一</string>
+			<key>Album Artist</key><string>坂本龍一</string>
+			<key>Album</key><string>JPOP.ru</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4599762</integer>
+			<key>Total Time</key><integer>287216</integer>
+			<key>Date Modified</key><date>2023-08-26T06:32:19Z</date>
+			<key>Date Added</key><date>2025-11-12T12:37:05Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>online-audio-converter.com</string>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3849179557</integer>
+			<key>Play Date UTC</key><date>2025-12-21T07:32:37Z</date>
+			<key>Persistent ID</key><string>D8AF35E1C27C662E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E5%9D%82%E6%9C%AC%E9%BE%8D%E4%B8%80/01.%20Merry%20Christmas%20Mr.%20Lawrence.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6207</key>
+		<dict>
+			<key>Track ID</key><integer>6207</integer>
+			<key>Name</key><string>2012_01_04_Kissin' Christmas（クリスマスだからじゃない）</string>
+			<key>Artist</key><string>桑田佳祐</string>
+			<key>Album Artist</key><string>桑田佳祐</string>
+			<key>Composer</key><string>桑田佳祐</string>
+			<key>Album</key><string>I LOVE YOU now and forever01</string>
+			<key>Genre</key><string>イージー リスニング</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6859332</integer>
+			<key>Total Time</key><integer>429400</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Date Modified</key><date>2023-08-20T08:12:31Z</date>
+			<key>Date Added</key><date>2025-11-12T12:37:05Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3848220654</integer>
+			<key>Play Date UTC</key><date>2025-12-10T05:10:54Z</date>
+			<key>Persistent ID</key><string>9BE082DE7457BD8C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%A1%91%E7%94%B0%E4%BD%B3%E7%A5%90/2012_01_04%20Kissin'%20Christmas%EF%BC%88%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%81%A0%E3%81%8B%E3%82%89%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%EF%BC%89.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6209</key>
+		<dict>
+			<key>Track ID</key><integer>6209</integer>
+			<key>Name</key><string>The Christmas Song</string>
+			<key>Artist</key><string>Sabrina Claudio</string>
+			<key>Album Artist</key><string>Blues Female 1</string>
+			<key>Album</key><string>Blues Female 1</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3933296</integer>
+			<key>Total Time</key><integer>162455</integer>
+			<key>Track Number</key><integer>36</integer>
+			<key>Date Modified</key><date>2023-02-08T02:23:54Z</date>
+			<key>Date Added</key><date>2025-11-12T12:37:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3847262724</integer>
+			<key>Play Date UTC</key><date>2025-11-29T03:05:24Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-11-12T23:02:37Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Name</key><string>Christmas Song</string>
+			<key>Persistent ID</key><string>F15AC0EC780F0BF7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/Blues/36_Sabrina%20Claudio%20-%20The%20Christmas%20Song%20(Official%20Audio).mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6211</key>
+		<dict>
+			<key>Track ID</key><integer>6211</integer>
+			<key>Name</key><string>Christmas Eve</string>
+			<key>Artist</key><string>山下達郎</string>
+			<key>Album Artist</key><string>山下達郎</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6043243</integer>
+			<key>Total Time</key><integer>251742</integer>
+			<key>Date Modified</key><date>2021-04-12T13:45:26Z</date>
+			<key>Date Added</key><date>2025-11-12T12:37:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3849531518</integer>
+			<key>Play Date UTC</key><date>2025-12-25T09:18:38Z</date>
+			<key>Persistent ID</key><string>BB4EF8666A77AE87</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E5%B1%B1%E4%B8%8B%E9%81%94%E9%83%8E/Christmas%20Eve.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6213</key>
+		<dict>
+			<key>Track ID</key><integer>6213</integer>
+			<key>Name</key><string>Silent Night</string>
+			<key>Artist</key><string>The Temptations</string>
+			<key>Album Artist</key><string>The Temptations</string>
+			<key>Album</key><string>The Temptations Christmas Card</string>
+			<key>Genre</key><string>ソウル</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8921294</integer>
+			<key>Total Time</key><integer>370207</integer>
+			<key>Date Modified</key><date>2021-04-12T13:42:02Z</date>
+			<key>Date Added</key><date>2025-11-12T12:37:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3849179270</integer>
+			<key>Play Date UTC</key><date>2025-12-21T07:27:50Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Temptations Christmas Card</string>
+			<key>Sort Album Artist</key><string>Temptations</string>
+			<key>Sort Artist</key><string>Temptations</string>
+			<key>Persistent ID</key><string>350AA7E4F0CC26BE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/The%20Temptations/Silent%20Night.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6215</key>
+		<dict>
+			<key>Track ID</key><integer>6215</integer>
+			<key>Name</key><string>Fairyland</string>
+			<key>Artist</key><string>小柳ゆき</string>
+			<key>Album Artist</key><string>小柳ゆき</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6629937</integer>
+			<key>Total Time</key><integer>275905</integer>
+			<key>Date Modified</key><date>2022-01-29T06:53:58Z</date>
+			<key>Date Added</key><date>2025-11-12T12:45:10Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3850898358</integer>
+			<key>Play Date UTC</key><date>2026-01-10T04:59:18Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-12-22T22:04:36Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>B0AF4193CDBE4DEA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E5%B0%8F%E6%9F%B3%E3%82%86%E3%81%8D/Fairyland.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6217</key>
+		<dict>
+			<key>Track ID</key><integer>6217</integer>
+			<key>Name</key><string>Happy_Xmas_(War_Is_Over)</string>
+			<key>Artist</key><string>John Lennon</string>
+			<key>Album Artist</key><string>John Lennon</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>1733332</integer>
+			<key>Total Time</key><integer>216137</integer>
+			<key>Date Modified</key><date>2023-08-26T07:51:26Z</date>
+			<key>Date Added</key><date>2025-11-12T12:54:16Z</date>
+			<key>Bit Rate</key><integer>64</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3849181957</integer>
+			<key>Play Date UTC</key><date>2025-12-21T08:12:37Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-11-15T10:12:39Z</date>
+			<key>Persistent ID</key><string>B56BE6369CB16E1C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/John%20Lennon/Happy_Xmas_(War_Is_Over)_-_John_Lennon.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6259</key>
+		<dict>
+			<key>Track ID</key><integer>6259</integer>
+			<key>Name</key><string>粉雪</string>
+			<key>Artist</key><string>レミオロメン</string>
+			<key>Album</key><string>レミオロメン</string>
+			<key>Genre</key><string>JPop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7680146</integer>
+			<key>Total Time</key><integer>319200</integer>
+			<key>Date Modified</key><date>2021-10-30T08:19:56Z</date>
+			<key>Date Added</key><date>2025-11-22T13:51:55Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>13</integer>
+			<key>Play Date</key><integer>3869185647</integer>
+			<key>Play Date UTC</key><date>2026-08-09T20:47:27Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A340C50328D2AD40</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E3%83%AC%E3%83%9F%E3%82%AA%E3%83%AD%E3%83%A1%E3%83%B3/%E7%B2%89%E9%9B%AA.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>winter</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>14749</integer>
+			<key>Playlist Persistent ID</key><string>A52FA0457D56409C</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>6189</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6187</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6193</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6179</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6175</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6177</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6183</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6185</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6191</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6169</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6171</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6173</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6195</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6181</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6167</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6165</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6163</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6197</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6199</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6201</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6209</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6213</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6203</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6207</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6205</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6211</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2233</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4911</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4229</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6215</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6217</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4871</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4843</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3699</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5515</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6259</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

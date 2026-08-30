@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2026-08-30T10:39:58Z</date>
+	<key>Application Version</key><string>12.13.9.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>EEAD44C58E7818E5</string>
+	<key>Tracks</key>
+	<dict>
+		<key>1853</key>
+		<dict>
+			<key>Track ID</key><integer>1853</integer>
+			<key>Name</key><string>春を告げる</string>
+			<key>Artist</key><string>yama</string>
+			<key>Album Artist</key><string>yama</string>
+			<key>Album</key><string>yama</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3143771</integer>
+			<key>Total Time</key><integer>196205</integer>
+			<key>Date Modified</key><date>2023-08-19T03:06:37Z</date>
+			<key>Date Added</key><date>2023-08-19T07:07:46Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>86</integer>
+			<key>Play Date</key><integer>3870254522</integer>
+			<key>Play Date UTC</key><date>2026-08-22T05:42:02Z</date>
+			<key>Skip Count</key><integer>6</integer>
+			<key>Skip Date</key><date>2025-11-23T14:32:45Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>D11EC56D428BD233</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/yama/%E6%98%A5%E3%82%92%E5%91%8A%E3%81%92%E3%82%8B.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2001</key>
+		<dict>
+			<key>Track ID</key><integer>2001</integer>
+			<key>Name</key><string>2012_01_03_卒業写真</string>
+			<key>Artist</key><string>松任谷由実</string>
+			<key>Album</key><string>日本の恋と、 ユーミンと。01</string>
+			<key>Genre</key><string> </string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4051945</integer>
+			<key>Total Time</key><integer>252969</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Date Modified</key><date>2023-08-20T08:51:07Z</date>
+			<key>Date Added</key><date>2023-08-20T08:49:24Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3857567808</integer>
+			<key>Play Date UTC</key><date>2026-03-28T09:36:48Z</date>
+			<key>Persistent ID</key><string>29C56D13981DE95D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F/2012_01_03.%E5%8D%92%E6%A5%AD%E5%86%99%E7%9C%9F.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2027</key>
+		<dict>
+			<key>Track ID</key><integer>2027</integer>
+			<key>Name</key><string>2012_03_05_春よ、来い</string>
+			<key>Artist</key><string>松任谷由実</string>
+			<key>Album</key><string>日本の恋と、 ユーミンと。03</string>
+			<key>Genre</key><string>その他</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4575230</integer>
+			<key>Total Time</key><integer>285675</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Date Modified</key><date>2023-08-20T08:51:38Z</date>
+			<key>Date Added</key><date>2023-08-20T08:49:24Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>15</integer>
+			<key>Play Date</key><integer>3869827762</integer>
+			<key>Play Date UTC</key><date>2026-08-17T07:09:22Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>40F56238E38E03AC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F/2012_03_05.%E6%98%A5%E3%82%88%E3%80%81%E6%9D%A5%E3%81%84.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3619</key>
+		<dict>
+			<key>Track ID</key><integer>3619</integer>
+			<key>Name</key><string>01_02_011_Spring</string>
+			<key>Artist</key><string>久石譲</string>
+			<key>Album Artist</key><string>久石譲</string>
+			<key>Album</key><string>Essential</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4811781</integer>
+			<key>Total Time</key><integer>171833</integer>
+			<key>Track Number</key><integer>211</integer>
+			<key>Date Modified</key><date>2023-08-26T08:15:33Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>224</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3869715310</integer>
+			<key>Play Date UTC</key><date>2026-08-15T23:55:10Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-01-20T08:49:08Z</date>
+			<key>Persistent ID</key><string>0E524E9466DD27B3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E4%B9%85%E7%9F%B3%E8%AD%B2/01_02_011_%E4%B9%85%E7%9F%B3%20%E8%AD%B2%20(Joe%20Hisaishi)%20-%20Spring.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3817</key>
+		<dict>
+			<key>Track ID</key><integer>3817</integer>
+			<key>Name</key><string>卒業</string>
+			<key>Artist</key><string>斉藤由貴</string>
+			<key>Album Artist</key><string>斉藤由貴</string>
+			<key>Album</key><string>Axia</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6833014</integer>
+			<key>Total Time</key><integer>283977</integer>
+			<key>Date Modified</key><date>2023-09-13T08:09:58Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3870278596</integer>
+			<key>Play Date UTC</key><date>2026-08-22T12:23:16Z</date>
+			<key>Skip Count</key><integer>6</integer>
+			<key>Skip Date</key><date>2026-08-02T06:49:35Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E37E24C0087BC5F5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%96%89%E8%97%A4%E7%94%B1%E8%B2%B4/%E5%8D%92%E6%A5%AD.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3885</key>
+		<dict>
+			<key>Track ID</key><integer>3885</integer>
+			<key>Name</key><string>卒業</string>
+			<key>Artist</key><string>渡辺美里</string>
+			<key>Album Artist</key><string>渡辺美里</string>
+			<key>Composer</key><string>Tetsuya Komuro</string>
+			<key>Album</key><string>harvest</string>
+			<key>Genre</key><string>J-Pop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>13540783</integer>
+			<key>Total Time</key><integer>325511</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2020</integer>
+			<key>Date Modified</key><date>2022-03-09T00:07:20Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>www.jpopsingles.eu</string>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3870586816</integer>
+			<key>Play Date UTC</key><date>2026-08-26T02:00:16Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>3EBD71BEE4155561</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%B8%A1%E8%BE%BA%E7%BE%8E%E9%87%8C/12.%20%E5%8D%92%E6%A5%AD.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4533</key>
+		<dict>
+			<key>Track ID</key><integer>4533</integer>
+			<key>Name</key><string>桜</string>
+			<key>Artist</key><string>bird</string>
+			<key>Album</key><string>MINDTRAVEL</string>
+			<key>Genre</key><string>World Pop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9094496</integer>
+			<key>Total Time</key><integer>284055</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2023-08-26T07:46:48Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3858165171</integer>
+			<key>Play Date UTC</key><date>2026-04-04T07:32:51Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2026-04-05T21:54:39Z</date>
+			<key>Persistent ID</key><string>95F14CC264FC3267</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/bird/12%20%E6%A1%9C.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>4983</key>
+		<dict>
+			<key>Track ID</key><integer>4983</integer>
+			<key>Name</key><string>春の海</string>
+			<key>Artist</key><string>LEO</string>
+			<key>Album Artist</key><string>LEO</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>10726461</integer>
+			<key>Total Time</key><integer>446424</integer>
+			<key>Date Modified</key><date>2021-06-26T01:25:43Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3870264076</integer>
+			<key>Play Date UTC</key><date>2026-08-22T08:21:16Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2026-08-11T09:38:52Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>BF90A3242539C55D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/LEO/%E6%98%A5%E3%81%AE%E6%B5%B7.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5977</key>
+		<dict>
+			<key>Track ID</key><integer>5977</integer>
+			<key>Name</key><string>桜晴</string>
+			<key>Artist</key><string>優里</string>
+			<key>Album Artist</key><string>優里</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3781978</integer>
+			<key>Total Time</key><integer>236094</integer>
+			<key>Date Modified</key><date>2025-03-22T06:15:13Z</date>
+			<key>Date Added</key><date>2025-03-22T06:29:23Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>20</integer>
+			<key>Play Date</key><integer>3870254758</integer>
+			<key>Play Date UTC</key><date>2026-08-22T05:45:58Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-04-13T09:06:23Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>21D002A0BB0E873B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E5%84%AA%E9%87%8C/%E6%A1%9C%E6%99%B4.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6123</key>
+		<dict>
+			<key>Track ID</key><integer>6123</integer>
+			<key>Name</key><string>千本桜</string>
+			<key>Artist</key><string>WhiteFlame official</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9847618</integer>
+			<key>Total Time</key><integer>244192</integer>
+			<key>Year</key><integer>2014</integer>
+			<key>Date Modified</key><date>2025-08-07T09:45:45Z</date>
+			<key>Date Added</key><date>2025-08-07T10:05:21Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>31</integer>
+			<key>Play Date</key><integer>3870260505</integer>
+			<key>Play Date UTC</key><date>2026-08-22T07:21:45Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2026-03-31T21:55:33Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>3EEAF7780B9C99F8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF_2025/%E5%8D%83%E6%9C%AC%E6%A1%9C.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>6257</key>
+		<dict>
+			<key>Track ID</key><integer>6257</integer>
+			<key>Name</key><string>Sakura</string>
+			<key>Artist</key><string>レミオロメン</string>
+			<key>Album Artist</key><string>レミオロメン</string>
+			<key>Album</key><string>レミオベスト</string>
+			<key>Genre</key><string>DOMESTIC(J-POPS)</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7259475</integer>
+			<key>Total Time</key><integer>302419</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2009</integer>
+			<key>Date Modified</key><date>2022-03-08T10:40:38Z</date>
+			<key>Date Added</key><date>2025-11-22T13:51:55Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3857871172</integer>
+			<key>Play Date UTC</key><date>2026-03-31T21:52:52Z</date>
+			<key>Persistent ID</key><string>DAB00AC5CC979F42</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E3%83%AC%E3%83%9F%E3%82%AA%E3%83%AD%E3%83%A1%E3%83%B3/%E3%83%AC%E3%83%9F%E3%82%AA%E3%83%AD%E3%83%A1%E3%83%B3%EF%BC%8FSakura.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6293</key>
+		<dict>
+			<key>Track ID</key><integer>6293</integer>
+			<key>Name</key><string>さくら（独唱）</string>
+			<key>Artist</key><string>森山直太朗 </string>
+			<key>Album Artist</key><string>森山直太朗</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7228837</integer>
+			<key>Total Time</key><integer>300878</integer>
+			<key>Date Modified</key><date>2022-03-08T03:45:18Z</date>
+			<key>Date Added</key><date>2025-11-22T13:58:57Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3858047649</integer>
+			<key>Play Date UTC</key><date>2026-04-02T22:54:09Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>71D86F20BFEC1E91</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E6%A3%AE%E5%B1%B1%E7%9B%B4%E5%A4%AA%E6%9C%97/%E3%81%95%E3%81%8F%E3%82%89%EF%BC%88%E7%8B%AC%E5%94%B1%EF%BC%89.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6371</key>
+		<dict>
+			<key>Track ID</key><integer>6371</integer>
+			<key>Name</key><string>桜坂</string>
+			<key>Artist</key><string>福山雅治</string>
+			<key>Album</key><string>桜坂</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6755564</integer>
+			<key>Total Time</key><integer>280848</integer>
+			<key>Date Modified</key><date>2022-03-08T03:45:32Z</date>
+			<key>Date Added</key><date>2025-11-22T14:08:03Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3869815215</integer>
+			<key>Play Date UTC</key><date>2026-08-17T03:40:15Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>23B3B6F116D61D9E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E7%A6%8F%E5%B1%B1%E9%9B%85%E6%B2%BB/%E6%A1%9C%E5%9D%82.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6385</key>
+		<dict>
+			<key>Track ID</key><integer>6385</integer>
+			<key>Name</key><string>千本桜</string>
+			<key>Artist</key><string>和楽器バンド</string>
+			<key>Album Artist</key><string>和楽器バンド</string>
+			<key>Album</key><string>ボカロ三昧</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6735451</integer>
+			<key>Total Time</key><integer>279666</integer>
+			<key>Date Modified</key><date>2021-04-12T13:52:52Z</date>
+			<key>Date Added</key><date>2025-11-22T14:10:01Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3861626411</integer>
+			<key>Play Date UTC</key><date>2026-05-14T09:00:11Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2026-03-31T21:37:55Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>BB4E69E42C2F1B2D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E5%92%8C%E6%A5%BD%E5%99%A8%E3%83%90%E3%83%B3%E3%83%89/%E5%8D%83%E6%9C%AC%E6%A1%9C.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6403</key>
+		<dict>
+			<key>Track ID</key><integer>6403</integer>
+			<key>Name</key><string>桜</string>
+			<key>Artist</key><string>コブクロ</string>
+			<key>Album Artist</key><string>コブクロ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9093097</integer>
+			<key>Total Time</key><integer>378024</integer>
+			<key>Date Modified</key><date>2022-03-08T03:45:26Z</date>
+			<key>Date Added</key><date>2025-11-22T14:27:12Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3870259712</integer>
+			<key>Play Date UTC</key><date>2026-08-22T07:08:32Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2026-06-25T08:53:47Z</date>
+			<key>Loved</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>AAEB60013DE35056</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost//LENOVO_MAIN/Users/user/Music/iTunes/iTunes%20Media/Music/%E3%82%B3%E3%83%96%E3%82%AF%E3%83%AD/%E6%A1%9C.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>6437</key>
+		<dict>
+			<key>Track ID</key><integer>6437</integer>
+			<key>Name</key><string>さくら</string>
+			<key>Artist</key><string>ケツメイシ</string>
+			<key>Album Artist</key><string>ケツメイシ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7171579</integer>
+			<key>Total Time</key><integer>317304</integer>
+			<key>Date Modified</key><date>2025-11-25T10:30:25Z</date>
+			<key>Date Added</key><date>2025-11-25T11:04:45Z</date>
+			<key>Bit Rate</key><integer>180</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3857870265</integer>
+			<key>Play Date UTC</key><date>2026-03-31T21:37:45Z</date>
+			<key>Persistent ID</key><string>DF7D432FA8729E66</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/%E3%82%B1%E3%83%84%E3%83%A1%E3%82%A4%E3%82%B7/%E3%81%95%E3%81%8F%E3%82%89.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>spring</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>14730</integer>
+			<key>Playlist Persistent ID</key><string>44AE5F1912C4B0C1</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>6403</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6385</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6371</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6123</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5977</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4533</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2027</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6293</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6257</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3817</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3885</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2001</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4983</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1853</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3619</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>6437</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

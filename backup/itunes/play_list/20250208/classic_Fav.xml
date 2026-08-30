@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2025-02-08T01:13:13Z</date>
+	<key>Application Version</key><string>12.13.4.4</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>EEAD44C58E7818E5</string>
+	<key>Tracks</key>
+	<dict>
+		<key>1703</key>
+		<dict>
+			<key>Track ID</key><integer>1703</integer>
+			<key>Name</key><string>01_02_セレナード第１３番ト長調Ｋ．５２５「アイネ・クライネ・ナハトムジーク」～第２楽章</string>
+			<key>Artist</key><string>ヴォルフガング・ソボトカ／カペラ・イストロポリターナ</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ヴォルフガング・アマデウス・モーツァルト</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5874634</integer>
+			<key>Total Time</key><integer>367699</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:20:54Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>68</integer>
+			<key>Play Date</key><integer>3821756729</integer>
+			<key>Play Date UTC</key><date>2025-02-06T22:05:29Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-09-15T00:13:56Z</date>
+			<key>Persistent ID</key><string>AF82AEDF0F0B5491</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%EF%BC%90%E6%AD%B3%E3%81%8B%E3%82%89%E3%81%AE%E8%82%B2%E8%84%B3%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF/01_02%20%E3%82%BB%E3%83%AC%E3%83%8A%E3%83%BC%E3%83%89%E7%AC%AC%EF%BC%91%EF%BC%93%E7%95%AA%E3%83%88%E9%95%B7%E8%AA%BF%EF%BC%AB%EF%BC%8E%EF%BC%95%EF%BC%92%EF%BC%95%E3%80%8C%E3%82%A2%E3%82%A4%E3%83%8D%E3%83%BB%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%8D%E3%83%BB%E3%83%8A%E3%83%8F%E3%83%88%E3%83%A0%E3%82%B8%E3%83%BC%E3%82%AF%E3%80%8D%EF%BD%9E%E7%AC%AC%EF%BC%92%E6%A5%BD%E7%AB%A0.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1705</key>
+		<dict>
+			<key>Track ID</key><integer>1705</integer>
+			<key>Name</key><string>01_03_前奏曲第１５番変ニ長調ｏｐ．２８－１５「雨だれ」</string>
+			<key>Artist</key><string>イディル・ビレット</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>フレデリク・フランチシェク・ショパン</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5598709</integer>
+			<key>Total Time</key><integer>350432</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-26T07:44:44Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>51</integer>
+			<key>Play Date</key><integer>3821582949</integer>
+			<key>Play Date UTC</key><date>2025-02-04T21:49:09Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-01-12T08:56:43Z</date>
+			<key>Persistent ID</key><string>E03D2059758D29E3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%EF%BC%90%E6%AD%B3%E3%81%8B%E3%82%89%E3%81%AE%E8%82%B2%E8%84%B3%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF/01_03%20%E5%89%8D%E5%A5%8F%E6%9B%B2%E7%AC%AC%EF%BC%91%EF%BC%95%E7%95%AA%E5%A4%89%E3%83%8B%E9%95%B7%E8%AA%BF%EF%BD%8F%EF%BD%90%EF%BC%8E%EF%BC%92%EF%BC%98%EF%BC%8D%EF%BC%91%EF%BC%95%E3%80%8C%E9%9B%A8%E3%81%A0%E3%82%8C%E3%80%8D.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1723</key>
+		<dict>
+			<key>Track ID</key><integer>1723</integer>
+			<key>Name</key><string>01_12_無伴奏チェロ組曲第１番ト長調ＢＷＶ１００７～前奏曲</string>
+			<key>Artist</key><string>チャバ・オンツァイ</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ヨハン・セバスティアン・バッハ</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2436630</integer>
+			<key>Total Time</key><integer>152346</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:23:01Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>67</integer>
+			<key>Play Date</key><integer>3821755880</integer>
+			<key>Play Date UTC</key><date>2025-02-06T21:51:20Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-24T08:55:20Z</date>
+			<key>Persistent ID</key><string>D055D8C38498C8A4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%EF%BC%90%E6%AD%B3%E3%81%8B%E3%82%89%E3%81%AE%E8%82%B2%E8%84%B3%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF/01_12%20%E7%84%A1%E4%BC%B4%E5%A5%8F%E3%83%81%E3%82%A7%E3%83%AD%E7%B5%84%E6%9B%B2%E7%AC%AC%EF%BC%91%E7%95%AA%E3%83%88%E9%95%B7%E8%AA%BF%EF%BC%A2%EF%BC%B7%EF%BC%B6%EF%BC%91%EF%BC%90%EF%BC%90%EF%BC%97%EF%BD%9E%E5%89%8D%E5%A5%8F%E6%9B%B2.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1733</key>
+		<dict>
+			<key>Track ID</key><integer>1733</integer>
+			<key>Name</key><string>02_04_ベルガマスク組曲～月の光</string>
+			<key>Artist</key><string>キース・クラーク／チェコスロヴァキア放送ブラティスラヴァ交響楽団</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>クロウド・アシルー・ドビュッシー</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4296450</integer>
+			<key>Total Time</key><integer>268852</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:24:41Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>69</integer>
+			<key>Play Date</key><integer>3821496770</integer>
+			<key>Play Date UTC</key><date>2025-02-03T21:52:50Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-02-06T21:59:13Z</date>
+			<key>Persistent ID</key><string>1AE0009044AAE4E2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%EF%BC%90%E6%AD%B3%E3%81%8B%E3%82%89%E3%81%AE%E8%82%B2%E8%84%B3%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF/04%20%E3%83%99%E3%83%AB%E3%82%AC%E3%83%9E%E3%82%B9%E3%82%AF%E7%B5%84%E6%9B%B2%EF%BD%9E%E6%9C%88%E3%81%AE%E5%85%89.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1741</key>
+		<dict>
+			<key>Track ID</key><integer>1741</integer>
+			<key>Name</key><string>02_08_ピアノ・ソナタ第８番ハ短調ｏｐ．１３「悲愴」～第２楽章</string>
+			<key>Artist</key><string>イェネ・ヤンドー</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ルートヴィヒ・ヴァン・ベートーヴェン</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4568334</integer>
+			<key>Total Time</key><integer>285884</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-26T07:44:52Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>59</integer>
+			<key>Play Date</key><integer>3821669376</integer>
+			<key>Play Date UTC</key><date>2025-02-05T21:49:36Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-04-07T22:06:23Z</date>
+			<key>Persistent ID</key><string>E2939AA211FCBA8C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%EF%BC%90%E6%AD%B3%E3%81%8B%E3%82%89%E3%81%AE%E8%82%B2%E8%84%B3%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF/08%20%E3%83%94%E3%82%A2%E3%83%8E%E3%83%BB%E3%82%BD%E3%83%8A%E3%82%BF%E7%AC%AC%EF%BC%98%E7%95%AA%E3%83%8F%E7%9F%AD%E8%AA%BF%EF%BD%8F%EF%BD%90%EF%BC%8E%EF%BC%91%EF%BC%93%E3%80%8C%E6%82%B2%E6%84%B4%E3%80%8D%EF%BD%9E%E7%AC%AC%EF%BC%92%E6%A5%BD%E7%AB%A0.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1743</key>
+		<dict>
+			<key>Track ID</key><integer>1743</integer>
+			<key>Name</key><string>02_09_管弦楽組曲第３番ニ長調ＢＷＶ１０６８～エア</string>
+			<key>Artist</key><string>ヤロスラフ・ドヴォルザーク／カペラ・イストロポリターナ</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ヨハン・セバスティアン・バッハ</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5137924</integer>
+			<key>Total Time</key><integer>321567</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-26T07:44:55Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>53</integer>
+			<key>Play Date</key><integer>3821757330</integer>
+			<key>Play Date UTC</key><date>2025-02-06T22:15:30Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-10-07T21:44:21Z</date>
+			<key>Persistent ID</key><string>7A46DBAD8FDBE803</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%EF%BC%90%E6%AD%B3%E3%81%8B%E3%82%89%E3%81%AE%E8%82%B2%E8%84%B3%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF/09%20%E7%AE%A1%E5%BC%A6%E6%A5%BD%E7%B5%84%E6%9B%B2%E7%AC%AC%EF%BC%93%E7%95%AA%E3%83%8B%E9%95%B7%E8%AA%BF%EF%BC%A2%EF%BC%B7%EF%BC%B6%EF%BC%91%EF%BC%90%EF%BC%96%EF%BC%98%EF%BD%9E%E3%82%A8%E3%82%A2.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1745</key>
+		<dict>
+			<key>Track ID</key><integer>1745</integer>
+			<key>Name</key><string>02_10_子供の情景ｏｐ．１５～トロイメライ</string>
+			<key>Artist</key><string>イェネ・ヤンドー</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ローベルト・アレクサンダー・シューマン</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3130935</integer>
+			<key>Total Time</key><integer>195840</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:25:52Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>58</integer>
+			<key>Play Date</key><integer>3821692446</integer>
+			<key>Play Date UTC</key><date>2025-02-06T04:14:06Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-02-19T21:55:22Z</date>
+			<key>Persistent ID</key><string>62428A1F1C1804BF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%EF%BC%90%E6%AD%B3%E3%81%8B%E3%82%89%E3%81%AE%E8%82%B2%E8%84%B3%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF/10%20%E5%AD%90%E4%BE%9B%E3%81%AE%E6%83%85%E6%99%AF%EF%BD%8F%EF%BD%90%EF%BC%8E%EF%BC%91%EF%BC%95%EF%BD%9E%E3%83%88%E3%83%AD%E3%82%A4%E3%83%A1%E3%83%A9%E3%82%A4.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2501</key>
+		<dict>
+			<key>Track ID</key><integer>2501</integer>
+			<key>Name</key><string>Ｇ線上のアリア</string>
+			<key>Artist</key><string>スラヴァ</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>バッハ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3294816</integer>
+			<key>Total Time</key><integer>206106</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:01Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>58</integer>
+			<key>Play Date</key><integer>3821669582</integer>
+			<key>Play Date UTC</key><date>2025-02-05T21:53:02Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2024-07-28T11:24:31Z</date>
+			<key>Persistent ID</key><string>ED086E396CC34703</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/still%20echo/01%20%EF%BC%A7%E7%B7%9A%E4%B8%8A%E3%81%AE%E3%82%A2%E3%83%AA%E3%82%A2.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2503</key>
+		<dict>
+			<key>Track ID</key><integer>2503</integer>
+			<key>Name</key><string>プレリュード</string>
+			<key>Artist</key><string>清水靖晃</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>バッハ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2290680</integer>
+			<key>Total Time</key><integer>143203</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:07Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>48</integer>
+			<key>Play Date</key><integer>3821496501</integer>
+			<key>Play Date UTC</key><date>2025-02-03T21:48:21Z</date>
+			<key>Persistent ID</key><string>1624C37C39688DAB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/still%20echo/02%20%E3%83%97%E3%83%AC%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%89.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2509</key>
+		<dict>
+			<key>Track ID</key><integer>2509</integer>
+			<key>Name</key><string>愛の夢</string>
+			<key>Artist</key><string>フジ子・ヘミング</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>リスト</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4475343</integer>
+			<key>Total Time</key><integer>280058</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:20Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>59</integer>
+			<key>Play Date</key><integer>3821757008</integer>
+			<key>Play Date UTC</key><date>2025-02-06T22:10:08Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-11T21:33:34Z</date>
+			<key>Persistent ID</key><string>1D0409098CCE2953</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/still%20echo/05%20%E6%84%9B%E3%81%AE%E5%A4%A2.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2517</key>
+		<dict>
+			<key>Track ID</key><integer>2517</integer>
+			<key>Name</key><string>アヴェ・マリア</string>
+			<key>Artist</key><string>スラヴァ</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>カッチーニ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3820653</integer>
+			<key>Total Time</key><integer>238497</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:34Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>65</integer>
+			<key>Play Date</key><integer>3821458421</integer>
+			<key>Play Date UTC</key><date>2025-02-03T11:13:41Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-24T07:19:42Z</date>
+			<key>Persistent ID</key><string>0D4A4142D49A5526</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/still%20echo/09%20%E3%82%A2%E3%83%B4%E3%82%A7%E3%83%BB%E3%83%9E%E3%83%AA%E3%82%A2.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>2535</key>
+		<dict>
+			<key>Track ID</key><integer>2535</integer>
+			<key>Name</key><string>タイスの瞑想曲</string>
+			<key>Artist</key><string>千住真理子</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>マスネ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4854396</integer>
+			<key>Total Time</key><integer>303804</integer>
+			<key>Track Number</key><integer>18</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:57Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>62</integer>
+			<key>Play Date</key><integer>3821459828</integer>
+			<key>Play Date UTC</key><date>2025-02-03T11:37:08Z</date>
+			<key>Persistent ID</key><string>0B6733507E020BB7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/still%20echo/18%20%E3%82%BF%E3%82%A4%E3%82%B9%E3%81%AE%E7%9E%91%E6%83%B3%E6%9B%B2.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3385</key>
+		<dict>
+			<key>Track ID</key><integer>3385</integer>
+			<key>Name</key><string>02_02_002_VIEW OF SILENCE</string>
+			<key>Artist</key><string>久石譲</string>
+			<key>Album Artist</key><string>久石譲</string>
+			<key>Composer</key><string>久石 譲</string>
+			<key>Album</key><string>Essential</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9254128</integer>
+			<key>Total Time</key><integer>330475</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Track Number</key><integer>402</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2023-08-26T08:16:32Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>224</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>Lavf58.29.100</string>
+			<key>Play Count</key><integer>46</integer>
+			<key>Play Date</key><integer>3821669913</integer>
+			<key>Play Date UTC</key><date>2025-02-05T21:58:33Z</date>
+			<key>Persistent ID</key><string>139E124BF269AE07</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/%E4%B9%85%E7%9F%B3%E8%AD%B2/02_02_002_VIEW%20OF%20SILENCE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3767</key>
+		<dict>
+			<key>Track ID</key><integer>3767</integer>
+			<key>Name</key><string>アラベスク 第1番</string>
+			<key>Artist</key><string>Debussy</string>
+			<key>Album Artist</key><string>Debussy</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6919641</integer>
+			<key>Total Time</key><integer>287817</integer>
+			<key>Date Modified</key><date>2021-10-22T23:52:57Z</date>
+			<key>Date Added</key><date>2023-09-24T09:49:10Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>58</integer>
+			<key>Play Date</key><integer>3821670201</integer>
+			<key>Play Date UTC</key><date>2025-02-05T22:03:21Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>CD2161CEDB99B391</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Debussy/%E3%82%A2%E3%83%A9%E3%83%99%E3%82%B9%E3%82%AF%20%E7%AC%AC1%E7%95%AA.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3769</key>
+		<dict>
+			<key>Track ID</key><integer>3769</integer>
+			<key>Name</key><string>亜麻色の髪の乙女</string>
+			<key>Artist</key><string>ドビュッシー</string>
+			<key>Album Artist</key><string>ドビュッシー</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3493859</integer>
+			<key>Total Time</key><integer>144888</integer>
+			<key>Date Modified</key><date>2021-06-26T01:14:46Z</date>
+			<key>Date Added</key><date>2023-09-24T09:49:10Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>49</integer>
+			<key>Play Date</key><integer>3821670346</integer>
+			<key>Play Date UTC</key><date>2025-02-05T22:05:46Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-02-06T21:47:27Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>86BCFEC2F1977887</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Debussy/%E4%BA%9C%E9%BA%BB%E8%89%B2%E3%81%AE%E9%AB%AA%E3%81%AE%E4%B9%99%E5%A5%B3.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>5621</key>
+		<dict>
+			<key>Track ID</key><integer>5621</integer>
+			<key>Name</key><string>夜想曲ノクターン</string>
+			<key>Artist</key><string>Chopin</string>
+			<key>Album Artist</key><string>Chopin</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4420181</integer>
+			<key>Total Time</key><integer>275983</integer>
+			<key>Date Modified</key><date>2024-10-21T01:04:07Z</date>
+			<key>Date Added</key><date>2024-10-23T08:37:33Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>28</integer>
+			<key>Play Date</key><integer>3821457902</integer>
+			<key>Play Date UTC</key><date>2025-02-03T11:05:02Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-02-06T21:48:37Z</date>
+			<key>Persistent ID</key><string>4C9ECC8B5B09E512</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/Music/Chopin/%E3%83%8E%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%B3%20%E7%AC%AC2%E7%95%AA.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Classic_Fav</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>12337</integer>
+			<key>Playlist Persistent ID</key><string>37ABCA8E2A713CA2</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>3385</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1741</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3767</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3769</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2535</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2517</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2509</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2501</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1745</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1733</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1723</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1703</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1705</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1743</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2503</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5621</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

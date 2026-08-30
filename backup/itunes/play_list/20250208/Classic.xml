@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2025-02-08T01:14:18Z</date>
+	<key>Application Version</key><string>12.13.4.4</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>46110B157BFF7003</string>
+	<key>Tracks</key>
+	<dict>
+		<key>13720</key>
+		<dict>
+			<key>Track ID</key><integer>13720</integer>
+			<key>Name</key><string>11. ワタスゲの原</string>
+			<key>Artist</key><string>坂本龍一</string>
+			<key>Album Artist</key><string>坂本龍一</string>
+			<key>Album</key><string>JPOP.ru</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3793519</integer>
+			<key>Total Time</key><integer>236826</integer>
+			<key>Date Modified</key><date>2023-08-26T06:37:45Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>online-audio-converter.com</string>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3814843921</integer>
+			<key>Play Date UTC</key><date>2024-11-18T21:52:01Z</date>
+			<key>Persistent ID</key><string>0036875531780643</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>13722</key>
+		<dict>
+			<key>Track ID</key><integer>13722</integer>
+			<key>Name</key><string>12. The Last Emperor Theme</string>
+			<key>Artist</key><string>坂本龍一</string>
+			<key>Album Artist</key><string>坂本龍一</string>
+			<key>Album</key><string>JPOP.ru</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5666812</integer>
+			<key>Total Time</key><integer>353906</integer>
+			<key>Date Modified</key><date>2023-08-26T06:31:48Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>online-audio-converter.com</string>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3815834774</integer>
+			<key>Play Date UTC</key><date>2024-11-30T09:06:14Z</date>
+			<key>Persistent ID</key><string>8B567B798A468D04</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>13864</key>
+		<dict>
+			<key>Track ID</key><integer>13864</integer>
+			<key>Name</key><string>02_02_002_VIEW OF SILENCE</string>
+			<key>Artist</key><string>久石譲</string>
+			<key>Album Artist</key><string>久石譲</string>
+			<key>Composer</key><string>久石 譲</string>
+			<key>Album</key><string>Essential</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9254128</integer>
+			<key>Total Time</key><integer>330475</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Track Number</key><integer>402</integer>
+			<key>Year</key><integer>2021</integer>
+			<key>Date Modified</key><date>2023-08-26T08:16:32Z</date>
+			<key>Date Added</key><date>2023-08-27T05:43:17Z</date>
+			<key>Bit Rate</key><integer>224</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>Lavf58.29.100</string>
+			<key>Play Count</key><integer>46</integer>
+			<key>Play Date</key><integer>3821669913</integer>
+			<key>Play Date UTC</key><date>2025-02-05T21:58:33Z</date>
+			<key>Persistent ID</key><string>139E124BF269AE07</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14194</key>
+		<dict>
+			<key>Track ID</key><integer>14194</integer>
+			<key>Name</key><string>Without You</string>
+			<key>Artist</key><string>Mariah Carey</string>
+			<key>Album Artist</key><string>Mariah Carey</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5160406</integer>
+			<key>Total Time</key><integer>214622</integer>
+			<key>Date Modified</key><date>2021-04-09T07:45:23Z</date>
+			<key>Date Added</key><date>2023-08-27T05:29:23Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3809953311</integer>
+			<key>Play Date UTC</key><date>2024-09-23T07:21:51Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>057B067D7483ADC3</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14196</key>
+		<dict>
+			<key>Track ID</key><integer>14196</integer>
+			<key>Name</key><string>Only Time</string>
+			<key>Artist</key><string>Enya</string>
+			<key>Album Artist</key><string>Enya</string>
+			<key>Album</key><string>A Day Without Rain</string>
+			<key>Genre</key><string>New Age;Celtic;Ambient</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5342838</integer>
+			<key>Total Time</key><integer>221675</integer>
+			<key>Date Modified</key><date>2021-04-11T05:42:24Z</date>
+			<key>Date Added</key><date>2023-08-27T05:27:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3809953820</integer>
+			<key>Play Date UTC</key><date>2024-09-23T07:30:20Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Day Without Rain</string>
+			<key>Persistent ID</key><string>0266EEDDF4215B5B</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14198</key>
+		<dict>
+			<key>Track ID</key><integer>14198</integer>
+			<key>Name</key><string>Anywhere Is</string>
+			<key>Artist</key><string>Enya</string>
+			<key>Album Artist</key><string>Enya</string>
+			<key>Album</key><string>The Memory of Trees</string>
+			<key>Genre</key><string>New Age;Celtic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5788469</integer>
+			<key>Total Time</key><integer>240117</integer>
+			<key>Date Modified</key><date>2021-04-11T05:43:30Z</date>
+			<key>Date Added</key><date>2023-08-27T05:27:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3809949876</integer>
+			<key>Play Date UTC</key><date>2024-09-23T06:24:36Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Memory of Trees</string>
+			<key>Persistent ID</key><string>E9D6D7F98743FE5A</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14222</key>
+		<dict>
+			<key>Track ID</key><integer>14222</integer>
+			<key>Name</key><string>Aime-moi</string>
+			<key>Artist</key><string>Charles Aznavour</string>
+			<key>Album Artist</key><string>Charles Aznavour</string>
+			<key>Album</key><string>Charles Aznavour</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3781191</integer>
+			<key>Total Time</key><integer>157361</integer>
+			<key>Date Modified</key><date>2021-06-22T10:39:37Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3809939049</integer>
+			<key>Play Date UTC</key><date>2024-09-23T03:24:09Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-01-30T22:06:13Z</date>
+			<key>Persistent ID</key><string>028F849A908AAC45</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14228</key>
+		<dict>
+			<key>Track ID</key><integer>14228</integer>
+			<key>Name</key><string>Time After time</string>
+			<key>Artist</key><string>CYNDI LAUPER</string>
+			<key>Album Artist</key><string>Cyndi_Lauper</string>
+			<key>Composer</key><string>Will Jennings, Jack Nitzsche, Buffy Sainte-Marie</string>
+			<key>Album</key><string>Cyndi_Lauper</string>
+			<key>Genre</key><string>ポップ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3842337</integer>
+			<key>Total Time</key><integer>240404</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Date Modified</key><date>2023-08-27T06:08:50Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3815103342</integer>
+			<key>Play Date UTC</key><date>2024-11-21T21:55:42Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-04T22:01:56Z</date>
+			<key>Persistent ID</key><string>CD0904CBB661F0F8</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14240</key>
+		<dict>
+			<key>Track ID</key><integer>14240</integer>
+			<key>Name</key><string>03_30 小鳩くるみ  遠き山に日は落ちて  童謡・唱歌</string>
+			<key>Artist</key><string>Dvorak</string>
+			<key>Album Artist</key><string>Dvorak</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4118470</integer>
+			<key>Total Time</key><integer>170997</integer>
+			<key>Date Modified</key><date>2022-09-14T08:04:01Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3809941035</integer>
+			<key>Play Date UTC</key><date>2024-09-23T03:57:15Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>63E3E53B94F79926</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14622</key>
+		<dict>
+			<key>Track ID</key><integer>14622</integer>
+			<key>Name</key><string>Heroic_Polonaise_6_op_53_A_flat_major_Valentina Lisitsa</string>
+			<key>Artist</key><string>Chopin</string>
+			<key>Album Artist</key><string>Chopin</string>
+			<key>Album</key><string>Chopin</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9296966</integer>
+			<key>Total Time</key><integer>386664</integer>
+			<key>Date Modified</key><date>2023-09-13T08:25:31Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>22</integer>
+			<key>Play Date</key><integer>3811128981</integer>
+			<key>Play Date UTC</key><date>2024-10-06T21:56:21Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>21D2E3BD7746B6F0</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14962</key>
+		<dict>
+			<key>Track ID</key><integer>14962</integer>
+			<key>Name</key><string>英雄ポロネーズ　ショパン</string>
+			<key>Artist</key><string>Chopin</string>
+			<key>Album Artist</key><string>Chopin</string>
+			<key>Album</key><string>Chopin</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>10395242</integer>
+			<key>Total Time</key><integer>432326</integer>
+			<key>Date Modified</key><date>2023-09-13T08:25:37Z</date>
+			<key>Date Added</key><date>2023-08-27T05:25:48Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>18</integer>
+			<key>Play Date</key><integer>3809941467</integer>
+			<key>Play Date UTC</key><date>2024-09-23T04:04:27Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>74332ADC88F89060</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>14990</key>
+		<dict>
+			<key>Track ID</key><integer>14990</integer>
+			<key>Name</key><string>ラプソディー・イン・ブルー</string>
+			<key>Artist</key><string>Gershwin</string>
+			<key>Album Artist</key><string>Gershwin</string>
+			<key>Album</key><string>Gershwin</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>12123342</integer>
+			<key>Total Time</key><integer>504744</integer>
+			<key>Date Modified</key><date>2023-08-20T06:12:11Z</date>
+			<key>Date Added</key><date>2023-08-27T05:27:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>23</integer>
+			<key>Play Date</key><integer>3815912576</integer>
+			<key>Play Date UTC</key><date>2024-12-01T06:42:56Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2024-09-21T07:11:37Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>F659EBB38A633E65</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15100</key>
+		<dict>
+			<key>Track ID</key><integer>15100</integer>
+			<key>Name</key><string>Turandot Nessun Dorma</string>
+			<key>Artist</key><string>Luciano Pavarotti</string>
+			<key>Album Artist</key><string>Luciano Pavarotti</string>
+			<key>Album</key><string>Luciano Pavarotti</string>
+			<key>Genre</key><string>その他</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2959830</integer>
+			<key>Total Time</key><integer>184711</integer>
+			<key>Date Modified</key><date>2021-02-28T13:50:58Z</date>
+			<key>Date Added</key><date>2023-08-27T05:29:23Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3809950913</integer>
+			<key>Play Date UTC</key><date>2024-09-23T06:41:53Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-21T07:11:43Z</date>
+			<key>Persistent ID</key><string>C99F82E7D45BCEBF</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15232</key>
+		<dict>
+			<key>Track ID</key><integer>15232</integer>
+			<key>Name</key><string>トルコ行進曲　モーツァルト</string>
+			<key>Artist</key><string>Rittor Music</string>
+			<key>Album Artist</key><string>Mozart</string>
+			<key>Album</key><string>Mozart Turkish March</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4436212</integer>
+			<key>Total Time</key><integer>184464</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Date Modified</key><date>2023-08-26T07:54:58Z</date>
+			<key>Date Added</key><date>2023-08-27T05:31:05Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>23</integer>
+			<key>Play Date</key><integer>3810696565</integer>
+			<key>Play Date UTC</key><date>2024-10-01T21:49:25Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-02-19T06:47:15Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E51FD2847FA08B1E</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15236</key>
+		<dict>
+			<key>Track ID</key><integer>15236</integer>
+			<key>Name</key><string>Time To Say Good Bye</string>
+			<key>Artist</key><string>Sarah Brightman</string>
+			<key>Album Artist</key><string>Sarah Brightman</string>
+			<key>Album</key><string>Sarah Brightman</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5804397</integer>
+			<key>Total Time</key><integer>241789</integer>
+			<key>Date Modified</key><date>2021-02-28T13:51:02Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>19</integer>
+			<key>Play Date</key><integer>3811129223</integer>
+			<key>Play Date UTC</key><date>2024-10-06T22:00:23Z</date>
+			<key>Persistent ID</key><string>BA5C0A6A4FAD397F</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15292</key>
+		<dict>
+			<key>Track ID</key><integer>15292</integer>
+			<key>Name</key><string>I dreamed a dream</string>
+			<key>Artist</key><string>Susan Boyle</string>
+			<key>Album Artist</key><string>Susan Boyle</string>
+			<key>Album</key><string>Susan Boyle</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7655994</integer>
+			<key>Total Time</key><integer>190968</integer>
+			<key>Year</key><integer>2009</integer>
+			<key>Date Modified</key><date>2021-02-28T13:51:06Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3809950474</integer>
+			<key>Play Date UTC</key><date>2024-09-23T06:34:34Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>D47C1C6C00BFB3D5</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15440</key>
+		<dict>
+			<key>Track ID</key><integer>15440</integer>
+			<key>Name</key><string>02_06_歌劇「カヴァレリア・ルスティカーナ」～間奏曲</string>
+			<key>Artist</key><string>アレクサンダー・ラハバリ／チェコスロヴァキア放送交響楽団</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>マスカーニ</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3570870</integer>
+			<key>Total Time</key><integer>223399</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:25:13Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>27</integer>
+			<key>Play Date</key><integer>3814609492</integer>
+			<key>Play Date UTC</key><date>2024-11-16T04:44:52Z</date>
+			<key>Persistent ID</key><string>9A285D0AC3C37A15</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15446</key>
+		<dict>
+			<key>Track ID</key><integer>15446</integer>
+			<key>Name</key><string>02_02_「ペール・ギュント」第１組曲ｏｐ．４６～第１楽章　朝</string>
+			<key>Artist</key><string>イエジ・マクシミウク／ＢＢＣスコットランド交響楽団</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>エドヴァルド・ハーゲルプ・グリーグ</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3782545</integer>
+			<key>Total Time</key><integer>236643</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:24:21Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>25</integer>
+			<key>Play Date</key><integer>3809943262</integer>
+			<key>Play Date UTC</key><date>2024-09-23T04:34:22Z</date>
+			<key>Persistent ID</key><string>1F1CCDE59576D6C3</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15458</key>
+		<dict>
+			<key>Track ID</key><integer>15458</integer>
+			<key>Name</key><string>01_02_セレナード第１３番ト長調Ｋ．５２５「アイネ・クライネ・ナハトムジーク」～第２楽章</string>
+			<key>Artist</key><string>ヴォルフガング・ソボトカ／カペラ・イストロポリターナ</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ヴォルフガング・アマデウス・モーツァルト</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5874634</integer>
+			<key>Total Time</key><integer>367699</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:20:54Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>68</integer>
+			<key>Play Date</key><integer>3821756729</integer>
+			<key>Play Date UTC</key><date>2025-02-06T22:05:29Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-09-15T00:13:56Z</date>
+			<key>Persistent ID</key><string>AF82AEDF0F0B5491</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15466</key>
+		<dict>
+			<key>Track ID</key><integer>15466</integer>
+			<key>Name</key><string>02_14_歌劇「ジョスラン」～子守歌</string>
+			<key>Artist</key><string>オンドレイ・レナルト／チェコスロヴァキア放送ブラティスラヴァ交響楽団</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>バンジャマン・ゴダール</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5280987</integer>
+			<key>Total Time</key><integer>329769</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:26:36Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>25</integer>
+			<key>Play Date</key><integer>3810005935</integer>
+			<key>Play Date UTC</key><date>2024-09-23T21:58:55Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-02-19T21:55:10Z</date>
+			<key>Persistent ID</key><string>FCABFC94B655087B</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15470</key>
+		<dict>
+			<key>Track ID</key><integer>15470</integer>
+			<key>Name</key><string>01_07_歌劇「ジョコンダ」～時の踊り</string>
+			<key>Artist</key><string>オンドレイ・レナルト／チェコスロヴァキア放送交響楽団</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>アミルカレ・ポンキエッリ</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7560309</integer>
+			<key>Total Time</key><integer>473312</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:22:09Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>24</integer>
+			<key>Play Date</key><integer>3809952165</integer>
+			<key>Play Date UTC</key><date>2024-09-23T07:02:45Z</date>
+			<key>Persistent ID</key><string>253889C5C96F8401</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15474</key>
+		<dict>
+			<key>Track ID</key><integer>15474</integer>
+			<key>Name</key><string>間奏曲</string>
+			<key>Artist</key><string>カルテット・ジェラート</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>マスカーニ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2792331</integer>
+			<key>Total Time</key><integer>174628</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Date Modified</key><date>2023-09-13T08:29:39Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3809945740</integer>
+			<key>Play Date UTC</key><date>2024-09-23T05:15:40Z</date>
+			<key>Persistent ID</key><string>2EBE9A638292DA99</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15476</key>
+		<dict>
+			<key>Track ID</key><integer>15476</integer>
+			<key>Name</key><string>02_04_ベルガマスク組曲～月の光</string>
+			<key>Artist</key><string>キース・クラーク／チェコスロヴァキア放送ブラティスラヴァ交響楽団</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>クロウド・アシルー・ドビュッシー</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4296450</integer>
+			<key>Total Time</key><integer>268852</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:24:41Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>69</integer>
+			<key>Play Date</key><integer>3821496770</integer>
+			<key>Play Date UTC</key><date>2025-02-03T21:52:50Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-02-06T21:59:13Z</date>
+			<key>Persistent ID</key><string>1AE0009044AAE4E2</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15496</key>
+		<dict>
+			<key>Track ID</key><integer>15496</integer>
+			<key>Name</key><string>アヴェ・ヴェルム・コルプス</string>
+			<key>Artist</key><string>クライスト・チャーチ大聖堂聖歌隊</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>モーツァルト</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3268128</integer>
+			<key>Total Time</key><integer>203964</integer>
+			<key>Track Number</key><integer>19</integer>
+			<key>Date Modified</key><date>2023-09-13T08:31:02Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3809937678</integer>
+			<key>Play Date UTC</key><date>2024-09-23T03:01:18Z</date>
+			<key>Persistent ID</key><string>4B3239E737FC2497</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15500</key>
+		<dict>
+			<key>Track ID</key><integer>15500</integer>
+			<key>Name</key><string>02_07_亡き王女のためのパヴァーヌ</string>
+			<key>Artist</key><string>ケネス・ジーン／チェコスロヴァキア放送ブラティスラヴァ交響楽団</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>モリス・ラヴェル</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6710014</integer>
+			<key>Total Time</key><integer>420048</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-26T07:44:51Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>22</integer>
+			<key>Play Date</key><integer>3815840111</integer>
+			<key>Play Date UTC</key><date>2024-11-30T10:35:11Z</date>
+			<key>Persistent ID</key><string>68308D995D647B41</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15506</key>
+		<dict>
+			<key>Track ID</key><integer>15506</integer>
+			<key>Name</key><string>Rose</string>
+			<key>Artist</key><string>ジェームズ・ホーナー</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>ローズ</string>
+			<key>Album</key><string>ｉｍａｇｅ</string>
+			<key>Genre</key><string>ヒーリング</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2763558</integer>
+			<key>Total Time</key><integer>172826</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Date Modified</key><date>2021-04-03T12:09:05Z</date>
+			<key>Date Added</key><date>2023-08-27T05:27:46Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3809945102</integer>
+			<key>Play Date UTC</key><date>2024-09-23T05:05:02Z</date>
+			<key>Persistent ID</key><string>7CA28E7B893BC163</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15512</key>
+		<dict>
+			<key>Track ID</key><integer>15512</integer>
+			<key>Name</key><string>ロマンツェ：ラルゲット</string>
+			<key>Artist</key><string>スタニスラフ・ブーニン</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>ショパン</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4073772</integer>
+			<key>Total Time</key><integer>254902</integer>
+			<key>Track Number</key><integer>17</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:54Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3811128357</integer>
+			<key>Play Date UTC</key><date>2024-10-06T21:45:57Z</date>
+			<key>Persistent ID</key><string>47B44CC2C693BC68</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15516</key>
+		<dict>
+			<key>Track ID</key><integer>15516</integer>
+			<key>Name</key><string>Ｇ線上のアリア</string>
+			<key>Artist</key><string>スラヴァ</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>バッハ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3294816</integer>
+			<key>Total Time</key><integer>206106</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:01Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>58</integer>
+			<key>Play Date</key><integer>3821669582</integer>
+			<key>Play Date UTC</key><date>2025-02-05T21:53:02Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2024-07-28T11:24:31Z</date>
+			<key>Persistent ID</key><string>ED086E396CC34703</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15518</key>
+		<dict>
+			<key>Track ID</key><integer>15518</integer>
+			<key>Name</key><string>アヴェ・マリア</string>
+			<key>Artist</key><string>スラヴァ</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>カッチーニ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3820653</integer>
+			<key>Total Time</key><integer>238497</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:34Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>65</integer>
+			<key>Play Date</key><integer>3821458421</integer>
+			<key>Play Date UTC</key><date>2025-02-03T11:13:41Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-24T07:19:42Z</date>
+			<key>Persistent ID</key><string>0D4A4142D49A5526</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15524</key>
+		<dict>
+			<key>Track ID</key><integer>15524</integer>
+			<key>Name</key><string>眠りの森の美女優しさの精のヴァリアシオン</string>
+			<key>Artist</key><string>チャイコフスキー</string>
+			<key>Album Artist</key><string>チャイコフスキー</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>1819846</integer>
+			<key>Total Time</key><integer>75312</integer>
+			<key>Date Modified</key><date>2023-08-26T07:58:09Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3813572898</integer>
+			<key>Play Date UTC</key><date>2024-11-04T04:48:18Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-18T08:13:29Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>F80996EFB992B76F</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15526</key>
+		<dict>
+			<key>Track ID</key><integer>15526</integer>
+			<key>Name</key><string>01_12_無伴奏チェロ組曲第１番ト長調ＢＷＶ１００７～前奏曲</string>
+			<key>Artist</key><string>チャバ・オンツァイ</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ヨハン・セバスティアン・バッハ</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2436630</integer>
+			<key>Total Time</key><integer>152346</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:23:01Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>67</integer>
+			<key>Play Date</key><integer>3821755880</integer>
+			<key>Play Date UTC</key><date>2025-02-06T21:51:20Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-24T08:55:20Z</date>
+			<key>Persistent ID</key><string>D055D8C38498C8A4</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15534</key>
+		<dict>
+			<key>Track ID</key><integer>15534</integer>
+			<key>Name</key><string>月の光</string>
+			<key>Artist</key><string>パトリック・ガロワ</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>ドビュッシー</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3703893</integer>
+			<key>Total Time</key><integer>231732</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:41Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3814090747</integer>
+			<key>Play Date UTC</key><date>2024-11-10T04:39:07Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-24T22:00:12Z</date>
+			<key>Persistent ID</key><string>4789BDB8D6FD6D7C</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15536</key>
+		<dict>
+			<key>Track ID</key><integer>15536</integer>
+			<key>Name</key><string>01_09_ユーモレスクｏｐ．１０１－７</string>
+			<key>Artist</key><string>バラーシュ・ショコライ</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>アントニーン・ドヴォジャーク</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2748129</integer>
+			<key>Total Time</key><integer>171859</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:22:29Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>28</integer>
+			<key>Play Date</key><integer>3813490389</integer>
+			<key>Play Date UTC</key><date>2024-11-03T05:53:09Z</date>
+			<key>Persistent ID</key><string>0206E8F1903FF10A</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15578</key>
+		<dict>
+			<key>Track ID</key><integer>15578</integer>
+			<key>Name</key><string>02_13_弦楽セレナード　ハ長調ｏｐ．４８～第２楽章</string>
+			<key>Artist</key><string>フィリップ・アントルモン／ウィーン室内管弦楽団</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ピョートル・イリイチ・チャイコフスキー</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3782706</integer>
+			<key>Total Time</key><integer>236669</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:26:28Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>23</integer>
+			<key>Play Date</key><integer>3809940173</integer>
+			<key>Play Date UTC</key><date>2024-09-23T03:42:53Z</date>
+			<key>Persistent ID</key><string>E6C8A74409EE6A30</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15580</key>
+		<dict>
+			<key>Track ID</key><integer>15580</integer>
+			<key>Name</key><string>愛の夢</string>
+			<key>Artist</key><string>フジ子・ヘミング</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>リスト</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4475343</integer>
+			<key>Total Time</key><integer>280058</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:20Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>59</integer>
+			<key>Play Date</key><integer>3821757008</integer>
+			<key>Play Date UTC</key><date>2025-02-06T22:10:08Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-11-11T21:33:34Z</date>
+			<key>Persistent ID</key><string>1D0409098CCE2953</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15608</key>
+		<dict>
+			<key>Track ID</key><integer>15608</integer>
+			<key>Name</key><string>01_14_パッヘルベルのカノン</string>
+			<key>Artist</key><string>リヒャルト・エトリンガー／カペラ・イストロポリターナ</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ヨハン・パッヘルベル</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4595439</integer>
+			<key>Total Time</key><integer>287582</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:23:27Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>22</integer>
+			<key>Play Date</key><integer>3810005403</integer>
+			<key>Play Date UTC</key><date>2024-09-23T21:50:03Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-05-02T02:25:54Z</date>
+			<key>Persistent ID</key><string>4A59092F33703BA7</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15748</key>
+		<dict>
+			<key>Track ID</key><integer>15748</integer>
+			<key>Name</key><string>プレリュード</string>
+			<key>Artist</key><string>清水靖晃</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>バッハ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2290680</integer>
+			<key>Total Time</key><integer>143203</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:07Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>48</integer>
+			<key>Play Date</key><integer>3821496501</integer>
+			<key>Play Date UTC</key><date>2025-02-03T21:48:21Z</date>
+			<key>Persistent ID</key><string>1624C37C39688DAB</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15750</key>
+		<dict>
+			<key>Track ID</key><integer>15750</integer>
+			<key>Name</key><string>02_03_ヴァイオリン・ソナタ第５番ヘ長調ｏｐ．２４「春」～第１楽章</string>
+			<key>Artist</key><string>西崎崇子／イェネ・ヤンドー</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>ルートヴィヒ・ヴァン・ベートーヴェン</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 2</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9261669</integer>
+			<key>Total Time</key><integer>579892</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:24:31Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>24</integer>
+			<key>Play Date</key><integer>3815916401</integer>
+			<key>Play Date UTC</key><date>2024-12-01T07:46:41Z</date>
+			<key>Persistent ID</key><string>15BB00366F1A3FDC</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15752</key>
+		<dict>
+			<key>Track ID</key><integer>15752</integer>
+			<key>Name</key><string>01_01_協奏曲集「四季」第１番ホ長調ｏｐ．８－１「春」～第１楽章</string>
+			<key>Artist</key><string>西崎崇子／カペラ・イストロポリターナ／スティーヴン・ガンゼンハウザー</string>
+			<key>Album Artist</key><string>Unknown</string>
+			<key>Composer</key><string>アントニオ・ヴィヴァルディ</string>
+			<key>Album</key><string>０歳からの育脳クラシック Disc 1</string>
+			<key>Genre</key><string>Classic</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3435762</integer>
+			<key>Total Time</key><integer>214935</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2023-08-19T07:20:39Z</date>
+			<key>Date Added</key><date>2023-08-27T05:23:19Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>28</integer>
+			<key>Play Date</key><integer>3815919067</integer>
+			<key>Play Date UTC</key><date>2024-12-01T08:31:07Z</date>
+			<key>Persistent ID</key><string>B932253943F7CC6F</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15758</key>
+		<dict>
+			<key>Track ID</key><integer>15758</integer>
+			<key>Name</key><string>タイスの瞑想曲</string>
+			<key>Artist</key><string>千住真理子</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>マスネ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4854396</integer>
+			<key>Total Time</key><integer>303804</integer>
+			<key>Track Number</key><integer>18</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:57Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>62</integer>
+			<key>Play Date</key><integer>3821459828</integer>
+			<key>Play Date UTC</key><date>2025-02-03T11:37:08Z</date>
+			<key>Persistent ID</key><string>0B6733507E020BB7</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15760</key>
+		<dict>
+			<key>Track ID</key><integer>15760</integer>
+			<key>Name</key><string>ヴォカリーズ</string>
+			<key>Artist</key><string>川畠成道</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>ラフマニノフ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5049552</integer>
+			<key>Total Time</key><integer>316029</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:30Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3809954398</integer>
+			<key>Play Date UTC</key><date>2024-09-23T07:39:58Z</date>
+			<key>Persistent ID</key><string>0B9B8D342CB015A8</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15762</key>
+		<dict>
+			<key>Track ID</key><integer>15762</integer>
+			<key>Name</key><string>コーリング・ユー</string>
+			<key>Artist</key><string>村治佳織</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>～映画「バグダッド・カフェ」</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4165929</integer>
+			<key>Total Time</key><integer>260675</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:16Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3809954659</integer>
+			<key>Play Date UTC</key><date>2024-09-23T07:44:19Z</date>
+			<key>Persistent ID</key><string>6B1AC84CF77BC336</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15768</key>
+		<dict>
+			<key>Track ID</key><integer>15768</integer>
+			<key>Name</key><string>トロイメライ</string>
+			<key>Artist</key><string>長谷川陽子</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>シューマン</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3223509</integer>
+			<key>Total Time</key><integer>201639</integer>
+			<key>Track Number</key><integer>15</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:48Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3810005605</integer>
+			<key>Play Date UTC</key><date>2024-09-23T21:53:25Z</date>
+			<key>Persistent ID</key><string>66FFA1C711F6D13C</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15812</key>
+		<dict>
+			<key>Track ID</key><integer>15812</integer>
+			<key>Name</key><string>フーガ変ホ長調</string>
+			<key>Artist</key><string>藤井香織</string>
+			<key>Album Artist</key><string>still echo</string>
+			<key>Composer</key><string>バッハ</string>
+			<key>Album</key><string>still echo</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4186362</integer>
+			<key>Total Time</key><integer>261355</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Date Modified</key><date>2023-09-13T08:30:37Z</date>
+			<key>Date Added</key><date>2023-08-27T05:32:28Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3809954082</integer>
+			<key>Play Date UTC</key><date>2024-09-23T07:34:42Z</date>
+			<key>Persistent ID</key><string>BD10EFDCCDEC9A5D</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15834</key>
+		<dict>
+			<key>Track ID</key><integer>15834</integer>
+			<key>Name</key><string>エトピリカ</string>
+			<key>Artist</key><string>葉加瀬太郎</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>エトピリカ</string>
+			<key>Album</key><string>ｉｍａｇｅ</string>
+			<key>Genre</key><string>ヒーリング</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4889007</integer>
+			<key>Total Time</key><integer>305972</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Date Modified</key><date>2021-04-03T12:09:02Z</date>
+			<key>Date Added</key><date>2023-08-27T05:27:46Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3809939722</integer>
+			<key>Play Date UTC</key><date>2024-09-23T03:35:22Z</date>
+			<key>Persistent ID</key><string>6112AD32E9BEE201</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>15848</key>
+		<dict>
+			<key>Track ID</key><integer>15848</integer>
+			<key>Name</key><string>La Campanella_Kassia</string>
+			<key>Artist</key><string>Liszt</string>
+			<key>Album Artist</key><string>Liszt</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6731589</integer>
+			<key>Total Time</key><integer>280424</integer>
+			<key>Date Modified</key><date>2022-03-26T13:39:49Z</date>
+			<key>Date Added</key><date>2023-09-24T09:50:52Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>31</integer>
+			<key>Play Date</key><integer>3814090299</integer>
+			<key>Play Date UTC</key><date>2024-11-10T04:31:39Z</date>
+			<key>Persistent ID</key><string>A0B1F917BA422E31</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>16084</key>
+		<dict>
+			<key>Track ID</key><integer>16084</integer>
+			<key>Name</key><string>DOLCE  VITA</string>
+			<key>Artist</key><string>葉加瀬太郎</string>
+			<key>Album Artist</key><string>葉加瀬太郎</string>
+			<key>Album</key><string>DOLCE VITA</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6263996</integer>
+			<key>Total Time</key><integer>391209</integer>
+			<key>Date Modified</key><date>2024-06-11T02:10:02Z</date>
+			<key>Date Added</key><date>2024-06-11T09:06:32Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3811749494</integer>
+			<key>Play Date UTC</key><date>2024-10-14T02:18:14Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2024-09-16T21:48:23Z</date>
+			<key>Persistent ID</key><string>EB504A53857945C5</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>16132</key>
+		<dict>
+			<key>Track ID</key><integer>16132</integer>
+			<key>Name</key><string>Ordinary Miracles</string>
+			<key>Artist</key><string>Barbra Streisand</string>
+			<key>Composer</key><string>Alan Bergman, Marilyn Bergman, Marvin Hamlisch</string>
+			<key>Album</key><string>1995 Grammy Nominees</string>
+			<key>Genre</key><string>Contemporary Pop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7625731</integer>
+			<key>Total Time</key><integer>238158</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Year</key><integer>1995</integer>
+			<key>Date Modified</key><date>2021-06-27T14:32:15Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3811757838</integer>
+			<key>Play Date UTC</key><date>2024-10-14T04:37:18Z</date>
+			<key>Persistent ID</key><string>E0A7BFAE087D5D62</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>16134</key>
+		<dict>
+			<key>Track ID</key><integer>16134</integer>
+			<key>Name</key><string>The Rose</string>
+			<key>Artist</key><string>Bette Midler</string>
+			<key>Album Artist</key><string>Bette Midler</string>
+			<key>Genre</key><string>Alternative; Ballad; Rock; Duet</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5152031</integer>
+			<key>Total Time</key><integer>212712</integer>
+			<key>Date Modified</key><date>2021-04-11T06:10:07Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3810004655</integer>
+			<key>Play Date UTC</key><date>2024-09-23T21:37:35Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Name</key><string>Rose</string>
+			<key>Persistent ID</key><string>9D0005AE6506E2DA</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>16136</key>
+		<dict>
+			<key>Track ID</key><integer>16136</integer>
+			<key>Name</key><string>Amazing Grace</string>
+			<key>Artist</key><string>Hayley Westenra</string>
+			<key>Album Artist</key><string>Hayley Westenra</string>
+			<key>Album</key><string>Pure</string>
+			<key>Genre</key><string>クラシック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5307978</integer>
+			<key>Total Time</key><integer>220316</integer>
+			<key>Date Modified</key><date>2023-08-26T07:51:14Z</date>
+			<key>Date Added</key><date>2023-09-25T12:10:39Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>34</integer>
+			<key>Play Date</key><integer>3811129443</integer>
+			<key>Play Date UTC</key><date>2024-10-06T22:04:03Z</date>
+			<key>Skip Count</key><integer>7</integer>
+			<key>Skip Date</key><date>2024-09-24T21:29:48Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>9A81BAD5FC6BF3FB</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>16138</key>
+		<dict>
+			<key>Track ID</key><integer>16138</integer>
+			<key>Name</key><string>Stay</string>
+			<key>Artist</key><string>Lisa Loeb</string>
+			<key>Album Artist</key><string>Lisa Loeb</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4497205</integer>
+			<key>Total Time</key><integer>187324</integer>
+			<key>Date Modified</key><date>2021-04-13T14:05:44Z</date>
+			<key>Date Added</key><date>2024-05-02T01:58:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3809945289</integer>
+			<key>Play Date UTC</key><date>2024-09-23T05:08:09Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-16T00:59:50Z</date>
+			<key>Persistent ID</key><string>750C5CEC5A95EBC7</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>16140</key>
+		<dict>
+			<key>Track ID</key><integer>16140</integer>
+			<key>Name</key><string>ディスコキッド</string>
+			<key>Artist</key><string>東海林修</string>
+			<key>Album Artist</key><string>東海林修</string>
+			<key>Album</key><string>東海林修</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3446395</integer>
+			<key>Total Time</key><integer>215118</integer>
+			<key>Date Modified</key><date>2024-07-27T19:41:49Z</date>
+			<key>Date Added</key><date>2024-07-27T19:42:34Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3811746963</integer>
+			<key>Play Date UTC</key><date>2024-10-14T01:36:03Z</date>
+			<key>Persistent ID</key><string>2EF253DBF2A484E8</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Classic</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>17958</integer>
+			<key>Playlist Persistent ID</key><string>561EEA1FE2E918FD</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>16084</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>16132</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>16134</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>16138</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>16136</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15848</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>13864</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>13720</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>13722</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15236</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15292</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15474</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15496</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15512</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15516</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15518</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15524</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15534</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15580</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15748</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15758</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15760</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15762</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15768</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15812</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15232</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15100</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14194</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14196</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14198</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14990</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15506</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15834</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14222</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14622</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14962</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14228</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14240</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15440</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15446</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15458</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15466</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15470</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15476</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15500</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15526</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15536</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15578</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15608</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15750</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>15752</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>16140</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

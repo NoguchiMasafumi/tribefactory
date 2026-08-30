@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2023-08-19T06:59:52Z</date>
+	<key>Application Version</key><string>12.12.9.4</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/noguc/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>46110B157BFF7003</string>
+	<key>Tracks</key>
+	<dict>
+		<key>1740</key>
+		<dict>
+			<key>Track ID</key><integer>1740</integer>
+			<key>Name</key><string>紅蓮華</string>
+			<key>Artist</key><string>LiSA</string>
+			<key>Album Artist</key><string>LiSA</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5718248</integer>
+			<key>Total Time</key><integer>238210</integer>
+			<key>Date Modified</key><date>2020-10-29T06:10:17Z</date>
+			<key>Date Added</key><date>2020-11-03T07:26:38Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>63</integer>
+			<key>Play Date</key><integer>3772859500</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:31:40Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2023-07-11T09:12:30Z</date>
+			<key>Persistent ID</key><string>5E8A66E24DC202A8</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>1872</key>
+		<dict>
+			<key>Track ID</key><integer>1872</integer>
+			<key>Name</key><string>夜に駆ける</string>
+			<key>Artist</key><string>YOASOBI</string>
+			<key>Album Artist</key><string>YOASOBI</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6270724</integer>
+			<key>Total Time</key><integer>261093</integer>
+			<key>Date Modified</key><date>2020-12-16T12:31:16Z</date>
+			<key>Date Added</key><date>2020-12-16T12:34:25Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>55</integer>
+			<key>Play Date</key><integer>3772810162</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:49:22Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2023-04-03T22:42:50Z</date>
+			<key>Persistent ID</key><string>E5B934C1DD430C6E</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>1876</key>
+		<dict>
+			<key>Track ID</key><integer>1876</integer>
+			<key>Name</key><string>Pretender［Official Video］</string>
+			<key>Artist</key><string>Official髭男dism </string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8058213</integer>
+			<key>Total Time</key><integer>335699</integer>
+			<key>Date Modified</key><date>2020-12-03T11:05:22Z</date>
+			<key>Date Added</key><date>2020-12-03T11:20:22Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>30</integer>
+			<key>Play Date</key><integer>3772860071</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:41:11Z</date>
+			<key>Persistent ID</key><string>EE738F01B414C7B3</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>1888</key>
+		<dict>
+			<key>Track ID</key><integer>1888</integer>
+			<key>Name</key><string>ドラえもん</string>
+			<key>Artist</key><string>星野源</string>
+			<key>Album Artist</key><string>星野源</string>
+			<key>Album</key><string>DORAEMON</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9626618</integer>
+			<key>Total Time</key><integer>239986</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2018</integer>
+			<key>Date Modified</key><date>2021-02-26T05:56:02Z</date>
+			<key>Date Added</key><date>2021-02-26T05:55:22Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>19</integer>
+			<key>Play Date</key><integer>3771902739</integer>
+			<key>Play Date UTC</key><date>2023-07-10T21:45:39Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2022-10-15T01:52:31Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8DE30D93B30434C9</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>1890</key>
+		<dict>
+			<key>Track ID</key><integer>1890</integer>
+			<key>Name</key><string>恋</string>
+			<key>Artist</key><string>星野源</string>
+			<key>Album Artist</key><string>星野源</string>
+			<key>Album</key><string>恋</string>
+			<key>Genre</key><string>J-pop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6082973</integer>
+			<key>Total Time</key><integer>253440</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>4</integer>
+			<key>Year</key><integer>2016</integer>
+			<key>Date Modified</key><date>2021-02-26T05:51:10Z</date>
+			<key>Date Added</key><date>2021-02-26T05:55:12Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>24</integer>
+			<key>Play Date</key><integer>3772636070</integer>
+			<key>Play Date UTC</key><date>2023-07-19T09:27:50Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-07-09T21:55:03Z</date>
+			<key>Persistent ID</key><string>536D13791C4FD7A2</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>2214</key>
+		<dict>
+			<key>Track ID</key><integer>2214</integer>
+			<key>Name</key><string>前前前世 Movie Ver</string>
+			<key>Artist</key><string>RADWIMPS</string>
+			<key>Album Artist</key><string>RADWIMPS</string>
+			<key>Album</key><string>君の名は。</string>
+			<key>Genre</key><string>サウンドトラック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6840782</integer>
+			<key>Total Time</key><integer>284421</integer>
+			<key>Date Modified</key><date>2021-04-12T13:21:50Z</date>
+			<key>Date Added</key><date>2021-04-12T13:22:02Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3772860356</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:45:56Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-03-28T22:32:49Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>5F09A15715AA418E</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>2350</key>
+		<dict>
+			<key>Track ID</key><integer>2350</integer>
+			<key>Name</key><string>恋するフォーチュンクッキー2</string>
+			<key>Artist</key><string>AKB48</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6067978</integer>
+			<key>Total Time</key><integer>298187</integer>
+			<key>Date Modified</key><date>2021-03-09T03:39:31Z</date>
+			<key>Date Added</key><date>2021-04-16T10:46:22Z</date>
+			<key>Bit Rate</key><integer>162</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>19</integer>
+			<key>Play Date</key><integer>3772809593</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:39:53Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2023-04-04T22:26:29Z</date>
+			<key>Persistent ID</key><string>0BEC8CDAE3FF6001</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>2380</key>
+		<dict>
+			<key>Track ID</key><integer>2380</integer>
+			<key>Name</key><string>君をのせて</string>
+			<key>Artist</key><string>天空の城ラピュタ　サウンドトラック</string>
+			<key>Album Artist</key><string>天空の城ラピュタ　サウンドトラック</string>
+			<key>Album</key><string>天空の城ラピュタ　サウンドトラック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>2097783</integer>
+			<key>Total Time</key><integer>174471</integer>
+			<key>Date Modified</key><date>2021-04-12T14:03:06Z</date>
+			<key>Date Added</key><date>2021-04-23T14:51:56Z</date>
+			<key>Bit Rate</key><integer>96</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>25</integer>
+			<key>Play Date</key><integer>3772811979</integer>
+			<key>Play Date UTC</key><date>2023-07-21T10:19:39Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2023-05-16T09:34:22Z</date>
+			<key>Persistent ID</key><string>9736623E6C327A35</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>2560</key>
+		<dict>
+			<key>Track ID</key><integer>2560</integer>
+			<key>Name</key><string>夢をかなえてドラえもん</string>
+			<key>Artist</key><string>Mao</string>
+			<key>Album Artist</key><string>ドラえもん　サウンドトラック</string>
+			<key>Album</key><string>ドラえもん　サウンドトラック</string>
+			<key>Genre</key><string>145</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5937682</integer>
+			<key>Total Time</key><integer>247301</integer>
+			<key>Date Modified</key><date>2021-04-12T14:02:11Z</date>
+			<key>Date Added</key><date>2021-05-19T01:18:09Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>23</integer>
+			<key>Play Date</key><integer>3772856678</integer>
+			<key>Play Date UTC</key><date>2023-07-21T22:44:38Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2023-02-15T22:08:29Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>07AAD626E9E0E6C0</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>2640</key>
+		<dict>
+			<key>Track ID</key><integer>2640</integer>
+			<key>Name</key><string>にじ</string>
+			<key>Artist</key><string>つるの剛士</string>
+			<key>Album Artist</key><string>つるの剛士</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7059267</integer>
+			<key>Total Time</key><integer>246413</integer>
+			<key>Date Modified</key><date>2021-06-03T13:37:59Z</date>
+			<key>Date Added</key><date>2021-06-03T13:38:13Z</date>
+			<key>Bit Rate</key><integer>229</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>15</integer>
+			<key>Play Date</key><integer>3772811804</integer>
+			<key>Play Date UTC</key><date>2023-07-21T10:16:44Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2023-05-16T09:34:10Z</date>
+			<key>Persistent ID</key><string>D002BBE937FD98CF</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>2858</key>
+		<dict>
+			<key>Track ID</key><integer>2858</integer>
+			<key>Name</key><string>気分上々↑↑</string>
+			<key>Artist</key><string>mihimaru GT</string>
+			<key>Album</key><string>The Best Of Mihimaru GT</string>
+			<key>Genre</key><string>JPop; Hip-Hop</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5675638</integer>
+			<key>Total Time</key><integer>235584</integer>
+			<key>Date Modified</key><date>2021-07-03T07:17:04Z</date>
+			<key>Date Added</key><date>2021-07-03T07:17:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>21</integer>
+			<key>Play Date</key><integer>3772859735</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:35:35Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-03-28T22:30:41Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Best Of Mihimaru GT</string>
+			<key>Persistent ID</key><string>90E7143FAF0A9E0D</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>2862</key>
+		<dict>
+			<key>Track ID</key><integer>2862</integer>
+			<key>Name</key><string>怪物</string>
+			<key>Artist</key><string>YOASOBI</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5009150</integer>
+			<key>Total Time</key><integer>208272</integer>
+			<key>Date Modified</key><date>2021-07-17T05:55:58Z</date>
+			<key>Date Added</key><date>2021-07-17T05:56:35Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3772786457</integer>
+			<key>Play Date UTC</key><date>2023-07-21T03:14:17Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2023-05-02T23:00:10Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>D59ABE71E68405C5</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>2958</key>
+		<dict>
+			<key>Track ID</key><integer>2958</integer>
+			<key>Name</key><string>風になる</string>
+			<key>Artist</key><string>つじあやの</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6517816</integer>
+			<key>Total Time</key><integer>271516</integer>
+			<key>Date Modified</key><date>2021-11-05T13:00:57Z</date>
+			<key>Date Added</key><date>2021-11-05T13:01:25Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>15</integer>
+			<key>Play Date</key><integer>3772811558</integer>
+			<key>Play Date UTC</key><date>2023-07-21T10:12:38Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2023-05-16T09:34:07Z</date>
+			<key>Persistent ID</key><string>9112B53E63CECD2B</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3058</key>
+		<dict>
+			<key>Track ID</key><integer>3058</integer>
+			<key>Name</key><string>ココロショータイム</string>
+			<key>Artist</key><string>天月-あまつき-</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6254481</integer>
+			<key>Total Time</key><integer>259704</integer>
+			<key>Date Modified</key><date>2021-12-09T00:59:43Z</date>
+			<key>Date Added</key><date>2021-12-09T01:00:56Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>28</integer>
+			<key>Play Date</key><integer>3772857144</integer>
+			<key>Play Date UTC</key><date>2023-07-21T22:52:24Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E7E22965AB3877F7</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3190</key>
+		<dict>
+			<key>Track ID</key><integer>3190</integer>
+			<key>Name</key><string>雪の音</string>
+			<key>Artist</key><string>GReeeeN</string>
+			<key>Album Artist</key><string>GReeeeN</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>12321647</integer>
+			<key>Total Time</key><integer>307931</integer>
+			<key>Date Modified</key><date>2022-01-29T06:37:31Z</date>
+			<key>Date Added</key><date>2022-01-29T06:38:01Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3772809901</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:45:01Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-01-22T04:52:02Z</date>
+			<key>Persistent ID</key><string>7EAB824876C0134E</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3274</key>
+		<dict>
+			<key>Track ID</key><integer>3274</integer>
+			<key>Name</key><string>携帯電話</string>
+			<key>Artist</key><string>RADWIMPS</string>
+			<key>Album</key><string>携帯電話</string>
+			<key>Genre</key><string>Country</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6620074</integer>
+			<key>Total Time</key><integer>275544</integer>
+			<key>Date Modified</key><date>2022-02-28T10:58:10Z</date>
+			<key>Date Added</key><date>2022-02-28T11:02:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3772860632</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:50:32Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2023-07-17T09:05:40Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A1310627F7144123</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3278</key>
+		<dict>
+			<key>Track ID</key><integer>3278</integer>
+			<key>Name</key><string>リンゴの唄</string>
+			<key>Artist</key><string>並木路子</string>
+			<key>Album Artist</key><string>並木路子</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4951395</integer>
+			<key>Total Time</key><integer>205897</integer>
+			<key>Date Modified</key><date>2022-02-28T11:15:52Z</date>
+			<key>Date Added</key><date>2022-02-28T11:16:33Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>25</integer>
+			<key>Play Date</key><integer>3772856884</integer>
+			<key>Play Date UTC</key><date>2023-07-21T22:48:04Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2023-02-26T22:04:24Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2FDC195DA837CB26</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3382</key>
+		<dict>
+			<key>Track ID</key><integer>3382</integer>
+			<key>Name</key><string>歩いて帰ろう</string>
+			<key>Artist</key><string>斉藤和義</string>
+			<key>Album</key><string>Golden Delicious</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5073369</integer>
+			<key>Total Time</key><integer>210834</integer>
+			<key>Date Modified</key><date>2022-03-13T00:09:06Z</date>
+			<key>Date Added</key><date>2022-03-13T00:12:21Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3772810899</integer>
+			<key>Play Date UTC</key><date>2023-07-21T10:01:39Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-02-18T02:03:59Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>01E3E7EB9499285D</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3472</key>
+		<dict>
+			<key>Track ID</key><integer>3472</integer>
+			<key>Name</key><string>さくらんぼ</string>
+			<key>Artist</key><string>大塚愛</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5405300</integer>
+			<key>Total Time</key><integer>231360</integer>
+			<key>Date Modified</key><date>2022-04-14T07:22:12Z</date>
+			<key>Date Added</key><date>2022-04-14T07:25:38Z</date>
+			<key>Bit Rate</key><integer>186</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>17</integer>
+			<key>Play Date</key><integer>3772786248</integer>
+			<key>Play Date UTC</key><date>2023-07-21T03:10:48Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-07-09T21:54:53Z</date>
+			<key>Persistent ID</key><string>AEAA6C2E058AC341</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3474</key>
+		<dict>
+			<key>Track ID</key><integer>3474</integer>
+			<key>Name</key><string>MajiでKoiする5秒前</string>
+			<key>Artist</key><string>広末涼子</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5622112</integer>
+			<key>Total Time</key><integer>260664</integer>
+			<key>Date Modified</key><date>2022-04-15T11:00:33Z</date>
+			<key>Date Added</key><date>2022-04-15T11:01:44Z</date>
+			<key>Bit Rate</key><integer>172</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>12</integer>
+			<key>Play Date</key><integer>3772857404</integer>
+			<key>Play Date UTC</key><date>2023-07-21T22:56:44Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-07-16T11:03:19Z</date>
+			<key>Persistent ID</key><string>34AE1F5EB16FE83E</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3522</key>
+		<dict>
+			<key>Track ID</key><integer>3522</integer>
+			<key>Name</key><string>明日があるさ</string>
+			<key>Artist</key><string>坂本九</string>
+			<key>Album</key><string>明日があるさ</string>
+			<key>Genre</key><string>Pop;Rock</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4811978</integer>
+			<key>Total Time</key><integer>200019</integer>
+			<key>Date Modified</key><date>2022-05-11T03:06:01Z</date>
+			<key>Date Added</key><date>2022-05-11T03:14:59Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>29</integer>
+			<key>Play Date</key><integer>3772811099</integer>
+			<key>Play Date UTC</key><date>2023-07-21T10:04:59Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2023-04-03T22:42:41Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A9AA50374999EDA2</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3524</key>
+		<dict>
+			<key>Track ID</key><integer>3524</integer>
+			<key>Name</key><string>上を向いて歩こう</string>
+			<key>Artist</key><string>坂本九</string>
+			<key>Album Artist</key><string>坂本九</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4500749</integer>
+			<key>Total Time</key><integer>187200</integer>
+			<key>Date Modified</key><date>2022-05-11T03:11:50Z</date>
+			<key>Date Added</key><date>2022-05-11T03:14:59Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Play Count</key><integer>32</integer>
+			<key>Play Date</key><integer>3772811286</integer>
+			<key>Play Date UTC</key><date>2023-07-21T10:08:06Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-05-16T09:34:04Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>CEC2263215E2353E</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3766</key>
+		<dict>
+			<key>Track ID</key><integer>3766</integer>
+			<key>Name</key><string>ミックスナッツ</string>
+			<key>Artist</key><string>Official髭男dism</string>
+			<key>Album Artist</key><string>Official髭男dism</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4767753</integer>
+			<key>Total Time</key><integer>210442</integer>
+			<key>Date Modified</key><date>2022-07-30T12:16:33Z</date>
+			<key>Date Added</key><date>2022-07-30T12:17:43Z</date>
+			<key>Bit Rate</key><integer>181</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>81</integer>
+			<key>Play Date</key><integer>3772809021</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:30:21Z</date>
+			<key>Skip Count</key><integer>7</integer>
+			<key>Skip Date</key><date>2023-07-11T09:12:19Z</date>
+			<key>Persistent ID</key><string>60B043858A7C9606</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>3896</key>
+		<dict>
+			<key>Track ID</key><integer>3896</integer>
+			<key>Name</key><string>空へ</string>
+			<key>Artist</key><string>山崎まさよし</string>
+			<key>Album Artist</key><string>山崎まさよし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4657618</integer>
+			<key>Total Time</key><integer>290821</integer>
+			<key>Date Modified</key><date>2022-09-29T07:03:48Z</date>
+			<key>Date Added</key><date>2022-09-29T07:09:43Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>26</integer>
+			<key>Play Date</key><integer>3772810688</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:58:08Z</date>
+			<key>Skip Count</key><integer>6</integer>
+			<key>Skip Date</key><date>2023-05-16T09:44:43Z</date>
+			<key>Persistent ID</key><string>BFD94ED1D82AFF99</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4064</key>
+		<dict>
+			<key>Track ID</key><integer>4064</integer>
+			<key>Name</key><string>SOUVENIR</string>
+			<key>Artist</key><string>BUMP OF CHICKEN</string>
+			<key>Album Artist</key><string>BUMP OF CHICKEN</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4392636</integer>
+			<key>Total Time</key><integer>274259</integer>
+			<key>Date Modified</key><date>2022-12-03T00:04:40Z</date>
+			<key>Date Added</key><date>2022-12-03T00:06:31Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>29</integer>
+			<key>Play Date</key><integer>3772809295</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:34:55Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2023-05-24T23:50:01Z</date>
+			<key>Persistent ID</key><string>EC54F1B05FF9C042</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4078</key>
+		<dict>
+			<key>Track ID</key><integer>4078</integer>
+			<key>Name</key><string>エジソン2</string>
+			<key>Artist</key><string>水曜日のカンパネラ</string>
+			<key>Album Artist</key><string>水曜日のカンパネラ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3770725</integer>
+			<key>Total Time</key><integer>235389</integer>
+			<key>Date Modified</key><date>2022-12-05T09:29:12Z</date>
+			<key>Date Added</key><date>2022-12-05T09:30:17Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>18</integer>
+			<key>Play Date</key><integer>3772810397</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:53:17Z</date>
+			<key>Persistent ID</key><string>C8A26000CC360BC4</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4082</key>
+		<dict>
+			<key>Track ID</key><integer>4082</integer>
+			<key>Name</key><string>ワタリドリ</string>
+			<key>Artist</key><string>Alexandros</string>
+			<key>Album</key><string>ALXD</string>
+			<key>Genre</key><string>ロック</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5323916</integer>
+			<key>Total Time</key><integer>252760</integer>
+			<key>Date Modified</key><date>2022-05-12T23:38:47Z</date>
+			<key>Date Added</key><date>2023-01-10T02:38:04Z</date>
+			<key>Bit Rate</key><integer>168</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3772594008</integer>
+			<key>Play Date UTC</key><date>2023-07-18T21:46:48Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-04-04T22:29:40Z</date>
+			<key>Persistent ID</key><string>0BB1780034CDDDB9</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4084</key>
+		<dict>
+			<key>Track ID</key><integer>4084</integer>
+			<key>Name</key><string>新時代</string>
+			<key>Artist</key><string>Ado</string>
+			<key>Album Artist</key><string>Ado</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Genre</key><string>Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9839748</integer>
+			<key>Total Time</key><integer>226873</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-01-10T02:31:59Z</date>
+			<key>Date Added</key><date>2023-01-10T04:00:36Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>31</integer>
+			<key>Play Date</key><integer>3772857631</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:00:31Z</date>
+			<key>Skip Count</key><integer>7</integer>
+			<key>Skip Date</key><date>2023-05-03T06:02:30Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>68E952BD44937CE2</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4086</key>
+		<dict>
+			<key>Track ID</key><integer>4086</integer>
+			<key>Name</key><string>私は最強</string>
+			<key>Artist</key><string>Ado</string>
+			<key>Album Artist</key><string>Ado</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Genre</key><string>Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11050787</integer>
+			<key>Total Time</key><integer>257149</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-01-10T02:32:02Z</date>
+			<key>Date Added</key><date>2023-01-10T04:00:36Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>37</integer>
+			<key>Play Date</key><integer>3772857888</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:04:48Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7B0500655896824A</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4088</key>
+		<dict>
+			<key>Track ID</key><integer>4088</integer>
+			<key>Name</key><string>逆光</string>
+			<key>Artist</key><string>Ado</string>
+			<key>Album Artist</key><string>Ado</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Genre</key><string>Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>10274424</integer>
+			<key>Total Time</key><integer>237740</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-01-10T02:32:06Z</date>
+			<key>Date Added</key><date>2023-01-10T04:00:36Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>37</integer>
+			<key>Play Date</key><integer>3772858126</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:08:46Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-07-21T03:36:26Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>6C24E60914C607E1</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4090</key>
+		<dict>
+			<key>Track ID</key><integer>4090</integer>
+			<key>Name</key><string>ウタカタララバイ</string>
+			<key>Artist</key><string>Ado</string>
+			<key>Album Artist</key><string>Ado</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Genre</key><string>Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7701897</integer>
+			<key>Total Time</key><integer>173426</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-01-10T02:32:08Z</date>
+			<key>Date Added</key><date>2023-01-10T04:00:36Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>36</integer>
+			<key>Play Date</key><integer>3772858300</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:11:40Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>05C81F04063914FC</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4092</key>
+		<dict>
+			<key>Track ID</key><integer>4092</integer>
+			<key>Name</key><string>Tot Musica</string>
+			<key>Artist</key><string>Ado</string>
+			<key>Album Artist</key><string>Ado</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Genre</key><string>Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8576481</integer>
+			<key>Total Time</key><integer>195291</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-01-10T02:32:10Z</date>
+			<key>Date Added</key><date>2023-01-10T04:00:36Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>36</integer>
+			<key>Play Date</key><integer>3772858495</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:14:55Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-02-08T07:56:35Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>AD8B114BF3DA0486</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4094</key>
+		<dict>
+			<key>Track ID</key><integer>4094</integer>
+			<key>Name</key><string>世界のつづき</string>
+			<key>Artist</key><string>Ado</string>
+			<key>Album Artist</key><string>Ado</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Genre</key><string>Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>12286905</integer>
+			<key>Total Time</key><integer>288052</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-01-10T02:32:13Z</date>
+			<key>Date Added</key><date>2023-01-10T04:00:36Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>31</integer>
+			<key>Play Date</key><integer>3772858783</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:19:43Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2023-02-18T02:03:55Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>784340A318DACC3F</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4096</key>
+		<dict>
+			<key>Track ID</key><integer>4096</integer>
+			<key>Name</key><string>風のゆくえ</string>
+			<key>Artist</key><string>Ado</string>
+			<key>Album Artist</key><string>Ado</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Genre</key><string>Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>11666234</integer>
+			<key>Total Time</key><integer>272535</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-01-10T02:32:17Z</date>
+			<key>Date Added</key><date>2023-01-10T04:00:36Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>36</integer>
+			<key>Play Date</key><integer>3772859055</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:24:15Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2023-04-04T22:33:17Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2F92FFA932871D23</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4098</key>
+		<dict>
+			<key>Track ID</key><integer>4098</integer>
+			<key>Name</key><string>ビンクスの酒</string>
+			<key>Artist</key><string>Ado</string>
+			<key>Album Artist</key><string>Ado</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Genre</key><string>Anime</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9009061</integer>
+			<key>Total Time</key><integer>206106</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Year</key><integer>2022</integer>
+			<key>Date Modified</key><date>2023-01-10T02:32:20Z</date>
+			<key>Date Added</key><date>2023-01-10T04:00:36Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>https://hikarinoakari.com</string>
+			<key>Play Count</key><integer>46</integer>
+			<key>Play Date</key><integer>3772859261</integer>
+			<key>Play Date UTC</key><date>2023-07-21T23:27:41Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2D62EE7BEC4007DC</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4126</key>
+		<dict>
+			<key>Track ID</key><integer>4126</integer>
+			<key>Name</key><string>ビンクスの酒（ブルック）</string>
+			<key>Artist</key><string>ブルック</string>
+			<key>Album Artist</key><string>ブルック</string>
+			<key>Album</key><string>ウタの歌 ONE PIECE FILM RED</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3162160</integer>
+			<key>Total Time</key><integer>197355</integer>
+			<key>Date Modified</key><date>2023-02-04T07:24:51Z</date>
+			<key>Date Added</key><date>2023-02-04T07:23:13Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3772202194</integer>
+			<key>Play Date UTC</key><date>2023-07-14T08:56:34Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-07-09T21:42:27Z</date>
+			<key>Persistent ID</key><string>8C31CB42BA7F8F3D</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4544</key>
+		<dict>
+			<key>Track ID</key><integer>4544</integer>
+			<key>Name</key><string>夏祭り</string>
+			<key>Artist</key><string>Whiteberry</string>
+			<key>Album Artist</key><string>Whiteberry</string>
+			<key>Album</key><string>夏祭り</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3694235</integer>
+			<key>Total Time</key><integer>230608</integer>
+			<key>Date Modified</key><date>2023-07-08T07:53:24Z</date>
+			<key>Date Added</key><date>2023-07-08T07:55:32Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3772807871</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:11:11Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2023-07-11T09:12:27Z</date>
+			<key>Persistent ID</key><string>F6EE3E4C34ADFA7E</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4546</key>
+		<dict>
+			<key>Track ID</key><integer>4546</integer>
+			<key>Name</key><string>アイドル</string>
+			<key>Artist</key><string>YOASOBI</string>
+			<key>Album Artist</key><string>YOASOBI</string>
+			<key>Album</key><string>アイドル</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3618583</integer>
+			<key>Total Time</key><integer>225880</integer>
+			<key>Date Modified</key><date>2023-07-08T07:51:50Z</date>
+			<key>Date Added</key><date>2023-07-08T07:55:13Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3772808096</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:14:56Z</date>
+			<key>Persistent ID</key><string>DE146749529A7B75</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4548</key>
+		<dict>
+			<key>Track ID</key><integer>4548</integer>
+			<key>Name</key><string>Cantabile</string>
+			<key>Artist</key><string>Novelbright</string>
+			<key>Album Artist</key><string>Novelbright</string>
+			<key>Album</key><string>Novelbright</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3795387</integer>
+			<key>Total Time</key><integer>236930</integer>
+			<key>Date Modified</key><date>2023-07-21T03:18:28Z</date>
+			<key>Date Added</key><date>2023-07-21T03:23:01Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3772808333</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:18:53Z</date>
+			<key>Persistent ID</key><string>367B53BEBEEFF9AB</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4550</key>
+		<dict>
+			<key>Track ID</key><integer>4550</integer>
+			<key>Name</key><string>夕さりのカノン_featユイカ</string>
+			<key>Artist</key><string>粗品</string>
+			<key>Album Artist</key><string>粗品</string>
+			<key>Album</key><string>青のオーケストラ</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3068576</integer>
+			<key>Total Time</key><integer>191503</integer>
+			<key>Date Modified</key><date>2023-07-21T03:20:44Z</date>
+			<key>Date Added</key><date>2023-07-21T03:23:01Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3772808525</integer>
+			<key>Play Date UTC</key><date>2023-07-21T09:22:05Z</date>
+			<key>Persistent ID</key><string>4E5E22E85704D8D6</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+		<key>4554</key>
+		<dict>
+			<key>Track ID</key><integer>4554</integer>
+			<key>Name</key><string>サインはB2</string>
+			<key>Artist</key><string>大石昌良</string>
+			<key>Album Artist</key><string>大石昌良</string>
+			<key>Album</key><string>推しの子</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>3499472</integer>
+			<key>Total Time</key><integer>218435</integer>
+			<key>Date Modified</key><date>2023-07-22T00:09:47Z</date>
+			<key>Date Added</key><date>2023-07-22T00:09:01Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>F9C98770021D20F3</string>
+			<key>Track Type</key><string>File</string>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>お昼の放送</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>6329</integer>
+			<key>Playlist Persistent ID</key><string>9347A5119779B963</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>3766</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4064</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2350</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3190</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1872</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4078</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3896</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3382</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3522</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3524</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2958</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2640</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2380</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2560</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3278</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3058</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3474</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4084</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4086</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4088</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4090</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4092</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4094</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4096</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4098</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1740</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2858</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1876</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2214</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3274</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>2862</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1890</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4126</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4082</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3472</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1888</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4544</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4546</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4548</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4550</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>4554</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

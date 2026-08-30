@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2026-08-30T10:38:40Z</date>
+	<key>Application Version</key><string>12.13.9.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>EEAD44C58E7818E5</string>
+	<key>Tracks</key>
+	<dict>
+		<key>3069</key>
+		<dict>
+			<key>Track ID</key><integer>3069</integer>
+			<key>Name</key><string>wasting time</string>
+			<key>Artist</key><string>ALO ANIMAL LIBERATION ORCHESTRA</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7766011</integer>
+			<key>Total Time</key><integer>242546</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:31Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3847281348</integer>
+			<key>Play Date UTC</key><date>2025-11-29T08:15:48Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-01-30T22:05:51Z</date>
+			<key>Persistent ID</key><string>9C76255386498EF5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_01%20wasting%20time.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3071</key>
+		<dict>
+			<key>Track ID</key><integer>3071</integer>
+			<key>Name</key><string>SOLACE</string>
+			<key>Artist</key><string>xarier rudd</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9690686</integer>
+			<key>Total Time</key><integer>303020</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:28Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3860851697</integer>
+			<key>Play Date UTC</key><date>2026-05-05T09:48:17Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-02-17T08:55:54Z</date>
+			<key>Persistent ID</key><string>B65EF315F8053190</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_02%20SOLACE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3073</key>
+		<dict>
+			<key>Track ID</key><integer>3073</integer>
+			<key>Name</key><string>BORN AGAIN</string>
+			<key>Artist</key><string>BADLY DRAWN BOY</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7589826</integer>
+			<key>Total Time</key><integer>237035</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:25Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3860852166</integer>
+			<key>Play Date UTC</key><date>2026-05-05T09:56:06Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-01-04T09:11:11Z</date>
+			<key>Persistent ID</key><string>112910EF206528A2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_03%20BORN%20AGAIN.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3075</key>
+		<dict>
+			<key>Track ID</key><integer>3075</integer>
+			<key>Name</key><string>DAKOTA</string>
+			<key>Artist</key><string>STEREOPHONICS</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9581301</integer>
+			<key>Total Time</key><integer>299598</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:22Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3865434119</integer>
+			<key>Play Date UTC</key><date>2026-06-27T10:41:59Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2026-08-03T10:15:10Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>4D2E62D76A6AB951</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_04%20DAKOTA.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3077</key>
+		<dict>
+			<key>Track ID</key><integer>3077</integer>
+			<key>Name</key><string>HIDDEN AGENDA</string>
+			<key>Artist</key><string>CRAIG DAVID</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7541396</integer>
+			<key>Total Time</key><integer>235781</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:19Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>13</integer>
+			<key>Play Date</key><integer>3870248136</integer>
+			<key>Play Date UTC</key><date>2026-08-22T03:55:36Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T10:29:16Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>D88E09F412301CF1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_05%20HIDDEN%20AGENDA.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3079</key>
+		<dict>
+			<key>Track ID</key><integer>3079</integer>
+			<key>Name</key><string>MELLOW MOOD</string>
+			<key>Artist</key><string>SLIGHTKY STUPID</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9050241</integer>
+			<key>Total Time</key><integer>282984</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:16Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3851518154</integer>
+			<key>Play Date UTC</key><date>2026-01-17T09:09:14Z</date>
+			<key>Persistent ID</key><string>9BE36DF3A05C6BBF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_06%20MELLOW%20MOOD.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3081</key>
+		<dict>
+			<key>Track ID</key><integer>3081</integer>
+			<key>Name</key><string>ON MY MIND</string>
+			<key>Artist</key><string>DONOVAN FRANKEN REITER</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6879241</integer>
+			<key>Total Time</key><integer>214831</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:13Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>18</integer>
+			<key>Play Date</key><integer>3870272940</integer>
+			<key>Play Date UTC</key><date>2026-08-22T10:49:00Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-03-26T09:00:39Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>4AF85114CEECF690</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_07%20ON%20MY%20MIND.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3083</key>
+		<dict>
+			<key>Track ID</key><integer>3083</integer>
+			<key>Name</key><string>MELLOW DOUGT</string>
+			<key>Artist</key><string>FOUR THOUSAND SEVEN HUNDRED AND SIXTY SIX SECONDS</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5261846</integer>
+			<key>Total Time</key><integer>164466</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:10Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3860851861</integer>
+			<key>Play Date UTC</key><date>2026-05-05T09:51:01Z</date>
+			<key>Persistent ID</key><string>C0AA93E4E7F22EEC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_08%20MELLOW%20DOUGT.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3085</key>
+		<dict>
+			<key>Track ID</key><integer>3085</integer>
+			<key>Name</key><string>BOHEMIAN LIKE YOU</string>
+			<key>Artist</key><string>THE DANDY WARHOLS</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6845841</integer>
+			<key>Total Time</key><integer>213786</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:07Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3847278255</integer>
+			<key>Play Date UTC</key><date>2025-11-29T07:24:15Z</date>
+			<key>Sort Artist</key><string>DANDY WARHOLS</string>
+			<key>Persistent ID</key><string>C9268D3B4EE50BAB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_09%20BOHEMIAN%20LIKE%20YOU.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3087</key>
+		<dict>
+			<key>Track ID</key><integer>3087</integer>
+			<key>Name</key><string>HOVER</string>
+			<key>Artist</key><string>RHETT MILLER</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5500656</integer>
+			<key>Total Time</key><integer>171755</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:04Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3852192924</integer>
+			<key>Play Date UTC</key><date>2026-01-25T04:35:24Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-12-14T08:49:43Z</date>
+			<key>Persistent ID</key><string>66579F023C4BBE51</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_10%20HOVER.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3089</key>
+		<dict>
+			<key>Track ID</key><integer>3089</integer>
+			<key>Name</key><string>STACY S MOM</string>
+			<key>Artist</key><string>FOUNTAINS BRANCH</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6405796</integer>
+			<key>Total Time</key><integer>200254</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Date Modified</key><date>2023-08-20T06:03:00Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3860851393</integer>
+			<key>Play Date UTC</key><date>2026-05-05T09:43:13Z</date>
+			<key>Persistent ID</key><string>9DD316E0C7CB02E7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_11%20STACY%20S%20MOM.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3091</key>
+		<dict>
+			<key>Track ID</key><integer>3091</integer>
+			<key>Name</key><string>SIX WAYS FROM SUNDAY</string>
+			<key>Artist</key><string>MOFRO</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4844346</integer>
+			<key>Total Time</key><integer>151405</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:56Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3846079159</integer>
+			<key>Play Date UTC</key><date>2025-11-15T10:19:19Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2025-06-04T12:21:25Z</date>
+			<key>Persistent ID</key><string>AC2306108640740D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_12%20SIX%20WAYS%20FROM%20SUNDAY.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3093</key>
+		<dict>
+			<key>Track ID</key><integer>3093</integer>
+			<key>Name</key><string>URBAN PRESURE</string>
+			<key>Artist</key><string>THE GRIM NORTHERN SOCIAL</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6850851</integer>
+			<key>Total Time</key><integer>213942</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:52Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3862835945</integer>
+			<key>Play Date UTC</key><date>2026-05-28T08:59:05Z</date>
+			<key>Sort Artist</key><string>GRIM NORTHERN SOCIAL</string>
+			<key>Persistent ID</key><string>C766FAA9985F0D86</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_13%20URBAN%20PRESURE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3095</key>
+		<dict>
+			<key>Track ID</key><integer>3095</integer>
+			<key>Name</key><string>IF ONLY SHE NKEW</string>
+			<key>Artist</key><string>MICHELE BRANCH</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8361366</integer>
+			<key>Total Time</key><integer>261146</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:47Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3860717916</integer>
+			<key>Play Date UTC</key><date>2026-05-03T20:38:36Z</date>
+			<key>Persistent ID</key><string>84BC899047415BAB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_14%20IF%20ONLY%20SHE%20NKEW.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3097</key>
+		<dict>
+			<key>Track ID</key><integer>3097</integer>
+			<key>Name</key><string>I GET A KICK OUT OF YOU</string>
+			<key>Artist</key><string>JAMMIE CULLUM</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8076631</integer>
+			<key>Total Time</key><integer>252525</integer>
+			<key>Track Number</key><integer>15</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:43Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3869920967</integer>
+			<key>Play Date UTC</key><date>2026-08-18T09:02:47Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2026-03-05T08:51:12Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>6FA62DAC8F0A2566</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_15%20I%20GET%20A%20KICK%20OUT%20OF%20YOU.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3099</key>
+		<dict>
+			<key>Track ID</key><integer>3099</integer>
+			<key>Name</key><string>KEEPIN IT REAL</string>
+			<key>Artist</key><string>MASON JENNINGS</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6234621</integer>
+			<key>Total Time</key><integer>194899</integer>
+			<key>Track Number</key><integer>16</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:40Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>18</integer>
+			<key>Play Date</key><integer>3870243888</integer>
+			<key>Play Date UTC</key><date>2026-08-22T02:44:48Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-05-30T08:55:26Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>1AA993F77EF60CB9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_16%20KEEPIN%20IT%20REAL.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3101</key>
+		<dict>
+			<key>Track ID</key><integer>3101</integer>
+			<key>Name</key><string>HAVE YOU EVER SEEN THE RAIN</string>
+			<key>Artist</key><string>THE JEEVAS</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6522696</integer>
+			<key>Total Time</key><integer>203911</integer>
+			<key>Track Number</key><integer>17</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:36Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3864956320</integer>
+			<key>Play Date UTC</key><date>2026-06-21T21:58:40Z</date>
+			<key>Sort Artist</key><string>JEEVAS</string>
+			<key>Persistent ID</key><string>E709FDE2B5CB53E7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_17%20HAVE%20YOU%20EVER%20SEEN%20THE%20RAIN.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3103</key>
+		<dict>
+			<key>Track ID</key><integer>3103</integer>
+			<key>Name</key><string>WHEN I SEE YOU</string>
+			<key>Artist</key><string>MACY GRAY</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7209901</integer>
+			<key>Total Time</key><integer>225410</integer>
+			<key>Track Number</key><integer>18</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:33Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3869801552</integer>
+			<key>Play Date UTC</key><date>2026-08-16T23:52:32Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>F4CD1DDCC135FF3C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_18%20WHEN%20I%20SEE%20YOU.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3105</key>
+		<dict>
+			<key>Track ID</key><integer>3105</integer>
+			<key>Name</key><string>HELLO</string>
+			<key>Artist</key><string>THE JOHN BOTLER TRIO</string>
+			<key>Album</key><string>01_Other</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8577631</integer>
+			<key>Total Time</key><integer>267911</integer>
+			<key>Track Number</key><integer>19</integer>
+			<key>Date Modified</key><date>2023-08-20T06:02:30Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3852553374</integer>
+			<key>Play Date UTC</key><date>2026-01-29T08:42:54Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-11-25T22:03:22Z</date>
+			<key>Sort Artist</key><string>JOHN BOTLER TRIO</string>
+			<key>Persistent ID</key><string>BCD9892D2A5DDEB0</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_01_19%20HELLO.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3109</key>
+		<dict>
+			<key>Track ID</key><integer>3109</integer>
+			<key>Name</key><string>CARESS ME DOWN</string>
+			<key>Artist</key><string>SUBLIME</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6837491</integer>
+			<key>Total Time</key><integer>213524</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-08-20T06:01:22Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3836375064</integer>
+			<key>Play Date UTC</key><date>2025-07-26T02:44:24Z</date>
+			<key>Persistent ID</key><string>58BD819CAC77E1C7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_01%20CARESS%20ME%20DOWN.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3111</key>
+		<dict>
+			<key>Track ID</key><integer>3111</integer>
+			<key>Name</key><string>100 MAGIC RINGS</string>
+			<key>Artist</key><string>G.LOVE &#38; SPECIAL SAUCE</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7495471</integer>
+			<key>Total Time</key><integer>234344</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Date Modified</key><date>2023-08-20T06:01:19Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3863181735</integer>
+			<key>Play Date UTC</key><date>2026-06-01T09:02:15Z</date>
+			<key>Persistent ID</key><string>B8DFB0383A64986B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_02%20100%20MAGIC%20RINGS.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3113</key>
+		<dict>
+			<key>Track ID</key><integer>3113</integer>
+			<key>Name</key><string>INAUDIBLE MELODIES</string>
+			<key>Artist</key><string>JACK JOHNSON</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6952721</integer>
+			<key>Total Time</key><integer>217364</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Date Modified</key><date>2023-08-20T06:01:16Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3847280892</integer>
+			<key>Play Date UTC</key><date>2025-11-29T08:08:12Z</date>
+			<key>Persistent ID</key><string>4C137DDAA2C6DEAF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_03%20INAUDIBLE%20MELODIES.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3115</key>
+		<dict>
+			<key>Track ID</key><integer>3115</integer>
+			<key>Name</key><string>HOW MANY MILES MUST WE MARCH</string>
+			<key>Artist</key><string>BEN HARPER</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6071796</integer>
+			<key>Total Time</key><integer>189596</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Date Modified</key><date>2023-08-20T06:01:13Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3847278915</integer>
+			<key>Play Date UTC</key><date>2025-11-29T07:35:15Z</date>
+			<key>Persistent ID</key><string>F016F40884F93B9F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_04%20HOW%20MANY%20MILES%20MUST%20WE%20MARCH.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3117</key>
+		<dict>
+			<key>Track ID</key><integer>3117</integer>
+			<key>Name</key><string>BUBBLE GUM</string>
+			<key>Artist</key><string>DAVID BOYLES</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7514676</integer>
+			<key>Total Time</key><integer>234945</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Date Modified</key><date>2023-08-20T06:01:10Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3869316450</integer>
+			<key>Play Date UTC</key><date>2026-08-11T09:07:30Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>F31DAA576BAC8C05</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_05%20BUBBLE%20GUM.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3119</key>
+		<dict>
+			<key>Track ID</key><integer>3119</integer>
+			<key>Name</key><string>THE HEY SONG</string>
+			<key>Artist</key><string>SPEECH</string>
+			<key>Album Artist</key><string>SPEECH</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>9201376</integer>
+			<key>Total Time</key><integer>287712</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Date Modified</key><date>2023-09-13T08:16:31Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3857394859</integer>
+			<key>Play Date UTC</key><date>2026-03-26T09:34:19Z</date>
+			<key>Sort Name</key><string>HEY SONG</string>
+			<key>Persistent ID</key><string>111C801A0999CFFB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_06%20THE%20HEY%20SONG.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3121</key>
+		<dict>
+			<key>Track ID</key><integer>3121</integer>
+			<key>Name</key><string>CASH MONEY</string>
+			<key>Artist</key><string>THE BEAUTIFUL GIRLS</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5542406</integer>
+			<key>Total Time</key><integer>173061</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Date Modified</key><date>2023-09-13T08:20:36Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3864131330</integer>
+			<key>Play Date UTC</key><date>2026-06-12T08:48:50Z</date>
+			<key>Sort Artist</key><string>BEAUTIFUL GIRLS</string>
+			<key>Persistent ID</key><string>9656B97A20BE1097</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_07%20CASH%20MONEY.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3123</key>
+		<dict>
+			<key>Track ID</key><integer>3123</integer>
+			<key>Name</key><string>FIGHT OF THE CREW</string>
+			<key>Artist</key><string>SCOTT JACOBY</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6802421</integer>
+			<key>Total Time</key><integer>212662</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:59Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3860851007</integer>
+			<key>Play Date UTC</key><date>2026-05-05T09:36:47Z</date>
+			<key>Persistent ID</key><string>01418C105D1B051A</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_08%20FIGHT%20OF%20THE%20CREW.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3125</key>
+		<dict>
+			<key>Track ID</key><integer>3125</integer>
+			<key>Name</key><string>DISNEY LAND</string>
+			<key>Artist</key><string>FIVE FOR FIGTHING</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7482946</integer>
+			<key>Total Time</key><integer>233952</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:56Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3858649254</integer>
+			<key>Play Date UTC</key><date>2026-04-09T22:00:54Z</date>
+			<key>Persistent ID</key><string>DB2D70A741EB5268</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_09%20DISNEY%20LAND.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3127</key>
+		<dict>
+			<key>Track ID</key><integer>3127</integer>
+			<key>Name</key><string>IN AN ORDINARY DAY</string>
+			<key>Artist</key><string>MICK HART</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6104361</integer>
+			<key>Total Time</key><integer>190615</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:49Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3854888885</integer>
+			<key>Play Date UTC</key><date>2026-02-25T09:28:05Z</date>
+			<key>Persistent ID</key><string>796F042E5039A625</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_10%20IN%20AN%20ORDINARY%20DAY.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3129</key>
+		<dict>
+			<key>Track ID</key><integer>3129</integer>
+			<key>Name</key><string>WHAT I GOT</string>
+			<key>Artist</key><string>SUBLIME</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5879746</integer>
+			<key>Total Time</key><integer>183797</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:46Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3860850579</integer>
+			<key>Play Date UTC</key><date>2026-05-05T09:29:39Z</date>
+			<key>Persistent ID</key><string>C591A9625D6758EB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_11%20WHAT%20I%20GOT.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3131</key>
+		<dict>
+			<key>Track ID</key><integer>3131</integer>
+			<key>Name</key><string>DO YOU REMENBER</string>
+			<key>Artist</key><string>JACK JOHNSON</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4672336</integer>
+			<key>Total Time</key><integer>146024</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:40Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3869920714</integer>
+			<key>Play Date UTC</key><date>2026-08-18T08:58:34Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>E22DCDF15E8CB500</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_13%20DO%20YOU%20REMENBER.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3133</key>
+		<dict>
+			<key>Track ID</key><integer>3133</integer>
+			<key>Name</key><string>WAITING</string>
+			<key>Artist</key><string>G.LOVE &#38; SPECIAL SAUCE</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6452556</integer>
+			<key>Total Time</key><integer>201717</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:36Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3852468253</integer>
+			<key>Play Date UTC</key><date>2026-01-28T09:04:13Z</date>
+			<key>Persistent ID</key><string>EAC81632868A825E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_14%20WAITING.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3135</key>
+		<dict>
+			<key>Track ID</key><integer>3135</integer>
+			<key>Name</key><string>CRUSIN IN MY SUPER BEETLE</string>
+			<key>Artist</key><string>SPEECH</string>
+			<key>Album Artist</key><string>SPEECH</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7558931</integer>
+			<key>Total Time</key><integer>236329</integer>
+			<key>Track Number</key><integer>15</integer>
+			<key>Date Modified</key><date>2023-09-13T08:16:33Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3847278491</integer>
+			<key>Play Date UTC</key><date>2025-11-29T07:28:11Z</date>
+			<key>Persistent ID</key><string>1E8168E3793EC885</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_15%20CRUSIN%20IN%20MY%20SUPER%20BEETLE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3137</key>
+		<dict>
+			<key>Track ID</key><integer>3137</integer>
+			<key>Name</key><string>BREAKIN DOWN</string>
+			<key>Artist</key><string>BEN HARPER</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7765176</integer>
+			<key>Total Time</key><integer>242520</integer>
+			<key>Track Number</key><integer>16</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:28Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3858645796</integer>
+			<key>Play Date UTC</key><date>2026-04-09T21:03:16Z</date>
+			<key>Persistent ID</key><string>481790DCEB53E8DA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_16%20BREAKIN%20DOWN.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3139</key>
+		<dict>
+			<key>Track ID</key><integer>3139</integer>
+			<key>Name</key><string>SCARLET BEJONIAS</string>
+			<key>Artist</key><string>SUBLIME</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6830811</integer>
+			<key>Total Time</key><integer>213315</integer>
+			<key>Track Number</key><integer>17</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:25Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3864305573</integer>
+			<key>Play Date UTC</key><date>2026-06-14T09:12:53Z</date>
+			<key>Persistent ID</key><string>0F8EDB2E85012BF2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_17%20SCARLET%20BEJONIAS.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3141</key>
+		<dict>
+			<key>Track ID</key><integer>3141</integer>
+			<key>Name</key><string>ANGELS &#38; GIRLFRIENDS</string>
+			<key>Artist</key><string>FIVE FOR FIGTHING</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6749816</integer>
+			<key>Total Time</key><integer>211017</integer>
+			<key>Track Number</key><integer>18</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:22Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3850738507</integer>
+			<key>Play Date UTC</key><date>2026-01-08T08:35:07Z</date>
+			<key>Persistent ID</key><string>40B5012CE94B961F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_18%20ANGELS%20&#38;%20GIRLFRIENDS.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3143</key>
+		<dict>
+			<key>Track ID</key><integer>3143</integer>
+			<key>Name</key><string>UNFIED</string>
+			<key>Artist</key><string>G.LOVE &#38; SPECIAL SAUCE</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6053426</integer>
+			<key>Total Time</key><integer>189022</integer>
+			<key>Track Number</key><integer>19</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:18Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3868774135</integer>
+			<key>Play Date UTC</key><date>2026-08-05T02:28:55Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-05-05T05:07:14Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>4498075EED27A53D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_19%20UNFIED.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3145</key>
+		<dict>
+			<key>Track ID</key><integer>3145</integer>
+			<key>Name</key><string>BURN TO SHINE</string>
+			<key>Artist</key><string>BEN HARPER</string>
+			<key>Album</key><string>02_Before</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6872561</integer>
+			<key>Total Time</key><integer>214622</integer>
+			<key>Track Number</key><integer>20</integer>
+			<key>Date Modified</key><date>2023-08-20T06:00:12Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3858258421</integer>
+			<key>Play Date UTC</key><date>2026-04-05T09:27:01Z</date>
+			<key>Persistent ID</key><string>398536865B5CC2CE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_02_20%20BURN%20TO%20SHINE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3147</key>
+		<dict>
+			<key>Track ID</key><integer>3147</integer>
+			<key>Name</key><string>COST OF IGNORANCE</string>
+			<key>Artist</key><string>DAVID BOYLES</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7614876</integer>
+			<key>Total Time</key><integer>237818</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:57Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>11</integer>
+			<key>Play Date</key><integer>3848924659</integer>
+			<key>Play Date UTC</key><date>2025-12-18T08:44:19Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-02-25T22:05:29Z</date>
+			<key>Persistent ID</key><string>62585E88A48B0227</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_01%20COST%20OF%20IGNORANCE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3149</key>
+		<dict>
+			<key>Track ID</key><integer>3149</integer>
+			<key>Name</key><string>TO THE END</string>
+			<key>Artist</key><string>MICK HART</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5957401</integer>
+			<key>Total Time</key><integer>186226</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:53Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3864477440</integer>
+			<key>Play Date UTC</key><date>2026-06-16T08:57:20Z</date>
+			<key>Persistent ID</key><string>DA5F4914D672116F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_02%20TO%20THE%20END.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3151</key>
+		<dict>
+			<key>Track ID</key><integer>3151</integer>
+			<key>Name</key><string>YOU AND I BOTH</string>
+			<key>Artist</key><string>JASON MRAZ</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7066281</integer>
+			<key>Total Time</key><integer>220682</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:48Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3847280422</integer>
+			<key>Play Date UTC</key><date>2025-11-29T08:00:22Z</date>
+			<key>Persistent ID</key><string>003AE044EC1FAD58</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_03%20YOU%20AND%20I%20BOTH.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3153</key>
+		<dict>
+			<key>Track ID</key><integer>3153</integer>
+			<key>Name</key><string>DONT DROP IT</string>
+			<key>Artist</key><string>G.LOVE &#38; SPECIAL SAUCE</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5373736</integer>
+			<key>Total Time</key><integer>167967</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:43Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>10</integer>
+			<key>Play Date</key><integer>3860852333</integer>
+			<key>Play Date UTC</key><date>2026-05-05T09:58:53Z</date>
+			<key>Persistent ID</key><string>FB822CD5B36A7E84</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_04%20DONT%20DROP%20IT.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3155</key>
+		<dict>
+			<key>Track ID</key><integer>3155</integer>
+			<key>Name</key><string>GHETTO FABULOUS</string>
+			<key>Artist</key><string>SPEECH</string>
+			<key>Album Artist</key><string>SPEECH</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>5999986</integer>
+			<key>Total Time</key><integer>187559</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Date Modified</key><date>2023-09-13T08:16:35Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3860245070</integer>
+			<key>Play Date UTC</key><date>2026-04-28T09:17:50Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2025-06-04T13:06:29Z</date>
+			<key>Persistent ID</key><string>775CA3DA54819252</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_05%20GHETTO%20FABULOUS.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3157</key>
+		<dict>
+			<key>Track ID</key><integer>3157</integer>
+			<key>Name</key><string>MAMAS GOT A GIRLFRIEND NOW</string>
+			<key>Artist</key><string>BEN HARPER</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4849356</integer>
+			<key>Total Time</key><integer>151562</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:27Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>12</integer>
+			<key>Play Date</key><integer>3868671955</integer>
+			<key>Play Date UTC</key><date>2026-08-03T22:05:55Z</date>
+			<key>Skip Count</key><integer>6</integer>
+			<key>Skip Date</key><date>2026-08-17T08:05:26Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>BE5C7601A30AF986</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_06%20MAMAS%20GOT%20A%20GIRLFRIEND%20NOW.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3159</key>
+		<dict>
+			<key>Track ID</key><integer>3159</integer>
+			<key>Name</key><string>MUSIC</string>
+			<key>Artist</key><string>THE BEAUTIFUL GIRLS</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6840831</integer>
+			<key>Total Time</key><integer>213629</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Date Modified</key><date>2023-09-13T08:20:45Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>17</integer>
+			<key>Play Date</key><integer>3870246637</integer>
+			<key>Play Date UTC</key><date>2026-08-22T03:30:37Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-05-29T08:49:29Z</date>
+			<key>Loved</key><true/>
+			<key>Sort Artist</key><string>BEAUTIFUL GIRLS</string>
+			<key>Persistent ID</key><string>2B7C50F2FCFD8180</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_07%20MUSIC.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3161</key>
+		<dict>
+			<key>Track ID</key><integer>3161</integer>
+			<key>Name</key><string>D.J.S</string>
+			<key>Artist</key><string>SUBLIME</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6411641</integer>
+			<key>Total Time</key><integer>200437</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:20Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3858863332</integer>
+			<key>Play Date UTC</key><date>2026-04-12T09:28:52Z</date>
+			<key>Persistent ID</key><string>84A40AF5D4033F95</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_08%20D.J.S.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3163</key>
+		<dict>
+			<key>Track ID</key><integer>3163</integer>
+			<key>Name</key><string>MODFOOTBALL</string>
+			<key>Artist</key><string>JACK JOHNSON</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6961071</integer>
+			<key>Total Time</key><integer>217626</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:11Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>23</integer>
+			<key>Play Date</key><integer>3870268595</integer>
+			<key>Play Date UTC</key><date>2026-08-22T09:36:35Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>E9A470B53BCA2312</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_09%20MODFOOTBALL.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3165</key>
+		<dict>
+			<key>Track ID</key><integer>3165</integer>
+			<key>Name</key><string>INFIDEL</string>
+			<key>Artist</key><string>FIVE FOR FIGTHING</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6840831</integer>
+			<key>Total Time</key><integer>213629</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:07Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>16</integer>
+			<key>Play Date</key><integer>3870246222</integer>
+			<key>Play Date UTC</key><date>2026-08-22T03:23:42Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2026-04-15T09:15:19Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>320E6DD6ABF38D93</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_10%20INFIDEL.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3167</key>
+		<dict>
+			<key>Track ID</key><integer>3167</integer>
+			<key>Name</key><string>I LIKE YOU</string>
+			<key>Artist</key><string>SCOTT JACOBY</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7112206</integer>
+			<key>Total Time</key><integer>222354</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Date Modified</key><date>2023-08-20T05:57:04Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3858862872</integer>
+			<key>Play Date UTC</key><date>2026-04-12T09:21:12Z</date>
+			<key>Persistent ID</key><string>F2B3505E4A2DC6A9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_11%20I%20LIKE%20YOU.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3169</key>
+		<dict>
+			<key>Track ID</key><integer>3169</integer>
+			<key>Name</key><string>GOOD THING</string>
+			<key>Artist</key><string>DAVID BOYLES</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7270021</integer>
+			<key>Total Time</key><integer>227291</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:55Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3847277537</integer>
+			<key>Play Date UTC</key><date>2025-11-29T07:12:17Z</date>
+			<key>Persistent ID</key><string>FEE94712ECCC50EF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_12%20GOOD%20THING.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3171</key>
+		<dict>
+			<key>Track ID</key><integer>3171</integer>
+			<key>Name</key><string>STEPPING STONES</string>
+			<key>Artist</key><string>G.LOVE &#38; SPECIAL SAUCE</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>8518346</integer>
+			<key>Total Time</key><integer>266057</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:52Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>12</integer>
+			<key>Play Date</key><integer>3870501845</integer>
+			<key>Play Date UTC</key><date>2026-08-25T02:24:05Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2026-04-01T02:09:38Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>9D20AD7DECC0B823</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_13%20STEPPING%20STONES.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3173</key>
+		<dict>
+			<key>Track ID</key><integer>3173</integer>
+			<key>Name</key><string>SUNDAY MORNING</string>
+			<key>Artist</key><string>MAROON 5</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7745136</integer>
+			<key>Total Time</key><integer>242155</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:47Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3864962619</integer>
+			<key>Play Date UTC</key><date>2026-06-21T23:43:39Z</date>
+			<key>Persistent ID</key><string>600A2B443E421805</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_14%20SUNDAY%20MORNING.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3175</key>
+		<dict>
+			<key>Track ID</key><integer>3175</integer>
+			<key>Name</key><string>SUNSHINE</string>
+			<key>Artist</key><string>DAVID BOYLES</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7089661</integer>
+			<key>Total Time</key><integer>221648</integer>
+			<key>Track Number</key><integer>16</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:39Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>17</integer>
+			<key>Play Date</key><integer>3870761524</integer>
+			<key>Play Date UTC</key><date>2026-08-28T02:32:04Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-04-16T08:43:36Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>45E104C4B4CDF5E9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_16%20SUNSHINE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3177</key>
+		<dict>
+			<key>Track ID</key><integer>3177</integer>
+			<key>Name</key><string>I-76</string>
+			<key>Artist</key><string>G.LOVE &#38; SPECIAL SAUCE</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7296741</integer>
+			<key>Total Time</key><integer>228127</integer>
+			<key>Track Number</key><integer>17</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:34Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3863613828</integer>
+			<key>Play Date UTC</key><date>2026-06-06T09:03:48Z</date>
+			<key>Persistent ID</key><string>1AD4303D2B587F70</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_17%20I-76.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3179</key>
+		<dict>
+			<key>Track ID</key><integer>3179</integer>
+			<key>Name</key><string>GET OUT</string>
+			<key>Artist</key><string>SUBLIME</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>7121391</integer>
+			<key>Total Time</key><integer>222641</integer>
+			<key>Track Number</key><integer>18</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:29Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3852381075</integer>
+			<key>Play Date UTC</key><date>2026-01-27T08:51:15Z</date>
+			<key>Persistent ID</key><string>2E4152483A892D39</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_18%20GET%20OUT.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3181</key>
+		<dict>
+			<key>Track ID</key><integer>3181</integer>
+			<key>Name</key><string>NEVER KNOW</string>
+			<key>Artist</key><string>JACK JOHNSON</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>6876736</integer>
+			<key>Total Time</key><integer>214752</integer>
+			<key>Track Number</key><integer>19</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:23Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3860850794</integer>
+			<key>Play Date UTC</key><date>2026-05-05T09:33:14Z</date>
+			<key>Persistent ID</key><string>665C65E9580B39E1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_19%20NEVER%20KNOW.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3183</key>
+		<dict>
+			<key>Track ID</key><integer>3183</integer>
+			<key>Name</key><string>DRUNK DRIVIN</string>
+			<key>Artist</key><string>SUBLIME</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>655151</integer>
+			<key>Total Time</key><integer>20349</integer>
+			<key>Track Number</key><integer>20</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:14Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>13</integer>
+			<key>Play Date</key><integer>3869186996</integer>
+			<key>Play Date UTC</key><date>2026-08-09T21:09:56Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2026-04-13T09:35:08Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>DE6A78B974FE748B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_20%20DRUNK%20DRIVIN.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>3185</key>
+		<dict>
+			<key>Track ID</key><integer>3185</integer>
+			<key>Name</key><string>TIMES LIKE THESE</string>
+			<key>Artist</key><string>JACK JOHNSON</string>
+			<key>Album</key><string>03_After</string>
+			<key>Genre</key><string>ジャンル情報なし</string>
+			<key>Kind</key><string>MPEGオーディオファイル</string>
+			<key>Size</key><integer>4505336</integer>
+			<key>Total Time</key><integer>140800</integer>
+			<key>Track Number</key><integer>21</integer>
+			<key>Date Modified</key><date>2023-08-20T05:56:05Z</date>
+			<key>Date Added</key><date>2023-08-27T05:36:06Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>15</integer>
+			<key>Play Date</key><integer>3869824165</integer>
+			<key>Play Date UTC</key><date>2026-08-17T06:09:25Z</date>
+			<key>Loved</key><true/>
+			<key>Persistent ID</key><string>266AC06DCAFE6C97</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/Music/YUKA/2005_03_21%20TIMES%20LIKE%20THESE.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>after</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>14219</integer>
+			<key>Playlist Persistent ID</key><string>764CF78FCB20673E</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>3155</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3087</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3095</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3101</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3071</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3097</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3079</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3105</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3089</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3091</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3077</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3081</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3075</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3073</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3103</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3083</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3099</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3085</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3069</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3093</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3119</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3135</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3115</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3137</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3145</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3111</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3133</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3143</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3127</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3117</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3121</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3123</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3125</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3141</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3113</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3131</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3109</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3129</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3139</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3167</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3165</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3147</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3169</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3175</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3149</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3153</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3171</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3177</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3151</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3163</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3181</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3185</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3161</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3179</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3183</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3173</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3157</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>3159</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
