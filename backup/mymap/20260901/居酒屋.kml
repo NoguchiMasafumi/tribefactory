@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>居酒屋</name>
+    <description/>
+    <Style id="icon-503-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-503-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>izakaya.kml</name>
+      <Placemark>
+        <name>やきとん筑前屋 川崎店</name>
+        <description><![CDATA[住所: 神奈川県川崎市川崎区砂子２丁目10−７ ルリエ川崎駅前 1F<br>開店時間: 12:00]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.701141,35.529235,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>神田屋 ウィングキッチン京急鶴見店</name>
+        <description><![CDATA[住所: 神奈川県横浜市鶴見区鶴見中央１丁目３０−２２ ウィングキッチン京急鶴見 １Ｆ<br>開店時間: 11:00<br>備考: レバー]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.676373,35.508537,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>四文屋 吉祥寺店</name>
+        <description><![CDATA[住所: 東京都武蔵野市吉祥寺南町１丁目１−５ 鮨藤ビル<br>開店時間: 13:00<br>備考: ればぽん / 席料あり]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.579458,35.702758,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>いせや 北口店</name>
+        <description><![CDATA[住所: 東京都武蔵野市吉祥寺本町１丁目２０−３<br>開店時間: 12:00<br>備考: タン]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.581561,35.704902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>元祖低価格 満天酒場 大森店</name>
+        <description><![CDATA[住所: 東京都大田区大森北１丁目３−３ 高信ビル 1階<br>開店時間: 11:30<br>備考: 砂肝]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.728867,35.589139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>一軒め酒場 京急川崎店</name>
+        <description><![CDATA[住所: 神奈川県川崎市川崎区砂子１丁目１−１２<br>開店時間: 10:00]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.700684,35.531201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>やきとり大衆酒場 大将 本店</name>
+        <description><![CDATA[住所: 東京都杉並区高円寺南４丁目２７−１０<br>開店時間: 14:00]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.649646,35.704646,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>やまと 新宿</name>
+        <description><![CDATA[住所: 東京都新宿区西新宿１丁目４−１８ 大和ビル<br>開店時間: 11:00]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.697669,35.691763,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>神田屋 渋谷店</name>
+        <description><![CDATA[住所: 東京都渋谷区宇田川町２５−３ プリンスビル B１F<br>開店時間: 12:00]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.699105,35.660143,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>神田屋 新宿店</name>
+        <description><![CDATA[住所: 東京都新宿区新宿３丁目７−３ 丸中ビル １F<br>開店時間: 12:00]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.704689,35.690506,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>定額酒場 神田南口店</name>
+        <description><![CDATA[〒101-0044 東京都千代田区鍛冶町１丁目７−１ 手嶋ビル 一階<br>開店時間：11:00]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.770931,35.690196,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>やきとん筑前屋 中野店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.6665819,35.7080196,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>桜田公園</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7567497,35.6654333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>いせや 総本店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.5768135,35.7025187,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>なぎ屋 方南町店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.6592368,35.6837719,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>なぎ屋 代々木店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7013383,35.6827639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>なぎ屋 千歳船橋店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.6234319,35.6469139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大衆酒場 もつ焼き 次世代 渋谷店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.6976822,35.6596436,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>もつ焼きばん 五反田店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7249137,35.6267127,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>やきとん元気 電気街口店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7695668,35.6993443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>紅とん 神田神保町店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7607916,35.6953423,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>やきとん大吉赤坂見附店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7357166,35.6760359,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>蔵どり 門前仲町 本店</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7971179,35.671048,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>やきとん二の豚</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7513005,35.6963563,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
