@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MP4 Compressor</title>
+</head>
+<body>
+    <input type="file" id="uploader" accept="video/mp4">
+    <video id="player" controls width="400"></video>
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
+    <script>
+        const { createFFmpeg, fetchFile } = FFmpeg;
+        const ffmpeg = createFFmpeg({ log: true });
+        const uploader = document.getElementById('uploader');
+        uploader.addEventListener('change', async () => {
+            const file = uploader.files[0];
+            if (!file) return;
+            if (!ffmpeg.isLoaded()) await ffmpeg.load();
+            ffmpeg.FS('writeFile', 'input.mp4', await fetchFile(file));
+            await ffmpeg.run('-i', 'input.mp4', '-vcodec', 'libx264', '-crf', '28', 'output.mp4');
+            const data = ffmpeg.FS('readFile', 'output.mp4');
+            const video = document.getElementById('player');
+            video.src = URL.createObjectURL(new Blob([data.buffer], { type: 'video/mp4' }));
+        });
+    </script>
+</body>
+</html>
