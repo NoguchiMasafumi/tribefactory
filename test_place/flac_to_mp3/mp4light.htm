@@ -6,14 +6,22 @@
 </head>
 <body>
     <input type="file" id="uploader" accept="video/mp4">
+    <div id="progress">待機中</div>
     <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
     <script>
+        const progress = document.getElementById('progress');
         const { createFFmpeg, fetchFile } = FFmpeg;
-        const ffmpeg = createFFmpeg({ log: true });
+        const ffmpeg = createFFmpeg({
+            log: true,
+            progress: ({ ratio }) => {
+                progress.innerText = `圧縮中: ${Math.round(ratio * 100)}%`;
+            }
+        });
         const uploader = document.getElementById('uploader');
         uploader.addEventListener('change', async () => {
             const file = uploader.files[0];
             if (!file) return;
+            progress.innerText = '準備中...';
             if (!ffmpeg.isLoaded()) await ffmpeg.load();
             ffmpeg.FS('writeFile', 'input.mp4', await fetchFile(file));
             await ffmpeg.run('-i', 'input.mp4', '-vcodec', 'libx264', '-crf', '28', 'output.mp4');
@@ -23,6 +31,7 @@
             a.href = URL.createObjectURL(blob);
             a.download = 'compressed.mp4';
             a.click();
+            progress.innerText = '完了！';
         });
     </script>
 </body>
