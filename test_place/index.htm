@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>配置図（インタラクティブ＆空行・連続改行保持版）</title>
+    <style>
+        body {
+            font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fcfcf9;
+            color: #222;
+            user-select: none;
+        }
+        .board {
+            position: relative;
+            width: 1000px;
+            height: 600px;
+            border: 2px solid #555;
+            background: #fff;
+            box-sizing: border-box;
+            font-size: 15px;
+            line-height: 1.2;
+            overflow: hidden;
+        }
+        
+        /* 中央縦区切り線 */
+        .line-v {
+            position: absolute;
+            top: 0;
+            left: 500px;
+            width: 1px;
+            height: 600px;
+            background-color: #555;
+            z-index: 1;
+        }
+
+        /* エリアタイトル */
+        .area-label {
+            position: absolute;
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* ドラッグ可能な配置要素 */
+        .draggable {
+            position: absolute;
+            cursor: move;
+            z-index: 10;
+            padding: 4px;
+            border: 1px dashed transparent;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .draggable:hover {
+            border-color: #007bff;
+        }
+        .draggable.dragging {
+            opacity: 0.7;
+            z-index: 100;
+            border-color: #007bff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        /* 枠付きタイトル */
+        .title-box {
+            display: inline-block;
+            border: 1.5px solid #333;
+            border-radius: 6px;
+            padding: 2px 10px;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #fff;
+        }
+
+        /* サブ表記 */
+        .sub { font-size: 15px; margin-left: 2px; }
+
+        /* モーダルダイアログ */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 340px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .modal h3 { margin: 0 0 12px; font-size: 16px; }
+        .modal input, .modal textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .modal label {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .modal-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-buttons-right {
+            display: flex;
+            gap: 8px;
+        }
+        .modal-buttons button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-primary { background: #007bff; color: #fff; }
+        .btn-secondary { background: #eee; color: #333; }
+        .btn-danger { background: #dc3545; color: #fff; }
+    </style>
+</head>
+<body>
+
+<div class="board" id="board">
+    <!-- 中央縦区切り線 -->
+    <div class="line-v"></div>
+
+    <!-- 3F エリア -->
+    <div class="area-label" style="top: 15px; left: 20px;">3F</div>
+
+    <!-- 左側エリア（4カラム構造） -->
+    <div class="draggable" style="top: 45px; left: 20px; width: 110px;">
+        <div style="height: 250px;">
+            <div class="title-box">光の部屋</div>
+            <div style="margin-top: 5px; margin-left: 10px;">
+                <div>カーテン</div>
+                <div style="margin-top: 3px;">窓</div>
+                <div style="margin-top: 3px;">棚</div>
+                <div style="margin-top: 3px;">床</div>
+            </div>
+        </div>
+        <div style="height: 140px;">
+            <div class="title-box">階段</div>
+            <div style="margin-top: 6px; margin-left: 10px; font-size: 15px;">
+                <div>2 ～ 3 F</div>
+                <div style="margin-top: 3px;">1 ～ 2 F</div>
+            </div>
+        </div>
+        <div>
+            <div class="title-box">洗面所</div>
+            <div style="margin-top: 8px; margin-left: 10px;">
+                <div>洗面台</div>
+                <div style="margin-top: 4px;">床</div>
+                <div style="margin-top: 6px;">お手洗</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="draggable" style="top: 45px; left: 135px; width: 110px;">
+        <div class="title-box">寝室</div>
+        <div style="margin-top: 5px; margin-left: 5px;">
+            <div>カーテン</div>
+            <div style="margin-top: 3px;">窓</div>
+            <div style="margin-top: 3px;">棚</div>
+            <div style="margin-top: 3px;">床</div>
+        </div>
+    </div>
+
+    <div class="draggable" style="top: 45px; left: 250px; width: 110px;">
+        <div style="height: 250px;">
+            <div class="title-box">その他</div>
+            <div style="margin-top: 5px; margin-left: 5px;">
+                <div>本棚</div>
+                <div style="margin-top: 3px;">手すり</div>
+                <div style="margin-top: 3px;">廊下の床</div>
+            </div>
+        </div>
+        <div style="height: 140px;">
+            <div class="title-box">玄関</div>
+            <div style="margin-top: 6px; margin-left: 5px;">
+                <div>靴箱</div>
+                <div style="margin-top: 3px;">土間</div>
+            </div>
+        </div>
+        <div>
+            <div class="title-box">浴室</div>
+        </div>
+    </div>
+
+    <!-- 2F エリア -->
+    <div class="area-label" style="top: 15px; left: 520px;">2 F</div>
+
+    <div class="draggable" style="top: 35px; left: 520px;">
+        <div class="title-box">お台所</div>
+    </div>
+
+    <!-- 右側エリア（4カラム構造） -->
+    <div class="draggable" style="top: 75px; left: 520px; width: 110px;">
+        <div style="height: 60px;">冷蔵庫</div>
+        <div style="height: 50px;">吊り戸棚</div>
+        <div style="height: 35px;">ドア</div>
+        <div>下の棚</div>
+    </div>
+
+    <div class="draggable" style="top: 75px; left: 635px; width: 110px;">
+        <div style="height: 60px;">
+            <div>外側</div>
+            <div style="margin-top: 2px;">冷蔵 内側</div>
+            <div style="margin-top: 2px;">野菜</div>
+        </div>
+        <div style="height: 50px;">
+            <div>左側</div>
+            <div style="margin-top: 3px;">右側</div>
+        </div>
+        <div style="height: 35px;"></div>
+        <div>
+            <div>左側</div>
+            <div style="margin-top: 3px; font-size: 13px;">カトラリー入れ</div>
+            <div style="margin-top: 2px; margin-left: 10px; font-size: 13px;">表面</div>
+        </div>
+    </div>
+
+    <div class="draggable" style="top: 75px; left: 750px; width: 110px;">
+        <div style="height: 60px;">
+            <div>レンジ台</div>
+            <div style="margin-top: 4px;">トースター</div>
+        </div>
+        <div style="height: 50px;">
+            <div>レンジ</div>
+            <div style="margin-top: 4px;">冷凍庫</div>
+        </div>
+        <div style="height: 35px;"></div>
+        <div>
+            <div>まん中</div>
+        </div>
+    </div>
+
+    <div class="draggable" style="top: 75px; left: 865px; width: 110px;">
+        <div style="height: 60px;">
+            <div>食洗機</div>
+            <div style="margin-top: 4px;">レンジフード</div>
+        </div>
+        <div style="height: 50px;">
+            <div>ガス台</div>
+            <div style="margin-top: 4px;">床</div>
+        </div>
+        <div style="height: 35px;"></div>
+        <div>
+            <div>右側</div>
+            <div style="margin-top: 3px; font-size: 13px;">表面</div>
+        </div>
+    </div>
+
+    <!-- リビング -->
+    <div class="draggable" style="top: 310px; left: 520px;">
+        <div class="title-box">リビング</div>
+    </div>
+
+    <div class="draggable" style="top: 350px; left: 540px;">
+        <div>カーテン</div>
+        <div style="margin-top: 4px;">窓</div>
+        <div style="margin-top: 8px;">棚（食卓横） 上</div>
+        <div style="margin-left: 95px;">下</div>
+        <div style="margin-top: 8px;">食器棚</div>
+        <div style="margin-top: 6px;">TV棚．鏡</div>
+        <div style="margin-top: 8px;">ローテーブル ソファ</div>
+        <div style="margin-top: 4px;">ピアノ</div>
+    </div>
+
+    <div class="draggable" style="top: 350px; left: 720px;">
+        <div>食卓・イス</div>
+        <div style="margin-top: 8px;">洗濯エレクター</div>
+        <div style="margin-top: 10px; font-size: 15px;">床</div>
+        <div style="margin-top: 18px; font-size: 15px; margin-left: 15px;">クローゼット</div>
+    </div>
+</div>
+
+<!-- 新規追加・編集モーダルダイアログ -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <h3 id="modalTitle">項目の編集</h3>
+        <input type="text" id="inputTitle" placeholder="タイトル（任意）">
+        <textarea id="inputBody" rows="7" placeholder="内容を入力（改行・連続改行を完全に保持）"></textarea>
+        <label>
+            <input type="checkbox" id="checkTitleBox"> 枠（タイトルボックス）で囲む
+        </label>
+        <div class="modal-buttons">
+            <button class="btn-danger" id="btnDelete" style="display: none;">削除</button>
+            <div class="modal-buttons-right">
+                <button class="btn-secondary" id="btnCancel">キャンセル</button>
+                <button class="btn-primary" id="btnSave">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const board = document.getElementById('board');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const inputTitle = document.getElementById('inputTitle');
+    const inputBody = document.getElementById('inputBody');
+    const checkTitleBox = document.getElementById('checkTitleBox');
+    const btnCancel = document.getElementById('btnCancel');
+    const btnSave = document.getElementById('btnSave');
+    const btnDelete = document.getElementById('btnDelete');
+
+    // 磁石スナップX座標
+    const snapXPositions = [20, 135, 250, 365, 520, 635, 750, 865];
+    const snapThreshold = 30;
+
+    let activeItem = null;
+    let targetItemForEdit = null;
+    let startX = 0, startY = 0;
+    let initialLeft = 0, initialTop = 0;
+    let clickX = 0, clickY = 0;
+
+    // --- ドラッグ＆ドロップ ＆ ダブルクリック編集イベント処理 ---
+    function initDraggable(el) {
+        el.addEventListener('mousedown', (e) => {
+            if (e.button !== 0) return;
+            activeItem = el;
+            el.classList.add('dragging');
+
+            startX = e.clientX;
+            startY = e.clientY;
+            initialLeft = parseInt(el.style.left, 10) || 0;
+            initialTop = parseInt(el.style.top, 10) || 0;
+
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+            e.stopPropagation();
+        });
+
+        // 既存要素のダブルクリック（編集モーダルオープン）
+        el.addEventListener('dblclick', (e) => {
+            e.stopPropagation();
+            openEditModal(el);
+        });
+    }
+
+    function onMouseMove(e) {
+        if (!activeItem) return;
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+
+        let currentLeft = initialLeft + dx;
+        let currentTop = initialTop + dy;
+
+        currentLeft = Math.max(0, Math.min(board.clientWidth - activeItem.offsetWidth, currentLeft));
+        currentTop = Math.max(0, Math.min(board.clientHeight - activeItem.offsetHeight, currentTop));
+
+        currentTop = Math.round(currentTop / 10) * 10;
+
+        activeItem.style.left = currentLeft + 'px';
+        activeItem.style.top = currentTop + 'px';
+    }
+
+    function onMouseUp() {
+        if (!activeItem) return;
+        
+        let currentLeft = parseInt(activeItem.style.left, 10);
+        let closestX = currentLeft;
+        let minDiff = Infinity;
+        
+        snapXPositions.forEach(snapX => {
+            const diff = Math.abs(currentLeft - snapX);
+            if (diff < snapThreshold && diff < minDiff) {
+                minDiff = diff;
+                closestX = snapX;
+            }
+        });
+
+        activeItem.style.left = closestX + 'px';
+        activeItem.classList.remove('dragging');
+        activeItem = null;
+
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+    }
+
+    // 初期状態の全要素を初期化
+    document.querySelectorAll('.draggable').forEach(initDraggable);
+
+    // --- 空白エリアのダブルクリック（新規作成） ---
+    board.addEventListener('dblclick', (e) => {
+        if (e.target !== board && e.target.className !== 'line-v') return;
+
+        const rect = board.getBoundingClientRect();
+        clickX = e.clientX - rect.left;
+        clickY = e.clientY - rect.top;
+
+        let closestX = clickX;
+        let minDiff = Infinity;
+        snapXPositions.forEach(snapX => {
+            const diff = Math.abs(clickX - snapX);
+            if (diff < minDiff) {
+                minDiff = diff;
+                closestX = snapX;
+            }
+        });
+
+        clickX = closestX;
+        clickY = Math.round(clickY / 10) * 10;
+
+        openNewModal();
+    });
+
+    // モーダル処理：新規
+    function openNewModal() {
+        targetItemForEdit = null;
+        modalTitle.textContent = '新規項目の追加';
+        inputTitle.value = '';
+        inputBody.value = '';
+        checkTitleBox.checked = true;
+        btnDelete.style.display = 'none';
+        modalOverlay.style.display = 'flex';
+        inputTitle.focus();
+    }
+
+    // モーダル処理：編集（連続改行・空行完全復元処理）
+    function openEditModal(el) {
+        targetItemForEdit = el;
+        modalTitle.textContent = '項目の編集';
+        btnDelete.style.display = 'block';
+
+        const titleBox = el.querySelector('.title-box');
+        const hasBox = !!titleBox;
+        checkTitleBox.checked = hasBox;
+
+        if (hasBox) {
+            inputTitle.value = titleBox.textContent.trim();
+        } else {
+            inputTitle.value = '';
+        }
+
+        // 保存時に格納した生データがあればそれを最優先でセット（連続改行を保持）
+        if (el.dataset.rawBody !== undefined) {
+            inputBody.value = el.dataset.rawBody;
+        } else {
+            // 初期要素からの復元処理
+            const clone = el.cloneNode(true);
+            if (clone.querySelector('.title-box')) {
+                clone.querySelector('.title-box').remove();
+            }
+
+            const lines = [];
+            const allDivs = Array.from(clone.querySelectorAll('div'));
+
+            if (allDivs.length > 0) {
+                allDivs.forEach(d => {
+                    if (d.querySelectorAll('div').length === 0) {
+                        lines.push(d.textContent.trim());
+                    }
+                });
+            } else {
+                lines.push(clone.textContent.trim());
+            }
+
+            inputBody.value = lines.join('\n');
+        }
+
+        modalOverlay.style.display = 'flex';
+        inputTitle.focus();
+    }
+
+    // ダイアログ操作
+    btnCancel.addEventListener('click', () => {
+        modalOverlay.style.display = 'none';
+    });
+
+    btnDelete.addEventListener('click', () => {
+        if (targetItemForEdit) {
+            targetItemForEdit.remove();
+        }
+        modalOverlay.style.display = 'none';
+    });
+
+    btnSave.addEventListener('click', () => {
+        const titleText = inputTitle.value.trim();
+        const bodyText = inputBody.value; // 改行・空行をそのまま保持
+
+        if (!titleText && !bodyText.trim()) {
+            if (targetItemForEdit) targetItemForEdit.remove();
+            modalOverlay.style.display = 'none';
+            return;
+        }
+
+        let innerHTML = '';
+        if (titleText) {
+            if (checkTitleBox.checked) {
+                innerHTML += `<div class="title-box">${titleText}</div>`;
+            } else {
+                innerHTML += `<div style="font-weight: bold;">${titleText}</div>`;
+            }
+        }
+        if (bodyText) {
+            // 空行も含めてそのまま <div> に変換（空行は &nbsp; で高さを保持）
+            const lines = bodyText.split('\n').map(l => {
+                const text = l.trim();
+                return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
+            }).join('');
+            innerHTML += `<div style="margin-top: 5px; margin-left: 5px;">${lines}</div>`;
+        }
+
+        if (targetItemForEdit) {
+            targetItemForEdit.innerHTML = innerHTML;
+            targetItemForEdit.dataset.rawBody = bodyText; // 入力テキストを生データとして保存
+        } else {
+            const newEl = document.createElement('div');
+            newEl.className = 'draggable';
+            newEl.style.left = clickX + 'px';
+            newEl.style.top = clickY + 'px';
+            newEl.style.width = '110px';
+            newEl.innerHTML = innerHTML;
+            newEl.dataset.rawBody = bodyText; // 入力テキストを生データとして保存
+            board.appendChild(newEl);
+            initDraggable(newEl);
+        }
+
+        modalOverlay.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
