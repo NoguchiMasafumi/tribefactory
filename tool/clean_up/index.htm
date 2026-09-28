@@ -133,6 +133,19 @@
         .btn-secondary { background: #eee; color: #333; }
         .btn-danger { background: #dc3545; color: #fff; }
 
+        /*
+        .top-menu {
+            position: absolute;
+            top: 23px;
+            left: 797px;
+            width: 220px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            z-index: 500;
+        }
+        */
         .top-menu {
             position: absolute;
             top: 23px;
@@ -449,8 +462,8 @@
         865: 'col8'
     };
 
-    // --- JSエクスポート処理 ---
-    btnExport.addEventListener('click', () => {
+
+    btnExport.addEventListener('click', async () => {
         dropdownMenu.classList.remove('show');
         const items = document.querySelectorAll('.draggable');
         const exportData = [];
@@ -477,9 +490,6 @@
                 if (allDivs.length > 0) {
                     allDivs.forEach(d => {
                         if (d.querySelectorAll('div').length === 0) {
-                            /*
-                            lines.push(d.textContent.trim());
-                            */
                             lines.push(d.textContent);
                         }
                     });
@@ -508,13 +518,33 @@
         });
 
         const fileContent = `const layoutData = ${JSON.stringify(exportData, null, 2)};\n`;
-        const blob = new Blob([fileContent], { type: 'application/javascript;charset=utf-8' });
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
+        const defaultName = fileName.trim() !== '' ? `${fileName}.js` : 'data.js';
 
-        a.download = fileName.trim() !== '' ? `${fileName}.js` : 'data.js';
-        a.click();
-        URL.revokeObjectURL(a.href);
+        if ('showSaveFilePicker' in window) {
+            try {
+                const handle = await window.showSaveFilePicker({
+                    suggestedName: defaultName,
+                    types: [{
+                        description: 'JavaScript File',
+                        accept: { 'application/javascript': ['.js'] }
+                    }]
+                });
+                const writable = await handle.createWritable();
+                await writable.write(fileContent);
+                await writable.close();
+            } catch (err) {
+                if (err.name !== 'AbortError') {
+                    console.error('保存処理に失敗しました:', err);
+                }
+            }
+        } else {
+            const blob = new Blob([fileContent], { type: 'application/javascript;charset=utf-8' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = defaultName;
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
     });
 
     // --- 空白エリアのダブルクリック（新規作成） ---
