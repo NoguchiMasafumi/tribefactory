@@ -135,8 +135,8 @@
 
         .top-menu {
             position: absolute;
-            top: 20px;
-            left: 800px;
+            top: 23px;
+            left: 797px;
             width: 220px;
             display: flex;
             justify-content: flex-end;
@@ -245,71 +245,70 @@
 
     const urlParams = new URLSearchParams(window.location.search);
     const rawFileName = urlParams.get('file');
-    const fileName = rawFileName !== null ? rawFileName : 'data';
+    const fileName = rawFileName !== null ? rawFileName : '';
 
     document.addEventListener('DOMContentLoaded', () => {
         const fileLabel = document.getElementById('fileLabel');
         if (fileLabel) {
-            /*
-            fileLabel.textContent = `${fileName}.js`;
-            */
             fileLabel.textContent = fileName.trim() !== '' ? `${fileName}.js` : '';
         }
     });
 
-    const scriptTag = document.createElement('script');
-    scriptTag.src = `json/${fileName}.js`;
-    scriptTag.onload = () => {
-        if (typeof layoutData !== 'undefined') {
-            layoutData.forEach(item => {
-                const newEl = document.createElement('div');
-                newEl.className = 'draggable';
-                
-                let posX = item.left;
-                if (item.col && colMap[item.col] !== undefined) {
-                    posX = colMap[item.col];
-                }
-                
-                newEl.style.left = posX + 'px';
-                newEl.style.top = item.top + 'px';
-                if (item.width) newEl.style.width = item.width + 'px';
-                
-                /*
-                newEl.innerHTML = item.html;
-                */
-                let innerHTML = '';
-                if (item.title) {
-                    innerHTML += `<div class="title-box">${item.title}</div>`;
-                } else {
-                    innerHTML += `<div class="title-box" style="visibility: hidden;">&nbsp;</div>`;
-                }
-
-                if (item.body) {
-                    const bodyArray = Array.isArray(item.body) ? item.body : item.body.split('\n');
+    if (fileName.trim() !== '') {
+        const scriptTag = document.createElement('script');
+        scriptTag.src = `json/${fileName}.js`;
+        scriptTag.onload = () => {
+            if (typeof layoutData !== 'undefined') {
+                layoutData.forEach(item => {
+                    const newEl = document.createElement('div');
+                    newEl.className = 'draggable';
+                    
+                    let posX = item.left;
+                    if (item.col && colMap[item.col] !== undefined) {
+                        posX = colMap[item.col];
+                    }
+                    
+                    newEl.style.left = posX + 'px';
+                    newEl.style.top = item.top + 'px';
+                    if (item.width) newEl.style.width = item.width + 'px';
+                    
                     /*
-                    const lines = bodyArray.map(l => {
-                        const text = String(l).trim();
-                        return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
-                    }).join('');
+                    newEl.innerHTML = item.html;
                     */
-                    const lines = bodyArray.map(l => {
-                        const text = String(l);
-                        return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
-                    }).join('');
-                    innerHTML += `<div style="margin-top: 5px; margin-left: 5px;">${lines}</div>`;
-                    newEl.dataset.rawBody = bodyArray.join('\n');
-                } else if (item.html) {
-                    innerHTML = item.html;
-                }
+                    let innerHTML = '';
+                    if (item.title) {
+                        innerHTML += `<div class="title-box">${item.title}</div>`;
+                    } else {
+                        innerHTML += `<div class="title-box" style="visibility: hidden;">&nbsp;</div>`;
+                    }
 
-                newEl.innerHTML = innerHTML;
-                if (item.rawBody) newEl.dataset.rawBody = item.rawBody;
-                board.appendChild(newEl);
-                initDraggable(newEl);
-            });
-        }
-    };
-    document.head.appendChild(scriptTag);
+                    if (item.body) {
+                        const bodyArray = Array.isArray(item.body) ? item.body : item.body.split('\n');
+                        /*
+                        const lines = bodyArray.map(l => {
+                            const text = String(l).trim();
+                            return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
+                        }).join('');
+                        */
+                        const lines = bodyArray.map(l => {
+                            const text = String(l);
+                            return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
+                        }).join('');
+                        innerHTML += `<div style="margin-top: 5px; margin-left: 5px;">${lines}</div>`;
+                        newEl.dataset.rawBody = bodyArray.join('\n');
+                    } else if (item.html) {
+                        innerHTML = item.html;
+                    }
+
+                    newEl.innerHTML = innerHTML;
+                    if (item.rawBody) newEl.dataset.rawBody = item.rawBody;
+                    board.appendChild(newEl);
+                    initDraggable(newEl);
+                });
+            }
+        };
+        document.head.appendChild(scriptTag);
+    }
 </script>
 <script>
     const board = document.getElementById('board');
@@ -426,8 +425,6 @@
         document.removeEventListener('mouseup', onMouseUp);
     }
 
-
-
     // カラム定義マッピング
     const colMap = {
         col1: 20,
@@ -487,7 +484,6 @@
                         }
                     });
                 } else {
-
                     lines.push(clone.textContent);
                 }
                 rawBodyText = lines.join('\n');
