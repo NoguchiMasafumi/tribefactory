@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>配置図（インタラクティブ＆空行・連続改行保持版）</title>
+    <style>
+        body {
+            font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fcfcf9;
+            color: #222;
+            user-select: none;
+        }
+        .board {
+            position: relative;
+            width: 1000px;
+            height: 600px;
+            border: 2px solid #dbd8d8;
+            background: #fff;
+            box-sizing: border-box;
+            font-size: 15px;
+            line-height: 1.2;
+            overflow: hidden;
+        }
+        
+        /* 中央縦区切り線 */
+        .line-v {
+            position: absolute;
+            top: 0;
+            left: 500px;
+            width: 1px;
+            height: 600px;
+            background-color: #555;
+            z-index: 1;
+        }
+
+        /* エリアタイトル */
+        .area-label {
+            position: absolute;
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* ドラッグ可能な配置要素 */
+        .draggable {
+            position: absolute;
+            cursor: move;
+            z-index: 10;
+            padding: 4px;
+            border: 1px dashed transparent;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            white-space: pre-wrap;
+        }
+        .draggable:hover {
+            border-color: #007bff;
+        }
+        .draggable.dragging {
+            opacity: 0.7;
+            z-index: 100;
+            border-color: #007bff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        /* 枠付きタイトル */
+        .title-box {
+            display: inline-block;
+            border: 1.5px solid #333;
+            border-radius: 6px;
+            padding: 2px 10px;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #fff;
+        }
+
+        /* サブ表記 */
+        .sub { font-size: 15px; margin-left: 2px; }
+
+        /* モーダルダイアログ */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 340px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .modal h3 { margin: 0 0 12px; font-size: 16px; }
+        .modal input, .modal textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .modal label {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .modal-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-buttons-right {
+            display: flex;
+            gap: 8px;
+        }
+        .modal-buttons button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-primary { background: #007bff; color: #fff; }
+        .btn-secondary { background: #eee; color: #333; }
+        .btn-danger { background: #dc3545; color: #fff; }
+
+        /* 右上メニューボタン */
+        /*
+        .top-menu {
+            position: absolute;
+            top: 20px;
+            left: 970px;
+            z-index: 500;
+        }
+        */
+        .top-menu {
+            position: absolute;
+            top: 20px;
+            left: 800px;
+            width: 220px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            z-index: 500;
+        }
+        .file-label {
+            font-size: 14px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .menu-toggle {
+            /*
+            margin:3px 0px 0px 13px;
+            */
+            width: 34px;
+            height: 34px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .menu-toggle:hover {
+            background: #f0f0f0;
+        }
+        .menu-toggle span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background-color: #333;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            min-width: 140px;
+            overflow: hidden;
+        }
+        .dropdown-menu.show {
+            display: block;
+        }
+        .dropdown-menu-item {
+            padding: 10px 14px;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .dropdown-menu-item:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-menu">
+    <span class="file-label" id="fileLabel"></span>
+    <!--
+    <button class="btn-export" id="btnExport">JSエクスポート</button>
+    -->
+    <button class="menu-toggle" id="menuToggle" title="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="dropdown-menu" id="dropdownMenu">
+        <div class="dropdown-menu-item" id="btnExport">JSエクスポート</div>
+    </div>
+</div>
+
+<div class="board" id="board">
+
+    <div class="area-label" style="top: 15px; left: 20px;"></div>
+    <div class="area-label" style="top: 15px; left: 520px;"></div>
+</div>
+
+<!-- 新規追加・編集モーダルダイアログ -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <h3 id="modalTitle">項目の編集</h3>
+        <input type="text" id="inputTitle" placeholder="タイトル（任意）">
+        <textarea id="inputBody" rows="7" placeholder="内容を入力（改行・連続改行を完全に保持）"></textarea>
+
+        <div class="modal-buttons">
+            <button class="btn-danger" id="btnDelete" style="display: none;">削除</button>
+            <div class="modal-buttons-right">
+                <button class="btn-secondary" id="btnCancel">キャンセル</button>
+                <button class="btn-primary" id="btnSave">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // URLパラメータから ?file=xxx を取得（未指定時は data）
+    const urlParams = new URLSearchParams(window.location.search);
+    const fileName = urlParams.get('file') || 'data';
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const fileLabel = document.getElementById('fileLabel');
+        if (fileLabel) {
+            fileLabel.textContent = `${fileName}.js`;
+        }
+    });
+
+    const scriptTag = document.createElement('script');
+    scriptTag.src = `json/${fileName}.js`;
+    scriptTag.onload = () => {
+        if (typeof layoutData !== 'undefined') {
+            layoutData.forEach(item => {
+                const newEl = document.createElement('div');
+                newEl.className = 'draggable';
+                
+                let posX = item.left;
+                if (item.col && colMap[item.col] !== undefined) {
+                    posX = colMap[item.col];
+                }
+                
+                newEl.style.left = posX + 'px';
+                newEl.style.top = item.top + 'px';
+                if (item.width) newEl.style.width = item.width + 'px';
+                
+                /*
+                newEl.innerHTML = item.html;
+                */
+                let innerHTML = '';
+                if (item.title) {
+                    innerHTML += `<div class="title-box">${item.title}</div>`;
+                } else {
+                    innerHTML += `<div class="title-box" style="visibility: hidden;">&nbsp;</div>`;
+                }
+
+                if (item.body) {
+                    const bodyArray = Array.isArray(item.body) ? item.body : item.body.split('\n');
+                    /*
+                    const lines = bodyArray.map(l => {
+                        const text = String(l).trim();
+                        return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
+                    }).join('');
+                    */
+                    const lines = bodyArray.map(l => {
+                        const text = String(l);
+                        return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
+                    }).join('');
+                    innerHTML += `<div style="margin-top: 5px; margin-left: 5px;">${lines}</div>`;
+                    newEl.dataset.rawBody = bodyArray.join('\n');
+                } else if (item.html) {
+                    innerHTML = item.html;
+                }
+
+                newEl.innerHTML = innerHTML;
+                if (item.rawBody) newEl.dataset.rawBody = item.rawBody;
+                board.appendChild(newEl);
+                initDraggable(newEl);
+            });
+        }
+    };
+    document.head.appendChild(scriptTag);
+</script>
+<script>
+    const board = document.getElementById('board');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const inputTitle = document.getElementById('inputTitle');
+    const inputBody = document.getElementById('inputBody');
+    /*
+    const checkTitleBox = document.getElementById('checkTitleBox');
+    */
+    const btnCancel = document.getElementById('btnCancel');
+    const btnSave = document.getElementById('btnSave');
+    const btnDelete = document.getElementById('btnDelete');
+    const btnExport = document.getElementById('btnExport');
+    const menuToggle = document.getElementById('menuToggle');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    // ハンバーガーメニュー開閉制御
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('show');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!dropdownMenu.contains(e.target) && e.target !== menuToggle) {
+            dropdownMenu.classList.remove('show');
+        }
+    });
+
+    // 磁石スナップX座標
+    const snapXPositions = [20, 135, 250, 365, 520, 635, 750, 865];
+    /*
+    const snapThreshold = 30;
+    */
+    const snapThreshold = 9999;
+
+    let activeItem = null;
+    let targetItemForEdit = null;
+    let startX = 0, startY = 0;
+    let initialLeft = 0, initialTop = 0;
+    let clickX = 0, clickY = 0;
+
+    // --- ドラッグ＆ドロップ ＆ ダブルクリック編集イベント処理 ---
+    function initDraggable(el) {
+        el.addEventListener('mousedown', (e) => {
+            if (e.button !== 0) return;
+            activeItem = el;
+            el.classList.add('dragging');
+
+            startX = e.clientX;
+            startY = e.clientY;
+            initialLeft = parseInt(el.style.left, 10) || 0;
+            initialTop = parseInt(el.style.top, 10) || 0;
+
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+            e.stopPropagation();
+        });
+
+        // 既存要素のダブルクリック（編集モーダルオープン）
+        el.addEventListener('dblclick', (e) => {
+            e.stopPropagation();
+            openEditModal(el);
+        });
+    }
+
+    function onMouseMove(e) {
+        if (!activeItem) return;
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+
+        let currentLeft = initialLeft + dx;
+        let currentTop = initialTop + dy;
+
+        currentLeft = Math.max(0, Math.min(board.clientWidth - activeItem.offsetWidth, currentLeft));
+        currentTop = Math.max(0, Math.min(board.clientHeight - activeItem.offsetHeight, currentTop));
+
+        currentTop = Math.round(currentTop / 10) * 10;
+
+        /*
+        activeItem.style.left = currentLeft + 'px';
+        */
+        let closestX = currentLeft;
+        let minDiff = Infinity;
+        snapXPositions.forEach(snapX => {
+            const diff = Math.abs(currentLeft - snapX);
+            if (diff < minDiff) {
+                minDiff = diff;
+                closestX = snapX;
+            }
+        });
+        activeItem.style.left = closestX + 'px';
+
+        activeItem.style.top = currentTop + 'px';
+    }
+
+    function onMouseUp() {
+        if (!activeItem) return;
+        
+        let currentLeft = parseInt(activeItem.style.left, 10);
+        let closestX = currentLeft;
+        let minDiff = Infinity;
+        
+        snapXPositions.forEach(snapX => {
+            const diff = Math.abs(currentLeft - snapX);
+            if (diff < snapThreshold && diff < minDiff) {
+                minDiff = diff;
+                closestX = snapX;
+            }
+        });
+
+        activeItem.style.left = closestX + 'px';
+        activeItem.classList.remove('dragging');
+        activeItem = null;
+
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+    }
+
+    // 初期状態の全要素を初期化
+    // document.querySelectorAll('.draggable').forEach(initDraggable);
+
+    // カラム定義マッピング
+    const colMap = {
+        col1: 20,
+        col2: 135,
+        col3: 250,
+        col4: 365,
+        col5: 520,
+        col6: 635,
+        col7: 750,
+        col8: 865
+    };
+
+    // 逆引き用マッピング
+    const reverseColMap = {
+        20: 'col1',
+        135: 'col2',
+        250: 'col3',
+        365: 'col4',
+        520: 'col5',
+        635: 'col6',
+        750: 'col7',
+        865: 'col8'
+    };
+
+    // --- JSエクスポート処理 ---
+    btnExport.addEventListener('click', () => {
+        dropdownMenu.classList.remove('show');
+        const items = document.querySelectorAll('.draggable');
+        const exportData = [];
+
+        items.forEach(el => {
+            const leftVal = parseInt(el.style.left, 10) || 0;
+            const topVal = parseInt(el.style.top, 10) || 0;
+            const widthVal = parseInt(el.style.width, 10) || 110;
+
+            const titleEl = el.querySelector('.title-box');
+            let titleText = '';
+            if (titleEl && titleEl.style.visibility !== 'hidden') {
+                titleText = titleEl.textContent.trim();
+            }
+
+            let rawBodyText = el.dataset.rawBody;
+            if (rawBodyText === undefined) {
+                const clone = el.cloneNode(true);
+                if (clone.querySelector('.title-box')) {
+                    clone.querySelector('.title-box').remove();
+                }
+                const lines = [];
+                const allDivs = Array.from(clone.querySelectorAll('div'));
+                if (allDivs.length > 0) {
+                    allDivs.forEach(d => {
+                        if (d.querySelectorAll('div').length === 0) {
+                            /*
+                            lines.push(d.textContent.trim());
+                            */
+                            lines.push(d.textContent);
+                        }
+                    });
+                } else {
+                    /*
+                    lines.push(clone.textContent.trim());
+                    */
+                    lines.push(clone.textContent);
+                }
+                rawBodyText = lines.join('\n');
+            }
+
+            const bodyArr = rawBodyText ? rawBodyText.split('\n') : [];
+
+            const itemObj = {};
+            if (reverseColMap[leftVal]) {
+                itemObj.col = reverseColMap[leftVal];
+            } else {
+                itemObj.left = leftVal;
+            }
+            itemObj.top = topVal;
+            if (widthVal !== 110) {
+                itemObj.width = widthVal;
+            }
+            itemObj.title = titleText;
+            itemObj.body = bodyArr;
+
+            exportData.push(itemObj);
+        });
+
+        const fileContent = `const layoutData = ${JSON.stringify(exportData, null, 2)};\n`;
+        const blob = new Blob([fileContent], { type: 'application/javascript;charset=utf-8' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = `${fileName}.js`;
+        a.click();
+        URL.revokeObjectURL(a.href);
+    });
+
+    // --- 空白エリアのダブルクリック（新規作成） ---
+    board.addEventListener('dblclick', (e) => {
+        if (e.target !== board && e.target.className !== 'line-v') return;
+
+        const rect = board.getBoundingClientRect();
+        clickX = e.clientX - rect.left;
+        clickY = e.clientY - rect.top;
+
+        let closestX = clickX;
+        let minDiff = Infinity;
+        snapXPositions.forEach(snapX => {
+            const diff = Math.abs(clickX - snapX);
+            if (diff < minDiff) {
+                minDiff = diff;
+                closestX = snapX;
+            }
+        });
+
+        clickX = closestX;
+        clickY = Math.round(clickY / 10) * 10;
+
+        openNewModal();
+    });
+
+    // モーダル処理：新規
+    function openNewModal() {
+        targetItemForEdit = null;
+        modalTitle.textContent = '新規項目の追加';
+        inputTitle.value = '';
+        inputBody.value = '';
+        /*
+        checkTitleBox.checked = true;
+        */
+        btnDelete.style.display = 'none';
+        modalOverlay.style.display = 'flex';
+        inputTitle.focus();
+    }
+
+    // モーダル処理：編集（連続改行・空行完全復元処理）
+    function openEditModal(el) {
+        targetItemForEdit = el;
+        modalTitle.textContent = '項目の編集';
+        btnDelete.style.display = 'block';
+
+        const titleBox = el.querySelector('.title-box');
+
+        if (titleBox && titleBox.style.visibility !== 'hidden') {
+            inputTitle.value = titleBox.textContent.trim();
+        } else {
+            inputTitle.value = '';
+        }
+
+        // 保存時に格納した生データがあればそれを最優先でセット（連続改行を保持）
+        if (el.dataset.rawBody !== undefined) {
+            inputBody.value = el.dataset.rawBody;
+        } else {
+            // 初期要素からの復元処理
+            const clone = el.cloneNode(true);
+            if (clone.querySelector('.title-box')) {
+                clone.querySelector('.title-box').remove();
+            }
+
+            const lines = [];
+            const allDivs = Array.from(clone.querySelectorAll('div'));
+
+            if (allDivs.length > 0) {
+                allDivs.forEach(d => {
+                    if (d.querySelectorAll('div').length === 0) {
+                        /*
+                        lines.push(d.textContent.trim());
+                        */
+                        lines.push(d.textContent);
+                    }
+                });
+            } else {
+                /*
+                lines.push(clone.textContent.trim());
+                */
+                lines.push(clone.textContent);
+            }
+
+            inputBody.value = lines.join('\n');
+        }
+
+        modalOverlay.style.display = 'flex';
+        inputTitle.focus();
+    }
+
+    // ダイアログ操作
+    btnCancel.addEventListener('click', () => {
+        modalOverlay.style.display = 'none';
+    });
+
+    btnDelete.addEventListener('click', () => {
+        if (targetItemForEdit) {
+            targetItemForEdit.remove();
+        }
+        modalOverlay.style.display = 'none';
+    });
+
+    btnSave.addEventListener('click', () => {
+        const titleText = inputTitle.value.trim();
+        const bodyText = inputBody.value; // 改行・空行をそのまま保持
+
+        if (!titleText && !bodyText.trim()) {
+            if (targetItemForEdit) targetItemForEdit.remove();
+            modalOverlay.style.display = 'none';
+            return;
+        }
+
+        let innerHTML = '';
+
+        if (titleText) {
+            innerHTML += `<div class="title-box">${titleText}</div>`;
+        } else {
+            innerHTML += `<div class="title-box" style="visibility: hidden;">&nbsp;</div>`;
+        }
+
+        if (bodyText) {
+            // 空行も含めてそのまま <div> に変換（空行は &nbsp; で高さを保持）
+            /*
+            const lines = bodyText.split('\n').map(l => {
+                const text = l.trim();
+                return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
+            }).join('');
+            */
+            const lines = bodyText.split('\n').map(l => {
+                const text = l;
+                return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
+            }).join('');
+            innerHTML += `<div style="margin-top: 5px; margin-left: 5px;">${lines}</div>`;
+        }
+
+        if (targetItemForEdit) {
+            targetItemForEdit.innerHTML = innerHTML;
+            targetItemForEdit.dataset.rawBody = bodyText; // 入力テキストを生データとして保存
+        } else {
+            const newEl = document.createElement('div');
+            newEl.className = 'draggable';
+            newEl.style.left = clickX + 'px';
+            newEl.style.top = clickY + 'px';
+            newEl.style.width = '110px';
+            newEl.innerHTML = innerHTML;
+            newEl.dataset.rawBody = bodyText; // 入力テキストを生データとして保存
+            board.appendChild(newEl);
+            initDraggable(newEl);
+        }
+
+        modalOverlay.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
