@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>配置図（インタラクティブ＆空行・連続改行保持版）</title>
+    <title>配置図</title>
     <style>
         body {
             font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
@@ -133,15 +133,6 @@
         .btn-secondary { background: #eee; color: #333; }
         .btn-danger { background: #dc3545; color: #fff; }
 
-        /* 右上メニューボタン */
-        /*
-        .top-menu {
-            position: absolute;
-            top: 20px;
-            left: 970px;
-            z-index: 500;
-        }
-        */
         .top-menu {
             position: absolute;
             top: 20px;
@@ -216,9 +207,7 @@
 
 <div class="top-menu">
     <span class="file-label" id="fileLabel"></span>
-    <!--
-    <button class="btn-export" id="btnExport">JSエクスポート</button>
-    -->
+
     <button class="menu-toggle" id="menuToggle" title="メニュー">
         <span></span>
         <span></span>
@@ -253,14 +242,18 @@
 </div>
 
 <script>
-    // URLパラメータから ?file=xxx を取得（未指定時は data）
+
     const urlParams = new URLSearchParams(window.location.search);
-    const fileName = urlParams.get('file') || 'data';
+    const rawFileName = urlParams.get('file');
+    const fileName = rawFileName !== null ? rawFileName : 'data';
 
     document.addEventListener('DOMContentLoaded', () => {
         const fileLabel = document.getElementById('fileLabel');
         if (fileLabel) {
+            /*
             fileLabel.textContent = `${fileName}.js`;
+            */
+            fileLabel.textContent = fileName.trim() !== '' ? `${fileName}.js` : '';
         }
     });
 
@@ -396,9 +389,6 @@
 
         currentTop = Math.round(currentTop / 10) * 10;
 
-        /*
-        activeItem.style.left = currentLeft + 'px';
-        */
         let closestX = currentLeft;
         let minDiff = Infinity;
         snapXPositions.forEach(snapX => {
@@ -436,8 +426,7 @@
         document.removeEventListener('mouseup', onMouseUp);
     }
 
-    // 初期状態の全要素を初期化
-    // document.querySelectorAll('.draggable').forEach(initDraggable);
+
 
     // カラム定義マッピング
     const colMap = {
@@ -498,9 +487,7 @@
                         }
                     });
                 } else {
-                    /*
-                    lines.push(clone.textContent.trim());
-                    */
+
                     lines.push(clone.textContent);
                 }
                 rawBodyText = lines.join('\n');
@@ -528,7 +515,8 @@
         const blob = new Blob([fileContent], { type: 'application/javascript;charset=utf-8' });
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
-        a.download = `${fileName}.js`;
+
+        a.download = fileName.trim() !== '' ? `${fileName}.js` : 'data.js';
         a.click();
         URL.revokeObjectURL(a.href);
     });
@@ -563,9 +551,7 @@
         modalTitle.textContent = '新規項目の追加';
         inputTitle.value = '';
         inputBody.value = '';
-        /*
-        checkTitleBox.checked = true;
-        */
+
         btnDelete.style.display = 'none';
         modalOverlay.style.display = 'flex';
         inputTitle.focus();
@@ -601,16 +587,10 @@
             if (allDivs.length > 0) {
                 allDivs.forEach(d => {
                     if (d.querySelectorAll('div').length === 0) {
-                        /*
-                        lines.push(d.textContent.trim());
-                        */
                         lines.push(d.textContent);
                     }
                 });
             } else {
-                /*
-                lines.push(clone.textContent.trim());
-                */
                 lines.push(clone.textContent);
             }
 
@@ -652,13 +632,7 @@
         }
 
         if (bodyText) {
-            // 空行も含めてそのまま <div> に変換（空行は &nbsp; で高さを保持）
-            /*
-            const lines = bodyText.split('\n').map(l => {
-                const text = l.trim();
-                return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
-            }).join('');
-            */
+
             const lines = bodyText.split('\n').map(l => {
                 const text = l;
                 return `<div>${text !== '' ? text : '&nbsp;'}</div>`;
