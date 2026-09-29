@@ -22,15 +22,6 @@ const layoutData = [
     ]
   },
   {
-    "col": "col3",
-    "top": 40,
-    "title": "その他",
-    "body": [
-      "本棚",
-      "廊下の床"
-    ]
-  },
-  {
     "col": "col5",
     "top": 40,
     "title": "お台所",
@@ -69,18 +60,20 @@ const layoutData = [
     ]
   },
   {
-    "col": "col1",
-    "top": 250,
+    "col": "col3",
+    "top": 40,
     "title": "階段",
     "body": [
       "1-2F",
       "2-3F",
-      "手すり"
+      "手すり",
+      "本棚",
+      "廊下の床"
     ]
   },
   {
     "col": "col1",
-    "top": 400,
+    "top": 250,
     "title": "洗面所",
     "body": [
       "洗面台",
