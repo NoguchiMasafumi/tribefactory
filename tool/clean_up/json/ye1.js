@@ -104,7 +104,7 @@ const layoutData = [
     ]
   },
   {
-    "col": "col6",
+    "col": "col7",
     "top": 250,
     "title": "戸棚",
     "body": [
