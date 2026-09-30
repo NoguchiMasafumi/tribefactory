@@ -35,6 +35,18 @@
             z-index: 1;
         }
 
+        /* Y軸フィットライン（ガイド線） */
+        .guide-line-y {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #ff0000;
+            z-index: 999;
+            pointer-events: none;
+            display: none;
+        }
+
         /* エリアタイトル */
         .area-label {
             position: absolute;
@@ -232,6 +244,7 @@
 </div>
 
 <div class="board" id="board">
+    <div class="guide-line-y" id="guideLineY"></div>
 
     <div class="area-label" style="top: 15px; left: 20px;"></div>
     <div class="area-label" style="top: 15px; left: 520px;"></div>
@@ -338,6 +351,7 @@
     const btnExport = document.getElementById('btnExport');
     const menuToggle = document.getElementById('menuToggle');
     const dropdownMenu = document.getElementById('dropdownMenu');
+    const guideLineY = document.getElementById('guideLineY');
 
     // ハンバーガーメニュー開閉制御
     menuToggle.addEventListener('click', (e) => {
@@ -388,6 +402,7 @@
         });
     }
 
+    /*
     function onMouseMove(e) {
         if (!activeItem) return;
         const dx = e.clientX - startX;
@@ -414,7 +429,54 @@
 
         activeItem.style.top = currentTop + 'px';
     }
+    */
+    function onMouseMove(e) {
+        if (!activeItem) return;
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
 
+        let currentLeft = initialLeft + dx;
+        let currentTop = initialTop + dy;
+
+        currentLeft = Math.max(0, Math.min(board.clientWidth - activeItem.offsetWidth, currentLeft));
+        currentTop = Math.max(0, Math.min(board.clientHeight - activeItem.offsetHeight, currentTop));
+
+        currentTop = Math.round(currentTop / 10) * 10;
+
+        let closestX = currentLeft;
+        let minDiff = Infinity;
+        snapXPositions.forEach(snapX => {
+            const diff = Math.abs(currentLeft - snapX);
+            if (diff < minDiff) {
+                minDiff = diff;
+                closestX = snapX;
+            }
+        });
+        activeItem.style.left = closestX + 'px';
+
+        activeItem.style.top = currentTop + 'px';
+
+        // 赤い縦位置フィットライン（ガイド線）の表示判定
+        const otherItems = document.querySelectorAll('.draggable');
+        let matchedY = null;
+
+        otherItems.forEach(other => {
+            if (other === activeItem) return;
+            const otherTop = parseInt(other.style.top, 10) || 0;
+            if (Math.abs(currentTop - otherTop) <= 2) {
+                matchedY = otherTop;
+            }
+        });
+
+        if (matchedY !== null && guideLineY) {
+            guideLineY.style.top = matchedY + 'px';
+            guideLineY.style.display = 'block';
+        } else if (guideLineY) {
+            guideLineY.style.display = 'none';
+        }
+    }
+
+    /*
     function onMouseUp() {
         if (!activeItem) return;
         
@@ -433,6 +495,33 @@
         activeItem.style.left = closestX + 'px';
         activeItem.classList.remove('dragging');
         activeItem = null;
+
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+    }
+    */
+    function onMouseUp() {
+        if (!activeItem) return;
+        
+        let currentLeft = parseInt(activeItem.style.left, 10);
+        let closestX = currentLeft;
+        let minDiff = Infinity;
+        
+        snapXPositions.forEach(snapX => {
+            const diff = Math.abs(currentLeft - snapX);
+            if (diff < snapThreshold && diff < minDiff) {
+                minDiff = diff;
+                closestX = snapX;
+            }
+        });
+
+        activeItem.style.left = closestX + 'px';
+        activeItem.classList.remove('dragging');
+        activeItem = null;
+
+        if (guideLineY) {
+            guideLineY.style.display = 'none';
+        }
 
         document.removeEventListener('mousemove', onMouseMove);
         document.removeEventListener('mouseup', onMouseUp);
