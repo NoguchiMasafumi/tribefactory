@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF分割</title>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+    <input type="file" id="pdfInput" accept="application/pdf">
+    <div id="output"></div>
+
+    <script>
+        document.getElementById('pdfInput').addEventListener('change', async (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const arrayBuffer = await file.arrayBuffer();
+            const pdfDoc = await PDFLib.PDFDocument.load(arrayBuffer);
+            const pageCount = pdfDoc.getPageCount();
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '';
+
+            const zip = new JSZip();
+
+            for (let i = 0; i < pageCount; i++) {
+                const newPdf = await PDFLib.PDFDocument.create();
+                const [copiedPage] = await newPdf.copyPages(pdfDoc, [i]);
+                newPdf.addPage(copiedPage);
+
+                const pdfBytes = await newPdf.save();
+                const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+                const url = URL.createObjectURL(blob);
+
+                // const link = document.createElement('a');
+                // link.href = url;
+                // link.download = `page_${i + 1}.pdf`;
+                // link.textContent = `ページ ${i + 1} をダウンロード`;
+                // outputDiv.appendChild(link);
+                // outputDiv.appendChild(document.createElement('br'));
+
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `page_${i + 1}.pdf`;
+                link.textContent = `ページ ${i + 1} をダウンロード`;
+                link.click();
+                outputDiv.appendChild(link);
+                outputDiv.appendChild(document.createElement('br'));
+
+                zip.file(`page_${i + 1}.pdf`, pdfBytes);
+            }
+
+            const zipBlob = await zip.generateAsync({ type: 'blob' });
+            const zipUrl = URL.createObjectURL(zipBlob);
+            const zipLink = document.createElement('a');
+            zipLink.href = zipUrl;
+            zipLink.download = 'split_pages.zip';
+            zipLink.textContent = '全ページを一括ダウンロード (ZIP)';
+            outputDiv.insertBefore(document.createElement('br'), outputDiv.firstChild);
+            outputDiv.insertBefore(zipLink, outputDiv.firstChild);
+            zipLink.click();
+        });
+    </script>
+</body>
+</html>
